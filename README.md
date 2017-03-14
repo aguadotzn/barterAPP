@@ -7,7 +7,7 @@ Multiplatform's app for manage business time.
 
 ## Getting Started
 
-Please follow the instructions.
+Please follow the instructions. You can acces the app in your favourite brownser. Also you can downloading in your favourite smartphone.
 
 ### Prerequisites
 
@@ -21,6 +21,8 @@ A device with IOS, Android or Windows Phone. A Computer with internet access.
 
 * [Angular](https://angularjs.org/) - Web framework 
 * [Ionic](https://ionicframework.com/) - Web framework 
+* [NodeJS](https://nodejs.org//) - API 
+* [Express](https://expressframework.com/) - Web framework 
 
 ## Contributing
 
@@ -47,5 +49,5 @@ Thank you.
 
 ## Notes
 
-This page is under construction. 
+This page is under construction, please be patient and return in few months
 
