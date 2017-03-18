@@ -9,12 +9,12 @@ var Schema = mongoose.Schema;
 var usuarioSchema = Schema({
     name: String,
     surname: String,
-    companyname: String
-    //id: Integer, 
-    //data: Data
+    companyName: String
+    //id: Integer,
+    //data: String
 });
 
 
 //Este esquema actuara como modelo , que representara al esquema creado mas arriba
 //Osea si hacemos un nuevo usuario sera con todas las caracteristicas de arriba 
-module.export = mongoose.model('Usuario', usuarioSchema);
+module.exports = mongoose.model('Usuario', usuarioSchema);
