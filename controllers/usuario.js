@@ -1,8 +1,8 @@
-'use strict'
+'use strict';
 
 var Usuario = require('../models/usuarioBarter.js');
 
-//Funciones normales de JS
+//Obtener un usuario
 function getUsuario(request, res) {
     var usuarioId = request.params.id;
     res.status(200).send({
@@ -11,11 +11,13 @@ function getUsuario(request, res) {
 
 }
 
+//Obtener todos los usuarios
 function getUsuarios(request, res) {
 
 
 }
 
+//Guardar un usuario
 function saveUsuario(request, res) {
     var usuario = new Usuario(); //Creo un nuevo usuario cada vez que se llame a la funcion
     var params = request.body; //Parametros que me llegan 
@@ -25,7 +27,8 @@ function saveUsuario(request, res) {
     usuario.surname = params.surname;
     usuario.companyName = params.companyName;
 
-    usuario.save((err, usuarioStored) => {
+
+    usuario.save(function (err, usuarioStored) {
         if (err) { //Si se producen errores al guardar un usuario
             res.status(500).send({
                 message: 'Error al guardar el usuario'
@@ -38,6 +41,7 @@ function saveUsuario(request, res) {
     });
 }
 
+//Actualizar un usuario
 function updateUsuario(request, res) {
     var params = request.body;
 
@@ -49,6 +53,7 @@ function updateUsuario(request, res) {
 
 }
 
+//Borrar un usuario
 function deleteUsuario(request, res) {
     var usuarioId = request.params.id;
     res.status(200).send({
