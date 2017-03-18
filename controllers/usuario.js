@@ -2,17 +2,48 @@
 
 var Usuario = require('../models/usuarioBarter.js');
 
-//Obtener un usuario
+//Obtener un usuario de la base de datos
 function getUsuario(request, res) {
     var usuarioId = request.params.id;
-    res.status(200).send({
-        data: usuarioId
-    });
 
+    Usuario.findById(usuarioId, function (err, usuarioGet) {
+        if (err) { //Si se producen errores al solicitar un usuario especifico
+            res.status(500).send({
+                message: 'Error al devolver el usuario especificado'
+            });
+        }
+
+        if (!usuarioGet) { //Si no existe usuarios
+            res.status(400).send({
+                message: 'No existen usuarios en la base de datos'
+            });
+        }
+
+        res.status(200).send({ //Si todo esta correcto devuelvo el usuario especifico
+            usuarioespecifico: usuarioGet
+        });
+
+    });
 }
 
 //Obtener todos los usuarios
 function getUsuarios(request, res) {
+    Usuario.find({}).sort('-_id').exec(function (err, usuariosGet) {
+        if (err) { //Si se producen errores al pedir todos los usuarios
+            res.status(500).send({
+                message: 'Error al devolver todos los usuarios'
+            });
+        }
+        if (!usuariosGet) { //Si no existen usuarios
+            res.status(400).send({
+                message: 'No existen usuarios'
+            });
+        }
+        res.status(200).send({ //Si todo esta correcto, devuelvo los usuarios, en el orden en el que han sido agregados a la base de datos
+            usuariosGet
+        });
+
+    });
 
 
 }
@@ -35,7 +66,7 @@ function saveUsuario(request, res) {
             });
         } //Si no se producen errores al guardar
         res.status(200).send({
-            usuario: usuarioStored
+            usuarioaguardar: usuarioStored
         });
 
     });
@@ -43,28 +74,61 @@ function saveUsuario(request, res) {
 
 //Actualizar un usuario
 function updateUsuario(request, res) {
-    var params = request.body;
+    var usuarioId = request.params.id;
+    var update = request.body;
 
-    res.status(200).send({
-        update: true,
-        usuario: params
+    //Con esta linea podemos ver en consola los datos que actualizamos
+    //console.log(update);
+
+    Usuario.findByIdAndUpdate(usuarioId, update, function (err, usuarioUpdate) {
+        if (err) { //Si hay errores
+            res.status(500).send({
+                message: 'Error al actualizar el usuario. Error al devolver el usuario.'
+            });
+        }
+
+        res.status(200).send({ //Si no hay errores actualizamos el usuario
+            usuarioaactualizar: usuarioUpdate
+        });
     });
-
-
 }
 
 //Borrar un usuario
 function deleteUsuario(request, res) {
     var usuarioId = request.params.id;
-    res.status(200).send({
-        delete: true,
-        data: usuarioId
-    });
 
+    Usuario.findByIdAndUpdate(usuarioId, function (err, usuarioDelete) {
+        if (err) { //Si hay errores
+            res.status(500).send({
+                message: 'Error al devolver el usuario'
+            });
+        }
+
+        if (!usuarioDelete) { //Si no existe  el usuario a eliminar
+            res.status(404).send({
+                message: 'No existe tal usuario'
+            });
+        } else { //Si el usuario existe
+            usuarioDelete.remove(err, function () {
+                if (err) {
+                    res.status(500).send({
+                        message: 'El usuario no se ha borrado. Error en la peticion'
+                    });
+                } else {
+                    res.status(200).send({ //Si no hay errores actualizamos el usuario
+                        message: 'El usuario se ha borrado correctamente'
+                    });
+                }
+            });
+        }
+    });
 }
 
 
-//Para exportar
+
+
+
+//Exportar
 module.exports = {
     getUsuario,
     getUsuarios,
