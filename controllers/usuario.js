@@ -92,32 +92,41 @@ function updateUsuario(request, res) {
         });
     });
 }
+/*
+58 cd716cf6640307614c927e
+58 cd716bf6640307614c927d
+58 cd716af6640307614c927b
+58 cd7168f6640307614c9279
+58 cd7168f6640307614c9278
+58 cd7167f6640307614c9277
+58 cd7166f6640307614c9276*/
 
 //Borrar un usuario
 function deleteUsuario(request, res) {
     var usuarioId = request.params.id;
 
-    Usuario.findByIdAndUpdate(usuarioId, function (err, usuarioDelete) {
+    Usuario.findById(usuarioId, function (err, usuarioDelete) {
         if (err) { //Si hay errores
             res.status(500).send({
-                message: 'Error al devolver el usuario'
+                message: 'Error al buscar el usuario solicitado.'
             });
         }
 
         if (!usuarioDelete) { //Si no existe  el usuario a eliminar
             res.status(404).send({
-                message: 'No existe tal usuario'
+                message: 'No existe tal usuario en la base de datos'
             });
         } else { //Si el usuario existe
-            usuarioDelete.remove(err, function () {
-                if (err) {
-                    res.status(500).send({
-                        message: 'El usuario no se ha borrado. Error en la peticion'
-                    });
-                } else {
+            usuarioDelete.remove(err => {
+                if (!err) {
                     res.status(200).send({ //Si no hay errores actualizamos el usuario
                         message: 'El usuario se ha borrado correctamente'
                     });
+                } else {
+                    res.status(500).send({
+                        message: 'El usuario no se ha borrado. Error en la peticion.'
+                    });
+
                 }
             });
         }
