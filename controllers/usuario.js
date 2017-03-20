@@ -92,14 +92,6 @@ function updateUsuario(request, res) {
         });
     });
 }
-/*
-58 cd716cf6640307614c927e
-58 cd716bf6640307614c927d
-58 cd716af6640307614c927b
-58 cd7168f6640307614c9279
-58 cd7168f6640307614c9278
-58 cd7167f6640307614c9277
-58 cd7166f6640307614c9276*/
 
 //Borrar un usuario
 function deleteUsuario(request, res) {
@@ -134,10 +126,7 @@ function deleteUsuario(request, res) {
 }
 
 
-
-
-
-//Exportar
+//Exportar 
 module.exports = {
     getUsuario,
     getUsuarios,
