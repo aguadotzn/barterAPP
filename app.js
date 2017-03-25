@@ -13,11 +13,30 @@ app.use(bodyParser.urlencoded({
     extended: false
 }));
 app.use(bodyParser.json());
+
+
+
+//Vamos a introducir un middlware propio
+//Es un poco complejo de entender, me he basado en http://expressjs.com/es/guide/using-middleware.html
+app.use(function (request, res, next) {
+    request.header('Access-Control-Allow-Origin', ' * '); //El asterico significa que se permiten peticiones desde cualquier url
+    request.header('Access-Control-Allow-Header', 'X-API-KEY, Origin, X-Requested-With, Content-Type, Accept, Access-Control-Request-Method');
+    request.header('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, DELETE');
+    request.header('Allow', 'GET, POST, OPTIONS, PUT, DELETE');
+
+
+    console.log('Middleware propio funcionando');
+
+    next();
+});
+
+
 app.use('/api', api);
 
 
 //Exportar el objeto para crearlo en otro modulo
 module.exports = app;
+
 
 
 

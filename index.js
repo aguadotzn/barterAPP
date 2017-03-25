@@ -6,7 +6,7 @@ var app = require('./app');
 var port = process.env.PORT || 3000; //Numero de puerto para el servidor
 
 
-//Conexion con la base de datos
+//Conexion con la base de datos 
 mongoose.connect('mongodb://localhost:27017/usuariosBarter', function (err, res) {
     //Si hay un error en la bd, excepcion
     if (err) {
