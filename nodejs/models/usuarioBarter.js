@@ -16,7 +16,7 @@ var usuarioSchema = Schema({
 
 
 //Este esquema actuara como modelo , que representara al esquema creado mas arriba
-//Osea si hacemos un nuevo usuario sera con todas las caracteristicas de arriba 
+//Osea si hacemos un nuevo usuario sera con todas las caracteristicas de arriba
 
 //Exportar
 module.exports = mongoose.model('Usuario', usuarioSchema);

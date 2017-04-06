@@ -41,17 +41,14 @@ function getUsuarios(request, res) {
         }
         res.status(200).send({ //Si todo esta correcto, devuelvo los usuarios, en el orden en el que han sido agregados a la base de datos
             usuariosGet
-        });
-
+        })
     });
-
-
 }
 
 //Guardar un usuario
 function saveUsuario(request, res) {
     var usuario = new Usuario(); //Creo un nuevo usuario cada vez que se llame a la funcion
-    var params = request.body; //Parametros que me llegan 
+    var params = request.body; //Parametros que me llegan
 
 
     usuario.name = params.name;
@@ -126,7 +123,7 @@ function deleteUsuario(request, res) {
 }
 
 
-//Exportar 
+//Exportar
 module.exports = {
     getUsuario,
     getUsuarios,
