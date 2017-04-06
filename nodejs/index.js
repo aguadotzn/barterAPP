@@ -10,14 +10,14 @@ var port = process.env.PORT || 3002; //Numero de puerto para el servidor
 mongoose.connect('mongodb://localhost:27017/usuariosBarter', function (err, res) {
     //Si hay un error en la bd, excepcion
     if (err) {
-        throw err;
+        throw err
     } else {
         //Si no hay error
-        console.log('Conexion con mongoDB correcta.');
+        console.log('Conexion con mongoDB correcta.')
         //Cuando nos conectemos a la db se va a conectar al servidor
         //Servidor con confirmacion en pantalla
         app.listen(port, function () {
             console.log("BarterAPP esta funcionando en http://localhost:" + port);
-        });
+        })
     }
-});
+})

@@ -1,9 +1,8 @@
-[![BarterAPPLogo](./barterapp_logo_nobackground.png)](https://github.com/aag0121/barterapp_logo_nobackground)
-
 
 # BarterAPP
 
 Multiplatform's app for manage business time.
+[![BarterAPPLogo](./barterapp_logo_nobackground.png)](https://github.com/aag0121/barterapp_logo_nobackground)
 
 ## Getting Started
 
