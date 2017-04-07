@@ -1,22 +1,24 @@
-//Esquema de como vamos a guardar a los usuarios
+// Schema's for mongoDB
+// @author aaguado
 'use strict'
 
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+var mongoose = require('mongoose')
+var Schema = mongoose.Schema
 
-
-//El usuario por defecto de barter
+// *******************************************USUARIOS
+// El usuario por defecto de barter
 var usuarioSchema = Schema({
-    name: String,
-    surname: String,
-    companyName: String
-    //id: Integer,
-    //data: String
-});
+  name: String,
+  surname: String,
+  companyName: String
+  // id: Integer,
+  // data: String
+})
 
+// Este esquema anterior actuara como modelo , que representara al esquema creado mas arriba
+// Osea si hacemos un nuevo usuario sera con todas las caracteristicas de arriba
 
-//Este esquema actuara como modelo , que representara al esquema creado mas arriba
-//Osea si hacemos un nuevo usuario sera con todas las caracteristicas de arriba
+// *******************************************INFO CALENDARIOS
 
-//Exportar
-module.exports = mongoose.model('Usuario', usuarioSchema);
+// Exportar
+module.exports = mongoose.model('Usuario', usuarioSchema)
