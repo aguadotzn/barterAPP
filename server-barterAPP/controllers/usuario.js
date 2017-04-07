@@ -51,20 +51,19 @@ function getUsuariosCompania (request, res) {
   var companyName = request.params.companyName
 
   Usuario.find({companyName}).exec(function (err, usuariosGetCompany) {
-    if (err) { // Si se producen errores al pedir todos los usuarios
+    if (err) { // Si se producen errores al hacer la peticion
       res.status(500).send({
         message: 'Error al devolver todos los usuarios de     {request}'
       })
     }
 
-    if (!usuariosGetCompany) { // Si no existen usuarios para es compañia
+    if (!companyName) { // Si no existen usuarios para esa compañia
       res.status(400).send({
         message: 'No existen usuarios para {companyName}'
       })
     }
     res.status(200).send({ // Si todo esta correcto, devuelvo los usuarios, en el orden en el que han sido agregados a la base de datos
       usuariosporcompañia: usuariosGetCompany
-      // res.status(200).send({data: usuarioCompany})
     })
   })
 }// getUsuarios
