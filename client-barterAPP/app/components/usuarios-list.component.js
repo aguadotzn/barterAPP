@@ -22,7 +22,7 @@ var UsuariosListComponent = (function () {
         console.log('UsuariosListComponent cargado correctamente!!');
         this._usuarioService.getUsuarios().subscribe(function (result) {
             console.log(result);
-            _this.usuarios = result.Usuario;
+            _this.usuarios = result.usuarios;
             if (!_this.usuarios) {
                 alert('Error en el servidor');
             }

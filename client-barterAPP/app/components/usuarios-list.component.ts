@@ -26,7 +26,7 @@ export class UsuariosListComponent {
         this._usuarioService.getUsuarios().subscribe(
           result => {
               console.log(result);
-              this.usuarios = result.Usuario;
+              this.usuarios = result.usuarios;
 
               if(!this.usuarios){
                 alert('Error en el servidor');
@@ -39,6 +39,6 @@ export class UsuariosListComponent {
                 alert('Error en la peticion de usuarios a la base de datos.');
               }
           }
-        )
+        );
       }
 }
