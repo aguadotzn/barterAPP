@@ -18,7 +18,7 @@ var UsuarioService = (function () {
         this.url = 'http://localhost:3002/api/';
     }
     UsuarioService.prototype.getUsuarios = function () {
-        return this._http.get(this.url + 'usuarios/').map(function (res) { return res.json(); });
+        return this._http.get(this.url + 'usuarios').map(function (res) { return res.json(); });
     };
     return UsuarioService;
 }());

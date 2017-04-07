@@ -14,7 +14,7 @@ export class UsuarioService{
   }
 
   getUsuarios(){
-      return this._http.get(this.url+'usuarios/').map(res => res.json());
+      return this._http.get(this.url+'usuarios').map(res => res.json());
   }
 
 
