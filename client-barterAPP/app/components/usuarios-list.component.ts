@@ -18,7 +18,7 @@ export class UsuariosListComponent {
       public errorMessage;
 
       constructor(private _usuarioService : UsuarioService){
-        this.title = 'Lista de usuarios:';
+        this.title = 'Lista de usuarios: ';
       }
 
       ngOnInit(){
@@ -36,7 +36,7 @@ export class UsuariosListComponent {
               this.errorMessage = <any>error;
               if(this.errorMessage != null){
                 console.log(this.errorMessage);
-                alert('Error en la peticion de usuarios');
+                alert('Error en la peticion de usuarios a la base de datos.');
               }
           }
         )

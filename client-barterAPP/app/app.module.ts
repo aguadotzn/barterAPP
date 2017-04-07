@@ -11,7 +11,10 @@ import { FooterComponent} from './components/footer.component';
 
 
 @NgModule({
-  imports:      [ BrowserModule, FormsModule, HttpModule, JsonpModule  ],
+  imports:      [ BrowserModule,
+                    FormsModule,
+                    HttpModule,
+                    JsonpModule  ],
   declarations: [ AppComponent,
                   UsuariosListComponent,
                   NavBarComponent,

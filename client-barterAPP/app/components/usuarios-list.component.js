@@ -15,7 +15,7 @@ var usuario_service_1 = require("../services/usuario.service");
 var UsuariosListComponent = (function () {
     function UsuariosListComponent(_usuarioService) {
         this._usuarioService = _usuarioService;
-        this.title = 'Lista de usuarios:';
+        this.title = 'Lista de usuarios: ';
     }
     UsuariosListComponent.prototype.ngOnInit = function () {
         var _this = this;
@@ -30,7 +30,7 @@ var UsuariosListComponent = (function () {
             _this.errorMessage = error;
             if (_this.errorMessage != null) {
                 console.log(_this.errorMessage);
-                alert('Error en la peticion de usuarios');
+                alert('Error en la peticion de usuarios a la base de datos.');
             }
         });
     };
