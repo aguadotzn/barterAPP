@@ -10,7 +10,7 @@ var api = express.Router()
 // Si lleva ? es obligatorio que se incluya en la ruta, sino es opcional
 api.get('/usuario/:id?', UsuarioController.getUsuario)
 api.get('/usuarios', UsuarioController.getUsuarios)
-api.get('/usuarios/:companyName', UsuarioController.getUsuariosCompania)
+api.get('/usuarios/:companyName?', UsuarioController.getUsuariosCompania)
 api.post('/usuario', UsuarioController.saveUsuario)
 api.put('/usuario/:id', UsuarioController.updateUsuario)
 api.delete('/usuario/:id', UsuarioController.deleteUsuario)

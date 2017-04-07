@@ -48,20 +48,23 @@ function getUsuarios (request, res) {
 
 // Obtener los usuarios filtrados por compañia
 function getUsuariosCompania (request, res) {
-  var usuarioCompany = request.params.companyName
-  Usuario.find({usuarioCompany}).exec(function (err, usuariosGetCompany) {
+  var companyName = request.params.companyName
+
+  Usuario.find({companyName}).exec(function (err, usuariosGetCompany) {
     if (err) { // Si se producen errores al pedir todos los usuarios
       res.status(500).send({
-        message: 'Error al devolver todos los usuarios de {companyName}'
+        message: 'Error al devolver todos los usuarios de     {request}'
       })
     }
-    if (!usuariosGetCompany) { // Si no existen usuarios
+
+    if (!usuariosGetCompany) { // Si no existen usuarios para es compañia
       res.status(400).send({
         message: 'No existen usuarios para {companyName}'
       })
     }
     res.status(200).send({ // Si todo esta correcto, devuelvo los usuarios, en el orden en el que han sido agregados a la base de datos
       usuariosporcompañia: usuariosGetCompany
+      // res.status(200).send({data: usuarioCompany})
     })
   })
 }// getUsuarios
