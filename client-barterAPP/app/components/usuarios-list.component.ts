@@ -12,10 +12,10 @@ import {Usuario} from '../models/usuario';
 
 })
 
-export class UsuariosListComponent {
+export class UsuariosListComponent implements OnInit{
       public title: string;
       public usuarios: Usuario[];
-      public errorMessage;
+      public errorMessage: string;
 
       constructor(private _usuarioService : UsuarioService){
         this.title = 'Lista de usuarios: ';
