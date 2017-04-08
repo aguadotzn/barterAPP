@@ -13,9 +13,14 @@ export class UsuarioService{
       this.url = 'http://localhost:3002/api/';
   }
 
-  //Primero se define previamente aqui, despues en el component
+  //Primero se define previamente aqui, despues en el component que sea
   getUsuarios(){
       return this._http.get(this.url+'usuarios').map(res => res.json());
+  }
+
+
+  getUsuario(id: String){
+      return this._http.get(this.url+'usuario/'+id ).map(res => res.json());
   }
 
 

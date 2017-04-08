@@ -8,19 +8,19 @@
     <h4>{{usuario.name}} {{usuario.surname}}</h4>
     <p class=" ">{{usuario.companyName}}</p>
     <p class="buttons">
-      <a href="{{usuario.companyName}}" target="_blank" class="btn btn-ver">
+      <a [routerLink]="['/usuario',usuario._id]"  class="btn btn-ver">
         Ver
       </a>
-      <a href="{{usuario.companyName}}" target="_blank" class="btn btn-editar">
+      <a  href="{{usuario.companyName}}" class="btn btn-editar">
         Editar
       </a>
-      <a href="{{usuario.companyName}}" target="_blank" class="btn btn-eliminar">
+      <a href="{{usuario.companyName}}" class="btn btn-eliminar">
         Eliminar
       </a>
-      <a href="{{usuario.companyName}}" target="_blank" class="btn btn-empresaasociada">
+      <a href="{{usuario.companyName}}" class="btn btn-empresaasociada">
         Ver Empresa
       </a>
-      <a href="{{usuario.companyName}}" target="_blank" class="btn btn-calendario">
+      <a href="{{usuario.companyName}}" class="btn btn-calendario">
         Ver Calendario
       </a>
     </p>

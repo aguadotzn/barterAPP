@@ -17,9 +17,12 @@ var UsuarioService = (function () {
         this._http = _http;
         this.url = 'http://localhost:3002/api/';
     }
-    //Primero se define previamente aqui, despues en el component
+    //Primero se define previamente aqui, despues en el component que sea
     UsuarioService.prototype.getUsuarios = function () {
         return this._http.get(this.url + 'usuarios').map(function (res) { return res.json(); });
+    };
+    UsuarioService.prototype.getUsuario = function (id) {
+        return this._http.get(this.url + 'usuario/' + id).map(function (res) { return res.json(); });
     };
     return UsuarioService;
 }());

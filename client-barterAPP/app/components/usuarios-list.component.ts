@@ -1,4 +1,6 @@
 import {Component, OnInit} from '@angular/core';
+import {Router, ActivatedRoute, Params} from '@angular/router';
+
 
 //Lo primero que tenemos que hacer para usar un servicio dentro de un componente es importarlo
 import {UsuarioService} from '../services/usuario.service';

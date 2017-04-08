@@ -1,3 +1,9 @@
 <!DOCTYPE html>
 <title></title>
+
 <h1>Usuario detalles: </h1>
+<div class="usuario-box" *ngIf="usuario">
+  <h1>{{usuario.name}}{{usuario.surname}}</h1>
+  <p class="companyName">{{usuario.companyName}}</p>
+
+</div>

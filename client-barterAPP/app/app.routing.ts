@@ -13,8 +13,9 @@ import {UsuarioDetailComponent} from './components/usuario-detail.component';
 //Rutas de la aplicacion
 const appRoutes: Routes = [
   {path: '', component: UsuariosListComponent},
-  {path: '**', component: UsuariosListComponent},
-  {path: 'usuario/:id', component: UsuarioDetailComponent}
+  {path: 'usuario/:id', component: UsuarioDetailComponent},
+  {path: '**', component: UsuariosListComponent} // Si el usuario introduce 
+
 ];
 
 
