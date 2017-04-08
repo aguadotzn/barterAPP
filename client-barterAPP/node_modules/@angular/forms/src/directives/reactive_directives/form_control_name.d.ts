@@ -53,14 +53,9 @@ export declare const controlNameBinding: any;
  *
  * {@example forms/ts/simpleFormGroup/simple_form_group_example.ts region='Component'}
  *
- * To see `formControlName` examples with different form control types, see:
+ *  * **npm package**: `@angular/forms`
  *
- * * Radio buttons: {@link RadioControlValueAccessor}
- * * Selects: {@link SelectControlValueAccessor}
- *
- * **npm package**: `@angular/forms`
- *
- * **NgModule**: {@link ReactiveFormsModule}
+ *  * **NgModule**: {@link ReactiveFormsModule}
  *
  *  @stable
  */

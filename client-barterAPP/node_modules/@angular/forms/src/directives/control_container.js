@@ -12,11 +12,11 @@ var __extends = (this && this.__extends) || function (d, b) {
 };
 import { AbstractControlDirective } from './abstract_control_directive';
 /**
- * A directive that contains multiple {\@link NgControl}s.
+ * A directive that contains multiple {@link NgControl}s.
  *
  * Only used by the forms module.
  *
- * \@stable
+ * @stable
  */
 export var ControlContainer = (function (_super) {
     __extends(ControlContainer, _super);
@@ -26,7 +26,6 @@ export var ControlContainer = (function (_super) {
     Object.defineProperty(ControlContainer.prototype, "formDirective", {
         /**
          * Get the form to which this container belongs.
-         * @return {?}
          */
         get: function () { return null; },
         enumerable: true,
@@ -35,7 +34,6 @@ export var ControlContainer = (function (_super) {
     Object.defineProperty(ControlContainer.prototype, "path", {
         /**
          * Get the path to this container.
-         * @return {?}
          */
         get: function () { return null; },
         enumerable: true,
@@ -43,8 +41,4 @@ export var ControlContainer = (function (_super) {
     });
     return ControlContainer;
 }(AbstractControlDirective));
-function ControlContainer_tsickle_Closure_declarations() {
-    /** @type {?} */
-    ControlContainer.prototype.name;
-}
 //# sourceMappingURL=control_container.js.map
