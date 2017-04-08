@@ -7,6 +7,7 @@ var app = require('./app')
 var port = process.env.PORT || 3002 // Numero de puerto para el servidor
 
 // Conexion con MongoDB
+mongoose.Promise = global.Promise  // Esta linea 10 es pra quitar un Warning
 mongoose.connect('mongodb://localhost:27017/usuariosBarter', function (err, res) {
   // Si hay un error en la bd, excepcion
   if (err) {

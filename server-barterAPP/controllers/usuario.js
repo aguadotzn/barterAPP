@@ -29,24 +29,25 @@ function getUsuario (request, res) {
 
 // Obtener todos los usuarios
 function getUsuarios (request, res) {
-  Usuario.find().sort('-_id').exec(function (err, usuariosGet) {
+  Usuario.find().sort('_-id').exec(function (err, usuariosGet) {
     if (err) { // Si se producen errores al pedir todos los usuarios
       res.status(500).send({
         message: 'Error al devolver todos los usuarios'
       })
-    }
-    if (!usuariosGet) { // Si no existen usuarios
-      res.status(400).send({
-        message: 'No existen usuarios'
+    } else {
+      if (!usuariosGet) { // Si no existen usuarios
+        res.status(400).send({
+          message: 'No existen usuarios'
+        })
+      }
+      res.status(200).send({ // Si todo esta correcto, devuelvo los usuarios, en el orden en el que han sido agregados a la base de datos
+        usuarios: usuariosGet
       })
     }
-    res.status(200).send({ // Si todo esta correcto, devuelvo los usuarios, en el orden en el que han sido agregados a la base de datos
-      usuariosGet
-    })
   })
 }// getUsuarios
 
-// Obtener los usuarios filtrados por compañia
+// Usuarios filtrados por compañia
 function getUsuariosCompania (request, res) {
   var companyName = request.params.companyName
 
@@ -62,7 +63,7 @@ function getUsuariosCompania (request, res) {
         message: 'No existen usuarios para {companyName}'
       })
     }
-    res.status(200).send({ // Si todo esta correcto, devuelvo los usuarios, en el orden en el que han sido agregados a la base de datos
+    res.status(200).send({ // Si todo esta correcto, devuelvo los usuarios
       usuariosporcompañia: usuariosGetCompany
     })
   })
