@@ -3,7 +3,7 @@
 import {ModuleWithProviders} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 
-import { UsuariosListComponent} from './components/usuarios-list.component';
+import {UsuariosListComponent} from './components/usuarios-list.component';
 import {UsuarioDetailComponent} from './components/usuario-detail.component';
 
 
@@ -14,7 +14,7 @@ import {UsuarioDetailComponent} from './components/usuario-detail.component';
 const appRoutes: Routes = [
   {path: '', component: UsuariosListComponent},
   {path: 'usuario/:id', component: UsuarioDetailComponent},
-  {path: '**', component: UsuariosListComponent} // Si el usuario introduce 
+  {path: '**', component: UsuariosListComponent} // Si el usuario introduce
 
 ];
 
