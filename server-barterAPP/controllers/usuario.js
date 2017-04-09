@@ -17,7 +17,7 @@ function getUsuario (request, res) {
 
     if (!usuarioGet) { // Si no existe usuarios
       res.status(400).send({
-        message: 'No existen usuarios en la base de datos'
+        message: 'No existe ese usuario en la base de datos'
       })
     }
 
