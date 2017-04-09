@@ -21,6 +21,7 @@ var UsuarioService = (function () {
     UsuarioService.prototype.getUsuarios = function () {
         return this._http.get(this.url + 'usuarios').map(function (res) { return res.json(); });
     };
+    //Informacion de un usuario
     UsuarioService.prototype.getUsuario = function (id) {
         return this._http.get(this.url + 'usuario/' + id).map(function (res) { return res.json(); });
     };
