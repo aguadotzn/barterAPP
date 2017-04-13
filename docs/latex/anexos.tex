@@ -5,6 +5,8 @@
 \selectlanguage{spanish}
 \usepackage[utf8]{inputenc}
 \usepackage{placeins}
+\usepackage{float}
+\usepackage{eurosym}
 
 \RequirePackage{booktabs}
 \RequirePackage[table]{xcolor}
@@ -14,7 +16,10 @@
 % Links
 \usepackage[colorlinks]{hyperref}
 \hypersetup{
-	allcolors = {red}
+	colorlinks,
+	linkcolor={white!60!black},
+	citecolor={blue!50!black},
+     urlcolor={blue!80!black}
 }
 
 % Ecuaciones
@@ -337,16 +342,17 @@
 \makeatother
 
 
+\newcommand{\nombre}{Adrian Aguado} %%% cambio de comando
+
 % Datos de portada
-\title{título del TFG \\Documentación Técnica}
-\author{nombre alumno}
-\tutor{nombre tutor}
+\title{{\Huge barterAPP}\\[0.5cm]Manage your business time.}
+\author{\nombre}
+\tutor{Luis R.Izquierdo}
 \date{\today}
 
 \begin{document}
 
 \maketitle
-
 
 
 \cleardoublepage

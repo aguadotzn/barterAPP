@@ -4,6 +4,8 @@
 \contentsline {chapter}{\'{I}ndice de figuras}{\es@scroman {iv}}{section*.2}
 \contentsline {chapter}{\'{I}ndice de tablas}{\es@scroman {v}}{section*.3}
 \contentsline {chapter}{Introducci\IeC {\'o}n}{1}{chapter*.4}
+\contentsline {section}{\numberline {1.1}Motivacion}{1}{section.1.1}
+\contentsline {section}{\numberline {1.2}Estructura de la memoria}{1}{section.1.2}
 \contentsline {chapter}{Objetivos del proyecto}{2}{chapter*.5}
 \contentsline {chapter}{Conceptos te\IeC {\'o}ricos}{3}{chapter*.6}
 \contentsline {section}{\numberline {3.1}Secciones}{3}{section.3.1}
