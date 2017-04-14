@@ -20,6 +20,7 @@ var UsuarioDetailComponent = (function () {
     }
     UsuarioDetailComponent.prototype.ngOninit = function () {
         this.getUsuario();
+        console.log('UsuarioDetailComponent cargado correctamente!!');
     };
     //Recogemos los parametros que nos llegan a la url
     UsuarioDetailComponent.prototype.getUsuario = function () {
@@ -35,7 +36,7 @@ var UsuarioDetailComponent = (function () {
                 _this.errorMessage = error;
                 if (_this.errorMessage != null) {
                     console.log(_this.errorMessage);
-                    alert('Error en la peticion de usuarios a la base de datos.');
+                    alert('Error en la peticion del usuario a la base de datos.');
                 }
             });
         });

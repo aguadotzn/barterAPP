@@ -24,7 +24,9 @@ export class UsuarioDetailComponent {
   ){}
 
   ngOninit(){
+
     this.getUsuario();
+    console.log('UsuarioDetailComponent cargado correctamente!!')
   }
 
   //Recogemos los parametros que nos llegan a la url
@@ -45,7 +47,7 @@ export class UsuarioDetailComponent {
             this.errorMessage = <any>error;
             if(this.errorMessage != null){
               console.log(this.errorMessage);
-              alert('Error en la peticion de usuarios a la base de datos.');
+              alert('Error en la peticion del usuario a la base de datos.');
             }
         }
       );

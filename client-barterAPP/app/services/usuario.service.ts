@@ -20,7 +20,7 @@ export class UsuarioService{
 
 
   //Informacion de un usuario
-  getUsuario(id: String){
+  getUsuario(id: string){
       return this._http.get(this.url+'usuario/'+id ).map(res => res.json());
   }
 
