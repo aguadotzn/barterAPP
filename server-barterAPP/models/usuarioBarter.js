@@ -19,6 +19,8 @@ var usuarioSchema = Schema({
 // Osea si hacemos un nuevo usuario sera con todas las caracteristicas de arriba
 
 // *******************************************INFO CALENDARIOS
+var calenarioUsuario = Schema({
+})
 
 // Exportar
 module.exports = mongoose.model('Usuario', usuarioSchema)
