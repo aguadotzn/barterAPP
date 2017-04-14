@@ -17,6 +17,8 @@ import { UsuariosListComponent} from './components/usuarios-list.component';
 import { NavBarComponent} from './components/navbar.component';
 import { FooterComponent} from './components/footer.component';
 import { UsuarioDetailComponent } from './components/usuario-detail.component';
+import {UsuarioAddComponent} from './components/usuario-add.component';
+
 
 
 
@@ -32,7 +34,8 @@ import { UsuarioDetailComponent } from './components/usuario-detail.component';
                   UsuariosListComponent,
                   NavBarComponent,
                   FooterComponent,
-                  UsuarioDetailComponent
+                  UsuarioDetailComponent,
+                  UsuarioAddComponent,
                  ],
 
   providers: [appRoutingProviders],

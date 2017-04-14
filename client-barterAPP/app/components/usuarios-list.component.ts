@@ -16,11 +16,15 @@ import {Usuario} from '../models/usuario';
 
 export class UsuariosListComponent implements OnInit{
       public title: string;
+      public loading: boolean;
+
+
       public usuarios: Usuario[];
       public errorMessage: string;
 
       constructor(private _usuarioService : UsuarioService){
         this.title = 'Lista de usuarios: ';
+        this.loading = true;
       }
 
       ngOnInit(){
@@ -32,6 +36,8 @@ export class UsuariosListComponent implements OnInit{
 
               if(!this.usuarios){
                 alert('Error en el servidor');
+              }else{
+                this.loading = false;
               }
           },
           error => {

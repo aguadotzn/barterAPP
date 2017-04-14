@@ -10,43 +10,50 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
-//Lo primero que tenemos que hacer para usar un servicio dentro de un componente es importarlo
+var router_1 = require("@angular/router");
 var usuario_service_1 = require("../services/usuario.service");
-var UsuariosListComponent = (function () {
-    function UsuariosListComponent(_usuarioService) {
+var usuario_1 = require("../models/usuario");
+var UsuarioAddComponent = (function () {
+    function UsuarioAddComponent(_usuarioService, _route, _router) {
         this._usuarioService = _usuarioService;
-        this.title = 'Lista de usuarios: ';
-        this.loading = true;
+        this._route = _route;
+        this._router = _router;
+        this.title = "Añadir usuario nuevo";
     }
-    UsuariosListComponent.prototype.ngOnInit = function () {
+    UsuarioAddComponent.prototype.ngOnInit = function () {
+        this.usuario = new usuario_1.Usuario("", "", "");
+        console.log(this.usuario);
+    };
+    UsuarioAddComponent.prototype.onSubmit = function () {
         var _this = this;
-        console.log('UsuariosListComponent cargado correctamente!!');
-        this._usuarioService.getUsuarios().subscribe(function (result) {
-            console.log(result);
-            _this.usuarios = result.usuarios;
-            if (!_this.usuarios) {
+        console.log(this.usuario);
+        this._usuarioService.addUsuario(this.usuario).subscribe(function (response) {
+            if (!_this.usuario) {
                 alert('Error en el servidor');
             }
             else {
-                _this.loading = false;
+                _this.usuario = response.usuario;
+                _this._router.navigate(['/']);
             }
         }, function (error) {
             _this.errorMessage = error;
             if (_this.errorMessage != null) {
                 console.log(_this.errorMessage);
-                alert('Error en la peticion de usuarios a la base de datos.');
+                alert('Error al añadir el usuario.');
             }
         });
     };
-    return UsuariosListComponent;
+    return UsuarioAddComponent;
 }());
-UsuariosListComponent = __decorate([
+UsuarioAddComponent = __decorate([
     core_1.Component({
-        selector: 'usuarios-list',
-        templateUrl: 'app/views/usuarios-list.html',
+        selector: 'usuario-add',
+        templateUrl: 'app/views/usuario-add.html',
         providers: [usuario_service_1.UsuarioService]
     }),
-    __metadata("design:paramtypes", [usuario_service_1.UsuarioService])
-], UsuariosListComponent);
-exports.UsuariosListComponent = UsuariosListComponent;
-//# sourceMappingURL=usuarios-list.component.js.map
+    __metadata("design:paramtypes", [usuario_service_1.UsuarioService,
+        router_1.ActivatedRoute,
+        router_1.Router])
+], UsuarioAddComponent);
+exports.UsuarioAddComponent = UsuarioAddComponent;
+//# sourceMappingURL=usuario-add.component.js.map

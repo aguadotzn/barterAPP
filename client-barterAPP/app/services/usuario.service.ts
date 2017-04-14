@@ -24,5 +24,15 @@ export class UsuarioService{
       return this._http.get(this.url+'usuario/'+id ).map(res => res.json());
   }
 
+  //Añadir un usuario a la db
+  addUsuario(usuario: Usuario){
+    let json = JSON.stringify(usuario);
+    let params = json;
+    let headers = new Headers({'Content-type' : 'application/json'});
+
+    return this._http.post(this.url+'usuario', params, {headers: headers})
+    .map(res => res.json())
+  }
+
 
 }

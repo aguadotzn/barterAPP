@@ -13,7 +13,7 @@ import {Usuario} from '../models/usuario';
 
 })
 
-export class UsuarioDetailComponent {
+export class UsuarioDetailComponent implements OnInit{
   public usuario: Usuario; //Aqui guardamos el objeto que nos llega del API
   public errorMessage: string;
 
@@ -23,8 +23,7 @@ export class UsuarioDetailComponent {
     private _router: Router
   ){}
 
-  ngOninit(){
-
+  ngOnInit(){
     this.getUsuario();
     console.log('UsuarioDetailComponent cargado correctamente!!')
   }
@@ -39,7 +38,7 @@ export class UsuarioDetailComponent {
         this.usuario =  response.usuario;
 
         if(!this.usuario){ //Si no existiera el usuario
-          this._router.navigate(['/'])
+        
         }
 
       },

@@ -25,6 +25,14 @@ var UsuarioService = (function () {
     UsuarioService.prototype.getUsuario = function (id) {
         return this._http.get(this.url + 'usuario/' + id).map(function (res) { return res.json(); });
     };
+    //Añadir un usuario a la db
+    UsuarioService.prototype.addUsuario = function (usuario) {
+        var json = JSON.stringify(usuario);
+        var params = json;
+        var headers = new http_1.Headers({ 'Content-type': 'application/json' });
+        return this._http.post(this.url + 'usuario', params, { headers: headers })
+            .map(function (res) { return res.json(); });
+    };
     return UsuarioService;
 }());
 UsuarioService = __decorate([

@@ -18,7 +18,7 @@ var UsuarioDetailComponent = (function () {
         this._route = _route;
         this._router = _router;
     }
-    UsuarioDetailComponent.prototype.ngOninit = function () {
+    UsuarioDetailComponent.prototype.ngOnInit = function () {
         this.getUsuario();
         console.log('UsuarioDetailComponent cargado correctamente!!');
     };
@@ -30,7 +30,6 @@ var UsuarioDetailComponent = (function () {
             _this._usuarioService.getUsuario(id).subscribe(function (response) {
                 _this.usuario = response.usuario;
                 if (!_this.usuario) {
-                    _this._router.navigate(['/']);
                 }
             }, function (error) {
                 _this.errorMessage = error;

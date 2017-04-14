@@ -19,6 +19,7 @@ var usuarios_list_component_1 = require("./components/usuarios-list.component");
 var navbar_component_1 = require("./components/navbar.component");
 var footer_component_1 = require("./components/footer.component");
 var usuario_detail_component_1 = require("./components/usuario-detail.component");
+var usuario_add_component_1 = require("./components/usuario-add.component");
 var AppModule = (function () {
     function AppModule() {
     }
@@ -36,7 +37,8 @@ AppModule = __decorate([
             usuarios_list_component_1.UsuariosListComponent,
             navbar_component_1.NavBarComponent,
             footer_component_1.FooterComponent,
-            usuario_detail_component_1.UsuarioDetailComponent
+            usuario_detail_component_1.UsuarioDetailComponent,
+            usuario_add_component_1.UsuarioAddComponent,
         ],
         providers: [app_routing_1.appRoutingProviders],
         bootstrap: [app_component_1.AppComponent]
