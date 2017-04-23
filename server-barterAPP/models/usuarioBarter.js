@@ -19,7 +19,8 @@ var usuarioSchema = Schema({
 // Osea si hacemos un nuevo usuario sera con todas las caracteristicas de arriba
 
 // *******************************************INFO CALENDARIOS
-var calenarioUsuario = Schema({
+var calendarioUsuario = Schema({
+  //La informacion de los turnos ddebera ir aqui, o bien hacerlo de la segunda manera
 })
 
 // Exportar
