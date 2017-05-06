@@ -2,7 +2,7 @@
 # BarterAPP
 
 Multiplatform's app for manage business time.
-[![BarterAPPLogo](./barterapp_logo_nobackground.png)](https://github.com/aag0121/barterapp_logo_nobackground)
+[![BarterAPPLogo](./docs/img/barterapp_logo_nobackground.png)](https://github.com/aag0121/barterapp_logo_nobackground)
 
 ## Getting Started
 
@@ -17,7 +17,7 @@ A device with IOS, Android or Windows Phone. A Computer with internet access.
 ....
 
 ## Built With
-[![angular_node](./angular_node.png)](https://github.com/aag0121/angular_node)
+[![angular_node](./docs/img/angular_node.png)](https://github.com/aag0121/angular_node)
 
 Some of the open source technologies used in this application are:
 
