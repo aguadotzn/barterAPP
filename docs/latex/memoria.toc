@@ -15,21 +15,20 @@
 \contentsline {chapter}{Conceptos te\IeC {\'o}ricos}{5}{chapter*.6}
 \contentsline {section}{\numberline {3.1}Introducci\IeC {\'o}n}{5}{section.3.1}
 \contentsline {section}{\numberline {3.2}Concepto general del proyecto}{6}{section.3.2}
-\contentsline {subsection}{\IeC {\textquestiondown }Angular JS o Angular 2?}{6}{section*.7}
-\contentsline {section}{\numberline {3.3}An\IeC {\'a}lisis del sistema: MVC}{6}{section.3.3}
-\contentsline {subsection}{Arquitectura}{6}{section*.8}
-\contentsline {subsection}{Algoritmo}{6}{section*.9}
-\contentsline {subsection}{Detalles}{6}{section*.10}
-\contentsline {section}{\numberline {3.4}Secciones}{6}{section.3.4}
-\contentsline {subsection}{Subsecciones}{6}{section*.11}
-\contentsline {subsubsection}{Subsubsecciones}{6}{section*.12}
-\contentsline {section}{\numberline {3.5}Referencias}{6}{section.3.5}
-\contentsline {section}{\numberline {3.6}Im\IeC {\'a}genes}{7}{section.3.6}
-\contentsline {section}{\numberline {3.7}Listas de items}{7}{section.3.7}
-\contentsline {section}{\numberline {3.8}Tablas}{8}{section.3.8}
-\contentsline {chapter}{T\IeC {\'e}cnicas y herramientas}{9}{chapter*.13}
-\contentsline {section}{\numberline {4.1}Herramientas}{9}{section.4.1}
-\contentsline {subsection}{Entorno de desarrollo: IDE}{9}{section*.14}
-\contentsline {chapter}{Aspectos relevantes del desarrollo del proyecto}{10}{chapter*.15}
-\contentsline {chapter}{Trabajos relacionados}{11}{chapter*.16}
-\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{12}{chapter*.17}
+\contentsline {subsection}{\IeC {\textquestiondown }Angular JS o Angular 2?}{7}{section*.7}
+\contentsline {section}{\numberline {3.3}An\IeC {\'a}lisis del sistema: MVC}{7}{section.3.3}
+\contentsline {section}{\numberline {3.4}Arquitectura}{7}{section.3.4}
+\contentsline {subsection}{Detalles}{7}{section*.8}
+\contentsline {section}{\numberline {3.5}Secciones}{7}{section.3.5}
+\contentsline {subsection}{Subsecciones}{7}{section*.9}
+\contentsline {subsubsection}{Subsubsecciones}{7}{section*.10}
+\contentsline {section}{\numberline {3.6}Referencias}{8}{section.3.6}
+\contentsline {section}{\numberline {3.7}Im\IeC {\'a}genes}{8}{section.3.7}
+\contentsline {section}{\numberline {3.8}Listas de items}{9}{section.3.8}
+\contentsline {section}{\numberline {3.9}Tablas}{9}{section.3.9}
+\contentsline {chapter}{T\IeC {\'e}cnicas y herramientas}{11}{chapter*.11}
+\contentsline {section}{\numberline {4.1}Herramientas}{11}{section.4.1}
+\contentsline {subsection}{Entorno de desarrollo: IDE}{11}{section*.12}
+\contentsline {chapter}{Aspectos relevantes del desarrollo del proyecto}{12}{chapter*.13}
+\contentsline {chapter}{Trabajos relacionados}{13}{chapter*.14}
+\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{14}{chapter*.15}

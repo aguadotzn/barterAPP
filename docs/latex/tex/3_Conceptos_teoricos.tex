@@ -4,14 +4,22 @@ La parte del proyecto más ardua ha sido la de aprender a utilizar \emph{framewo
 \section{Introducción}\label{teorico-introduccion}
 El desarrollo de aplicaciones informáticas evoluciona continuamente para adaptarse a las tecnologías de la información y las comunicaciones (TIC). El auge de Internet y de la web ha influido notablemente en el desarrollo de software durante los últimos años. Hoy en día la interfaz de los sistemas de información se implementa utilizando tecnologías web que ofrecen numerosas ventajas tales como el uso de una interfaz uniforme y la mejora del mantenimiento del sistema. Sin embargo, la existencia de numerosos estándares y los intereses de los fabricantes de tecnologías web dificultan el desarrollo de este tipo de aplicaciones. 
 
-En los principios de la informática las relaciones en entre los usuarios y los programas de los que hacían uso era muy diferente a lo que tenemos ahora. Ahora se potencia el diseño basado en usuario
+En los principios de la informática las relaciones en entre los usuarios y los programas de los que hacían uso era muy diferente a lo que tenemos ahora. Ahora se potencia el diseño basado en usuario, antes es potencia más que el programa estuviera implementado de manera idónea antes que la experiencia que el usuario tenía al hacer uso del mismo. Obviamente ahora también se impulsa esa manera de desarrollar código, lo que se conoce como \emph{clean code} \cite{https://g.co/kgs/VLR4mn}, pero en un mundo en el que la competitividad es tan alta prima sobre todo la experiencia del usuario final, que a fin y al cabo va a ser el que interactúa con tu producto ya sea web o móvil. 
 
-\imagen{uxschema}{Esquema \emph{UI, UX IxD}, fuente \emph{kambrica.com}.}
+\imagen{meanjs}{Esquema \emph{UI, UX IxD}, fuente \emph{dealfuel.com}.}
+
+
+El mundo de las aplicaciones web es un mundo de constante evolución y actualización, donde aparecen nuevas tecnologías que ofrecen tanto mejoras visuales que mejoran la experiencia del usuario como de rendimiento. Este tipo de tecnologías abren un abanico inmenso de posibilidades, y hacen pensar a los analistas y programadores de aplicaciones web que puede haber otras soluciones que mejoren su aplicación, pero que no estaban disponibles cuando definieron la arquitectura y el diseño de sus aplicaciones. Es un mundo que avanza tan rápido que en muchas ocasiones es imposible estar al día de todos los  \emph{frameworks} o tecnologías que van surgiendo, por eso es mejor focalizar los esfuerzos en alguna en concreto e intentar aprenderla de la mejor manera posible. 
+
+
 
 
 \section{Concepto general del proyecto}\label{teorico-general}
+Hace algún para realizar una web existía una gran barrera a la hora de entender el concepto de cliente y servidor. Por un lado estaba la parte del cliente, la cual se realizaba en lenguajes puros que todos conocemos como \emph{HTML} y \emph{CSS} para las hojas de estilo. Por otro lado estaba el servidor lo cuál significa cambiar totalmente de lenguaje, lo que suponía un salto para un programador web que debía conocer ambos lados para crear webs seguras y robustas, la parte del cliente es la que interactúa con el usuario, la que nosotros vemos, y la parte del servidor es la parte que conecta con la base de datos, en caso de que sea necesario.
 
+Todo cambio cuando se popularizó Javascript para la realización webapps, la posibilidad de crear web con un mismo lenguaje en todas las partes resulta muy atractiva tanto para el programador como para la lógica del propio programa o web ya que se disminuye el número de errores o se consiguen localizar de manera más sencilla al no tener que estar cambiando de lenguaje. En este punto es donde surge el stack MEAN:
 
+\imagen{uxschema}{Esquema \emph{UI, UX IxD}, fuente \emph{kambrica.com}.}
 
 \subsection{¿Angular JS o Angular 2?}\label{angular-js-o-angular-2}
 
@@ -20,10 +28,11 @@ En los principios de la informática las relaciones en entre los usuarios y los 
 \section{Análisis del sistema: MVC}\label{analisis-sistema-mvc}
 
 
-\subsection{Arquitectura}\label{arquitectura}
+\section{Arquitectura}\label{arquitectura}
+
+Como se ha comentado en secciones anteriores la aplicación tiene dos sistemas bien diferenciados: servidor y cliente. En esta sección se expondrán las arquitecturas de cada una de ellas así como de la aplicación competente.
 
 
-\subsection{Algoritmo}\label{algoritmo}
 
 
 \subsection{Detalles}\label{detalles}
@@ -84,7 +93,7 @@ Existen tres posibilidades:
 Igualmente se pueden usar los comandos específicos de \LaTeX o bien usar alguno de los comandos de la plantilla.
 
 \tablaSmall{Herramientas y tecnologías utilizadas en cada parte del proyecto}{l c c c c}{herramientasportipodeuso}
-{ \multicolumn{1}{l}{Herramientas} & App AngularJS & API REST & BD & Memoria \\}{ 
+{ \multicolumn{1}{l}{Tecnologías} & Front-End & Back-End & BD & Memoria \\}{ 
 HTML5 & X & & &\\
 CSS3 & X & & &\\
 BOOTSTRAP & X & & &\\
