@@ -7,31 +7,65 @@ No se pretende que este apartado se convierta en un capítulo de un libro dedica
 He de decir que durante el desarrollo del proyecto tanto las herramientas cómo las técnicas a utilizar han ido mutando debido a que yo mismo iba descubriendo nuevas técnicas o nuevas herramientas que mejoraban mi manera de hacer el código o me facilitaban mi manera de trabajar. No ha sido así con la tecnología ya que esto hubiera supuesto más problemas que ventajas. El estar cambiando de herramienta puede que haya sido uno de los mayores errores del proyecto dado que siempre es mejor focalizarse en una sola antes de intentar abarcar demasiado. Expongo un ejemplo en las siguientes páginas.
 
 
-\section{Herramientas}\label{Herramientas}
-En este capítulo se describen las herramientas utilizadas para el desarrollo del sistema. Las siguientes líneas servirán al lector para conocer algunas de las tecnologías más modernas y poco conocidas que se han usado en el proyecto. Se obvian el nombrar directamente lenguajes web como pueden ser \emph{Javascript}, \emph{HTML} o \emph{CSS}. Existe mucha información accesible en la web sobre ellas y se hará más incapié en las tecnologías principales que usan propiamente éstos lenguajes que no son tan comunes.
+\section{Metodologías}\label{metodologias}
+En este apartado se describen las metodologías utilizadas para el desarrollo del sistema.
+
+\subsection{Scrum}\label{scrum}
+Scrum es un sistema de desarrollo de software que está dentro de las metologías ágiles. Principalmente, se basa en la creación y asignación de tareas, normalmente escribiéndolas en un postit de determinado color. Esta tarea entrara en un sistema iterativo que controlará los cambios de estado de la tarea, hasta que esta resulta completada y se descarta del panel de scrum.
+
+\subsection{MVC: Model-View-Controller}\label{mvc}
+Es un patrón de diseño software o una propuesta utilizada para implementar sistemas donde se requiere el uso de interfaces de usuario. Surge de la necesidad de crear software más robusto con un ciclo de vida más adecuado, donde se potencie la facilidad de mantenimiento, reutilización del código y la separación de conceptos. Es decir surge de la idea de separar el modelo por un lado, la vista por otro y por último el controlador.
+
+\imagen{mvcschema}{fuente \emph{elaboración propia}.}
 
 
-\subsection{Herramienta: Atom}\label{entorno-desarrollo}
+\section{Herramientas}\label{herramientas}
+En este apartado se describen las herramientas utilizadas para el desarrollo del sistema.
+
+\subsection{Atom}\label{entorno-desarrollo}
 \hyperlink{https://atom.io/}{Atom} es un editor de texto moderno de código abierto desarrollado por  \hyperlink{http://brackets.io/}{GitHub}  que se ha escogido en este proyecto para desarrollar la aplicación debido a que esta desarrollado utilizando tecnologías web, luego ha sido creado por y para la web. Es posible ampliar sus funcionalidades a través de plugins desarrollados con \emph{Node.js} que puede ser instalados de una forma sencilla a través del gestor de paquetes internos con el que cuenta, así como diferentes tipos de temas. Esta posibilidad hace que se convierta en un editor de texto muy personal, ya que es el mismo desarrollador el que elige las características que desea tener sin afectar mínimamente al rendimiento
 
 \imagen{logo-atom}{fuente \emph{atom.io}.}
 
-\subsubsection{Detalles: IDE}\label{detalle IDE}
+\subsubsection{Alternativas estudiadas: otros }\label{detalle IDE}
 Tal y como he nombrado en la introducción la necesidad o la curiosidad por mejorar mi trabajo hicieron que encontrara nuevas herramientas durante el desarrollo del proyecto, es el caso, por ejemplo, del entorno de desarrollo. Al comienzo empecé con \hyperlink{http://brackets.io/}{brackets} como IDE, ya que era el entorno que utilizaba el profesor de los cursos que me recomendó el tutor. Después y atraído por el uso a diario de Eclipse como herramienta principal de trabajo durante mi período de prácticas con la universidad decidí que podía ser una buena idea el emplearlo también para realizar la API, craso error dado que Eclipse no fue creado para el mundo del desarrollo web por lo que me vi con que cada vez me encontraba con menos soporte para lenguajes, sin ir más lejos eclipse no presenta, actualmente, soporte para  \emph{typescript} el lenguaje principal de desarrollo de  \emph{angular 2}. Por fin di con el IDE perfecto para desarrollar entornos web que es el descrito en el párrafo anterior.
 
-\subsection{Herramienta: Robomongo}\label{entorno-desarrollo}
+\subsection{Robomongo}\label{entorno-desarrollo}
 \hyperlink{http://http//robomongo.org/}{Robomongo} es una interfaz para \emph{tMongoDB} que nos permite conectarnos al servidor de base de datos de forma sencilla ya que nada más arrancarlo podemos crear una nueva conexión. Resulta también muy sencillo de utilizar.
 
 \imagen{logo-robomongo}{ fuente \emph{robomongo.org}.}
 
-
-\subsection{Herramienta/Testing: POSTMAN}\label{postman}
-Las pruebas iniciales se realizaron con  \hyperlink{https://www.getpostman.com}{Postman}. Esta herramienta nos permite construir y gestionar de una forma cómoda nuestras peticiones a servicios \hyperlink{https://es.wikipedia.org/wiki/Transferencia_de_Estado_Representacional}{REST} (Post,Get,etc). Su manejo es realmente intuitivo ya que simplemente tenemos que definir la petición que queremos realizar y pulsar el botón de enviar. Es realmente sencilla de usar y está disponible como extensión del navegador Chrome, pero también como aplicación de escritorio.
-
-\imagen{logo-postman}{fuente \emph{getpostman.com}.}
+\subsection{Firefox for developers}\label{firefox}
+Para el navegador he elegido Firefox en su versión para desarrolladores: \hyperlink{https://www.mozilla.org/es-ES/firefox/developer}{Developer Edition} . El cuál considero que posee todas las herramientas esenciales para testear y probar una aplicación web.
 
 
-\subsection{Framework: Angular 2}\label{tecnologias-angular}
+
+
+\section{Otras herramientas}\label{herramientas}
+En este apartado se describen otras herramientas que se han empleado como son el alojamiento web, el alojamiento de la base de datos, los repositorios o la gestión de la bibliografía.
+
+ \subsection{Heroku}\label{heroku}
+\hyperlink{https://www.heroku.com/}{Heroku}  es un servicio de almacenamiento en la nube que además tiene mecanismos y herramientas para que la puesta en producción de las aplicaciones web sea prácticamente automática.
+
+ \subsection{DAtabase}\label{heroku}
+ Alojamiento para 
+
+  \subsubsection{Alternativas estudiada: Plataformas en la nube}\label{tnube}
+  Plataformas en la nube como Amazon AWS u OpenShift son muy populares hoy en día y permiten prácticamente lo mismo que la aplicación elegida. Se ha elegido Heroku finalmente por la facilidad de la puesta en marcha de la aplicación en producción.
+  
+   \subsection{Github}\label{github}
+   Para el control de versiones se ha utilizado \hyperlink{https://www.github.com/}{Github}. 
+   
+    \subsection{Zenhub}\label{zenhub}
+    
+     \subsubsection{Alternativas estudiadas: Trello}\label{trello}
+     
+      \subsection{Mendeley}\label{mendeley}
+
+\section{Tecnologías}\label{tecnologias}
+ En este apartado se describen las tecnologías utilizadas para el desarrollo del sistema. Las siguientes líneas servirán al lector para conocer algunas de las tecnologías más modernas y poco conocidas que se han usado en el proyecto. Se obvian el nombrar directamente lenguajes web como pueden ser \emph{Javascript}, \emph{HTML} o \emph{CSS}. Existe mucha información accesible en la web sobre ellas y se hará más incapié en las tecnologías principales que usan propiamente éstos lenguajes que no son tan comunes.
+ 
+ \subsection{Front-end: Angular 2}\label{tecnologias-angular}
  \hyperlink{https://angular.io}{Angular} es un framework cliente MVC \emph{Javascript} de código abierto creado en sus inicios por Google, permite crear  \emph{Single-Page Applications} (\hyperlink{https://es.wikipedia.org/wiki/Single-page_application}{SPA})  cuya principal característica es la de dar al usuario la impresión de que todo sucede en la misma página, sin hacer recargas de la misma. Es decir, trata de emular a las aplicaciones de escritorio, lo que se trata es de intercambiar las vista y no de recargar la página. En la actualidad cuenta con una amplia comunidad de desarrolladores  que dan soporte al framework.  Algunas características de Angular son:
  
 \begin{itemize}
@@ -93,16 +127,25 @@ Algunos de los módulos adicionales empleados en el proyecto han sido:
 4-
 \end{itemize}
 
+\subsection{Front-end: Boostrap}\label{tecnologias-boostrap}
+\hyperlink{https://www.getbootstrap.com/}{Boostrap} es un framework CSS desarrollado inicialmente  por Twitter que permite dar forma a un sitio web mediante librerías CSS que incluyen tipografías, botones, cuadros, menús y otros elementos que pueden ser utilizados en cualquier sitio web.
 
-\subsection{Framework: Node js}\label{tecnologias-nodejs}
+Bootstrap esta orientado a facilitar el diseño y elaboración de aplicaciones web utilizando un sistema de cuadrículas que ayuda a conseguir interfaces claras y  \hyperlink{https://es.wikipedia.org/wiki/Diseño_web_adaptable}{'responsive'}, haciendo que las aplicaciones se vean con diferentes diseños en diferentes dispositivos, dependiendo del espacio del que disponga nuestra aplicación.
+\imagen{logo-boostrap}{fuente \emph{getbootstrap.com}.}
+
+
+\subsection{Back-end: Node js}\label{tecnologias-nodejs}
 \hyperlink{https://nodejs.org/}{Nodejs} es un entorno de programación pensado para realizar funciones de servidor. Permite la construcción de servidores de forma muy sencilla y rápida, además se puede aplicar para otros usos. La ejecución es asíncrona. Esto significa que las funciones no son ejecutadas secuencialmente (si existen dos llamadas consecutivas, no es necesario que acabe la primera llamada para ejecutar la segunda).
 Está pensado para ser un gestor de entradas y salidas. No ha sido diseñado para ejecutar gran cantidad de código, sino para realizar comunicaciones muy rápidas y abundantes, tanto con eventos locales como por comunicación por red.
 
 \imagen{logo-nodejs}{fuente \emph{elaboración propia}.}
 
+\subsubsection{Alternativa estudiada: PHP}\label{php}
+Un lenguaje ampliamente conocido, con una extensa documentación y multitud de ejemplos. No se integra tan bien como \emph{node js} con \emph{MongoDB}. 
 
 
-\subsection{Framework: Express }\label{tecnologias-expressjs}
+
+\subsection{Back-end: Express }\label{tecnologias-expressjs}
 \hyperlink{http://expressjs.com/}{Express js} es un framework web flexible para \emph{Node js} que proporciona un conjunto robusto de características para aplicaciones web y móviles, proporciona una capa delgada de características fundamentales de aplicaciones web. Facilita la creación de API’s gracias la gran variedad de métodos HTTP y middleware que proporciona.
 
 \imagen{logo-express}{fuente \emph{expressjs.com}.}
@@ -115,10 +158,24 @@ En las colecciones se almacenan contenidos que pueden tener diferentes campos. E
 
 \imagen{logo-mongodb}{fuente \emph{mongodb.com}.}
 
+\subsubsection{Alternativa estudiada: Cassandra}\label{cassandra}
+\hyperlink{https://www.cassandra.apache.org/}{Apache Cassandra} es una de las mejores opciones cuando la escalabilidad, la alta disponibilidad y la integridad de los datos son las prioridades de un proyecto.
 
-\subsection{Framework: Boostrap}\label{tecnologias-boostrap}
-\hyperlink{https://www.getbootstrap.com/}{Boostrap} es un framework CSS desarrollado inicialmente  por Twitter que permite dar forma a un sitio web mediante librerías CSS que incluyen tipografías, botones, cuadros, menús y otros elementos que pueden ser utilizados en cualquier sitio web.
 
-Bootstrap esta orientado a facilitar el diseño y elaboración de aplicaciones web utilizando un sistema de cuadrículas que ayuda a conseguir interfaces claras y  \hyperlink{https://es.wikipedia.org/wiki/Diseño_web_adaptable}{'responsive'}, haciendo que las aplicaciones se vean con diferentes diseños en diferentes dispositivos, dependiendo del espacio del que disponga nuestra aplicación.
-\imagen{logo-boostrap}{fuente \emph{getbootstrap.com}.}
+
+
+
+
+
+\section{Testing}\label{testing}
+En este apartado se describen algunas de las herramientas utilizadas para el testing.
+
+
+\subsection{Postman}\label{postman}
+Las pruebas iniciales se realizaron con  \hyperlink{https://www.getpostman.com}{Postman}. Esta herramienta nos permite construir y gestionar de una forma cómoda nuestras peticiones a servicios \hyperlink{https://es.wikipedia.org/wiki/Transferencia_de_Estado_Representacional}{REST} (Post,Get,etc). Su manejo es realmente intuitivo ya que simplemente tenemos que definir la petición que queremos realizar y pulsar el botón de enviar. Es realmente sencilla de usar y está disponible como extensión del navegador Chrome, pero también como aplicación de escritorio.
+
+\imagen{logo-postman}{fuente \emph{getpostman.com}.}
+
+
+
 
