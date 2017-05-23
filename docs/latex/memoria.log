@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  15 MAY 2017 18:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  23 MAY 2017 15:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1393,7 +1393,7 @@ Package babel Info: Redefining spanish shorthand "?
 LaTeX Warning: Citation `https://g.co/kgs/VLR4mn' on page 5 undefined on input 
 line 7.
 
-<./img/meanjs.png, id=522, 1027.84pt x 493.845pt>
+<./img/meanjs.png, id=524, 1027.84pt x 493.845pt>
 File: ./img/meanjs.png Graphic file (type png)
  <use ./img/meanjs.png>
 Package pdftex.def Info: ./img/meanjs.png used on input line 9.
@@ -1469,7 +1469,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 21.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 21.
- [6 <./img/meanjs.png>] <./img/uxschema.jpg, id=531, 1072.005pt x 538.01pt>
+ [6 <./img/meanjs.png>] <./img/uxschema.jpg, id=533, 1072.005pt x 538.01pt>
 File: ./img/uxschema.jpg Graphic file (type jpg)
 
 <use ./img/uxschema.jpg>
@@ -1914,15 +1914,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 516.
  ) 
 Here is how much of TeX's memory you used:
  11489 strings out of 493014
  162277 string characters out of 6133352
- 313145 words of memory out of 5000000
+ 313268 words of memory out of 5000000
  14788 multiletter control sequences out of 15000+600000
  12945 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1938,10 +1935,10 @@ cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local
 /texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/
 texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local
 /texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on memoria.pdf (24 pages, 525951 bytes).
+Output written on memoria.pdf (24 pages, 525760 bytes).
 PDF statistics:
- 626 PDF objects out of 1000 (max. 8388607)
- 569 compressed objects within 6 object streams
+ 627 PDF objects out of 1000 (max. 8388607)
+ 570 compressed objects within 6 object streams
  59 named destinations out of 1000 (max. 500000)
  237 words of extra memory for PDF output out of 10000 (max. 10000000)
 
