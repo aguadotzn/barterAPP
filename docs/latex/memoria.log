@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  23 MAY 2017 20:11
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  23 MAY 2017 22:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -661,6 +661,12 @@ LaTeX Info: Redefining \% on input line 28.
 
 LaTeX Warning: Label `entorno-desarrollo' multiply defined.
 
+
+LaTeX Warning: Label `herramientas' multiply defined.
+
+
+LaTeX Warning: Label `heroku' multiply defined.
+
 ) (./tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.aux)
 (./tex/6_Trabajos_relacionados.aux)
 (./tex/7_Conclusiones_Lineas_de_trabajo_futuras.aux))
@@ -736,7 +742,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-<./img/cabecera.pdf, id=112, 617.67549pt x 135.51413pt>
+<./img/cabecera.pdf, id=132, 617.67549pt x 135.51413pt>
 File: ./img/cabecera.pdf Graphic file (type pdf)
 
 <use ./img/cabecera.pdf>
@@ -746,7 +752,7 @@ Package pdftex.def Info: ./img/cabecera.pdf used on input line 394.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
 )
-<./img/escudoInfor.pdf, id=113, 618.11432pt x 737.07487pt>
+<./img/escudoInfor.pdf, id=133, 618.11432pt x 737.07487pt>
 File: ./img/escudoInfor.pdf Graphic file (type pdf)
 
 <use ./img/escudoInfor.pdf>
@@ -959,29 +965,29 @@ Package spanish Warning: Replacing `OT1/cmr/bx/sc' by
 (spanish)                faked small caps on input line 5.
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 45.
+(babel)             in language append on input line 38.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 45.
+(babel)             in language append on input line 38.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 45.
+(babel)             in language append on input line 38.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 45.
+(babel)             in language append on input line 38.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 45.
+(babel)             in language append on input line 38.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 45.
+(babel)             in language append on input line 38.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 45.
+(babel)             in language append on input line 38.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 45.
+(babel)             in language append on input line 38.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 45.
+(babel)             in language append on input line 38.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 45.
+(babel)             in language append on input line 38.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 45.
+(babel)             in language append on input line 38.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 45.
+(babel)             in language append on input line 38.
 [3
 
 ])
@@ -1396,7 +1402,7 @@ Package babel Info: Redefining spanish shorthand "?
 LaTeX Warning: Citation `https://g.co/kgs/VLR4mn' on page 5 undefined on input 
 line 7.
 
-<./img/meanjs.png, id=544, 1027.84pt x 493.845pt>
+<./img/meanjs.png, id=573, 1027.84pt x 493.845pt>
 File: ./img/meanjs.png Graphic file (type png)
  <use ./img/meanjs.png>
 Package pdftex.def Info: ./img/meanjs.png used on input line 9.
@@ -1472,7 +1478,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 21.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 21.
- [6 <./img/meanjs.png>] <./img/uxschema.jpg, id=553, 1072.005pt x 538.01pt>
+ [6 <./img/meanjs.png>] <./img/uxschema.jpg, id=582, 1072.005pt x 538.01pt>
 File: ./img/uxschema.jpg Graphic file (type jpg)
 
 <use ./img/uxschema.jpg>
@@ -1742,7 +1748,7 @@ Package babel Info: Redefining spanish shorthand "?
 
 
 ]
-<./img/mvcschema.png, id=583, 672.5125pt x 351.3125pt>
+<./img/mvcschema.png, id=613, 672.5125pt x 351.3125pt>
 File: ./img/mvcschema.png Graphic file (type png)
 
 <use ./img/mvcschema.png>
@@ -1761,7 +1767,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 22.
 
-<./img/logo-atom.jpg, id=587, 602.25pt x 235.88126pt>
+<./img/logo-atom.jpg, id=617, 602.25pt x 235.88126pt>
 File: ./img/logo-atom.jpg Graphic file (type jpg)
 
 <use ./img/logo-atom.jpg>
@@ -1798,7 +1804,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 28.
 [12 <./img/mvcschema.png>]
-<./img/logo-robomongo.png, id=600, 1027.84pt x 1027.84pt>
+<./img/logo-robomongo.png, id=629, 1027.84pt x 1027.84pt>
 File: ./img/logo-robomongo.png Graphic file (type png)
 
 <use ./img/logo-robomongo.png>
@@ -1835,7 +1841,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 36.
 [13 <./img/logo-atom.jpg>]
-<./img/logo-firefox.png, id=610, 256.96pt x 256.96pt>
+<./img/logo-firefox.png, id=638, 256.96pt x 256.96pt>
 File: ./img/logo-firefox.png Graphic file (type png)
 
 <use ./img/logo-firefox.png>
@@ -1950,14 +1956,14 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 72.
  [16]
-<./img/logo-angular.png, id=649, 369.38pt x 369.38pt>
+<./img/logo-angular.png, id=675, 369.38pt x 369.38pt>
 File: ./img/logo-angular.png Graphic file (type png)
 
 <use ./img/logo-angular.png>
 Package pdftex.def Info: ./img/logo-angular.png used on input line 85.
 (pdftex.def)             Requested size: 332.09775pt x 332.10074pt.
 
-<./img/angularschema.png, id=650, 748.7975pt x 301.125pt>
+<./img/angularschema.png, id=676, 748.7975pt x 301.125pt>
 File: ./img/angularschema.png Graphic file (type png)
 
 <use ./img/angularschema.png>
@@ -2016,7 +2022,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 112.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 112.
- [18 <./img/angularschema.png>] <./img/angularclihelloworld.png, id=666, 222.83
+ [18 <./img/angularschema.png>] <./img/angularclihelloworld.png, id=692, 222.83
 25pt x 292.09125pt>
 File: ./img/angularclihelloworld.png Graphic file (type png)
 
@@ -2051,7 +2057,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 123.
  [19 <./img/angularclihelloworld.png>]
-<./img/logo-boostrap.png, id=674, 391.4625pt x 180.675pt>
+<./img/logo-boostrap.png, id=700, 391.4625pt x 180.675pt>
 File: ./img/logo-boostrap.png Graphic file (type png)
 
 <use ./img/logo-boostrap.png>
@@ -2084,7 +2090,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 142.
  [20 <./img/logo-boostrap.png>]
-<./img/logo-nodejs.png, id=687, 642.4pt x 373.395pt>
+<./img/logo-nodejs.png, id=713, 642.4pt x 373.395pt>
 File: ./img/logo-nodejs.png Graphic file (type png)
 
 <use ./img/logo-nodejs.png>
@@ -2094,7 +2100,7 @@ Package pdftex.def Info: ./img/logo-nodejs.png used on input line 143.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
 )
-<./img/logo-express.png, id=689, 466.74374pt x 141.52875pt>
+<./img/logo-express.png, id=715, 466.74374pt x 141.52875pt>
 File: ./img/logo-express.png Graphic file (type png)
 
 <use ./img/logo-express.png>
@@ -2127,7 +2133,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 158.
  [21 <./img/logo-nodejs.png (PNG copy)> <./img/logo-express.png>] <./img/logo-m
-ongodb.png, id=700, 414.54875pt x 485.815pt>
+ongodb.png, id=726, 414.54875pt x 485.815pt>
 File: ./img/logo-mongodb.png Graphic file (type png)
 
 <use ./img/logo-mongodb.png>
@@ -2173,7 +2179,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 172.
 
-<./img/logo-postman.png, id=713, 513.92pt x 513.92pt>
+<./img/logo-postman.png, id=738, 513.92pt x 513.92pt>
 File: ./img/logo-postman.png Graphic file (type png)
 
 <use ./img/logo-postman.png>
@@ -2444,15 +2450,9 @@ LaTeX Info: Redefining \% on input line 28.
 (./tex/7_Conclusiones_Lineas_de_trabajo_futuras.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 516.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 516.
+Package rerunfilecheck Info: File `memoria.out' has not changed.
+(rerunfilecheck)             Checksum: B70242037C3633876B0997D2F88F6E61;2027.
 
-
-Package rerunfilecheck Warning: File `memoria.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `memoria.out':
-(rerunfilecheck)             Before: AEC57B6DA3EBD8C609565BB248696111;1712
-(rerunfilecheck)             After:  B70242037C3633876B0997D2F88F6E61;2027.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2465,13 +2465,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 516.
  ) 
 Here is how much of TeX's memory you used:
- 11926 strings out of 493014
- 168880 string characters out of 6133352
- 314030 words of memory out of 5000000
- 15128 multiletter control sequences out of 15000+600000
+ 11927 strings out of 493014
+ 168898 string characters out of 6133352
+ 315370 words of memory out of 5000000
+ 15132 multiletter control sequences out of 15000+600000
  12945 words of font info for 45 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,12n,40p,1100b,678s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,12n,40p,1100b,699s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{www.mendeley.com/} has been referenced but does n
 ot exist, replaced by a fixed one
 
@@ -2543,15 +2543,6 @@ ot exist, replaced by a fixed one
 pdfTeX warning (dest): name{https://atom.io/} has been referenced but does not 
 exist, replaced by a fixed one
 
-pdfTeX warning (dest): name{chapter*.27} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.26} has been referenced but does not exist
-, replaced by a fixed one
-
-pdfTeX warning (dest): name{chapter*.25} has been referenced but does not exist
-, replaced by a fixed one
-
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></us
@@ -2563,10 +2554,10 @@ l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on memoria.pdf (38 pages, 983696 bytes).
+Output written on memoria.pdf (38 pages, 984847 bytes).
 PDF statistics:
- 829 PDF objects out of 1000 (max. 8388607)
- 735 compressed objects within 8 object streams
- 141 named destinations out of 1000 (max. 500000)
- 297 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 847 PDF objects out of 1000 (max. 8388607)
+ 753 compressed objects within 8 object streams
+ 138 named destinations out of 1000 (max. 500000)
+ 337 words of extra memory for PDF output out of 10000 (max. 10000000)
 
