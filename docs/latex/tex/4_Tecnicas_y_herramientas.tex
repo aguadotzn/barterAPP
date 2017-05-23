@@ -11,34 +11,61 @@ He de decir que durante el desarrollo del proyecto tanto las herramientas cómo 
 En este capítulo se describen las herramientas utilizadas para el desarrollo del sistema. Las siguientes líneas servirán al lector para conocer algunas de las tecnologías más modernas y poco conocidas que se han usado en el proyecto. Se obvian el nombrar directamente lenguajes web como pueden ser \emph{Javascript}, \emph{HTML} o \emph{CSS}. Existe mucha información accesible en la web sobre ellas y se hará más incapié en las tecnologías principales que usan propiamente éstos lenguajes que no son tan comunes.
 
 
-\subsection{Entorno de desarrollo: IDE}\label{entorno-desarrollo}
+\subsection{Herramienta: Atom}\label{entorno-desarrollo}
 \hyperlink{https://atom.io/}{Atom} es un editor de texto moderno de código abierto desarrollado por  \hyperlink{http://brackets.io/}{GitHub}  que se ha escogido en este proyecto para desarrollar la aplicación debido a que esta desarrollado utilizando tecnologías web, luego ha sido creado por y para la web. Es posible ampliar sus funcionalidades a través de plugins desarrollados con \emph{Node.js} que puede ser instalados de una forma sencilla a través del gestor de paquetes internos con el que cuenta, así como diferentes tipos de temas. Esta posibilidad hace que se convierta en un editor de texto muy personal, ya que es el mismo desarrollador el que elige las características que desea tener sin afectar mínimamente al rendimiento
 
-\imagen{atom}{fuente \emph{web atom.io}.}
+\imagen{logo-atom}{fuente \emph{web atom.io}.}
 
 \subsubsection{Detalles: IDE}\label{detalle IDE}
 Tal y como he nombrado en la introducción la necesidad o la curiosidad por mejorar mi trabajo hicieron que encontrara nuevas herramientas durante el desarrollo del proyecto, es el caso, por ejemplo, del entorno de desarrollo. Al comienzo empecé con \hyperlink{http://brackets.io/}{brackets} como IDE, ya que era el entorno que utilizaba el profesor de los cursos que me recomendó el tutor. Después y atraído por el uso a diario de Eclipse como herramienta principal de trabajo durante mi período de prácticas con la universidad decidí que podía ser una buena idea el emplearlo también para realizar la API, craso error dado que Eclipse no fue creado para el mundo del desarrollo web por lo que me vi con que cada vez me encontraba con menos soporte para lenguajes, sin ir más lejos eclipse no presenta, actualmente, soporte para  \emph{typescript} el lenguaje principal de desarrollo de  \emph{angular 2}. Por fin di con el IDE perfecto para desarrollar entornos web que es el descrito en el párrafo anterior.
 
-\subsection{Entorno de desarrollo: POSTMAN}\label{entorno-desarrollo}
+\subsection{Herramienta: Robomongo}\label{entorno-desarrollo}
+\hyperlink{http://http//robomongo.org/}{Robomongo} es una interfaz para \emph{tMongoDB} que nos permite conectarnos al servidor de base de datos de forma sencilla ya que nada más arrancarlo podemos crear una nueva conexión. Resulta también muy sencillo de utilizar.
+
+\imagen{logo-robomongo}{ fuente \emph{robomongo.org}.}
 
 
-\imagen{uxschema}{Esquema \emph{UI, UX IxD}, fuente \emph{kambrica.com}.}
+\subsection{Herramienta/Testing: POSTMAN}\label{entorno-desarrollo}
+Las pruebas iniciales se realizaron con  \hyperlink{https://www.getpostman.com}{Postman}. Esta herramienta nos permite construir y gestionar de una forma cómoda nuestras peticiones a servicios \hyperlink{https://es.wikipedia.org/wiki/Transferencia_de_Estado_Representacional}{REST} (Post,Get,etc). Su manejo es realmente intuitivo ya que simplemente tenemos que definir la petición que queremos realizar y pulsar el botón de enviar. Es realmente sencilla de usar y está disponible como extensión del navegador Chrome, pero también como aplicación de escritorio.
 
 
 
-\section{Tecnologías}\label{Tecnologias}
 
-\subsection{Angular 2}\label{tecologias-angular}
+
+
+\imagen{logo-postman}{fuente \emph{web getpostman.com}.}
+
+
+\subsection{Framework: Angular 2}\label{tecologias-angular}
+ \hyperlink{https://angular.io}{Angular} es un framework cliente MVC \emph{Javascript} de código abierto creado en sus inicios por Google, permite crear  \emph{Single-Page Applications} (\hyperlink{https://es.wikipedia.org/wiki/Single-page_application}{SPA})  cuya principal característica es la de dar al usuario la impresión de que todo sucede en la misma página, sin hacer recargas de la misma. Es decir, trata de emular a las aplicaciones de escritorio, lo que se trata es de intercambiar las vista y no de recargar la página. En la actualidad cuenta con una amplia comunidad de desarrolladores  que dan soporte al framework.  Algunas características de Angular son:
+ 
+\begin{itemize}
+\tightlist
+\item
+  El sistema de databinding es muy completo y potente.
+\item
+  Angular es una solución completa que incluye prácticamente todos los aspectos que puedes necesitar para crear una aplicación cliente en \emph{Javascript} . 
+\item
+  La comunidad de desarrolladores crece cada día y la popularidad de Angular es un hecho.
+  \item
+  Está realizado para ser fácilmente testeable.
+\end{itemize}
+ 
+\imagen{logo-angular}{fuente \emph{web angular.io}.}
+\subsubsection{Detalles: Angular Arquitectura}\label{detalle-angularcli}
+\imagen{schemaangular}{fuente \emph{rldona.gitbooks.io/}.}
+\subsubsection{Detalles: Typescript}\label{detalle-angularcli}
+
 
 \subsubsection{Detalles: Angular CLI}\label{detalle-angularcli}
 
-\subsubsection{Detalles: módulos adicionales}\label{detalle-angularmodulos}
+\subsubsection{Detalles: Módulos adicionales empleados en este proyecto}\label{detalle-angularmodulos}
 
-\subsection{Node js}\label{tecologias-nodejs}
+\subsection{Framework: Node js}\label{tecologias-nodejs}
 
-\subsection{Express js}\label{tecologias-nodejs}
+\subsection{Framework: Express js}\label{tecologias-nodejs}
 
-\subsection{MongoDB}\label{tecologias-mongodb}
+\subsection{Base de datos: MongoDB}\label{tecologias-mongodb}
 
-\subsection{Boostrap}\label{tecologias-boostrap}
+\subsection{Framework: Boostrap}\label{tecologias-boostrap}
 

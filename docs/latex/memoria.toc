@@ -28,11 +28,18 @@
 \contentsline {section}{\numberline {3.9}Tablas}{10}{section.3.9}
 \contentsline {chapter}{T\IeC {\'e}cnicas y herramientas}{11}{chapter*.11}
 \contentsline {section}{\numberline {4.1}Herramientas}{11}{section.4.1}
-\contentsline {subsection}{Entorno de desarrollo: IDE}{11}{section*.12}
+\contentsline {subsection}{Herramienta: Atom}{12}{section*.12}
 \contentsline {subsubsection}{Detalles: IDE}{12}{section*.13}
-\contentsline {subsection}{Entorno de desarrollo: IDE}{12}{section*.14}
-\contentsline {section}{\numberline {4.2}Tecnolog\IeC {\'\i }as}{12}{section.4.2}
-\contentsline {subsection}{Angular: IDE}{12}{section*.15}
-\contentsline {chapter}{Aspectos relevantes del desarrollo del proyecto}{13}{chapter*.16}
-\contentsline {chapter}{Trabajos relacionados}{14}{chapter*.17}
-\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{15}{chapter*.18}
+\contentsline {subsection}{Herramienta: Robomongo}{12}{section*.14}
+\contentsline {subsection}{Herramienta/Testing: POSTMAN}{13}{section*.15}
+\contentsline {subsection}{Framework: Angular 2}{14}{section*.16}
+\contentsline {subsubsection}{Detalles: Angular Arquitectura}{15}{section*.17}
+\contentsline {subsubsection}{Detalles: Angular CLI}{15}{section*.18}
+\contentsline {subsubsection}{Detalles: M\IeC {\'o}dulos adicionales empleados en este proyecto}{15}{section*.19}
+\contentsline {subsection}{Framework: Node js}{15}{section*.20}
+\contentsline {subsection}{Framework: Express js}{15}{section*.21}
+\contentsline {subsection}{Base de datos: MongoDB}{15}{section*.22}
+\contentsline {subsection}{Framework: Boostrap}{15}{section*.23}
+\contentsline {chapter}{Aspectos relevantes del desarrollo del proyecto}{16}{chapter*.24}
+\contentsline {chapter}{Trabajos relacionados}{17}{chapter*.25}
+\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{18}{chapter*.26}
