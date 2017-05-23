@@ -14,7 +14,7 @@ En este capítulo se describen las herramientas utilizadas para el desarrollo de
 \subsection{Herramienta: Atom}\label{entorno-desarrollo}
 \hyperlink{https://atom.io/}{Atom} es un editor de texto moderno de código abierto desarrollado por  \hyperlink{http://brackets.io/}{GitHub}  que se ha escogido en este proyecto para desarrollar la aplicación debido a que esta desarrollado utilizando tecnologías web, luego ha sido creado por y para la web. Es posible ampliar sus funcionalidades a través de plugins desarrollados con \emph{Node.js} que puede ser instalados de una forma sencilla a través del gestor de paquetes internos con el que cuenta, así como diferentes tipos de temas. Esta posibilidad hace que se convierta en un editor de texto muy personal, ya que es el mismo desarrollador el que elige las características que desea tener sin afectar mínimamente al rendimiento
 
-\imagen{logo-atom}{fuente \emph{web atom.io}.}
+\imagen{logo-atom}{fuente \emph{atom.io}.}
 
 \subsubsection{Detalles: IDE}\label{detalle IDE}
 Tal y como he nombrado en la introducción la necesidad o la curiosidad por mejorar mi trabajo hicieron que encontrara nuevas herramientas durante el desarrollo del proyecto, es el caso, por ejemplo, del entorno de desarrollo. Al comienzo empecé con \hyperlink{http://brackets.io/}{brackets} como IDE, ya que era el entorno que utilizaba el profesor de los cursos que me recomendó el tutor. Después y atraído por el uso a diario de Eclipse como herramienta principal de trabajo durante mi período de prácticas con la universidad decidí que podía ser una buena idea el emplearlo también para realizar la API, craso error dado que Eclipse no fue creado para el mundo del desarrollo web por lo que me vi con que cada vez me encontraba con menos soporte para lenguajes, sin ir más lejos eclipse no presenta, actualmente, soporte para  \emph{typescript} el lenguaje principal de desarrollo de  \emph{angular 2}. Por fin di con el IDE perfecto para desarrollar entornos web que es el descrito en el párrafo anterior.
@@ -25,18 +25,13 @@ Tal y como he nombrado en la introducción la necesidad o la curiosidad por mejo
 \imagen{logo-robomongo}{ fuente \emph{robomongo.org}.}
 
 
-\subsection{Herramienta/Testing: POSTMAN}\label{entorno-desarrollo}
+\subsection{Herramienta/Testing: POSTMAN}\label{postman}
 Las pruebas iniciales se realizaron con  \hyperlink{https://www.getpostman.com}{Postman}. Esta herramienta nos permite construir y gestionar de una forma cómoda nuestras peticiones a servicios \hyperlink{https://es.wikipedia.org/wiki/Transferencia_de_Estado_Representacional}{REST} (Post,Get,etc). Su manejo es realmente intuitivo ya que simplemente tenemos que definir la petición que queremos realizar y pulsar el botón de enviar. Es realmente sencilla de usar y está disponible como extensión del navegador Chrome, pero también como aplicación de escritorio.
 
+\imagen{logo-postman}{fuente \emph{getpostman.com}.}
 
 
-
-
-
-\imagen{logo-postman}{fuente \emph{web getpostman.com}.}
-
-
-\subsection{Framework: Angular 2}\label{tecologias-angular}
+\subsection{Framework: Angular 2}\label{tecnologias-angular}
  \hyperlink{https://angular.io}{Angular} es un framework cliente MVC \emph{Javascript} de código abierto creado en sus inicios por Google, permite crear  \emph{Single-Page Applications} (\hyperlink{https://es.wikipedia.org/wiki/Single-page_application}{SPA})  cuya principal característica es la de dar al usuario la impresión de que todo sucede en la misma página, sin hacer recargas de la misma. Es decir, trata de emular a las aplicaciones de escritorio, lo que se trata es de intercambiar las vista y no de recargar la página. En la actualidad cuenta con una amplia comunidad de desarrolladores  que dan soporte al framework.  Algunas características de Angular son:
  
 \begin{itemize}
@@ -51,21 +46,79 @@ Las pruebas iniciales se realizaron con  \hyperlink{https://www.getpostman.com}{
   Está realizado para ser fácilmente testeable.
 \end{itemize}
  
-\imagen{logo-angular}{fuente \emph{web angular.io}.}
-\subsubsection{Detalles: Angular Arquitectura}\label{detalle-angularcli}
-\imagen{schemaangular}{fuente \emph{rldona.gitbooks.io/}.}
-\subsubsection{Detalles: Typescript}\label{detalle-angularcli}
+\imagen{logo-angular}{fuente \emph{angular.io}.}
+\subsubsection{Detalles: Angular Arquitectura}\label{detalle-angulararquitectura}
+Un app de Angular esta basada en componentes. En su día resultó una revolución en el desarrollo web ya que lo que se persigue es que cada parte de la aplicación posea un componente de manera que se consigue hacer aplicaciones web reutilizables de algún modo.
+\imagen{angularschema}{fuente \emph{rldona.gitbooks.io/}.}
+
+\begin{itemize}
+\tightlist
+\item
+Vistas: es la parte visible por el usuario. Suelen estar parametrizadas, y todas
+las vistan tienen asociado un controlador.
+\item
+ Controladores: Sirven los datos y funcionalidades a las vistas asociadas a él. Suelen ser estos los que utilizan los servicios para obtener los datos.. 
+\item
+ Directivas: Ofrecen elementos nuevos o nuevos comportamientos en elementos ya existentes dentro de las propias vistas.
+  \item
+  Servicios: son los encargados de proveer los datos. Lo más normal es que estos datos provengan de una API externa
+\end{itemize}
+
+
+\subsubsection{Detalles: Typescript}\label{detalle-typescript}
+Angular 4 esta basado en  \hyperlink{https://es.wikipedia.org/wiki/TypeScript}{Typescript} , es un lenguaje de código abierto que resulta ser un superset de Javascript. Es fuertemente tipado y orientado a objetos basado en clases.
 
 
 \subsubsection{Detalles: Angular CLI}\label{detalle-angularcli}
+Es un intérprete de línea de comandos de Angular que te facilitará el inicio y desarrollo de proyectos, ocupándose de la creación del esqueleto de la mayoría de los componentes de una aplicación Angular. Es interesante utilizarlo dado que ahorra mucho trabajo al desarrollador además de evitar despistes innecesarios. Por poner un ejemplo cada vez que un componente es creado en Angular es necesario modificar el componente principal manualmente para poder usarlo, con Angular CLI tan solo es necesario introducir un comando para crear el nuevo componente y Angular añade todas las dependencias por ti. Se podría pensar que se trata de una heramienta de terceros pero no es asi, la interfaz de comandos es proporcionada directamente por el equipo de Angular. Se darán consejos de como usarlo en los anexos.
+
+Por otro lado el uso de Angular CLI permite realizar en un solo comando el preparado de la aplicación para lanzarla al servidor, lo cual resulta también muy interesante de cara a una parte más seria de la aplicación como puede ser por ejemplo lanzarla al mercado.
+
+El aspecto de una aplicación hola mundo creada por Angular CLI contendría los siguientes elementos:
+\imagen{angularclihelloworld}{fuente \emph{elaboración propia}.}
+
+
 
 \subsubsection{Detalles: Módulos adicionales empleados en este proyecto}\label{detalle-angularmodulos}
+Algunos de los módulos adicionales empleados en el proyecto han sido:
+\begin{itemize}
+\tightlist
+\item
+1-
+\item
+2-
+\item
+3-
+  \item
+4-
+\end{itemize}
 
-\subsection{Framework: Node js}\label{tecologias-nodejs}
 
-\subsection{Framework: Express js}\label{tecologias-nodejs}
+\subsection{Framework: Node js}\label{tecnologias-nodejs}
+\hyperlink{https://nodejs.org/}{Nodejs} es un entorno de programación pensado para realizar funciones de servidor. Permite la construcción de servidores de forma muy sencilla y rápida, además se puede aplicar para otros usos. La ejecución es asíncrona. Esto significa que las funciones no son ejecutadas secuencialmente (si existen dos llamadas consecutivas, no es necesario que acabe la primera llamada para ejecutar la segunda).
+Está pensado para ser un gestor de entradas y salidas. No ha sido diseñado para ejecutar gran cantidad de código, sino para realizar comunicaciones muy rápidas y abundantes, tanto con eventos locales como por comunicación por red.
 
-\subsection{Base de datos: MongoDB}\label{tecologias-mongodb}
+\imagen{logo-nodejs}{fuente \emph{elaboración propia}.}
 
-\subsection{Framework: Boostrap}\label{tecologias-boostrap}
+
+
+\subsection{Framework: Express }\label{tecnologias-expressjs}
+\hyperlink{http://expressjs.com/}{Express js} es un framework web flexible para \emph{Node js} que proporciona un conjunto robusto de características para aplicaciones web y móviles, proporciona una capa delgada de características fundamentales de aplicaciones web. Facilita la creación de API’s gracias la gran variedad de métodos HTTP y middleware que proporciona.
+
+\imagen{logo-express}{fuente \emph{expressjs.com}.}
+
+
+\subsection{Base de datos: MongoDB}\label{tecnologias-mongodb}
+Para la parte de la base de datos he escogido \hyperlink{https://www.mongodb.com/}{MongoDB}, estamos hablando de un sistema de gestión de bases de datos no relacionales, o \hyperlink{https://es.wikipedia.org/wiki/NoSQL}{noSQL} . Es decir, un base de datos que no tiene tablas, se basa en colecciones de datos.
+
+En las colecciones se almacenan contenidos que pueden tener diferentes campos. Este sistema almacena los datos en documentos de tipo JSON, cosa que puede favorecer la integración con las aplicaciones que trabajen con este tipo de formatos, como es el caso de una API REST. 
+
+\imagen{logo-mongodb}{fuente \emph{mongodb.com}.}
+
+
+\subsection{Framework: Boostrap}\label{tecnologias-boostrap}
+\hyperlink{https://www.getbootstrap.com/}{Boostrap} es un framework CSS desarrollado inicialmente  por Twitter que permite dar forma a un sitio web mediante librerías CSS que incluyen tipografías, botones, cuadros, menús y otros elementos que pueden ser utilizados en cualquier sitio web.
+
+Bootstrap esta orientado a facilitar el diseño y elaboración de aplicaciones web utilizando un sistema de cuadrículas que ayuda a conseguir interfaces claras y  \hyperlink{https://es.wikipedia.org/wiki/Diseño_web_adaptable}{'responsive'}, haciendo que las aplicaciones se vean con diferentes diseños en diferentes dispositivos, dependiendo del espacio del que disponga nuestra aplicación.
+\imagen{logo-boostrap}{fuente \emph{getbootstrap.com}.}
 

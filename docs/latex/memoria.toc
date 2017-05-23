@@ -34,12 +34,13 @@
 \contentsline {subsection}{Herramienta/Testing: POSTMAN}{13}{section*.15}
 \contentsline {subsection}{Framework: Angular 2}{14}{section*.16}
 \contentsline {subsubsection}{Detalles: Angular Arquitectura}{15}{section*.17}
-\contentsline {subsubsection}{Detalles: Angular CLI}{15}{section*.18}
-\contentsline {subsubsection}{Detalles: M\IeC {\'o}dulos adicionales empleados en este proyecto}{15}{section*.19}
-\contentsline {subsection}{Framework: Node js}{15}{section*.20}
-\contentsline {subsection}{Framework: Express js}{15}{section*.21}
-\contentsline {subsection}{Base de datos: MongoDB}{15}{section*.22}
-\contentsline {subsection}{Framework: Boostrap}{15}{section*.23}
-\contentsline {chapter}{Aspectos relevantes del desarrollo del proyecto}{16}{chapter*.24}
-\contentsline {chapter}{Trabajos relacionados}{17}{chapter*.25}
-\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{18}{chapter*.26}
+\contentsline {subsubsection}{Detalles: Typescript}{16}{section*.18}
+\contentsline {subsubsection}{Detalles: Angular CLI}{16}{section*.19}
+\contentsline {subsubsection}{Detalles: M\IeC {\'o}dulos adicionales empleados en este proyecto}{17}{section*.20}
+\contentsline {subsection}{Framework: Node js}{18}{section*.21}
+\contentsline {subsection}{Framework: Express }{18}{section*.22}
+\contentsline {subsection}{Base de datos: MongoDB}{19}{section*.23}
+\contentsline {subsection}{Framework: Boostrap}{20}{section*.24}
+\contentsline {chapter}{Aspectos relevantes del desarrollo del proyecto}{22}{chapter*.25}
+\contentsline {chapter}{Trabajos relacionados}{23}{chapter*.26}
+\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{24}{chapter*.27}
