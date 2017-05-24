@@ -67,5 +67,5 @@
 \contentsline {section}{\numberline {5.2}Formaci\IeC {\'o}n}{28}{section.5.2}
 \contentsline {section}{\numberline {5.3}Frameworks cliente}{29}{section.5.3}
 \contentsline {section}{\numberline {5.4}Tipo de base de datos}{33}{section.5.4}
-\contentsline {chapter}{Trabajos relacionados}{34}{chapter*.42}
-\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{35}{chapter*.43}
+\contentsline {chapter}{Trabajos relacionados}{35}{chapter*.42}
+\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{36}{chapter*.43}
