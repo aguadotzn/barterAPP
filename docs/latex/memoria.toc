@@ -67,6 +67,11 @@
 \contentsline {section}{\numberline {5.2}Formaci\IeC {\'o}n}{28}{section.5.2}
 \contentsline {section}{\numberline {5.3}Frameworks cliente}{29}{section.5.3}
 \contentsline {section}{\numberline {5.4}Tipo de base de datos}{33}{section.5.4}
-\contentsline {section}{\numberline {5.5}Metodolog\IeC {\'\i }as}{34}{section.5.5}
-\contentsline {chapter}{Trabajos relacionados}{35}{chapter*.42}
-\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{36}{chapter*.43}
+\contentsline {section}{\numberline {5.5}Metolog\IeC {\'\i }as}{34}{section.5.5}
+\contentsline {section}{\numberline {5.6}Desarrollo web}{35}{section.5.6}
+\contentsline {section}{\numberline {5.7}Algoritmo de intercambio}{35}{section.5.7}
+\contentsline {section}{\numberline {5.8}Desarrollo app}{35}{section.5.8}
+\contentsline {section}{\numberline {5.9}Documentaci\IeC {\'o}n}{35}{section.5.9}
+\contentsline {section}{\numberline {5.10}Alojamiento}{35}{section.5.10}
+\contentsline {chapter}{Trabajos relacionados}{36}{chapter*.42}
+\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{37}{chapter*.43}
