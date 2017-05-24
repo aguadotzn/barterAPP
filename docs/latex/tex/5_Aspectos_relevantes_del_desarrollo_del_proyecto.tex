@@ -30,14 +30,84 @@ Por lo que en un primer momento se decidió realizar la siguiente especializaci�
 
 Los cursos pertenecer al curso \hyperlink{https://www.coursera.org/specializations/full-stack}{\emph{full-stack web develompent}} y son bastante completos en lo que a materia se refiere. Si es necesario saber algo de inglés por que sino se hacen bastante pesados.
 
-Después además realicé algún que otro curso en español como son: 
+Después además realicé algún que otro curso en español, en esta ocasión la plataforma elegida fue  \hyperlink{https://www.udemy.com/}{\emph{Udemy}}. El enfoque de esta web es totalmente diferente a la anterior, mientras que la que hago referencia en el párrafo anterior en su mayoría se ofrecen grades cursos de universidades y profesores de prestigio de todo el mundo, Udemy se centra más en personas normales. Es decir, freelancers o personas que tienen conocimientos de algún campo en concreto y realizan un curso de una materia específica y lo venden a los usuarios. Existen tanto cursos gratuitos, de una duracción menor, como cursos de diferentes precios. En mi caso he realizado: 
+
+\begin{description}
+	\item[\emph{Curso de Nodejs y Angular 2}] Aprende a desarrollar servicios RESTful (APIs) con NodeJS y MongoDB y a crear webs SPA con Angular2 y 4
+	\item[ \emph{Introducción a Angular 4 - Instalación y componentes}] Aprende las bases de Angular4 desde cero y paso a paso. Angular 4 es la siguiente versión de Angular 2.
+	\item[ \emph{Introducción teórica a los frameworks de desarrollo Web}] Aprende los conceptos teóricos necesarios para empezar a trabajar con frameworks de desarrollo MVC.
+\end{description}
+
+
+La plataforma anterior también es muy didáctica, completa y accesible; además posee una característica que a mi me parece fundamental: tienes contacto directo con el creador del curso que te resuelve dudas de código. 
+
 
  \section{Frameworks cliente}\label{cliente}
  
- \emph{AngularJs vs Angular 4} está fue una de las preguntas con las que más tiempo perdí al inicio del desarrollo y después de la fase de formación
+ \emph{AngularJs vs Angular 4} está fue una de las dudas con las que más tiempo perdí al inicio del desarrollo y después de la fase de formación con la especialización de Coursera no sabía exactamente cual de las dos escoger. Por una parte estaba la formación recibida en los seis cursos iniciales que todos fueron en AngularJS y por otra la inquietud del futuro ya que los frameworks evolucionan siempre a mejor y tarde o temprano los versiones iniciales se acaban quedando obsoletas. 
  
+ Lo primero que hay que decir es que Angular2 no es la siguiente versión de AngularJS, sino que es un nuevo framework, escrito desde cero y con conceptos y formas de trabajar completamente distintos. Angular utiliza un sistema de inyección de dependencias jerárquico impulsando su rendimiento de forma increíble.  Según algunos datos oficiales, Angular puede llegar a ser 5 veces más rápido que la primera versión.  Vamos a conocer algunas de las características generales de por que me decante por este nuevo framework. 
+ 
+ \begin{enumerate}
+	\item Angular está orientado a móviles y tiene mejor rendimiento.
+	\item Angular ofrece más opciones a la hora de elegir lenguajes.
+	\item Los controladores desaparecen haciendo ahora uso de componentes web, resulta más intuitivo y un estándar de futuro que todavía no encuentra soportado por todos los navegadores web pero en el futuro lo estará por lo que el rendimiento será todavía mayor .
+	\item Angular usa directamente las propiedades de los elementos y los eventos estándar del DOM
+\end{enumerate}
+ 
+ Vamos a ver por ejemplo como han cambiado los controladores(Así se conocían en AngularJS) a los componentes(Así se conocen en Angular) de una versión a otra.
+ En angularJS:
+ 
+ \lstset{breaklines=true, basicstyle=\footnotesize}
+\begin{lstlisting}[frame=single]
+<body ng-controller="PeliculasController as peli">  
+  <h3>{{peli.data.titulo}}</h3>
+  <h3 ng-bind="peli.data.titulo"></h3>
+</body>  
+<script type="text/javascript">  
+(function (){
+  angular
+    .module('app')
+    .controller('PeliculasController', PeliculasController);
+ 
+  function PeliculasController() {
+    var peli = this;
+    peli.data= { id: 45, titulo: 'Una historia real' };
+  }
+})();
+</script> 
+\end{lstlisting}
+
+En angular:
+ \lstset{breaklines=true, basicstyle=\footnotesize}
+\begin{lstlisting}[frame=single]
+import { Component } from 'angular2/core';
+ 
+@Component({
+  selector: 'pelicula',
+  template: '<h2>{{pelicula.titulo}}</h2>'
+})
+export class PeliculaComponent {  
+  public pelicula = { id: 45, titulo: 'Una historia real' };
+}
+\end{lstlisting}
+
+Si podéis observar al inicio de la sección comencé haciendo referencia a Angular2 y AngularJS pero ha medida que he avanzado simplemente he omitido el número. Podría parecer que lo he olvidado pero para nada es así, después del nacimiento de de esa nueva versión que resulto ser un framework en sí mismo que aprender desde cero, desde el equipo de desarrollo de Angular lo que se intentó es describir al framework sin ningún tipo de numeración, simplemente existe un framework y se van a aplicar modificaciones sobre él para mejorarlo, nada más. Para entender mejor esta ruptura AngularJS y Angular no son compatibles pero sí lo son las versiones posteriores. De hecho hace dos meses lanzaron  \emph{Angular v 4.0 }   que posee cambios menos respecto de su versión anterior pero son totalmente compatibles.
+
+\imagen{resumen-angular4}{fuente \emph{wikipedia.org/wiki/Angular}.}
+
+
+%\label{etiqueta}
+
+Respecto al futuro de Angular en la última presentación se dijo  que podemos esperar una nueva versión ‘mayor’ cada seis meses, Angular 5 estará lista en Septiembre del 2017, la versión 6 en Marzo del 2018 y así sucesivamente. Está claro que todo proyecto de software que quiera avanzar a buena velocidad, en algún momento introducirá cambios que por desgracia no serán compatibles con versiones anteriores, forzándote a tocar tu código para actualizarte y quizás sea esa una de las necesidades de autoformación ya que todo esta en constante cambio 
+
+
+
+
+
+
   \section{Tipo de base de datos}\label{base de datos}
   
-  Otro de los dilemsa sin duda fue la elección de la base de datos
+  Otro de los dilemas in duda fue la elección de la base de datos
  
- 
+ \footnote{Texto de la nota al pie}
