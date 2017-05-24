@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  15 MAY 2017 18:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  25 MAY 2017 00:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1329,17 +1329,17 @@ l.28
 
 ]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 44.
+(babel)             in language append on input line 47.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 44.
+(babel)             in language append on input line 47.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 44.
+(babel)             in language append on input line 47.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 44.
+(babel)             in language append on input line 47.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 44.
+(babel)             in language append on input line 47.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 44.
+(babel)             in language append on input line 47.
 )
 LaTeX Info: Redefining \. on input line 384.
 LaTeX Info: Redefining \% on input line 384.
