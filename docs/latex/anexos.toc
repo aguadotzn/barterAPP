@@ -21,22 +21,16 @@
 \contentsline {subsection}{Especificaci\IeC {\'o}n de requisitos usuario}{3}{section*.11}
 \contentsline {subsection}{Especificaci\IeC {\'o}n de requisitos programador}{3}{section*.12}
 \contentsline {appendix}{\chapternumberline {C}Especificaci\IeC {\'o}n de dise\IeC {\~n}o}{4}{appendix.Alph3}
-\contentsline {section}{\numberline {C.1}Introducci\IeC {\'o}n}{4}{section.Alph3.1}
-\contentsline {section}{\numberline {C.2}Dise\IeC {\~n}o de datos}{4}{section.Alph3.2}
-\contentsline {section}{\numberline {C.3}Dise\IeC {\~n}o procedimental}{4}{section.Alph3.3}
-\contentsline {section}{\numberline {C.4}Dise\IeC {\~n}o arquitect\IeC {\'o}nico}{4}{section.Alph3.4}
-\contentsline {subsection}{Diagramas UML}{4}{section*.13}
-\contentsline {subsection}{Mockups}{4}{section*.14}
 \contentsline {appendix}{\chapternumberline {D}Documentaci\IeC {\'o}n t\IeC {\'e}cnica de programaci\IeC {\'o}n}{5}{appendix.Alph4}
 \contentsline {section}{\numberline {D.1}Introducci\IeC {\'o}n}{5}{section.Alph4.1}
 \contentsline {section}{\numberline {D.2}Estructura de directorios}{5}{section.Alph4.2}
 \contentsline {section}{\numberline {D.3}Manual del programador}{5}{section.Alph4.3}
-\contentsline {subsection}{Compilaci\IeC {\'o}n, instalaci\IeC {\'o}n y ejecuci\IeC {\'o}n del proyecto}{6}{section*.15}
-\contentsline {subsection}{Modo desarrollador / Modo produccion}{6}{section*.16}
-\contentsline {subsection}{Base de datos}{6}{section*.17}
-\contentsline {subsection}{Avisos}{6}{section*.18}
+\contentsline {subsection}{Compilaci\IeC {\'o}n, instalaci\IeC {\'o}n y ejecuci\IeC {\'o}n del proyecto}{6}{section*.13}
+\contentsline {subsection}{Modo desarrollador / Modo produccion}{6}{section*.14}
+\contentsline {subsection}{Base de datos}{6}{section*.15}
+\contentsline {subsection}{Avisos}{6}{section*.16}
 \contentsline {appendix}{\chapternumberline {E}Documentaci\IeC {\'o}n de usuario}{7}{appendix.Alph5}
 \contentsline {section}{\numberline {E.1}Introducci\IeC {\'o}n}{7}{section.Alph5.1}
 \contentsline {section}{\numberline {E.2}Instalaci\IeC {\'o}n}{7}{section.Alph5.2}
-\contentsline {subsection}{Descarga}{7}{section*.19}
+\contentsline {subsection}{Descarga}{7}{section*.17}
 \contentsline {section}{\numberline {E.3}Manual del usuario}{7}{section.Alph5.3}
