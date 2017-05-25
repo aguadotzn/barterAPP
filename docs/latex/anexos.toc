@@ -19,25 +19,32 @@
 \contentsline {subsection}{Viabilidad legal}{4}{section*.13}
 \contentsline {appendix}{\chapternumberline {B}Especificaci\IeC {\'o}n de Requisitos}{5}{appendix.Alph2}
 \contentsline {section}{\numberline {B.1}Introducci\IeC {\'o}n}{5}{section.Alph2.1}
-\contentsline {section}{\numberline {B.2}Objetivos generales}{5}{section.Alph2.2}
-\contentsline {section}{\numberline {B.3}Catalogo de requisitos}{5}{section.Alph2.3}
-\contentsline {subsection}{Especificaci\IeC {\'o}n de requisitos usuario}{5}{section*.14}
-\contentsline {subsection}{Especificaci\IeC {\'o}n de requisitos programador}{5}{section*.15}
-\contentsline {appendix}{\chapternumberline {C}Especificaci\IeC {\'o}n de dise\IeC {\~n}o}{6}{appendix.Alph3}
-\contentsline {appendix}{\chapternumberline {D}Documentaci\IeC {\'o}n t\IeC {\'e}cnica de programaci\IeC {\'o}n}{7}{appendix.Alph4}
-\contentsline {section}{\numberline {D.1}Introducci\IeC {\'o}n}{7}{section.Alph4.1}
-\contentsline {section}{\numberline {D.2}AngularCLI}{7}{section.Alph4.2}
-\contentsline {subsection}{\IeC {\textquestiondown }Qu\IeC {\'e} es typescript?}{7}{section*.16}
-\contentsline {subsection}{Comandos b\IeC {\'a}sicos}{8}{section*.17}
-\contentsline {subsection}{Puesta en marcha}{8}{section*.18}
-\contentsline {section}{\numberline {D.3}Manual del programador}{8}{section.Alph4.3}
-\contentsline {subsection}{Compilaci\IeC {\'o}n, instalaci\IeC {\'o}n y ejecuci\IeC {\'o}n del proyecto}{8}{section*.19}
-\contentsline {subsection}{Modo desarrollador / Modo produccion}{8}{section*.20}
-\contentsline {section}{\numberline {D.4}Estructura de directorios del proyecto}{8}{section.Alph4.4}
-\contentsline {subsection}{Base de datos}{8}{section*.21}
-\contentsline {subsection}{Avisos}{8}{section*.22}
-\contentsline {appendix}{\chapternumberline {E}Documentaci\IeC {\'o}n de usuario}{9}{appendix.Alph5}
-\contentsline {section}{\numberline {E.1}Introducci\IeC {\'o}n}{9}{section.Alph5.1}
-\contentsline {section}{\numberline {E.2}Instalaci\IeC {\'o}n}{9}{section.Alph5.2}
-\contentsline {subsection}{Descarga}{9}{section*.23}
-\contentsline {section}{\numberline {E.3}Manual del usuario}{9}{section.Alph5.3}
+\contentsline {section}{\numberline {B.2}Objetivos generales}{6}{section.Alph2.2}
+\contentsline {section}{\numberline {B.3}Cat\IeC {\'a}logo de requisitos}{6}{section.Alph2.3}
+\contentsline {subsection}{Requisitos funcionales}{6}{section*.14}
+\contentsline {section}{\numberline {B.4}Especificaci\IeC {\'o}n de requisitos}{6}{section.Alph2.4}
+\contentsline {appendix}{\chapternumberline {C}Especificaci\IeC {\'o}n de dise\IeC {\~n}o}{7}{appendix.Alph3}
+\contentsline {appendix}{\chapternumberline {D}Documentaci\IeC {\'o}n t\IeC {\'e}cnica de programaci\IeC {\'o}n}{8}{appendix.Alph4}
+\contentsline {section}{\numberline {D.1}Introducci\IeC {\'o}n}{8}{section.Alph4.1}
+\contentsline {section}{\numberline {D.2}Programas m\IeC {\'\i }nimos necesarios}{8}{section.Alph4.2}
+\contentsline {subsection}{Especificaci\IeC {\'o}n de requisitos usuario}{8}{section*.15}
+\contentsline {subsection}{Especificaci\IeC {\'o}n de requisitos programador}{8}{section*.16}
+\contentsline {section}{\numberline {D.3}AngularCLI}{9}{section.Alph4.3}
+\contentsline {subsection}{\IeC {\textquestiondown }Qu\IeC {\'e} es typescript?}{9}{section*.17}
+\contentsline {subsection}{Comandos b\IeC {\'a}sicos}{9}{section*.18}
+\contentsline {subsection}{Puesta en marcha}{9}{section*.19}
+\contentsline {section}{\numberline {D.4}Manual del programador}{9}{section.Alph4.4}
+\contentsline {subsection}{Compilaci\IeC {\'o}n, instalaci\IeC {\'o}n y ejecuci\IeC {\'o}n del proyecto}{9}{section*.20}
+\contentsline {subsection}{Modo desarrollador }{10}{section*.21}
+\contentsline {subsection}{Modo producci\IeC {\'o}n}{10}{section*.22}
+\contentsline {subsection}{Estructura de directorios del proyecto}{10}{section*.23}
+\contentsline {subsection}{Base de datos}{10}{section*.24}
+\contentsline {subsection}{Avisos}{10}{section*.25}
+\contentsline {appendix}{\chapternumberline {E}Documentaci\IeC {\'o}n de usuario}{11}{appendix.Alph5}
+\contentsline {section}{\numberline {E.1}Introducci\IeC {\'o}n}{11}{section.Alph5.1}
+\contentsline {section}{\numberline {E.2}Instalaci\IeC {\'o}n}{11}{section.Alph5.2}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{11}{section*.26}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{11}{section*.27}
+\contentsline {section}{\numberline {E.3}Manual del usuario}{11}{section.Alph5.3}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{11}{section*.28}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{11}{section*.29}
