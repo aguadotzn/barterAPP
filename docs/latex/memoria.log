@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  25 MAY 2017 23:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  27 MAY 2017 11:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1077,14 +1077,14 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-<./img/cabecera.pdf, id=172, 617.67549pt x 135.51413pt>
+<./img/cabecera.pdf, id=176, 617.67549pt x 135.51413pt>
 File: ./img/cabecera.pdf Graphic file (type pdf)
 
 <use ./img/cabecera.pdf>
 Package pdftex.def Info: ./img/cabecera.pdf used on input line 401.
 (pdftex.def)             Requested size: 369.0pt x 80.95758pt.
 
-<./img/escudoInfor.pdf, id=173, 618.11432pt x 737.07487pt>
+<./img/escudoInfor.pdf, id=177, 618.11432pt x 737.07487pt>
 File: ./img/escudoInfor.pdf Graphic file (type pdf)
 
 <use ./img/escudoInfor.pdf>
@@ -1514,17 +1514,17 @@ l.13
 
 ]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 14.
+(babel)             in language append on input line 16.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 14.
+(babel)             in language append on input line 16.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 14.
+(babel)             in language append on input line 16.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 14.
+(babel)             in language append on input line 16.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 14.
+(babel)             in language append on input line 16.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 14.
+(babel)             in language append on input line 16.
 )
 LaTeX Info: Redefining \. on input line 511.
 LaTeX Info: Redefining \% on input line 511.
@@ -1734,7 +1734,7 @@ Package babel Info: Redefining spanish shorthand "?
 LaTeX Warning: Citation `https://g.co/kgs/VLR4mn' on page 5 undefined on input 
 line 7.
 
-<./img/meanjs.png, id=627, 1027.84pt x 493.845pt>
+<./img/meanjs.png, id=632, 1027.84pt x 493.845pt>
 File: ./img/meanjs.png Graphic file (type png)
  <use ./img/meanjs.png>
 Package pdftex.def Info: ./img/meanjs.png used on input line 9.
@@ -1810,7 +1810,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 21.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 21.
- [6 <./img/meanjs.png>] <./img/uxschema.jpg, id=637, 1072.005pt x 538.01pt>
+ [6 <./img/meanjs.png>] <./img/uxschema.jpg, id=642, 1072.005pt x 538.01pt>
 File: ./img/uxschema.jpg Graphic file (type jpg)
 
 <use ./img/uxschema.jpg>
@@ -2080,7 +2080,7 @@ Package babel Info: Redefining spanish shorthand "?
 
 
 ]
-<./img/mvcschema.png, id=667, 672.5125pt x 351.3125pt>
+<./img/mvcschema.png, id=672, 672.5125pt x 351.3125pt>
 File: ./img/mvcschema.png Graphic file (type png)
 
 <use ./img/mvcschema.png>
@@ -2099,7 +2099,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 22.
 
-<./img/logo-atom.jpg, id=671, 602.25pt x 235.88126pt>
+<./img/logo-atom.jpg, id=676, 602.25pt x 235.88126pt>
 File: ./img/logo-atom.jpg Graphic file (type jpg)
 
 <use ./img/logo-atom.jpg>
@@ -2136,7 +2136,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 28.
 [12 <./img/mvcschema.png>]
-<./img/logo-robomongo.png, id=683, 1027.84pt x 1027.84pt>
+<./img/logo-robomongo.png, id=688, 1027.84pt x 1027.84pt>
 File: ./img/logo-robomongo.png Graphic file (type png)
 
 <use ./img/logo-robomongo.png>
@@ -2173,7 +2173,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 36.
 [13 <./img/logo-atom.jpg>]
-<./img/logo-firefox.png, id=692, 256.96pt x 256.96pt>
+<./img/logo-firefox.png, id=697, 256.96pt x 256.96pt>
 File: ./img/logo-firefox.png Graphic file (type png)
 
 <use ./img/logo-firefox.png>
@@ -2249,14 +2249,14 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 51.
  [15 <./img/logo-firefox.png>]
-<./img/logo-angular.png, id=711, 369.38pt x 369.38pt>
+<./img/logo-angular.png, id=716, 369.38pt x 369.38pt>
 File: ./img/logo-angular.png Graphic file (type png)
 
 <use ./img/logo-angular.png>
 Package pdftex.def Info: ./img/logo-angular.png used on input line 64.
 (pdftex.def)             Requested size: 332.09775pt x 332.10074pt.
 
-<./img/angularschema.png, id=712, 748.7975pt x 301.125pt>
+<./img/angularschema.png, id=717, 748.7975pt x 301.125pt>
 File: ./img/angularschema.png Graphic file (type png)
 
 <use ./img/angularschema.png>
@@ -2315,7 +2315,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 89.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 89.
- [17 <./img/angularschema.png>] <./img/angularclihelloworld.png, id=728, 222.83
+ [17 <./img/angularschema.png>] <./img/angularclihelloworld.png, id=733, 222.83
 25pt x 292.09125pt>
 File: ./img/angularclihelloworld.png Graphic file (type png)
 
@@ -2380,14 +2380,14 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 113.
  [19 <./img/angularclihelloworld.png>]
-<./img/logo-boostrap.png, id=741, 391.4625pt x 180.675pt>
+<./img/logo-boostrap.png, id=746, 391.4625pt x 180.675pt>
 File: ./img/logo-boostrap.png Graphic file (type png)
 
 <use ./img/logo-boostrap.png>
 Package pdftex.def Info: ./img/logo-boostrap.png used on input line 115.
 (pdftex.def)             Requested size: 332.09775pt x 153.28499pt.
 
-<./img/logo-nodejs.png, id=743, 642.4pt x 373.395pt>
+<./img/logo-nodejs.png, id=748, 642.4pt x 373.395pt>
 File: ./img/logo-nodejs.png Graphic file (type png)
 
 <use ./img/logo-nodejs.png>
@@ -2424,7 +2424,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 122.
 [20 <./img/logo-boostrap.png>]
-<./img/logo-express.png, id=755, 466.74374pt x 141.52875pt>
+<./img/logo-express.png, id=760, 466.74374pt x 141.52875pt>
 File: ./img/logo-express.png Graphic file (type png)
 
 <use ./img/logo-express.png>
@@ -2457,7 +2457,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 137.
  [21 <./img/logo-nodejs.png (PNG copy)> <./img/logo-express.png>] <./img/logo-m
-ongodb.png, id=767, 414.54875pt x 485.815pt>
+ongodb.png, id=772, 414.54875pt x 485.815pt>
 File: ./img/logo-mongodb.png Graphic file (type png)
 
 <use ./img/logo-mongodb.png>
@@ -2503,7 +2503,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 150.
 
-<./img/logo-postman.png, id=779, 513.92pt x 513.92pt>
+<./img/logo-postman.png, id=784, 513.92pt x 513.92pt>
 File: ./img/logo-postman.png Graphic file (type png)
 
 <use ./img/logo-postman.png>
@@ -2834,7 +2834,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 96.
  [30]
-<./img/resumen-angular4.png, id=888, 287.0725pt x 618.31pt>
+<./img/resumen-angular4.png, id=893, 287.0725pt x 618.31pt>
 File: ./img/resumen-angular4.png Graphic file (type png)
 
 <use ./img/resumen-angular4.png>
@@ -2955,7 +2955,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 131.
 
-<./img/scrumschema.png, id=904, 1093.686pt x 429.2838pt>
+<./img/scrumschema.png, id=909, 1093.686pt x 429.2838pt>
 File: ./img/scrumschema.png Graphic file (type png)
 
 <use ./img/scrumschema.png>
@@ -3096,6 +3096,10 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 1.
 )
+Overfull \hbox (399.02896pt too wide) in paragraph at lines 3--516
+[][] 
+ []
+
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 516.
 Package babel Info: Redefining spanish shorthand >>
@@ -3120,15 +3124,14 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 516.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 516.
- [36
+[36
 
 
 
 ]
 \openout2 = `./tex/7_Conclusiones_Lineas_de_trabajo_futuras.aux'.
 
-
-(./tex/7_Conclusiones_Lineas_de_trabajo_futuras.tex
+ (./tex/7_Conclusiones_Lineas_de_trabajo_futuras.tex
 Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 1.
 Package babel Info: Redefining spanish shorthand >>
@@ -3213,15 +3216,9 @@ LaTeX Info: Redefining \% on input line 28.
 (./tex/7_Conclusiones_Lineas_de_trabajo_futuras.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 523.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 523.
+Package rerunfilecheck Info: File `memoria.out' has not changed.
+(rerunfilecheck)             Checksum: EFCC2F61559CC42507D577FA9C58D8DF;2741.
 
-
-Package rerunfilecheck Warning: File `memoria.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `memoria.out':
-(rerunfilecheck)             Before: 8664F796DCA2047304B85744E61CA99D;2680
-(rerunfilecheck)             After:  EFCC2F61559CC42507D577FA9C58D8DF;2741.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -3234,10 +3231,10 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 523.
  ) 
 Here is how much of TeX's memory you used:
- 13043 strings out of 493014
- 182428 string characters out of 6133352
- 391938 words of memory out of 5000000
- 16168 multiletter control sequences out of 15000+600000
+ 13044 strings out of 493014
+ 182441 string characters out of 6133352
+ 391998 words of memory out of 5000000
+ 16169 multiletter control sequences out of 15000+600000
  14369 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,12n,37p,1099b,1312s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -3345,10 +3342,10 @@ ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texliv
 e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texli
 ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive
 /2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on memoria.pdf (47 pages, 1192220 bytes).
+Output written on memoria.pdf (47 pages, 1191954 bytes).
 PDF statistics:
- 1020 PDF objects out of 1200 (max. 8388607)
- 907 compressed objects within 10 object streams
+ 1024 PDF objects out of 1200 (max. 8388607)
+ 911 compressed objects within 10 object streams
  199 named destinations out of 1000 (max. 500000)
- 427 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 435 words of extra memory for PDF output out of 10000 (max. 10000000)
 
