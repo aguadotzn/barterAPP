@@ -40,16 +40,36 @@ A continuación, se enumeran los requisitos específicos :
 
 
 %Tabla grande
-\begin{center}
-\begin{longtable}{|cl|cl|}
-\hline \multicolumn{4}{|c|}{Cabecera primera} \\ \hline
-\endfirsthead
-\multicolumn{4}{|c|}{Cabecera todas} \\ \hline
-\endhead
-\multicolumn{4}{|c|}{Pie todas} \\ \hline
-\endfoot
-\multicolumn{4}{|c|}{Pie última} \\ \hline
-\endlastfoot
-col1 & col2 & col3 & col4 \\ \hline col1 & col2 & col3 & col4 \\ \hline
-\end{longtable}
-\end{center}
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.23\columnwidth}\raggedright\strut
+\textbf{CU-02}\strut
+\end{minipage} & \begin{minipage}[b]{0.71\columnwidth}\raggedright\strut
+\textbf{Crear cuestionarios}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-1.1, RF-1.2 \\ 
+\textbf{Descripción} & Permite al usuario logearse\\
+\textbf{Precondición} & LAs precondiciones \\
+& deben estar disponibles        \\
+\textbf{Secuencia} & 1. El usuario rellena el formulario \\
+& para\\
+& 2. El usuario \\
+& 3. Si\\
+& se        \\
+\textbf{Postcondición} & Se añade el usuario \\
+& a la base de datos.     \\
+\textbf{Excepciones} &  Si no se introducen los campos obligatorios \\
+& se muestra texto resaltando indicándolo
+          \\
+\textbf{Frecuencia} & Alta            \\
+\textbf{Importancia} & Alta            \\
+\textbf{Comentarios } & Esto es un comentario        \\
+& sobre este requisito.     \\
+\bottomrule
+\end{tabular}
+\caption{CU-02 Crear cuestionarios} \label{tab:sometab}
+\end{table}
