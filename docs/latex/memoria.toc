@@ -74,5 +74,10 @@
 \contentsline {section}{\numberline {5.9}Documentaci\IeC {\'o}n}{35}{section.5.9}
 \contentsline {section}{\numberline {5.10}Alojamiento}{35}{section.5.10}
 \contentsline {chapter}{Trabajos relacionados}{36}{chapter*.42}
-\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{37}{chapter*.43}
-\contentsline {section}{\numberline {7.1}Conclusiones}{37}{section.7.1}
+\contentsline {section}{\numberline {6.1}Competidores}{36}{section.6.1}
+\contentsline {section}{\numberline {6.2}Otros trabajos}{37}{section.6.2}
+\contentsline {section}{\numberline {6.3}Ventajas y desventajas del proyecto}{37}{section.6.3}
+\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{38}{chapter*.43}
+\contentsline {section}{\numberline {7.1}Conclusiones proyecto}{38}{section.7.1}
+\contentsline {section}{\numberline {7.2}Conclusiones personales}{38}{section.7.2}
+\contentsline {section}{\numberline {7.3}L\IeC {\'\i }neas de trabajo}{38}{section.7.3}
