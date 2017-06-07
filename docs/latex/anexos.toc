@@ -30,17 +30,16 @@
 \contentsline {appendix}{\chapternumberline {C}Especificaci\IeC {\'o}n de dise\IeC {\~n}o}{12}{appendix.Alph3}
 \contentsline {section}{\numberline {C.1}Introducci\IeC {\'o}n}{12}{section.Alph3.1}
 \contentsline {section}{\numberline {C.2}Dise\IeC {\~n}o de datos}{12}{section.Alph3.2}
-\contentsline {section}{\numberline {C.3}Dise\IeC {\~n}o Procedimental}{12}{section.Alph3.3}
 \contentsline {appendix}{\chapternumberline {D}Documentaci\IeC {\'o}n t\IeC {\'e}cnica de programaci\IeC {\'o}n}{13}{appendix.Alph4}
 \contentsline {section}{\numberline {D.1}Introducci\IeC {\'o}n}{13}{section.Alph4.1}
 \contentsline {section}{\numberline {D.2}Requerimientos m\IeC {\'\i }nimos necesarios}{13}{section.Alph4.2}
 \contentsline {section}{\numberline {D.3}AngularCLI}{14}{section.Alph4.3}
 \contentsline {subsection}{\IeC {\textquestiondown }Qu\IeC {\'e} es typescript?}{14}{section*.19}
-\contentsline {subsection}{Comandos b\IeC {\'a}sicos}{14}{section*.20}
-\contentsline {subsection}{Puesta en marcha}{14}{section*.21}
-\contentsline {section}{\numberline {D.4}Manual del programador}{14}{section.Alph4.4}
+\contentsline {subsection}{Comandos b\IeC {\'a}sicos}{15}{section*.20}
+\contentsline {subsection}{Puesta en marcha}{15}{section*.21}
+\contentsline {section}{\numberline {D.4}Manual del programador}{15}{section.Alph4.4}
 \contentsline {subsection}{Compilaci\IeC {\'o}n, instalaci\IeC {\'o}n y ejecuci\IeC {\'o}n del proyecto}{15}{section*.22}
-\contentsline {subsection}{Modo desarrollador }{15}{section*.23}
+\contentsline {subsection}{Estructura de directorios }{15}{section*.23}
 \contentsline {subsection}{Modo producci\IeC {\'o}n}{15}{section*.24}
 \contentsline {subsection}{Estructura de directorios del proyecto}{15}{section*.25}
 \contentsline {subsection}{Base de datos}{15}{section*.26}
