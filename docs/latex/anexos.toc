@@ -28,27 +28,28 @@
 \contentsline {subsection}{Requisitos no funcionales}{10}{section*.18}
 \contentsline {section}{\numberline {B.4}Especificaci\IeC {\'o}n de requisitos}{10}{section.Alph2.4}
 \contentsline {appendix}{\chapternumberline {C}Especificaci\IeC {\'o}n de dise\IeC {\~n}o}{12}{appendix.Alph3}
+\contentsline {section}{\numberline {C.1}Introducci\IeC {\'o}n}{12}{section.Alph3.1}
+\contentsline {section}{\numberline {C.2}Dise\IeC {\~n}o de datos}{12}{section.Alph3.2}
+\contentsline {section}{\numberline {C.3}Dise\IeC {\~n}o Procedimental}{12}{section.Alph3.3}
 \contentsline {appendix}{\chapternumberline {D}Documentaci\IeC {\'o}n t\IeC {\'e}cnica de programaci\IeC {\'o}n}{13}{appendix.Alph4}
 \contentsline {section}{\numberline {D.1}Introducci\IeC {\'o}n}{13}{section.Alph4.1}
-\contentsline {section}{\numberline {D.2}Programas m\IeC {\'\i }nimos necesarios}{13}{section.Alph4.2}
-\contentsline {subsection}{Especificaci\IeC {\'o}n de requisitos usuario}{13}{section*.19}
-\contentsline {subsection}{Especificaci\IeC {\'o}n de requisitos programador}{13}{section*.20}
+\contentsline {section}{\numberline {D.2}Requerimientos m\IeC {\'\i }nimos necesarios}{13}{section.Alph4.2}
 \contentsline {section}{\numberline {D.3}AngularCLI}{14}{section.Alph4.3}
-\contentsline {subsection}{\IeC {\textquestiondown }Qu\IeC {\'e} es typescript?}{14}{section*.21}
-\contentsline {subsection}{Comandos b\IeC {\'a}sicos}{14}{section*.22}
-\contentsline {subsection}{Puesta en marcha}{14}{section*.23}
+\contentsline {subsection}{\IeC {\textquestiondown }Qu\IeC {\'e} es typescript?}{14}{section*.19}
+\contentsline {subsection}{Comandos b\IeC {\'a}sicos}{14}{section*.20}
+\contentsline {subsection}{Puesta en marcha}{14}{section*.21}
 \contentsline {section}{\numberline {D.4}Manual del programador}{14}{section.Alph4.4}
-\contentsline {subsection}{Compilaci\IeC {\'o}n, instalaci\IeC {\'o}n y ejecuci\IeC {\'o}n del proyecto}{14}{section*.24}
-\contentsline {subsection}{Modo desarrollador }{15}{section*.25}
-\contentsline {subsection}{Modo producci\IeC {\'o}n}{15}{section*.26}
-\contentsline {subsection}{Estructura de directorios del proyecto}{15}{section*.27}
-\contentsline {subsection}{Base de datos}{15}{section*.28}
-\contentsline {subsection}{Avisos}{15}{section*.29}
+\contentsline {subsection}{Compilaci\IeC {\'o}n, instalaci\IeC {\'o}n y ejecuci\IeC {\'o}n del proyecto}{15}{section*.22}
+\contentsline {subsection}{Modo desarrollador }{15}{section*.23}
+\contentsline {subsection}{Modo producci\IeC {\'o}n}{15}{section*.24}
+\contentsline {subsection}{Estructura de directorios del proyecto}{15}{section*.25}
+\contentsline {subsection}{Base de datos}{15}{section*.26}
+\contentsline {subsection}{Avisos}{15}{section*.27}
 \contentsline {appendix}{\chapternumberline {E}Documentaci\IeC {\'o}n de usuario}{16}{appendix.Alph5}
 \contentsline {section}{\numberline {E.1}Introducci\IeC {\'o}n}{16}{section.Alph5.1}
 \contentsline {section}{\numberline {E.2}Instalaci\IeC {\'o}n}{16}{section.Alph5.2}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{16}{section*.28}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{16}{section*.29}
+\contentsline {section}{\numberline {E.3}Manual del usuario}{16}{section.Alph5.3}
 \contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{16}{section*.30}
 \contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{16}{section*.31}
-\contentsline {section}{\numberline {E.3}Manual del usuario}{16}{section.Alph5.3}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{16}{section*.32}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{16}{section*.33}
