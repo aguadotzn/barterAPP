@@ -44,7 +44,7 @@ La plataforma anterior también es muy didáctica, completa y accesible; además
 
  \section{Frameworks cliente}\label{cliente}
  
- \emph{AngularJs vs Angular 4} está fue una de las dudas con las que más tiempo perdí al inicio del desarrollo y después de la fase de formación con la especialización de Coursera no sabía exactamente cual de las dos escoger. Por una parte estaba la formación recibida en los seis cursos iniciales que todos fueron en AngularJS y por otra la inquietud del futuro ya que los frameworks evolucionan siempre a mejor y tarde o temprano los versiones iniciales se acaban quedando obsoletas. 
+ \emph{AngularJs vs Angular } está fue una de las dudas con las que más tiempo perdí al inicio del desarrollo y después de la fase de formación con la especialización de Coursera no sabía exactamente cual de las dos escoger. Por una parte estaba la formación recibida en los seis cursos iniciales que todos fueron en AngularJS y por otra la inquietud del futuro ya que los frameworks evolucionan siempre a mejor y tarde o temprano los versiones iniciales se acaban quedando obsoletas. 
  
  Lo primero que hay que decir es que Angular2 no es la siguiente versión de AngularJS, sino que es un nuevo framework, escrito desde cero y con conceptos y formas de trabajar completamente distintos. Angular utiliza un sistema de inyección de dependencias jerárquico impulsando su rendimiento de forma increíble.  Según algunos datos oficiales, Angular puede llegar a ser 5 veces más rápido que la primera versión.  Vamos a conocer algunas de las características generales de por que me decante por este nuevo framework. 
  
@@ -56,6 +56,7 @@ La plataforma anterior también es muy didáctica, completa y accesible; además
 \end{enumerate}
  
  Vamos a ver por ejemplo como han cambiado los controladores(Así se conocían en AngularJS) a los componentes(Así se conocen en Angular) de una versión a otra.
+ 
  En angularJS:
  
  \lstset{breaklines=true, basicstyle=\footnotesize}
@@ -92,30 +93,30 @@ export class PeliculaComponent {
 }
 \end{lstlisting}
 
-Si podéis observar al inicio de la sección comencé haciendo referencia a Angular2 y AngularJS pero ha medida que he avanzado simplemente he omitido el número. Podría parecer que lo he olvidado pero para nada es así, después del nacimiento de de esa nueva versión que resulto ser un framework en sí mismo que aprender desde cero, desde el equipo de desarrollo de Angular lo que se intentó es describir al framework sin ningún tipo de numeración, simplemente existe un framework y se van a aplicar modificaciones sobre él para mejorarlo, nada más. Para entender mejor esta ruptura AngularJS y Angular no son compatibles pero sí lo son las versiones posteriores. De hecho hace dos meses lanzaron  \emph{Angular v 4.0 }   que posee cambios menos respecto de su versión anterior pero son totalmente compatibles.
+Si podéis observar al inicio de la sección comencé haciendo referencia a Angular2 y AngularJS pero ha medida que he avanzado simplemente he omitido el número. Podría parecer que lo he olvidado pero para nada es así, después del nacimiento de de esa nueva versión que resulto ser un framework en sí mismo que aprender desde cero, desde el equipo de desarrollo de Angular lo que se intentó es describir al framework sin ningún tipo de numeración, simplemente existe un framework y se van a aplicar modificaciones sobre él para mejorarlo, nada más. Para entender mejor esta ruptura AngularJS y Angular no son compatibles pero sí lo son las versiones posteriores. De hecho hace dos meses, en Abril, lanzaron  \emph{Angular  4.0 }   que posee cambios menos respecto de su versión anterior pero son totalmente compatibles.
 
-\imagen{resumen-angular4}{fuente \emph{wikipedia.org/wiki/Angular}.}
+\imagen{resumen-angular4}{Características \emph{Angular}. Fuente:  \url{wikipedia.org/wiki/Angular.}}
 
 
 %\label{etiqueta}
 
 Respecto al futuro de Angular en la última presentación se dijo  que podemos esperar una nueva versión ‘mayor’ cada seis meses, Angular 5 estará lista en Septiembre del 2017, la versión 6 en Marzo del 2018 y así sucesivamente. Está claro que todo proyecto de software que quiera avanzar a buena velocidad, en algún momento introducirá cambios que por desgracia no serán compatibles con versiones anteriores, forzándote a tocar tu código para actualizarte y quizás sea esa una de las necesidades de autoformación ya que todo esta en constante cambio. 
 
-Por supuesto cabe decir aqui que una no es mejor ni peor que la otra, AngularJS se convirtió en un framework extremadamente popular desde su lanzamiento y ha día de hoy se siguen realizando aplicaciones web con este framework. La comunidad de desarolladores que están detrás de su mantenimiento es enorme y es posible consultar dudas sin ningún tipo de problema. La apuesta por Angular es una apuesta de futuro y una elección personal.
+Por supuesto cabe decir aqui que una no es mejor ni peor que la otra, AngularJS se convirtió en un framework extremadamente popular desde su lanzamiento [enlace a bibliografia] y ha día de hoy se siguen realizando aplicaciones web con este framework. La comunidad de desarolladores que están detrás de su mantenimiento es enorme y es posible consultar dudas sin ningún tipo de problema. La apuesta por Angular es una apuesta de futuro y una elección personal.
 
 
   \section{Tipo de base de datos}\label{base de datos}
   
-  Otro de las disyuntivas sin lugar a dudas fue la elección de la base de datos. Mi conocimiento sobre bases de datos se limitaba a los visto durante el grado en la universidad y lo aprendido durante mi estancia de prácticas, por lo que era suficiente para saber manejarme con una. Eso sí siempre había empleado bases de datos SQL o relacionales. Nada más comenzar a introducirme en el mundo de desarrollo web comencé a saber más sobre las bases de datos NoSQL. La diferencia conceptual entre SQL y NoSQL radica en que resuelven escenarios completamente diferentes y excluyentes el uno del otro; ya que para lo que resulta ideal SQL, no lo es NoSQL y viceversa. Aportada la idea principal vamos resumir las diferencias entre ambas. 
+  Otro de las disyuntivas sin lugar a dudas fue la elección de la base de datos. Mi conocimiento sobre bases de datos se limitaba a lo visto durante el grado en la universidad y lo aprendido durante mi estancia de prácticas, por lo que era suficiente para saber manejarme con una. Eso sí siempre había empleado bases de datos SQL o relacionales. Nada más comenzar a introducirme en el mundo de desarrollo web comencé a saber más sobre las bases de datos NoSQL. La diferencia conceptual entre SQL y NoSQL radica en que resuelven escenarios completamente diferentes y excluyentes el uno del otro; ya que para lo que resulta ideal SQL, no lo es NoSQL y viceversa. Aportada la idea principal vamos resumir las diferencias entre ambas. 
   
   \begin{itemize}
     \item SQL permite combinar de forma eficiente diferentes tablas para extraer información relacionada, mientras que NoSQL no lo permite o muy limitadamente.
     \item NoSQL permite distribuir grandes cantidades de información; mientras que SQL facilita distribuir bases de datos relacionales.
     \item SQL permite gestionar los datos junto con las relaciones existentes entre ellos; en NoSQL no existe este tipo de utilidades.
-    \item NoSQL permite un escalado horizontal sin problemas – por su capacidad de distribución-; mientras que escalar SQL resulta más complicado.
+    \item NoSQL permite un escalado horizontal sin problemas – por su capacidad de distribución; mientras que escalar SQL resulta más complicado.
    \end{itemize}
    
-    Entre las recomendaciones que he podido recopilar de algunos blogs [enlace a bibliografia] estos son algunos de los entornos que  se recomiendan para usar bases de datos NoSQL
+    Entre las recomendaciones que he podido recopilar de algunos blogs [enlace a bibliografia] estos son algunos de los entornos que \textbf{se recomiendan para usar} bases de datos NoSQL:
     
       \begin{itemize}
       \item Redes sociales: casi obligatorio.
@@ -123,29 +124,30 @@ Por supuesto cabe decir aqui que una no es mejor ni peor que la otra, AngularJS 
   \item Desarrollo Móvil: debido a la tendencia – en crecimiento- de \hyperlink{ https://es.wikipedia.org/wiki/Bring_your_own_device
 }{Bring Your Own Device}.
   \item BigData: debido a la administración de grandísimas cantidades de información y su evidente heterogeneidad.
-  \item Cloud (XaaS): “Everything as a service”; NoSQL puede adaptarse casi a cualquier necesidad del cliente, y sus particularidades varias.
+  \item Cloud (XaaS): \textit{Everything as a service}. NoSQL puede adaptarse casi a cualquier necesidad del cliente, y sus particularidades varias.
     \end{itemize}
    
     Como ya he comentado anteriormente las elecciones son personales por lo que unas tecnologías no son ni mejores ni peores que las demás simplemente he tenido que decidir entre las alternativas de las que disponía en el mercado. En el caso de las bases de datos hay que tener claro qué y cómo se quiere almacenar y que tipo de tecnologías se van a usar en, por ejemplo, la parte del cliente, para elegir que tipo de base de datos emplear, todas tienen sus ventajas e inconvenientes. Si bien es cierto que quizás MongoDB como base de datos haya sido ideal para este tipo de proyecto.
 
-  \section{Metologías}\label{metodologia}
+  \section{Metodologías}\label{metodologia}
 
 En cuanto a las metodologías, ya nombradas en apartados anteriores, se eligió una metología \emph{Scrum} para la parte más técnica y la metodología \emph{Lean start-up} para la parte más de empresa, de ésta última veremos más información en los anexos.
 
 Scrum es un tipo de metología ágil que se aplica a grandes proyectos para cumplir las necesidades específicas de una manera estructurada y sistematizada. Entre las ventajas se encuentran la productividad, calidad y que se realiza un seguimiento regular de los avances del proyecto, logrando que los integrantes estén unidos, comunicados y que el cliente vaya viendo los avances. Lógicamente esta metodología no es posible aplicar al cien por cien en el proyecto ya que muchas de las características que posee están destinadas al trabajo en grupo, pero se ha intentado seguir una línea lo más semejante posible. 
 
-\imagen{scrumschema}{fuente \emph{Rui Costa, Scrum Manager}.}
+
+\imagen{scrumschema}{Fuente Rui Costa, Scrum Manager \url{linkedin/pulse/posts/costa-ruitiago}.}
  
  De una manera más o menos frecuente se siguió una estrategia de desarrollo incremental a través de iteracciones (\emph{sprints)} englobadas en diferentes \emph{milestones}. Al finalizar cada sprint se evaluaba lo realizado y, si era necesario, se realizaba una reunión con el tutor para esclarecer los pasos dados. Las tareas se estimaban en papel, ya que he utilizado un cuaderno en el que anotaba lo que iba aprendiendo y lo que iba realizando,y también en  los \emph{boards} de Zenhub. 
  
    \section{Desarrollo web}\label{dweb}
    
-    \section{Algoritmo de intercambio}\label{algoritmo}
+   \section{Algoritmo de intercambio}\label{algoritmo}
    
-   \section{Desarrollo app}\label{dapp}
+   \section{Desarrollo móvil}\label{dapp}
    
    \section{Documentación}\label{docs}
    
-    \section{Alojamiento}\label{alojamiento}
+   \section{Alojamiento Web}\label{alojamiento}
  
  

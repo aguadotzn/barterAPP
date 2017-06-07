@@ -17,67 +17,67 @@
 \contentsline {section}{\numberline {3.2}Concepto general del proyecto}{6}{section.3.2}
 \contentsline {subsection}{\IeC {\textquestiondown }Angular JS o Angular 2?}{7}{section*.7}
 \contentsline {section}{\numberline {3.3}An\IeC {\'a}lisis del sistema: MVC}{7}{section.3.3}
-\contentsline {section}{\numberline {3.4}Arquitectura}{7}{section.3.4}
-\contentsline {subsection}{Detalles}{7}{section*.8}
-\contentsline {section}{\numberline {3.5}Secciones}{7}{section.3.5}
-\contentsline {subsection}{Subsecciones}{8}{section*.9}
-\contentsline {subsubsection}{Subsubsecciones}{8}{section*.10}
-\contentsline {section}{\numberline {3.6}Referencias}{8}{section.3.6}
-\contentsline {section}{\numberline {3.7}Im\IeC {\'a}genes}{8}{section.3.7}
-\contentsline {section}{\numberline {3.8}Listas de items}{9}{section.3.8}
-\contentsline {section}{\numberline {3.9}Tablas}{10}{section.3.9}
-\contentsline {chapter}{T\IeC {\'e}cnicas y herramientas}{11}{chapter*.11}
-\contentsline {section}{\numberline {4.1}Metodolog\IeC {\'\i }as}{11}{section.4.1}
-\contentsline {subsection}{Scrum}{11}{section*.12}
-\contentsline {subsection}{MVC: Model-View-Controller}{12}{section*.13}
-\contentsline {section}{\numberline {4.2}Herramientas}{12}{section.4.2}
-\contentsline {subsection}{Atom}{12}{section*.14}
-\contentsline {subsubsection}{Alternativas estudiadas: otros }{13}{section*.15}
-\contentsline {subsection}{Robomongo}{13}{section*.16}
-\contentsline {subsection}{Firefox for developers}{14}{section*.17}
-\contentsline {section}{\numberline {4.3}Tecnolog\IeC {\'\i }as}{15}{section.4.3}
-\contentsline {subsection}{Front-end: Angular 2}{15}{section*.18}
-\contentsline {subsubsection}{Detalles: Angular Arquitectura}{17}{section*.19}
-\contentsline {subsubsection}{Detalles: Typescript}{17}{section*.20}
-\contentsline {subsubsection}{Detalles: Angular CLI}{17}{section*.21}
-\contentsline {subsubsection}{Detalles: M\IeC {\'o}dulos adicionales empleados en este proyecto}{19}{section*.22}
-\contentsline {subsection}{Front-end: Boostrap}{20}{section*.23}
-\contentsline {subsection}{Back-end: Node js}{20}{section*.24}
-\contentsline {subsubsection}{Alternativa estudiada: PHP}{21}{section*.25}
-\contentsline {subsection}{Back-end: Express }{21}{section*.26}
-\contentsline {subsection}{Base de datos: MongoDB}{22}{section*.27}
-\contentsline {subsubsection}{Detalles: Mongoose}{23}{section*.28}
-\contentsline {subsubsection}{Alternativa estudiada: Cassandra}{23}{section*.29}
-\contentsline {section}{\numberline {4.4}Testing}{23}{section.4.4}
-\contentsline {subsection}{Postman}{23}{section*.30}
-\contentsline {section}{\numberline {4.5}Documentaci\IeC {\'o}n}{24}{section.4.5}
-\contentsline {subsection}{LaTeX}{24}{section*.31}
-\contentsline {subsubsection}{Alternativa estudiada: Open Office}{25}{section*.32}
-\contentsline {subsection}{Mendeley}{25}{section*.33}
-\contentsline {section}{\numberline {4.6}Otras herramientas}{25}{section.4.6}
-\contentsline {subsection}{Heroku}{25}{section*.34}
-\contentsline {subsubsection}{Alternativas estudiadas: Plataformas en la nube}{25}{section*.35}
-\contentsline {subsection}{Mlab}{25}{section*.36}
-\contentsline {subsection}{NPM}{25}{section*.37}
-\contentsline {subsection}{Github}{25}{section*.38}
-\contentsline {subsection}{Zenhub}{26}{section*.39}
-\contentsline {subsubsection}{Alternativa estudiada: Trello}{26}{section*.40}
-\contentsline {chapter}{Aspectos relevantes del desarrollo del proyecto}{27}{chapter*.41}
-\contentsline {section}{\numberline {5.1}Inicio del proyecto}{27}{section.5.1}
-\contentsline {section}{\numberline {5.2}Formaci\IeC {\'o}n}{28}{section.5.2}
-\contentsline {section}{\numberline {5.3}Frameworks cliente}{29}{section.5.3}
-\contentsline {section}{\numberline {5.4}Tipo de base de datos}{33}{section.5.4}
-\contentsline {section}{\numberline {5.5}Metolog\IeC {\'\i }as}{34}{section.5.5}
-\contentsline {section}{\numberline {5.6}Desarrollo web}{35}{section.5.6}
-\contentsline {section}{\numberline {5.7}Algoritmo de intercambio}{35}{section.5.7}
-\contentsline {section}{\numberline {5.8}Desarrollo app}{35}{section.5.8}
-\contentsline {section}{\numberline {5.9}Documentaci\IeC {\'o}n}{35}{section.5.9}
-\contentsline {section}{\numberline {5.10}Alojamiento}{35}{section.5.10}
-\contentsline {chapter}{Trabajos relacionados}{36}{chapter*.42}
-\contentsline {section}{\numberline {6.1}Competidores}{36}{section.6.1}
-\contentsline {section}{\numberline {6.2}Otros trabajos}{37}{section.6.2}
-\contentsline {section}{\numberline {6.3}Ventajas y desventajas del proyecto}{37}{section.6.3}
-\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{38}{chapter*.43}
-\contentsline {section}{\numberline {7.1}Conclusiones proyecto}{38}{section.7.1}
-\contentsline {section}{\numberline {7.2}Conclusiones personales}{38}{section.7.2}
-\contentsline {section}{\numberline {7.3}L\IeC {\'\i }neas de trabajo}{38}{section.7.3}
+\contentsline {section}{\numberline {3.4}Arquitectura}{8}{section.3.4}
+\contentsline {subsection}{Detalles}{8}{section*.8}
+\contentsline {section}{\numberline {3.5}Referencias}{8}{section.3.5}
+\contentsline {section}{\numberline {3.6}Tablas}{8}{section.3.6}
+\contentsline {chapter}{T\IeC {\'e}cnicas y herramientas}{10}{chapter*.9}
+\contentsline {section}{\numberline {4.1}Metodolog\IeC {\'\i }as}{10}{section.4.1}
+\contentsline {subsection}{Scrum}{10}{section*.10}
+\contentsline {subsection}{MVC: Model-View-Controller}{11}{section*.11}
+\contentsline {section}{\numberline {4.2}Herramientas}{11}{section.4.2}
+\contentsline {subsection}{Atom}{11}{section*.12}
+\contentsline {subsubsection}{Alternativas estudiadas: otros }{12}{section*.13}
+\contentsline {subsection}{Robomongo}{12}{section*.14}
+\contentsline {subsection}{Firefox for developers}{12}{section*.15}
+\contentsline {section}{\numberline {4.3}Tecnolog\IeC {\'\i }as}{13}{section.4.3}
+\contentsline {subsection}{Front-end: Angular 2/4}{14}{section*.16}
+\contentsline {subsubsection}{Detalles: Angular Arquitectura}{14}{section*.17}
+\contentsline {subsubsection}{Detalles: Typescript}{15}{section*.18}
+\contentsline {subsubsection}{Detalles: Angular CLI}{15}{section*.19}
+\contentsline {subsubsection}{Detalles: M\IeC {\'o}dulos adicionales empleados en este proyecto}{16}{section*.20}
+\contentsline {subsubsection}{Alternativas estudiadas}{17}{section*.21}
+\contentsline {subsection}{Front-end: Boostrap}{17}{section*.22}
+\contentsline {subsection}{Back-end: Node js}{17}{section*.23}
+\contentsline {subsubsection}{Alternativa estudiada: PHP}{18}{section*.24}
+\contentsline {subsection}{Back-end: Express }{18}{section*.25}
+\contentsline {subsection}{Base de datos: MongoDB}{18}{section*.26}
+\contentsline {subsubsection}{Detalles: Mongoose}{19}{section*.27}
+\contentsline {subsubsection}{Alternativa estudiada: Cassandra}{19}{section*.28}
+\contentsline {section}{\numberline {4.4}Testing}{19}{section.4.4}
+\contentsline {subsection}{Postman}{20}{section*.29}
+\contentsline {subsubsection}{Alternativa estudiada: SoapUI}{20}{section*.30}
+\contentsline {subsection}{Karma}{20}{section*.31}
+\contentsline {subsection}{Jasmine}{20}{section*.32}
+\contentsline {section}{\numberline {4.5}Documentaci\IeC {\'o}n}{20}{section.4.5}
+\contentsline {subsection}{LaT\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}}{20}{section*.33}
+\contentsline {subsubsection}{Detalles: ShareLatex}{21}{section*.34}
+\contentsline {subsubsection}{Alternativa estudiada: Open Office}{21}{section*.35}
+\contentsline {subsection}{Mendeley}{21}{section*.36}
+\contentsline {section}{\numberline {4.6}Otras herramientas}{21}{section.4.6}
+\contentsline {subsection}{Heroku}{21}{section*.37}
+\contentsline {subsubsection}{Alternativas estudiadas: Plataformas en la nube}{21}{section*.38}
+\contentsline {subsection}{Mlab}{22}{section*.39}
+\contentsline {subsection}{NPM}{22}{section*.40}
+\contentsline {subsection}{Github}{22}{section*.41}
+\contentsline {subsection}{Zenhub}{22}{section*.42}
+\contentsline {subsubsection}{Alternativa estudiada: Trello}{22}{section*.43}
+\contentsline {chapter}{Aspectos relevantes del desarrollo del proyecto}{23}{chapter*.44}
+\contentsline {section}{\numberline {5.1}Inicio del proyecto}{23}{section.5.1}
+\contentsline {section}{\numberline {5.2}Formaci\IeC {\'o}n}{24}{section.5.2}
+\contentsline {section}{\numberline {5.3}Frameworks cliente}{25}{section.5.3}
+\contentsline {section}{\numberline {5.4}Tipo de base de datos}{29}{section.5.4}
+\contentsline {section}{\numberline {5.5}Metodolog\IeC {\'\i }as}{30}{section.5.5}
+\contentsline {section}{\numberline {5.6}Desarrollo web}{31}{section.5.6}
+\contentsline {section}{\numberline {5.7}Algoritmo de intercambio}{31}{section.5.7}
+\contentsline {section}{\numberline {5.8}Desarrollo app}{31}{section.5.8}
+\contentsline {section}{\numberline {5.9}Documentaci\IeC {\'o}n}{31}{section.5.9}
+\contentsline {section}{\numberline {5.10}Alojamiento}{31}{section.5.10}
+\contentsline {chapter}{Trabajos relacionados}{32}{chapter*.45}
+\contentsline {section}{\numberline {6.1}Competidores}{32}{section.6.1}
+\contentsline {section}{\numberline {6.2}Otros trabajos}{33}{section.6.2}
+\contentsline {section}{\numberline {6.3}Ventajas y desventajas del proyecto}{33}{section.6.3}
+\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{34}{chapter*.46}
+\contentsline {section}{\numberline {7.1}Conclusiones proyecto}{34}{section.7.1}
+\contentsline {section}{\numberline {7.2}Conclusiones personales}{34}{section.7.2}
+\contentsline {section}{\numberline {7.3}L\IeC {\'\i }neas de trabajo}{34}{section.7.3}

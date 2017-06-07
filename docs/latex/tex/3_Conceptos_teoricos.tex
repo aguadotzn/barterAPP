@@ -1,6 +1,6 @@
 \capitulo{3}{Conceptos teóricos}
 
-La parte del proyecto más ardua ha sido la de aprender a utilizar \emph{frameworks}  para crear web apps, para lo cual me he nutrido de diversos cursos online, tanto gratuitos como de pago. A continuación, en este apartado voy a relatar todas las tecnologías empleadas y a justificar el por que he empleado unas y no otras. Las técnicas y tecnologías como tal se verán en el siguiente apartado pero todas ellas presentan unos conceptos teóricos comunes que es necesario conocer. 
+La parte del proyecto más ardua ha sido, sin lugar a dudas, la de aprender a utilizar \emph{frameworks}  para crear web apps, para lo cual me he nutrido de diversos cursos online, tanto gratuitos como de pago. A continuación, en este apartado voy a relatar todas las tecnologías empleadas y a justificar el por que he empleado unas y no otras. Las técnicas y tecnologías como tal se verán en el siguiente apartado pero todas ellas presentan unos conceptos teóricos comunes que es necesario conocer. 
 
 
 \section{Introducción}\label{teorico-introduccion}
@@ -8,7 +8,8 @@ El desarrollo de aplicaciones informáticas evoluciona continuamente para adapta
 
 En los principios de la informática las relaciones en entre los usuarios y los programas de los que hacían uso era muy diferente a lo que tenemos ahora. Ahora se potencia el diseño basado en usuario, antes es potencia más que el programa estuviera implementado de manera idónea antes que la experiencia que el usuario tenía al hacer uso del mismo. Obviamente ahora también se impulsa esa manera de desarrollar código, lo que se conoce como \emph{clean code} \cite{https://g.co/kgs/VLR4mn}, pero en un mundo en el que la competitividad es tan alta prima sobre todo la experiencia del usuario final, que a fin y al cabo va a ser el que interactúa con tu producto ya sea web o móvil. 
 
-\imagen{meanjs}{Esquema \emph{UI, UX IxD}, fuente \emph{dealfuel.com}.}
+\imagen{uxschema}{Esquema \emph{UI, UX IxD}. Fuente  \url{dealfuel.com}.}
+
 
 
 El mundo de las aplicaciones web es un mundo de constante evolución y actualización, donde aparecen nuevas tecnologías que ofrecen tanto mejoras visuales que mejoran la experiencia del usuario como de rendimiento. Este tipo de tecnologías abren un abanico inmenso de posibilidades, y hacen pensar a los analistas y programadores de aplicaciones web que puede haber otras soluciones que mejoren su aplicación, pero que no estaban disponibles cuando definieron la arquitectura y el diseño de sus aplicaciones. Es un mundo que avanza tan rápido que en muchas ocasiones es imposible estar al día de todos los  \emph{frameworks} o tecnologías que van surgiendo, por eso es mejor focalizar los esfuerzos en alguna en concreto e intentar aprenderla de la mejor manera posible. 
@@ -21,16 +22,28 @@ Hace algún tiempo para realizar una web existía una gran barrera a la hora de 
 
 Todo cambio cuando se popularizó Javascript para la realización webapps, la posibilidad de crear web con un mismo lenguaje en todas las partes resulta muy atractiva tanto para el programador como para la lógica del propio programa o web ya que se disminuye el número de errores o se consiguen localizar de manera más sencilla al no tener que estar cambiando de lenguaje. En este punto es donde surge el stack MEAN:
 
-\imagen{uxschema}{Esquema \emph{UI, UX IxD}, fuente \emph{kambrica.com}.}
+\imagen{meanjs}{Esquema \emph{MEAN}. Fuente: \url{kambrica.com}.} 
+
+
 
 La presencia de \emph{Javascript} para el desarrollo de software se está haciendo un hueco cada vez mayor en el mercado. Aquel humilde lenguaje que empezó en los años '90 como una vía sencilla de validar formularios, se ha convertido en parte fundamental del desarrollo de todo tipo de aplicaciones: web, móviles, bases de datos e, incluso, administración de sistemas. Esta proliferación ha llevado a  \emph{Javascript} a todas las capas de desarrollo, empezando por el lado cliente en sus inicios (el navegador), pero yendo también al servidor y a la capa de almacenamiento. En cualquiera de esos puntos podemos encontrar  \emph{Javascript} listo para ser utilizado.
+
+
 
 
 \subsection{¿Angular JS o Angular 2?}\label{angular-js-o-angular-2}
 
 
 
+
+
 \section{Análisis del sistema: MVC}\label{analisis-sistema-mvc}
+
+El \emph{modelo-vista-controlador} un patrón de arquitectura de software, que separa los datos y la lógica de negocio de una aplicación de la interfaz de usuario y el módulo encargado de gestionar los eventos y las comunicaciones. Para ello propone la construcción de tres componentes distintos que son el modelo, la vista y el controlador, es decir, por un lado define componentes para la representación de la información, y por otro lado para la interacción con el usuario.
+
+\imagen{mvcschema2}{Dibujo \emph{MVC}\cite{mvc}. Fuente: \url{artima.com}.}
+
+
 
 
 \section{Arquitectura}\label{arquitectura}
@@ -38,87 +51,11 @@ La presencia de \emph{Javascript} para el desarrollo de software se está hacien
 Como se ha comentado en secciones anteriores la aplicación tiene dos sistemas bien diferenciados: servidor y cliente. En esta sección se expondrán las arquitecturas de cada una de ellas así como de la aplicación competente.
 
 
-
-
 \subsection{Detalles}\label{detalles}
 
 
 
-\section{Secciones}
-
-Las secciones se incluyen con el comando section.
-
-\subsection{Subsecciones}
-
-Además de secciones tenemos subsecciones.
-
-\subsubsection{Subsubsecciones}
-
-Y subsecciones. 
-
-
 \section{Referencias}
 
-Las referencias se incluyen en el texto usando cite \cite{wiki:latex}. Para citar webs, artículos o libros \cite{koza92}.
+Las referencias se incluyen en el texto usando cite \cite{wiki:mvc} \cite{}. Para citar webs, artículos o libros \cite{koza92}.
 
-
-\section{Imágenes}
-
-Se pueden incluir imágenes con los comandos standard de \LaTeX, pero esta plantilla dispone de comandos propios como por ejemplo el siguiente:
-
-\imagen{escudoInfor}{Autómata para una expresión vacía}
-
-
-
-\section{Listas de items}
-
-Existen tres posibilidades:
-
-\begin{itemize}
-	\item primer item.
-	\item segundo item.
-\end{itemize}
-
-\begin{enumerate}
-	\item primer item.
-	\item segundo item.
-\end{enumerate}
-
-\begin{description}
-	\item[Primer item] más información sobre el primer item.
-	\item[Segundo item] más información sobre el segundo item.
-\end{description}
-	
-\begin{itemize}
-\item 
-\end{itemize}
-
-\section{Tablas}
-
-Igualmente se pueden usar los comandos específicos de \LaTeX o bien usar alguno de los comandos de la plantilla.
-
-\tablaSmall{Herramientas y tecnologías utilizadas en cada parte del proyecto}{l c c c c}{herramientasportipodeuso}
-{ \multicolumn{1}{l}{Tecnologías} & Front-End & Back-End & BD & Memoria \\}{ 
-HTML5 & X & & &\\
-CSS3 & X & & &\\
-BOOTSTRAP & X & & &\\
-JavaScript & X & & &\\
-Angular2/4 & X & & &\\
-Bower & X & & &\\
-Gulp & X & & &\\
-PHP & & X & &\\
-Karma + Jasmine & X & & &\\
-Ionic 2 & & X & &\\
-Latex & & X & &\\
-Composer & & X & &\\
-JSON & X & X & &\\
-PhpStorm & X & X & &\\
-MySQL & & & X &\\
-PhpMyAdmin & & & X &\\
-Git + BitBucket & X & X & X & X\\
-Mik\TeX{} & & & & X\\
-\TeX{}Maker & & & & X\\
-Astah & & & & X\\
-Balsamiq Mockups & X & & &\\
-VersionOne & X & X & X & X\\
-} 

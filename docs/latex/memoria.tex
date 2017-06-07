@@ -20,6 +20,10 @@
 \usepackage{tabularx}
 
 
+%Citas
+\usepackage{cite}
+
+
 % Links
 \usepackage[colorlinks]{hyperref}
 \hypersetup{
@@ -35,35 +39,36 @@
 % Párrafos
 \nonzeroparskip
 
-
-% Imagenes
-
-%\usepackage{graphicx}
-%\newcommand{\imagen}[2]{
-%	\begin{figure}[!h]
-%		\centering
-%		\includegraphics[width=0.9\textwidth]{#1}
-%		\caption{#2}\label{fig:#1}
-%	\end{figure}
-%	\FloatBarrier
-%}
-
-\newcommand{\imagenflotante}[2]{
-	\begin{figure}%[!h]
-		\centering
-		\includegraphics[width=0.9\textwidth]{#1}
-		\caption{#2}\label{fig:#1}
-	\end{figure}
-}
-
 % Links
 \usepackage[colorlinks]{hyperref}
 \hypersetup{
 	colorlinks,
 	linkcolor={white!60!black},
-	citecolor={blue!50!black},
+	citecolor={red!50!black},
 	urlcolor={blue!80!black}
 }
+
+% Imagenes
+\usepackage{graphicx}
+
+\newcommand{\imagen}[2]{
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=0.8\textwidth]{#1}
+		\caption{#2}\label{fig:#1}
+	\end{figure}
+	\FloatBarrier
+}
+
+\newcommand{\imagenflotante}[2]{
+	\begin{figure}[!h]
+		\centering
+		\includegraphics[width=0.5\textwidth]{#1}
+		\caption{#2}\label{fig:#1}
+		\FloatBarrier
+	\end{figure}
+}
+
 
 
 % El comando \figura nos permite insertar figuras comodamente, y utilizando
@@ -93,26 +98,7 @@
   \end{figure}%
 }
 
-% Imagenes
-\usepackage{graphicx}
-\newcommand{\imagen}[2]{
-	\begin{figure}[!h]
-		\centering
-		\includegraphics[width=0.9\textwidth]{#1}
-		\caption{#2}\label{fig:#1}
-	\end{figure}
-	\FloatBarrier
-}
 
-%\newcommand{\imagenflotante}[2]{
-%	\begin{figure}%[!h]
-%		\centering
-%		\includegraphics[width=0.9\textwidth]{#1}
-%		\caption{#2}\label{fig:#1}
-%	\end{figure}
-%}
-
-%
 % Comando para incluir imágenes en formato apaisado (sin marco).
 \newcommand{\figuraApaisadaSinMarco}[5]{%
   \begin{figure}%
@@ -123,9 +109,12 @@
     \end{center}%
   \end{figure}%
 }
-% Para las tablas
+
+
+%Tablas
 \newcommand{\otoprule}{\midrule [\heavyrulewidth]}
-%
+
+
 % Nuevo comando para tablas pequeñas (menos de una página).
 \newcommand{\tablaSmall}[5]{%
  \begin{table}
@@ -388,7 +377,7 @@
   }
 \makeatother
 
-\newcommand{\nombre}{Adrian Aguado} %%% cambio de comando
+\newcommand{\nombre}{Adrián Aguado} %%% cambio de comando
 
 % Datos de portada
 \title{{\Huge barterAPP}\\[0.5cm]Manage your business time.}
@@ -410,13 +399,13 @@
 
 \noindent\includegraphics[width=\textwidth]{cabecera}\vspace{1cm}
 
-\noindent D. Luis R. izquierdo, profesor del departamento de Ingeniería Civil área de organización de empresas
+\noindent D. Luis R. Izquierdo, profesor del departamento de Ingeniería Civil área de organización de empresas
 
 \noindent Expone:
 
 \noindent Que el alumno D. \nombre, con DNI 78759314T, ha realizado el Trabajo final de Grado en Ingeniería Informática titulado  barterAPP 
 
-\noindent Y que dicho trabajo ha sido realizado por el alumno bajo la dirección del que suscribe, en virtud de lo cual se autoriza su presentación y defensa.
+\noindent y que dicho trabajo ha sido realizado por el alumno bajo la dirección del que suscribe, en virtud de lo cual se autoriza su presentación y defensa.
 
 \begin{center} %\large
 En Burgos, {\large \today}
@@ -464,16 +453,16 @@ Luis R. Izquierdo
 % Abstract en castellano
 \renewcommand*\abstractname{Resumen}
 \begin{abstract}
-Existen numerosas ocasiones en las que se requiere un reparto de turno. En muchas ocasiones, este el reparto de turnos planificado supone un problema que podría mejorarse fácilmente si se llevaran a cabo cambios bilaterales que a veces no se llegan a producir simplemente porque las partes implicadas desconocen que existe esa oportunidad de mejora.
+Existen numerosas situaciones en la vida diaria en las que se requiere un reparto de turnos. En muchas ocasiones, este el reparto de turnos planificado supone un problema que podría mejorarse fácilmente si se llevaran a cabo cambios bilaterales que a veces no se llegan a producir simplemente porque las partes implicadas desconocen que existe esa oportunidad de mejora.
 
-La aplicación desarrollada presenta una solución frente a los problemas que existen  hoy en día a la hora de realizar un cambio de turno en determinadas empresas o instituciones públicas.  Se ha pretendido realizar una interfaz lo más sencilla e intuitiva para el usuario que le facilite la tarea descrita.
+La aplicación desarrollada presenta una solución frente a los problemas que existen hoy en día a la hora de realizar un cambio de turno en determinadas empresas o instituciones públicas.  
 
 BarterApp se presenta como un aplicación web y una interfaz híbrida móvil. Esta desarrollada con las últimas tecnologías web presentes en el mercado.
 \end{abstract}
 
 \renewcommand*\abstractname{Descriptores}
 \begin{abstract}
-WebApp, Angularr, Nodejs, Express, MongoDB, MEAN
+WebApp, Angular, Nodejs, Express, MongoDB, MEAN
 \end{abstract}
 
 \clearpage
@@ -483,7 +472,7 @@ WebApp, Angularr, Nodejs, Express, MongoDB, MEAN
 \begin{abstract}
 There are a lot of occasions in life which a shift deal is required. At many times, this planned shift allocation is a problem that could easily be improved if bilateral changes are made, sometimes do not come about simply because the parts involved in the shift are unaware that there is an opportunity for improvement.
 
-The application developed presents a solution to the problems that exist today when making a change of shift in public institutions or some companies. It pretends to be a simple interface, intuitive and easy to use for the user.
+The application developed presents a solution to the problems that exist today when making a change of shift in public institutions or some companies. 
 
 BarterApp is develop as a web application and hybrid mobile interface. It is developed with the latest web technologies present nowadays.
 \end{abstract}
