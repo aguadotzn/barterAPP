@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  7 JUN 2017 20:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  9 JUN 2017 16:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1004,87 +1004,14 @@ LaTeX Info: Redefining \% on input line 28.
 
 LaTeX Warning: Label `sprint6' multiply defined.
 
-) (./tex/B_Requisitos.aux) (./tex/C_Diseno.aux
-! Missing \endcsname inserted.
-<to be read again> 
-                   \unhbox 
-l.7 ...}n}}{12}{Introducción}{section.Alph3.1}{}}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-
-LaTeX Warning: Label `introduccion-dise\IeC {\~n}o' multiply defined.
-
-! Missing \endcsname inserted.
-<to be read again> 
-                   \unhbox 
-l.7 ...}n}}{12}{Introducción}{section.Alph3.1}{}}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-
-! LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.7 ...}n}}{12}{Introducción}{section.Alph3.1}{}}
-                                                  
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing number, treated as zero.
-<to be read again> 
-                   \accent@spacefactor 
-l.7 ...}n}}{12}{Introducción}{section.Alph3.1}{}}
-                                                  
-A number should have been here; I inserted `0'.
-(If you can't figure out why I needed to see a number,
-look up `weird error' in the index to The TeXbook.)
-
-! Bad space factor (0).
-<to be read again> 
-                   \accent@spacefactor 
-l.7 ...}n}}{12}{Introducción}{section.Alph3.1}{}}
-                                                  
-I allow only values in the range 1..32767 here.
-
-! Extra \endcsname.
-\@namedef ...xpandafter \def \csname #1\endcsname 
-                                                  
-l.7 ...}n}}{12}{Introducción}{section.Alph3.1}{}}
-                                                  
-I'm ignoring this, since I wasn't doing a \csname.
-
-! Extra }, or forgotten \endgroup.
-\@newl@bel ...ined}}\global \@namedef {#1@#2}{#3}}
-                                                  
-l.7 ...}n}}{12}{Introducción}{section.Alph3.1}{}}
-                                                  
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-) (./tex/D_Manual_programador.aux
+) (./tex/B_Requisitos.aux) (./tex/C_Diseno.aux) (./tex/D_Manual_programador.aux
 
 LaTeX Warning: Label `angularCLI' multiply defined.
 
 
 LaTeX Warning: Label `typesript' multiply defined.
 
-) (./tex/E_Manual_usuario.aux
-
-LaTeX Warning: Label `aweb' multiply defined.
-
-
-LaTeX Warning: Label `amovil' multiply defined.
-
-))
+) (./tex/E_Manual_usuario.aux))
 \openout1 = `anexos.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 369.
@@ -1103,7 +1030,8 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 369.
 LaTeX Font Info:    ... okay on input line 369.
 LaTeX Info: Redefining \. on input line 369.
 LaTeX Info: Redefining \% on input line 369.
- (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+
+(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count186
 \scratchdimen=\dimen184
@@ -1154,14 +1082,14 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-<./img/cabecera.pdf, id=96, 617.67549pt x 135.51413pt>
+<./img/cabecera.pdf, id=100, 617.67549pt x 135.51413pt>
 File: ./img/cabecera.pdf Graphic file (type pdf)
 
 <use ./img/cabecera.pdf>
 Package pdftex.def Info: ./img/cabecera.pdf used on input line 371.
 (pdftex.def)             Requested size: 369.0pt x 80.95758pt.
 
-<./img/escudoInfor.pdf, id=97, 618.11432pt x 737.07487pt>
+<./img/escudoInfor.pdf, id=101, 618.11432pt x 737.07487pt>
 File: ./img/escudoInfor.pdf Graphic file (type pdf)
 
 <use ./img/escudoInfor.pdf>
@@ -1387,7 +1315,7 @@ l.28
 
 
 
-] <./img/sprint0.png, id=471, 1108.14pt x 380.42125pt>
+] <./img/sprint0.png, id=476, 1108.14pt x 380.42125pt>
 File: ./img/sprint0.png Graphic file (type png)
 
 <use ./img/sprint0.png>
@@ -1430,13 +1358,13 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 53.
 
-[2 <./img/sprint0.png>] <./img/sprint1.png, id=480, 2182.1525pt x 894.34125pt>
+[2 <./img/sprint0.png>] <./img/sprint1.png, id=485, 2182.1525pt x 894.34125pt>
 File: ./img/sprint1.png Graphic file (type png)
 
 <use ./img/sprint1.png>
 Package pdftex.def Info: ./img/sprint1.png used on input line 58.
 (pdftex.def)             Requested size: 332.09775pt x 136.09685pt.
- <./img/sprint2.png, id=481, 1103.12125pt x 441.65pt>
+ <./img/sprint2.png, id=486, 1103.12125pt x 441.65pt>
 File: ./img/sprint2.png Graphic file (type png)
 
 <use ./img/sprint2.png>
@@ -1477,7 +1405,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 73.
 
 [3 <./img/sprint1.png>]
-<./img/sprint3.png, id=490, 1103.12125pt x 510.90875pt>
+<./img/sprint3.png, id=495, 1103.12125pt x 510.90875pt>
 File: ./img/sprint3.png Graphic file (type png)
 
 <use ./img/sprint3.png>
@@ -1514,13 +1442,13 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 96.
 
 [4 <./img/sprint2.png> <./img/sprint3.png>]
-<./img/sprint4.png, id=499, 1106.1325pt x 319.1925pt>
+<./img/sprint4.png, id=504, 1106.1325pt x 319.1925pt>
 File: ./img/sprint4.png Graphic file (type png)
  <use ./img/sprint4.png>
 Package pdftex.def Info: ./img/sprint4.png used on input line 101.
 (pdftex.def)             Requested size: 332.09775pt x 95.83154pt.
 
-<./img/sprint5.png, id=500, 1098.1025pt x 326.21875pt>
+<./img/sprint5.png, id=505, 1098.1025pt x 326.21875pt>
 File: ./img/sprint5.png Graphic file (type png)
  <use ./img/sprint5.png>
 Package pdftex.def Info: ./img/sprint5.png used on input line 114.
@@ -1556,13 +1484,13 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 123.
 
 [5 <./img/sprint4.png> <./img/sprint5.png>]
-<./img/sprint6.png, id=509, 1104.125pt x 255.95625pt>
+<./img/sprint6.png, id=514, 1104.125pt x 255.95625pt>
 File: ./img/sprint6.png Graphic file (type png)
  <use ./img/sprint6.png>
 Package pdftex.def Info: ./img/sprint6.png used on input line 127.
 (pdftex.def)             Requested size: 332.09775pt x 76.98665pt.
 
-<./img/sprint7.png, id=510, 1106.1325pt x 324.21124pt>
+<./img/sprint7.png, id=515, 1106.1325pt x 324.21124pt>
 File: ./img/sprint7.png Graphic file (type png)
  <use ./img/sprint7.png>
 Package pdftex.def Info: ./img/sprint7.png used on input line 140.
@@ -2175,28 +2103,19 @@ LaTeX Info: Redefining \% on input line 24.
 LaTeX Info: Redefining \. on input line 28.
 LaTeX Info: Redefining \% on input line 28.
  (./tex/A_Plan_proyecto.aux) (./tex/B_Requisitos.aux)
-(./tex/C_Diseno.aux
-! Missing \endcsname inserted.
-<to be read again> 
-                   \unhbox 
-l.7 ...}n}}{12}{Introducción}{section.Alph3.1}{}}
-                                                  
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-! Extra \endcsname.
-\@newl@bel ... \bbl@tempa \csname #1@#2\endcsname 
-                                                  \def \bbl@tempb {#3}\@safe...
-l.7 ...}n}}{12}{Introducción}{section.Alph3.1}{}}
-                                                  
-I'm ignoring this, since I wasn't doing a \csname.
-
-) (./tex/D_Manual_programador.aux) (./tex/E_Manual_usuario.aux))
+(./tex/C_Diseno.aux) (./tex/D_Manual_programador.aux)
+(./tex/E_Manual_usuario.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 416.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 416.
-Package rerunfilecheck Info: File `anexos.out' has not changed.
-(rerunfilecheck)             Checksum: 92CC3AD9601E5D803187C709D5C316DB;1676.
 
+
+Package rerunfilecheck Warning: File `anexos.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `anexos.out':
+(rerunfilecheck)             Before: 0EBC0E90286602CFE154A07C34F864ED;1754
+(rerunfilecheck)             After:  92CC3AD9601E5D803187C709D5C316DB;1676.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -2209,32 +2128,35 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 416.
  ) 
 Here is how much of TeX's memory you used:
- 12991 strings out of 493014
- 179430 string characters out of 6133352
- 339531 words of memory out of 5000000
- 16238 multiletter control sequences out of 15000+600000
+ 12993 strings out of 493014
+ 179462 string characters out of 6133352
+ 339489 words of memory out of 5000000
+ 16239 multiletter control sequences out of 15000+600000
  14524 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,12n,51p,808b,1318s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb>
-</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
-usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/
-texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on anexos.pdf (19 pages, 1274323 bytes).
+pdfTeX warning (dest): name{section.Alph5.4} has been referenced but does not
+ exist, replaced by a fixed one
+
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/lo
+cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
+texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texl
+ive/2016/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb>
+Output written on anexos.pdf (19 pages, 1274614 bytes).
 PDF statistics:
- 673 PDF objects out of 1000 (max. 8388607)
- 603 compressed objects within 7 object streams
- 94 named destinations out of 1000 (max. 500000)
- 235 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 678 PDF objects out of 1000 (max. 8388607)
+ 608 compressed objects within 7 object streams
+ 95 named destinations out of 1000 (max. 500000)
+ 243 words of extra memory for PDF output out of 10000 (max. 10000000)
 
