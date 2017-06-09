@@ -139,10 +139,10 @@ Scrum es un tipo de metología ágil que se aplica a grandes proyectos para cump
  
  De una manera más o menos frecuente se siguió una estrategia de desarrollo incremental a través de iteracciones (\emph{sprints)} englobadas en diferentes \emph{milestones}. Al finalizar cada sprint se evaluaba lo realizado y, si era necesario, se realizaba una reunión con el tutor para esclarecer los pasos dados. Las tareas se estimaban en papel, ya que he utilizado un cuaderno en el que anotaba lo que iba aprendiendo y lo que iba realizando,y también en  los \emph{boards} de Zenhub. 
  
-   \section{Desarrollo del algoritmo}\label{dweb}
+   \section{Desarrollo del algoritmo}\label{algoritmo}
    El algoritmo que he usado para realizar el cambio de turno entre los usuarios es bastante sencillo y no muy complejo de entender.
    
-   Lo primero que hay que comprender es como funciona internamente la base de datos dado que va a ser la parte fundamental para que se produzca el intercambio deseado. \emph{MongoDB} como ya sabemos  se basa en colecciones de datos, por lo tanto para mi proyecto yo poseo un base de datos que consta de las siguiente colecciones
+   Lo primero que hay que comprender es como funciona internamente la base de datos dado que va a ser la parte fundamental para que se produzca el intercambio deseado. \emph{MongoDB} como ya sabemos  se basa en colecciones de datos, por lo tanto para mi proyecto yo poseo un base de datos que consta de las siguiente colecciones:
    
    
    \begin{itemize}
@@ -151,13 +151,27 @@ Scrum es un tipo de metología ágil que se aplica a grandes proyectos para cump
 	\item Interchange (Intercambio): es una colección extra que se ha añadido para intercambiar entre los usuarios el turno
 	\end{itemize}
    
-   \imagen{dbschema}{Esquema interno base de datos. Elaboración propia.}
+   \imagen{dbschema}{Esquema interno base de datos. Fuente: Elaboración propia.}
    
    Una vez entendido esto voy a explicar de una manera didáctica como actúa el intercambio de turnos. Cada usuario posee su propio calendario, cada uno puede añadir sus propios turnos al calendario pero no ver los de los demás, los turnos son de cuatro tipos, se detallarán a continuación, y los cambios solo se producen entre tipos de turnos específicos. 
 
- \imagen{shiftschema}{Esquema  tipos de turnos. Elaboración propia.}
+ \imagen{shiftschema}{Esquema  tipos de turnos. Elaboración propia.}\label{img:shiftschema}
+ 
+Cada turno tiene asignada una prioridad que por defecto será  \textbf{normal}. Existen varios tipo de prioridades que se asignarán dependiendo en que fase se encuentra ese turno, es decir, cuando un usuario solicita un turno cambiará de prioridad por que debe esperar hasta que el otro usuario acepte o rechace la petición. Por lo tanto se trata de una lógica que funciona a base de peticiones-respuesta. Cuando varios usuarios, de una misma empresa, puedan intercambiar sus turnos de acuerdo a la lógica de la imagen \ref{img:shiftschema} entonces entran en juego las prioridades ya nombradas.  
+
+\imagen{prioritiesscchema}{Esquema de las diferentes prioridades. Fuente: Elaboración propia.}
+ 
+ Todos los turnos, mal llamados \emph{eventos} dentro del código interno del calendario, poseen prioridad \textbf{normal}, cuando un usuario pregunta a otro por el cambio de turno, automáticamente el turno del \underline{usuario emisor} pasa \textbf{required}, o requerido, y el turno del \underline{usuario destinatario} a \textbf{pending}, o pendiente. Por lo que una vez se llega hasta aquí es el usuario destinatario el que tiene el poder de decisión, deberá aceptar o rechazar la petición. En función de lo que este usuario decida ese turno pasará a ser \textbf{accepted} o \textbf{declined}. Si el usuario que recibe la petición lo acepta se producirá el cambio de turno, si lo rechaza no se producirá el cambio y el turno pasará a estado normal.
+ 
+ Asimismo es necesario, debido a como se comporta la base de datos internamente, evitar que se produzcan tareas simultáneas en el calendario. \emph{Angular 2+} proporciona un mecanismo interno para realizar tareas simultáneas pero he considerado oportuno el separar cada proceso en un mecanismo diferente de manera que el usuario tiene claro en cada momento: los usuarios a los que puede enviar una petición (de la misma manera el usuario que la recibe tiene constancia), si esa petición de cambio ha sido acepta o rechazada y por último confirmar ese cambio o rechazo. De esta manera estamos garantizando al cien por cien que el usuario ha sido informado sobre si su petición ha sido aceptada o rechazada y evitando posibles engaños por parte de los usuarios.
+ 
+ Por otro lado hay que notar que la colección \emph{Interchange} empleada para realizar y almacenar el cambio de turno, puede resultar muy útil en el futuro para implementar, de alguna manera una forma de que el usuario pueda ver una lista de las peticiones de cambio de turno rechazadas o aceptadas en el pasado. En un primer momento se pensó en borrar la información de cada intercambio pero si se piensa correctamente estos datos pueden resultan realmente interesantes para, por ejemplo, un administrador del sitio. 
+ 
+ 
    
-   \section{Desarrolo web}\label{algoritmo}
+   \section{Desarrollo web}\label{dweb}
+   
+   El desarrollo de la aplicación web se ha realizado de manera progresiva aunque notando diversos cambios 
    
    \section{Desarrollo móvil}\label{dapp}
    

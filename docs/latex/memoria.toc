@@ -68,15 +68,15 @@
 \contentsline {section}{\numberline {5.4}Tipo de base de datos}{26}{section.5.4}
 \contentsline {section}{\numberline {5.5}Metodolog\IeC {\'\i }as}{28}{section.5.5}
 \contentsline {section}{\numberline {5.6}Desarrollo del algoritmo}{29}{section.5.6}
-\contentsline {section}{\numberline {5.7}Desarrolo web}{30}{section.5.7}
-\contentsline {section}{\numberline {5.8}Desarrollo m\IeC {\'o}vil}{30}{section.5.8}
-\contentsline {section}{\numberline {5.9}Documentaci\IeC {\'o}n}{30}{section.5.9}
-\contentsline {section}{\numberline {5.10}Alojamiento Web}{30}{section.5.10}
-\contentsline {chapter}{Trabajos relacionados}{31}{chapter*.45}
-\contentsline {section}{\numberline {6.1}Competidores}{31}{section.6.1}
-\contentsline {section}{\numberline {6.2}Otros trabajos}{32}{section.6.2}
-\contentsline {section}{\numberline {6.3}Ventajas y desventajas del proyecto}{32}{section.6.3}
-\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{33}{chapter*.46}
-\contentsline {section}{\numberline {7.1}Conclusiones proyecto}{33}{section.7.1}
-\contentsline {section}{\numberline {7.2}Conclusiones personales}{33}{section.7.2}
-\contentsline {section}{\numberline {7.3}L\IeC {\'\i }neas de trabajo}{33}{section.7.3}
+\contentsline {section}{\numberline {5.7}Desarrollo web}{32}{section.5.7}
+\contentsline {section}{\numberline {5.8}Desarrollo m\IeC {\'o}vil}{32}{section.5.8}
+\contentsline {section}{\numberline {5.9}Documentaci\IeC {\'o}n}{32}{section.5.9}
+\contentsline {section}{\numberline {5.10}Alojamiento Web}{32}{section.5.10}
+\contentsline {chapter}{Trabajos relacionados}{33}{chapter*.45}
+\contentsline {section}{\numberline {6.1}Competidores}{33}{section.6.1}
+\contentsline {section}{\numberline {6.2}Otros trabajos}{34}{section.6.2}
+\contentsline {section}{\numberline {6.3}Ventajas y desventajas del proyecto}{34}{section.6.3}
+\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{35}{chapter*.46}
+\contentsline {section}{\numberline {7.1}Conclusiones proyecto}{35}{section.7.1}
+\contentsline {section}{\numberline {7.2}Conclusiones personales}{35}{section.7.2}
+\contentsline {section}{\numberline {7.3}L\IeC {\'\i }neas de trabajo}{35}{section.7.3}
