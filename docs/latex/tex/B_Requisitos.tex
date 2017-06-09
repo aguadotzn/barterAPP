@@ -24,9 +24,8 @@ deseado. Se han seguido las recomendaciones del estándar IEEE 830 según la úl
 \section{Objetivos generales}\label{objetivos-generales}
 Los objetivos generales que se perseguían con el proyecto han sido:
 \begin{itemize}
-	\item O1
-	\item O2
-	\item O3
+	\item Desarrollar una aplicación web que permita intercambiar turnos en función de unas restricciones.
+	\item Desarrollar una aplicación híbrida que adapte la anterior funcionalidad a cualquier dispositivo.
 \end{itemize}
 
 
@@ -35,68 +34,314 @@ A continuación, se enumeran los requisitos específicos :
 
 En esta sección se especificarán los requisitos del sistema, diferenciando los requisitos funcionales, o sea los  el comportamiento del sistema, de los requisitos no funcionales, que describen características de funcionamiento.
 \subsection{Requisitos funcionales}\label{r-funcionales}
-\begin{itemize}
-    \item RF-1.
-    \item RF-2.
+\begin{description}
+    \item[RF-1 Gestión de usuarios:] Los usuarios son la principal baza de la aplicación se deben poder gestionar correctamente.
     \begin{itemize}
-         \item RF-2.1
-         \item RF-2.2
+         \item \textbf{RF-1.1:} Registrar usuarios
+         \item \textbf{RF-1.2:} Logear usuarios
+         \item \textbf{RF-1.3:} Deslogearse
     \end{itemize}
-    \item RF-3.
-\end{itemize}
+   \item[RF-2. Gestión de calendario:] Funciona como un calendario normal.
+    \begin{itemize}
+         \item \textbf{RF-2.1:} Añadir turnos.
+         \item \textbf{RF-2.2:} Eliminar turnos.
+         \item \textbf{RF-2.3:} Editar turnos.
+         \item \textbf{RF-2.4:} Visualizar turnos.
+    \end{itemize}
+ 	   \item[RF-3. Gestión de turnos:] Parte de intercambio de turnos.
+    \begin{itemize}
+         \item \textbf{RF-3.1:} Enviar petición.
+         \item \textbf{RF-3.2:} Aceptar petición.
+         \item \textbf{RF-3.3:} Rechazar petición. 
+         \item \textbf{RF-3.4:} Aceptar intercambio.
+         \item \textbf{RF-3.5:} Rechazar intercambio.
+         \item \textbf{RF-3.6:} Visualizar detalles.
+           \begin{itemize}
+             \item \textbf{RF-3.6.1:} Visualizar turnos.
+             \item \textbf{RF-3.6.2:} Visualizar pendientes.
+             \item \textbf{RF-3.6.3:} Visualizar aceptados.
+             \item \textbf{RF-3.6.4:} Visualizar rechazados.
+           \end{itemize}
+         \item \textbf{RF-3.7:} Visualizar calendario.
+    \end{itemize}
+       
+    
+    
+   \item[RF-4. Información:] Información de como usar la aplicación
+\end{description}
 
 \subsection{Requisitos no funcionales}\label{rnofuncionales}
-\begin{itemize}
-    \item RNF-1.
-    \item RNF-2.
-    \begin{itemize}
-              \item RNF-2.1
-        	   \item RNF-2.2
-    \end{itemize}
-    \item RNF-3.
-\end{itemize}
+\begin{description}
+    \item [RNF-1 Seguridad] texto.
+    \item [RNF.2 Escalabilidad:] texto
+    \item [RNF.3 Eficiencia:]  texto.
+\end{description}
 
 
-\section{Especificación de requisitos}\label{eequisitos}
+\section{Especificación de requisitos}\label{requisitos}
 
-En esta sección se explicará el diagrama de casos de uso y se desarrollará cada uno
+En esta sección se explicará el diagrama de casos de uso y se desarrollará cada uno de los requisitos en función del esquema.
 
+\subsection{Diagrama casos de uso}
 
 %Imagen casos de uso
+\imagen{casodeusoschema}{Casos de uso. Fuente: Elaboración propia.}
 
+\subsection{Actores}
+El actor es el usuario de la aplicación, tenemos que tener en cuenta que para que se de un cambio de turno deben de existir dos actores, sino sería imposible el intercambio.
 
+\subsection{Casos de uso}
 
-%Tabla grande
+%CU-0: Gestión usuarios
 \begin{table}
 \begin{tabular}{llr}  
 \toprule
-\begin{minipage}[b]{0.23\columnwidth}\raggedright\strut
-\textbf{CU-02}\strut
-\end{minipage} & \begin{minipage}[b]{0.71\columnwidth}\raggedright\strut
-\textbf{Crear cuestionarios}\strut
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-01}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{Gestión usuarios}\strut
 \end{minipage}\tabularnewline
 \cmidrule(r){1-2}
 \textbf{Versión}       & 1.0           \\
 \textbf{Autor}       & Adrián  Aguado    \\
-\textbf{Requisitos asociados}       & RF-1.1, RF-1.2 \\ 
-\textbf{Descripción} & Permite al usuario logearse\\
-\textbf{Precondición} & Las precondiciones \\
-& deben estar disponibles        \\
-\textbf{Secuencia} & 1. El usuario rellena el formulario \\
+\textbf{Requisitos asociados}       & RF-1.1, RF-1.2, RF-1.3 \\ 
+\textbf{Descripción} & Permite registrarse, logearse al usuario o salir\\
+\textbf{Precondición} & La página esta cargada \\
+& base de datos funcionando       \\
+\textbf{Acciones posibles} & 1. El usuario se registra \\
 & para\\
-& 2. El usuario \\
-& 3. Si\\
-& se        \\
+& 2. El usuario  se logea \\
+& 3. El usuario interactúa\\
+& 4, El usuario sale.        \\
 \textbf{Postcondición} & Se añade el usuario \\
 & a la base de datos.     \\
-\textbf{Excepciones} &  Si no se introducen los campos obligatorios \\
-& se muestra texto resaltando indicándolo
-          \\
+\textbf{Excepciones} & s \\
 \textbf{Frecuencia} & Alta            \\
 \textbf{Importancia} & Alta            \\
-\textbf{Comentarios } & Esto es un comentario        \\
-& sobre este requisito.     \\
+\textbf{Comentarios } &       \\
 \bottomrule
 \end{tabular}
-\caption{CU-01 Crear usuario} \label{tab:sometab}
+\caption{CU-0 Gestión usuarios} 
 \end{table}
+
+%CU-02: Registro
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-02}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{Registro}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-1.1 \\ 
+\textbf{Descripción} & Permite registrarse\\
+\textbf{Precondición} & La página esta cargada  \\
+& en la pestaña adecuada     \\
+\textbf{Acciones} & 1. El usuario introduce los datos, \\
+& a saber: \\
+& A. Nombre \\
+& B. Apellidos\\
+& B. Nombre usuario\\
+& C. E-mail\\
+& D. Nombre empresa\\
+& E. Tipo de turno (a elegir)\\
+& F. Contraseña\\
+\textbf{Postcondición} & Se añade el usuario \\
+& a la base de datos.     \\
+& Redirección a log-in.  \\
+\textbf{Excepciones} &  Si no se introducen todos los campos  \\
+& obligatorios se notifica. También si el usuario \\
+& ya existe o si todo ha ido correctamente    \\
+\textbf{Frecuencia} & Alta            \\
+\textbf{Importancia} & Alta            \\
+\textbf{Comentarios } &       \\
+\bottomrule
+\end{tabular}
+\caption{CU-02 Registro} 
+\end{table}
+
+%CU-03: Log-in
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-03}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{Log-in}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-1.2 \\ 
+\textbf{Descripción} & Permite logearse al usuario\\
+\textbf{Precondición} & La página esta cargada \\
+& en la pestaña adecuada     \\
+& base de datos funcionando       \\
+\textbf{Acciones} & 1. El usuario se \emph{logea}\\
+& para ellos introduce:\\
+& A. Correo electrónico \\
+& B. Contraseña\\
+\textbf{Postcondición} & El usuario entra en la  \\
+& aplicación    \\
+\textbf{Excepciones} &  Si la contraseña no es correcta, aviso \\
+&  Si el correo no es correcto, aviso \\
+\textbf{Frecuencia} & Alta            \\
+\textbf{Importancia} & Alta            \\
+\textbf{Comentarios } &        \\
+\bottomrule
+\end{tabular}
+\caption{CU-03 Log-in} 
+\end{table}
+
+%CU-04: Log out
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-04}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{Log-out}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-1.3 \\ 
+\textbf{Descripción} & Permite salir de la aplicación\\
+\textbf{Precondición} & El usuario esta dentro de la \\
+& aplicación       \\
+\textbf{Acciones} & 1. Presionar el botón \emph{log out} \\
+   \\
+\textbf{Postcondición} & Sale de la aplicación  \\
+\textbf{Excepciones} &     \\
+\textbf{Frecuencia} & Alta            \\
+\textbf{Importancia} & Alta            \\
+\textbf{Comentarios } &      \\
+\bottomrule
+\end{tabular}
+\caption{CU-04 Log out} 
+\end{table}
+
+Nota: El editar usuarios y eliminar usuarios no esta implementado de cara al usuario. Esta hecho pero no se encuentra disponible en pantalla para realizarse directamente por parte del usuario.
+
+%CU-05: Gestión Calendario
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-05}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{Gestión calendario}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-2.1, RF-2.2, RF-2.3, RF-2.4  \\ 
+\textbf{Descripción} & Gestión del calendario\\
+\textbf{Precondición} & El usuario esta dentro de la \\
+& aplicación       \\
+\textbf{Acciones} & 1. Añadir turnos \\
+& 3. Eliminar turnos \\
+& 4. Editar turnos \\
+\textbf{Postcondición} Turno deseado \\
+\textbf{Excepciones} &     \\
+\textbf{Frecuencia} & Media          \\
+\textbf{Importancia} & Alta            \\
+\textbf{Comentarios } &      \\
+\bottomrule
+\end{tabular}
+\caption{CU-05 Gestión Calendario} 
+\end{table}
+
+%CU-06: Añadir turno
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-06}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{Añadir turno}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-2.1  \\ 
+\textbf{Descripción} &  Añadir un turno determinado \\
+& al calendario      \\
+\textbf{Precondición} & El usuario esta dentro de la \\
+& aplicación       \\
+\textbf{Acciones} & 1. Presionar  botón \emph{nuevo turno} \\
+& 2. Seleccionar título \\
+& 3.Seleccionar tipo \\
+& 4 .Seleccionar fecha\\
+\textbf{Postcondición} Turno deseado en calendario \\
+\textbf{Excepciones} &     \\
+\textbf{Frecuencia} & Media          \\
+\textbf{Importancia} & Alta            \\
+\textbf{Comentarios } &      \\
+\bottomrule
+\end{tabular}
+\caption{CU-06 Añadir turno} 
+\end{table}
+
+%CU-07: Eliminar turno
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-07}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{ Eliminar turno}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-2.1, RF-2.2, RF-2.3, RF-2.4  \\ 
+\textbf{Descripción} & Gestión del calendario\\
+\textbf{Precondición} & El usuario esta dentro de la \\
+& aplicación       \\
+\textbf{Acciones} & 1. Añadir turnos \\
+& 3. Eliminar turnos \\
+& 4. Editar turnos \\
+\textbf{Postcondición} Turno deseado \\
+\textbf{Excepciones} &     \\
+\textbf{Frecuencia} & Media          \\
+\textbf{Importancia} & Alta            \\
+\textbf{Comentarios } &      \\
+\bottomrule
+\end{tabular}
+\caption{CU-07 Eliminar turno} 
+\end{table}
+
+%CU-08: Editar turno
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-05}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{Gestión calendario}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-2.1, RF-2.2, RF-2.3, RF-2.4  \\ 
+\textbf{Descripción} & Gestión del calendario\\
+\textbf{Precondición} & El usuario esta dentro de la \\
+& aplicación       \\
+\textbf{Acciones} & 1. Añadir turnos \\
+& 3. Eliminar turnos \\
+& 4. Editar turnos \\
+\textbf{Postcondición} Turno deseado \\
+\textbf{Excepciones} &     \\
+\textbf{Frecuencia} & Media          \\
+\textbf{Importancia} & Alta            \\
+\textbf{Comentarios } &      \\
+\bottomrule
+\end{tabular}
+\caption{CU-05 Gestión Calendario} 
+\end{table}
+
+
