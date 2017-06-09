@@ -75,5 +75,5 @@ function _delete (text, company) {
           if (err) deferred.reject(err.name + ': ' + err.message)
           deferred.resolve()
         })
-  ∫return deferred.promise
+  return deferred.promise
 }
