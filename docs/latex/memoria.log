@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  9 JUN 2017 17:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  10 JUN 2017 18:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2919,6 +2919,18 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 169.
  [31 <./img/prioritiesscchema.png>]
 Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 172.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 172.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 172.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 172.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 172.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 172.
+Package babel Info: Redefining spanish shorthand <<
 (babel)             in language append on input line 176.
 Package babel Info: Redefining spanish shorthand >>
 (babel)             in language append on input line 176.
@@ -2954,18 +2966,6 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 180.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 180.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 182.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 182.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 182.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 182.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 182.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 182.
 )
 LaTeX Info: Redefining \. on input line 504.
 LaTeX Info: Redefining \% on input line 504.
@@ -3264,7 +3264,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 512.
 Here is how much of TeX's memory you used:
  13174 strings out of 493014
  184592 string characters out of 6133352
- 392012 words of memory out of 5000000
+ 392045 words of memory out of 5000000
  16277 multiletter control sequences out of 15000+600000
  14537 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3404,7 +3404,7 @@ ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
 e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/
 2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2
 016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on memoria.pdf (46 pages, 1508175 bytes).
+Output written on memoria.pdf (46 pages, 1507764 bytes).
 PDF statistics:
  1115 PDF objects out of 1200 (max. 8388607)
  980 compressed objects within 10 object streams
