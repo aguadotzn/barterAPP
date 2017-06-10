@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  9 JUN 2017 19:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  10 JUN 2017 14:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1733,12 +1733,12 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 81.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 81.
- <./img/casodeusoschema.png, id=556, 1110.1475pt x 759.83875pt>
+ <./img/casodeusoschema.png, id=556, 1110.1475pt x 860.21375pt>
 File: ./img/casodeusoschema.png Graphic file (type png)
 
 <use ./img/casodeusoschema.png>
 Package pdftex.def Info: ./img/casodeusoschema.png used on input line 88.
-(pdftex.def)             Requested size: 332.09775pt x 227.30411pt.
+(pdftex.def)             Requested size: 332.09775pt x 257.33107pt.
 LaTeX Info: Redefining \. on input line 92.
 LaTeX Info: Redefining \% on input line 92.
 
@@ -1770,7 +1770,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 92.
 
 [11 <./img/casodeusoschema.png>]
-Overfull \hbox (33.06775pt too wide) in paragraph at lines 97--124
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 98--124
 [][] 
  []
 
@@ -1780,32 +1780,97 @@ Overfull \hbox (33.06775pt too wide) in paragraph at lines 129--163
  []
 
 
-Overfull \hbox (33.06775pt too wide) in paragraph at lines 168--196
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 168--198
 [][] 
  []
 
 
-Overfull \hbox (33.06775pt too wide) in paragraph at lines 201--224
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 203--226
 [][] 
  []
 
 
-Overfull \hbox (70.26308pt too wide) in paragraph at lines 231--255
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 234--259
 [][] 
  []
 
 
-Overfull \hbox (137.21022pt too wide) in paragraph at lines 260--286
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 264--295
 [][] 
  []
 
 
-Overfull \hbox (70.26308pt too wide) in paragraph at lines 291--315
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 303--327
 [][] 
  []
 
 
-Overfull \hbox (70.26308pt too wide) in paragraph at lines 320--344
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 332--361
+[][] 
+ []
+
+
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 366--389
+[][] 
+ []
+
+
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 395--432
+[][] 
+ []
+
+
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 437--468
+[][] 
+ []
+
+
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 473--498
+[][] 
+ []
+
+
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 503--528
+[][] 
+ []
+
+
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 533--560
+[][] 
+ []
+
+
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 565--589
+[][] 
+ []
+
+
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 594--624
+[][] 
+ []
+
+
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 629--651
+[][] 
+ []
+
+
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 656--680
+[][] 
+ []
+
+
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 685--711
+[][] 
+ []
+
+
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 716--742
+[][] 
+ []
+
+
+Overfull \hbox (33.06775pt too wide) in paragraph at lines 747--774
 [][] 
  []
 
@@ -1965,6 +2030,254 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 401.
 
 [16]
+LaTeX Info: Redefining \. on input line 401.
+LaTeX Info: Redefining \% on input line 401.
+
+Overfull \vbox (0.8521pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 401.
+
+[17]
+LaTeX Info: Redefining \. on input line 401.
+LaTeX Info: Redefining \% on input line 401.
+
+Overfull \vbox (0.8521pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 401.
+
+[18]
+LaTeX Info: Redefining \. on input line 401.
+LaTeX Info: Redefining \% on input line 401.
+
+Overfull \vbox (0.8521pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 401.
+
+[19]
+LaTeX Info: Redefining \. on input line 401.
+LaTeX Info: Redefining \% on input line 401.
+
+Overfull \vbox (0.8521pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 401.
+
+[20]
+LaTeX Info: Redefining \. on input line 401.
+LaTeX Info: Redefining \% on input line 401.
+
+Overfull \vbox (0.8521pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 401.
+
+[21]
+LaTeX Info: Redefining \. on input line 401.
+LaTeX Info: Redefining \% on input line 401.
+
+Overfull \vbox (0.8521pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 401.
+
+[22]
+LaTeX Info: Redefining \. on input line 401.
+LaTeX Info: Redefining \% on input line 401.
+
+Overfull \vbox (0.8521pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 401.
+
+[23]
+LaTeX Info: Redefining \. on input line 401.
+LaTeX Info: Redefining \% on input line 401.
+
+Overfull \vbox (0.8521pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 401.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 401.
+
+[24]
 \openout2 = `./tex/C_Diseno.aux'.
 
  (./tex/C_Diseno.tex
@@ -2029,7 +2342,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 402.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 402.
- [17
+ [25
 
 
 
@@ -2097,7 +2410,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 14.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 14.
- [18
+ [26
 
 
 
@@ -2122,7 +2435,7 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 40.
 
 
-LaTeX Warning: Citation `TypeScript Web' on page 19 undefined on input line 53.
+LaTeX Warning: Citation `TypeScript Web' on page 27 undefined on input line 53.
 
 
 Package babel Info: Redefining spanish shorthand <<
@@ -2167,7 +2480,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 66.
 
-[19])
+[27])
 LaTeX Info: Redefining \. on input line 403.
 LaTeX Info: Redefining \% on input line 403.
 
@@ -2198,7 +2511,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 403.
 
-[20]
+[28]
 \openout2 = `./tex/E_Manual_usuario.aux'.
 
  (./tex/E_Manual_usuario.tex
@@ -2275,7 +2588,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 404.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 404.
- [21
+ [29
 
 
 
@@ -2320,9 +2633,9 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 416.
  ) 
 Here is how much of TeX's memory you used:
- 13013 strings out of 493014
- 179758 string characters out of 6133352
- 354038 words of memory out of 5000000
+ 13034 strings out of 493014
+ 179995 string characters out of 6133352
+ 394040 words of memory out of 5000000
  16243 multiletter control sequences out of 15000+600000
  14524 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2342,10 +2655,10 @@ l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/
 texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/t
 exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/te
 xlive/2016/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on anexos.pdf (24 pages, 1366424 bytes).
+Output written on anexos.pdf (32 pages, 1382151 bytes).
 PDF statistics:
- 711 PDF objects out of 1000 (max. 8388607)
- 634 compressed objects within 7 object streams
- 110 named destinations out of 1000 (max. 500000)
+ 761 PDF objects out of 1000 (max. 8388607)
+ 676 compressed objects within 7 object streams
+ 131 named destinations out of 1000 (max. 500000)
  240 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -48,7 +48,7 @@ En esta sección se especificarán los requisitos del sistema, diferenciando los
          \item \textbf{RF-2.3:} Editar turnos.
          \item \textbf{RF-2.4:} Visualizar turnos.
     \end{itemize}
- 	   \item[RF-3. Gestión de turnos:] Parte de intercambio de turnos.
+ 	   \item[RF-3. Gestión de cambios:] Parte de intercambio de turnos.
     \begin{itemize}
          \item \textbf{RF-3.1:} Enviar petición.
          \item \textbf{RF-3.2:} Aceptar petición.
@@ -92,7 +92,8 @@ El actor es el usuario de la aplicación, tenemos que tener en cuenta que para q
 
 \subsection{Casos de uso}
 
-%CU-0: Gestión usuarios
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%CU-1: Gestión usuarios
 \begin{table}
 \begin{tabular}{llr}  
 \toprule
@@ -105,17 +106,16 @@ El actor es el usuario de la aplicación, tenemos que tener en cuenta que para q
 \textbf{Versión}       & 1.0           \\
 \textbf{Autor}       & Adrián  Aguado    \\
 \textbf{Requisitos asociados}       & RF-1.1, RF-1.2, RF-1.3 \\ 
-\textbf{Descripción} & Permite registrarse, logearse al usuario o salir\\
-\textbf{Precondición} & La página esta cargada \\
-& base de datos funcionando       \\
-\textbf{Acciones posibles} & 1. El usuario se registra \\
-& para\\
-& 2. El usuario  se logea \\
-& 3. El usuario interactúa\\
-& 4, El usuario sale.        \\
+\textbf{Descripción} & Permite registrarse, logearse al usuario o salir.\\
+\textbf{Precondición} & La página está cargada, \\
+& base de datos funcionando.       \\
+\textbf{Acciones posibles} & 1. El usuario se registra. \\
+& 2. El usuario  se logea. \\
+& 3. El usuario interactúa.\\
+& 4. El usuario sale.        \\
 \textbf{Postcondición} & Se añade el usuario \\
 & a la base de datos.     \\
-\textbf{Excepciones} & s \\
+\textbf{Excepciones} &  \\
 \textbf{Frecuencia} & Alta            \\
 \textbf{Importancia} & Alta            \\
 \textbf{Comentarios } &       \\
@@ -137,9 +137,9 @@ El actor es el usuario de la aplicación, tenemos que tener en cuenta que para q
 \textbf{Versión}       & 1.0           \\
 \textbf{Autor}       & Adrián  Aguado    \\
 \textbf{Requisitos asociados}       & RF-1.1 \\ 
-\textbf{Descripción} & Permite registrarse\\
-\textbf{Precondición} & La página esta cargada  \\
-& en la pestaña adecuada     \\
+\textbf{Descripción} & Permite registrarse.\\
+\textbf{Precondición} & La página está cargada  \\
+& en la pestaña adecuada.     \\
 \textbf{Acciones} & 1. El usuario introduce los datos, \\
 & a saber: \\
 & A. Nombre \\
@@ -154,7 +154,7 @@ El actor es el usuario de la aplicación, tenemos que tener en cuenta que para q
 & Redirección a log-in.  \\
 \textbf{Excepciones} &  Si no se introducen todos los campos  \\
 & obligatorios se notifica. También si el usuario \\
-& ya existe o si todo ha ido correctamente    \\
+& ya existe o si todo ha ido correctamente.    \\
 \textbf{Frecuencia} & Alta            \\
 \textbf{Importancia} & Alta            \\
 \textbf{Comentarios } &       \\
@@ -177,20 +177,22 @@ El actor es el usuario de la aplicación, tenemos que tener en cuenta que para q
 \textbf{Autor}       & Adrián  Aguado    \\
 \textbf{Requisitos asociados}       & RF-1.2 \\ 
 \textbf{Descripción} & Permite logearse al usuario\\
-\textbf{Precondición} & La página esta cargada \\
-& en la pestaña adecuada     \\
-& base de datos funcionando       \\
+\textbf{Precondición} & La página está cargada \\
+& en la pestaña adecuada.     \\
+& Base de datos funcionando.       \\
 \textbf{Acciones} & 1. El usuario se \emph{logea}\\
 & para ellos introduce:\\
 & A. Correo electrónico \\
 & B. Contraseña\\
+& 2. Se cargan los turnos en el calendario.\\
 \textbf{Postcondición} & El usuario entra en la  \\
-& aplicación    \\
-\textbf{Excepciones} &  Si la contraseña no es correcta, aviso \\
-&  Si el correo no es correcto, aviso \\
+& aplicación.    \\
+\textbf{Excepciones} &  Si la contraseña no es correcta, aviso. \\
+&  Si el correo no es correcto, aviso. \\
 \textbf{Frecuencia} & Alta            \\
 \textbf{Importancia} & Alta            \\
-\textbf{Comentarios } &        \\
+\textbf{Comentarios } &  Si fuera el primer \emph{log-in} el calendario   \\
+& el calendario estará vacío.\\
 \bottomrule
 \end{tabular}
 \caption{CU-03 Log-in} 
@@ -209,12 +211,12 @@ El actor es el usuario de la aplicación, tenemos que tener en cuenta que para q
 \textbf{Versión}       & 1.0           \\
 \textbf{Autor}       & Adrián  Aguado    \\
 \textbf{Requisitos asociados}       & RF-1.3 \\ 
-\textbf{Descripción} & Permite salir de la aplicación\\
-\textbf{Precondición} & El usuario esta dentro de la \\
-& aplicación       \\
-\textbf{Acciones} & 1. Presionar el botón \emph{log out} \\
+\textbf{Descripción} & Permite salir de la aplicación.\\
+\textbf{Precondición} & El usuario está dentro de la \\
+& aplicación.       \\
+\textbf{Acciones} & 1. Presionar el botón \emph{log out}.\\
    \\
-\textbf{Postcondición} & Sale de la aplicación  \\
+\textbf{Postcondición} & Sale de la aplicación.  \\
 \textbf{Excepciones} &     \\
 \textbf{Frecuencia} & Alta            \\
 \textbf{Importancia} & Alta            \\
@@ -226,6 +228,7 @@ El actor es el usuario de la aplicación, tenemos que tener en cuenta que para q
 
 Nota: El editar usuarios y eliminar usuarios no esta implementado de cara al usuario. Esta hecho pero no se encuentra disponible en pantalla para realizarse directamente por parte del usuario.
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %CU-05: Gestión Calendario
 \begin{table}
 \begin{tabular}{llr}  
@@ -239,13 +242,14 @@ Nota: El editar usuarios y eliminar usuarios no esta implementado de cara al usu
 \textbf{Versión}       & 1.0           \\
 \textbf{Autor}       & Adrián  Aguado    \\
 \textbf{Requisitos asociados}       & RF-2.1, RF-2.2, RF-2.3, RF-2.4  \\ 
-\textbf{Descripción} & Gestión del calendario\\
-\textbf{Precondición} & El usuario esta dentro de la \\
-& aplicación       \\
-\textbf{Acciones} & 1. Añadir turnos \\
-& 3. Eliminar turnos \\
-& 4. Editar turnos \\
-\textbf{Postcondición} Turno deseado \\
+\textbf{Descripción} & Gestión del calendario.\\
+\textbf{Precondición} & El usuario está dentro de la \\
+& aplicación.       \\
+\textbf{Acciones} & 1. Añadir turnos. \\
+& 2. Eliminar turnos. \\
+& 3. Editar turnos. \\
+& 4. Visualizar turnos. \\
+\textbf{Postcondición} & Turno deseado. \\
 \textbf{Excepciones} &     \\
 \textbf{Frecuencia} & Media          \\
 \textbf{Importancia} & Alta            \\
@@ -267,24 +271,32 @@ Nota: El editar usuarios y eliminar usuarios no esta implementado de cara al usu
 \cmidrule(r){1-2}
 \textbf{Versión}       & 1.0           \\
 \textbf{Autor}       & Adrián  Aguado    \\
-\textbf{Requisitos asociados}       & RF-2.1  \\ 
-\textbf{Descripción} &  Añadir un turno determinado \\
-& al calendario      \\
-\textbf{Precondición} & El usuario esta dentro de la \\
-& aplicación       \\
-\textbf{Acciones} & 1. Presionar  botón \emph{nuevo turno} \\
-& 2. Seleccionar título \\
-& 3.Seleccionar tipo \\
-& 4 .Seleccionar fecha\\
-\textbf{Postcondición} Turno deseado en calendario \\
-\textbf{Excepciones} &     \\
+\textbf{Requisitos asociados}       & RF-2.1 \\ 
+\textbf{Descripción} & Añadir un turno determinado. \\
+\textbf{Precondición} & El usuario está dentro de la \\
+& aplicación.       \\
+\textbf{Acciones} & 1. Presionar  botón \emph{nuevo turno}. \\
+& 2. Seleccionar título. \\
+& 3. Seleccionar tipo. \\
+& 4 .Seleccionar fecha.\\
+\textbf{Postcondiciones} & Turno deseado en calendario. \\
+& Turno añadido en la base de \\
+&  datos asociado al usuario \\
+&  que lo ha añadido.  \\
+&  Prioridad normal.  \\
+\textbf{Excepciones} &  No es posible más de un turno al día.   \\
 \textbf{Frecuencia} & Media          \\
 \textbf{Importancia} & Alta            \\
-\textbf{Comentarios } &      \\
+\textbf{Comentarios } &    Se controla que solo se añada un  \\
+& turno al día. No se controla, todavía,  \\
+& en que franja horaria se realizan. \\
 \bottomrule
 \end{tabular}
 \caption{CU-06 Añadir turno} 
 \end{table}
+
+
+
 
 %CU-07: Eliminar turno
 \begin{table}
@@ -293,19 +305,19 @@ Nota: El editar usuarios y eliminar usuarios no esta implementado de cara al usu
 \begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
 \textbf{CU-07}\strut
 \end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
-\textbf{ Eliminar turno}\strut
+\textbf{Eliminar turno}\strut
 \end{minipage}\tabularnewline
 \cmidrule(r){1-2}
 \textbf{Versión}       & 1.0           \\
 \textbf{Autor}       & Adrián  Aguado    \\
-\textbf{Requisitos asociados}       & RF-2.1, RF-2.2, RF-2.3, RF-2.4  \\ 
-\textbf{Descripción} & Gestión del calendario\\
-\textbf{Precondición} & El usuario esta dentro de la \\
-& aplicación       \\
-\textbf{Acciones} & 1. Añadir turnos \\
-& 3. Eliminar turnos \\
-& 4. Editar turnos \\
-\textbf{Postcondición} Turno deseado \\
+\textbf{Requisitos asociados}       & RF-2.3 \\ 
+\textbf{Descripción} & Eliminar un turno.\\
+\textbf{Precondición} & El usuario está dentro de la \\
+& aplicación.       \\
+\textbf{Acciones} & 1. Presionar botón \emph{eliminar turno} \\
+& 2. Turno eliminado. \\
+\textbf{Postcondiciones} & Turno eliminado del calendario.\\
+& Turno eliminado de la base de datos. \\
 \textbf{Excepciones} &     \\
 \textbf{Frecuencia} & Media          \\
 \textbf{Importancia} & Alta            \\
@@ -320,28 +332,450 @@ Nota: El editar usuarios y eliminar usuarios no esta implementado de cara al usu
 \begin{tabular}{llr}  
 \toprule
 \begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
-\textbf{CU-05}\strut
+\textbf{CU-08}\strut
 \end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
-\textbf{Gestión calendario}\strut
+\textbf{Editar turno}\strut
 \end{minipage}\tabularnewline
 \cmidrule(r){1-2}
 \textbf{Versión}       & 1.0           \\
 \textbf{Autor}       & Adrián  Aguado    \\
-\textbf{Requisitos asociados}       & RF-2.1, RF-2.2, RF-2.3, RF-2.4  \\ 
-\textbf{Descripción} & Gestión del calendario\\
-\textbf{Precondición} & El usuario esta dentro de la \\
-& aplicación       \\
-\textbf{Acciones} & 1. Añadir turnos \\
-& 3. Eliminar turnos \\
-& 4. Editar turnos \\
-\textbf{Postcondición} Turno deseado \\
+\textbf{Requisitos asociados}       & RF-2.3 \\ 
+\textbf{Descripción} & Editar un turno.\\
+\textbf{Precondición} & El usuario está dentro de la \\
+& aplicación. \\
+\textbf{Acciones} & 1.El usuario visualiza el turno  \\
+& en la pestaña  \emph{normal}. \\
+& 2. El usuario puede modificar :      \\
+& A.Titulo \\
+& B.Tipo \\
+& C.Fecha\\
+\textbf{Postcondición} & Turno deseado editado.\\
+\textbf{Excepciones} &     \\
+\textbf{Frecuencia} & Media          \\
+\textbf{Importancia} & Alta            \\
+\textbf{Comentarios } &    El usuario puede modificar  \\
+&  un turno siempre que  \\
+&  así lo desee.  \\
+\bottomrule
+\end{tabular}
+\caption{CU-08 Editar turno} 
+\end{table}
+
+%CU-09: Visualizar turnos
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-09}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{ Visualizar turnos}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-2.4 \\ 
+\textbf{Descripción} & Ver de un simple vistazo \\
+&todos los turnos. \\
+\textbf{Precondición} & El usuario está dentro de la \\
+& aplicación.       \\
+\textbf{Acciones} & 1. Ver turnos. \\
+\textbf{Postcondición} &   \\
 \textbf{Excepciones} &     \\
 \textbf{Frecuencia} & Media          \\
 \textbf{Importancia} & Alta            \\
 \textbf{Comentarios } &      \\
 \bottomrule
 \end{tabular}
-\caption{CU-05 Gestión Calendario} 
+\caption{CU-09 Visualizar turnos} 
 \end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%CU-10: Gestión cambios
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-10}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{Gestión cambios}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-3.1, RF-3.2, RF-3.3, RF-3.4  \\ 
+& RF-3.5, RF-3.6,RF-3.6.1, RF-3.6.2 \\ 
+& RF-3.6.3, RF-3.6.4,  RF-3.7 \\ 
+\textbf{Descripción} & Gestión de los cambios \\
+& entre usuarios. \\
+\textbf{Precondición}  & El usuario está dentro de la \\
+& aplicación.      \\
+& Hay más de un usuario. \\
+\textbf{Acciones} & 1. Enviar petición de cambio. \\
+& 2. Aceptar petición de cambio. \\
+& 3. Rechazar petición de cambio. \\
+& 4. Aceptar intercambio. \\
+& 5. Rechazar intercambio.  \\
+& 6. Visualizar detalles.  \\
+& 7. Visualizar calendario. \\
+\textbf{Postcondición} & Cambio turno. \\
+\textbf{Excepciones} &   Para diversos casos  \\
+ &   se muestran avisos.  \\
+\textbf{Frecuencia} & Media          \\
+\textbf{Importancia} & Alta            \\
+\textbf{Comentarios } & Se controlan que la       \\
+& petición se envíe una sola vez. \\
+& Se muestra la lista de usuarios con \\
+& turnos libres asociada a un \\
+& día concreto \\
+\bottomrule
+\end{tabular}
+\caption{CU-10 Gestión Cambios} 
+\end{table}
+
+%CU-11: Enviar petición
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-11}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{Envío de petición de cambio}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-3.1 \\
+\textbf{Descripción} & Gestión de los turnos \\
+& entre usuarios. \\
+\textbf{Precondición}  & El usuario está dentro de la \\
+& aplicación.      \\
+& Hay más de un usuario. \\
+\textbf{Acciones} & 1. Enviar petición de cambio. \\
+\textbf{Postcondición} & Ver si el usuario . \\
+ & destinatario a aceptado o rechazado la petición. \\
+\textbf{Excepciones} &   Aviso de envío de petición  \\
+ &  tan solo una vez. \\
+ &  Si no hay usuarios libres no es  \\
+  &  posible enviar la petición  \\
+\textbf{Frecuencia} & Media          \\
+\textbf{Importancia} & Alta            \\
+\textbf{Comentarios } & Se controlan que la       \\
+& petición se envíe una sola vez. \\
+& Se tienen en cuenta todos los usuarios      \\
+& con turnos libre. \\
+\bottomrule
+\end{tabular}
+\caption{CU-11 Enviar petición} 
+\end{table}
+
+%CU-12: Aceptar petición
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-12}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{Aceptar de petición de cambio}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-3.1 \\
+\textbf{Descripción} & Aceptación de la petición\\
+\textbf{Precondición}  & El usuario está dentro de la \\
+& aplicación.      \\
+& Hay una petición por parte \\
+& de otro usuario \\
+\textbf{Acciones} & 1. Aceptar petición. \\
+\textbf{Postcondición} & Cambio aceptado. \\
+\textbf{Excepciones} &   Petición única  \\
+\textbf{Frecuencia} & Media          \\
+\textbf{Importancia} & Alta            \\
+\textbf{Comentarios } & Se controlan que la       \\
+& petición sea única. \\
+\bottomrule
+\end{tabular}
+\caption{CU-12 Aceptar petición} 
+\end{table}
+
+%CU-13: Rechazar petición
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-13}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{Rechazar de petición de cambio}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-3.2 \\
+\textbf{Descripción} & Rechazo de la petición\\
+\textbf{Precondición}  & El usuario está dentro de la \\
+& aplicación.      \\
+& Hay una petición por parte \\
+& de otro usuario \\
+\textbf{Acciones} & 1. Rechazar petición. \\
+\textbf{Postcondición} & Fin de la lógica. \\
+\textbf{Excepciones} &     \\
+\textbf{Frecuencia} & Media          \\
+\textbf{Importancia} & Alta            \\
+\textbf{Comentarios } & Se controlan que la       \\
+& petición sea única. \\
+\bottomrule
+\end{tabular}
+\caption{CU-13 Rechazar petición} 
+\end{table}
+
+%CU-14: Aceptar intercambio
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-13}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{Aceptar intercambio}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-3.3 \\
+\textbf{Descripción} & Aceptación intercambio \\
+\textbf{Precondición}  & El usuario está dentro de la \\
+& aplicación.      \\
+& Hay una petición por parte \\
+& de otro usuario \\
+\textbf{Acciones} & 1. Aceptar cambio. \\
+\textbf{Postcondición} & Se produce el cambio. \\
+& Los eventos se intercambian tanto \\
+& en la base de datos como en el \\
+& calendario de ambos usuarios \\
+\textbf{Excepciones} &     \\
+\textbf{Frecuencia} & Media          \\
+\textbf{Importancia} & Alta            \\
+\textbf{Comentarios } &   \\
+\bottomrule
+\end{tabular}
+\caption{CU-14 Aceptar intercambio} 
+\end{table}
+
+%CU-15: Rechazar intercambio
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-15}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{Rechazar de petición de cambio}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-3.4 \\
+\textbf{Descripción} & Rechazo de la petición\\
+\textbf{Precondición}  & El usuario está dentro de la \\
+& aplicación.      \\
+& Hay una petición por parte \\
+& de otro usuario \\
+\textbf{Acciones} & 1. Rechazar intercambio. \\
+\textbf{Postcondición} & Fin de la lógica. \\
+\textbf{Excepciones} &     \\
+\textbf{Frecuencia} & Media          \\
+\textbf{Importancia} & Alta            \\
+\textbf{Comentarios } &  \\
+\bottomrule
+\end{tabular}
+\caption{CU-15: Rechazar intercambio} 
+\end{table}
+
+%CU-16: Visualizar detalles 
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-16}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{Detalles peticiones}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-3.6, RF-3.6.1  \\
+& RF-3.6.2, RF-3.6.3, RF-3.6.4   \\
+\textbf{Descripción} & Detalles de las peticiones\\
+& mediante botones para una mejor \\
+& comprensión por parte del usuario\\
+\textbf{Precondición}  & El usuario está dentro de la \\
+& aplicación.      \\
+\textbf{Acciones} & 1. Visualizar normales. \\
+& 2. Visualizar pendientes. \\
+& 3. Visualizar aceptados. \\
+& 4. Visualizar rechazados. \\
+\textbf{Postcondición} & Ver numero de cada \\
+& parámetro \\
+\textbf{Excepciones} &     \\
+\textbf{Frecuencia} & Media          \\
+\textbf{Importancia} & Media           \\
+\textbf{Comentarios } &  No es estrictamente necesaria \\
+&  esta parte pero ayuda al usuario \\
+\bottomrule
+\end{tabular}
+\caption{CU-16: Visualizar detalles} 
+\end{table}
+
+%CU-17: Visualizar normales
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-16}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{Detalles turnos}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-3.6.1  \\
+\textbf{Descripción} & Detalle de turnos \\
+\textbf{Precondición}  & El usuario está dentro de la \\
+& aplicación y ha realizado algún turno   \\
+\textbf{Acciones} & 1. Visualizar normales. \\
+\textbf{Postcondición} &  \\
+\textbf{Excepciones} &     \\
+\textbf{Frecuencia} & Media          \\
+\textbf{Importancia} & Media           \\
+\textbf{Comentarios } &   \\
+\bottomrule
+\end{tabular}
+\caption{CU-17: Visualizar normales} 
+\end{table}
+
+%CU-18: Visualizar pendientes
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-16}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{Detalles peticiones pendientes}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-3.6.2  \\
+\textbf{Descripción} & Detalle de peticiones \\
+& pendientes \\
+\textbf{Precondición}  & El usuario está dentro de la \\
+& aplicación y ha solicitado algún   \\
+& cambio de turno (petición pendiente)   \\
+\textbf{Acciones} & 1. Visualizar peticiones pendientes. \\
+\textbf{Postcondición} &  \\
+\textbf{Excepciones} &     \\
+\textbf{Frecuencia} & Media          \\
+\textbf{Importancia} & Media           \\
+\textbf{Comentarios } &   \\
+\bottomrule
+\end{tabular}
+\caption{CU-18 Visualizar pendientes} 
+\end{table}
+
+%CU-19: Visualizar aceptadas
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-16}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{Detalles peticiones}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-3.6.3  \\
+\textbf{Descripción} & Detalle de peticiones \\
+& aceptadas\\
+\textbf{Precondición}  & El usuario está dentro de la \\
+& aplicación y ha realizado alguna  \\
+& petición de cambio.  \\
+\textbf{Acciones} & 1. Visualizar peticiones\\
+& aceptadas . \\
+\textbf{Postcondición} &  Confirmar cambio \\
+\textbf{Excepciones} &  Si la petición se ha rechazado   \\
+&  no se visualizará aquí.   \\
+\textbf{Frecuencia} & Media          \\
+\textbf{Importancia} & Media           \\
+\textbf{Comentarios } &   \\
+\bottomrule
+\end{tabular}
+\caption{CU-17: Visualizar normales} 
+\end{table}
+
+%CU-20: Visualizar rechazadas
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-20}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{Detalles peticiones}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-3.6.4  \\
+\textbf{Descripción} & Detalle de peticiones \\
+& rechazadas \\
+\textbf{Precondición}  & El usuario está dentro de la \\
+& aplicación y ha realizado alguna  \\
+& petición de cambio.  \\
+\textbf{Acciones} & 1. Visualizar peticiones\\
+& rechazadas . \\
+\textbf{Postcondición} &  Rechazar cambio \\
+\textbf{Excepciones} &  Si la petición se ha aceptado   \\
+&  no se visualizará aquí.   \\
+\textbf{Frecuencia} & Media          \\
+\textbf{Importancia} & Media           \\
+\textbf{Comentarios } &   \\
+\bottomrule
+\end{tabular}
+\caption{CU-20 Visualizar rechazadas} 
+\end{table}
+
+%CU-21: Visualizar Calendario
+\begin{table}
+\begin{tabular}{llr}  
+\toprule
+\begin{minipage}[b]{0.24\columnwidth}\raggedright\strut
+\textbf{CU-20}\strut
+\end{minipage} & \begin{minipage}[b]{0.72\columnwidth}\raggedright\strut
+\textbf{Visualizar calendario}\strut
+\end{minipage}\tabularnewline
+\cmidrule(r){1-2}
+\textbf{Versión}       & 1.0           \\
+\textbf{Autor}       & Adrián  Aguado    \\
+\textbf{Requisitos asociados}       & RF-3.6.4  \\
+\textbf{Descripción} & Visualizar cambios en \\
+& el  calendario \\
+\textbf{Precondición}  & El usuario está dentro de la \\
+& aplicación. \\
+\textbf{Acciones} & 1. Visualizar turnos \\
+& 2. Click encima de turnos para ver \\
+&  duración  \\
+&  3, Color asociado a cada tipo de turno  \\
+\textbf{Postcondición} & \\
+\textbf{Frecuencia} & Media          \\
+\textbf{Importancia} & Media           \\
+\textbf{Comentarios } &  Todos los cambios de turno  \\
+ &  se deben de ver reflejados en el calendario  \\
+  &  del usuario en caso de ser aceptados por  \\
+    &  ambas partes \\
+\bottomrule
+\end{tabular}
+\caption{CU-21 Visualizar calendario} 
+\end{table}
+
+
+
 
 
