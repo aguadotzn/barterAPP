@@ -1,23 +1,136 @@
 \apendice{Documentación técnica de programación}
 
 \section{Introducción}\label{introduccion-programador}
-En este capítulo vamos a dividirlo en dos partes, por un lado los condiciones específicas para la aplicación y por otro vamos a aprender de manera breve y sencilla a crear una aplicación gracias a \emph{Angular CLI}, la interfaz de línea de comandos de Angular.
+En este capítulo vamos a dividirlo en dos partes, por un lado los condiciones específicas propias de la aplicación y por otro vamos a aprender de manera breve y sencilla a crear una aplicación gracias a \emph{Angular CLI}, la interfaz de línea de comandos de Angular.
 
 El por qué he decidido incluir la parte de \emph{Angular CLI} es por que considero que va aclarar muchas dudas acerca de cómo funciona esta tecnología y también para intentar comprender mejor como he realizado el proyecto. En diversas ocasiones para aprender a usar una tecnología tan solo hace falta tiempo pero en otras muchas el tiempo es limitado por lo que quizás con esta pequeña guía podemos comenzar a utilizar un framework cliente en muy pocos pasos y de una manera sencilla. Si bien es cierto que yo he necesitado mucho tiempo para comprender su funcionamiento y no lo he aprendido todo gracias a la interfaz de comandos, ésta te permite agilizar los trámites de creación en un tanto por ciento considerablemente alto.
 
-Este anexo por tanto tiene como objetivo analizar y documentar las necesidades funcionales que deberán ser soportadas por el sistema a desarrollar, es decir, en qué condiciones ha sido desarrollado, en qué condiciones se debe usar y cuáles son los requerimientos mínimos para que un futuro programador interactúe con la aplicación.
+Este anexo por tanto tiene como objetivo analizar y documentar las necesidades funcionales que deberán ser soportadas por el sistema a desarrollar, es decir, en qué condiciones ha sido desarrollado, en qué condiciones se debe usar y cuáles son los requerimientos mínimos para que un futuro programador interactúe con la aplicación en caso de que así lo considere.
 
-\section{Requerimientos mínimos necesarios}\label{angularCLI}
-Los requerimientos mínimos para empezar a trabajar en el proyecto son:
+\section{Requerimientos mínimos necesarios}
+Además de un \emph{IDE} para poder trabajar, los prerequisitos mínimos para empezar a trabajar en el proyecto son:
+
 \begin{enumerate}
-	\item Instalar Node.js y MongoDB.
-	\item Instala Angular CLI
+	\item Instalar \hyperlink{https://nodejs.org/en/}{Nodejs} y \hyperlink{https://www.mongodb.com/}{MongoDB}.
+	\item Instalar \hyperlink{https://www.npmjs.com/}{npm}
+	\item Instalar Angular CLI
 		\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
 		\begin{lstlisting}[frame=single]
 		npm i -g @angular/cli
     	\end{lstlisting}
-	\item Desde el directorio raíz del proyecto (vía línea de comandos) instalar las dependencias necesarias
 \end{enumerate}
+
+Nota: es interesante, una vez instalados asegurarnos de que están correctamente instalados usando los comandos \emph{node -v} y \emph{npm -v} para saber si tenemos los requerimientos correctamente instalados.
+
+
+\section{AngularCLI}\label{angularCLI}
+Sabiendo los requisitos mínimos que son necesarios para proceder vamos a realizar, cómo he nombrado antes una breve introducción a la línea de comandos de Angular,  \textbf{Angular CLI}.
+
+\subsection{¿Qué es typescript?}\label{typesript}
+Esto se ha nombrado antes pero resulta esencial para entender el código de Angular. Antes de nada decir que en Angular2 se puede trabajar con Javascript “clásico” (ES5), así como ES6 y TypeScript. Desarrollado por Microsoft y como apuesta de Google vamos a ver el crecimiento exponencial que ha tenido este de este lenguaje, que no deja de ser un super conjunto de JavaScript. 
+ TypeScript es por tanto un superset de ECMAScript 6, es decir, incluye todas las funcionalidades de ES6, y además incorpora una capa por encima con funcionalidades extra.
+
+\begin{center}
+    \begin{minipage}{0.9\linewidth}
+        \vspace{5pt}%margen superior de minipage
+        {\small
+            \emph{TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. Any browser. Any host. Any OS. Open source.}
+        }
+        \begin{flushright}
+            (\cite{TypeScript Web})
+        \end{flushright}
+        \vspace{5pt}%margen inferior de la minipage
+    \end{minipage}
+\end{center}
+
+La principal característica de TypeScript por encima de Javascript es que permite definir de qué tipo son las variables que se van a usar.
+
+\subsection{Comandos básicos}\label{cbasicos}
+\textbf{Angular CLI} nos va a hacer la vida más fácil con Angular, ya que nos permite crear de forma sencilla un aplicación lista para funcionar después de la instalación por línea de comandos con \emph{npm}, además incorpora las buenas prácticas de programación con Angular. 
+
+\imagen{angularclicommands}{Comandos  \emph{AngularCLI}. Fuente:  \url{https://cli.angular.io/}.}
+
+Por lo tanto para crear nuestra aplicación con esta herramienta tan solo debemos ir a nuestra carpeta donde queremos crear el proyecto e introducir en la línea de comandos: 
+	\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
+		\begin{lstlisting}[frame=single]
+		ng new angular-cli-primer-proyecto
+    	\end{lstlisting}
+ 
+ Es un proceso que durará unos 2 minutos,  Al finalizar seremos capaces de ejecutar directamente la aplicación por defecto que crea la herramienta. Para ejecutarla, al igual que antes accedemos a la carpeta del proyecto y ejecutamos:
+ 	\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
+		\begin{lstlisting}[frame=single]
+		 npm start
+    	\end{lstlisting}
+    	
+    	\imagen{angularcliconsola}{Consola ejecución. Fuente:  \url{http://codigoxules.org/}.}
+    	
+ Si te fijas en la ejecución se llama al comando \textbf{ng serve} que será el que utilicemos con Angular CLI para trabajar. Resulta realmente útil al introducir el último comando nombrado ya que una vez lanzado se detectan automáticamente los cambios a medida que vamos avanzando la página se recarga al guardar el componente que estemos modificando.  
+    	
+    	\imagen{angularcliresultado}{Resultado después de creado. Fuente:  \url{http://codigoxules.org/}.}
+    	
+   Esta es la sencilla manera de crear un proyecto con \textbf{Angular CLI}. Después existen una serie de comandos para crear directamente componentes, servicios, clases, interfaces.. etcétera.  Algunos de ellos son:
+   
+   
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Tipo a crear & Comando  \\
+\hline \hline
+Component & \emph{ng component my-new-component}  \\ \hline
+Directive & \emph{ng g directive my-new-directive}  \\ \hline
+Pipe & \emph{ng g pipe my-new-pipe}  \\ \hline
+Service & \emph{ng g service my-new-service}  \\ \hline
+Class & \emph{ng g class my-new-class}  \\ \hline
+Interface & \emph{ng g interface my-new-interface}  \\ \hline
+Enum & \emph{ng g enum my-new-enum}  \\ \hline
+\end{tabular}
+\caption{Tabla comandos Angular CLI}
+\label{tabla:sencilla}
+\end{center}
+\end{table}
+   
+
+
+\section{Manual del programador}
+En esta sección hay que tener en cuenta que el autor de este trabajo proyecto a escogido unas serie de herramientas, tanto para desplegar la app, como la base de datos como para desarrollar la aplicación pero que de ninguna manera resultan ser ni las únicas ni las mejores simplemente son unas herramientas que ha considerado utilizar pero existen muchas más que no son ni peores ni mejores.
+
+\subsection{Prerequisitos}
+\begin{enumerate}
+	\item Instalar \hyperlink{https://nodejs.org/en/}{Nodejs} y \hyperlink{https://www.mongodb.com/}{MongoDB}.
+	\item Instalar \hyperlink{https://www.npmjs.com/}{npm}
+	\item Instalar Angular CLI
+		\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
+		\begin{lstlisting}[frame=single]
+		npm i -g @angular/cli
+    	\end{lstlisting}
+    \item Descargar el proyecto ( \emph{git clone} ) o bien desde un soporte
+	\item Una vez tenemos el proyecto descargado en nuestro sistema local desde el directorio raíz (vía línea de comandos) instalar las dependencias necesarias.
+	\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
+		\begin{lstlisting}[frame=single]
+		npm install
+    	\end{lstlisting}
+\end{enumerate}
+
+
+\subsection{Estructura de directorios }
+
+
+
+\subsection{Modo desarrollador}
+
+Hay que tener en cuenta que tenemos diversas tecnologías dentro del proyecto por lo que resulta un poco costoso tener que ejecutar todas por separado, que es lo que hacía en un principio. Con el modo desarrollador (emula al \textbf{ng serve} nombrado antes, tan solo con el comando siguiente ejecutamos MongoDB, Angular, Express y el compilador de Typescript luego ya no nos hace falta nada más y podemos comenzar a trabajar. 
+
+	\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
+		\begin{lstlisting}[frame=single]
+		npm run dev
+    	\end{lstlisting}
+
+\subsection{Servidor (Heroku)}
+
+\subsection{Base de datos (Mlab)}
+
+
 
 
 \begin{itemize}
@@ -36,52 +149,6 @@ Los requerimientos mínimos para empezar a trabajar en el proyecto son:
     \item JSON WEB TOKEN
   \end{itemize}
 \end{itemize}
-
-\section{AngularCLI}\label{angularCLI}
-Sabiendo los requisitos mínimos que son necesarios para proceder 
-
-\subsection{¿Qué es typescript?}\label{typesript}
-Esto se ha nombrado antes pero resulta esencial para entender el código de Angular
-
-\begin{center}
-    \begin{minipage}{0.9\linewidth}
-        \vspace{5pt}%margen superior de minipage
-        {\small
-            \emph{TypeScript is a typed superset of JavaScript that compiles to plain JavaScript. Any browser. Any host. Any OS. Open source.}
-        }
-        \begin{flushright}
-            (\cite{TypeScript Web})
-        \end{flushright}
-        \vspace{5pt}%margen inferior de la minipage
-    \end{minipage}
-\end{center}
-
-\subsection{Comandos básicos}\label{cbasicos}
-
-\subsection{Puesta en marcha}\label{typesript}
-
-
-\section{Manual del programador}
-En esta sección hay que tener en cuenta que el autor de este trabajo fin de grado a escogido unas herramientas, tanto para desplegar la app, como la base de datos como para desarrollar la aplicación pero que de ninguna manera resultan ser ni las únicas ni las mejores simplemente son unas herramientas que ha considerado utilizar pero existen muchas más que no son ni peores ni peores. 
-
-Para desplegar la app hemos elegido heroku, para la base de datos mlab ( que dentro tiene servidores AWS, Google Cloud o Azure)
-
-Pasos para montar en tu propio ordenador y desarrollar tu propia API (tener en cuenta que es software desde el que se realiza es un MACBOOK PRO, por lo que pueden existir cambios respecto a otros sitemas operativos. Trataré sin embargo ajustarme y dar detalles para instalarlo en cualquier entorno.
-
-\subsection{Compilación, instalación y ejecución del proyecto}
-Voy a tratar de explicar un desarrollo completo desde la instalación en local hasta la carga en un servidor. 
-
-
-\subsection{Estructura de directorios }
-
-\subsection{Modo producción}
-
-\subsection{Estructura de directorios del proyecto}
-
-\subsection{Base de datos}
-
-
-
 
 \subsection{Avisos}
 
