@@ -43,15 +43,14 @@
 \contentsline {subsection}{Prerequisitos}{30}{section*.24}
 \contentsline {subsection}{Estructura de directorios }{30}{section*.25}
 \contentsline {subsection}{Modo desarrollador}{30}{section*.26}
-\contentsline {subsection}{Modo producci\IeC {\'o}n }{30}{section*.27}
-\contentsline {subsection}{Servidor (Heroku)}{30}{section*.28}
-\contentsline {subsection}{Base de datos (Mlab)}{30}{section*.29}
-\contentsline {subsection}{Avisos}{30}{section*.30}
-\contentsline {appendix}{\chapternumberline {E}Documentaci\IeC {\'o}n de usuario}{31}{appendix.Alph5}
-\contentsline {section}{\numberline {E.1}Introducci\IeC {\'o}n}{31}{section.Alph5.1}
-\contentsline {section}{\numberline {E.2}Instalaci\IeC {\'o}n}{31}{section.Alph5.2}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{31}{section*.31}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{31}{section*.32}
-\contentsline {section}{\numberline {E.3}Manual del usuario}{31}{section.Alph5.3}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{31}{section*.33}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{31}{section*.34}
+\contentsline {subsection}{Servidor (Heroku)}{30}{section*.27}
+\contentsline {subsection}{Base de datos (Mlab)}{31}{section*.28}
+\contentsline {subsection}{Avisos}{33}{section*.29}
+\contentsline {appendix}{\chapternumberline {E}Documentaci\IeC {\'o}n de usuario}{34}{appendix.Alph5}
+\contentsline {section}{\numberline {E.1}Introducci\IeC {\'o}n}{34}{section.Alph5.1}
+\contentsline {section}{\numberline {E.2}Instalaci\IeC {\'o}n}{34}{section.Alph5.2}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{34}{section*.30}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{34}{section*.31}
+\contentsline {section}{\numberline {E.3}Manual del usuario}{34}{section.Alph5.3}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{34}{section*.32}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{34}{section*.33}

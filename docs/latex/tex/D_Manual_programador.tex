@@ -127,10 +127,65 @@ Hay que tener en cuenta que tenemos diversas tecnologías dentro del proyecto po
     	\end{lstlisting}
 
 \subsection{Servidor (Heroku)}
+Para subir la aplicación al servidor yo he elegido \hyperlink{https://www.heroku.com/}{Heroku} y los pasos para lanzar la aplicación son los que se enumeran a continuación:
+
+\begin{enumerate}
+	\item Acceder a la \hyperlink{https://www.heroku.com/}{web} de \emph{Heroku}, registrarse y crear una nueva app.
+	\item Instalar \hyperlink{https://devcenter.heroku.com/articles/heroku-cli}{Heroku CLI}
+	\item Ejecutar los siguientes comandos:
+		\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
+		\begin{lstlisting}[frame=single]
+		heroku login
+		cd my-project/
+		git init
+		heroku git:remote -a your-app-name
+    	\end{lstlisting}
+	\item Descargar el proyecto BarterApp desde github 
+	\item Editar el servidor(Ruta: \emph{server/config/db.ts}) para introducir un servidor real con MongoDB (lo veremos en la sección siguiente)
+	\item Ejecutar los siguientes comandos:
+		\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
+		\begin{lstlisting}[frame=single]
+			npm i
+			ng build -prod or ng build -aot -prod
+			tsc -p server
+			git add .
+			git commit -m "Going to Heroku"
+			git push heroku master
+			heroku open
+    	\end{lstlisting}
+	\item Una venta se abrirá con tu aplicación ya online
+\end{enumerate}
+
+Resumiendo de esta manera utilizamos Heroku como si de github se tratase y vamos aplicando los cambios que hacemos a nuestra aplicación al repositorio creado en Heroku, la ventaja que ya tenemos la aplicación lanzada en un entorno real. Es una restricción importante que ya no podemos trabajar con una base de datos local sino que tiene que ser un servidor remoto con MongoDB ( en este caso) para que la aplicación funcione.
+	
 
 \subsection{Base de datos (Mlab)}
+La base de datos escogida es MongoDB, la instalación es fácil y sencilla tan solo hay que ir a la \hyperlink{http://www.mongodb.org/downloads}{web} oficial y descargar la última versión estable disponible. Una vez en nuestro ordenador la ejecutamos y listo.  Si tenéis algún problema os recomiendo seguir alguno de los tutoriales que existen en la web. https://www.adictosaltrabajo.com/tutoriales/mongodb/
 
+Como sabemos podemos manejar la base de datos desde línea de comandos pero resulta un poco pesado cuando empezamos a tener muchas colecciones o un número de datos alto. Es por eso que yo recomiendo encarecidamente  \hyperlink{https://robomongo.org/}{Robomongo}, la copia de SQL server para bases de datos NoSQL.  Interfaz no muy lograda pero perfecta para visualizar nuestras bases de datos e información de una manera más intuitiva.
 
+	\imagen{robomongoview}{Vista Robomongo. Fuente:  Elaboración propia.}
+	
+	Esta claro que cuando trabajamos con un proyecto en local para realizar pruebas lo mejor es tener una base de datos en local pero cuando queremos algo un poco más serio resulta interesante el tener esa base de datos en un servidor real. Para ello he escogido \hyperlink{mlab.com}{Mlab}, los pasos para crear la base de datos se enumeran a continuación: 
+	
+	\begin{enumerate}
+	\item Acceder a la \hyperlink{mlab.com}{Mlab}, registrarse y crear una cuenta
+	\item Crear una subscripción a una base de datos (Tiene de pago pero también tiene una versión gratuita que nos vale para realizar pruebas a este nivel)
+	\item Ejecutar el siguiente comando para establecer la conexión con la base de datos creada
+		\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
+		\begin{lstlisting}[frame=single]
+		mongo ds012345.mlab.com:56789/dbname -u dbuser -p dbpassword
+    	\end{lstlisting}
+	\item Las colecciones las podemos crear directamente desde la propia web, o bien desde la lína de comandos 
+	\item Para probar que la base de datos funciona (El primer comando es para insertar un elemento y el segundo para buscar. En este caso el segundo debería devolver el único elemento insertado.:
+		\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
+		\begin{lstlisting}[frame=single]
+		db.mynewcollection.insert({ "foo" : "bar" })
+		db.mynewcollection.find() 
+    	\end{lstlisting}	
+\end{enumerate}
+
+Nota: para empezar a trabajar con este proyecto es necesario crear las tres colecciones de las que ya hemos hablado en secciones anteriores: \emph{Users, Events, Interchange}, y \underline{no} hacer nada más puesto que según la configuración de la aplicación se debería añadir los usuarios, eventos y turnos de manera automática cuando el usuario hacer click en los botones adecuados. 
 
 
 \begin{itemize}
@@ -150,6 +205,6 @@ Hay que tener en cuenta que tenemos diversas tecnologías dentro del proyecto po
   \end{itemize}
 \end{itemize}
 
-\subsection{Avisos}
+
 
 
