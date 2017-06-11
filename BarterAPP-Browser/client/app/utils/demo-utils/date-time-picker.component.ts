@@ -1,3 +1,4 @@
+//Propios del calendario
 import {
   Component,
   Input,

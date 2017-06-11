@@ -1,3 +1,4 @@
+//Propios del calendario
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
@@ -40,19 +41,19 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
             class="btn btn-primary"
             (click)="viewChange.emit('month')"
             [class.active]="view === 'month'">
-            Month
+            Mes
           </div>
           <div
             class="btn btn-primary"
             (click)="viewChange.emit('week')"
             [class.active]="view === 'week'">
-            Week
+            Semana
           </div>
           <div
             class="btn btn-primary"
             (click)="viewChange.emit('day')"
             [class.active]="view === 'day'">
-            Day
+            Dia
           </div>
         </div>
       </div>
