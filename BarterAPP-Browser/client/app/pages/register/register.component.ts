@@ -1,4 +1,5 @@
 ﻿//Pages: Registro
+//http://jasonwatmore.com/post/2016/09/29/angular-2-user-registration-and-login-example-tutorial
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -40,7 +41,6 @@ export class RegisterComponent {
                     this.router.navigate(['/login']);
                 },
                 error => {
-                    this.alertService.success('Registro fallido.', false);
                     this.alertService.error(error._body);
                     this.loading = false;
                 });
