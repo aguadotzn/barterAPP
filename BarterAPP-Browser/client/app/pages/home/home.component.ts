@@ -1,18 +1,21 @@
-﻿import { Component, OnInit } from '@angular/core';
+﻿//Pages: Home (no se usa)
+import { Component, OnInit } from '@angular/core';
 
-import { User } from '../_models/index';
-import { UserService } from '../_services/index';
+/*models*/
+import { User } from 'app/_models/index';
+/*repository*/
+import { UserRepository } from 'app/repository/index';
+
 
 @Component({
     moduleId: module.id,
     templateUrl: 'home.component.html'
 })
-
 export class HomeComponent implements OnInit {
     currentUser: User;
     users: User[] = [];
 
-    constructor(private userService: UserService) {
+    constructor(private userRepository: UserRepository) {
         this.currentUser = JSON.parse(localStorage.getItem('currentUser'));
     }
 
@@ -22,10 +25,10 @@ export class HomeComponent implements OnInit {
     }
 
     deleteUser(_id: string) {
-        this.userService.delete(_id).subscribe(() => { this.loadAllUsers() });
+        this.userRepository.delete(_id).subscribe(() => { this.loadAllUsers() });
     }
 
     private loadAllUsers() {
-        this.userService.getAll().subscribe(users => { this.users = users; });
+        this.userRepository.getAll().subscribe(users => { this.users = users; });
     }
 }

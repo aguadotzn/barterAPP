@@ -1,9 +1,13 @@
-﻿import { Component } from '@angular/core';
+﻿//Pages: Registro
+import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
-import { AlertService, UserService } from '../_services/index';
-
-import {SelectItem} from 'primeng/primeng';
+/*services*/
+import { AlertService } from 'app/_services/index';
+/*repository*/
+import { UserRepository } from 'app/repository/index';
+/*utils*/
+import { ShiftUtilsService } from 'app/utils/shift.utils.service';
 
 @Component({
     moduleId: module.id,
@@ -11,29 +15,32 @@ import {SelectItem} from 'primeng/primeng';
 })
 
 export class RegisterComponent {
-
     model: any = {};
     loading = false;
-    private shifts = [{'name': '24 Horas'},
-                     {'name': '12 Horas'},
-                     {'name': '8 Horas'},
-                     {'name': '6 Horas'}];
+    // Para el tipo de turnos que tiene la empresa
+    /*Hay que tener en cuenta que funcionalmente
+    en la  primera version no sirve para nada*/
+    private shifts;
 
     constructor(
         private router: Router,
-        private userService: UserService,
-        private alertService: AlertService) {
-    }
+        private userRepository: UserRepository,
+        private alertService: AlertService,
+        private shiftUtilsService: ShiftUtilsService) {
+        // Como es algo que no deberia cambiar en toda la app he considerado usar el patro SINGLETON
+        this.shifts = shiftUtilsService.getShifts();
+  }
 
     register() {
         this.loading = true;
-        this.userService.create(this.model)
+        this.userRepository.create(this.model)
             .subscribe(
                 data => {
-                    this.alertService.success('Registro completado', true);
+                    this.alertService.success('Registro completado.', true);
                     this.router.navigate(['/login']);
                 },
                 error => {
+                    this.alertService.success('Registro fallido.', false);
                     this.alertService.error(error._body);
                     this.loading = false;
                 });

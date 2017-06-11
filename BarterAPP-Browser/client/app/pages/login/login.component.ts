@@ -1,8 +1,8 @@
-﻿import { Component, OnInit } from '@angular/core';
+﻿//Pages: Login
+import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
-import { AlertService, AuthenticationService, LocalStorageService, GlobalService } from '../_services/index';
-
+import { AlertService, AuthenticationService, LocalStorageService } from 'app/_services/index';
 
 @Component({
     moduleId: module.id,

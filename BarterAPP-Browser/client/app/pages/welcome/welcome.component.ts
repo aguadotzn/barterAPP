@@ -1,3 +1,4 @@
+//Pages: Vista inicial
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -10,4 +11,5 @@ export class WelcomeComponent implements OnInit {
 
   ngOnInit() {
   }
+
 }

@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var testing_1 = require("@angular/core/testing");
-var welcome_component_1 = require("./welcome.component");
+var welcome_component_1 = require("./pages/welcome/welcome.component.ts");
 describe('WelcomeComponent', function () {
     var component;
     var fixture;
