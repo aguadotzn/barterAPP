@@ -1,5 +1,4 @@
-// Main file of the client
-// @author aaguado
+// main.ts: documento principal del cliente
 import { enableProdMode } from '@angular/core';
 import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 

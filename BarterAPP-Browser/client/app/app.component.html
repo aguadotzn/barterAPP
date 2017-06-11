@@ -1,0 +1,48 @@
+﻿<!--Menu de navegación -->
+<!-- navbar is from bootstrap -->
+<div class="navbar navbar-toggleable-md navbar-light bg-faded" style="background-color: #358e9d;">
+  <a class="navbar-brand" href="#about">BarterApp</a>
+
+  <div class="navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Sobre nosotros</a>
+      </li>
+    </ul>
+    <div *ngIf="currentUser">
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item active">
+            <a class="nav-link"> Bienvenido {{currentUser.firstName}}!</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/home">Ayuda</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/calendarhome">Calendario</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" (click)="logout()">Logout</a>
+          </li>
+        </ul>
+    </div>
+    <div *ngIf="!currentUser">
+        <ul class="navbar-nav navbar-right">
+          <li class="nav-item active">
+            <a class="nav-link" href="login">Login</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</div>
+
+<!-- main app  -->
+<!-- jumbotron is from bootstrap -->
+<div class="jumbotron app_content">
+    <div class="container">
+            <alert></alert>
+            <router-outlet></router-outlet>
+    </div>
+</div>
