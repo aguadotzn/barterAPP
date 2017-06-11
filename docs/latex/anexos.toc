@@ -42,14 +42,14 @@
 \contentsline {section}{\numberline {D.4}Manual del programador}{29}{section.Alph4.4}
 \contentsline {subsection}{Prerequisitos}{30}{section*.24}
 \contentsline {subsection}{Estructura de directorios }{30}{section*.25}
-\contentsline {subsection}{Modo desarrollador}{32}{section*.26}
+\contentsline {subsection}{Modo desarrollador}{33}{section*.26}
 \contentsline {subsection}{Servidor (Heroku)}{33}{section*.27}
-\contentsline {subsection}{Base de datos (Mlab)}{33}{section*.28}
-\contentsline {appendix}{\chapternumberline {E}Documentaci\IeC {\'o}n de usuario}{36}{appendix.Alph5}
-\contentsline {section}{\numberline {E.1}Introducci\IeC {\'o}n}{36}{section.Alph5.1}
-\contentsline {section}{\numberline {E.2}Requisitos Usuarios}{36}{section.Alph5.2}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{36}{section*.29}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{36}{section*.30}
-\contentsline {section}{\numberline {E.3}Primeros pasos}{36}{section.Alph5.3}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{36}{section*.31}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{36}{section*.32}
+\contentsline {subsection}{Base de datos (Mlab)}{34}{section*.28}
+\contentsline {appendix}{\chapternumberline {E}Documentaci\IeC {\'o}n de usuario}{37}{appendix.Alph5}
+\contentsline {section}{\numberline {E.1}Introducci\IeC {\'o}n}{37}{section.Alph5.1}
+\contentsline {section}{\numberline {E.2}Requisitos Usuarios}{37}{section.Alph5.2}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{37}{section*.29}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{37}{section*.30}
+\contentsline {section}{\numberline {E.3}Primeros pasos}{37}{section.Alph5.3}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{37}{section*.31}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{37}{section*.32}

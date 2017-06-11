@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  11 JUN 2017 23:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  12 JUN 2017 00:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2630,1150 +2630,195 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 121.
 
 [31 <./img/directorios.png>]
-! Missing $ inserted.
-<inserted text> 
-                $
-l.128 		\item \textbf{/client/app/_directives}
-                                              :
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.128 		\item \textbf{/client/app/_directives}
-                                              :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-! LaTeX Error: Command \item invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.129 		\item
-              \textbf{/client/app/_guards}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.129 		\item \textbf
-                     {/client/app/_guards}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.129 		\item \textbf
-                     {/client/app/_guards}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.129 		\item \textbf{/client/app/_guards}
-                                          :
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.129 		\item \textbf{/client/app/_guards}
-                                          :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.129 		\item \textbf{/client/app/_guards}
-                                          :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...e {\textdef@ \displaystyle \f@size {#1}}
-                                                  {\textdef@ \textstyle \f@s...
-l.129 		\item \textbf{/client/app/_guards}
-                                          :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.129 		\item \textbf{/client/app/_guards}
-                                          :
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.129 		\item \textbf{/client/app/_guards}
-                                          :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.129 		\item \textbf{/client/app/_guards}
-                                          :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...xtstyle \f@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \sf@...
-l.129 		\item \textbf{/client/app/_guards}
-                                          :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.129 		\item \textbf{/client/app/_guards}
-                                          :
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.129 		\item \textbf{/client/app/_guards}
-                                          :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.129 		\item \textbf{/client/app/_guards}
-                                          :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...tstyle \sf@size {\firstchoice@false #1}}
-                                                  {\textdef@ \textstyle \ssf...
-l.129 		\item \textbf{/client/app/_guards}
-                                          :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.129 		\item \textbf{/client/app/_guards}
-                                          :
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-\textdef@ ...th {#1}\let \f@size #2\selectfont #3}
-                                                  }
-l.129 		\item \textbf{/client/app/_guards}
-                                          :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\textdef@ ...h {#1}\let \f@size #2\selectfont #3}}
-                                                  
-l.129 		\item \textbf{/client/app/_guards}
-                                          :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...style \ssf@size {\firstchoice@false #1}}
-                                                  \check@mathfonts }
-l.129 		\item \textbf{/client/app/_guards}
-                                          :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Extra }, or forgotten $.
-\text@ ...firstchoice@false #1}}\check@mathfonts }
-                                                  
-l.129 		\item \textbf{/client/app/_guards}
-                                          :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.130 		\item \textbf
-                     {/client/app/_models}:
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.130 		\item \textbf
-                     {/client/app/_models}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.130 		\item \textbf{/client/app/_models}
-                                          :
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.130 		\item \textbf{/client/app/_models}
-                                          :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.131 		\item \textbf
-                     {/client/app/_services}:
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.131 		\item \textbf
-                     {/client/app/_services}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.131 		\item \textbf{/client/app/_services}
-                                            :
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.131 		\item \textbf{/client/app/_services}
-                                            :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.132 		\item \textbf
-                     {/client/app/enviroments}:
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.132 		\item \textbf
-                     {/client/app/enviroments}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing { inserted.
-<to be read again> 
-                   $
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing { inserted.
-<to be read again> 
-                   $
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing { inserted.
-<to be read again> 
-                   $
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-A left brace was mandatory here, so I've put one in.
-You might want to delete and/or insert some corrections
-so that I will find a matching right brace soon.
-(If you're confused by all this, try typing `I}' now.)
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.135 			\item \textbf
-                      {/client/app/pages/angular_calendar}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.135 ...extbf{/client/app/pages/angular_calendar}
-                                                  :
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.135 ...extbf{/client/app/pages/angular_calendar}
-                                                  :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-! LaTeX Error: Command \item invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.136 			\item
-               \textbf{/client/app/pages/home}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.136 			\item \textbf
-                      {/client/app/pages/home}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.136 			\item \textbf
-                      {/client/app/pages/home}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Command \item invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.137 			\item
-               \textbf{/client/app/pages/login}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.137 			\item \textbf
-                      {/client/app/pages/login}:
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.137 			\item \textbf
-                      {/client/app/pages/login}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (41.48956pt too wide) in paragraph at lines 135--137
-[]\OT1/cmr/bx/sc/10.95 /client/app/pages/angular$[]\OML/cmm/m/it/10.95 alendar 
-\OT1/cmr/m/n/10.95 : [] :
- []
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.140 			\end{itemize}
-                      
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.147 	\item \textbf
-                    {/dist/}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 147
-[][]
+Overfull \hbox (10.05pt too wide) in paragraph at lines 160--162
+[]\OT1/cmr/m/n/10.95 Observables http://academia-binaria.com/comunicaciones-htt
+p-observables-
  []
 
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.148 	\item \textbf
-                    {/e2e/}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 148
-[][]
+Overfull \hbox (38.3983pt too wide) in paragraph at lines 163--165
+[]\OT1/cmr/m/n/10.95 angular2 po-lling -observables https://stackoverflow.com/q
+uestions/41658162/how-
  []
 
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.149 	\item \textbf
-                    {/node_modules/}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 149
-[][]
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.149 	\item \textbf{/node_modules/}
-                                    :
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.149 	\item \textbf{/node_modules/}
-                                    :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-! LaTeX Error: Command \item invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.150 	\item
-             \textbf{/server/}:  \emph{Back-End}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.150 	\item \textbf
-                    {/server/}:  \emph{Back-End}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.150 	\item \textbf
-                    {/server/}:  \emph{Back-End}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.150 	\item \textbf
-                    {/server/}:  \emph{Back-End}
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 150
-[][]
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.152 			\item
-               \textbf{/server/config}:
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.152 			\item
-               \textbf{/server/config}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.152 			\item \textbf
-                      {/server/config}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 152
-[][]
+Overfull \hbox (9.76108pt too wide) in paragraph at lines 166--168
+[]\OT1/cmr/m/n/10.95 Guards https://blog.thoughtram.io/angular/2016/07/18/guard
+s-in-angular-
  []
 
 
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.153 			\item \textbf
-                      {/server/controllers}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 153
-[][]
+Overfull \hbox (21.18126pt too wide) in paragraph at lines 172--174
+[]\OT1/cmr/m/n/10.95 DTO https://stackoverflow.com/questions/39272947/dto-desig
+n-in-typescript-
  []
 
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.154 			\item \textbf
-                      {/node_modules/}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 154
-[][]
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.154 			\item \textbf{/node_modules/}
-                                      :
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> \egroup 
-                        
-l.154 			\item \textbf{/node_modules/}
-                                      :
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-
-! LaTeX Error: Command \item invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.155 			\item
-               \textbf{/server/routes}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.155 			\item \textbf
-                      {/server/routes}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Something's wrong--perhaps a missing \item.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.155 			\item \textbf
-                      {/server/routes}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.155 			\item \textbf
-                      {/server/routes}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 155
-[][]
- []
-
-
-! LaTeX Error: Command \item invalid in math mode.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.156 			\item
-               \textbf{/server/services}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.156 			\item \textbf
-                      {/server/services}:
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.156 			\item \textbf
-                      {/server/services}:
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-! LaTeX Error: Lonely \item--perhaps a missing list environment.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.156 			\item \textbf
-                      {/server/services}:
-Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-
-Underfull \hbox (badness 10000) detected at line 156
-[][]
- []
-
-
-! LaTeX Error: \begin{document} ended by \end{itemize}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.157 		\end{itemize}
-                     
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.157 		\end{itemize}
-                     
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.157 		\end{itemize}
-                     
-Things are pretty mixed up, but I think the worst is over.
-
-
-! LaTeX Error: \begin{document} ended by \end{itemize}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.158 \end{itemize}
-                   
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Extra \endgroup.
-<recently read> \endgroup 
-                          
-l.158 \end{itemize}
-                   
-Things are pretty mixed up, but I think the worst is over.
-
-LaTeX Info: Redefining \. on input line 176.
-LaTeX Info: Redefining \% on input line 176.
+LaTeX Info: Redefining \. on input line 175.
+LaTeX Info: Redefining \% on input line 175.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 176.
+(babel)             in language append on input line 175.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 176.
+(babel)             in language append on input line 175.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 176.
+(babel)             in language append on input line 175.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 176.
+(babel)             in language append on input line 175.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 176.
+(babel)             in language append on input line 175.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 176.
+(babel)             in language append on input line 175.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 176.
+(babel)             in language append on input line 175.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 176.
+(babel)             in language append on input line 175.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 176.
+(babel)             in language append on input line 175.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 176.
+(babel)             in language append on input line 175.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 176.
+(babel)             in language append on input line 175.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 176.
+(babel)             in language append on input line 175.
 
 [32
 
 ]
-LaTeX Info: Redefining \. on input line 207.
-LaTeX Info: Redefining \% on input line 207.
+Overfull \hbox (38.61134pt too wide) in paragraph at lines 175--177
+[]\OT1/cmr/m/n/10.95 ngAfterViewInit https://angular.io/docs/ts/latest/api/core
+/index/AfterViewInit-
+ []
+
+
+Overfull \hbox (22.1559pt too wide) in paragraph at lines 188--190
+[]\OT1/cmr/m/n/10.95 AngularCalendar https://github.com/mattlewis92/angular-boo
+tstrap-calendar 
+ []
+
+
+Overfull \hbox (15.79884pt too wide) in paragraph at lines 191--193
+[]\OT1/cmr/m/n/10.95 Multiple com-po-nents https://angular.io/docs/ts/latest/tu
+torial/toh-pt3.html 
+ []
+
+
+Overfull \hbox (18.41455pt too wide) in paragraph at lines 197--198
+[]\OT1/cmr/m/n/10.95 https://desarrolloweb.com/articulos/analisis-carpetas-proy
+ecto-angular2.html 
+ []
+
+
+Overfull \hbox (20.69582pt too wide) in paragraph at lines 200--201
+[]\OT1/cmr/m/n/10.95 https://desarrolloweb.com/articulos/introduccion-component
+es-angular2.html 
+ []
+
+LaTeX Info: Redefining \. on input line 227.
+LaTeX Info: Redefining \% on input line 227.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 207.
+(babel)             in language append on input line 227.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 207.
+(babel)             in language append on input line 227.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 207.
+(babel)             in language append on input line 227.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 207.
+(babel)             in language append on input line 227.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 207.
+(babel)             in language append on input line 227.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 207.
+(babel)             in language append on input line 227.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 207.
+(babel)             in language append on input line 227.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 207.
+(babel)             in language append on input line 227.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 207.
+(babel)             in language append on input line 227.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 207.
+(babel)             in language append on input line 227.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 207.
+(babel)             in language append on input line 227.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 207.
+(babel)             in language append on input line 227.
 
-[33] <./img/robomongoview.png, id=779, 1099.10625pt x 328.22626pt>
+[33] <./img/robomongoview.png, id=758, 1099.10625pt x 328.22626pt>
 File: ./img/robomongoview.png Graphic file (type png)
 
 <use ./img/robomongoview.png>
-Package pdftex.def Info: ./img/robomongoview.png used on input line 208.
+Package pdftex.def Info: ./img/robomongoview.png used on input line 252.
 (pdftex.def)             Requested size: 332.09775pt x 99.1748pt.
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 224.
-LaTeX Info: Redefining \. on input line 230.
-LaTeX Info: Redefining \% on input line 230.
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+LaTeX Info: Redefining \. on input line 252.
+LaTeX Info: Redefining \% on input line 252.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 230.
+(babel)             in language append on input line 252.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 230.
+(babel)             in language append on input line 252.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 230.
+(babel)             in language append on input line 252.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 230.
+(babel)             in language append on input line 252.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 230.
+(babel)             in language append on input line 252.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 230.
+(babel)             in language append on input line 252.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language append on input line 230.
+(babel)             in language append on input line 252.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language append on input line 230.
+(babel)             in language append on input line 252.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language append on input line 230.
+(babel)             in language append on input line 252.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language append on input line 230.
+(babel)             in language append on input line 252.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language append on input line 230.
+(babel)             in language append on input line 252.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language append on input line 230.
+(babel)             in language append on input line 252.
 
-[34 <./img/robomongoview.png>])
+[34]
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 268.
+LaTeX Info: Redefining \. on input line 281.
+LaTeX Info: Redefining \% on input line 281.
+
+Overfull \vbox (0.8521pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 281.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 281.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 281.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 281.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 281.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 281.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language append on input line 281.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language append on input line 281.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language append on input line 281.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language append on input line 281.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language append on input line 281.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language append on input line 281.
+
+[35 <./img/robomongoview.png>])
 LaTeX Info: Redefining \. on input line 403.
 LaTeX Info: Redefining \% on input line 403.
 
@@ -3804,7 +2849,7 @@ Package babel Info: Redefining spanish shorthand "!
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 403.
 
-[35]
+[36]
 \openout2 = `./tex/E_Manual_usuario.aux'.
 
  (./tex/E_Manual_usuario.tex
@@ -3881,7 +2926,7 @@ Package babel Info: Redefining spanish shorthand "!
 (babel)             in language append on input line 404.
 Package babel Info: Redefining spanish shorthand "?
 (babel)             in language append on input line 404.
- [36
+ [37
 
 
 
@@ -3926,13 +2971,13 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 416.
  ) 
 Here is how much of TeX's memory you used:
- 13236 strings out of 493014
- 182776 string characters out of 6133352
+ 13228 strings out of 493014
+ 182674 string characters out of 6133352
  395345 words of memory out of 5000000
- 16372 multiletter control sequences out of 15000+600000
- 16390 words of font info for 57 fonts, out of 8000000 for 9000
+ 16366 multiletter control sequences out of 15000+600000
+ 14692 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,16n,51p,808b,1322s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 43i,13n,51p,808b,1322s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{mlab.com} has been referenced but does not exist,
  replaced by a fixed one
 
@@ -3960,27 +3005,25 @@ s not exist, replaced by a fixed one
 </usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
-sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
-r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/
-local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
-cal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/loca
-l/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/t
-exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texl
-ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/
-2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2
-016/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on anexos.pdf (39 pages, 1698420 bytes).
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb>
+Output written on anexos.pdf (40 pages, 1685849 bytes).
 PDF statistics:
- 922 PDF objects out of 1000 (max. 8388607)
- 810 compressed objects within 9 object streams
- 195 named destinations out of 1000 (max. 500000)
+ 918 PDF objects out of 1000 (max. 8388607)
+ 807 compressed objects within 9 object streams
+ 196 named destinations out of 1000 (max. 500000)
  265 words of extra memory for PDF output out of 10000 (max. 10000000)
 
