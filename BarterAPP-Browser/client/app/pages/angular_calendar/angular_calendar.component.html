@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- Botones superiores-->
+<div class="row text-center">
+  <div class="col-md-4">
+    <div class="btn-group">
+      <div
+        class="btn btn-primary"
+        mwlCalendarPreviousView
+        [view]="view"
+        [(viewDate)]="viewDate">
+        Anterior
+      </div>
+      <div
+        class="btn btn-secondary"
+        mwlCalendarToday
+        [(viewDate)]="viewDate">
+        Actual
+      </div>
+      <div
+        class="btn btn-primary"
+        mwlCalendarNextView
+        [view]="view"
+        [(viewDate)]="viewDate">
+        Siguiente
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <h3>{{ viewDate | calendarDate:(view + 'ViewTitle'):'en' }}</h3>
+  </div>
+  <div class="col-md-4">
+    <div class="btn-group">
+      <div
+        class="btn btn-primary"
+        (click)="view = 'month'"
+        [class.active]="view === 'month'">
+        Mes
+      </div>
+      <div
+        class="btn btn-primary"
+        (click)="view = 'week'"
+        [class.active]="view === 'week'">
+        Semana
+      </div>
+      <div
+        class="btn btn-primary"
+        (click)="view = 'day'"
+        [class.active]="view === 'day'">
+        Dia
+      </div>
+    </div>
+  </div>
+</div>
+<br>
+<br>
