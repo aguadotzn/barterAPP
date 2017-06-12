@@ -157,6 +157,74 @@ La estructura de directorios general es la siguiente:
 		\end{itemize}
 \end{itemize}
 
+%Directorios apaisado
+\begin{landscape}
+  \begin{forest}
+    for tree={
+      parent anchor=south,
+      child anchor=north,
+      trapezium,
+      trapezium angle=95,
+      rounded corners=2pt,
+      draw,
+      l sep=-15pt,
+      s sep=-5pt,
+      fill=blue!50,
+    }
+    [/
+       [$/client$, fill=blue!50, for children={fill=green!50}
+        [/$app$, fill=green!!50, for children={fill=yellow!50}
+         [$_directives$
+         ]
+         [$_guards$
+         ]
+         [$_models$
+         ]
+         [$_services$
+         ]
+         [$_enviroments$
+         ]
+         [$_pages$
+         ]
+         [$_repository$
+         ]
+         [$_utils$
+         ]
+        ]
+        [$/assets$
+        ]
+         [$/enviroments$
+        ]
+      ]
+      [$/e2e$
+      ]
+      [$/dist$
+      ]
+      [$/node_modules$
+      ]
+         [$/server$, fill=blue!50, for children={fill=green!50}
+        [$/config$
+        ]
+        [$/controllers$
+        ]
+        [$/node_modules$
+        ]
+        [$/routes$
+        ]
+        [$/services$
+        ]
+      ]
+]
+    ]
+  \end{forest}
+  \end{landscape}
+
+
+
+
+
+
+
 Observables
 http://academia-binaria.com/comunicaciones-http-observables-con-angular2/
 

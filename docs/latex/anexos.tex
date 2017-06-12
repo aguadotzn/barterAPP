@@ -26,6 +26,20 @@
 
 %Para codigo
 \usepackage{listings}
+
+%Directorios
+\usepackage{forest}
+\usetikzlibrary{shapes.geometric}
+ \tikzset{/forest,
+    symlink/.append style={
+      opacity=.25,
+      text opacity=.5,
+      before drawing tree={
+        {tikz+={\draw [thick, -{>[]}] (!#1.east) ++(4pt,-1.5pt) arc (215:120:5pt);}}
+      },
+    },
+  }
+
  
 
 % Links
@@ -45,6 +59,10 @@
 
 % Párrafos
 \nonzeroparskip
+
+
+% Landscape
+\usepackage{pdflscape}
 
 
 % Imagenes
@@ -144,6 +162,8 @@
   \end{center}
  \end{table}
 }
+
+
 
 \newcommand{\tablaApaisadaSmall}[5]{%
 \begin{landscape}
