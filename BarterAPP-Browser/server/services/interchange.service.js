@@ -17,30 +17,30 @@ db.bind('event')
 var service = {}
 
 // Peticion rechazada
-service.decline=function (param){
-	var deferred = Q.defer();
-	//console.log("Rechazado!!");
-	//console.log("param.idAcknowledgerEvent : " +param.idAcknowledgerEvent);
+service.decline = function (param) {
+  var deferred = Q.defer()
+// console.log("Rechazado!!");
+// console.log("param.idAcknowledgerEvent : " +param.idAcknowledgerEvent);
 
 	  var set = {
 	    status: 'normal'
 	  }
 
-	  //Cambiar las prioridad o estado del evento a "normal"
+	  // Cambiar las prioridad o estado del evento a "normal"
 	  db.event.updateById(param.idAcknowledgerEvent, {$set: set}, function (err, updatedEvent) {
 	      if (err) deferred.reject(err.name + ': ' + err.message);
-	      		//console.log("--------------------Actualizar------------", updatedEvent);
+	      		// console.log("--------------------Actualizar------------", updatedEvent);
 	      		var query = {acknowledger : param.acknowledger, acknowledger_event_id : mongo.ObjectID.createFromHexString(param.idAcknowledgerEvent), status : "pending" };
 					// Obtener el objeto del intercambio para acceder al usuario que hace la peticion
 	      		db.interchange.find({'acknowledger' : param.acknowledger}).toArray(function (err, interchanges) {
-	   	          if (err) deferred.reject(err.name + ': ' + err.message);
+	   	          if (err) deferred.reject(err.name + ': ' + err.message)
 	   	          //console.log("Resultado: " +interchanges);
 	   	          var interchange;
 	   	          if (interchanges) {
 	   	        	for (var i in interchanges) {
 		   	            if ( interchanges[i].status =="pending" && interchanges[i].acknowledger_event_id == param.idAcknowledgerEvent){
 		   	            	//console.log("************************Intercambios: " + interchanges[i]);
-		   	              	interchange = interchanges[i];
+		   	              	interchange = interchanges[i]
 		   	              	break;
 		   	            }
 	   	           }
@@ -48,7 +48,7 @@ service.decline=function (param){
 
 	   	            //console.log("--------------------Interchange?: + " +JSON.stringify(interchanges[0]));
 
-	   	            deferred.resolve(interchange);
+	   	            deferred.resolve(interchange)
 	   	           set = {
 		                 status: 'declined'
 
@@ -70,9 +70,9 @@ service.decline=function (param){
 		            	   if (err) deferred.reject(err.name + ': ' + err.message);
 		            });
 	   	          } else {
-	   				//console.log("Fin funcion rechazar");
-	   				var emptyObject = {};
-	   				deferred.resolve(emptyObject);
+	   				// console.log("Fin funcion rechazar");
+	   				var emptyObject = {}
+	   				deferred.resolve(emptyObject)
 	   			  }
       })
   })
@@ -81,17 +81,15 @@ service.decline=function (param){
 
 // Peticion aceptada
 service.accept_shift = function(param){
-	var deferred = Q.defer();
+var deferred = Q.defer()
+var acknowledger_event = param
 
-	var acknowledger_event = param;
-
-
-	//obtener el objeto a intercambiar
-	var query = { acknowledger : param.username };
+	// obtener el objeto a intercambiar
+	var query = { acknowledger : param.username }
 	db.interchange.find(query).toArray(function (err, interchanges) {
 		if (err) {
-          	console.log("0 error: " + err);
-          	deferred.reject(err.name + ': ' + err.message);
+          	console.log("0 error: " + err)
+          	deferred.reject(err.name + ': ' + err.message)
          }
 	          if (interchanges.length > 0) {
 	            var interchange;
@@ -99,27 +97,27 @@ service.accept_shift = function(param){
 	            for (var i in interchanges) {
 	   	            if ( interchanges[i].status =="pending" && interchanges[i].acknowledger_event_id == param._id){
 										//console.log("************************Intercambios: " + interchanges[i]);
-	   	              	interchange = interchanges[i];
-	   	              	findOne = true;
-	   	              	break;
+	   	              	interchange = interchanges[i]
+	   	              	findOne = true
+	   	              	break
 	   	            }
    	           }
 	            if (findOne == false){
-	            	var emptyObject = {};
-	   				deferred.resolve(emptyObject);
-	   				return deferred.promise;
+	            	var emptyObject = {}
+	   				deferred.resolve(emptyObject)
+	   				return deferred.promise
 	            }
 	            // Obtener el evento del que hace la peticion (requestor)
 	            db.event.findById(interchange.requestor_event_id, function (err, requestor_event) {
   	                    if (err) {
-  	                    	//console.log("1 error: " + err);
+  	                    	// console.log("1 error: " + err);
   	                    	deferred.reject(err.name + ': ' + err.message);
 		                 }
-		                 //console.log('-----Evento del que hace la peticion:' + JSON.stringify(requestor_event));
+		                 // console.log('-----Evento del que hace la peticion:' + JSON.stringify(requestor_event));
 
 										 // Intercambio de los datos entre el que hace la peticion y el que la recibe
 		                  set = {
-		                	        title: requestor_event.title, //EL QUE HACE LA PETICION
+		                	        title: requestor_event.title, // EL QUE HACE LA PETICION
 		                	        start: requestor_event.start,
 		                	        end: requestor_event.end,
 		                	        primary_color:requestor_event.primary_color,
@@ -131,14 +129,14 @@ service.accept_shift = function(param){
 		                	        { $set: set },
 		                	        function (err, doc) {
 		                	        	if (err) {
-		          	                    	//console.log("2 error: " + err);
+		          	                    	// console.log("2 error: " + err);
 		          	                    	deferred.reject(err.name + ': ' + err.message);
 		        		                 }
 		                	        });
 
 
 		                  set = {
-		                	        title: acknowledger_event.title, //EL QUE RECIBE LA PETICION
+		                	        title: acknowledger_event.title, // EL QUE RECIBE LA PETICION
 		                	        start: acknowledger_event.start,
 		                	        end: acknowledger_event.end,
 		                	        primary_color:acknowledger_event.primary_color,
@@ -175,31 +173,24 @@ service.accept_shift = function(param){
 			   	            db.interchange.updateById(interchange._id, {$set: set}, function (err) {
 			   	            	//console.log("----------Intercambio aceptado------------");
 			   	            	if (err) {
-		  	                    	//console.log("4 error: " + err);
+		  	                    	// console.log("4 error: " + err);
 		  	                    	deferred.reject(err.name + ': ' + err.message);
 				                 }
-				            });
-		                 deferred.resolve(acknowledger_event);
-
-
-	            });
+				            })
+		                 deferred.resolve(acknowledger_event)
+	            })
 	       } else {
 	        	console.log("Fin funcion aceptar");
 	      }
-	});
-
-	return deferred.promise;
+	})
+  return deferred.promise
 }
 
-
 // Activar intercambio
-service.activateShift = function(params){
-	var deferred = Q.defer();
-
-
+service.activateShift = function (params) {
+	var deferred = Q.defer()
 	var query = {'acknowledger': params.acknowledger, "acknowledger_event_id": mongo.ObjectID.createFromHexString(params.acknowledger_event_id), "status": "pending" };
 		//console.log("Objeto a intercambiar = : " + JSON.stringify(query));
-
 	 //Obtener el objeto de intercambio de el usuario que hace la peticion
       	db.interchange.findOne({'acknowledger': params.acknowledger},function (err, interchange) {
          if (err) deferred.reject(err.name + ': ' + err.message);
@@ -209,12 +200,10 @@ service.activateShift = function(params){
         	 deferred.resolve(interchange);
         	 return deferred.promise;
          }
-
-      	});
-
-//Actualizar en la base de datos
+      	})
+// Actualizar en la base de datos
 	db.interchange.insert( params, function (err, storedInterchange) {
-        if (err) deferred.reject(err.name + ': ' + err.message);
+        if (err) deferred.reject(err.name + ': ' + err.message)
 
 				//El estado del evento (turno) de la persona que HACE la peticion pasa a  "required"
         set = {
@@ -232,20 +221,18 @@ service.activateShift = function(params){
         set = {
                 status: 'pending',
                 sender:  params.requestor
-              };
+              }
 
 			//Se actualiza ese mismo evento en la base de datos
         db.event.updateById(params.acknowledger_event_id,
                 { $set: set },
                 function (err, doc) {
                     if (err) deferred.reject(err.name + ': ' + err.message);
-                });
+                })
 
         deferred.resolve(storedInterchange);
- 	});
+ 	})
 
 	 return deferred.promise;
 }
-
-
-module.exports = service;
+module.exports = service

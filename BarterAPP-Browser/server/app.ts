@@ -37,5 +37,4 @@ db.once('open', () => {
   });
 
 });
-
 export { app };
