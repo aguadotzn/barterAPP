@@ -122,7 +122,7 @@
 </div>
 
 
-
+<!-- Control de añadir -->
 <table class="table table-bordered ">
   <thead *ngIf = "shiftEvents.length > 0">
     <tr>
@@ -138,7 +138,8 @@
   </thead>
   <tbody>
       <tr *ngFor="let event of shiftEvents; let index = index">
-
+      <!--  Emisor -->
+      <!-- Peticiones pendientes -->
       <td *ngIf = "showNormalEvent == 1 && event.getOriginalEvent().status === 'pending'" >
         <input
           type="text"
@@ -146,7 +147,7 @@
           [(ngModel)]="event.getOriginalEvent().sender"
           >
       </td>
-
+      <!-- rechazado-->
             <td *ngIf = "showNormalEvent == 2 && event.getOriginalEvent().status === 'declined'" >
         <input
           type="text"
@@ -154,7 +155,7 @@
           [(ngModel)]="event.getOriginalEvent().sender"
           >
       </td>
-
+         <!-- aceptado -->
             <td *ngIf = "showNormalEvent == 3 && event.getOriginalEvent().status === 'accepted'" >
         <input
           type="text"
@@ -162,3 +163,141 @@
           [(ngModel)]="event.getOriginalEvent().sender"
           >
       </td>
+
+
+
+
+      <!--  Titulo del evento -->
+      <!-- normal -->
+      <td *ngIf = "showNormalEvent == 0 && event.getOriginalEvent().status === 'normal'">
+        <input
+          type="text"
+          [(ngModel)]="event.getOriginalEvent().title"
+          (keyup)="valueChange(index)">
+      </td>
+      <!-- pendiente -->
+      <td *ngIf = "showNormalEvent == 1 && event.getOriginalEvent().status === 'pending'">
+        <input
+          type="text"
+          [(ngModel)]="event.getOriginalEvent().title"
+          (keyup)="valueChange(index)">
+      </td>
+      <!-- rechazado-->
+      <td *ngIf = "showNormalEvent == 2 && event.getOriginalEvent().status === 'declined'">
+        <input
+          type="text"
+          [(ngModel)]="event.getOriginalEvent().title"
+          (keyup)="valueChange(index)">
+      </td>
+      <!-- aceptado -->
+      <td *ngIf = "showNormalEvent == 3 && event.getOriginalEvent().status === 'accepted'">
+        <input
+          type="text"
+          [(ngModel)]="event.getOriginalEvent().title"
+          (keyup)="valueChange(index)">
+      </td>
+
+      <!-- Tipo de evento -->
+      <!-- normal -->
+      <td *ngIf = "showNormalEvent == 0 && event.getOriginalEvent().status === 'normal'">
+        <select [(ngModel)]="event.getOriginalEvent().type" (change)="valueChange(index)" >
+          <option *ngFor="let type of types" [ngValue]="type"> {{type}} </option>
+        </select>
+      </td>
+
+
+
+ 	  <!-- Fecha de eventos  -->
+ 	  <!-- normal -->
+      <td *ngIf = "showNormalEvent == 0 && event.getOriginalEvent().status === 'normal'">
+        <mwl-demo-utils-date-time-picker
+          [(date)]="event.getOriginalEvent().start"
+          (dateChange)="valueChange(index)"
+          placeholder="Not set">
+        </mwl-demo-utils-date-time-picker>
+      </td>
+      <!-- pendiente -->
+      <td *ngIf = "showNormalEvent == 1 && event.getOriginalEvent().status === 'pending'">
+       <input type="text" disabled [(ngModel)]="event.getOriginalEvent().start" >
+      </td>
+       <!-- rechazado-->
+      <td *ngIf = "showNormalEvent == 2 && event.getOriginalEvent().status === 'declined'">
+       <input type="text" disabled [(ngModel)]="event.getOriginalEvent().start" >
+      </td>
+      <!-- aceptado -->
+      <td *ngIf = "showNormalEvent == 3 && event.getOriginalEvent().status ===  'accepted'">
+       <input type="text" disabled [(ngModel)]="event.getOriginalEvent().start" >
+      </td>
+
+
+
+
+	  <!-- Botones de control turnos -->
+	  <!-- normal -->
+      <td *ngIf = "showNormalEvent == 0 && event.getOriginalEvent().status === 'normal'">
+        <button class="btn btn-danger" (click)="deleteEvent(index);">
+          Eliminar
+        </button>
+      </td>
+      <!-- pendiente -->
+       <td *ngIf = "showNormalEvent == 1 && event.getOriginalEvent().status === 'pending'">
+        <button class="btn btn-danger"  (click)="accept(index);"  style="background-color: #37ff05;" >
+        Aceptar
+        </button>
+      </td>
+      <!-- pendiente -->
+	   <td *ngIf = "showNormalEvent == 1 && event.getOriginalEvent().status === 'pending'">
+        <button class="btn btn-danger" (click)="decline(index);" style="background-color: #FF0505;">
+        Rechazar
+        </button>
+      </td>
+      <!-- rechazado-->
+      <td *ngIf = "showNormalEvent == 2 && event.getOriginalEvent().status === 'declined'">
+        <button class="btn btn-danger" (click)="makeNormal(index);">
+        Ok
+        </button>
+      </td>
+       <!-- aceptado -->
+      <td *ngIf = "showNormalEvent == 3 &&  event.getOriginalEvent().status === 'accepted'">
+        <button class="btn btn-danger" (click)="makeNormal(index)">
+        Ok
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- <div  class="invisible">
+	<mwl-demo-utils-date-time-picker
+          [(date)]="justDate"
+          placeholder="Not set">
+</mwl-demo-utils-date-time-picker>
+        <button class="btn btn-danger" (click)="findFreeEvents();">
+                Busca eventos libres por dia.
+        </button>
+</div> -->
+
+<!-- Ventana elección usuario-->
+<p-dialog header="Usuarios disponibles: " [(visible)]="displayShiftDialog" modal="modal" width="300" [responsive]="true">
+    <div class="row" >
+    <div class="col-12"  *ngFor="let user of freeUsers; let index = index">
+    <p-radioButton name="simple" value={{index}} label={{user.username}} [(ngModel)]="choosenFreeUser">
+    </p-radioButton>
+    </div>
+  <div class="alert alert-danger alert-dismissible fade show" role="alert" *ngIf = "showShiftAlert">
+  <strong>{{alert}}</strong>
+  </div>
+</div>
+      <p-footer>
+            <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+                <button class="btn btn-danger"  (click)="displayShiftDialog=false" >Cancelar</button>
+                <button class="btn btn-danger" (click)="activateShift()"  [disabled]="hideActivateShiftButton()" >Enviar solicitud</button>
+            </div>
+        </p-footer>
+</p-dialog>
+
+<!--  prime ng -->
+<p-growl [(value)]="msgs"></p-growl>
+
+<!-- prime ng -->
+<p-growl [(value)]="stickymsgs" sticky="sticky"></p-growl>
