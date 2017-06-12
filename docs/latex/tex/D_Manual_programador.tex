@@ -125,40 +125,42 @@ La estructura de directorios general es la siguiente:
 	\begin{itemize}
 	\item \textbf{$/client/app$}: Carpeta App
 		\begin{itemize}
-		\item \textbf{$/client/app/_directives$}: hola
-		\item \textbf{$/client/app/_guards$}: hola
-		\item \textbf{$/client/app/_models$}: hola
-		\item \textbf{$/client/app/_services$}:  hola
-		\item \textbf{$/client/app/enviroments$}:  hola
-		\item \textbf{$/client/app/pages/$}:  
+		\item \textbf{$/client/app/ _directives$}: directivas
+		\item \textbf{$/client/app/ _guards$}: rutas (autenticaciones)
+		\item \textbf{$/client/app/ _models$}: modelos
+		\item \textbf{$/client/app/ _services$}:  servicios
+		\item \textbf{$/client/app/enviroments$}:  entornos
+		\item \textbf{$/client/app/pages/$}:  páginas
 			\begin{itemize}
-			\item \textbf{$/client/app/pages/angular_calendar $}:  hola
-			\item \textbf{$/client/app/pages/home $}:   hola
-			\item \textbf{$/client/app/pages/login $}:   hola
-			\item \textbf{$/client/app/pages/register $}:   hola
-			\item \textbf{$/client/app/pages/welcome $}:   hola
+			\item \textbf{$/client/app/pages/angular_calendar $}:  calendario
+			\item \textbf{$/client/app/pages/home $}:   home
+			\item \textbf{$/client/app/pages/login $}:  login
+			\item \textbf{$/client/app/pages/register $}:   registro
+			\item \textbf{$/client/app/pages/welcome $}:   vista inicial
 			\end{itemize}
-		\item \textbf{$/client/app/repository $}:  
-		\item \textbf{$/client/app/utils $}:  
+		\item \textbf{$/client/app/repository $}:  repositorio (conexión con el servidor)
+		\item \textbf{$/client/app/utils $}:   útiles
 		\end{itemize}
-	\item \textbf{$/client/assets $}: Recursos  
-	\item \textbf{$/client/enviroments $}:  Entornos
+	\item \textbf{$/client/assets $}: recursos  
+	\item \textbf{$/client/enviroments $}:  entornos
    \end{itemize}
-	\item \textbf{$/dist/ $}:
-	\item \textbf{$/e2e/ $}:
-	\item \textbf{$/node_modules/ $}:
+	\item \textbf{$/dist/ $}: ficheros para subir a servidor web
+	\item \textbf{$/e2e/ $}: tests
+	\item \textbf{$/node_modules/ $}: módulos
 	\item \textbf{$/server/ $}:  \emph{Back-End} 
 		\begin{itemize}
-			\item \textbf{$/server/config $}:
-			\item \textbf{$/server/controllers $}:
-			\item \textbf{$/node_modules/ $}:
-			\item \textbf{$/server/routes $}:
-			\item \textbf{$/server/services $}:
+			\item \textbf{$/server/config $}: configuración
+			\item \textbf{$/server/controllers $}: controladores
+			\item \textbf{$/node_modules/ $}: módulos
+			\item \textbf{$/server/routes $}: rutas
+			\item \textbf{$/server/services $}: servicios
 		\end{itemize}
 \end{itemize}
 
 %Directorios apaisado
 \begin{landscape}
+\begin{adjustbox}{width=\linewidth}
+{\footnotesize
   \begin{forest}
     for tree={
       parent anchor=south,
@@ -167,24 +169,34 @@ La estructura de directorios general es la siguiente:
       trapezium angle=95,
       rounded corners=2pt,
       draw,
-      l sep=-15pt,
-      s sep=-5pt,
+      l sep=1.9cm,
+      s sep=0.4cm,
       fill=blue!50,
     }
     [/
        [$/client$, fill=blue!50, for children={fill=green!50}
         [/$app$, fill=green!!50, for children={fill=yellow!50}
-         [$_directives$
+         [$ _directives$
          ]
-         [$_guards$
+         [$ _guards$
          ]
-         [$_models$
+         [$ _models$
          ]
-         [$_services$
+         [$ _services$
          ]
-         [$_enviroments$
+         [$ _enviroments$
          ]
-         [$_pages$
+          [/$pages$, fill=yellow!!50, for children={fill=orange!50}
+          [$angular_calendar$
+          ]
+          [$home$
+          ]
+          [$login$
+          ]
+          [$register$
+          ]
+          [$welcome$
+          ]
          ]
          [$_repository$
          ]
@@ -200,14 +212,14 @@ La estructura de directorios general es la siguiente:
       ]
       [$/dist$
       ]
-      [$/node_modules$
+      [$/node _ modules$
       ]
          [$/server$, fill=blue!50, for children={fill=green!50}
         [$/config$
         ]
         [$/controllers$
         ]
-        [$/node_modules$
+        [$/node _ modules$
         ]
         [$/routes$
         ]
@@ -217,7 +229,10 @@ La estructura de directorios general es la siguiente:
 ]
     ]
   \end{forest}
+  }
+\end{adjustbox}
   \end{landscape}
+
 
 
 

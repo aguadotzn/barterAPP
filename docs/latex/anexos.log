@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  12 JUN 2017 20:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  12 JUN 2017 23:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -799,30 +799,27 @@ File: listings.cfg 2015/06/04 1.6 listings configuration
 ))
 Package: listings 2015/06/04 1.6 (Carsten Heinz)
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/forest/forest.sty
-Package: forest 2016/04/09 v2.0.3 Drawing (linguistic) trees
+(/usr/local/texlive/2016/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
 
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
-x
-\pgfutil@everybye=\toks31
-\pgfutil@tempdima=\dimen169
-\pgfutil@tempdimb=\dimen170
+(/usr/local/texlive/2016/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
 
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
-sts.tex))
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
-\pgfutil@abb=\box39
-(/usr/local/texlive/2016/texmf-dist/tex/latex/ms/everyshi.sty
-Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+(/usr/local/texlive/2016/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/texlive/2016/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks31
+\XKV@tempa@toks=\toks32
+)
+\XKV@depth=\count162
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 ))
-(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
-Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
-))
-Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
-(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
+
 (/usr/local/texlive/2016/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
 
@@ -837,37 +834,91 @@ File: graphics.cfg 2016/01/02 v1.10 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 96.
 )
-\Gin@req@height=\dimen171
-\Gin@req@width=\dimen172
+\Gin@req@height=\dimen169
+\Gin@req@width=\dimen170
 )
+(/usr/local/texlive/2016/texmf-dist/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box39
+)
+\tc@llx=\dimen171
+\tc@lly=\dimen172
+\tc@urx=\dimen173
+\tc@ury=\dimen174
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen175
+\adjbox@Height=\dimen176
+\adjbox@Depth=\dimen177
+\adjbox@Totalheight=\dimen178
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count163
+LaTeX Info: Redefining \checkoddpage on input line 45.
+)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box40
+\sift@deathcycles=\count164
+\@vwid@loff=\dimen179
+\@vwid@roff=\dimen180
+))
+(/usr/local/texlive/2016/texmf-dist/tex/latex/forest/forest.sty
+Package: forest 2016/04/09 v2.0.3 Drawing (linguistic) trees
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks33
+\pgfutil@tempdima=\dimen181
+\pgfutil@tempdimb=\dimen182
+
+(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box41
+(/usr/local/texlive/2016/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+(/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
 (/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
 Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
-\pgfkeys@pathtoks=\toks32
-\pgfkeys@temptoks=\toks33
+\pgfkeys@pathtoks=\toks34
+\pgfkeys@temptoks=\toks35
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
 ode.tex
-\pgfkeys@tmptoks=\toks34
+\pgfkeys@tmptoks=\toks36
 ))
-\pgf@x=\dimen173
-\pgf@y=\dimen174
-\pgf@xa=\dimen175
-\pgf@ya=\dimen176
-\pgf@xb=\dimen177
-\pgf@yb=\dimen178
-\pgf@xc=\dimen179
-\pgf@yc=\dimen180
+\pgf@x=\dimen183
+\pgf@y=\dimen184
+\pgf@xa=\dimen185
+\pgf@ya=\dimen186
+\pgf@xb=\dimen187
+\pgf@yb=\dimen188
+\pgf@xc=\dimen189
+\pgf@yc=\dimen190
 \w@pgf@writea=\write4
 \r@pgf@reada=\read2
-\c@pgf@counta=\count162
-\c@pgf@countb=\count163
-\c@pgf@countc=\count164
-\c@pgf@countd=\count165
-\t@pgf@toka=\toks35
-\t@pgf@tokb=\toks36
-\t@pgf@tokc=\toks37
+\c@pgf@counta=\count165
+\c@pgf@countb=\count166
+\c@pgf@countc=\count167
+\c@pgf@countd=\count168
+\t@pgf@toka=\toks37
+\t@pgf@tokb=\toks38
+\t@pgf@tokc=\toks39
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
 File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
@@ -885,8 +936,8 @@ File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
 code.tex
 File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
-\pgfsyssoftpath@smallbuffer@items=\count166
-\pgfsyssoftpath@bigbuffer@items=\count167
+\pgfsyssoftpath@smallbuffer@items=\count169
+\pgfsyssoftpath@bigbuffer@items=\count170
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
 code.tex
@@ -898,12 +949,12 @@ Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
-\pgfmath@dimen=\dimen181
-\pgfmath@count=\count168
-\pgfmath@box=\box40
-\pgfmath@toks=\toks38
-\pgfmath@stack@operand=\toks39
-\pgfmath@stack@operation=\toks40
+\pgfmath@dimen=\dimen191
+\pgfmath@count=\count171
+\pgfmath@box=\box42
+\pgfmath@toks=\toks40
+\pgfmath@stack@operand=\toks41
+\pgfmath@stack@operation=\toks42
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
 tex
@@ -924,57 +975,57 @@ code.tex)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
 erarithmetics.code.tex)))
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
-\c@pgfmathroundto@lastzeros=\count169
+\c@pgfmathroundto@lastzeros=\count172
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
 de.tex
 File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
-\pgf@picminx=\dimen182
-\pgf@picmaxx=\dimen183
-\pgf@picminy=\dimen184
-\pgf@picmaxy=\dimen185
-\pgf@pathminx=\dimen186
-\pgf@pathmaxx=\dimen187
-\pgf@pathminy=\dimen188
-\pgf@pathmaxy=\dimen189
-\pgf@xx=\dimen190
-\pgf@xy=\dimen191
-\pgf@yx=\dimen192
-\pgf@yy=\dimen193
-\pgf@zx=\dimen194
-\pgf@zy=\dimen256
+\pgf@picminx=\dimen192
+\pgf@picmaxx=\dimen193
+\pgf@picminy=\dimen194
+\pgf@picmaxy=\dimen256
+\pgf@pathminx=\dimen257
+\pgf@pathmaxx=\dimen258
+\pgf@pathminy=\dimen259
+\pgf@pathmaxy=\dimen260
+\pgf@xx=\dimen261
+\pgf@xy=\dimen262
+\pgf@yx=\dimen263
+\pgf@yy=\dimen264
+\pgf@zx=\dimen265
+\pgf@zy=\dimen266
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
 ruct.code.tex
 File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
-\pgf@path@lastx=\dimen257
-\pgf@path@lasty=\dimen258
+\pgf@path@lastx=\dimen267
+\pgf@path@lasty=\dimen268
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
 .code.tex
 File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
-\pgf@shorten@end@additional=\dimen259
-\pgf@shorten@start@additional=\dimen260
+\pgf@shorten@end@additional=\dimen269
+\pgf@shorten@start@additional=\dimen270
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
 de.tex
 File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
-\pgfpic=\box41
-\pgf@hbox=\box42
-\pgf@layerbox@main=\box43
-\pgf@picture@serial@count=\count170
+\pgfpic=\box43
+\pgf@hbox=\box44
+\pgf@layerbox@main=\box45
+\pgf@picture@serial@count=\count173
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
 ate.code.tex
 File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
-\pgflinewidth=\dimen261
+\pgflinewidth=\dimen271
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
 ations.code.tex
 File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
-\pgf@pt@x=\dimen262
-\pgf@pt@y=\dimen263
-\pgf@pt@temp=\dimen264
+\pgf@pt@x=\dimen272
+\pgf@pt@y=\dimen273
+\pgf@pt@temp=\dimen274
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
 e.tex
@@ -991,13 +1042,13 @@ File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
 de.tex
 File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
-\pgfarrowsep=\dimen265
+\pgfarrowsep=\dimen275
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
 e.tex
 File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
-\pgf@max=\dimen266
-\pgf@sys@shading@range@num=\count171
+\pgf@max=\dimen276
+\pgf@sys@shading@range@num=\count174
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
 e.tex
@@ -1006,7 +1057,7 @@ File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
 code.tex
 File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
-\pgfexternal@startupbox=\box44
+\pgfexternal@startupbox=\box46
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
 de.tex
@@ -1023,7 +1074,7 @@ File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
 e.tex
 File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
-\pgfnodeparttextbox=\box45
+\pgfnodeparttextbox=\box47
 )
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
 tex
@@ -1032,8 +1083,8 @@ File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -0-65.sty
 Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
-\pgf@nodesepstart=\dimen267
-\pgf@nodesepend=\dimen268
+\pgf@nodesepstart=\dimen277
+\pgf@nodesepend=\dimen278
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
 -1-18.sty
@@ -1048,10 +1099,10 @@ Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
 Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
-\pgffor@iter=\dimen269
-\pgffor@skip=\dimen270
-\pgffor@stack=\toks41
-\pgffor@toks=\toks42
+\pgffor@iter=\dimen279
+\pgffor@skip=\dimen280
+\pgffor@stack=\toks43
+\pgffor@toks=\toks44
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
 e.tex
@@ -1060,32 +1111,32 @@ Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
 dlers.code.tex
 File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
-\pgf@plot@mark@count=\count172
-\pgfplotmarksize=\dimen271
+\pgf@plot@mark@count=\count175
+\pgfplotmarksize=\dimen281
 )
-\tikz@lastx=\dimen272
-\tikz@lasty=\dimen273
-\tikz@lastxsaved=\dimen274
-\tikz@lastysaved=\dimen275
-\tikzleveldistance=\dimen276
-\tikzsiblingdistance=\dimen277
-\tikz@figbox=\box46
-\tikz@figbox@bg=\box47
-\tikz@tempbox=\box48
-\tikz@tempbox@bg=\box49
-\tikztreelevel=\count173
-\tikznumberofchildren=\count174
-\tikznumberofcurrentchild=\count175
-\tikz@fig@count=\count176
+\tikz@lastx=\dimen282
+\tikz@lasty=\dimen283
+\tikz@lastxsaved=\dimen284
+\tikz@lastysaved=\dimen285
+\tikzleveldistance=\dimen286
+\tikzsiblingdistance=\dimen287
+\tikz@figbox=\box48
+\tikz@figbox@bg=\box49
+\tikz@tempbox=\box50
+\tikz@tempbox@bg=\box51
+\tikztreelevel=\count176
+\tikznumberofchildren=\count177
+\tikznumberofcurrentchild=\count178
+\tikz@fig@count=\count179
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
 e.tex
 File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
-\pgfmatrixcurrentrow=\count177
-\pgfmatrixcurrentcolumn=\count178
-\pgf@matrix@numberofcolumns=\count179
+\pgfmatrixcurrentrow=\count180
+\pgfmatrixcurrentcolumn=\count181
+\pgf@matrix@numberofcolumns=\count182
 )
-\tikz@expandcount=\count180
+\tikz@expandcount=\count183
 
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibrarytopaths.code.tex
@@ -1142,26 +1193,26 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
 shapes.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 
-\pgfnodepartlowerbox=\box50
-\pgfnodeparttwobox=\box51
-\pgfnodepartthreebox=\box52
-\pgfnodepartfourbox=\box53
-\pgfnodeparttwentybox=\box54
-\pgfnodepartnineteenbox=\box55
-\pgfnodeparteighteenbox=\box56
-\pgfnodepartseventeenbox=\box57
-\pgfnodepartsixteenbox=\box58
-\pgfnodepartfifteenbox=\box59
-\pgfnodepartfourteenbox=\box60
-\pgfnodepartthirteenbox=\box61
-\pgfnodeparttwelvebox=\box62
-\pgfnodepartelevenbox=\box63
-\pgfnodeparttenbox=\box64
-\pgfnodepartninebox=\box65
-\pgfnodeparteightbox=\box66
-\pgfnodepartsevenbox=\box67
-\pgfnodepartsixbox=\box68
-\pgfnodepartfivebox=\box69
+\pgfnodepartlowerbox=\box52
+\pgfnodeparttwobox=\box53
+\pgfnodepartthreebox=\box54
+\pgfnodepartfourbox=\box55
+\pgfnodeparttwentybox=\box56
+\pgfnodepartnineteenbox=\box57
+\pgfnodeparteighteenbox=\box58
+\pgfnodepartseventeenbox=\box59
+\pgfnodepartsixteenbox=\box60
+\pgfnodepartfifteenbox=\box61
+\pgfnodepartfourteenbox=\box62
+\pgfnodepartthirteenbox=\box63
+\pgfnodeparttwelvebox=\box64
+\pgfnodepartelevenbox=\box65
+\pgfnodeparttenbox=\box66
+\pgfnodepartninebox=\box67
+\pgfnodeparteightbox=\box68
+\pgfnodepartsevenbox=\box69
+\pgfnodepartsixbox=\box70
+\pgfnodepartfivebox=\box71
 )))
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
 s/tikzlibraryfit.code.tex
@@ -1175,15 +1226,15 @@ File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 ctions.code.tex
 (/usr/local/texlive/2016/texmf-dist/tex/generic/pgf/libraries/pgflibraryfpu.cod
 e.tex)
-\pgf@intersect@solutions=\count181
+\pgf@intersect@solutions=\count184
 ) (/usr/local/texlive/2016/texmf-dist/tex/latex/pgfopts/pgfopts.sty
 Package: pgfopts 2014/07/10 v2.1a LaTeX package options with pgfkeys
-\pgfopts@list@add@a@toks=\toks43
-\pgfopts@list@add@b@toks=\toks44
+\pgfopts@list@add@a@toks=\toks45
+\pgfopts@list@add@b@toks=\toks46
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 Package: etoolbox 2015/08/02 v2.2a e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count182
+\etb@tempcnta=\count185
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/elocalloc/elocalloc.sty
 Package: elocalloc 2015/06/21 v0.02 local allocation for LaTeX 2015+ (DPC)
@@ -1194,7 +1245,7 @@ Package: environ 2014/05/04 v0.3 A new way to define environments
 (/usr/local/texlive/2016/texmf-dist/tex/latex/trimspaces/trimspaces.sty
 Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 )
-\@envbody=\toks45
+\@envbody=\toks47
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/expl3.sty
@@ -1210,31 +1261,31 @@ L3 Module: l3tl 2016/03/26 v6465 L3 Token lists
 L3 Module: l3str 2016/03/24 v6441 L3 Strings
 L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
 L3 Module: l3int 2016/03/24 v6441 L3 Integers
-\c_max_int=\count183
-\l_tmpa_int=\count184
-\l_tmpb_int=\count185
-\g_tmpa_int=\count186
-\g_tmpb_int=\count187
+\c_max_int=\count186
+\l_tmpa_int=\count187
+\l_tmpb_int=\count188
+\g_tmpa_int=\count189
+\g_tmpb_int=\count190
 L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
 L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
-\g__prg_map_int=\count188
+\g__prg_map_int=\count191
 L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
 L3 Module: l3token 2016/04/03 v6470 L3 Experimental token manipulation
 L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
 L3 Module: l3msg 2016/03/26 v6464 L3 Messages
 L3 Module: l3file 2016/03/25 v6458 L3 File and I/O operations
-\l_iow_line_count_int=\count189
-\l__iow_target_count_int=\count190
-\l__iow_current_line_int=\count191
-\l__iow_current_word_int=\count192
-\l__iow_current_indentation_int=\count193
+\l_iow_line_count_int=\count192
+\l__iow_target_count_int=\count193
+\l__iow_current_line_int=\count194
+\l__iow_current_word_int=\count266
+\l__iow_current_indentation_int=\count267
 L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
-\c_zero_dim=\dimen278
-\c_max_dim=\dimen279
-\l_tmpa_dim=\dimen280
-\l_tmpb_dim=\dimen281
-\g_tmpa_dim=\dimen282
-\g_tmpb_dim=\dimen283
+\c_zero_dim=\dimen288
+\c_max_dim=\dimen289
+\l_tmpa_dim=\dimen290
+\l_tmpb_dim=\dimen291
+\g_tmpa_dim=\dimen292
+\g_tmpb_dim=\dimen293
 \c_zero_skip=\skip193
 \c_max_skip=\skip194
 \l_tmpa_skip=\skip256
@@ -1248,76 +1299,76 @@ L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
 \g_tmpa_muskip=\muskip14
 \g_tmpb_muskip=\muskip15
 L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
-\g__keyval_level_int=\count194
-\l_keys_choice_int=\count266
+\g__keyval_level_int=\count268
+\l_keys_choice_int=\count269
 L3 Module: l3fp 2016/03/26 v6465 L3 Floating points
-\c__fp_leading_shift_int=\count267
-\c__fp_middle_shift_int=\count268
-\c__fp_trailing_shift_int=\count269
-\c__fp_big_leading_shift_int=\count270
-\c__fp_big_middle_shift_int=\count271
-\c__fp_big_trailing_shift_int=\count272
-\c__fp_Bigg_leading_shift_int=\count273
-\c__fp_Bigg_middle_shift_int=\count274
-\c__fp_Bigg_trailing_shift_int=\count275
+\c__fp_leading_shift_int=\count270
+\c__fp_middle_shift_int=\count271
+\c__fp_trailing_shift_int=\count272
+\c__fp_big_leading_shift_int=\count273
+\c__fp_big_middle_shift_int=\count274
+\c__fp_big_trailing_shift_int=\count275
+\c__fp_Bigg_leading_shift_int=\count276
+\c__fp_Bigg_middle_shift_int=\count277
+\c__fp_Bigg_trailing_shift_int=\count278
 L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
-\c_empty_box=\box70
-\l_tmpa_box=\box71
-\l_tmpb_box=\box72
-\g_tmpa_box=\box73
-\g_tmpb_box=\box74
+\c_empty_box=\box72
+\l_tmpa_box=\box73
+\l_tmpb_box=\box74
+\g_tmpa_box=\box75
+\g_tmpb_box=\box76
 L3 Module: l3coffins 2016/05/17 v6508 L3 Coffin code layer
-\l__coffin_internal_box=\box75
-\l__coffin_internal_dim=\dimen284
-\l__coffin_offset_x_dim=\dimen285
-\l__coffin_offset_y_dim=\dimen286
-\l__coffin_x_dim=\dimen287
-\l__coffin_y_dim=\dimen288
-\l__coffin_x_prime_dim=\dimen289
-\l__coffin_y_prime_dim=\dimen290
-\c_empty_coffin=\box76
-\l__coffin_aligned_coffin=\box77
-\l__coffin_aligned_internal_coffin=\box78
-\l_tmpa_coffin=\box79
-\l_tmpb_coffin=\box80
-\l__coffin_display_coffin=\box81
-\l__coffin_display_coord_coffin=\box82
-\l__coffin_display_pole_coffin=\box83
-\l__coffin_display_offset_dim=\dimen291
-\l__coffin_display_x_dim=\dimen292
-\l__coffin_display_y_dim=\dimen293
+\l__coffin_internal_box=\box77
+\l__coffin_internal_dim=\dimen294
+\l__coffin_offset_x_dim=\dimen295
+\l__coffin_offset_y_dim=\dimen296
+\l__coffin_x_dim=\dimen297
+\l__coffin_y_dim=\dimen298
+\l__coffin_x_prime_dim=\dimen299
+\l__coffin_y_prime_dim=\dimen300
+\c_empty_coffin=\box78
+\l__coffin_aligned_coffin=\box79
+\l__coffin_aligned_internal_coffin=\box80
+\l_tmpa_coffin=\box81
+\l_tmpb_coffin=\box82
+\l__coffin_display_coffin=\box83
+\l__coffin_display_coord_coffin=\box84
+\l__coffin_display_pole_coffin=\box85
+\l__coffin_display_offset_dim=\dimen301
+\l__coffin_display_x_dim=\dimen302
+\l__coffin_display_y_dim=\dimen303
 L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
 L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
 L3 Module: l3candidates 2016/05/13 v6484 L3 Experimental additions to l3kernel
-\l__box_top_dim=\dimen294
-\l__box_bottom_dim=\dimen295
-\l__box_left_dim=\dimen296
-\l__box_right_dim=\dimen297
-\l__box_top_new_dim=\dimen298
-\l__box_bottom_new_dim=\dimen299
-\l__box_left_new_dim=\dimen300
-\l__box_right_new_dim=\dimen301
-\l__box_internal_box=\box84
-\l__coffin_bounding_shift_dim=\dimen302
-\l__coffin_left_corner_dim=\dimen303
-\l__coffin_right_corner_dim=\dimen304
-\l__coffin_bottom_corner_dim=\dimen305
-\l__coffin_top_corner_dim=\dimen306
-\l__coffin_scaled_total_height_dim=\dimen307
-\l__coffin_scaled_width_dim=\dimen308
+\l__box_top_dim=\dimen304
+\l__box_bottom_dim=\dimen305
+\l__box_left_dim=\dimen306
+\l__box_right_dim=\dimen307
+\l__box_top_new_dim=\dimen308
+\l__box_bottom_new_dim=\dimen309
+\l__box_left_new_dim=\dimen310
+\l__box_right_new_dim=\dimen311
+\l__box_internal_box=\box86
+\l__coffin_bounding_shift_dim=\dimen312
+\l__coffin_left_corner_dim=\dimen313
+\l__coffin_right_corner_dim=\dimen314
+\l__coffin_bottom_corner_dim=\dimen315
+\l__coffin_top_corner_dim=\dimen316
+\l__coffin_scaled_total_height_dim=\dimen317
+\l__coffin_scaled_width_dim=\dimen318
 L3 Module: l3luatex 2016/03/26 v6465 L3 Experimental LuaTeX-specific functions
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
 File: l3pdfmode.def 2016/03/26 v6465 L3 Experimental driver: PDF mode
-\l__driver_color_stack_int=\count276
-\l__driver_tmp_box=\box85
+\l__driver_color_stack_int=\count279
+\l__driver_tmp_box=\box87
 ))
 Package: xparse 2016/05/18 v6512 L3 Experimental document command parser
-\l__xparse_current_arg_int=\count277
-\l__xparse_m_args_int=\count278
-\l__xparse_mandatory_args_int=\count279
-\l__xparse_processor_int=\count280
-\l__xparse_v_nesting_int=\count281
+\l__xparse_current_arg_int=\count280
+\l__xparse_m_args_int=\count281
+\l__xparse_mandatory_args_int=\count282
+\l__xparse_processor_int=\count283
+\l__xparse_v_nesting_int=\count284
 )
 .................................................
 . LaTeX info: "xparse/define-command"
@@ -1329,19 +1380,19 @@ Package: xparse 2016/05/18 v6512 L3 Experimental document command parser
 . 
 . Defining command \ProvidesForestLibrary with sig. 'm O{}' on line 99.
 .................................................
-\safeloop@depth=\count282
-\safeRKloop@depth=\count283
-\forest@temp@dimen=\dimen309
-\forest@temp@count=\count284
-\forest@n=\count285
-\forest@temp@global@count=\count286
-\forest@temp@toks=\toks46
-\forest@sort@m=\count287
-\forest@sort@k=\count288
-\forest@sort@p=\count289
-\bracket@content=\toks47
-\bracket@afterthought=\toks48
-\forest@node@maxid=\count290
+\safeloop@depth=\count285
+\safeRKloop@depth=\count286
+\forest@temp@dimen=\dimen319
+\forest@temp@count=\count287
+\forest@n=\count288
+\forest@temp@global@count=\count289
+\forest@temp@toks=\toks48
+\forest@sort@m=\count290
+\forest@sort@k=\count291
+\forest@sort@p=\count292
+\bracket@content=\toks49
+\bracket@afterthought=\toks50
+\forest@node@maxid=\count293
 .................................................
 . LaTeX info: "xparse/define-command"
 . 
@@ -1352,15 +1403,15 @@ Package: xparse 2016/05/18 v6512 L3 Experimental document command parser
 . 
 . Defining command \forestdebugtypeouttree with sig. 'o m' on line 1547.
 .................................................
-\forest@processargs@result=\toks49
-\forest@processargs@current=\toks50
-\forest@nodewalk@shortsteps@resolution=\toks51
-\forest@do@dynamics=\toks52
-\forest@box=\box86
-\forest@xg=\dimen310
-\forest@yg=\dimen311
-\forest@xs=\dimen312
-\forest@ys=\dimen313
+\forest@processargs@result=\toks51
+\forest@processargs@current=\toks52
+\forest@nodewalk@shortsteps@resolution=\toks53
+\forest@do@dynamics=\toks54
+\forest@box=\box88
+\forest@xg=\dimen320
+\forest@yg=\dimen321
+\forest@xs=\dimen322
+\forest@ys=\dimen323
 .................................................
 . LaTeX info: "xparse/define-environment"
 . 
@@ -1371,8 +1422,8 @@ Package: xparse 2016/05/18 v6512 L3 Experimental document command parser
 . 
 . Defining command \Forest with sig. 's D(){} m' on line 6870.
 .................................................
-\forest@externalize@max@outer@n=\count291
-\forest@externalize@inner@n=\count292
+\forest@externalize@max@outer@n=\count294
+\forest@externalize@inner@n=\count295
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2016/05/05 v6.83n Hypertext links for LaTeX
@@ -1425,16 +1476,16 @@ Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
 )
-\@linkdim=\dimen314
-\Hy@linkcounter=\count293
-\Hy@pagecounter=\count294
+\@linkdim=\dimen324
+\Hy@linkcounter=\count296
+\Hy@pagecounter=\count297
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2016/05/05 v6.83n Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
 )
-\Hy@SavedSpaceFactor=\count295
+\Hy@SavedSpaceFactor=\count298
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -1447,17 +1498,17 @@ Package hyperref Info: Plain pages OFF on input line 4461.
 Package hyperref Info: Backreferencing OFF on input line 4466.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4691.
-\c@Hy@tempcnt=\count296
+\c@Hy@tempcnt=\count299
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5044.
-\XeTeXLinkMargin=\dimen315
-\Fld@menulength=\count297
-\Field@Width=\dimen316
-\Fld@charsize=\dimen317
+\XeTeXLinkMargin=\dimen325
+\Fld@menulength=\count300
+\Field@Width=\dimen326
+\Fld@charsize=\dimen327
 Package hyperref Info: Hyper figures OFF on input line 6298.
 Package hyperref Info: Link nesting OFF on input line 6303.
 Package hyperref Info: Hyper index ON on input line 6306.
@@ -1467,23 +1518,23 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6323.
 Package hyperref Info: PDF/A mode OFF on input line 6328.
 LaTeX Info: Redefining \ref on input line 6368.
 LaTeX Info: Redefining \pageref on input line 6372.
-\Hy@abspage=\count298
-\c@Item=\count299
-\c@Hfootnote=\count300
+\Hy@abspage=\count301
+\c@Item=\count302
+\c@Hfootnote=\count303
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/memoir/memhfixc.sty
 Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cl
 ass
-\c@memhycontfloat=\count301
-\c@Hpagenote=\count302
+\c@memhycontfloat=\count304
+\c@Hpagenote=\count305
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2016/05/05 v6.83n Hyperref driver for pdfTeX
-\Fld@listcount=\count303
-\c@bookmark@seq@number=\count304
+\Fld@listcount=\count306
+\c@bookmark@seq@number=\count307
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
@@ -1492,7 +1543,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip260
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 52.
+Package hyperref Info: Option `colorlinks' set `true' on input line 55.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2016/03/10 v2.15b AMS math features
@@ -1504,51 +1555,51 @@ Package: amstext 2000/06/29 v2.01 AMS text
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks53
-\ex@=\dimen318
+\@emptytoks=\toks55
+\ex@=\dimen328
 ))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen319
+\pmbraise@=\dimen329
 )
 (/usr/local/texlive/2016/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 2016/03/08 v2.02 operator names
 )
-\inf@bad=\count305
+\inf@bad=\count308
 LaTeX Info: Redefining \frac on input line 199.
-\uproot@=\count306
-\leftroot@=\count307
+\uproot@=\count309
+\leftroot@=\count310
 LaTeX Info: Redefining \overline on input line 297.
-\classnum@=\count308
-\DOTSCASE@=\count309
+\classnum@=\count311
+\DOTSCASE@=\count312
 LaTeX Info: Redefining \ldots on input line 394.
 LaTeX Info: Redefining \dots on input line 397.
 LaTeX Info: Redefining \cdots on input line 518.
-\Mathstrutbox@=\box87
-\strutbox@=\box88
-\big@size=\dimen320
+\Mathstrutbox@=\box89
+\strutbox@=\box90
+\big@size=\dimen330
 LaTeX Font Info:    Redeclaring font encoding OML on input line 634.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 635.
-\macc@depth=\count310
-\c@MaxMatrixCols=\count311
+\macc@depth=\count313
+\c@MaxMatrixCols=\count314
 \dotsspace@=\muskip17
-\c@parentequation=\count312
-\dspbrk@lvl=\count313
-\tag@help=\toks54
-\row@=\count314
-\column@=\count315
-\maxfields@=\count316
-\andhelp@=\toks55
-\eqnshift@=\dimen321
-\alignsep@=\dimen322
-\tagshift@=\dimen323
-\tagwidth@=\dimen324
-\totwidth@=\dimen325
-\lineht@=\dimen326
-\@envbody=\toks56
+\c@parentequation=\count315
+\dspbrk@lvl=\count316
+\tag@help=\toks56
+\row@=\count317
+\column@=\count318
+\maxfields@=\count319
+\andhelp@=\toks57
+\eqnshift@=\dimen331
+\alignsep@=\dimen332
+\tagshift@=\dimen333
+\tagwidth@=\dimen334
+\totwidth@=\dimen335
+\lineht@=\dimen336
+\@envbody=\toks58
 \multlinegap=\skip262
 \multlinetaggap=\skip263
-\mathdisplay@stack=\toks57
+\mathdisplay@stack=\toks59
 LaTeX Info: Redefining \[ on input line 2739.
 LaTeX Info: Redefining \] on input line 2740.
 )
@@ -1563,8 +1614,8 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 (./anexos.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
  (./tex/A_Plan_proyecto.aux) (./tex/B_Requisitos.aux)
 (./tex/C_Diseno.aux) (./tex/D_Manual_programador.aux)
 (./tex/E_Manual_usuario.aux
@@ -1577,39 +1628,38 @@ LaTeX Warning: Label `amovil' multiply defined.
 ))
 \openout1 = `anexos.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 389.
-LaTeX Font Info:    ... okay on input line 389.
-LaTeX Info: Redefining \. on input line 389.
-LaTeX Info: Redefining \% on input line 389.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 392.
+LaTeX Font Info:    ... okay on input line 392.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 392.
+LaTeX Font Info:    ... okay on input line 392.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 392.
+LaTeX Font Info:    ... okay on input line 392.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 392.
+LaTeX Font Info:    ... okay on input line 392.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 392.
+LaTeX Font Info:    ... okay on input line 392.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 392.
+LaTeX Font Info:    ... okay on input line 392.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 392.
+LaTeX Font Info:    ... okay on input line 392.
+LaTeX Info: Redefining \. on input line 392.
+LaTeX Info: Redefining \% on input line 392.
  (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count317
-\scratchdimen=\dimen327
-\scratchbox=\box89
-\nofMPsegments=\count318
-\nofMParguments=\count319
-\everyMPshowfont=\toks58
-\MPscratchCnt=\count320
-\MPscratchDim=\dimen328
-\MPnumerator=\count321
-\makeMPintoPDFobject=\count322
-\everyMPtoPDFconversion=\toks59
+\scratchcounter=\count320
+\scratchdimen=\dimen337
+\scratchbox=\box91
+\nofMPsegments=\count321
+\nofMParguments=\count322
+\everyMPshowfont=\toks60
+\MPscratchCnt=\count323
+\MPscratchDim=\dimen338
+\MPnumerator=\count324
+\makeMPintoPDFobject=\count325
+\everyMPtoPDFconversion=\toks61
 )
-\c@lstlisting=\count323
- ABD: EveryShipout initializing macros
-(/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+\c@lstlisting=\count326
+ (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -1624,8 +1674,9 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-\AtBeginShipoutBox=\box90
-Package hyperref Info: Link coloring ON on input line 389.
+ABD: EveryShipout initializing macros
+\AtBeginShipoutBox=\box92
+Package hyperref Info: Link coloring ON on input line 392.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1633,14 +1684,14 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count324
+\c@section@level=\count327
 )
 Redoing nameref's sectioning
 Redoing nameref's label
-LaTeX Info: Redefining \nameref on input line 389.
-LaTeX Info: Redefining \ref on input line 389.
-LaTeX Info: Redefining \pageref on input line 389.
-LaTeX Info: Redefining \nameref on input line 389.
+LaTeX Info: Redefining \nameref on input line 392.
+LaTeX Info: Redefining \ref on input line 392.
+LaTeX Info: Redefining \pageref on input line 392.
+LaTeX Info: Redefining \nameref on input line 392.
 (./anexos.out) (./anexos.out)
 \@outlinefile=\write5
 \openout5 = `anexos.out'.
@@ -1650,44 +1701,44 @@ LaTeX Info: Redefining \nameref on input line 389.
 File: ./img/cabecera.pdf Graphic file (type pdf)
 
 <use ./img/cabecera.pdf>
-Package pdftex.def Info: ./img/cabecera.pdf used on input line 391.
+Package pdftex.def Info: ./img/cabecera.pdf used on input line 394.
 (pdftex.def)             Requested size: 369.0pt x 80.95758pt.
 
 <./img/escudoInfor.pdf, id=100, 618.11432pt x 737.07487pt>
 File: ./img/escudoInfor.pdf Graphic file (type pdf)
 
 <use ./img/escudoInfor.pdf>
-Package pdftex.def Info: ./img/escudoInfor.pdf used on input line 391.
+Package pdftex.def Info: ./img/escudoInfor.pdf used on input line 394.
 (pdftex.def)             Requested size: 73.79887pt x 87.99529pt.
 
-Overfull \hbox (26.65pt too wide) in paragraph at lines 391--391
+Overfull \hbox (26.65pt too wide) in paragraph at lines 394--394
 [][][][][][][] $[]$ 
  []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 394.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 394.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 394.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 394.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 394.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 394.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 394.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 394.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 394.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 394.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 394.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 391.
+(babel)             in language  on input line 394.
 [1
 
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./img/c
@@ -1697,17 +1748,17 @@ pdfTeX warning: /Library/TeX/texbin/pdflatex (file ./img/escudoInfor.pdf): PDF
 inclusion: multiple pdfs with page group included in a single page
 >]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 405.
+(babel)             in language  on input line 408.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 405.
+(babel)             in language  on input line 408.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 405.
+(babel)             in language  on input line 408.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 405.
+(babel)             in language  on input line 408.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 405.
+(babel)             in language  on input line 408.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 405.
+(babel)             in language  on input line 408.
  (./anexos.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1728,29 +1779,29 @@ Package spanish Warning: Replacing `OT1/cmr/bx/sc' by
 
 )
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 409.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 409.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 409.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 409.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 409.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 409.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 409.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 409.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 409.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 409.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 409.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 406.
+(babel)             in language  on input line 409.
  [1
 
 
@@ -1758,17 +1809,17 @@ Package babel Info: Redefining spanish shorthand "?
 
 ]
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 409.
+(babel)             in language  on input line 412.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 409.
+(babel)             in language  on input line 412.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 409.
+(babel)             in language  on input line 412.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 409.
+(babel)             in language  on input line 412.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 409.
+(babel)             in language  on input line 412.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 409.
+(babel)             in language  on input line 412.
  (./anexos.lof
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
@@ -1776,29 +1827,29 @@ LaTeX Info: Redefining \. on input line 2.
 LaTeX Info: Redefining \% on input line 2.
 )
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 410.
+(babel)             in language  on input line 413.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 410.
+(babel)             in language  on input line 413.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 410.
+(babel)             in language  on input line 413.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 410.
+(babel)             in language  on input line 413.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 410.
+(babel)             in language  on input line 413.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 410.
+(babel)             in language  on input line 413.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 410.
+(babel)             in language  on input line 413.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 410.
+(babel)             in language  on input line 413.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 410.
+(babel)             in language  on input line 413.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 410.
+(babel)             in language  on input line 413.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 410.
+(babel)             in language  on input line 413.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 410.
+(babel)             in language  on input line 413.
  [2
 
 ]
@@ -2133,35 +2184,35 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 193.
 
 [7])
-LaTeX Info: Redefining \. on input line 420.
-LaTeX Info: Redefining \% on input line 420.
+LaTeX Info: Redefining \. on input line 423.
+LaTeX Info: Redefining \% on input line 423.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 420.
+(babel)             in language  on input line 423.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 420.
+(babel)             in language  on input line 423.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 420.
+(babel)             in language  on input line 423.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 420.
+(babel)             in language  on input line 423.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 420.
+(babel)             in language  on input line 423.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 420.
+(babel)             in language  on input line 423.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 420.
+(babel)             in language  on input line 423.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 420.
+(babel)             in language  on input line 423.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 420.
+(babel)             in language  on input line 423.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 420.
+(babel)             in language  on input line 423.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 420.
+(babel)             in language  on input line 423.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 420.
+(babel)             in language  on input line 423.
 
 [8]
 \openout2 = `./tex/B_Requisitos.aux'.
@@ -2436,407 +2487,407 @@ Overfull \hbox (33.06775pt too wide) in paragraph at lines 747--775
  []
 
 )
-LaTeX Info: Redefining \. on input line 421.
-LaTeX Info: Redefining \% on input line 421.
+LaTeX Info: Redefining \. on input line 424.
+LaTeX Info: Redefining \% on input line 424.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 
 [12]
-LaTeX Info: Redefining \. on input line 421.
-LaTeX Info: Redefining \% on input line 421.
+LaTeX Info: Redefining \. on input line 424.
+LaTeX Info: Redefining \% on input line 424.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 
 [13]
-LaTeX Info: Redefining \. on input line 421.
-LaTeX Info: Redefining \% on input line 421.
+LaTeX Info: Redefining \. on input line 424.
+LaTeX Info: Redefining \% on input line 424.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 
 [14]
-LaTeX Info: Redefining \. on input line 421.
-LaTeX Info: Redefining \% on input line 421.
+LaTeX Info: Redefining \. on input line 424.
+LaTeX Info: Redefining \% on input line 424.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 
 [15]
-LaTeX Info: Redefining \. on input line 421.
-LaTeX Info: Redefining \% on input line 421.
+LaTeX Info: Redefining \. on input line 424.
+LaTeX Info: Redefining \% on input line 424.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 
 [16]
-LaTeX Info: Redefining \. on input line 421.
-LaTeX Info: Redefining \% on input line 421.
+LaTeX Info: Redefining \. on input line 424.
+LaTeX Info: Redefining \% on input line 424.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 
 [17]
-LaTeX Info: Redefining \. on input line 421.
-LaTeX Info: Redefining \% on input line 421.
+LaTeX Info: Redefining \. on input line 424.
+LaTeX Info: Redefining \% on input line 424.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 
 [18]
-LaTeX Info: Redefining \. on input line 421.
-LaTeX Info: Redefining \% on input line 421.
+LaTeX Info: Redefining \. on input line 424.
+LaTeX Info: Redefining \% on input line 424.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 
 [19]
-LaTeX Info: Redefining \. on input line 421.
-LaTeX Info: Redefining \% on input line 421.
+LaTeX Info: Redefining \. on input line 424.
+LaTeX Info: Redefining \% on input line 424.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 
 [20]
-LaTeX Info: Redefining \. on input line 421.
-LaTeX Info: Redefining \% on input line 421.
+LaTeX Info: Redefining \. on input line 424.
+LaTeX Info: Redefining \% on input line 424.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 
 [21]
-LaTeX Info: Redefining \. on input line 421.
-LaTeX Info: Redefining \% on input line 421.
+LaTeX Info: Redefining \. on input line 424.
+LaTeX Info: Redefining \% on input line 424.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 
 [22]
-LaTeX Info: Redefining \. on input line 421.
-LaTeX Info: Redefining \% on input line 421.
+LaTeX Info: Redefining \. on input line 424.
+LaTeX Info: Redefining \% on input line 424.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 
 [23]
-LaTeX Info: Redefining \. on input line 421.
-LaTeX Info: Redefining \% on input line 421.
+LaTeX Info: Redefining \. on input line 424.
+LaTeX Info: Redefining \% on input line 424.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 424.
 
 [24]
 \openout2 = `./tex/C_Diseno.aux'.
@@ -2880,29 +2931,29 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 5.
 )
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 422.
+(babel)             in language  on input line 425.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 422.
+(babel)             in language  on input line 425.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 422.
+(babel)             in language  on input line 425.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 422.
+(babel)             in language  on input line 425.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 422.
+(babel)             in language  on input line 425.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 422.
+(babel)             in language  on input line 425.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 422.
+(babel)             in language  on input line 425.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 422.
+(babel)             in language  on input line 425.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 422.
+(babel)             in language  on input line 425.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 422.
+(babel)             in language  on input line 425.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 422.
+(babel)             in language  on input line 425.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 422.
+(babel)             in language  on input line 425.
  [25
 
 
@@ -3231,232 +3282,227 @@ Package babel Info: Redefining spanish shorthand "?
 
 ]
 Missing character: There is no ] in font nullfont!
-
-Overfull \hbox (15.49pt too wide) in paragraph at lines 219--220
-[][] 
- []
-
-LaTeX Info: Redefining \. on input line 220.
-LaTeX Info: Redefining \% on input line 220.
+LaTeX Info: Redefining \. on input line 234.
+LaTeX Info: Redefining \% on input line 234.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 234.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 234.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 234.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 234.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 234.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 234.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 234.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 234.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 234.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 234.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 234.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 220.
+(babel)             in language  on input line 234.
 
 [33
 
 ]
-Overfull \hbox (10.05pt too wide) in paragraph at lines 228--230
+Overfull \hbox (10.05pt too wide) in paragraph at lines 243--245
 []\OT1/cmr/m/n/10.95 Observables http://academia-binaria.com/comunicaciones-htt
 p-observables-
  []
 
 
-Overfull \hbox (38.3983pt too wide) in paragraph at lines 231--233
+Overfull \hbox (38.3983pt too wide) in paragraph at lines 246--248
 []\OT1/cmr/m/n/10.95 angular2 po-lling -observables https://stackoverflow.com/q
 uestions/41658162/how-
  []
 
 
-Overfull \hbox (9.76108pt too wide) in paragraph at lines 234--236
+Overfull \hbox (9.76108pt too wide) in paragraph at lines 249--251
 []\OT1/cmr/m/n/10.95 Guards https://blog.thoughtram.io/angular/2016/07/18/guard
 s-in-angular-
  []
 
 
-Overfull \hbox (21.18126pt too wide) in paragraph at lines 240--242
+Overfull \hbox (21.18126pt too wide) in paragraph at lines 255--257
 []\OT1/cmr/m/n/10.95 DTO https://stackoverflow.com/questions/39272947/dto-desig
 n-in-typescript-
  []
 
 
-Overfull \hbox (38.61134pt too wide) in paragraph at lines 243--245
+Overfull \hbox (38.61134pt too wide) in paragraph at lines 258--260
 []\OT1/cmr/m/n/10.95 ngAfterViewInit https://angular.io/docs/ts/latest/api/core
 /index/AfterViewInit-
  []
 
 
-Overfull \hbox (22.1559pt too wide) in paragraph at lines 256--258
+Overfull \hbox (22.1559pt too wide) in paragraph at lines 271--273
 []\OT1/cmr/m/n/10.95 AngularCalendar https://github.com/mattlewis92/angular-boo
 tstrap-calendar 
  []
 
 
-Overfull \hbox (15.79884pt too wide) in paragraph at lines 259--261
+Overfull \hbox (15.79884pt too wide) in paragraph at lines 274--276
 []\OT1/cmr/m/n/10.95 Multiple com-po-nents https://angular.io/docs/ts/latest/tu
 torial/toh-pt3.html 
  []
 
 
-Overfull \hbox (18.41455pt too wide) in paragraph at lines 265--266
+Overfull \hbox (18.41455pt too wide) in paragraph at lines 280--281
 []\OT1/cmr/m/n/10.95 https://desarrolloweb.com/articulos/analisis-carpetas-proy
 ecto-angular2.html 
  []
 
 
-Overfull \hbox (20.69582pt too wide) in paragraph at lines 268--269
+Overfull \hbox (20.69582pt too wide) in paragraph at lines 283--284
 []\OT1/cmr/m/n/10.95 https://desarrolloweb.com/articulos/introduccion-component
 es-angular2.html 
  []
 
-LaTeX Info: Redefining \. on input line 287.
-LaTeX Info: Redefining \% on input line 287.
+LaTeX Info: Redefining \. on input line 302.
+LaTeX Info: Redefining \% on input line 302.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 287.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 287.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 287.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 287.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 287.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 287.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 287.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 287.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 287.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 287.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 287.
+(babel)             in language  on input line 302.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 287.
+(babel)             in language  on input line 302.
 
 [34
 
-] <./img/robomongoview.png, id=762, 1099.10625pt x 328.22626pt>
+] <./img/robomongoview.png, id=764, 1099.10625pt x 328.22626pt>
 File: ./img/robomongoview.png Graphic file (type png)
 
 <use ./img/robomongoview.png>
-Package pdftex.def Info: ./img/robomongoview.png used on input line 320.
+Package pdftex.def Info: ./img/robomongoview.png used on input line 335.
 (pdftex.def)             Requested size: 332.09775pt x 99.1748pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-LaTeX Info: Redefining \. on input line 320.
-LaTeX Info: Redefining \% on input line 320.
+LaTeX Info: Redefining \. on input line 335.
+LaTeX Info: Redefining \% on input line 335.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 335.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 335.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 335.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 335.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 335.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 335.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 335.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 335.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 335.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 335.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 335.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 320.
+(babel)             in language  on input line 335.
 
 [35]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 336.
-LaTeX Info: Redefining \. on input line 349.
-LaTeX Info: Redefining \% on input line 349.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 351.
+LaTeX Info: Redefining \. on input line 364.
+LaTeX Info: Redefining \% on input line 364.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 349.
+(babel)             in language  on input line 364.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 349.
+(babel)             in language  on input line 364.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 349.
+(babel)             in language  on input line 364.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 349.
+(babel)             in language  on input line 364.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 349.
+(babel)             in language  on input line 364.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 349.
+(babel)             in language  on input line 364.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 349.
+(babel)             in language  on input line 364.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 349.
+(babel)             in language  on input line 364.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 349.
+(babel)             in language  on input line 364.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 349.
+(babel)             in language  on input line 364.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 349.
+(babel)             in language  on input line 364.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 349.
+(babel)             in language  on input line 364.
 
 [36 <./img/robomongoview.png>])
-LaTeX Info: Redefining \. on input line 423.
-LaTeX Info: Redefining \% on input line 423.
+LaTeX Info: Redefining \. on input line 426.
+LaTeX Info: Redefining \% on input line 426.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 423.
+(babel)             in language  on input line 426.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 423.
+(babel)             in language  on input line 426.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 423.
+(babel)             in language  on input line 426.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 423.
+(babel)             in language  on input line 426.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 423.
+(babel)             in language  on input line 426.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 423.
+(babel)             in language  on input line 426.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 423.
+(babel)             in language  on input line 426.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 423.
+(babel)             in language  on input line 426.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 423.
+(babel)             in language  on input line 426.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 423.
+(babel)             in language  on input line 426.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 423.
+(babel)             in language  on input line 426.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 423.
+(babel)             in language  on input line 426.
 
 [37]
 \openout2 = `./tex/E_Manual_usuario.aux'.
@@ -3512,29 +3558,29 @@ Package babel Info: Redefining spanish shorthand "?
 (babel)             in language  on input line 21.
 )
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 427.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 424.
+(babel)             in language  on input line 427.
  [38
 
 
@@ -3545,7 +3591,7 @@ No file anexos.bbl.
 Class memoir Warning: The material used in the headers is too large
 (14.4521pt) for the given head height (13.6pt), it is recommended to
 either increase the head height or redesign the header
-(in both cases you will find help in the memoir manual). on input line 436.
+(in both cases you will find help in the memoir manual). on input line 439.
 
 \tf@toc=\write6
 \openout6 = `anexos.toc'.
@@ -3553,18 +3599,18 @@ either increase the head height or redesign the header
 \tf@lof=\write7
 \openout7 = `anexos.lof'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 436.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 436.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 439.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 439.
 (./anexos.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
-LaTeX Info: Redefining \. on input line 28.
-LaTeX Info: Redefining \% on input line 28.
+LaTeX Info: Redefining \. on input line 29.
+LaTeX Info: Redefining \% on input line 29.
  (./tex/A_Plan_proyecto.aux) (./tex/B_Requisitos.aux)
 (./tex/C_Diseno.aux) (./tex/D_Manual_programador.aux)
 (./tex/E_Manual_usuario.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 436.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 436.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 439.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 439.
 Package rerunfilecheck Info: File `anexos.out' has not changed.
 (rerunfilecheck)             Checksum: B63C59B44A0B12DEDBA0D357B0B5B68C;1677.
 
@@ -3579,13 +3625,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 41860 strings out of 493014
- 892876 string characters out of 6133352
- 977531 words of memory out of 5000000
- 44695 multiletter control sequences out of 15000+600000
+ 43699 strings out of 493014
+ 939476 string characters out of 6133352
+ 1003996 words of memory out of 5000000
+ 46500 multiletter control sequences out of 15000+600000
  14692 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 147i,12n,165p,10391b,3703s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 157i,12n,172p,10391b,4818s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{mlab.com} has been referenced but does not exist,
  replaced by a fixed one
 
@@ -3615,23 +3661,25 @@ s not exist, replaced by a fixed one
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></us
 r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/l
-ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
-al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local
-/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/te
-xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
-live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texli
-ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texliv
-e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive
-/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/
-2016/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on anexos.pdf (41 pages, 1690238 bytes).
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
+exlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/tex
+live/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi12.pfb></usr/local/texliv
+e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/20
+16/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/201
+6/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2016
+/texmf-dist/fonts/type1/public/eurosym/feymr10.pfb>
+Output written on anexos.pdf (41 pages, 1710573 bytes).
 PDF statistics:
- 925 PDF objects out of 1000 (max. 8388607)
- 813 compressed objects within 9 object streams
+ 933 PDF objects out of 1000 (max. 8388607)
+ 819 compressed objects within 9 object streams
  197 named destinations out of 1000 (max. 500000)
  277 words of extra memory for PDF output out of 10000 (max. 10000000)
 

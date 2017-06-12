@@ -27,6 +27,9 @@
 %Para codigo
 \usepackage{listings}
 
+%Ajuste a la pagina
+\usepackage{adjustbox}
+
 %Directorios
 \usepackage{forest}
 \usetikzlibrary{shapes.geometric}
@@ -35,7 +38,7 @@
       opacity=.25,
       text opacity=.5,
       before drawing tree={
-        {tikz+={\draw [thick, -{>[]}] (!#1.east) ++(4pt,-1.5pt) arc (215:120:5pt);}}
+        {tikz+={\draw [thick, -{>[]}] (!#1.west) ++(4pt,-1.5pt) arc (315:120:5pt);}}
       },
     },
   }
