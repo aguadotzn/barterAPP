@@ -105,3 +105,60 @@
 	<div class="col col-lg-2">
 	</div>
 </div>
+
+<!-- Control de añadir turnos -->
+<div class="row justify-content-md-center pt-3">
+	<div class="col col-lg-2">
+	</div>
+	<div class="col-12 col-md-auto ">
+		<button
+		    class="btn btn-primary "
+		    (click)="addEvent()">
+		    Añadir nuevo turno
+		  </button>
+	</div>
+	<div class="col col-lg-2">
+	</div>
+</div>
+
+
+
+<table class="table table-bordered ">
+  <thead *ngIf = "shiftEvents.length > 0">
+    <tr>
+      <th *ngIf = " showNormalEvent > 0" title="Compañero que el que cambiar." >Remitente</th>
+      <th title="Nombre de tú turno." >Nombre</th>
+      <th *ngIf = " showNormalEvent == 0" >Tipo</th>
+      <th  >Fecha</th>
+      <th *ngIf = " showNormalEvent == 1"></th>
+      <th *ngIf = " showNormalEvent  > 1">  </th>
+      <th *ngIf = " showNormalEvent == 0" ></th>
+      <th *ngIf = " showNormalEvent == 1" ></th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr *ngFor="let event of shiftEvents; let index = index">
+
+      <td *ngIf = "showNormalEvent == 1 && event.getOriginalEvent().status === 'pending'" >
+        <input
+          type="text"
+          disabled
+          [(ngModel)]="event.getOriginalEvent().sender"
+          >
+      </td>
+
+            <td *ngIf = "showNormalEvent == 2 && event.getOriginalEvent().status === 'declined'" >
+        <input
+          type="text"
+          disabled
+          [(ngModel)]="event.getOriginalEvent().sender"
+          >
+      </td>
+
+            <td *ngIf = "showNormalEvent == 3 && event.getOriginalEvent().status === 'accepted'" >
+        <input
+          type="text"
+          disabled
+          [(ngModel)]="event.getOriginalEvent().sender"
+          >
+      </td>
