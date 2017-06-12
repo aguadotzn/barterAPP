@@ -81,12 +81,61 @@ service.decline=function (param){
 
 
 //Peticion aceptada
-service.accept_shift = function(param){
+
+
+// Activar intercambio
+service.activateShift = function(params){
 	var deferred = Q.defer();
 
-	var acknowledger_event = param;
+
+	var query = {'acknowledger': params.acknowledger, "acknowledger_event_id": mongo.ObjectID.createFromHexString(params.acknowledger_event_id), "status": "pending" };
+		//console.log("Objeto a intercambiar = : " + JSON.stringify(query));
+
+	 //Obtener el objeto de intercambio de el usuario que hace la peticion
+      	db.interchange.findOne({'acknowledger': params.acknowledger},function (err, interchange) {
+         if (err) deferred.reject(err.name + ': ' + err.message);
+
+         if (interchange) {
+        	 console.log("El objeto esta en la base de datos (Interchange Collection)  : ----------------- just skipped");
+        	 deferred.resolve(interchange);
+        	 return deferred.promise;
+         }
+
+      	});
+
+	db.interchange.insert( params, function (err, storedInterchange) {
+        if (err) deferred.reject(err.name + ': ' + err.message);
+
+				//El estado del evento (turno) de la persona que HACE la peticion pasa a  "required"
+        set = {
+                status: 'required'
+              };
+
+				//Se actualiza ese mismo evento en la base de datos
+        db.event.updateById(params.requestor_event_id,
+                { $set: set },
+                function (err, doc) {
+                    if (err) deferred.reject(err.name + ': ' + err.message);
+                });
+
+		 	//El estado del evento (turno) de la persona que RECIBE  la peticion pasa a estado: "pending"
+        set = {
+                status: 'pending',
+                sender:  params.requestor
+              };
+
+			//Se actualiza ese mismo evento en la base de datos
+        db.event.updateById(params.acknowledger_event_id,
+                { $set: set },
+                function (err, doc) {
+                    if (err) deferred.reject(err.name + ': ' + err.message);
+                });
+
+        deferred.resolve(storedInterchange);
+ 	});
+
+	 return deferred.promise;
+}
 
 
-	//obtener el objeto a intercambiar
-	var query = { acknowledger : param.username };
-	db.interchange.find(query).toArray(function (err, interchanges) {
+module.exports = service;
