@@ -157,7 +157,7 @@ function update (_id, userParam) {
 function _delete (_id) {
   var deferred = Q.defer()
 
-  // Se eliminar de la base de datps
+  // Se elimina de la base de datps
   db.users.remove({ _id: mongo.helper.toObjectID(_id) },
         function (err) {
           if (err) deferred.reject(err.name + ': ' + err.message)
