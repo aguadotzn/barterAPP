@@ -17,13 +17,14 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(morgan('dev'));
 
+//Conexion con Mongo
 mongoose.connect(config.url);
 const db = mongoose.connection;
 (<any>mongoose).Promise = global.Promise;
 
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', () => {
-  console.log('Connected to MongoDB');
+  console.log('Connected to MongoDB-BarterApp DB');
 
   setRoutes(app);
 
@@ -32,10 +33,9 @@ db.once('open', () => {
   });
 
   app.listen(app.get('port'), () => {
-    console.log('BarterAPP listening on port ' + app.get('port'));
+    console.log('BarterApp listening on port ' + app.get('port'));
   });
 
 });
 
-// Exportar el objeto para crearlo en otro modulo
 export { app };

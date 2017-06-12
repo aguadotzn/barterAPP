@@ -19,8 +19,8 @@ var service = {}
 // Peticion rechazada
 service.decline=function (param){
 	var deferred = Q.defer();
-	console.log("Rechazado!!");
-	console.log("param.idAcknowledgerEvent : " +param.idAcknowledgerEvent);
+	//console.log("Rechazado!!");
+	//console.log("param.idAcknowledgerEvent : " +param.idAcknowledgerEvent);
 
 	  var set = {
 	    status: 'normal'
@@ -29,7 +29,7 @@ service.decline=function (param){
 	  //Cambiar las prioridad o estado del evento a "normal"
 	  db.event.updateById(param.idAcknowledgerEvent, {$set: set}, function (err, updatedEvent) {
 	      if (err) deferred.reject(err.name + ': ' + err.message);
-	      		console.log("--------------------Actualizar------------", updatedEvent);
+	      		//console.log("--------------------Actualizar------------", updatedEvent);
 	      		var query = {acknowledger : param.acknowledger, acknowledger_event_id : mongo.ObjectID.createFromHexString(param.idAcknowledgerEvent), status : "pending" };
 					// Obtener el objeto del intercambio para acceder al usuario que hace la peticion
 	      		db.interchange.find({'acknowledger' : param.acknowledger}).toArray(function (err, interchanges) {
@@ -39,7 +39,7 @@ service.decline=function (param){
 	   	          if (interchanges) {
 	   	        	for (var i in interchanges) {
 		   	            if ( interchanges[i].status =="pending" && interchanges[i].acknowledger_event_id == param.idAcknowledgerEvent){
-		   	            	console.log("************************Intercambios: " + interchanges[i]);
+		   	            	//console.log("************************Intercambios: " + interchanges[i]);
 		   	              	interchange = interchanges[i];
 		   	              	break;
 		   	            }
@@ -98,7 +98,7 @@ service.accept_shift = function(param){
 	            var findOne = false;
 	            for (var i in interchanges) {
 	   	            if ( interchanges[i].status =="pending" && interchanges[i].acknowledger_event_id == param._id){
-										console.log("************************Intercambios: " + interchanges[i]);
+										//console.log("************************Intercambios: " + interchanges[i]);
 	   	              	interchange = interchanges[i];
 	   	              	findOne = true;
 	   	              	break;
@@ -112,10 +112,10 @@ service.accept_shift = function(param){
 	            // Obtener el evento del que hace la peticion (requestor)
 	            db.event.findById(interchange.requestor_event_id, function (err, requestor_event) {
   	                    if (err) {
-  	                    	console.log("1 error: " + err);
+  	                    	//console.log("1 error: " + err);
   	                    	deferred.reject(err.name + ': ' + err.message);
 		                 }
-		                 console.log('-----Evento del que hace la peticion:' + JSON.stringify(requestor_event));
+		                 //console.log('-----Evento del que hace la peticion:' + JSON.stringify(requestor_event));
 
 										 // Intercambio de los datos entre el que hace la peticion y el que la recibe
 		                  set = {
@@ -175,7 +175,7 @@ service.accept_shift = function(param){
 			   	            db.interchange.updateById(interchange._id, {$set: set}, function (err) {
 			   	            	//console.log("----------Intercambio aceptado------------");
 			   	            	if (err) {
-		  	                    	console.log("4 error: " + err);
+		  	                    	//console.log("4 error: " + err);
 		  	                    	deferred.reject(err.name + ': ' + err.message);
 				                 }
 				            });
@@ -205,13 +205,14 @@ service.activateShift = function(params){
          if (err) deferred.reject(err.name + ': ' + err.message);
 
          if (interchange) {
-        	 console.log("El objeto esta en la base de datos (Interchange Collection)  : ----------------- just skipped");
+        	 //console.log("El objeto esta en la base de datos (Interchange Collection)  : ----------------- ");
         	 deferred.resolve(interchange);
         	 return deferred.promise;
          }
 
       	});
 
+//Actualizar en la base de datos
 	db.interchange.insert( params, function (err, storedInterchange) {
         if (err) deferred.reject(err.name + ': ' + err.message);
 

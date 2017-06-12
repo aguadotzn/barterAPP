@@ -14,6 +14,4 @@ module.exports = function(app) {
  //   .get(interchange.get_interchange)
   	.delete(interchange.decline);
 
-  app.route('/interchange/test')
-	.post(interchange.test_mongoskin);
 };

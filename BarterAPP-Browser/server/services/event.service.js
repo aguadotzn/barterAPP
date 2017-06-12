@@ -1,4 +1,4 @@
-/*Servicios: controla los turnos */
+// Services: controla los turnos
 var config = require('config.json')
 var _ = require('lodash')
 var jwt = require('jsonwebtoken')
@@ -7,12 +7,14 @@ var Q = require('q')
 var mongo = require('mongoskin')
 var db = mongo.db(config.connectionString, {
 })
+
+// Se especifica que colecciones estamos usando
 db.bind('event')
 db.bind('users')
 
 var service = {}
 
-// Monkoskins test, para comprobar si funciona
+/* Monkoskins test, para comprobar si funciona
 service.testMongoskin = function (param) {
   var deferred = Q.defer()
 	 console.log('params: +' + JSON.stringify(param))
@@ -29,7 +31,7 @@ service.testMongoskin = function (param) {
 			deferred.resolve(emptyObject)
  })
 return deferred.promise
-}
+}*/
 
 // Obtener todos
 service.getAll = function(){
@@ -176,8 +178,7 @@ service.update = function(param) {
       type: param.type,
       status: param.status
     };
-    console.log("Servicio actualizado!!!!");
-    //console.log("establecido? : " +JSON.stringify(set));
+    console.log("Servicio actualizado!!");
     db.event.updateById(param._id,
         { $set: set },
         function (err, doc) {

@@ -1,4 +1,4 @@
-/* Servicios: controla los usuarios */
+// Services: controla los usuarios
 var config = require('config.json')
 var _ = require('lodash')
 var jwt = require('jsonwebtoken')
@@ -74,7 +74,7 @@ function getById (_id) {
   return deferred.promise
 }
 
-// Crear un usuario 1
+// Crear un usuario 
 function create (userParam) {
   var deferred = Q.defer()
     // validacion

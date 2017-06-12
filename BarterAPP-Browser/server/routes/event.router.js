@@ -1,9 +1,10 @@
+// routes: declara acceso a las rutas de los eventos
 'use strict'
-//   Exportar el bjeto app para luego utilizar las rutas (en el fichero server.js)
+//   Exportar el objeto app para luego utilizar las rutas (en el fichero server.js)
 module.exports = function(app) {
   var events = require('../controllers/event.controller');
 
-  // rutas para eventos
+  // rutas para eventos (normales)
   app.route('/events')
     .get(events.list_all_events) //Obtener
     .post(events.create_event); //Crear
