@@ -31,7 +31,7 @@ service.decline=function (param){
 	      if (err) deferred.reject(err.name + ': ' + err.message);
 	      		console.log("--------------------Actualizar------------", updatedEvent);
 	      		var query = {acknowledger : param.acknowledger, acknowledger_event_id : mongo.ObjectID.createFromHexString(param.idAcknowledgerEvent), status : "pending" };
-					 Obtener el objeto del intercambio para acceder al usuario que hace la peticion
+					// Obtener el objeto del intercambio para acceder al usuario que hace la peticion
 	      		db.interchange.find({'acknowledger' : param.acknowledger}).toArray(function (err, interchanges) {
 	   	          if (err) deferred.reject(err.name + ': ' + err.message);
 	   	          //console.log("Resultado: " +interchanges);
@@ -46,7 +46,7 @@ service.decline=function (param){
 	   	           }
 
 
-	   	            console.log("--------------------Interchange?: + " +JSON.stringify(interchanges[0]));
+	   	            //console.log("--------------------Interchange?: + " +JSON.stringify(interchanges[0]));
 
 	   	            deferred.resolve(interchange);
 	   	           set = {
@@ -55,7 +55,7 @@ service.decline=function (param){
 		               };
 	   	            //  Estado o prioridad establecido a rechazado
 	   	            db.interchange.updateById(interchange._id, {$set: set}, function (err) {
-	   	            	//console.log("----------Intercambio rechazado------------");
+	   	            	console.log("----------Intercambio rechazado------------");
 	   	            	if (err) deferred.reject(err.name + ': ' + err.message);
 		            });
 
@@ -70,7 +70,7 @@ service.decline=function (param){
 		            	   if (err) deferred.reject(err.name + ': ' + err.message);
 		            });
 	   	          } else {
-	   				console.log("Fin funcion rechazar");
+	   				//console.log("Fin funcion rechazar");
 	   				var emptyObject = {};
 	   				deferred.resolve(emptyObject);
 	   			  }
@@ -79,8 +79,117 @@ service.decline=function (param){
   return deferred.promise
 }
 
+// Peticion aceptada
+service.accept_shift = function(param){
+	var deferred = Q.defer();
 
-//Peticion aceptada
+	var acknowledger_event = param;
+
+
+	//obtener el objeto a intercambiar
+	var query = { acknowledger : param.username };
+	db.interchange.find(query).toArray(function (err, interchanges) {
+		if (err) {
+          	console.log("0 error: " + err);
+          	deferred.reject(err.name + ': ' + err.message);
+         }
+	          if (interchanges.length > 0) {
+	            var interchange;
+	            var findOne = false;
+	            for (var i in interchanges) {
+	   	            if ( interchanges[i].status =="pending" && interchanges[i].acknowledger_event_id == param._id){
+										console.log("************************Intercambios: " + interchanges[i]);
+	   	              	interchange = interchanges[i];
+	   	              	findOne = true;
+	   	              	break;
+	   	            }
+   	           }
+	            if (findOne == false){
+	            	var emptyObject = {};
+	   				deferred.resolve(emptyObject);
+	   				return deferred.promise;
+	            }
+	            // Obtener el evento del que hace la peticion (requestor)
+	            db.event.findById(interchange.requestor_event_id, function (err, requestor_event) {
+  	                    if (err) {
+  	                    	console.log("1 error: " + err);
+  	                    	deferred.reject(err.name + ': ' + err.message);
+		                 }
+		                 console.log('-----Evento del que hace la peticion:' + JSON.stringify(requestor_event));
+
+										 // Intercambio de los datos entre el que hace la peticion y el que la recibe
+		                  set = {
+		                	        title: requestor_event.title, //EL QUE HACE LA PETICION
+		                	        start: requestor_event.start,
+		                	        end: requestor_event.end,
+		                	        primary_color:requestor_event.primary_color,
+		                	        secondary_color: requestor_event.secondary_color,
+		                	        type: requestor_event.type,
+		                	        status:"normal"
+		                	    };
+		                	    db.event.updateById(acknowledger_event._id,
+		                	        { $set: set },
+		                	        function (err, doc) {
+		                	        	if (err) {
+		          	                    	//console.log("2 error: " + err);
+		          	                    	deferred.reject(err.name + ': ' + err.message);
+		        		                 }
+		                	        });
+
+
+		                  set = {
+		                	        title: acknowledger_event.title, //EL QUE RECIBE LA PETICION
+		                	        start: acknowledger_event.start,
+		                	        end: acknowledger_event.end,
+		                	        primary_color:acknowledger_event.primary_color,
+		                	        secondary_color: acknowledger_event.secondary_color,
+		                	        type: acknowledger_event.type,
+		                	        status:'accepted',
+		                	        sender:  acknowledger_event.username
+		                	    };
+		                	    db.event.updateById(requestor_event._id,
+		                	        { $set: set },
+		                	        function (err, doc) {
+		                	        	if (err) {
+		          	                    	console.log("3 error: " + err);
+		          	                    	deferred.reject(err.name + ': ' + err.message);
+		        		                 }
+
+
+		                	        });
+
+		                	    // Intercambio de los datos
+		                	    acknowledger_event.title = requestor_event.title,
+		                	    acknowledger_event.start = requestor_event.start,
+		                	    acknowledger_event.end = requestor_event.end,
+		                	    acknowledger_event.primary_color = requestor_event.primary_color,
+		                	    acknowledger_event.secondary_color = requestor_event.secondary_color,
+		                	    acknowledger_event.type = requestor_event.type,
+		                	    acknowledger_event.status = 'normal';
+
+		                 set = {
+				                 status: 'accepted'
+				               };
+
+											// Se establece el estado como aceptado
+			   	            db.interchange.updateById(interchange._id, {$set: set}, function (err) {
+			   	            	//console.log("----------Intercambio aceptado------------");
+			   	            	if (err) {
+		  	                    	console.log("4 error: " + err);
+		  	                    	deferred.reject(err.name + ': ' + err.message);
+				                 }
+				            });
+		                 deferred.resolve(acknowledger_event);
+
+
+	            });
+	       } else {
+	        	console.log("Fin funcion aceptar");
+	      }
+	});
+
+	return deferred.promise;
+}
 
 
 // Activar intercambio
