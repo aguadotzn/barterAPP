@@ -53,3 +53,55 @@
 </div>
 <br>
 <br>
+<!-- Vistas del calendario -->
+<div [ngSwitch]="view">
+  <mwl-calendar-month-view
+    *ngSwitchCase="'month'"
+    [viewDate]="viewDate"
+    [events]="events"
+    [refresh]="refresh"
+    [activeDayIsOpen]="activeDayIsOpen"
+    (dayClicked)="dayClicked($event.day)"
+    (eventTimesChanged)="eventTimesChanged($event)">
+  </mwl-calendar-month-view>
+  <mwl-calendar-week-view
+    *ngSwitchCase="'week'"
+    [viewDate]="viewDate"
+    [events]="events"
+    [refresh]="refresh"
+    (eventTimesChanged)="eventTimesChanged($event)">
+  </mwl-calendar-week-view>
+  <mwl-calendar-day-view
+    *ngSwitchCase="'day'"
+    [viewDate]="viewDate"
+    [events]="events"
+    [refresh]="refresh"
+    (eventTimesChanged)="eventTimesChanged($event)">
+  </mwl-calendar-day-view>
+</div>
+<br>
+<br>
+<!-- Controles de intercambio-->
+<div class="row justify-content-md-center">
+	<div class="col col-lg-2">
+	</div>
+	<div class="col-12 col-md-auto">
+		 <h3 align="center">
+		  ¿Cambios?
+		 </h3>
+		 <button class="btn btn-primary" (click)="showNormal(0)" >
+		    Vista Normal
+		 </button>
+		  <button class="btn btn-primary" (click)="showNormal(1)" >
+		   Pendientes<span class="badge badge-pill badge-danger">{{pendingEventCounter}}</span>
+		  </button>
+		   <button class="btn btn-primary" (click)="showNormal(2)" >
+		   Rechazados<span class="badge badge-pill badge-danger">{{declineEventCounter}}</span>
+		  </button>
+		  <button class="btn btn-primary" (click)="showNormal(3)" >
+		   Aceptados<span class="badge badge-pill badge-danger">{{acceptedEventCounter}}</span>
+		  </button>
+	</div>
+	<div class="col col-lg-2">
+	</div>
+</div>
