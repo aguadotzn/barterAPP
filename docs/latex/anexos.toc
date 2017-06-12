@@ -42,9 +42,9 @@
 \contentsline {section}{\numberline {D.4}Manual del programador}{29}{section.Alph4.4}
 \contentsline {subsection}{Prerequisitos}{30}{section*.24}
 \contentsline {subsection}{Estructura de directorios }{30}{section*.25}
-\contentsline {subsection}{Modo desarrollador}{34}{section*.26}
-\contentsline {subsection}{Servidor (Heroku)}{34}{section*.27}
-\contentsline {subsection}{Base de datos (Mlab)}{35}{section*.28}
+\contentsline {subsection}{Modo desarrollador}{35}{section*.26}
+\contentsline {subsection}{Servidor (Heroku)}{35}{section*.27}
+\contentsline {subsection}{Base de datos (Mlab)}{36}{section*.28}
 \contentsline {appendix}{\chapternumberline {E}Documentaci\IeC {\'o}n de usuario}{38}{appendix.Alph5}
 \contentsline {section}{\numberline {E.1}Introducci\IeC {\'o}n}{38}{section.Alph5.1}
 \contentsline {section}{\numberline {E.2}Requisitos Usuarios}{38}{section.Alph5.2}

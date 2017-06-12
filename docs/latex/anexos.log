@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  12 JUN 2017 23:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2017.4.7)  13 JUN 2017 00:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -3315,165 +3315,168 @@ Package babel Info: Redefining spanish shorthand "?
 [33
 
 ]
-Overfull \hbox (10.05pt too wide) in paragraph at lines 243--245
+Overfull \hbox (164.08397pt too wide) in paragraph at lines 248--249
+[]\OT1/cmr/m/n/10.95 Observables [][]$\OT1/cmtt/m/n/10.95 http : / / academia-[
+]binaria . com / comunicaciones-[]http-[]observables-[]con-[]angular2/$[][] 
+ []
+
+
+Overfull \hbox (10.05pt too wide) in paragraph at lines 261--263
 []\OT1/cmr/m/n/10.95 Observables http://academia-binaria.com/comunicaciones-htt
 p-observables-
  []
 
 
-Overfull \hbox (38.3983pt too wide) in paragraph at lines 246--248
+Overfull \hbox (38.3983pt too wide) in paragraph at lines 264--266
 []\OT1/cmr/m/n/10.95 angular2 po-lling -observables https://stackoverflow.com/q
 uestions/41658162/how-
  []
 
 
-Overfull \hbox (9.76108pt too wide) in paragraph at lines 249--251
+Overfull \hbox (9.76108pt too wide) in paragraph at lines 267--269
 []\OT1/cmr/m/n/10.95 Guards https://blog.thoughtram.io/angular/2016/07/18/guard
 s-in-angular-
  []
 
 
-Overfull \hbox (21.18126pt too wide) in paragraph at lines 255--257
+Overfull \hbox (21.18126pt too wide) in paragraph at lines 273--275
 []\OT1/cmr/m/n/10.95 DTO https://stackoverflow.com/questions/39272947/dto-desig
 n-in-typescript-
  []
 
 
-Overfull \hbox (38.61134pt too wide) in paragraph at lines 258--260
+Overfull \hbox (38.61134pt too wide) in paragraph at lines 276--278
 []\OT1/cmr/m/n/10.95 ngAfterViewInit https://angular.io/docs/ts/latest/api/core
 /index/AfterViewInit-
  []
 
 
-Overfull \hbox (22.1559pt too wide) in paragraph at lines 271--273
+Overfull \hbox (22.1559pt too wide) in paragraph at lines 289--291
 []\OT1/cmr/m/n/10.95 AngularCalendar https://github.com/mattlewis92/angular-boo
 tstrap-calendar 
  []
 
 
-Overfull \hbox (15.79884pt too wide) in paragraph at lines 274--276
+Overfull \hbox (15.79884pt too wide) in paragraph at lines 292--294
 []\OT1/cmr/m/n/10.95 Multiple com-po-nents https://angular.io/docs/ts/latest/tu
 torial/toh-pt3.html 
  []
 
 
-Overfull \hbox (18.41455pt too wide) in paragraph at lines 280--281
+Overfull \hbox (18.41455pt too wide) in paragraph at lines 298--299
 []\OT1/cmr/m/n/10.95 https://desarrolloweb.com/articulos/analisis-carpetas-proy
 ecto-angular2.html 
  []
 
 
-Overfull \hbox (20.69582pt too wide) in paragraph at lines 283--284
+Overfull \hbox (20.69582pt too wide) in paragraph at lines 301--302
 []\OT1/cmr/m/n/10.95 https://desarrolloweb.com/articulos/introduccion-component
 es-angular2.html 
  []
 
-LaTeX Info: Redefining \. on input line 302.
-LaTeX Info: Redefining \% on input line 302.
+LaTeX Info: Redefining \. on input line 309.
+LaTeX Info: Redefining \% on input line 309.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 309.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 309.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 309.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 309.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 309.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 309.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 309.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 309.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 309.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 309.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 309.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 302.
+(babel)             in language  on input line 309.
 
 [34
 
-] <./img/robomongoview.png, id=764, 1099.10625pt x 328.22626pt>
+]
+LaTeX Info: Redefining \. on input line 350.
+LaTeX Info: Redefining \% on input line 350.
+
+Overfull \vbox (0.8521pt too high) has occurred while \output is active []
+
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 350.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 350.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 350.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 350.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 350.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 350.
+Package babel Info: Redefining spanish shorthand <<
+(babel)             in language  on input line 350.
+Package babel Info: Redefining spanish shorthand >>
+(babel)             in language  on input line 350.
+Package babel Info: Redefining spanish shorthand "=
+(babel)             in language  on input line 350.
+Package babel Info: Redefining spanish shorthand "~
+(babel)             in language  on input line 350.
+Package babel Info: Redefining spanish shorthand "!
+(babel)             in language  on input line 350.
+Package babel Info: Redefining spanish shorthand "?
+(babel)             in language  on input line 350.
+
+[35] <./img/robomongoview.png, id=790, 1099.10625pt x 328.22626pt>
 File: ./img/robomongoview.png Graphic file (type png)
 
 <use ./img/robomongoview.png>
-Package pdftex.def Info: ./img/robomongoview.png used on input line 335.
+Package pdftex.def Info: ./img/robomongoview.png used on input line 353.
 (pdftex.def)             Requested size: 332.09775pt x 99.1748pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-LaTeX Info: Redefining \. on input line 335.
-LaTeX Info: Redefining \% on input line 335.
+LaTeX Info: Redefining \. on input line 368.
+LaTeX Info: Redefining \% on input line 368.
 
 Overfull \vbox (0.8521pt too high) has occurred while \output is active []
 
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 335.
+(babel)             in language  on input line 368.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 335.
+(babel)             in language  on input line 368.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 335.
+(babel)             in language  on input line 368.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 335.
+(babel)             in language  on input line 368.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 335.
+(babel)             in language  on input line 368.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 335.
+(babel)             in language  on input line 368.
 Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 335.
+(babel)             in language  on input line 368.
 Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 335.
+(babel)             in language  on input line 368.
 Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 335.
+(babel)             in language  on input line 368.
 Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 335.
+(babel)             in language  on input line 368.
 Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 335.
+(babel)             in language  on input line 368.
 Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 335.
+(babel)             in language  on input line 368.
 
-[35]
+[36 <./img/robomongoview.png>]
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 351.
-LaTeX Info: Redefining \. on input line 364.
-LaTeX Info: Redefining \% on input line 364.
-
-Overfull \vbox (0.8521pt too high) has occurred while \output is active []
-
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand <<
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand >>
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand "=
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand "~
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand "!
-(babel)             in language  on input line 364.
-Package babel Info: Redefining spanish shorthand "?
-(babel)             in language  on input line 364.
-
-[36 <./img/robomongoview.png>])
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 369.
+)
 LaTeX Info: Redefining \. on input line 426.
 LaTeX Info: Redefining \% on input line 426.
 
@@ -3627,7 +3630,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  43699 strings out of 493014
  939476 string characters out of 6133352
- 1003996 words of memory out of 5000000
+ 1003994 words of memory out of 5000000
  46500 multiletter control sequences out of 15000+600000
  14692 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -3676,10 +3679,10 @@ e/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 16/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/local/texlive/2016
 /texmf-dist/fonts/type1/public/eurosym/feymr10.pfb>
-Output written on anexos.pdf (41 pages, 1710573 bytes).
+Output written on anexos.pdf (41 pages, 1712384 bytes).
 PDF statistics:
- 933 PDF objects out of 1000 (max. 8388607)
- 819 compressed objects within 9 object streams
+ 934 PDF objects out of 1000 (max. 8388607)
+ 820 compressed objects within 9 object streams
  197 named destinations out of 1000 (max. 500000)
  277 words of extra memory for PDF output out of 10000 (max. 10000000)
 
