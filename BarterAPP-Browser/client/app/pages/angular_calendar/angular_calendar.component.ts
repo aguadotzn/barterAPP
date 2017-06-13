@@ -268,7 +268,7 @@ export class AngularCalendarComponent implements AfterViewInit {
         }
       }
     });
-  }//ngAfterViewInit
+  }
 
 /*
 Función para aumentar los contadores

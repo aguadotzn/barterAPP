@@ -1,7 +1,7 @@
 //Utils: Patrón Singleton
 import { Injectable } from '@angular/core';
 
-// Un objeto para todo el sistema. Patro SINGLETON.
+// Un objeto para todo el sistema. Patrón SINGLETON.
 @Injectable()
 export class ShiftUtilsService {
 
@@ -16,7 +16,12 @@ export class ShiftUtilsService {
 
   // Tipos de eventos/turnos
   private types = [ 'Assigned shifts', 'Desired free shifts', 'Untouchable free shifts', 'Free Shifts'];
-
+/*
+Assigned shifts :  Asignado conforme
+Desired free shifts : Asignado eliminar
+Untouchable free shifts : Intocable
+Free Shifts : Libre
+*/
 
 
 

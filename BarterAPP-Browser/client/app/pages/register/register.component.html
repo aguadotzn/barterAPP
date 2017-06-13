@@ -12,7 +12,7 @@
             <div *ngIf="f.submitted && !lastName.valid" class="help-block" style="color: #FF0505;">Introduzca sus apellidos.</div>
         </div>
          <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !username.valid }">
-            <label for="username">Login</label>
+            <label for="username">Nombre usuario</label>
             <input type="text" class="form-control" placeholder="El nombre con el que le reconoceran otros usuarios." name="username" [(ngModel)]="model.username" #username="ngModel" required />
             <div *ngIf="f.submitted && !username.valid" class="help-block" style="color: #FF0505;">Introduzca un nombre de usuario.</div>
         </div>
@@ -24,19 +24,19 @@
         <div class="form-group" >
         	<label for="shift">Tipo de turno de su empresa</label>
         	<select name="shift" [(ngModel)]="model.shift" class="form-control" >
-        		<option value=""></option>
+        		<option value="" ></option>
           		<option *ngFor="let shift of shifts" [ngValue]="shift" > {{shift}} </option>
         	</select>
         </div>
       <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !email.valid }">
             <label for="email">Correo electrónico</label>
             <input type="email" class="form-control" placeholder="Su correo electrónico habitual." name="emailaddress" [(ngModel)]="model.email" #email="ngModel" required />
-            <div *ngIf="f.submitted && !email.valid" class="help-block" style="color: #FF0505;">Introduzca un correo electrónico.</div>
+            <div *ngIf="f.submitted && !email.valid" class="help-block" style="color: #FF0505;">Introduzca un correo electrónico válido.</div>
         </div>
         <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
             <label for="password">Contraseña</label>
             <input type="password" class="form-control" name="password" placeholder="La contraseña que más le guste." [(ngModel)]="model.password" #password="ngModel" required />
-            <div *ngIf="f.submitted && !password.valid" class="help-block" style="color: #FF0505;">Introduzca una contraseña. </div>
+            <div *ngIf="f.submitted && !password.valid" class="help-block" style="color: #FF0505;">Introduzca una contraseña válida. </div>
         </div>
         <div class="form-group">
             <button [disabled]="loading" class="btn btn-primary">Registro</button>
