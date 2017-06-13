@@ -1,8 +1,8 @@
 language: node_js
 node_js:
-- '6.10'
-branches:
-  only:
-  - master
+  - '6.10'
 install:
-- npm install
+  - cd BarterAPP-Browser
+  - npm install -g @angular/cli
+script:
+  - npm install
