@@ -21,7 +21,7 @@ export class RegisterComponent {
     // Para el tipo de turnos que tiene la empresa
     /*Hay que tener en cuenta que funcionalmente
     en la  primera version no sirve para nada*/
-    private shifts;
+    shifts;
 
     constructor(
         private router: Router,

@@ -39,7 +39,7 @@ import { ShiftUtilsService } from './utils/shift.utils.service';
 import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
 import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
-import { PopupModule } from 'ng2-opd-popup';
+//import { PopupModule } from 'ng2-opd-popup';
 
 /*PrimeNG*/
 import { RadioButtonModule } from 'primeng/primeng';
@@ -62,7 +62,7 @@ import { GrowlModule } from 'primeng/primeng';
       /*NgBootstrap*/
         NgbModalModule.forRoot(),
         NgbDropdownModule.forRoot(),
-        PopupModule.forRoot(),
+        //PopupModule.forRoot(),
         Ng2Bs3ModalModule,
       /*PrimeNG*/
         RadioButtonModule,

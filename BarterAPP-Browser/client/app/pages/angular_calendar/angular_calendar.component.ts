@@ -624,7 +624,7 @@ Función para aumentar los contadores
   }
 
   /*Ventana de envio de petición de cambio*/
-  private activateShift(){
+  activateShift(){
     //Comprobamos que existan usuarios para activar la ventana
     if (this.choosenFreeUser == -1){
       this.showShiftAlert = true;
