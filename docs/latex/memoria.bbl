@@ -1,0 +1,14 @@
+\begin{thebibliography}{1}
+
+\bibitem{koza92}
+John~R. Koza.
+\newblock {\em Genetic Programming: On the Programming of Computers by Means of
+  Natural Selection}.
+\newblock MIT Press, 1992.
+
+\bibitem{mvc}
+Trygve Reenskaug and James~O. Coplien.
+\newblock The dci architecture: A new vision of object-oriented programming,
+  2009.
+
+\end{thebibliography}

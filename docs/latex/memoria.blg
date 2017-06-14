@@ -1,0 +1,57 @@
+This is BibTeX, Version 0.99d (TeX Live 2016)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: memoria.aux
+A level-1 auxiliary file: ./tex/1_Introduccion.aux
+A level-1 auxiliary file: ./tex/2_Objetivos_del_proyecto.aux
+A level-1 auxiliary file: ./tex/3_Conceptos_teoricos.aux
+A level-1 auxiliary file: ./tex/4_Tecnicas_y_herramientas.aux
+A level-1 auxiliary file: ./tex/5_Aspectos_relevantes_del_desarrollo_del_proyecto.aux
+A level-1 auxiliary file: ./tex/6_Trabajos_relacionados.aux
+A level-1 auxiliary file: ./tex/7_Conclusiones_Lineas_de_trabajo_futuras.aux
+The style file: plain.bst
+Database file #1: bibliografia.bib
+Warning--I didn't find a database entry for "https://g.co/kgs/VLR4mn"
+Warning--I didn't find a database entry for "wiki:mvc"
+Warning--I didn't find a database entry for ""
+You've used 2 entries,
+            2118 wiz_defined-function locations,
+            516 strings with 4541 characters,
+and the built_in function-call counts, 470 in all, are:
+= -- 39
+> -- 20
+< -- 0
++ -- 9
+- -- 6
+* -- 20
+:= -- 85
+add.period$ -- 5
+call.type$ -- 2
+change.case$ -- 8
+chr.to.int$ -- 0
+cite$ -- 2
+duplicate$ -- 19
+empty$ -- 45
+format.name$ -- 6
+if$ -- 97
+int.to.chr$ -- 0
+int.to.str$ -- 2
+missing$ -- 2
+newline$ -- 12
+num.names$ -- 4
+pop$ -- 18
+preamble$ -- 1
+purify$ -- 7
+quote$ -- 0
+skip$ -- 15
+stack$ -- 0
+substring$ -- 11
+swap$ -- 2
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 6
+warning$ -- 0
+while$ -- 4
+width$ -- 3
+write$ -- 20
+(There were 3 warnings)
