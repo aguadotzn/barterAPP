@@ -632,7 +632,6 @@ Función para aumentar los contadores
       this.alert = "Por favor, elija un usuario.";
       return;
     }
-    this.alert = "Petición enviada";
     // Se cierra la ventana
     this.displayShiftDialog = false;
     // Se cierra el aviso

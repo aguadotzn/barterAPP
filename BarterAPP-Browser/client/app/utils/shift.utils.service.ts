@@ -6,7 +6,7 @@ import { Injectable } from '@angular/core';
 export class ShiftUtilsService {
 
   //Tipo de turno de la empresa
-  private shifts =  ['24 Hours', '12 Hours', '8 Hours','6 Hours'];
+  private shifts =  ['Turno 24 Horas', 'Turnos 12 Horas', 'Turnos 8 Horas', 'Turnos 6 Horas'];
 
   // Colores para cada turno
   private  colors = { red: { primary: '#ad2121', secondary: '#ffcfcf'},

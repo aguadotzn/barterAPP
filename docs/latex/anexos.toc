@@ -33,23 +33,24 @@
 \contentsline {appendix}{\chapternumberline {C}Especificaci\IeC {\'o}n de dise\IeC {\~n}o}{25}{appendix.Alph3}
 \contentsline {section}{\numberline {C.1}Introducci\IeC {\'o}n}{25}{section.Alph3.1}
 \contentsline {section}{\numberline {C.2}Dise\IeC {\~n}o de datos}{25}{section.Alph3.2}
-\contentsline {appendix}{\chapternumberline {D}Documentaci\IeC {\'o}n t\IeC {\'e}cnica de programaci\IeC {\'o}n}{26}{appendix.Alph4}
-\contentsline {section}{\numberline {D.1}Introducci\IeC {\'o}n}{26}{section.Alph4.1}
-\contentsline {section}{\numberline {D.2}Requerimientos m\IeC {\'\i }nimos necesarios}{27}{section.Alph4.2}
-\contentsline {section}{\numberline {D.3}AngularCLI}{27}{section.Alph4.3}
-\contentsline {subsection}{\IeC {\textquestiondown }Qu\IeC {\'e} es typescript?}{27}{section*.22}
-\contentsline {subsection}{Comandos b\IeC {\'a}sicos}{28}{section*.23}
-\contentsline {section}{\numberline {D.4}Manual del programador}{29}{section.Alph4.4}
-\contentsline {subsection}{Prerequisitos}{30}{section*.24}
-\contentsline {subsection}{Estructura de directorios }{30}{section*.25}
-\contentsline {subsection}{Modo desarrollador}{35}{section*.26}
-\contentsline {subsection}{Servidor (Heroku)}{35}{section*.27}
-\contentsline {subsection}{Base de datos (Mlab)}{36}{section*.28}
-\contentsline {appendix}{\chapternumberline {E}Documentaci\IeC {\'o}n de usuario}{38}{appendix.Alph5}
-\contentsline {section}{\numberline {E.1}Introducci\IeC {\'o}n}{38}{section.Alph5.1}
-\contentsline {section}{\numberline {E.2}Requisitos Usuarios}{38}{section.Alph5.2}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{38}{section*.29}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{38}{section*.30}
-\contentsline {section}{\numberline {E.3}Primeros pasos}{38}{section.Alph5.3}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{38}{section*.31}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{38}{section*.32}
+\contentsline {section}{\numberline {C.3}Dise\IeC {\~n}o de datos}{27}{section.Alph3.3}
+\contentsline {appendix}{\chapternumberline {D}Documentaci\IeC {\'o}n t\IeC {\'e}cnica de programaci\IeC {\'o}n}{28}{appendix.Alph4}
+\contentsline {section}{\numberline {D.1}Introducci\IeC {\'o}n}{28}{section.Alph4.1}
+\contentsline {section}{\numberline {D.2}Requerimientos m\IeC {\'\i }nimos necesarios}{29}{section.Alph4.2}
+\contentsline {section}{\numberline {D.3}AngularCLI}{29}{section.Alph4.3}
+\contentsline {subsection}{\IeC {\textquestiondown }Qu\IeC {\'e} es typescript?}{29}{section*.22}
+\contentsline {subsection}{Comandos b\IeC {\'a}sicos}{30}{section*.23}
+\contentsline {section}{\numberline {D.4}Manual del programador}{31}{section.Alph4.4}
+\contentsline {subsection}{Prerequisitos}{32}{section*.24}
+\contentsline {subsection}{Estructura de directorios }{32}{section*.25}
+\contentsline {subsection}{Modo desarrollador}{37}{section*.26}
+\contentsline {subsection}{Servidor (Heroku)}{37}{section*.27}
+\contentsline {subsection}{Base de datos (Mlab)}{38}{section*.28}
+\contentsline {appendix}{\chapternumberline {E}Documentaci\IeC {\'o}n de usuario}{40}{appendix.Alph5}
+\contentsline {section}{\numberline {E.1}Introducci\IeC {\'o}n}{40}{section.Alph5.1}
+\contentsline {section}{\numberline {E.2}Requisitos Usuarios}{40}{section.Alph5.2}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{40}{section*.29}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{40}{section*.30}
+\contentsline {section}{\numberline {E.3}Primeros pasos}{40}{section.Alph5.3}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{40}{section*.31}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{40}{section*.32}
