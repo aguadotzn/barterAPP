@@ -5,4 +5,4 @@ install:
   - cd BarterAPP-Browser
   - npm install -g @angular/cli
 script:
-  - npm run dev
+  - npm install
