@@ -43,16 +43,27 @@
     },
   }
 
- 
-
-% Links
-\usepackage[colorlinks]{hyperref}
+ %Bibliografia / Links
+\usepackage[numbers,sort]{natbib}
+\usepackage[backref=page]{hyperref}
 \hypersetup{
 	colorlinks,
 	linkcolor={white!60!black},
 	citecolor={blue!50!black},
      urlcolor={blue!80!black}
 }
+
+\renewcommand*{\backref}[1]{}
+\renewcommand*{\backrefalt}[4]{
+    \ifcase #1 (No citado.)
+          \or (Citado en página~#2.)
+          \else (Citado en páginas #2.)
+    \fi%
+}
+\renewcommand*{\backrefsep}{, }
+\renewcommand*{\backreftwosep}{ y~}
+\renewcommand*{\backreflastsep}{ y~}
+
 
 % Ecuaciones
 \usepackage{amsmath}
@@ -74,6 +85,15 @@
 	\begin{figure}[!h]
 		\centering
 		\includegraphics[width=0.9\textwidth]{#1}
+		\caption{#2}\label{fig:#1}
+	\end{figure}
+	\FloatBarrier
+}
+
+\newcommand{\imagenAncho}[3]{
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=#3\textwidth]{#1}
 		\caption{#2}\label{fig:#1}
 	\end{figure}
 	\FloatBarrier
