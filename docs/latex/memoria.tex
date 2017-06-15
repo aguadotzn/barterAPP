@@ -24,12 +24,6 @@
 \usepackage{cite}
 
 
-% Links
-\usepackage[colorlinks]{hyperref}
-\hypersetup{
-	allcolors = {red}
-}
-
 % Ecuaciones
 \usepackage{amsmath}
 
@@ -39,18 +33,29 @@
 % Párrafos
 \nonzeroparskip
 
-% Links
-\usepackage[colorlinks]{hyperref}
+ %Bibliografia / Links
+\usepackage[numbers,sort]{natbib}
+\usepackage[backref=page]{hyperref}
 \hypersetup{
 	colorlinks,
 	linkcolor={white!60!black},
-	citecolor={red!50!black},
-	urlcolor={blue!80!black}
+	citecolor={blue!50!black},
+     urlcolor={blue!80!black}
 }
+
+\renewcommand*{\backref}[1]{}
+\renewcommand*{\backrefalt}[4]{
+    \ifcase #1 (No citado.)
+          \or (Citado en página~#2.)
+          \else (Citado en páginas #2.)
+    \fi%
+}
+\renewcommand*{\backrefsep}{, }
+\renewcommand*{\backreftwosep}{ y~}
+\renewcommand*{\backreflastsep}{ y~}
 
 % Imagenes
 \usepackage{graphicx}
-
 \newcommand{\imagen}[2]{
 	\begin{figure}[!h]
 		\centering

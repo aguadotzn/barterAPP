@@ -10,48 +10,47 @@ A level-1 auxiliary file: ./tex/6_Trabajos_relacionados.aux
 A level-1 auxiliary file: ./tex/7_Conclusiones_Lineas_de_trabajo_futuras.aux
 The style file: plain.bst
 Database file #1: bibliografia.bib
+Warning--I didn't find a database entry for "mvc"
 Warning--I didn't find a database entry for "https://g.co/kgs/VLR4mn"
-Warning--I didn't find a database entry for "wiki:mvc"
-Warning--I didn't find a database entry for ""
 You've used 2 entries,
             2118 wiz_defined-function locations,
-            516 strings with 4541 characters,
-and the built_in function-call counts, 470 in all, are:
-= -- 39
-> -- 20
+            514 strings with 4463 characters,
+and the built_in function-call counts, 414 in all, are:
+= -- 34
+> -- 14
 < -- 0
-+ -- 9
-- -- 6
-* -- 20
-:= -- 85
-add.period$ -- 5
++ -- 6
+- -- 4
+* -- 14
+:= -- 73
+add.period$ -- 4
 call.type$ -- 2
 change.case$ -- 8
 chr.to.int$ -- 0
 cite$ -- 2
-duplicate$ -- 19
+duplicate$ -- 14
 empty$ -- 45
-format.name$ -- 6
-if$ -- 97
+format.name$ -- 4
+if$ -- 87
 int.to.chr$ -- 0
 int.to.str$ -- 2
-missing$ -- 2
-newline$ -- 12
+missing$ -- 0
+newline$ -- 11
 num.names$ -- 4
 pop$ -- 18
 preamble$ -- 1
-purify$ -- 7
+purify$ -- 6
 quote$ -- 0
-skip$ -- 15
+skip$ -- 16
 stack$ -- 0
-substring$ -- 11
+substring$ -- 10
 swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 6
+type$ -- 8
 warning$ -- 0
 while$ -- 4
 width$ -- 3
-write$ -- 20
-(There were 3 warnings)
+write$ -- 18
+(There were 2 warnings)

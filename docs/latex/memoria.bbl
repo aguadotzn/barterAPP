@@ -1,14 +1,11 @@
 \begin{thebibliography}{1}
 
-\bibitem{koza92}
-John~R. Koza.
-\newblock {\em Genetic Programming: On the Programming of Computers by Means of
-  Natural Selection}.
-\newblock MIT Press, 1992.
+\bibitem{wikisingleton}
+Wikipedia.
+\newblock Singleton pattern --- {Wikipedia}{,} {The Free Encyclopedia}, 2016.
 
-\bibitem{mvc}
-Trygve Reenskaug and James~O. Coplien.
-\newblock The dci architecture: A new vision of object-oriented programming,
-  2009.
+\bibitem{desarrolloweb1}
+Yeeply.
+\newblock El desarrollo web, en alza como nunca antes., 2016.
 
 \end{thebibliography}

@@ -1,6 +1,6 @@
 \capitulo{4}{Técnicas y herramientas}
 
-Esta parte de la memoria tiene como objetivo presentar las tecnologías y las herramientas de desarrollo que se han utilizado para llevar a cabo el proyecto. Se han estudiado diferentes alternativas de metodologías, herramientas, bibliotecas  y se pretende aqui realizar un resumen de los aspectos más destacados de cada alternativa, incluyendo comparativas entre las distintas opciones y una justificación de las elecciones realizadas. 
+Esta parte de la memoria tiene como objetivo presentar las tecnologías y las herramientas de desarrollo que se han utilizado para llevar a cabo el proyecto. Se han estudiado diferentes alternativas de metodologías, herramientas, bibliotecas  y se pretende aquí realizar un resumen de los aspectos más destacados de cada alternativa, incluyendo comparativas entre las distintas opciones y una justificación de las elecciones realizadas. 
 
 No se pretende que este apartado se convierta en un capítulo de un libro dedicado a cada una de las alternativas detalladamente, sino comentar los aspectos más destacados de cada opción.
 
@@ -19,16 +19,20 @@ Ya nombrado anteriormente, Ees un patrón de diseño software utilizada para imp
 
 \imagen{mvcschema}{Esquema \emph{MVC}. Elaboración propia.}
 
+\subsection{Patrones de diseño: singleton}\label{Singleton}
+
+
+El patrón de diseño \emph{singleton} \cite{wikisingleton} está diseñado para restringir la creación de objetos pertenecientes a una clase o el valor de un tipo a un único objeto. Su intención consiste en garantizar que una clase sólo tenga una instancia y proporcionar un punto de acceso global a ella. Es decir se crean objetos, declarados como tipo privados, una sola vez para se usados en muchos sitios diferentes.
 
 \section{Herramientas}\label{herramientas}
 En este apartado se describen las herramientas utilizadas para el desarrollo del sistema.
 
-\subsection{Atom}\label{atom}
+\subsection{Atom}\label{herramientas_atom}
 \hyperlink{https://atom.io/}{Atom} es un editor de texto moderno de código abierto desarrollado por  \hyperlink{http://brackets.io/}{GitHub}  que se ha escogido en este proyecto para desarrollar la aplicación debido a que esta desarrollado utilizando tecnologías web, luego ha sido creado por y para la web. Es posible ampliar sus funcionalidades a través de plugins desarrollados con \emph{Node.js} que puede ser instalados de una forma sencilla a través del gestor de paquetes internos con el que cuenta, así como diferentes tipos de temas. Esta posibilidad hace que se convierta en un editor de texto muy personal, ya que es el mismo desarrollador el que elige las características que desea tener sin afectar mínimamente al rendimiento.
 \imagenflotante{logo-atom}{Logo \emph{Atom}. Fuente: \url{atom.io}.}
 
 \begin{itemize}
-	\item \subsubsection{Alternativas estudiadas: otros }
+	\item \subsubsection{Alternativas estudiadas: otros}
 	\begin{itemize}
 		\item \hyperlink{http://brackets.io/}{Brackets}
 		\item \hyperlink{http://eclipse.org}{Eclipse}
@@ -37,13 +41,13 @@ En este apartado se describen las herramientas utilizadas para el desarrollo del
 \end{itemize}
 
 
-\subsection{Robomongo}\label{entorno-desarrollo}
+\subsection{Robomongo}\label{herramientas_robomongo}
 \hyperlink{http://http//robomongo.org/}{Robomongo} es una interfaz para \emph{MongoDB} que nos permite conectarnos al servidor de base de datos de forma sencilla ya que nada más arrancarlo podemos crear una nueva conexión. Resulta también muy sencillo de utilizar.
 \imagenflotante{logo-robomongo}{Logo \emph{Robomongo}. Fuente: \url{robomongo.org}.}
 
 
 
-\subsection{Firefox for developers}\label{firefox}
+\subsection{Firefox for developers}\label{herramientas_firefox}
 Para el navegador he elegido Firefox en su versión para desarrolladores: \hyperlink{https://www.mozilla.org/es-ES/firefox/developer}{Firefox Developer Edition} . El cuál considero que posee todas las herramientas esenciales para testear y probar una aplicación web.
 \imagenflotante{logo-firefox}{Logo \emph{FF Developers}. Fuente: \url{firefox.com/developer}.}
 
@@ -51,7 +55,7 @@ Para el navegador he elegido Firefox en su versión para desarrolladores: \hyper
 \section{Tecnologías}\label{tecnologias}
  En este apartado se describen las tecnologías utilizadas para el desarrollo del sistema. Las siguientes líneas servirán al lector para conocer algunas de las tecnologías más modernas y poco conocidas que se han usado en el proyecto. Se obvian el nombrar directamente lenguajes web como pueden ser \emph{Javascript}, \emph{HTML} o \emph{CSS}. Existe mucha información accesible en la web sobre ellas y se hará más incapié en las tecnologías principales que usan propiamente éstos lenguajes que no son tan comunes.
  
- \subsection{Front-end: Angular 2/4}\label{tecnologias-angular}
+ \subsection{Front-end: Angular 2+}\label{tecnologias_angular}
  \hyperlink{https://angular.io}{Angular} es un framework cliente MVC \emph{Javascript} de código abierto creado en sus inicios por Google, permite crear  \emph{Single-Page Applications} (\hyperlink{https://es.wikipedia.org/wiki/Single-page_application}{SPA})  cuya principal característica es la de dar al usuario la impresión de que todo sucede en la misma página, sin hacer recargas de la misma. Es decir, trata de emular a las aplicaciones de escritorio, lo que se trata es de intercambiar las vista y no de recargar la página. En la actualidad cuenta con una amplia comunidad de desarrolladores  que dan soporte al framework.  Algunas características de Angular son:
  
 \begin{itemize}
@@ -69,7 +73,7 @@ Para el navegador he elegido Firefox en su versión para desarrolladores: \hyper
  \imagenflotante{logo-angular}{Logo \emph{Angular}. Fuente: \url{angular.io}.}
  
 
-\subsubsection{Detalles: Angular Arquitectura}\label{detalle-angulararquitectura}
+\subsubsection{Detalles: Angular Arquitectura}\label{detalle_angulararquitectura}
 Un app de Angular esta basada en componentes. En su día resultó una revolución en el desarrollo web ya que lo que se persigue es que cada parte de la aplicación posea un componente de manera que se consigue hacer aplicaciones web reutilizables de algún modo.
 
 \imagen{angularschema}{Esquema componentes. Fuente:  \url{rldona.gitbooks.io}.}
@@ -89,11 +93,11 @@ las vistan tienen asociado un controlador.
 \end{itemize}
 
 
-\subsubsection{Detalles: Typescript}\label{detalle-typescript}
+\subsubsection{Detalles: Typescript}\label{detalle_typescript}
 Angular 4 esta basado en  \hyperlink{https://es.wikipedia.org/wiki/TypeScript}{Typescript} , es un lenguaje de código abierto que resulta ser un superset de Javascript. Es fuertemente tipado y orientado a objetos basado en clases.
 
 
-\subsubsection{Detalles: Angular CLI}\label{detalle-angularcli}
+\subsubsection{Detalles: Angular CLI}\label{detalle_angularcli}
 Es un intérprete de línea de comandos de Angular que te facilitará el inicio y desarrollo de proyectos, ocupándose de la creación del esqueleto de la mayoría de los componentes de una aplicación Angular. Es interesante utilizarlo dado que ahorra mucho trabajo al desarrollador además de evitar despistes innecesarios. Por poner un ejemplo cada vez que un componente es creado en Angular es necesario modificar el componente principal manualmente para poder usarlo, con Angular CLI tan solo es necesario introducir un comando para crear el nuevo componente y Angular añade todas las dependencias por ti. Se podría pensar que se trata de una heramienta de terceros pero no es asi, la interfaz de comandos es proporcionada directamente por el equipo de Angular. Se darán consejos de como usarlo en los anexos.
 
 Por otro lado el uso de Angular CLI permite realizar en un solo comando el preparado de la aplicación para lanzarla al servidor, lo cual resulta también muy interesante de cara a una parte más seria de la aplicación como puede ser por ejemplo lanzarla al mercado.
@@ -102,9 +106,13 @@ El aspecto de una aplicación hola mundo creada por Angular CLI contendría los 
 
 \imagen{angularclihelloworld}{Vista \emph{App hola Mundo}. Elaboración propia.}
 
+Más información en el Anexo: Manual del programador. 
+
+\subsubsection{Detalles: Calendario Angular}\label{detalle_calendario}
 
 
-\subsubsection{Detalles: Módulos adicionales empleados en este proyecto}\label{detalle-angularmodulos}
+
+\subsubsection{Detalles: Módulos adicionales empleados en este proyecto}\label{detalle_angularmodulos}
 Algunos de los módulos adicionales a destacar empleados en la parte del cliente han sido:
 \begin{itemize}
 \tightlist
@@ -133,7 +141,7 @@ Algunos de los módulos adicionales a destacar empleados en la parte del cliente
 
 
 
-\subsection{Front-end: Boostrap}\label{tecnologias-boostrap}
+\subsection{Front-end: Boostrap}\label{tecnologias_boostrap}
 \hyperlink{https://www.getbootstrap.com/}{Boostrap} es un framework CSS desarrollado inicialmente  por Twitter que permite dar forma a un sitio web mediante librerías CSS que incluyen tipografías, botones, cuadros, menús y otros elementos que pueden ser utilizados en cualquier sitio web.
 
 Bootstrap esta orientado a facilitar el diseño y elaboración de aplicaciones web utilizando un sistema de cuadrículas que ayuda a conseguir interfaces claras y  \hyperlink{https://es.wikipedia.org/wiki/Diseño_web_adaptable}{'responsive'}, haciendo que las aplicaciones se vean con diferentes diseños en diferentes dispositivos, dependiendo del espacio del que disponga nuestra aplicación.
@@ -141,7 +149,7 @@ Bootstrap esta orientado a facilitar el diseño y elaboración de aplicaciones w
 
 
 
-\subsection{Back-end: Node js}\label{tecnologias-nodejs}
+\subsection{Back-end: Node js}\label{tecnologias_nodejs}
 \hyperlink{https://nodejs.org/}{Nodejs} es un entorno de programación pensado para realizar funciones de servidor. Permite la construcción de servidores de forma muy sencilla y rápida, además se puede aplicar para otros usos. La ejecución es asíncrona. Esto significa que las funciones no son ejecutadas secuencialmente (si existen dos llamadas consecutivas, no es necesario que acabe la primera llamada para ejecutar la segunda).
 Está pensado para ser un gestor de entradas y salidas. No ha sido diseñado para ejecutar gran cantidad de código, sino para realizar comunicaciones muy rápidas y abundantes, tanto con eventos locales como por comunicación por red.
 \imagenflotante{logo-nodejs}{Logo \emph{Node JS}. Fuente: \url{nodejs.com}.}
@@ -154,12 +162,12 @@ Está pensado para ser un gestor de entradas y salidas. No ha sido diseñado par
 
 
 
-\subsection{Back-end: Express }\label{tecnologias-expressjs}
+\subsection{Back-end: Express }\label{tecnologias_expressjs}
 \hyperlink{http://expressjs.com/}{Express js} es un framework web flexible para \emph{Node js} que proporciona un conjunto robusto de características para aplicaciones web y móviles, proporciona una capa delgada de características fundamentales de aplicaciones web. Facilita la creación de API’s gracias la gran variedad de métodos HTTP y middleware que proporciona.
 \imagenflotante{logo-express}{Logo \emph{Express}. Fuente:  \url{expressjs.com}.}
 
 
-\subsection{Base de datos: MongoDB}\label{tecnologias-mongodb}
+\subsection{Base de datos: MongoDB}\label{tecnologias_mongodb}
 Para la parte de la base de datos he escogido \hyperlink{https://www.mongodb.com/}{MongoDB}, estamos hablando de un sistema de gestión de bases de datos no relacionales, o \hyperlink{https://es.wikipedia.org/wiki/NoSQL}{noSQL} . Es decir, un base de datos que no tiene tablas, se basa en colecciones de datos.
 
 En las colecciones se almacenan contenidos que pueden tener diferentes campos. Este sistema almacena los datos en documentos de tipo JSON, cosa que puede favorecer la integración con las aplicaciones que trabajen con este tipo de formatos, como es el caso de una API REST. 
@@ -167,6 +175,9 @@ En las colecciones se almacenan contenidos que pueden tener diferentes campos. E
 
 
 \subsubsection{Detalles: Mongoose}\label{mongoose}
+Se ha utilizado un ODM (\emph{Object-document mapping}) para Mongo y Node.js. Nos permite interactuar con la base de datos mediante objetos de JavaScript, y facilita las operaciones CRUD (Create, Read, Update, Delete) y las validaciones de los usuarios.
+
+\subsubsection{Detalles: Mongoskin}\label{mongoskin}
 Se ha utilizado un ODM (\emph{Object-document mapping}) para Mongo y Node.js. Nos permite interactuar con la base de datos mediante objetos de JavaScript, y facilita las operaciones CRUD (Create, Read, Update, Delete) y las validaciones de los usuarios.
 
 \begin{itemize}
@@ -189,17 +200,18 @@ Las pruebas iniciales se realizaron con  \hyperlink{https://www.getpostman.com}{
 
 \end{itemize}
 
-\subsection{Karma}\label{Karma}
+\subsection{Karma}\label{karma}
 
 
-\subsection{Jasmine}\label{Jasmine}
+\subsection{Jasmine}\label{jasmine}
 
 
 \section{Documentación}\label{docs}
 En este apartado se describen algunas de las herramientas utilizadas para la parte de la documentación del proyecto.
 
- \subsection{La\TeX}\label{latex}
+ \subsection{La\TeX}\label{docs_latex}
   LaTex es un sistema de composición de textos, orientado a la creación de documentos escritos que presenten una alta calidad tipográfica. Por sus características y posibilidades, es usado de forma especialmente intensa en la generación de artículos y libros científicos. Como editor para realizar las modificaciones pertinentes he usado \hyperlink{http://www.xm1math.net/texmaker/}{textmaker} .
+   \subsubsection{Detalles: texmaker}
   
    \subsubsection{Detalles: ShareLatex}
     \hyperlink{https://es.sharelatex.com/}{ShareLatex}  es un servicio online que nos permite crear y compartir documentos en La\TeX. La característica por la que he empleado este editor es por que  permite la edición conjunta de un proyecto desde el navegador y ofrece diferentes tipos de plantillas según el uso que le vayamos a dar. Por lo tanto para realizar tablas, pruebas de imágenes u otros ensayos antes de copiarlo al documento final las he realizado todas aquí ya que resulta demasiado costoso compilar todo el documento.
@@ -209,13 +221,13 @@ En este apartado se describen algunas de las herramientas utilizadas para la par
 El editor de textos propiedad de Apache fue la primera alternativa elegida, aunque más tarde decidí realizar la memoria en La\TeX. para aprender otra manera de realizar documentos de textos que quizá fuera interesante para el futuro.
 \end{itemize}
 
- \subsection{Mendeley}\label{mendeley}
+ \subsection{Mendeley}\label{docs_mendeley}
   \hyperlink{www.mendeley.com/}{Mendeley} es un gestor de referencias bibliográficas. Es una aplicación web y de escritorio, propietaria y gratuita. Permite gestionar y compartir referencias, links, libros o documentos de investigación.
   
-  \section{Otras herramientas}\label{herramientas}
+  \section{Otras herramientas}\label{otrasherramientas}
 En este apartado se describen otras herramientas que se han empleado como son el alojamiento web, el alojamiento de la base de datos, los repositorios u otras tecnologías.
 
- \subsection{Heroku}\label{heroku}
+ \subsection{Heroku}\label{otrasherramientas_heroku}
 \hyperlink{https://www.heroku.com/}{Heroku}  es un servicio de almacenamiento en la nube que además tiene mecanismos y herramientas para que la puesta en producción de las aplicaciones web sea prácticamente automática.
 
  \begin{itemize}
@@ -226,28 +238,30 @@ En este apartado se describen otras herramientas que se han empleado como son el
 
 
   
- \subsection{Mlab}\label{mlab}
+ \subsection{Mlab}\label{otrasherramientas_mlab}
  \hyperlink{https://mlab.com/}{Mlab} Es una plataforma de base de datos como servicio (\emph{DBaaS}), para alojar y gestionar bases de datos MongoDB. Es gratuita, hasta cierto punto, y muy intuitiva en el uso.
 
 
  
   
-   \subsection{NPM}\label{npm}
+   \subsection{NPM}\label{otrasherramientas_npm}
 Es el gestor de paquetes por defecto para \emph{Nodejs}.
   
-   \subsection{Github}\label{github}
+   \subsection{Github}\label{otrasherramientas_github}
    Para el control de versiones se ha utilizado \hyperlink{https://www.github.com/}{Github}. 
    
-    \subsection{Zenhub}\label{zenhub}
+    \subsection{Zenhub}\label{otrasherramientas_zenhub}
     \hyperlink{https://www.zenhub.io/}{Zenhub} es una extensión de Chrome para github. Se utiliza para gestionar proyectos y funciona de manera nativa en la interfaz. Se basa en la metodología ágil yresulta verdaderamente útil a la hora de realizar y gestionar un proyecto, eso sí, hay que cumplir la tareas. 
     
     
 \begin{itemize}
  	\item 	 \subsubsection{Alternativa estudiada: Trello}\label{trello}
-\hyperlink{https://www.trello.com/}{Trello}.  es un gestor de tareas que permite el trabajo de forma colaborativa mediante tableros compuestos de columnas  que representan distintos estados. Se basa en el método Kanban para gestión de proyectos, con tarjetas que viajan por diferentes listas en función de su estado. Lo comencé utilizando pero al final cambié a Zenhub por su mejor integración con el código. Sin embargo me parece una herramienta muy interesante de la cual hago uso para temas personales. 
-     
+\hyperlink{https://www.trello.com/}{Trello}.  es un gestor de tareas que permite el trabajo de forma colaborativa mediante tableros compuestos de columnas  que representan distintos estados. Se basa en el método Kanban para gestión de proyectos, con tarjetas que viajan por diferentes listas en función de su estado. Lo comencé utilizando pero al final cambié a Zenhub por su mejor integración con el código. Sin embargo me parece una herramienta muy interesante de la cual hago uso para temas personales.  
 \end{itemize}
 
+
+   \subsection{Dillinger}\label{otrasherramientas_dillinger}
+    \hyperlink{https://www.zenhub.io/}{Dillinger} es una plataforma \emph{cloud}  basada en HTML5  que permite de manera online modificar código Markdown. Empleada para crear, modificar, añadir mejoras en los archivos \textbf{README.md}
      
      
 
