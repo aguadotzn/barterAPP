@@ -1,0 +1,43 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Register-BarterApp</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <p align="center"> ¡Registro usuarios!</p>
+
+    <form>
+      <ion-item>
+        <ion-label>Nombre</ion-label>
+        <ion-input type="text" placeholder="Su nombre" class="form-control" name="firstName"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Apellidos</ion-label>
+        <ion-input type="text" placeholder="Sus apelldios" class="form-control" name="lastName"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Nombre usuario</ion-label>
+        <ion-input type="text" class="form-control" placeholder="Será reconocido por este nombre." name="username"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Nombre empresa</ion-label>
+        <ion-input  type="text" class="form-control" placeholder="El nombre de su empresa." name="cname"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Correo eletrónico</ion-label>
+        <ion-input type="email" class="form-control" placeholder="Su correo electrónico." name="emailaddress" ></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label>Contraseña</ion-label>
+        <ion-input  type="password" class="form-control" name="password" placeholder="La contraseña que más le guste."></ion-input>
+      </ion-item>
+      <br>
+      <button ion-button block type="submit">Registro</button>
+      <button ion-button block type="submit">Log in</button>
+      <button ion-button block >Cancelar</button>
+    </form>
+</ion-content>

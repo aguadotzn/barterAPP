@@ -1,14 +1,26 @@
 <ion-header>
   <ion-navbar>
+    <ion-buttons end >
+      <button ion-button icon-only (click)="onLoadLogin()">
+        <ion-icon name="log-in"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title>
-      Ionic Blank
+      BarterApp!
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <div class="jumbotron" >
+    <img class="img.responsive" src="../assets/img/barterapp_logo_nobackground.png" />  
+    <h1 class="display-2">Welcome to Barter</h1>
+     <hr class="my-4">
+    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+    <p>
+      <button (click)="onLoadLogin()" ion-button>Log in</button>
+      <button (click)="onLoadRegister()" ion-button>Registro</button>
+      <button ion-button>Saber Más</button>
+    </p>
+  </div>
 </ion-content>
