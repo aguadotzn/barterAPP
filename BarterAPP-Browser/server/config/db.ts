@@ -1,5 +1,5 @@
 const config = {
-  url : 'mongodb://localhost:27017/test' //Local
+  url : process.env.MONGODB_URI || 'mongodb://localhost:27017/test' 
 };
 //Especificacion de la base de datos
 //Este el fichero que es necesario cambiar para pasar
