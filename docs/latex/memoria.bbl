@@ -1,4 +1,38 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{elearning}
+Silvina~Mariel Castro, Claudio~Ariel Clarenc, Carmen~López de~Lenz,
+  María~Eugenia Moreno, and Norma~Beatriz Tosco.
+\newblock Investigación colaborativa sobre lms, 2013.
+
+\bibitem{calendariodocs}
+Matt Lewis.
+\newblock Angular 2+ calendar documentation, 2017.
+
+\bibitem{curso1}
+Victor Robles-Udemy.
+\newblock Curso de nodejs y angular - crea webapps con el mean stack., 2017.
+
+\bibitem{curso2}
+Victor Robles-Udemy.
+\newblock Introducción a angular 4 - instalación y componentes., 2017.
+
+\bibitem{curso3}
+Victor Robles-Udemy.
+\newblock Introducción teórica a los frameworks de desarrollo., 2017.
+
+\bibitem{articulo1}
+Slant.co.
+\newblock Javascript ides or editors, 2015.
+
+\bibitem{articulo2}
+Cristina Sánchez.
+\newblock El genio que convirtió su blog para informáticos en un gigante de
+  internet, 2017.
+
+\bibitem{angularmarket}
+W3Techs.
+\newblock Usage statistics and market share of angularjs for websites., 2017.
 
 \bibitem{wikisingleton}
 Wikipedia.

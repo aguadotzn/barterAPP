@@ -29,6 +29,7 @@ En este apartado se describen las herramientas utilizadas para el desarrollo del
 
 \subsection{Atom}\label{herramientas_atom}
 \hyperlink{https://atom.io/}{Atom} es un editor de texto moderno de código abierto desarrollado por  \hyperlink{http://brackets.io/}{GitHub}  que se ha escogido en este proyecto para desarrollar la aplicación debido a que esta desarrollado utilizando tecnologías web, luego ha sido creado por y para la web. Es posible ampliar sus funcionalidades a través de plugins desarrollados con \emph{Node.js} que puede ser instalados de una forma sencilla a través del gestor de paquetes internos con el que cuenta, así como diferentes tipos de temas. Esta posibilidad hace que se convierta en un editor de texto muy personal, ya que es el mismo desarrollador el que elige las características que desea tener sin afectar mínimamente al rendimiento.
+
 \imagenflotante{logo-atom}{Logo \emph{Atom}. Fuente: \url{atom.io}.}
 
 \begin{itemize}
@@ -39,12 +40,13 @@ En este apartado se describen las herramientas utilizadas para el desarrollo del
 	\end{itemize}
 	Tal y como he nombrado en la introducción la necesidad o la curiosidad por mejorar mi trabajo hicieron que encontrara nuevas herramientas durante el desarrollo del proyecto, es el caso, por ejemplo, del entorno de desarrollo. Al comienzo empecé con Brackets como IDE, ya que era el entorno que utilizaba el profesor de los cursos que me recomendó  mi tutor. Después y atraído por el uso a diario de Eclipse como herramienta principal de trabajo durante mi período de prácticas con la universidad decidí que podía ser una buena idea el emplearlo también para realizar la API, /underline{craso error} dado que Eclipse no fue creado para el mundo del desarrollo web por lo que me vi con que cada vez me encontraba con menos soporte para lenguajes, sin ir más lejos eclipse no presenta, actualmente, soporte para  \emph{typescript} el lenguaje principal de desarrollo de  \emph{angular 2}. Por fin di con el IDE perfecto para desarrollar entornos web que es el descrito en el párrafo anterior.
 \end{itemize}
+
 \subsubsection{Detalles: WebStorm}\label{detalle_webstorm}
-Otro \emph{IDE} que recomiendo y que ofrece una grandes prestaciones. Según algunos artículos \cite{articulo2} es una de las mejores herramientas para Javascript del mercado, esta enfocado totalmente a este lenguaje web y sigue la misma filosofía de paquetes que Atom. 
+Otro \emph{IDE} que recomiendo y que ofrece una grandes prestaciones es \hyperlink{https://www.jetbrains.com/webstorm/}{Webstorm}. Según algunos artículos \cite{articulo1} es una de las mejores herramientas para Javascript del mercado, esta enfocado totalmente a este lenguaje web y sigue la misma filosofía de paquetes que Atom. 
 
 
 \subsection{Robomongo}\label{herramientas_robomongo}
-\hyperlink{http://http//robomongo.org/}{Robomongo} es una interfaz para \emph{MongoDB} que nos permite conectarnos al servidor de base de datos de forma sencilla ya que nada más arrancarlo podemos crear una nueva conexión. Resulta también muy sencillo de utilizar.
+\hyperlink{http://http//robomongo.org/}{Robomongo} es una interfaz para \emph{MongoDB} que nos permite conectarnos al servidor de base de datos de forma sencilla ya que nada más arrancarlo podemos crear una nueva conexión. Resulta también muy sencillo e intuitivo de utilizar.
 \imagenflotante{logo-robomongo}{Logo \emph{Robomongo}. Fuente: \url{robomongo.org}.}
 
 
@@ -106,16 +108,26 @@ Por otro lado el uso de Angular CLI permite realizar en un solo comando el prepa
 
 El aspecto de una aplicación hola mundo creada por Angular CLI contendría los siguientes elementos:
 
-\imagen{angularclihelloworld}{Vista \emph{App hola Mundo}. Elaboración propia.}
+\imagenflotante{angularclihelloworld}{Vista \emph{App hola Mundo}. Elaboración propia.}
 
 Más información en el Anexo: Manual del programador. 
 
 \subsubsection{Detalles: Calendario Angular}\label{detalle_calendario}
+El calendario elegido ha sido encontrado en github y realizado como un componente de Angular2+, es heredado de un calendario para AngularJS que ya tuvo mucho éxito y posteriormente realizado para versiones superiores. Es un calendario flexible y pensado para muchos usos por lo que no es completamente \emph{responsive} tal y cómo se puede ver en la documentación \cite{calendariodocs}  que está disponible y nos explica de manera detallada como incluirlo en nuestro proyecto Angular.
 
+\begin{itemize}
+	\item \subsubsection{Alternativas estudiadas: otros calendarios} 
+	\begin{itemize}
+		\item \hyperlink{https://fullcalendar.io/}{Full Calendar (Javascript)}
+		\item \hyperlink{https://github.com/nekken/ng2-fullcalendar}{El componente de FullCalendar para Angular2}
+		\item \hyperlink{https://doc.daypilot.org/calendar/angular-2/}{Day pilot }
+		\item \hyperlink{http://angular-ui.github.io/ui-calendar/}{Calendario UI} interesante pero no disponible en versiones de angular 2+.
+	\end{itemize}
+	\end{itemize}
 
-
-\subsubsection{Detalles: Módulos adicionales empleados en este proyecto}\label{detalle_angularmodulos}
+\subsubsection{Detalles: Módulos adicionales empleados con Angular2+}\label{detalle_angularmodulos}
 Algunos de los módulos adicionales a destacar empleados en la parte del cliente han sido:
+
 \begin{itemize}
 \tightlist
 \item
@@ -131,25 +143,21 @@ Algunos de los módulos adicionales a destacar empleados en la parte del cliente
 \begin{itemize}
 	\item	\subsubsection{Alternativas estudiadas}
 	
-	Algunas de las alternativas estudiadas han sido las siguientes:
+	Algunas de las alternativas estudiadas a Angular 2+ han sido las siguientes:
 	\begin{description}
 \item[ \hyperlink{backbonejs.org/}{BackBone JS} ] Es un framework web que permite construir aplicaciones usando Javascript siguiendo el patrón MVC (modelo-vista-controlador), es decir, de características muy similares a Angular
 \item[ \hyperlink{https://www.emberjs.com/}{Ember JS} ] Se trata de un framework web también que representa un cambio de paradigma con respecto a otros frameworks ya que, por ejemplo, para funcionar correctamente nos exige que respetemos totalmente una convenciones de nomenclatura a la hora de nombrar a cada uno de los objetos de la App.
 \item[ \hyperlink{https://facebook.github.io/react/}{React} ] Propiedad de Facebook, ReactJS es una librería Javascript de código abierto que ofrece grandes beneficios en performance, modularidad y promueve un flujo muy claro de datos y eventos, facilitando la planeación y desarrollo de apps complejas. 
 \end{description}
-
 \end{itemize}
-
-
 
 
 \subsection{Front-end: Boostrap}\label{tecnologias_boostrap}
 \hyperlink{https://www.getbootstrap.com/}{Boostrap} es un framework CSS desarrollado inicialmente  por Twitter que permite dar forma a un sitio web mediante librerías CSS que incluyen tipografías, botones, cuadros, menús y otros elementos que pueden ser utilizados en cualquier sitio web.
 
-Bootstrap esta orientado a facilitar el diseño y elaboración de aplicaciones web utilizando un sistema de cuadrículas que ayuda a conseguir interfaces claras y  \hyperlink{https://es.wikipedia.org/wiki/Diseño_web_adaptable}{'responsive'}, haciendo que las aplicaciones se vean con diferentes diseños en diferentes dispositivos, dependiendo del espacio del que disponga nuestra aplicación.
 \imagenflotante{logo-boostrap}{Logo \emph{Boostrap}. Fuente:  \url{getbootstrap.com}.}
 
-\subsection{Front-end: Ionic 2}\label{tecnologias_ionic2}
+\subsection{ Ionic 2}\label{tecnologias_ionic2}
 \hyperlink{https://ionicframework.com/}{Ionic2} es un \emph{framework} gratuito y open source para desarrollar aplicaciones híbridas multiplataforma que utiliza HTML5, CSS (generado por SASS) y Cordova como base. Asegura aplicaciones rápidas, con un alto rendimiento y escalables.
 
 \imagenflotante{logo-ionic}{Logo \emph{Ionic}. Fuente:  \url{ionicframework.com}.}
@@ -161,14 +169,12 @@ Está pensado para ser un gestor de entradas y salidas. No ha sido diseñado par
 
 \begin{itemize}
 	\item \subsubsection{Alternativa estudiada: PHP}\label{php}
-	Un lenguaje ampliamente conocido, con una extensa documentación y multitud de ejemplos. No se integra tan bien como \emph{node js} con \emph{MongoDB}. 
-
+	Un lenguaje ampliamente conocido, con una extensa documentación y multitud de ejemplos. No se integra tan bien como \emph{Node s} con \emph{MongoDB}. 
 \end{itemize}
 
 
-
 \subsection{Back-end: Express }\label{tecnologias_expressjs}
-\hyperlink{http://expressjs.com/}{Express js} es un framework web flexible para \emph{Node js} que proporciona un conjunto robusto de características para aplicaciones web y móviles, proporciona una capa delgada de características fundamentales de aplicaciones web. Facilita la creación de API’s gracias la gran variedad de métodos HTTP y middleware que proporciona.
+\hyperlink{http://expressjs.com/}{Express js} es un framework web flexible para \emph{Nodejs} que proporciona un conjunto robusto de características para aplicaciones web y móviles, proporciona una capa delgada de características fundamentales de aplicaciones web. Facilita la creación de API’s gracias la gran variedad de métodos HTTP y middleware que proporciona.
 \imagenflotante{logo-express}{Logo \emph{Express}. Fuente:  \url{expressjs.com}.}
 
 
@@ -192,16 +198,15 @@ Se ha utilizado un ODM (\emph{Object-document mapping}) para Mongo y Node.js. No
 
 
 \section{Testing}\label{testing}
-En este apartado se describen algunas de las herramientas utilizadas para el testing.
 
 
 \subsection{Postman}\label{postman}
-Las pruebas iniciales se realizaron con  \hyperlink{https://www.getpostman.com}{Postman}. Esta herramienta nos permite construir y gestionar de una forma cómoda nuestras peticiones a servicios \hyperlink{https://es.wikipedia.org/wiki/Transferencia_de_Estado_Representacional}{REST} (Post,Get,etc). Su manejo es realmente intuitivo ya que simplemente tenemos que definir la petición que queremos realizar y pulsar el botón de enviar. Es realmente sencilla de usar y está disponible como extensión del navegador Chrome, pero también como aplicación de escritorio.
+Las pruebas básicas se realizaron con  \hyperlink{https://www.getpostman.com}{Postman}. Esta herramienta nos permite construir y gestionar de una forma cómoda nuestras peticiones a servicios \hyperlink{https://es.wikipedia.org/wiki/Transferencia_de_Estado_Representacional}{REST} (Post, Get, etc). Su manejo es realmente intuitivo ya que simplemente tenemos que definir la petición que queremos realizar, es decir introducir la ruta, y pulsar el botón de enviar. Es realmente fácil de usar y está disponible como extensión del navegador Chrome, pero también como aplicación de escritorio.
 \imagenflotante{logo-postman}{Logo \emph{Postman}. Fuente:  \url{getpostman.com}.}
 
 \begin{itemize}
 	\item	\subsubsection{Alternativa estudiada: SoapUI}
-	Mucho más completo que Postman, \hyperlink{https://www.soapui.org/}{SoapUI} tiene una versión gratuita de código abierto y un versión de pago con algunas funcionalidades que hacen que sea mucho más productiva.
+	Mucho más completo que Postman, \hyperlink{https://www.soapui.org/}{SoapUI} tiene una versión gratuita de código abierto y un versión de pago con algunas funcionalidades que hacen que sea mucho más productiva. El motivo de elección del anterior es por que en los cursos realizados aprendí a manejar éste.
 
 \end{itemize}
 
@@ -217,6 +222,8 @@ En este apartado se describen algunas de las herramientas utilizadas para la par
  \subsection{La\TeX}\label{docs_latex}
   LaTex es un sistema de composición de textos, orientado a la creación de documentos escritos que presenten una alta calidad tipográfica. Por sus características y posibilidades, es usado de forma especialmente intensa en la generación de artículos y libros científicos. Como editor para realizar las modificaciones pertinentes he usado \hyperlink{http://www.xm1math.net/texmaker/}{textmaker} .
    \subsubsection{Detalles: texmaker}
+   
+   Editor de La\TeX para el sistema operativo de MAC. 
   
    \subsubsection{Detalles: ShareLatex}
     \hyperlink{https://es.sharelatex.com/}{ShareLatex}  es un servicio online que nos permite crear y compartir documentos en La\TeX. La característica por la que he empleado este editor es por que  permite la edición conjunta de un proyecto desde el navegador y ofrece diferentes tipos de plantillas según el uso que le vayamos a dar. Por lo tanto para realizar tablas, pruebas de imágenes u otros ensayos antes de copiarlo al documento final las he realizado todas aquí ya que resulta demasiado costoso compilar todo el documento.
@@ -227,7 +234,7 @@ El editor de textos propiedad de Apache fue la primera alternativa elegida, aunq
 \end{itemize}
 
  \subsection{Mendeley}\label{docs_mendeley}
-  \hyperlink{www.mendeley.com/}{Mendeley} es un gestor de referencias bibliográficas. Es una aplicación web y de escritorio, propietaria y gratuita. Permite gestionar y compartir referencias, links, libros o documentos de investigación.
+  \hyperlink{www.mendeley.com/}{Mendeley} es un gestor de referencias bibliográficas. Es una aplicación web y de escritorio, propietaria y gratuita. Permite gestionar y compartir referencias, links, libros o documentos de investigación. Recibí un curso introductorio por parte de la encargada  de gestión de la biblioteca centra de la Universidad de Burgos.
   
   \section{Otras herramientas}\label{otrasherramientas}
 En este apartado se describen otras herramientas que se han empleado como son el alojamiento web, el alojamiento de la base de datos, los repositorios u otras tecnologías.
@@ -264,9 +271,13 @@ Es el gestor de paquetes por defecto para \emph{Nodejs}.
 \hyperlink{https://www.trello.com/}{Trello}.  es un gestor de tareas que permite el trabajo de forma colaborativa mediante tableros compuestos de columnas  que representan distintos estados. Se basa en el método Kanban para gestión de proyectos, con tarjetas que viajan por diferentes listas en función de su estado. Lo comencé utilizando pero al final cambié a Zenhub por su mejor integración con el código. Sin embargo me parece una herramienta muy interesante de la cual hago uso para temas personales.  
 \end{itemize}
 
+ \subsection{StackOverFlow}\label{otrasherramientas_dillinger}
+
+\hyperlink{https://stackoverflow.com/}{Stack Over Flowst} es una de las comunidades de desarrolladores más importantes del mundo \cite{articulo2} en la que se responden cuestiones de diferentes lenguajes. Sinceramente es una herramienta fundamental y existe una gran comunidad de usuarios de Angular que crece cada día.
+
 
    \subsection{Dillinger}\label{otrasherramientas_dillinger}
-    \hyperlink{https://www.zenhub.io/}{Dillinger} es una plataforma \emph{cloud}  basada en HTML5  que permite de manera online modificar código Markdown. Empleada para crear, modificar, añadir mejoras en los archivos \textbf{README.md}
+    \hyperlink{https://www.zenhub.io/}{Dillinger} es una plataforma \emph{cloud}  basada en HTML5  que permite de manera online modificar código Markdown. Empleada para crear, modificar, añadir mejoras en los archivos \textbf{README.md} .
      
      
 
