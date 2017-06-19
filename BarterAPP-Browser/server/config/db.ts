@@ -1,5 +1,5 @@
 const config = {
-  url : process.env.MONGODB_URI || 'mongodb://localhost:27017/test' 
+  url : 'mongodb://fiti:admin@ds131492.mlab.com:31492/heroku_20hs8jg1' || 'mongodb://localhost:27017/test'
 };
 //Especificacion de la base de datos
 //Este el fichero que es necesario cambiar para pasar
