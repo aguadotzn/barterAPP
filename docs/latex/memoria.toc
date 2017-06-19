@@ -77,6 +77,7 @@
 \contentsline {section}{\numberline {5.8}Desarrollo m\IeC {\'o}vil}{33}{section.5.8}
 \contentsline {section}{\numberline {5.9}Documentaci\IeC {\'o}n}{33}{section.5.9}
 \contentsline {section}{\numberline {5.10}Alojamiento Web}{33}{section.5.10}
+\contentsline {section}{\numberline {5.11}Reconocimientos}{33}{section.5.11}
 \contentsline {chapter}{Trabajos relacionados}{34}{chapter*.52}
 \contentsline {section}{\numberline {6.1}Trabajos previos}{34}{section.6.1}
 \contentsline {section}{\numberline {6.2}Competidores}{34}{section.6.2}
