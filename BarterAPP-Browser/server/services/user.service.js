@@ -74,7 +74,7 @@ function getById (_id) {
   return deferred.promise
 }
 
-// Crear un usuario 
+// Crear un usuario
 function create (userParam) {
   var deferred = Q.defer()
     // validacion
@@ -118,7 +118,8 @@ function update (_id, userParam) {
             function (err, user) {
               if (err) deferred.reject(err.name + ': ' + err.message)
               if (user) {
-                // Si ya eviste mostramos un mensaje
+                // Si ya existe mostramos un mensaje
+                   deferred.reject('Nombre de usuario"' + req.body.username + '" en uso.')
               } else {
                 updateUser()
               }

@@ -149,7 +149,7 @@ var acknowledger_event = param
 		                	        { $set: set },
 		                	        function (err, doc) {
 		                	        	if (err) {
-		          	                    	console.log("3 error: " + err);
+		          	                    	//console.log("3 error: " + err);
 		          	                    	deferred.reject(err.name + ': ' + err.message);
 		        		                 }
 

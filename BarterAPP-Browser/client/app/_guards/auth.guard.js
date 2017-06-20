@@ -17,10 +17,10 @@ var AuthGuard = (function () {
     }
     AuthGuard.prototype.canActivate = function (route, state) {
         if (localStorage.getItem('currentUser')) {
-            // logged in so return true
+              // Usuario logeado, devuelve true
             return true;
         }
-        // not logged in so redirect to login page with the return url
+        // Usuario no logeado, le devuelve a la pagina de login de nuevo
         this.router.navigate(['/login'], { queryParams: { returnUrl: state.url } });
         return false;
     };
@@ -31,4 +31,3 @@ AuthGuard = __decorate([
     __metadata("design:paramtypes", [router_1.Router])
 ], AuthGuard);
 exports.AuthGuard = AuthGuard;
-//# sourceMappingURL=auth.guard.js.map

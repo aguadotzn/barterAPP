@@ -41,7 +41,7 @@ var AlertService = (function () {
         this.subject.next({ type: 'success', text: message });
     }
 
-    //Eror
+    //Error
     AlertService.prototype.error = function (message, keepAfterNavigationChange) {
         if (keepAfterNavigationChange === void 0) { keepAfterNavigationChange = false; }
         this.keepAfterNavigationChange = keepAfterNavigationChange;

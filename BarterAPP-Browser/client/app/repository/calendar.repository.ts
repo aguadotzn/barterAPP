@@ -30,7 +30,6 @@ import { User, EventDTO, MyEvent } from '../_models/index';
 // pero lo descubri tarde y me daba demasiados errores
 @Injectable()
 export class CalendarRepository {
-  // this currentUser is taken from browser storage look in constructor
   currentUser: User;
 
   constructor(private http: Http, private config: AppConfig){
