@@ -3,21 +3,22 @@
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Esquema \emph {UI, UX IxD}. Fuente \url {dealfuel.com}.}}{6}{figure.3.1}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces Esquema \emph {MEAN}. Fuente: \url {kambrica.com}.}}{7}{figure.3.2}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Dibujo \emph {MVC}\cite {mvc}. Fuente: \url {artima.com}.}}{8}{figure.3.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Esquema \emph {MVC}. Elaboraci\IeC {\'o}n propia.}}{10}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Logo \emph {Atom}. Fuente: \url {atom.io}.}}{11}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Logo \emph {Robomongo}. Fuente: \url {robomongo.org}.}}{12}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Logo \emph {FF Developers}. Fuente: \url {firefox.com/developer}.}}{12}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Logo \emph {Angular}. Fuente: \url {angular.io}.}}{13}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Esquema componentes. Fuente: \url {rldona.gitbooks.io}.}}{14}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Vista \emph {App hola Mundo}. Elaboraci\IeC {\'o}n propia.}}{15}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Logo \emph {Boostrap}. Fuente: \url {getbootstrap.com}.}}{17}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Logo \emph {Ionic}. Fuente: \url {ionicframework.com}.}}{17}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Logo \emph {Node JS}. Fuente: \url {nodejs.com}.}}{17}{figure.4.13}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Logo \emph {Express}. Fuente: \url {expressjs.com}.}}{18}{figure.4.14}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Logo \emph {MongoDB}. Fuente: \url {mongodb.com}.}}{18}{figure.4.15}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Logo \emph {Postman}. Fuente: \url {getpostman.com}.}}{19}{figure.4.16}
-\contentsline {figure}{\numberline {5.17}{\ignorespaces Caracter\IeC {\'\i }sticas \emph {Angular}. Fuente: \url {wikipedia.org/wiki/Angular.}}}{27}{figure.5.17}
-\contentsline {figure}{\numberline {5.18}{\ignorespaces Esquema Scrum. Fuente: \url {linkedin/pulse/posts/costa-ruitiago}.}}{30}{figure.5.18}
-\contentsline {figure}{\numberline {5.19}{\ignorespaces Esquema interno base de datos. Fuente: Elaboraci\IeC {\'o}n propia.}}{31}{figure.5.19}
-\contentsline {figure}{\numberline {5.20}{\ignorespaces Esquema tipos de turnos. Elaboraci\IeC {\'o}n propia.}}{31}{figure.5.20}
-\contentsline {figure}{\numberline {5.21}{\ignorespaces Esquema de las diferentes prioridades. Fuente: Elaboraci\IeC {\'o}n propia.}}{32}{figure.5.21}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Arquitectura simplificada \emph {MVC}\cite {mvc}. Fuente: Elaboraci\IeC {\'o}n propia.}}{8}{figure.3.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Esquema \emph {MVC}. Elaboraci\IeC {\'o}n propia.}}{10}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Logo \emph {Atom}. Fuente: \url {atom.io}.}}{11}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Logo \emph {Robomongo}. Fuente: \url {robomongo.org}.}}{12}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Logo \emph {FF Developers}. Fuente: \url {firefox.com/developer}.}}{12}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Logo \emph {Angular}. Fuente: \url {angular.io}.}}{13}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Esquema componentes. Fuente: \url {rldona.gitbooks.io}.}}{14}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Vista \emph {App hola Mundo}. Elaboraci\IeC {\'o}n propia.}}{15}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Logo \emph {Boostrap}. Fuente: \url {getbootstrap.com}.}}{16}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Logo \emph {Ionic}. Fuente: \url {ionicframework.com}.}}{17}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Logo \emph {Node JS}. Fuente: \url {nodejs.com}.}}{17}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Logo \emph {Express}. Fuente: \url {expressjs.com}.}}{18}{figure.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Logo \emph {MongoDB}. Fuente: \url {mongodb.com}.}}{18}{figure.4.16}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Logo \emph {Postman}. Fuente: \url {getpostman.com}.}}{19}{figure.4.17}
+\contentsline {figure}{\numberline {5.18}{\ignorespaces Caracter\IeC {\'\i }sticas \emph {Angular}. Fuente: \url {wikipedia.org/wiki/Angular.}}}{27}{figure.5.18}
+\contentsline {figure}{\numberline {5.19}{\ignorespaces Esquema Scrum. Fuente: \url {linkedin/pulse/posts/costa-ruitiago}.}}{30}{figure.5.19}
+\contentsline {figure}{\numberline {5.20}{\ignorespaces Esquema interno base de datos. Fuente: Elaboraci\IeC {\'o}n propia.}}{31}{figure.5.20}
+\contentsline {figure}{\numberline {5.21}{\ignorespaces Esquema tipos de turnos. Elaboraci\IeC {\'o}n propia.}}{31}{figure.5.21}
+\contentsline {figure}{\numberline {5.22}{\ignorespaces Esquema de las diferentes prioridades. Fuente: Elaboraci\IeC {\'o}n propia.}}{32}{figure.5.22}

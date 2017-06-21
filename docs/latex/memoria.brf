@@ -1,10 +1,20 @@
+\backcite {mvc}{{\es@scroman {v}}{(document)}{Doc-Start}}
+\backcite {mvc}{{\es@scroman {v}}{(document)}{Doc-Start}}
 \backcite {desarrolloweb1}{{2}{1.1}{section.1.1}}
+\backcite {cleancode}{{5}{3.1}{section.3.1}}
+\backcite {mvc}{{8}{3.3}{figure.3.3}}
+\backcite {mvc}{{8}{3.4}{figure.3.4}}
 \backcite {wikisingleton}{{10}{4.1}{section*.10}}
 \backcite {articulo1}{{11}{4.2}{section*.13}}
 \backcite {calendariodocs}{{15}{4.3}{section*.20}}
-\backcite {articulo2}{{22}{4.6}{section*.49}}
+\backcite {articulo2}{{22}{4.6}{section*.48}}
 \backcite {elearning}{{24}{5.2}{section.5.2}}
 \backcite {curso1}{{25}{5.2}{section.5.2}}
 \backcite {curso2}{{25}{5.2}{section.5.2}}
 \backcite {curso3}{{25}{5.2}{section.5.2}}
-\backcite {angularmarket}{{28}{5.3}{figure.5.17}}
+\backcite {angularmarket}{{28}{5.3}{figure.5.18}}
+\backcite {blog1}{{28}{5.4}{section.5.4}}
+\backcite {blog2}{{28}{5.4}{section.5.4}}
+\backcite {trabajo1}{{36}{6.3}{section.6.3}}
+\backcite {grasp}{{36}{6.3}{section.6.3}}
+\backcite {trabajo2}{{36}{6.3}{section.6.3}}

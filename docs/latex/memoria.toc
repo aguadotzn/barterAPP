@@ -34,39 +34,38 @@
 \contentsline {subsubsection}{Detalles: Angular CLI}{14}{section*.19}
 \contentsline {subsubsection}{Detalles: Calendario Angular}{15}{section*.20}
 \contentsline {subsubsection}{Alternativas estudiadas: otros calendarios}{15}{section*.21}
-\contentsline {subsubsection}{Detalles: M\IeC {\'o}dulos adicionales empleados con Angular2+}{16}{section*.22}
-\contentsline {subsubsection}{Alternativas estudiadas}{16}{section*.23}
-\contentsline {subsection}{Front-end: Boostrap}{16}{section*.24}
-\contentsline {subsection}{ Ionic 2}{17}{section*.25}
-\contentsline {subsection}{Back-end: Node js}{17}{section*.26}
-\contentsline {subsubsection}{Alternativa estudiada: PHP}{18}{section*.27}
-\contentsline {subsection}{Back-end: Express }{18}{section*.28}
-\contentsline {subsection}{Base de datos: MongoDB}{18}{section*.29}
-\contentsline {subsubsection}{Detalles: Mongoose}{19}{section*.30}
-\contentsline {subsubsection}{Detalles: Mongoskin}{19}{section*.31}
-\contentsline {subsubsection}{Alternativa estudiada: Cassandra}{19}{section*.32}
+\contentsline {subsubsection}{Alternativas estudiadas}{16}{section*.22}
+\contentsline {subsection}{Front-end: Boostrap}{16}{section*.23}
+\contentsline {subsection}{ Ionic 2}{16}{section*.24}
+\contentsline {subsection}{Back-end: Node js}{17}{section*.25}
+\contentsline {subsubsection}{Alternativa estudiada: PHP}{17}{section*.26}
+\contentsline {subsection}{Back-end: Express }{17}{section*.27}
+\contentsline {subsection}{Base de datos: MongoDB}{18}{section*.28}
+\contentsline {subsubsection}{Detalles: Mongoose}{18}{section*.29}
+\contentsline {subsubsection}{Detalles: Mongoskin}{18}{section*.30}
+\contentsline {subsubsection}{Alternativa estudiada: Cassandra}{19}{section*.31}
 \contentsline {section}{\numberline {4.4}Testing}{19}{section.4.4}
-\contentsline {subsection}{Postman}{19}{section*.33}
-\contentsline {subsubsection}{Alternativa estudiada: SoapUI}{20}{section*.34}
-\contentsline {subsection}{Karma}{20}{section*.35}
-\contentsline {subsection}{Jasmine}{20}{section*.36}
+\contentsline {subsection}{Postman}{19}{section*.32}
+\contentsline {subsubsection}{Alternativa estudiada: SoapUI}{19}{section*.33}
+\contentsline {subsection}{Karma}{20}{section*.34}
+\contentsline {subsection}{Jasmine}{20}{section*.35}
 \contentsline {section}{\numberline {4.5}Documentaci\IeC {\'o}n}{20}{section.4.5}
-\contentsline {subsection}{LaT\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}}{20}{section*.37}
-\contentsline {subsubsection}{Detalles: texmaker}{20}{section*.38}
-\contentsline {subsubsection}{Detalles: ShareLatex}{20}{section*.39}
-\contentsline {subsubsection}{Alternativa estudiada: Open Office}{20}{section*.40}
-\contentsline {subsection}{Mendeley}{21}{section*.41}
+\contentsline {subsection}{LaT\kern -.1667em\lower .5ex\hbox {E}\kern -.125emX\spacefactor \@m {}}{20}{section*.36}
+\contentsline {subsubsection}{Detalles: texmaker}{20}{section*.37}
+\contentsline {subsubsection}{Detalles: ShareLatex}{20}{section*.38}
+\contentsline {subsubsection}{Alternativa estudiada: Open Office}{20}{section*.39}
+\contentsline {subsection}{Mendeley}{20}{section*.40}
 \contentsline {section}{\numberline {4.6}Otras herramientas}{21}{section.4.6}
-\contentsline {subsection}{Heroku}{21}{section*.42}
-\contentsline {subsubsection}{Alternativas estudiadas: Plataformas en la nube}{21}{section*.43}
-\contentsline {subsection}{Mlab}{21}{section*.44}
-\contentsline {subsection}{NPM}{21}{section*.45}
-\contentsline {subsection}{Github}{21}{section*.46}
-\contentsline {subsection}{Zenhub}{21}{section*.47}
-\contentsline {subsubsection}{Alternativa estudiada: Trello}{22}{section*.48}
-\contentsline {subsection}{StackOverFlow}{22}{section*.49}
-\contentsline {subsection}{Dillinger}{22}{section*.50}
-\contentsline {chapter}{Aspectos relevantes del desarrollo del proyecto}{23}{chapter*.51}
+\contentsline {subsection}{Heroku}{21}{section*.41}
+\contentsline {subsubsection}{Alternativas estudiadas: Plataformas en la nube}{21}{section*.42}
+\contentsline {subsection}{Mlab}{21}{section*.43}
+\contentsline {subsection}{NPM}{21}{section*.44}
+\contentsline {subsection}{Github}{21}{section*.45}
+\contentsline {subsection}{Zenhub}{21}{section*.46}
+\contentsline {subsubsection}{Alternativa estudiada: Trello}{21}{section*.47}
+\contentsline {subsection}{StackOverFlow}{22}{section*.48}
+\contentsline {subsection}{Dillinger}{22}{section*.49}
+\contentsline {chapter}{Aspectos relevantes del desarrollo del proyecto}{23}{chapter*.50}
 \contentsline {section}{\numberline {5.1}Inicio del proyecto}{23}{section.5.1}
 \contentsline {section}{\numberline {5.2}Formaci\IeC {\'o}n}{24}{section.5.2}
 \contentsline {section}{\numberline {5.3}Frameworks cliente}{25}{section.5.3}
@@ -76,14 +75,13 @@
 \contentsline {section}{\numberline {5.7}Desarrollo web}{33}{section.5.7}
 \contentsline {section}{\numberline {5.8}Desarrollo m\IeC {\'o}vil}{33}{section.5.8}
 \contentsline {section}{\numberline {5.9}Documentaci\IeC {\'o}n}{33}{section.5.9}
-\contentsline {section}{\numberline {5.10}Alojamiento Web}{33}{section.5.10}
-\contentsline {section}{\numberline {5.11}Reconocimientos}{33}{section.5.11}
-\contentsline {chapter}{Trabajos relacionados}{34}{chapter*.52}
-\contentsline {section}{\numberline {6.1}Trabajos previos}{34}{section.6.1}
-\contentsline {section}{\numberline {6.2}Competidores}{34}{section.6.2}
-\contentsline {section}{\numberline {6.3}Otros trabajos}{35}{section.6.3}
-\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{36}{chapter*.53}
-\contentsline {section}{\numberline {7.1}Conclusiones proyecto}{36}{section.7.1}
-\contentsline {section}{\numberline {7.2}Conclusiones personales}{36}{section.7.2}
-\contentsline {section}{\numberline {7.3}L\IeC {\'\i }neas de trabajo}{36}{section.7.3}
-\contentsline {chapter}{Bibliograf\'{\i }a}{38}{section*.55}
+\contentsline {section}{\numberline {5.10}Reconocimientos}{33}{section.5.10}
+\contentsline {chapter}{Trabajos relacionados}{35}{chapter*.51}
+\contentsline {section}{\numberline {6.1}Trabajos previos}{35}{section.6.1}
+\contentsline {section}{\numberline {6.2}Competidores}{35}{section.6.2}
+\contentsline {section}{\numberline {6.3}Otros trabajos}{36}{section.6.3}
+\contentsline {chapter}{Conclusiones y L\IeC {\'\i }neas de trabajo futuras}{37}{chapter*.52}
+\contentsline {section}{\numberline {7.1}Conclusiones proyecto}{37}{section.7.1}
+\contentsline {section}{\numberline {7.2}Conclusiones personales}{37}{section.7.2}
+\contentsline {section}{\numberline {7.3}L\IeC {\'\i }neas de trabajo}{37}{section.7.3}
+\contentsline {chapter}{Bibliograf\'{\i }a}{39}{section*.54}

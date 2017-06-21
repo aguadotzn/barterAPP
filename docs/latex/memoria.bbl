@@ -9,9 +9,23 @@ Silvina~Mariel Castro, Claudio~Ariel Clarenc, Carmen~López de~Lenz,
 Alida Vergara~Jurado Facilcloud.com.
 \newblock Sql vs nosql ¿cuál debo usar?., 2016.
 
+\bibitem{grasp}
+Fernando~Berzal Galiano.
+\newblock Grasp: Greedy randomized adaptive search procedure, 2011.
+
 \bibitem{calendariodocs}
 Matt Lewis.
 \newblock Angular 2+ calendar documentation, 2017.
+
+\bibitem{cleancode}
+Robert~Cecil Martin.
+\newblock {\em Clean Code: A Handbook of Agile Software Craftsmanship}.
+\newblock PRENTICE-HALL INTERNATIONAL EDITION, 2008.
+
+\bibitem{trabajo1}
+Diego~F. Quintero-Moncada and Carlos~L. Quintero-Araújo.
+\newblock Diseño de un modelo de asignación de turnos para la operación de
+  sistemas de transporte masivo tipo brt, 2013.
 
 \bibitem{curso1}
 Victor Robles-Udemy.
@@ -46,8 +60,18 @@ W3Techs.
 Wikipedia.
 \newblock Singleton pattern --- {Wikipedia}{,} {The Free Encyclopedia}, 2016.
 
+\bibitem{mvc}
+Wikipedia.
+\newblock Model view controller, 2017.
+
 \bibitem{desarrolloweb1}
 Yeeply.
 \newblock El desarrollo web, en alza como nunca antes., 2016.
+
+\bibitem{trabajo2}
+David Álvarez Martínez, Eliana Mirledy~Toro Ocampo, and Ramón
+  Alfonso~Gallego Rendón.
+\newblock Multiskilled workforce scheduling for business with variable demand
+  using the grasp algorithm, 2010.
 
 \end{thebibliography}
