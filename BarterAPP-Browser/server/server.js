@@ -15,14 +15,14 @@ app.use(expressJwt({ secret: config.secret }).unless({ path: ['/users/authentica
 
 // rutas
 var routesEvent = require('./routes/event.router');
-routesEvent(app); // Pasar el objeto app para enlazarse con las  rutas
+routesEvent(app); // pass app object to bind itself to routes
 var routesInterchange = require('./routes/interchange.router');
 routesInterchange(app);
 
 app.use('/users', require('./controllers/users.controller'));
 
 // inicio servidor
-//var port = process.env.PORT || 8000
-var server = app.listen(process.env.PORT || 3000, function(){
-  console.log("Express server listening on port %d in %s mode", this.address().port, app.settings.env);
+var port = process.env.NODE_ENV === 'production' ? 80 : 4000;
+var server = app.listen(port, function () {
+    console.log('Server listening on port ' + port);
 });
