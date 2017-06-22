@@ -23,7 +23,7 @@
 \contentsline {subsection}{Patrones de dise\IeC {\~n}o: singleton}{10}{section*.10}
 \contentsline {section}{\numberline {4.2}Herramientas}{10}{section.4.2}
 \contentsline {subsection}{Atom}{11}{section*.11}
-\contentsline {subsubsection}{Alternativas estudiadas: otros}{11}{section*.12}
+\contentsline {subsubsection}{Alternativas estudiadas}{11}{section*.12}
 \contentsline {subsubsection}{Detalles: WebStorm}{11}{section*.13}
 \contentsline {subsection}{Robomongo}{12}{section*.14}
 \contentsline {subsection}{Firefox for developers}{12}{section*.15}
@@ -33,16 +33,16 @@
 \contentsline {subsubsection}{Detalles: Typescript}{14}{section*.18}
 \contentsline {subsubsection}{Detalles: Angular CLI}{14}{section*.19}
 \contentsline {subsubsection}{Detalles: Calendario Angular}{15}{section*.20}
-\contentsline {subsubsection}{Alternativas estudiadas: otros calendarios}{15}{section*.21}
+\contentsline {subsubsection}{Alternativas estudiadas: otros calendarios}{16}{section*.21}
 \contentsline {subsubsection}{Alternativas estudiadas}{16}{section*.22}
 \contentsline {subsection}{Front-end: Boostrap}{16}{section*.23}
-\contentsline {subsection}{ Ionic 2}{16}{section*.24}
+\contentsline {subsection}{ Ionic 2}{17}{section*.24}
 \contentsline {subsection}{Back-end: Node js}{17}{section*.25}
 \contentsline {subsubsection}{Alternativa estudiada: PHP}{17}{section*.26}
 \contentsline {subsection}{Back-end: Express }{17}{section*.27}
 \contentsline {subsection}{Base de datos: MongoDB}{18}{section*.28}
 \contentsline {subsubsection}{Detalles: Mongoose}{18}{section*.29}
-\contentsline {subsubsection}{Detalles: Mongoskin}{18}{section*.30}
+\contentsline {subsubsection}{Detalles: Mongoskin}{19}{section*.30}
 \contentsline {subsubsection}{Alternativa estudiada: Cassandra}{19}{section*.31}
 \contentsline {section}{\numberline {4.4}Testing}{19}{section.4.4}
 \contentsline {subsection}{Postman}{19}{section*.32}

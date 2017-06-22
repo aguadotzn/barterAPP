@@ -1,26 +1,26 @@
 \capitulo{3}{Conceptos teóricos}
 
-La parte del proyecto más ardua ha sido, sin lugar a dudas, la de aprender a utilizar \emph{frameworks}  web, para lo cual me he nutrido de diversos cursos online, tanto gratuitos como de pago. A continuación, en este apartado voy a relatar todas las tecnologías empleadas y a justificar el por que he empleado unas y no otras. Las técnicas y tecnologías como tal se verán en el siguiente apartado pero todas ellas presentan unos conceptos teóricos comunes que es necesario conocer. 
+La parte del proyecto más ardua ha sido, sin lugar a dudas, la de aprender a utilizar \emph{frameworks}  web, para lo cual me he nutrido de diversos cursos online, tanto gratuitos como de pago. A continuación, en este apartado voy a relatar todas las tecnologías empleadas y a justificar por que he empleado unas y no otras. Las técnicas y tecnologías como tal se verán en el siguiente apartado pero todas ellas presentan unos conceptos teóricos comunes que es necesario conocer. 
 
 
 \section{Introducción}\label{teorico-introduccion}
 El desarrollo de aplicaciones informáticas evoluciona continuamente para adaptarse a las tecnologías de la información y las comunicaciones (TIC). El auge de Internet y de la web ha influido notablemente en el desarrollo de software durante los últimos años. Hoy en día la interfaz de los sistemas de información se implementa utilizando tecnologías web que ofrecen numerosas ventajas tales como el uso de una interfaz uniforme y la mejora del mantenimiento del sistema. Sin embargo, la existencia de numerosos estándares y los intereses de los fabricantes de tecnologías web dificultan el desarrollo de este tipo de aplicaciones. 
 
-En los principios de la informática las relaciones en entre los usuarios y los programas de los que hacían uso era muy diferente a lo que tenemos ahora. Ahora se potencia el diseño basado en usuario, antes es potencia más que el programa estuviera implementado de manera idónea antes que la experiencia que el usuario tenía al hacer uso del mismo. Obviamente ahora también se impulsa esa manera de desarrollar código, lo que se conoce como \emph{clean code} \cite{cleancode}, pero en un mundo en el que la competitividad es tan alta prima sobre todo la experiencia del usuario final, que a fin y al cabo va a ser el que interactúa con tu producto ya sea web o móvil. 
+En los principios de la informática las relaciones entre los usuarios y los programas de los que hacían uso era muy diferente a lo que tenemos ahora. Ahora se potencia el diseño basado en usuario, antes se potenciaba más que el programa estuviera implementado de manera idónea antes que la experiencia que el usuario tenía al hacer uso del mismo. Obviamente ahora también se impulsa esa manera de desarrollar código, lo que se conoce como \emph{clean code} \cite{cleancode}, pero en un mundo en el que la competitividad es tan alta prima sobre todo la experiencia del usuario final, que al fin y al cabo va a ser el que interactúa con tu producto ya sea web o móvil. 
 
 \imagen{uxschema}{Esquema \emph{UI, UX IxD}. Fuente  \url{dealfuel.com}.}
 
 
 
-El mundo de las aplicaciones web es un mundo de constante evolución y actualización, donde aparecen nuevas tecnologías que ofrecen tanto mejoras visuales que mejoran la experiencia del usuario como de rendimiento. Este tipo de tecnologías abren un abanico inmenso de posibilidades, y hacen pensar a los analistas y programadores de aplicaciones web que puede haber otras soluciones que mejoren su aplicación, pero que no estaban disponibles cuando definieron la arquitectura y el diseño de sus aplicaciones. Es un mundo que avanza tan rápido que en muchas ocasiones es imposible estar al día de todos los  \emph{frameworks} o tecnologías que van surgiendo, por eso es mejor focalizar los esfuerzos en alguna en concreto e intentar aprenderla de la mejor manera posible. 
+El mundo de las aplicaciones web es un mundo en constante evolución y actualización, donde aparecen nuevas tecnologías que ofrecen tanto mejoras visuales que mejoran la experiencia del usuario como de rendimiento. Este tipo de tecnologías abren un abanico inmenso de posibilidades, y hacen pensar a los analistas y programadores de aplicaciones web que puede haber otras soluciones que mejoren su aplicación, pero que no estaban disponibles cuando definieron la arquitectura y el diseño de sus aplicaciones. Es un mundo que avanza tan rápido que en muchas ocasiones es imposible estar al día de todos los  \emph{frameworks} o tecnologías que van surgiendo, por eso es mejor focalizar los esfuerzos en alguna en concreto e intentar aprenderla de la mejor manera posible. 
 
 
 
 
 \section{Concepto general del proyecto}\label{teorico-general}
-Hace algún tiempo para realizar una web existía una gran barrera a la hora de entender el concepto de cliente y servidor. Por un lado estaba la parte del cliente, la cual se realizaba en lenguajes puros que todos conocemos como \emph{HTML} y \emph{CSS} para las hojas de estilo. Por otro lado estaba el servidor lo cuál significa cambiar totalmente de lenguaje, lo que suponía un salto para un programador web que debía conocer ambos lados para crear webs seguras y robustas, la parte del cliente es la que interactúa con el usuario, la que nosotros vemos, y la parte del servidor es la parte que conecta con la base de datos, en caso de que sea necesario.
+Hace algún tiempo para realizar una web existía una gran barrera a la hora de entender el concepto de cliente y servidor. Por un lado estaba la parte del cliente, la cual se realizaba en lenguajes puros,  como \emph{HTML} y \emph{CSS} para las hojas de estilo. Por otro lado estaba el servidor lo cuál significa cambiar totalmente de lenguaje, lo que suponía un salto para un programador web que debía conocer ambos lados para crear webs seguras y robustas, la parte del cliente es la que interactúa con el usuario, la que nosotros vemos, y la parte del servidor es la parte que conecta con la base de datos, en caso de que sea necesario.
 
-Todo cambio cuando se popularizó Javascript para la realización webapps, la posibilidad de crear web con un mismo lenguaje en todas las partes resulta muy atractiva tanto para el programador como para la lógica del propio programa o web ya que se disminuye el número de errores o se consiguen localizar de manera más sencilla al no tener que estar cambiando de lenguaje. En este punto es donde surge el stack MEAN:
+Todo cambió cuando se popularizó Javascript para la realización de webapps, la posibilidad de crear web con un mismo lenguaje en todas las partes resulta muy atractiva tanto para el programador como para la lógica del propio programa o web ya que se disminuye el número de errores o se consiguen localizar de manera más sencilla al no tener que estar cambiando de lenguaje. En este punto es donde surge el stack MEAN:
 
 \imagen{meanjs}{Esquema \emph{MEAN}. Fuente: \url{kambrica.com}.} 
 
@@ -36,7 +36,7 @@ La presencia de \emph{Javascript} para el desarrollo de software se está hacien
 
 \section{Análisis del sistema: MVC}\label{analisis-sistema-mvc}
 
-El \emph{modelo-vista-controlador} un patrón de arquitectura de software, que separa los datos y la lógica de negocio de una aplicación de la interfaz de usuario y el módulo encargado de gestionar los eventos y las comunicaciones. Para ello propone la construcción de tres componentes distintos que son el modelo, la vista y el controlador, es decir, por un lado define componentes para la representación de la información, y por otro lado para la interacción con el usuario.
+El \emph{modelo-vista-controlador} es un patrón de arquitectura de software, que separa los datos y la lógica de negocio de una aplicación de la interfaz de usuario y el módulo encargado de gestionar los eventos y las comunicaciones. Para ello propone la construcción de tres componentes distintos que son el modelo, la vista y el controlador, es decir, por un lado define componentes para la representación de la información, y por otro lado para la interacción con el usuario.
 
 \imagen{mvcschema2}{Dibujo \emph{MVC}\cite{mvc}. Fuente: \url{artima.com}.}
 
