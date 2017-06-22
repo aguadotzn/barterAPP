@@ -108,72 +108,80 @@ Tareas principales:
 
 \begin{itemize}
 	\item Angular CLI.
-	\item Bugs
+	\item Bugs: base de datos 
+	\item Bugs: calendario
 \end{itemize}
 
 \imagen{sprint5}{Detalle sprint 5}
 
-El \underline{Sprint 5} fue complicado debido a que cambiar a Angular CLI resulta más sencillo a la hora de desplegar en servidor pero hay que saber como funciona realmente los proyectos en Angular CLI
+El \underline{Sprint 5} fue complicado debido a que cambiar a Angular CLI resulta más sencillo a la hora de desplegar en servidor pero hay que saber como funciona realmente los proyectos en Angular CLI.
 
 \subsection{Sprint 6: 09/05/2017 - 16/05/2017}\label{sprint6}
 
 Tareas principales:
 
 \begin{itemize}
-	\item Tarea1
-	\item Tarea2
+	
+		\item Error en turnos diarios, se decide implementar turnos 24 horas para comprobar si el algoritmo intercambia los turnos.
+	\item Anexos en la documentación.
 \end{itemize}
 
 \imagen{sprint6}{Detalle sprint 6}
 
-El \underline{Sprint 6} 
+El \underline{Sprint 6} se centra en que el algoritmo intercambie los turnos de manera eficiente. 
 
 \subsection{Sprint 7: 24/05/2017 - 31/05/2017}\label{sprint7}
 
 Tareas principales:
 
 \begin{itemize}
-	\item Tarea1
-	\item Tarea2
+
+		\item Tras consultar a Luis he obviado un importante elemento y es necesario refactorizar el algoritmo.
+	\item Se incluye una parte para tests pero no me da tiempo.
 \end{itemize}
 
 \imagen{sprint7}{Detalle sprint 7}
 
-El \underline{Sprint 7} 
+El \underline{Sprint 7} se centra en en conseguir que el algoritmo funcione para todos los tipos de turnos.
 
 \subsection{Sprint 8: 01/06/2017 - 10/06/2017}\label{sprint8}
 
 Tareas principales:
 
 \begin{itemize}
-	\item Tarea1
-	\item Tarea2
+	\item Completar últimos componentes
+	\item Terminar documentación.
+	\item Bugs: Travis. 
+	\item Bugs: Heroku y fallo en el algoritmo.
+	\item Pruebas de calidad del código (Cómo \emph{SonarQube} no da soporte a Typescript decidí prescindir de esta herramienta)
 \end{itemize}
 
-%\imagen{sprint8}{Detalle sprint 8}
+\imagen{sprint8}{Detalle sprint 8}
 
-El \underline{Sprint 8} 
+El \underline{Sprint 8} se centra en corregir errores, uno de los cuales no consigo solventar, y realizar pruebas en la calidad del código. 
 
 \subsection{Sprint 9: 10/06/2017 - 20/06/2017}\label{sprint9}
 
 Tareas principales:
 
 \begin{itemize}
-	\item Tarea1
-	\item Tarea2
+	\item Refactorización.
+	\item App móvil: scafolding básico y creación de componentes.
+	\item Envío a Luis de la documentación para posibles comentarios.
+	\item Error en el servidor.
+	
 \end{itemize}
 
-%\imagen{sprint9}{Detalle sprint 9}
+\imagen{sprint9}{Detalle sprint 9}
 
-El \underline{Sprint 9} 
+El \underline{Sprint 9} trata de refactorizar la app para que la calidad del código aumente. Se consigue en un tanto por ciento considerable. 
 
 \subsection{Sprint 10: 20/06/2017 - 30/06/2017}\label{sprint10}
 
 Tareas principales:
 
 \begin{itemize}
-	\item Tarea1
-	\item Tarea2
+	\item 
 \end{itemize}
 
 %\imagen{sprint10}{Detalle sprint 10}
@@ -182,7 +190,7 @@ El \underline{Sprint 10}
 
 
 \section{Estudio de viabilidad}\label{estudio-viabilidad}
-En esta sección se lleva a cabo un estudio para comprobar la viabilidad del proyecto realizado. Paralelamente al desarrollo de la aplicación, como ya se ha nombrado anteriormente, el proyecto formó parte del programa YUZZ para jóvenes emprendedores en el que durante cinco meses realicé un plan de empresa completo. Se detalla por tanto en un documento extra que adjuntaré un estudio de viabilidad exhaustivo  y muy completo en el que se incluyen entre otras cosas: plan de marketing, plan de financiación, estudio de viabilidad o plan de puesta en marcha del negocio a cinco años vista. 
+En esta sección se lleva a cabo un estudio para comprobar la viabilidad del proyecto realizado. Paralelamente al desarrollo de la aplicación, como ya se ha nombrado anteriormente, el proyecto formó parte del \underline{programa YUZZ } para jóvenes emprendedores en el que durante cinco meses realicé un plan de empresa completo. Se detalla por tanto en un documento extra que adjuntaré un estudio de viabilidad exhaustivo  y muy completo en el que se incluyen entre otras cosas: plan de marketing, plan de financiación, estudio de viabilidad o plan de puesta en marcha del negocio a cinco años vista. 
 
 Por lo tanto en esta sección voy a realizar un resumen del documento descrito en el párrafo anterior en el que como conclusión definitiva tendremos un boceto de lo que supondría transformar un proyecto fin de carrera y que pase a formar parte del mercado. Así mismo voy a intentar adaptarlo a las condiciones que se exigen en el proyecto dado que el plan de empresa completo es un estudio de viabilidad completo de aquí a cinco años por lo que resulta ser más extenso y detallado. Se intentará por tanto aquí realizar una estimación.
 
@@ -191,7 +199,7 @@ Por lo tanto en esta sección voy a realizar un resumen del documento descrito e
 La viabilidad económica es la parte donde lograremos detectar si el proyecto es o no rentable económicamente hablando.
 
 \subsubsection{Análisis de costes}\label{costes}
-Económica
+
 \begin{description}
 	\item[Coste de personal] Se considerará que el proyecto ha sido desarrollado en un periodo de cinco meses.  Considerando que se ha trabajado unas 6 horas a día cada semana, y que el programador, que en este caso es una sola persona, ha percibido un sueldo de 13 e/hora, el coste del personal por lo tanto se resume en la siguiente tabla:
 	
@@ -211,16 +219,77 @@ Económica
 \end{center}
 \end{table}
 	
-	\item[Coste de seguridad social] más información sobre el segundo item.
+	\item[Coste de seguridad social] al coste de personal hay que sumar el coste de seguridad social. 
 	
-	\item[Coste de software] más información sobre el segundo item.
 	
-	\item[Coste de Hardware] más información sobre el segundo item.
+	\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+ \emph{Seguridad social} &  \\
+\hline \hline
+ & \emph{23,60} \% contigencias comunes \\ \hline
+&   \emph{7,70} \% en concepto de desempleo \\ \hline
+ &   \emph{0,10} \% en concepto de formación personal. \\ \hline
+\textbf{Gastos Seguridad social}  &   7800 \euro * 31,40 \% =  2449,20 \euro \\ \hline
+\textbf{Gastos personal}  &  7800 \euro + 2449,20 \euro = 10249,2 \euro  \\ \hline
+\end{tabular}
+\caption{Tabla seguridad social.}
+\label{tabla:ssocial}
+\end{center}
+\end{table}
+	
+	\item[Coste de software] Todo el software utilizado para este proyecto es gratuito y de libre distribución. 
+	
+	\item[Coste de Hardware] En este apartado se analizan los costes derivados de la compra de los materiales que son necesarios para llevar a cabo el proyecto. Según la ley de Impuesto de Sociedades, la vida media del inmovilizado  hardware oscila entre 8 y 3 a\~nos. Yo consideraré 3 años. Más detalles en la siguiente tabla.  
+	
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+ \emph{Hardware utilizado}&  \\
+\hline \hline
+ Portátil MacBook Pro 15'' & 1650 \euro  \\ \hline
+Monitor externo Samsung 22'' &    107'99 \euro\\ \hline
+\textbf{Gastos Hardware}  &   1650 \euro + 107,99  =  1757,99 \euro \\ \hline
+\textbf{Coste amortización}  &  1757,99 \euro  / 36 meses = 48,8 \euro / mes  \\ \hline
+\end{tabular}
+\caption{Tabla costes hardware.}
+\label{tabla:hardware}
+\end{center}
+\end{table}
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Coste final hardware} (5 meses)  &  48,8 \euro / mes  *  5 meses = 244 \euro   \\ \hline
+\end{tabular}
+\caption{Coste final hardware.}
+\label{tabla:costefinalhardware}
+\end{center}
+\end{table}
+
+
+\subsection{Coste final desarrollo del proyecto}\label{coste-final}
+
+El coste final del desarrollo del proyecto, con una duración estimada de cinco meses es el siguiente.  
+
+\begin{table}[htb]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+\textbf{Coste final desarrollo proyecto} (5 meses)  &  244 \euro +  10249,2 \euro = 10493 \euro   \\ \hline
+\end{tabular}
+\caption{Coste proyecto final..}
+\label{tabla:costefinal}
+\end{center}
+\end{table}
 
 \end{description}
 
 \subsection{Viabilidad legal}\label{viabilidad-legal}
-La viabilidad legal se centra principalmente en el estudio de las licencias software utilizadas. Realizaremos una tabla resumen sobre las partes más importantes de la aplicación y la licencia que emplean
+La viabilidad legal se centra principalmente en el estudio de las licencias software utilizadas. Realizaremos una tabla resumen sobre las partes más importantes de la aplicación y la licencia que emplean.
 
 \begin{table}[htbp]
 \begin{center}
@@ -241,5 +310,18 @@ Dependencias & Licencia \\
 \label{tabla:licencias}
 \end{center}
 \end{table}
+
+
+Una licencia software es un contrato entre el autor o titular de los derechos de explotación o distribución y el usuario consumidor, usuario profesional o empresa, para la utilización del software cumpliendo una serie de términos y condiciones establecidas dentro de sus cláusulas. Todo el software que empleo es su amplia mayoría es libre ya que la mayoría de código viene o bien de desarrolladores amateur o es libre desde su creación. Emplean por tant las licencias descritas en la tabla anterior por lo que diferencia entre ellas varían en términos como el nombramiento del autor o la garantía , son licencia comunes en software libre \cite{githublicense} , además github provee una página para ayudarte en la elección de tu licencia \citep{githubchoose}. La menos permisiva de entre las descritas es \emph{Apache-2.0} \cite{apache} y la más es la licencia del \emph{MIT} \citep{mit}
+
+Tal y cómo he nombrado anteriormente, y el tutor así lo deseaba, el software puede ser modificado, ayudando así a que crezca en un futuro
+por lo que he elegido \emph{Apache-2.0}. 
+
+
+Para la documentación he elegido una licencia Creative commons, en concreto se ha elegido la \emph{Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)}
+
+
+\imagen{creativecommons}{Licencia Creative commons}
+
 
 

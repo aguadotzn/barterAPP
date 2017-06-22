@@ -13,45 +13,47 @@
 \contentsline {subsection}{Sprint 5: 30/04/2017 - 07/05/2017}{5}{section*.8}
 \contentsline {subsection}{Sprint 6: 09/05/2017 - 16/05/2017}{6}{section*.9}
 \contentsline {subsection}{Sprint 7: 24/05/2017 - 31/05/2017}{6}{section*.10}
-\contentsline {subsection}{Sprint 8: 01/06/2017 - 10/06/2017}{6}{section*.11}
+\contentsline {subsection}{Sprint 8: 01/06/2017 - 10/06/2017}{7}{section*.11}
 \contentsline {subsection}{Sprint 9: 10/06/2017 - 20/06/2017}{7}{section*.12}
-\contentsline {subsection}{Sprint 10: 20/06/2017 - 30/06/2017}{7}{section*.13}
-\contentsline {section}{\numberline {A.3}Estudio de viabilidad}{7}{section.Alph1.3}
-\contentsline {subsection}{Viabilidad econ\IeC {\'o}mica}{8}{section*.14}
-\contentsline {subsubsection}{An\IeC {\'a}lisis de costes}{8}{section*.15}
-\contentsline {subsection}{Viabilidad legal}{8}{section*.16}
-\contentsline {appendix}{\chapternumberline {B}Especificaci\IeC {\'o}n de Requisitos}{10}{appendix.Alph2}
-\contentsline {section}{\numberline {B.1}Introducci\IeC {\'o}n}{10}{section.Alph2.1}
-\contentsline {section}{\numberline {B.2}Objetivos generales}{11}{section.Alph2.2}
-\contentsline {section}{\numberline {B.3}Cat\IeC {\'a}logo de requisitos}{11}{section.Alph2.3}
-\contentsline {subsection}{Requisitos funcionales}{11}{section*.17}
-\contentsline {subsection}{Requisitos no funcionales}{12}{section*.18}
-\contentsline {section}{\numberline {B.4}Especificaci\IeC {\'o}n de requisitos}{12}{section.Alph2.4}
-\contentsline {subsection}{Diagrama casos de uso}{12}{section*.19}
-\contentsline {subsection}{Actores}{13}{section*.20}
-\contentsline {subsection}{Casos de uso}{13}{section*.21}
-\contentsline {appendix}{\chapternumberline {C}Especificaci\IeC {\'o}n de dise\IeC {\~n}o}{26}{appendix.Alph3}
-\contentsline {section}{\numberline {C.1}Introducci\IeC {\'o}n}{26}{section.Alph3.1}
-\contentsline {section}{\numberline {C.2}Dise\IeC {\~n}o de datos}{26}{section.Alph3.2}
-\contentsline {section}{\numberline {C.3}Dise\IeC {\~n}o de datos}{28}{section.Alph3.3}
-\contentsline {appendix}{\chapternumberline {D}Documentaci\IeC {\'o}n t\IeC {\'e}cnica de programaci\IeC {\'o}n}{29}{appendix.Alph4}
-\contentsline {section}{\numberline {D.1}Introducci\IeC {\'o}n}{29}{section.Alph4.1}
-\contentsline {section}{\numberline {D.2}Requerimientos m\IeC {\'\i }nimos necesarios}{30}{section.Alph4.2}
-\contentsline {section}{\numberline {D.3}AngularCLI}{30}{section.Alph4.3}
-\contentsline {subsection}{\IeC {\textquestiondown }Qu\IeC {\'e} es typescript?}{30}{section*.22}
-\contentsline {subsection}{Comandos b\IeC {\'a}sicos}{31}{section*.23}
-\contentsline {section}{\numberline {D.4}Manual del programador}{32}{section.Alph4.4}
-\contentsline {subsection}{Prerequisitos}{33}{section*.24}
-\contentsline {subsection}{Estructura de directorios }{33}{section*.25}
-\contentsline {subsection}{Modo desarrollador}{38}{section*.26}
-\contentsline {subsection}{Servidor (Heroku)}{38}{section*.27}
-\contentsline {subsection}{Base de datos (Mlab)}{39}{section*.28}
-\contentsline {appendix}{\chapternumberline {E}Documentaci\IeC {\'o}n de usuario}{41}{appendix.Alph5}
-\contentsline {section}{\numberline {E.1}Introducci\IeC {\'o}n}{41}{section.Alph5.1}
-\contentsline {section}{\numberline {E.2}Requisitos Usuarios}{41}{section.Alph5.2}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{41}{section*.29}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{41}{section*.30}
-\contentsline {section}{\numberline {E.3}Primeros pasos}{41}{section.Alph5.3}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{41}{section*.31}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{41}{section*.32}
-\contentsline {chapter}{Bibliograf\'{\i }a}{42}{section*.34}
+\contentsline {subsection}{Sprint 10: 20/06/2017 - 30/06/2017}{8}{section*.13}
+\contentsline {section}{\numberline {A.3}Estudio de viabilidad}{8}{section.Alph1.3}
+\contentsline {subsection}{Viabilidad econ\IeC {\'o}mica}{9}{section*.14}
+\contentsline {subsubsection}{An\IeC {\'a}lisis de costes}{9}{section*.15}
+\contentsline {subsection}{Coste final desarrollo del proyecto}{10}{section*.16}
+\contentsline {subsection}{Viabilidad legal}{10}{section*.17}
+\contentsline {appendix}{\chapternumberline {B}Especificaci\IeC {\'o}n de Requisitos}{12}{appendix.Alph2}
+\contentsline {section}{\numberline {B.1}Introducci\IeC {\'o}n}{12}{section.Alph2.1}
+\contentsline {section}{\numberline {B.2}Objetivos generales}{13}{section.Alph2.2}
+\contentsline {section}{\numberline {B.3}Cat\IeC {\'a}logo de requisitos}{13}{section.Alph2.3}
+\contentsline {subsection}{Requisitos funcionales}{13}{section*.18}
+\contentsline {subsection}{Requisitos no funcionales}{14}{section*.19}
+\contentsline {section}{\numberline {B.4}Especificaci\IeC {\'o}n de requisitos}{14}{section.Alph2.4}
+\contentsline {subsection}{Diagrama casos de uso}{14}{section*.20}
+\contentsline {subsection}{Actores}{15}{section*.21}
+\contentsline {subsection}{Casos de uso}{15}{section*.22}
+\contentsline {appendix}{\chapternumberline {C}Especificaci\IeC {\'o}n de dise\IeC {\~n}o}{29}{appendix.Alph3}
+\contentsline {section}{\numberline {C.1}Introducci\IeC {\'o}n}{29}{section.Alph3.1}
+\contentsline {section}{\numberline {C.2}Dise\IeC {\~n}o de datos}{29}{section.Alph3.2}
+\contentsline {section}{\numberline {C.3}Dise\IeC {\~n}o arquitect\IeC {\'o}nico}{31}{section.Alph3.3}
+\contentsline {subsection}{Model Vista Controlador}{31}{section*.23}
+\contentsline {appendix}{\chapternumberline {D}Documentaci\IeC {\'o}n t\IeC {\'e}cnica de programaci\IeC {\'o}n}{32}{appendix.Alph4}
+\contentsline {section}{\numberline {D.1}Introducci\IeC {\'o}n}{32}{section.Alph4.1}
+\contentsline {section}{\numberline {D.2}Requerimientos m\IeC {\'\i }nimos necesarios}{33}{section.Alph4.2}
+\contentsline {section}{\numberline {D.3}AngularCLI}{33}{section.Alph4.3}
+\contentsline {subsection}{\IeC {\textquestiondown }Qu\IeC {\'e} es typescript?}{33}{section*.24}
+\contentsline {subsection}{Comandos b\IeC {\'a}sicos}{34}{section*.25}
+\contentsline {section}{\numberline {D.4}Manual del programador}{35}{section.Alph4.4}
+\contentsline {subsection}{Prerequisitos}{36}{section*.26}
+\contentsline {subsection}{Estructura de directorios }{36}{section*.27}
+\contentsline {subsection}{Modo desarrollador}{41}{section*.28}
+\contentsline {subsection}{Servidor (Heroku)}{41}{section*.29}
+\contentsline {subsection}{Base de datos (Mlab)}{42}{section*.30}
+\contentsline {appendix}{\chapternumberline {E}Documentaci\IeC {\'o}n de usuario}{44}{appendix.Alph5}
+\contentsline {section}{\numberline {E.1}Introducci\IeC {\'o}n}{44}{section.Alph5.1}
+\contentsline {section}{\numberline {E.2}Requisitos Usuarios}{44}{section.Alph5.2}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{44}{section*.31}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{44}{section*.32}
+\contentsline {section}{\numberline {E.3}Primeros pasos}{44}{section.Alph5.3}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{44}{section*.33}
+\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{44}{section*.34}
+\contentsline {chapter}{Bibliograf\'{\i }a}{45}{section*.36}
