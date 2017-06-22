@@ -6,7 +6,6 @@ import { User } from 'app/_models/index';
 /*repository*/
 import { UserRepository } from 'app/repository/index';
 
-
 @Component({
     moduleId: module.id,
     templateUrl: 'home.component.html'

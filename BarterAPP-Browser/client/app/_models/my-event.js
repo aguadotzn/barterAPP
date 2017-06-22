@@ -1,2 +1,2 @@
-MyEvent
-// # sourceMappingURL=my-event.js.map
+MyEvent;
+//# sourceMappingURL=my-event.js.map

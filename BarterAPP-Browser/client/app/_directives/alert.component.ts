@@ -1,5 +1,6 @@
-//Directivas: muestran alertas, mensajes
+﻿//Directivas: muestran alertas, mensajes
 import { Component, OnInit } from '@angular/core';
+
 import { AlertService } from '../_services/index';
 
 @Component({
@@ -8,12 +9,13 @@ import { AlertService } from '../_services/index';
     templateUrl: 'alert.component.html'
 })
 export class AlertComponent {
-    // El mensaje se muestra al usuario
+  // El mensaje se muestra al usuario
     message: any;
 
     constructor(private alertService: AlertService) { }
 
     ngOnInit() {
+
         this.alertService.getMessage().subscribe(message => { this.message = message; });
     }
 }

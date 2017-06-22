@@ -8,3 +8,4 @@ export interface InterchangeDTO {
 
 }
 //https://stackoverflow.com/questions/39272947/dto-design-in-typescript-angular2
+

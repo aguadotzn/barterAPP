@@ -46,16 +46,21 @@ export class CalendarRepository {
     return this.http.post(this.config.apiUrl + '/events', params).map(( response: Response ) => response.json());
   }
 
+  createEvents( events) {
+    return this.http.put(this.config.apiUrl + '/events', events).map(( response: Response ) => response.json());
+  }
+
+
   deleteEvent( eventId: string){
     return this.http.delete(this.config.apiUrl + '/events/'+ eventId).map(( response ) => response);
   }
 
   updateEvent( params: MyEvent ){
-    return this.http.put(this.config.apiUrl + '/events/'+params._id, {_id: params._id,title: params.title, type: params.type, company: this.currentUser.cname, start: params.start, end: params.end, primary_color: params.color.primary , secondary_color: params.color.secondary, status: params.status}).map(( response ) => response);
+    return this.http.put(this.config.apiUrl + '/events/'+params._id, {_id: params._id,title: params.title, type: params.type, company: this.currentUser.cname, start: params.start, end: params.end, primary_color: params.color.primary , secondary_color: params.color.secondary, status: params.status, turn_in_day: params.turn_in_day}).map(( response ) => response);
   }
 
-  findFreeEventsByDayByShift(day, user){
-        return this.http.get(this.config.apiUrl + '/company/'+user.cname+'/events'+'/free/'+day+'/shift/'+user.shift+'/except/'+user.username).map((response : Response) => response.json());
+  findFreeEventsByDayByShift(day, turn_in_day, user){
+        return this.http.get(this.config.apiUrl + '/company/'+user.cname+'/events'+'/free/'+day+'/shift/'+user.shift+'/turn/'+turn_in_day+'/except/'+user.username).map((response : Response) => response.json());
   }
 
   declineShift(params: MyEvent){
@@ -70,8 +75,8 @@ export class CalendarRepository {
        return this.http.post(this.config.apiUrl + '/interchange/activate', params).map((response: Response) => response.json());
   }
 
- // Utilizado para las peticiones Pendiente, aceptadas o rechazadas
- // https://stackoverflow.com/questions/41658162/how-to-do-polling-with-angular-2-observables
+  // Utilizado para las peticiones Pendiente, aceptadas o rechazadas
+  // https://stackoverflow.com/questions/41658162/how-to-do-polling-with-angular-2-observables
  initializePolling(company: string, worker : string, status: string): Observable<any>  {
       return Observable
      .interval(6000)

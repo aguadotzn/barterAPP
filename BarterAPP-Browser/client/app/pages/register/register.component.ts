@@ -11,38 +11,35 @@ import { UserRepository } from 'app/repository/index';
 import { ShiftUtilsService } from 'app/utils/shift.utils.service';
 
 @Component({
-    moduleId: module.id,
-    templateUrl: 'register.component.html'
+  moduleId: module.id,
+  templateUrl: 'register.component.html'
 })
 
 export class RegisterComponent {
-    model: any = {};
-    loading = false;
-    // Para el tipo de turnos que tiene la empresa
-    /*Hay que tener en cuenta que funcionalmente
-    en la  primera version no sirve para nada*/
-    shifts;
+  model: any = {};
+  loading = false;
+  // Para el tipo de turnos que tiene la empresa
+  shifts;
 
-    constructor(
-        private router: Router,
-        private userRepository: UserRepository,
-        private alertService: AlertService,
-        private shiftUtilsService: ShiftUtilsService) {
-        // Como es algo que no deberia cambiar en toda la app he considerado usar el patro SINGLETON
-        this.shifts = shiftUtilsService.getShifts();
+  constructor(
+    private router: Router,
+    private userRepository: UserRepository,
+    private alertService: AlertService,
+    private shiftUtilsService: ShiftUtilsService) {
+    this.shifts = shiftUtilsService.getShifts();
   }
 
-    register() {
-        this.loading = true;
-        this.userRepository.create(this.model)
-            .subscribe(
-                data => {
-                    this.alertService.success('Registro completado.', true);
-                    this.router.navigate(['/login']);
-                },
-                error => {
-                    this.alertService.error(error._body);
-                    this.loading = false;
-                });
-    }
+  register() {
+    this.loading = true;
+    this.userRepository.create(this.model)
+      .subscribe(
+        data => {
+          this.alertService.success('Registro completado.', true);
+          this.router.navigate(['/login']);
+        },
+        error => {
+          this.alertService.error(error._body);
+          this.loading = false;
+        });
+  }
 }

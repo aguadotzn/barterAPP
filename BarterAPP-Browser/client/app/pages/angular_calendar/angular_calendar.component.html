@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<!-- Botones superiores-->
+
 <div class="row text-center">
   <div class="col-md-4">
     <div class="btn-group">
@@ -26,7 +25,7 @@
     </div>
   </div>
   <div class="col-md-4">
-    <h3 >{{ viewDate | calendarDate:(view + 'ViewTitle'):'en' }}</h3>
+    <h3>{{ viewDate | calendarDate:(view + 'ViewTitle'):'en' }}</h3>
   </div>
   <div class="col-md-4">
     <div class="btn-group">
@@ -42,16 +41,15 @@
         [class.active]="view === 'week'">
         Semana
       </div>
-      <div
+      <!--<div
         class="btn btn-primary"
         (click)="view = 'day'"
         [class.active]="view === 'day'">
         Dia
-      </div>
+      </div>-->
     </div>
   </div>
 </div>
-<br>
 <br>
 <!-- Vistas del calendario -->
 <div [ngSwitch]="view">
@@ -79,18 +77,17 @@
     (eventTimesChanged)="eventTimesChanged($event)">
   </mwl-calendar-day-view>
 </div>
-<br>
-<br>
-<!-- Controles de intercambio-->
+
+<!-- Controles para intercambio-->
 <div class="row justify-content-md-center">
 	<div class="col col-lg-2">
 	</div>
 	<div class="col-12 col-md-auto">
 		 <h3 align="center">
-		  ¿Cambios?
+		  <!--¿Cambios?-->
 		 </h3>
 		 <button class="btn btn-primary" (click)="showNormal(0)" >
-		    Vista Normal
+		    Normal
 		 </button>
 		  <button class="btn btn-primary" (click)="showNormal(1)" >
 		   Pendientes<span class="badge badge-pill badge-danger">{{pendingEventCounter}}</span>
@@ -112,7 +109,7 @@
 	</div>
 	<div class="col-12 col-md-auto ">
 		<button
-		    class="btn btn-primary "
+		    class="btn btn-primary btn-lg btn-block "
 		    (click)="addEvent()">
 		    Añadir nuevo turno
 		  </button>
@@ -124,171 +121,213 @@
 
 <!-- Control de añadir -->
 <table class="table table-bordered ">
-  <thead *ngIf = "shiftEvents.length > 0">
+  <thead *ngIf = "events.length > 0">
     <tr>
-      <th *ngIf = " showNormalEvent > 0" title="Compañero que el que cambiar." >Remitente</th>
-      <th title="Nombre de tú turno." >Nombre</th>
+      <th *ngIf = " showNormalEvent > 0" title="Compañero que el que cambiar.">Remitente</th>
+      <th title="Nombre de tu evento.">Nombre</th>
       <th *ngIf = " showNormalEvent == 0" >Tipo</th>
+      <!--<th  >Turno diario</th>-->
       <th  >Fecha</th>
-      <th *ngIf = " showNormalEvent == 1"></th>
-      <th *ngIf = " showNormalEvent  > 1">  </th>
-      <th *ngIf = " showNormalEvent == 0" ></th>
-      <th *ngIf = " showNormalEvent == 1" ></th>
+      <th *ngIf = " showNormalEvent == 1"></th> <!--Aceptar-->
+      <th *ngIf = " showNormalEvent  > 1"></th> <!--¿ok?-->
+      <th *ngIf = " showNormalEvent == 0" ></th> <!--Eliminar-->
+      <th *ngIf = " showNormalEvent == 1"></th> <!--Rechazar-->
     </tr>
   </thead>
   <tbody>
-      <tr *ngFor="let event of shiftEvents; let index = index">
-      <!--  Emisor -->
-      <!-- Peticiones pendientes -->
-      <td *ngIf = "showNormalEvent == 1 && event.getOriginalEvent().status === 'pending'" >
+      <tr *ngFor="let event of events; let index = index">
+
+        <!--  Emisor -->
+
+        <!-- Peticiones pendientes -->
+      <td *ngIf = "showNormalEvent == 1 && event.status === 'pending'" >
         <input
           type="text"
           disabled
-          [(ngModel)]="event.getOriginalEvent().sender"
+          [(ngModel)]="event.sender"
           >
       </td>
-      <!-- rechazado-->
-            <td *ngIf = "showNormalEvent == 2 && event.getOriginalEvent().status === 'declined'" >
+        <!-- rechazado-->
+            <td *ngIf = "showNormalEvent == 2 && event.status === 'declined'" >
         <input
           type="text"
           disabled
-          [(ngModel)]="event.getOriginalEvent().sender"
+          [(ngModel)]="event.sender"
           >
       </td>
-         <!-- aceptado -->
-            <td *ngIf = "showNormalEvent == 3 && event.getOriginalEvent().status === 'accepted'" >
+        <!-- aceptado -->
+            <td *ngIf = "showNormalEvent == 3 && event.status === 'accepted'" >
         <input
           type="text"
           disabled
-          [(ngModel)]="event.getOriginalEvent().sender"
+          [(ngModel)]="event.sender"
           >
       </td>
 
 
 
 
-      <!--  Titulo del evento -->
-      <!-- normal -->
-      <td *ngIf = "showNormalEvent == 0 && event.getOriginalEvent().status === 'normal'">
+        <!--  Titulo del evento -->
+        <!-- normal -->
+      <td *ngIf = "showNormalEvent == 0 && event.status === 'normal'">
         <input
           type="text"
-          [(ngModel)]="event.getOriginalEvent().title"
+          [(ngModel)]="event.title"
           (keyup)="valueChange(index)">
       </td>
-      <!-- pendiente -->
-      <td *ngIf = "showNormalEvent == 1 && event.getOriginalEvent().status === 'pending'">
+        <!-- pendiente -->
+      <td *ngIf = "showNormalEvent == 1 && event.status === 'pending'">
         <input
           type="text"
-          [(ngModel)]="event.getOriginalEvent().title"
+          [(ngModel)]="event.title"
           (keyup)="valueChange(index)">
       </td>
-      <!-- rechazado-->
-      <td *ngIf = "showNormalEvent == 2 && event.getOriginalEvent().status === 'declined'">
+        <!-- rechazado-->
+      <td *ngIf = "showNormalEvent == 2 && event.status === 'declined'">
         <input
           type="text"
-          [(ngModel)]="event.getOriginalEvent().title"
+          [(ngModel)]="event.title"
           (keyup)="valueChange(index)">
       </td>
-      <!-- aceptado -->
-      <td *ngIf = "showNormalEvent == 3 && event.getOriginalEvent().status === 'accepted'">
+        <!-- aceptado -->
+      <td *ngIf = "showNormalEvent == 3 && event.status === 'accepted'">
         <input
           type="text"
-          [(ngModel)]="event.getOriginalEvent().title"
+          [(ngModel)]="event.title"
           (keyup)="valueChange(index)">
       </td>
 
-      <!-- Tipo de evento -->
-      <!-- normal -->
-      <td *ngIf = "showNormalEvent == 0 && event.getOriginalEvent().status === 'normal'">
-        <select [(ngModel)]="event.getOriginalEvent().type" (change)="valueChange(index)" >
+        <!-- Tipo de evento muestra el array -->
+        <!-- normal -->
+      <td *ngIf = "showNormalEvent == 0 && event.status === 'normal'">
+        <select [(ngModel)]="event.type" (change)="valueChange(index)" >
           <option *ngFor="let type of types" [ngValue]="type"> {{type}} </option>
         </select>
       </td>
 
 
+        <!-- Esta parte sirve para mostrar los turnos que hay en un dia
 
- 	  <!-- Fecha de eventos  -->
+      <td *ngIf = "showNormalEvent == 0 && event.status === 'normal'">
+        <select [(ngModel)]="event.turn_in_day" (change)="valueChange(index)" >
+          <option *ngFor="let turn of turnInDay.get(currentUser.shift)" [ngValue]="turn"> {{turn}} </option>
+        </select>
+      </td>
+
+
+        <td *ngIf = "showNormalEvent == 1 && event.status === 'pending'">
+          <input type="text" disabled [value]="event.turn_in_day" >
+
+
+        </td>
+
+        <td *ngIf = "showNormalEvent == 2 && event.status === 'declined'">
+          <input type="text" disabled [value]="event.turn_in_day" >
+        </td>
+
+        <td *ngIf = "showNormalEvent == 3 && event.status ===  'accepted'">
+          <input type="text" disabled [value]="event.turn_in_day" >
+        </td>
+        -->
+
+
+        <!-- fecha de inicio-->
  	  <!-- normal -->
-      <td *ngIf = "showNormalEvent == 0 && event.getOriginalEvent().status === 'normal'">
+      <td *ngIf = "showNormalEvent == 0 && event.status === 'normal'">
         <mwl-demo-utils-date-time-picker
-          [(date)]="event.getOriginalEvent().start"
+          [(date)]="event.start"
           (dateChange)="valueChange(index)"
           placeholder="Not set">
         </mwl-demo-utils-date-time-picker>
       </td>
-      <!-- pendiente -->
-      <td *ngIf = "showNormalEvent == 1 && event.getOriginalEvent().status === 'pending'">
-       <input type="text" disabled [(ngModel)]="event.getOriginalEvent().start" >
+        <!-- pendiente -->
+      <td *ngIf = "showNormalEvent == 1 && event.status === 'pending'">
+       <input type="text" disabled [value]="event.start.toISOString().substring(0, 10)" >
+
+
       </td>
-       <!-- rechazado-->
-      <td *ngIf = "showNormalEvent == 2 && event.getOriginalEvent().status === 'declined'">
-       <input type="text" disabled [(ngModel)]="event.getOriginalEvent().start" >
+        <!-- rechazado-->
+      <td *ngIf = "showNormalEvent == 2 && event.status === 'declined'">
+       <input type="text" disabled [value]="event.start.toISOString().substring(0, 10)" >
       </td>
-      <!-- aceptado -->
-      <td *ngIf = "showNormalEvent == 3 && event.getOriginalEvent().status ===  'accepted'">
-       <input type="text" disabled [(ngModel)]="event.getOriginalEvent().start" >
+        <!-- aceptado -->
+      <td *ngIf = "showNormalEvent == 3 && event.status ===  'accepted'">
+       <input type="text" disabled [value]="event.start.toISOString().substring(0, 10)" >
       </td>
 
 
 
 
-	  <!-- Botones de control turnos -->
+
+
+
+
+        <!-- Botones de control turnos -->
 	  <!-- normal -->
-      <td *ngIf = "showNormalEvent == 0 && event.getOriginalEvent().status === 'normal'">
-        <button class="btn btn-danger" (click)="deleteEvent(index);">
+      <td *ngIf = "showNormalEvent == 0 && event.status === 'normal'">
+        <button
+          class="btn btn-danger"
+          (click)="deleteEvent(index);">
           Eliminar
         </button>
       </td>
-      <!-- pendiente -->
-       <td *ngIf = "showNormalEvent == 1 && event.getOriginalEvent().status === 'pending'">
-        <button class="btn btn-danger"  (click)="accept(index);"  style="background-color: #37ff05;" >
-        Aceptar
+        <!-- pendiente -->
+       <td *ngIf = "showNormalEvent == 1 && event.status === 'pending'">
+        <button class="btn btn-danger"  (click)="accept(index);" >
+             Aceptar
         </button>
       </td>
-      <!-- pendiente -->
-	   <td *ngIf = "showNormalEvent == 1 && event.getOriginalEvent().status === 'pending'">
-        <button class="btn btn-danger" (click)="decline(index);" style="background-color: #FF0505;">
-        Rechazar
+        <!-- pendiente -->
+	   <td *ngIf = "showNormalEvent == 1 && event.status === 'pending'">
+        <button class="btn btn-danger" (click)="decline(index);">
+                Rechazar
         </button>
       </td>
-      <!-- rechazado-->
-      <td *ngIf = "showNormalEvent == 2 && event.getOriginalEvent().status === 'declined'">
+        <!-- rechazado-->
+      	   <td *ngIf = "showNormalEvent == 2 && event.status === 'declined'">
         <button class="btn btn-danger" (click)="makeNormal(index);">
-        Ok
+                Ok
         </button>
       </td>
-       <!-- aceptado -->
-      <td *ngIf = "showNormalEvent == 3 &&  event.getOriginalEvent().status === 'accepted'">
+        <!-- aceptado -->
+            	   <td *ngIf = "showNormalEvent == 3 &&  event.status === 'accepted'">
         <button class="btn btn-danger" (click)="makeNormal(index)">
-        Ok
+                Ok
         </button>
       </td>
+
+
     </tr>
   </tbody>
 </table>
 
-<!-- <div  class="invisible">
-	<mwl-demo-utils-date-time-picker
-          [(date)]="justDate"
-          placeholder="Not set">
-</mwl-demo-utils-date-time-picker>
-        <button class="btn btn-danger" (click)="findFreeEvents();">
-                Busca eventos libres por dia.
-        </button>
-</div> -->
-
 <!-- Ventana elección usuario-->
-<p-dialog header="Usuarios disponibles: " [(visible)]="displayShiftDialog" modal="modal" width="300" [responsive]="true">
-    <div class="row" >
+<p-dialog header="Elija entre las opciones: " [(visible)]="displayShiftDialog" modal="modal" width="300" [responsive]="true" (onHide)="hideDialog()">
+    <div class="row" *ngIf = "!showTurnInDay">
+      Usuarios disponibles:
+      <br>
     <div class="col-12"  *ngFor="let user of freeUsers; let index = index">
+    <br>
     <p-radioButton name="simple" value={{index}} label={{user.username}} [(ngModel)]="choosenFreeUser">
     </p-radioButton>
     </div>
-  <div class="alert alert-danger alert-dismissible fade show" role="alert" *ngIf = "showShiftAlert">
+        <div class="alert alert-danger alert-dismissible fade show" role="alert" *ngIf = "showShiftAlert">
   <strong>{{alert}}</strong>
-  </div>
 </div>
-      <p-footer>
+</div>
+
+  <div class="row" *ngIf = "showTurnInDay">
+    Turnos:
+    <br>
+    <div class="col-12"  *ngFor="let event of possibleDesiredShift; let index = index">
+      <br>
+      <p-radioButton name="turn" value={{index}} label={{event.turn_in_day}}  (onClick)="setTurn(event)">
+      </p-radioButton>
+    </div>
+  </div>
+
+
+  <p-footer *ngIf = "!showTurnInDay">
             <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
                 <button class="btn btn-danger"  (click)="displayShiftDialog=false" >Cancelar</button>
                 <button class="btn btn-danger" (click)="activateShift()"  [disabled]="hideActivateShiftButton()" >Enviar solicitud</button>
@@ -299,5 +338,5 @@
 <!--  prime ng -->
 <p-growl [(value)]="msgs"></p-growl>
 
-<!-- prime ng -->
+<!--  prime ng -->
 <p-growl [(value)]="stickymsgs" sticky="sticky"></p-growl>

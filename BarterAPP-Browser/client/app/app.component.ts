@@ -14,29 +14,25 @@ import { LocalStorageService } from './_services/index';
     templateUrl: 'app.component.html'
 })
 export class AppComponent implements OnInit {
-    //Log in/ Log out
+  //Log in/ Log out
     logInSubscription: Subscription;
     logOutSubscription: Subscription;
     currentUser: User;
-    //Constructor
+  //Constructor
     constructor(private router: Router,  private localStorageService: LocalStorageService) {
-
       //Comprueba si un usuario hace log in
       //El metodo localStorageService tiene dos observables que emiten eventos
       this.logInSubscription = localStorageService.loginAnnounced$.subscribe(
         currentUser => {
           this.currentUser = currentUser;
         });
-
-
-      //Comprueba si un usuario hace log in
+      //Comprueba si un usuario hace log out
       //El metodo localStorageService tiene dos observables que emiten eventos
       //Se fuerza a borrar al usuario
       this.logOutSubscription = localStorageService.logoutAnnounced$.subscribe(
         empty => {
           this.currentUser = null;
         });
-
       //Cuando la aplicacion se inicia o reinicia
       //El metodo JSON.parse crea un JSON del usuario actual
       //https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/JSON/parse
@@ -47,10 +43,11 @@ export class AppComponent implements OnInit {
       // elimina los datos del usuario del navegador
       localStorage.removeItem('currentUser');
       localStorage.clear();
-      // Por si fallara, se fuerza llamando al metodo de localStorage
       this.localStorageService.announceLogout();
       // Navega a la pantalla principal
       this.router.navigate(['/']);
+
+
     }
     ngOnInit() {
         this.currentUser = JSON.parse(localStorage.getItem('currentUser'));

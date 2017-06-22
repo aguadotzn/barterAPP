@@ -1,6 +1,8 @@
 h3 {
   margin: 0 0 10px;
 }
+
+
 .modal {
   position: fixed;
   top: 0;
@@ -33,3 +35,19 @@ pre {
   background-color: #f5f5f5;
   padding: 15px;
 }
+
+
+.boton_personalizado_eliminar{
+   text-decoration: none;
+   padding: 10px;
+   font-weight: 300;
+   font-size: 15px;
+   color: #ff0000;
+   background-color: #rgb(246, 27, 27);
+   border-radius: 6px;
+   border: 2px solid #0016b0;
+ }
+ .boton_personalizado_eliminar:hover{
+   color: #rgb(246, 27, 27);
+   background-color: #358e9d;
+ }

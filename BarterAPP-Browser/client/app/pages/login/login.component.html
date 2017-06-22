@@ -1,20 +1,20 @@
 ﻿<div class="col-md-6 col-md-offset-3" style="margin: 0 auto;">
-    <h2>Login</h2>
-    <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
-        <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !email.valid }">
-            <label for="email" >Correo electrónico</label>
-            <input type="text" class="form-control" placeholder="Correo electrónico con el que se registró." name="email" [(ngModel)]="model.email" #email="ngModel" required/>
-            <div *ngIf="f.submitted && !email.valid" class="help-block" style="color: #FF0505;">Introduzca su correo electrónico.</div>
-        </div>
-        <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
-            <label for="password">Contraseña</label>
-            <input type="password" class="form-control" placeholder="Contraseña con la que se registró." name="password" [(ngModel)]="model.password" #password="ngModel" required />
-            <div *ngIf="f.submitted && !password.valid" class="help-block" style="color: #FF0505;">Introduzca su contraseña.</div>
-        </div>
-        <div class="form-group">
-            <button [disabled]="loading" class="btn btn-primary">Login</button>
-            <img *ngIf="loading" src="" />
-            <a [routerLink]="['/register']" class="btn btn-link">Registro</a>
-        </div>
-    </form>
+  <h2>Login</h2>
+  <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !email.valid }">
+      <label for="email" >Correo electrónico</label>
+      <input type="text" class="form-control" placeholder="Correo electrónico con el que se registró." name="email" [(ngModel)]="model.email" #email="ngModel" required/>
+      <div *ngIf="f.submitted && !email.valid" class="help-block" style="color: #FF0505;">Introduzca su correo electrónico.</div>
+    </div>
+    <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !password.valid }">
+      <label for="password">Contraseña</label>
+      <input type="password" class="form-control" placeholder="Contraseña con la que se registró." name="password" [(ngModel)]="model.password" #password="ngModel" required />
+      <div *ngIf="f.submitted && !password.valid" class="help-block" style="color: #FF0505;">Introduzca su contraseña.</div>
+    </div>
+    <div class="form-group">
+      <button [disabled]="loading" class="btn btn-primary">Login</button>
+      <img *ngIf="loading" src="" />
+      <a [routerLink]="['/register']" class="btn btn-link">Registro</a>
+    </div>
+  </form>
 </div>

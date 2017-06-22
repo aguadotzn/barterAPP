@@ -1,5 +1,6 @@
-//Models: declaracion de un evento 
+//Models: declaracion de un evento
 import { CalendarEvent } from 'angular-calendar';
+
 
 export interface MyEvent extends CalendarEvent {
   _id: string;
@@ -7,4 +8,5 @@ export interface MyEvent extends CalendarEvent {
   username: string;
   status: string;
   sender: string;  //El usuario que ha modificado MyEvent
+  turn_in_day: string; //Los turnos en un día
 }

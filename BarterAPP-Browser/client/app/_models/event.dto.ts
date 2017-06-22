@@ -13,4 +13,6 @@ export interface EventDTO {
   username: string;
   status: string;
   sender: string;
+  turn_in_day: string;
+
 }
