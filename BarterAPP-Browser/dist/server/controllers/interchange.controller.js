@@ -22,7 +22,7 @@ module.exports.accept_shift = function (req, res) {
         res.send(result);
     })
         .catch(function (err) {
-        // console.log("error : " +err)
+        console.log("error : " + err);
         res.status(400).send(err);
     });
 };

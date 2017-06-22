@@ -12,12 +12,12 @@ app.use(bodyParser.json());
 app.use(expressJwt({ secret: config.secret }).unless({ path: ['/users/authenticate', '/users/register', /^\/events(\/w*)*/, /^\/company(\/w*)*/, /^\/interchange(\/w*)*/] }));
 // rutas
 var routesEvent = require('./routes/event.router');
-routesEvent(app); // Pasar el objeto app para enlazarse con las  rutas
+routesEvent(app); // pass app object to bind itself to routes
 var routesInterchange = require('./routes/interchange.router');
 routesInterchange(app);
 app.use('/users', require('./controllers/users.controller'));
 // inicio servidor
-var port = process.env.PORT || 8000;
+var port = process.env.NODE_ENV === 'production' ? 80 : 4000;
 var server = app.listen(port, function () {
     console.log('Server listening on port ' + port);
 });

@@ -14,6 +14,16 @@ module.exports.create_event = function (req, res) {
         res.status(400).send(err);
     });
 };
+// Crear eventos
+module.exports.create_events = function (req, res) {
+    eventService.createAll(req.body)
+        .then(function (event) {
+        res.send(event);
+    })
+        .catch(function (err) {
+        res.status(400).send(err);
+    });
+};
 // Listar todos
 module.exports.list_all_events = function (req, res) {
     eventService.getAll()
@@ -34,7 +44,7 @@ module.exports.list_all_special_events = function (req, res) {
         res.status(400).send(err);
     });
 };
-// Listar todos los eventos (compañia)
+// Listar todos los eventos (por empresa)
 module.exports.list_all_events_by_company = function (req, res) {
     eventService.getAllByCompany(req.params)
         .then(function (events) {

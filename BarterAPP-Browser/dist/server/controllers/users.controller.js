@@ -22,7 +22,7 @@ function authenticate(req, res) {
         }
         else {
             // autenticacion fallida
-            res.status(401).send('Correo electrónico o contraseña incorrectos');
+            res.status(401).send('Correo electrónico o contraseña incorrectos.');
             // res.alert("Contacte con soporte en caso de no poder iniciar sesión.");
         }
     })

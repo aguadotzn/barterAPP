@@ -6,6 +6,7 @@ var bcrypt = require('bcryptjs');
 var Q = require('q');
 var mongo = require('mongoskin');
 var db = mongo.db(config.connectionString, {});
+//Le especificamos la coleccion a usar
 db.bind('users');
 var service = {};
 service.authenticate = authenticate;
@@ -71,7 +72,7 @@ function getById(_id) {
     });
     return deferred.promise;
 }
-// Crear un usuario 
+// Crear un usuario
 function create(userParam) {
     var deferred = Q.defer();
     // validacion
@@ -79,7 +80,7 @@ function create(userParam) {
         if (err)
             deferred.reject(err.name + ': ' + err.message);
         if (user) {
-            // si el nombre ya existe
+            // si el  email ya existe
             deferred.reject('Email "' + userParam.email + '" ya en uso.');
         }
         else {
@@ -88,7 +89,7 @@ function create(userParam) {
     });
     // Despues de la validacion se crea el usuario
     function createUser() {
-        // Se estableccen los datos del usuario omitiendo el campo contraseña
+        // Se establecen los datos del usuario omitiendo el campo contraseña
         var user = _.omit(userParam, 'password');
         // añade la contraseña hash al usuario para almacenarla en la db
         user.hash = bcrypt.hashSync(userParam.password, 10);
@@ -101,7 +102,6 @@ function create(userParam) {
     return deferred.promise;
 }
 // Actualizar usuario
-// (Para version 2.0)
 function update(_id, userParam) {
     var deferred = Q.defer();
     // Validacion
@@ -114,7 +114,8 @@ function update(_id, userParam) {
                 if (err)
                     deferred.reject(err.name + ': ' + err.message);
                 if (user) {
-                    // Si ya eviste mostramos un mensaje
+                    // si el nombre de usuario ya existe
+                    deferred.reject('Nombre de usuario"' + req.body.username + '" en uso.');
                 }
                 else {
                     updateUser();
@@ -132,12 +133,12 @@ function update(_id, userParam) {
             email: userParam.email,
             cname: userParam.cname,
             lastName: userParam.lastName,
-            username: userParam.username
+            username: userParam.username,
         };
-        // Actualizar contraseña (si es necesario)
         if (userParam.password) {
             set.hash = bcrypt.hashSync(userParam.password, 10);
         }
+        // Actualizar contraseña (si es necesario)
         db.users.update({ _id: mongo.helper.toObjectID(_id) }, { $set: set }, function (err, doc) {
             if (err)
                 deferred.reject(err.name + ': ' + err.message);
@@ -149,7 +150,7 @@ function update(_id, userParam) {
 // Eliminar usuario
 function _delete(_id) {
     var deferred = Q.defer();
-    // Se elimina de la base de datps
+    // Se elimina de la base de datos
     db.users.remove({ _id: mongo.helper.toObjectID(_id) }, function (err) {
         if (err)
             deferred.reject(err.name + ': ' + err.message);

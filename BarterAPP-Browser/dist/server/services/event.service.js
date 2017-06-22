@@ -1,8 +1,5 @@
 // Services: controla los turnos
 var config = require('config.json');
-var _ = require('lodash');
-var jwt = require('jsonwebtoken');
-var bcrypt = require('bcryptjs');
 var Q = require('q');
 var mongo = require('mongoskin');
 var db = mongo.db(config.connectionString, {});
@@ -10,24 +7,6 @@ var db = mongo.db(config.connectionString, {});
 db.bind('event');
 db.bind('users');
 var service = {};
-/* Monkoskins test, para comprobar si funciona
-service.testMongoskin = function (param) {
-  var deferred = Q.defer()
-     console.log('params: +' + JSON.stringify(param))
-     var company = param.company
-     var event = param.event
-     var query = { company: company, 'username': {"$ne": event.username},'type': "Free Shifts",'status':'normal' }
-     //console.log("testMongoskin HOLA: " + JSON.stringify(query))
-     db.event.find(query).toArray(function (err, events){
-        if ( err ) deffered.reject(err.name + ': ' + err.message)
-        if(events.length > 0){
-            deferred.resolve(events)
-        }else
-            var emptyObject = {}
-            deferred.resolve(emptyObject)
- })
-return deferred.promise
-}*/
 // Obtener todos
 service.getAll = function () {
     var deferred = Q.defer();
@@ -43,7 +22,6 @@ service.getSpecialByCompanyByWorker = function (param) {
     var deferred = Q.defer();
     var query = { 'company': param.company, 'username': param.username, 'status': { "$ne": param.status } };
     db.event.find(query).toArray(function (err, events) {
-        // En caso de error, se muestra
         if (err)
             deferred.reject(err.name + ': ' + err.message);
         deferred.resolve(events);
@@ -54,7 +32,7 @@ service.getSpecialByCompanyByWorker = function (param) {
 service.getAllByCompany = function (param) {
     var deferred = Q.defer();
     db.event.find({ 'company': param.company }).toArray(function (err, events) {
-        // En caso de error, se muestra
+        // En caso de error, se muestra (en consola)
         if (err)
             deferred.reject(err.name + ': ' + err.message);
         deferred.resolve(events);
@@ -63,47 +41,15 @@ service.getAllByCompany = function (param) {
 };
 // Obtener todos los usuarios de una determinada empresa
 service.getAllByCompanyByWorker = function (param) {
-    // console.log("param in get all object = : " + JSON.stringify(param));
     var deferred = Q.defer();
     db.event.find({ 'company': param.company, 'username': param.username }).toArray(function (err, event) {
-        // En caso de error, se muestra
         if (err)
             deferred.reject(err.name + ': ' + err.message);
         deferred.resolve(event);
     });
     return deferred.promise;
 };
-// Obtener usuarios "libres"
-service.getFreeUsers = function (param) {
-    var deferred = Q.defer();
-    var date = new Date(param.searchDay);
-    var firstDay = new Date(date.getFullYear(), date.getMonth(), 1);
-    var lastDay = new Date(date.getFullYear(), date.getMonth() + 1, 0);
-    db.event.find({ 'company': param.company,
-        'username': { "$ne": param.username },
-        'type': "Free Shifts",
-        'start': { "$gte": firstDay.toISOString() },
-        'end': { "$lte": lastDay.toISOString() } }).toArray(function (err, event) {
-        if (err)
-            deferred.reject(err.name + ': ' + err.message);
-        if (event.length > 0) {
-            var userString = '';
-            for (var i in event) {
-                var name = event[i].username;
-                var start = event[i].start.substr(0, 10);
-                var end = event[i].end.substr(0, 10);
-                userString += 'Usuario' + name + '" ' + start + '~' + end + "\n";
-            }
-        }
-        else
-            userString = 'none';
-        console.log(userString);
-        var dev = { 'users': userString };
-        deferred.resolve(dev);
-    });
-    return deferred.promise;
-};
-// Obtener usuarios "libres" por empresa y dia
+//Encontrar usuario libres por empresa y turno
 service.findFreeUsersByCompanyByDayByShift = function (param) {
     var deferred = Q.defer();
     // console.log("Soy un evento con parametro/dia = " + param.searchDay);
@@ -120,7 +66,15 @@ service.findFreeUsersByCompanyByDayByShift = function (param) {
             for (var i = 0; i < sameShiftUsers.length; i++) {
                 usernameList.push(sameShiftUsers[i].username);
             }
-            var query = { company: param.company, 'username': { $in: usernameList }, 'type': "Free Shifts", 'status': 'normal', 'start': { "$eq": param.searchDay } };
+            var query = {
+                company: param.company,
+                'username': { $in: usernameList },
+                'type': "Free Shifts",
+                'status': 'normal',
+                'start': { "$eq": param.searchDay },
+                turn_in_day: param.turn
+            };
+            //console.log("Libres JSON = : " + JSON.stringify(query));
             db.event.find(query).toArray(function (err, events) {
                 if (err)
                     deferred.reject(err.name + ': ' + err.message);
@@ -149,9 +103,17 @@ service.create = function (param) {
             deferred.reject(err.name + ': ' + err.message);
         var insertedEvent = doc.ops;
         insertedEvent._id = doc.insertedIds;
-        //     console.log("Evento Insertador" + JSON.stringify(insertedEvent[0]));
-        // 	   mongoskin insert return an array that is why you must return only first item from array.
         deferred.resolve(insertedEvent[0]);
+    });
+    return deferred.promise;
+};
+//Crear todos
+service.createAll = function (param) {
+    var deferred = Q.defer();
+    db.event.insert(param, function (err, doc) {
+        if (err)
+            deferred.reject(err.name + ': ' + err.message);
+        deferred.resolve(doc.ops);
     });
     return deferred.promise;
 };
@@ -165,9 +127,11 @@ service.update = function (param) {
         primary_color: param.primary_color,
         secondary_color: param.secondary_color,
         type: param.type,
-        status: param.status
+        status: param.status,
+        turn_in_day: param.turn_in_day
     };
     //console.log("Servicio actualizado!!");
+    //console.log("JSON : " + JSON.stringify(set));
     db.event.updateById(param._id, { $set: set }, function (err, doc) {
         if (err)
             deferred.reject(err.name + ': ' + err.message);
@@ -176,6 +140,7 @@ service.update = function (param) {
     });
     return deferred.promise;
 };
+//Eliminar
 service._delete = function (param) {
     var deferred = Q.defer();
     // console.log("El siguiente servicio se ha borrado: " + param.eventId);
