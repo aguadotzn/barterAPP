@@ -24,8 +24,8 @@ deseado. Se han seguido las recomendaciones del estándar IEEE 830 según la úl
 \section{Objetivos generales}\label{objetivos-generales}
 Los objetivos generales que se perseguían con el proyecto han sido:
 \begin{itemize}
-	\item Desarrollar una aplicación web que permita intercambiar turnos en función de unas restricciones.
-	\item Desarrollar una aplicación híbrida que adapte la anterior funcionalidad a cualquier dispositivo.
+	\item Desarrollar una aplicación web que permita intercambiar turnos.
+	\item Desarrollar una aplicación híbrida que adapte la anterior aplicación web a cualquier dispositivo.
 \end{itemize}
 
 
@@ -35,7 +35,7 @@ A continuación, se enumeran los requisitos específicos :
 En esta sección se especificarán los requisitos del sistema, diferenciando los requisitos funcionales, o sea los  el comportamiento del sistema, de los requisitos no funcionales, que describen características de funcionamiento.
 \subsection{Requisitos funcionales}\label{r-funcionales}
 \begin{description}
-    \item[RF-1 Gestión de usuarios:] Los usuarios son la principal baza de la aplicación se deben poder gestionar correctamente.
+    \item[RF-1 Gestión de usuarios:] Los usuarios son una parte fundamental.
     \begin{itemize}
          \item \textbf{RF-1.1:} Registrar usuarios
          \item \textbf{RF-1.2:} Logear usuarios
@@ -74,7 +74,7 @@ En esta sección se especificarán los requisitos del sistema, diferenciando los
 \begin{description}
     \item [RNF-1 Seguridad] se persigue preservar la seguridad impidiendo acceder a la aplicación sin logearse. O también añadiendo un \emph{hash} para el almacenamiento de las contraseñas de los usuarios, preservando así la seguridad de los mismos.
     \item [RNF.2 Escalabilidad:] la aplicación debe estar preparada para actuar con un gran número de usuarios.
-    \item [RNF.3 Soporte:]  la aplicación debe ser soportable por diferentes navegadores (Restricción: lamentablemente angular 4 no es soportado actualmente por todos los navegadores del mercado)
+    \item [RNF.3 Soporte:]  la aplicación debe ser soportable por diferentes navegadores (Restricción: lamentablemente \emph{Angular 4} no es soportado actualmente por todos los navegadores del mercado)
     \item [RNF.4 Usabilidad:]  la aplicación debe ser fácil de usar 
 \end{description}
 
@@ -288,9 +288,7 @@ Nota: El editar usuarios y eliminar usuarios no esta implementado de cara al usu
 \textbf{Excepciones} &  No es posible más de un turno al día.   \\
 \textbf{Frecuencia} & Media          \\
 \textbf{Importancia} & Alta            \\
-\textbf{Comentarios } &    Se controla que solo se añada un  \\
-& turno al día. No se controla, todavía,  \\
-& en que franja horaria se realizan. \\
+\textbf{Comentarios } &     \\
 \bottomrule
 \end{tabular}
 \caption{CU-06 Añadir turno} 
