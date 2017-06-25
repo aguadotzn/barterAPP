@@ -119,7 +119,7 @@ En esta sección hay que tener en cuenta que el autor de este trabajo proyecto a
 La estructura de directorios general es la siguiente:
 
 %Foto erronea cambiar!
-\imagenflotante{directorios}{Vista carpetas general  \emph{BarterAPP}. Fuente: Elaboración propia.}
+\imagen{directorios}{Vista carpetas general  \emph{BarterAPP}. Fuente: Elaboración propia.}
 
 \begin{itemize}
 	\item \textbf{$/client/$}: \emph{Front-End} 
@@ -237,97 +237,6 @@ La estructura de directorios general es la siguiente:
 \end{adjustbox}
   \end{landscape}
 
-Cada parte de la aplicación tiene características interesante de programación que merece la pena reflejar aquí. Por lo que en los siguientes párrafos voy a intentar resumir las técnicas o librerías en las que me he basado, así como en código de otros compañeros. Es interesante conocer cada una de estas técnicas que, aunque no son estrictamente necesarias en una aplicación Angular, hacen la vida más fácil al programador. 
-
-
-Todos los componentes en Angular tienen una estructura interna exactamente igual:
-
-\imagen{component}{\footnotesize{Componente Angular . Fuente:  \url{http://blog.enriqueoriol.com/}.}}
-
-En la imagen anterior podemos ver que se define un \textbf{selector} que es la parte para introducir ese determinado componente en la plantilla, un \textbf{templateUrl} que define la propia plantilla html asociada a ese componente, \textbf{stylesUrls} que define la hoja de estilos asociada a esa plantilla y \textbf{module.id} que en nuestro caso no tiene demasiada importancia.  Los únicos estrictamente obligatorios son los dos primeros.
-
-Si nos fijamos en las buenas prácticas de programación de Angular dictan que después del nombre de un componente viene la palabra \emph{component}, pasa lo mismo con, por ejemplo, los servicios cuya palabra en este caso será \emph{services}.
-
-En la siguiente imagen podemos ver la relación entre un componente y su propia plantilla.
-
-\imagen{comphtml}{\footnotesize{Relación plantilla-componente . Fuente:  \url{http://academia-binaria.com/}.}}
-
-
-
-
-
-
-%Analisis
-\begin{itemize}
-
-	\item \emph{/app/directives} : las directivas  en este caso se utilizan para lanzar alertas, concretamente en el registro o  de la aplicación. 
-	
-	\item \emph{/app/guards} : es la parte donde realmente se comprueba que un usuario este logeado en la web \cite{guards}. Me basé en un tutoria \cite{logintut} de Jason Watmore, programador Australiano. 
-	
-	\item \emph{/app/models} : junto con \emph{services} una de las partes fundamentales de la aplicación es dónde se describen los datos donde se declaran los atributos que va a tener cada entidad que vamos a usar. En mi caso: \underline{usuarios} y \underline{eventos}.  
-	Se ha usado aqui un DTO \cite{dto} para el caso de los eventos que van a ser intercambiados, es decir, ese turno que un usuario va a intercambiar con otro. Es habitual esta práctica de programación en java pero también empieza a serlo en Angular \cite{dto2}.
-	
-	\item \emph{/app/services} : los servicios de la parte cliente, las alertas nombradas anteriormente o la autenticación tienen su propio servicio. Es interesante el conocer aqui el concepto de \emph{Observable} \cite{ob1} en Angular, a la hora de las comunicaciones http es algo muy a tener en cuenta. La librería \textbf{@angular/http} trae por defecto el servicio http que es el cliente usado para enviar y recibir datos \cite{ob2}, pero sin duda la librería más potente actualmente sobre el tema es \href{http://reactivex.io/rxjs/}{RxJS}. Recomiendo encarecidamente el artículo: Javascript Reactivo y funcional \cite{ob3}, que aborda estos temas con gran entereza.
-	
-	\item \emph{/app/pages} : comprende las distintas páginas \emph{fisicas} de la web.
-	
-	\item \emph{/app/repository} : es la conexión de datos entre la parte del cliente y la parte servidor.
-	
-	\item \emph{/app/utils} : es una carpeta extra que he pretende emplear el patrón \emph{Singleton} definiendo datos inamovibles durante toda la vida de la aplicación.
-	
-	\begin{table}[htbp]
-\begin{center}
-\begin{tabular}{|l|l|}
-\hline
-Definición & Datos  \\
-\hline \hline
-\textbf{Tipos de turno} [shifts] &  24 horas \\ \hline
- &  12 horas \\ \hline
- &  8 horas\\ \hline
- &  6 horas\\ \hline
-  \textbf{Tipos de eventos}  [types] & Intocable \\ \hline
- &  Asignado conforme \\ \hline
- &  Asignado eliminar \\ \hline
- &  Día libre\\ \hline
-  \textbf{Colores asociados a los eventos} [colors] & \textcolor{red}{Rojo} \small{(Intocable)} \\ \hline
- &  \textcolor{blue}{Azul} \small{(Asignado conforme)} \\ \hline
- &  \textcolor{yellow}{Amarillo} \small{(Asignado eliminar)} \\ \hline
- &  \textcolor{green}{Verde} \small{(Día libre)} \\ \hline
-  \textbf{Turnos /día} [turnInDay] & 1 turno por día \\ \hline
- & 2 turnos por día  \\ \hline
- & 3 turnos por día  \\ \hline
- & 4 turnos por día  \\ \hline
-   \textbf{Estados de un evento} [eventStatus] & Normal \\ \hline
- & Pendiente  \\ \hline
- & Aceptado   \\ \hline
- & Rechazado  \\ \hline
-  & Requerido  \\ \hline
-\end{tabular}
-\caption{Datos.}
-\label{tabla:sencilla}
-\end{center}
-\end{table}
-
-En términos de programación todos son arrays excepto los turnos por día que se declaran como un mapa cuya \underline{clave} es el argumento uno, dos, tres y cuatro del array \emph{shifts} que corresponde al tipo de turno, y el \underline{valor} son los turnos en los que se subdivide un día: jornada completa, dos turnos, tres turnos o cuatro turnos.
-
-\item \emph{Calendario} : el calendario es la parte fundamental de la aplicación, se ha empleado un componente desarrollado por \href{https://mattlewis.me/}{Matt Lewis}. Un desarrollador británico que la verdad tiene numerosas aportaciones al mundo \emph{open source}. El calendario está en desarrollo actualmente como se puede ver en su página de \href{https://github.com/mattlewis92/angular-calendar}{github}. 
-\begin{itemize}
-\item \url{https://github.com/mattlewis92/angular-calendar}
-\end{itemize}
-
-
-
-\item Otros detalles a tener en cuenta.
-\begin{itemize}
-\item \emph{ngAfterViewInit} \cite{afterview} : para intentar entederlo diremos que es algo que es necesario que se inicialice antes de la vista principal. 
-\item \emph{PrimeNg}: se trata de una serie de componentes diseñados para Angular que resultan ser realmente útiles, persiguen el diseño responsive de cara al usuario y tienen una comunidad enorme detrás \cite{prime}. Por ejemplo yo he empleado Growl \cite{growl} que se utiliza para lanzar al usuarios los mensajes de confirmación de las diferentes peticiones.  
-
-dentro growl 
-
-\end{itemize}
-	
-\end{itemize}
-
 
 
 
@@ -345,7 +254,7 @@ Hay que tener en cuenta que tenemos diversas tecnologías dentro del proyecto po
     	\end{lstlisting}
 
 \subsection{Servidor (Heroku)}
-Para subir la aplicación al servidor yo he elegido \href{https://www.heroku.com/}{Heroku} y los pasos para lanzar la aplicación son los que se enumeran a continuación:
+Para subir la aplicación al servidor una buena elección es \href{https://www.heroku.com/}{Heroku} y los pasos para lanzar la aplicación son los que se enumeran a continuación:
 
 \begin{enumerate}
 	\item Acceder a la \href{https://www.heroku.com/}{web} de \emph{Heroku}, registrarse y crear una nueva app.
@@ -358,8 +267,8 @@ Para subir la aplicación al servidor yo he elegido \href{https://www.heroku.com
 		git init
 		heroku git:remote -a your-app-name
     	\end{lstlisting}
-	\item Descargar el proyecto BarterApp desde github 
-	\item Editar el servidor(Ruta: \emph{server/config/db.ts}) para introducir un servidor real con MongoDB (lo veremos en la sección siguiente)
+	\item Descargar el código fuente.
+	\item Editar la configuración(Ruta: \emph{server/config/db.ts}) para introducir un servidor para una base de datos \emph{real} con MongoDB (lo veremos en la sección siguiente)-
 	\item Ejecutar los siguientes comandos:
 		\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
 		\begin{lstlisting}[frame=single]
@@ -405,23 +314,32 @@ Como sabemos podemos manejar la base de datos desde línea de comandos pero resu
 
 Nota: para empezar a trabajar con este proyecto es necesario crear las tres colecciones de las que ya hemos hablado en secciones anteriores: \emph{Users, Events, Interchange}, y \underline{no} hacer nada más puesto que según la configuración de la aplicación se debería añadir los usuarios, eventos y turnos de manera automática cuando el usuario hacer click en los botones adecuados. 
 
+\subsection{Servidor (Nanobox)}
+La posibilidad de subir a un servidor como Heroku es fantástica pero he tenido algún que otro problema por lo que finalmente elegí otro servidor, en este caso \href{https://nanobox.io}{Nanobox} que funciona con \href{https://www.digitalocean.com/}{Digital Ocean}. Los servicios no son gratuitos pero ha merecido la pena. 
 
-\begin{itemize}
-  \item Stack MEAN
-  \begin{itemize}
-    \item \textbf{M}ongoose.js (MongoDB):  base de datos
-    \item \textbf{E}xpress.js: backend framework
-    \item \textbf{A}ngular 4: frontend framework
-    \item \textbf{N}ode.js: entorno tiempo de ejecución
-  \end{itemize}
-  \item Otras tecnologías que se utilizan:
-  \begin{itemize}
-    \item Angular CLI
-    \item Boostrap
-    \item Font Awesome
-    \item JSON WEB TOKEN
-  \end{itemize}
-\end{itemize}
+La curva de aprendizaje no es demasiado fáci \cite{nano1} pero tampoco demasiado complicada, además el equipo humano que hay detrás de Nanobox te hace que los problemas que van surgiendo parezcan sencillos. Para subir a Nanobox tu aplicación hay que realizar los siguientes pasos:
+
+\begin{enumerate}
+	\item Crear cuenta en Nanobox.
+	\item Elegir un plan entre los disponibles.
+	\item Elegir un \emph{host}. Recomiendo \textbf{Digital Ocean}.
+	\item Ahora, sabiendo la tecnología a usar, nodejs para el servidor en este caso, se crea un fichero de  \textbf{boxfile.yml} en la raiz del proyecto\citep{nano2} .
+	\item A continuación los comandos:	
+
+	\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
+		\begin{lstlisting}[frame=single] 
+		-nanobox run
+		-nanobox remote barterapp
+		-nanobox deploy
+    	\end{lstlisting}	
+    	
+\end{enumerate}    
+	
+    	Éstos son a grandes rasgos los pasos mínimos para desplegar una aplicación en esta herramienta. Una de las mejores cosas y por la cual conseguí solucionar mi problema con el servidor es el magnífico sistema de \emph{logs} con el que cuenta la plataforma. La diferencia más destacable con Heroku es que en Nanobox subes absolutamente todos los ficheros con los que estas trabajando. 
+
+
+
+
 
 
 

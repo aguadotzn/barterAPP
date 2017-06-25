@@ -10,46 +10,44 @@ A level-1 auxiliary file: ./tex/6_Trabajos_relacionados.aux
 A level-1 auxiliary file: ./tex/7_Conclusiones_Lineas_de_trabajo_futuras.aux
 The style file: plain.bst
 Database file #1: bibliografia.bib
-Warning--I didn't find a database entry for "desarrollo3"
-You've used 21 entries,
+You've used 22 entries,
             2118 wiz_defined-function locations,
-            574 strings with 6061 characters,
-and the built_in function-call counts, 4409 in all, are:
-= -- 376
-> -- 185
+            575 strings with 6105 characters,
+and the built_in function-call counts, 4606 in all, are:
+= -- 393
+> -- 192
 < -- 0
-+ -- 77
-- -- 56
-* -- 160
-:= -- 731
-add.period$ -- 43
-call.type$ -- 21
-change.case$ -- 90
++ -- 80
+- -- 58
+* -- 166
+:= -- 763
+add.period$ -- 45
+call.type$ -- 22
+change.case$ -- 94
 chr.to.int$ -- 0
-cite$ -- 21
-duplicate$ -- 152
-empty$ -- 463
-format.name$ -- 56
-if$ -- 948
+cite$ -- 22
+duplicate$ -- 159
+empty$ -- 485
+format.name$ -- 58
+if$ -- 991
 int.to.chr$ -- 0
-int.to.str$ -- 21
+int.to.str$ -- 22
 missing$ -- 2
-newline$ -- 88
-num.names$ -- 42
-pop$ -- 195
+newline$ -- 92
+num.names$ -- 44
+pop$ -- 204
 preamble$ -- 1
-purify$ -- 70
+purify$ -- 73
 quote$ -- 0
-skip$ -- 166
+skip$ -- 174
 stack$ -- 0
-substring$ -- 105
-swap$ -- 21
+substring$ -- 110
+swap$ -- 22
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 82
+type$ -- 86
 warning$ -- 0
-while$ -- 42
-width$ -- 23
-write$ -- 172
-(There was 1 warning)
+while$ -- 44
+width$ -- 24
+write$ -- 180

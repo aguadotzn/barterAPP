@@ -35,26 +35,34 @@
 \contentsline {appendix}{\chapternumberline {C}Especificaci\IeC {\'o}n de dise\IeC {\~n}o}{29}{appendix.Alph3}
 \contentsline {section}{\numberline {C.1}Introducci\IeC {\'o}n}{29}{section.Alph3.1}
 \contentsline {section}{\numberline {C.2}Dise\IeC {\~n}o de datos}{29}{section.Alph3.2}
-\contentsline {section}{\numberline {C.3}Dise\IeC {\~n}o arquitect\IeC {\'o}nico}{31}{section.Alph3.3}
-\contentsline {subsection}{Modelo Vista Controlador}{31}{section*.24}
-\contentsline {appendix}{\chapternumberline {D}Documentaci\IeC {\'o}n t\IeC {\'e}cnica de programaci\IeC {\'o}n}{32}{appendix.Alph4}
-\contentsline {section}{\numberline {D.1}Introducci\IeC {\'o}n}{32}{section.Alph4.1}
-\contentsline {section}{\numberline {D.2}Requerimientos m\IeC {\'\i }nimos necesarios}{33}{section.Alph4.2}
-\contentsline {section}{\numberline {D.3}AngularCLI}{33}{section.Alph4.3}
-\contentsline {subsection}{\IeC {\textquestiondown }Qu\IeC {\'e} es typescript?}{33}{section*.25}
-\contentsline {subsection}{Comandos b\IeC {\'a}sicos}{34}{section*.26}
-\contentsline {section}{\numberline {D.4}Manual del programador}{35}{section.Alph4.4}
-\contentsline {subsection}{Prerequisitos}{36}{section*.27}
-\contentsline {subsection}{Estructura de directorios }{36}{section*.28}
-\contentsline {subsection}{Modo desarrollador}{43}{section*.29}
-\contentsline {subsection}{Servidor (Heroku)}{43}{section*.30}
-\contentsline {subsection}{Base de datos (Mlab)}{44}{section*.31}
-\contentsline {appendix}{\chapternumberline {E}Documentaci\IeC {\'o}n de usuario}{47}{appendix.Alph5}
-\contentsline {section}{\numberline {E.1}Introducci\IeC {\'o}n}{47}{section.Alph5.1}
-\contentsline {section}{\numberline {E.2}Requisitos Usuarios}{47}{section.Alph5.2}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{47}{section*.32}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{47}{section*.33}
-\contentsline {section}{\numberline {E.3}Primeros pasos}{47}{section.Alph5.3}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n Web}{47}{section*.34}
-\contentsline {subsection}{Aplicaci\IeC {\'o}n M\IeC {\'o}vil}{47}{section*.35}
-\contentsline {chapter}{Bibliograf\'{\i }a}{48}{section*.37}
+\contentsline {section}{\numberline {C.3}Dise\IeC {\~n}o arquitect\IeC {\'o}nico}{36}{section.Alph3.3}
+\contentsline {subsection}{Modelo Vista Controlador}{36}{section*.24}
+\contentsline {appendix}{\chapternumberline {D}Documentaci\IeC {\'o}n t\IeC {\'e}cnica de programaci\IeC {\'o}n}{37}{appendix.Alph4}
+\contentsline {section}{\numberline {D.1}Introducci\IeC {\'o}n}{37}{section.Alph4.1}
+\contentsline {section}{\numberline {D.2}Requerimientos m\IeC {\'\i }nimos necesarios}{38}{section.Alph4.2}
+\contentsline {section}{\numberline {D.3}AngularCLI}{38}{section.Alph4.3}
+\contentsline {subsection}{\IeC {\textquestiondown }Qu\IeC {\'e} es typescript?}{38}{section*.25}
+\contentsline {subsection}{Comandos b\IeC {\'a}sicos}{39}{section*.26}
+\contentsline {section}{\numberline {D.4}Manual del programador}{40}{section.Alph4.4}
+\contentsline {subsection}{Prerequisitos}{40}{section*.27}
+\contentsline {subsection}{Estructura de directorios }{41}{section*.28}
+\contentsline {subsection}{Modo desarrollador}{45}{section*.29}
+\contentsline {subsection}{Servidor (Heroku)}{45}{section*.30}
+\contentsline {subsection}{Base de datos (Mlab)}{46}{section*.31}
+\contentsline {subsection}{Servidor (Nanobox)}{47}{section*.32}
+\contentsline {appendix}{\chapternumberline {E}Documentaci\IeC {\'o}n de usuario}{48}{appendix.Alph5}
+\contentsline {section}{\numberline {E.1}Introducci\IeC {\'o}n}{48}{section.Alph5.1}
+\contentsline {section}{\numberline {E.2}Usuario Web}{48}{section.Alph5.2}
+\contentsline {subsection}{Requisitos m\IeC {\'\i }nimos}{48}{section*.33}
+\contentsline {subsection}{Registro}{48}{section*.34}
+\contentsline {subsection}{Login}{48}{section*.35}
+\contentsline {subsection}{A\IeC {\~n}adir turnos al calendario}{48}{section*.36}
+\contentsline {subsection}{Intercambiar turno}{48}{section*.37}
+\contentsline {subsection}{Ayuda}{49}{section*.38}
+\contentsline {section}{\numberline {E.3}Usuario M\IeC {\'o}vil}{49}{section.Alph5.3}
+\contentsline {subsection}{Registro}{49}{section*.39}
+\contentsline {subsection}{Login}{49}{section*.40}
+\contentsline {subsection}{A\IeC {\~n}adir turnos al calendario}{49}{section*.41}
+\contentsline {subsection}{Intercambiar turno}{49}{section*.42}
+\contentsline {subsection}{Ayuda}{49}{section*.43}
+\contentsline {chapter}{Bibliograf\'{\i }a}{50}{section*.45}

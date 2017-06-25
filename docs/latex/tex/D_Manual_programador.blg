@@ -3,9 +3,9 @@ Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: D_Manual_programador.aux
 I found no \bibdata command---while reading file D_Manual_programador.aux
 I found no \bibstyle command---while reading file D_Manual_programador.aux
-You've used 13 entries,
+You've used 5 entries,
             0 wiz_defined-function locations,
-            96 strings with 581 characters,
+            88 strings with 542 characters,
 and the built_in function-call counts, 0 in all, are:
 = -- 0
 > -- 0

@@ -1,4 +1,4 @@
-\begin{thebibliography}{16}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -61,6 +61,22 @@ Microsoft.
 MIT-Github.
 \newblock Mit license, 2017.
 \newblock URL \url{https://choosealicense.com/licenses/mit/}.
+
+\bibitem[node js(2017)]{nano1}
+Nanobox Official~Page: node js.
+\newblock Examples of nodejs in nanobox, 2017.
+\newblock URL \url{https://guides.nanobox.io/nodejs/express/}.
+
+\bibitem[Page'(2015{\natexlab{a}})]{growl}
+PrimeNG~Official Page'.
+\newblock Growl is used to display messages in an overlay., 2015{\natexlab{a}}.
+\newblock URL \url{https://www.primefaces.org/primeng/growl}.
+
+\bibitem[Page'(2015{\natexlab{b}})]{prime}
+PrimeNG~Official Page'.
+\newblock The most complete user interface suite for angular,
+  2015{\natexlab{b}}.
+\newblock URL \url{https://www.primefaces.org/primeng/}.
 
 \bibitem[Ramos~Martin and Ramos~Martin(2016)]{accesodatos}
 Alicia Ramos~Martin and Maria~Jesus Ramos~Martin.
