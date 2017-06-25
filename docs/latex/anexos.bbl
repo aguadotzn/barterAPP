@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{16}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -27,7 +27,7 @@ CodekStudio'.
 \newblock Javascript reactivo y funcional. conceptos: Observables, rxjs y
   angular 2., 2016.
 \newblock URL
-  \url{https://codekstudio.com/post-blog/conceptos-observables-rxjs-y-angular-2-javascript-reactivo-y-funcional/57d1e2840897131b5ec54b90}.
+  \url{https://codekstudio.com/post-blog/conceptos-observables-rxjs-y-angular-2-javascript-reactivo-y-funcional/}.
 
 \bibitem[Community'(2015)]{ob2}
 Stackoverflow Community'.
@@ -40,6 +40,11 @@ Stackoverflow Community'.
 \newblock Dto design in typescript angular2, 2016.
 \newblock URL
   \url{https://stackoverflow.com/questions/39272947/dto-design-in-typescript-angular2}.
+
+\bibitem[Documentation'(2016)]{afterview}
+Angular~Official Documentation'.
+\newblock Afterviewinit : Interface, 2016.
+\newblock URL \url{https://angular.io/api/core/AfterViewInit}.
 
 \bibitem[Github(2016)]{githubchoose}
 Github.

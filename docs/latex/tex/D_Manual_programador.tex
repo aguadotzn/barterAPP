@@ -281,23 +281,23 @@ En la siguiente imagen podemos ver la relación entre un componente y su propia 
 \hline
 Definición & Datos  \\
 \hline \hline
-\textbf{Tipos de turno} &  24 horas \\ \hline
+\textbf{Tipos de turno} [shifts] &  24 horas \\ \hline
  &  12 horas \\ \hline
  &  8 horas\\ \hline
  &  6 horas\\ \hline
-  \textbf{Colores asociado} & \textcolor{red}{Rojo} \small{(Intocable)} \\ \hline
- &  \textcolor{blue}{Azul} \small{(Asignado conforme)} \\ \hline
- &  \textcolor{yellow}{Amarillo} \small{(Asignado eliminar)} \\ \hline
- &  \textcolor{green}{Verde} \small{(Día libre)} \\ \hline
- \textbf{Tipos de eventos} & Intocable \\ \hline
+  \textbf{Tipos de eventos}  [types] & Intocable \\ \hline
  &  Asignado conforme \\ \hline
  &  Asignado eliminar \\ \hline
  &  Día libre\\ \hline
-  \textbf{Turnos /día} & 1 turno por día \\ \hline
+  \textbf{Colores asociados a los eventos} [colors] & \textcolor{red}{Rojo} \small{(Intocable)} \\ \hline
+ &  \textcolor{blue}{Azul} \small{(Asignado conforme)} \\ \hline
+ &  \textcolor{yellow}{Amarillo} \small{(Asignado eliminar)} \\ \hline
+ &  \textcolor{green}{Verde} \small{(Día libre)} \\ \hline
+  \textbf{Turnos /día} [turnInDay] & 1 turno por día \\ \hline
  & 2 turnos por día  \\ \hline
  & 3 turnos por día  \\ \hline
  & 4 turnos por día  \\ \hline
-   \textbf{Estados de un evento} & Norma \\ \hline
+   \textbf{Estados de un evento} [eventStatus] & Normal \\ \hline
  & Pendiente  \\ \hline
  & Aceptado   \\ \hline
  & Rechazado  \\ \hline
@@ -308,7 +308,23 @@ Definición & Datos  \\
 \end{center}
 \end{table}
 
+En términos de programación todos son arrays excepto los turnos por día que se declaran como un mapa cuya \underline{clave} es el argumento uno, dos, tres y cuatro del array \emph{shifts} que corresponde al tipo de turno, y el \underline{valor} son los turnos en los que se subdivide un día: jornada completa, dos turnos, tres turnos o cuatro turnos.
 
+\item \emph{Calendario} : el calendario es la parte fundamental de la aplicación, se ha empleado un componente desarrollado por \href{https://mattlewis.me/}{Matt Lewis}. Un desarrollador británico que la verdad tiene numerosas aportaciones al mundo \emph{open source}. El calendario está en desarrollo actualmente como se puede ver en su página de \href{https://github.com/mattlewis92/angular-calendar}{github}. 
+\begin{itemize}
+\item \url{https://github.com/mattlewis92/angular-calendar}
+\end{itemize}
+
+
+
+\item Otros detalles a tener en cuenta.
+\begin{itemize}
+\item \emph{ngAfterViewInit} \cite{afterview} : para intentar entederlo diremos que es algo que es necesario que se inicialice antes de la vista principal. 
+\item \emph{PrimeNg}: se trata de una serie de componentes diseñados para Angular que resultan ser realmente útiles, persiguen el diseño responsive de cara al usuario y tienen una comunidad enorme detrás \cite{prime}. Por ejemplo yo he empleado Growl \cite{growl} que se utiliza para lanzar al usuarios los mensajes de confirmación de las diferentes peticiones.  
+
+dentro growl 
+
+\end{itemize}
 	
 \end{itemize}
 
@@ -316,34 +332,7 @@ Definición & Datos  \\
 
 
 
-ngAfterViewInit
-https://angular.io/docs/ts/latest/api/core/index/AfterViewInit-class.html
 
-
-PrimeNg
-%https://www.primefaces.org/primeng/#/
-
-Growl
-%https://www.primefaces.org/primeng/#/growl
-
-Login/Register tutorial
-%http://jasonwatmore.com/post/2016/09/29/angular-2-user-registration-and-login-example-tutorial#register-component-html
-
-AngularCalendar
-https://github.com/mattlewis92/angular-bootstrap-calendar
-
-Multiple components
-https://angular.io/docs/ts/latest/tutorial/toh-pt3.html
-
-Tutorial angular2 components
-https://scotch.io/tutorials/creating-your-first-angular-2-components
-
-https://desarrolloweb.com/articulos/analisis-carpetas-proyecto-angular2.html
-
-
-https://desarrolloweb.com/articulos/introduccion-componentes-angular2.html
-
-http://academia-binaria.com/hola-mundo-en-angular-2/
 
 
 \subsection{Modo desarrollador}

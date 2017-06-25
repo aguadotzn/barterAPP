@@ -1,5 +1,9 @@
 \begin{thebibliography}{10}
 
+\bibitem{academia2}
+Academia Binaria.
+\newblock Hola mundo angular 2, 2016.
+
 \bibitem{elearning}
 Silvina~Mariel Castro, Claudio~Ariel Clarenc, Carmen~López de~Lenz,
   María~Eugenia Moreno, and Norma~Beatriz Tosco.
@@ -7,11 +11,15 @@ Silvina~Mariel Castro, Claudio~Ariel Clarenc, Carmen~López de~Lenz,
 
 \bibitem{blog1}
 Alida Vergara~Jurado Facilcloud.com.
-\newblock Sql vs nosql ¿cuál debo usar?., 2016.
+\newblock Sql vs nosql, 2016.
 
 \bibitem{grasp}
 Fernando~Berzal Galiano.
 \newblock Grasp: Greedy randomized adaptive search procedure, 2011.
+
+\bibitem{scotch1}
+Thomas Greco.
+\newblock Creating your first angular 2 components, 2016.
 
 \bibitem{calendariodocs}
 Matt Lewis.
@@ -55,6 +63,10 @@ Cristina Sánchez.
 \bibitem{angularmarket}
 W3Techs.
 \newblock Usage statistics and market share of angularjs for websites., 2017.
+
+\bibitem{desarrollo1}
+Alberto Basalo-Desarrollo Web.
+\newblock Análisis de las carpetas de un proyecto básico con angular 2, 2016.
 
 \bibitem{wikisingleton}
 Wikipedia.
