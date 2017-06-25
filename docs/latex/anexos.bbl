@@ -1,4 +1,4 @@
-\begin{thebibliography}{6}
+\begin{thebibliography}{15}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -15,6 +15,31 @@ Ben Balter.
 \newblock Open source license usage on github.com, 2015.
 \newblock URL
   \url{https://github.com/blog/1964-open-source-license-usage-on-github-com}.
+
+\bibitem[Binaria'(2017)]{ob1}
+Alberto Basalo-Academia Binaria'.
+\newblock Comunicaciones http observables con angular2, 2017.
+\newblock URL
+  \url{http://academia-binaria.com/comunicaciones-http-observables-con-angular2/}.
+
+\bibitem[CodekStudio'(2016)]{ob3}
+CodekStudio'.
+\newblock Javascript reactivo y funcional. conceptos: Observables, rxjs y
+  angular 2., 2016.
+\newblock URL
+  \url{https://codekstudio.com/post-blog/conceptos-observables-rxjs-y-angular-2-javascript-reactivo-y-funcional/57d1e2840897131b5ec54b90}.
+
+\bibitem[Community'(2015)]{ob2}
+Stackoverflow Community'.
+\newblock How to do polling with angular 2 observables, 2015.
+\newblock URL
+  \url{https://stackoverflow.com/questions/41658162/how-to-do-polling-with-angular-2-observables}.
+
+\bibitem[Community'(2016)]{dto2}
+Stackoverflow Community'.
+\newblock Dto design in typescript angular2, 2016.
+\newblock URL
+  \url{https://stackoverflow.com/questions/39272947/dto-design-in-typescript-angular2}.
 
 \bibitem[Github(2016)]{githubchoose}
 Github.
@@ -38,5 +63,34 @@ Alicia Ramos~Martin and Maria~Jesus Ramos~Martin.
 \newblock Garceta Grupo Editorial, 2016.
 \newblock ISBN 978-8416228607.
 \newblock [Biblioteca Politécnica Río Vena].
+
+\bibitem[Thoughtram'(2016)]{guards}
+Thoughtram'.
+\newblock Protecting routes using guards in angular, 2016.
+\newblock URL
+  \url{https://blog.thoughtram.io/angular/2016/07/18/guards-in-angular-2.html}.
+
+\bibitem[Watmore'(2017)]{logintut}
+Jason Watmore'.
+\newblock Angular user registration and login example. tutorial, 2017.
+\newblock URL
+  \url{http://jasonwatmore.com/post/2016/09/29/angular-2-user-registration-and-login-example-tutorial}.
+
+\bibitem[Wikipedia'(2015)]{dto}
+Wikipedia'.
+\newblock Objeto de transferencia de datos (dto), 2015.
+\newblock URL
+  \url{https://es.wikipedia.org/wiki/Objeto_de_Transferencia_de_Datos_(DTO)}.
+
+\bibitem[World(2016)]{ides}
+Our~Code World.
+\newblock Best free web development ide for javascript, html and css, 2016.
+\newblock URL
+  \url{http://ourcodeworld.com/articles/read/200/top-7-best-free-web-development-ide-for-javascript-html-and-css}.
+
+\bibitem[Zaytsev(2016)]{ecma}
+Juriy Zaytsev.
+\newblock Compatibility table es5, 2016.
+\newblock URL \url{http://kangax.github.io/compat-table/es5/}.
 
 \end{thebibliography}

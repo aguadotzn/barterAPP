@@ -8,11 +8,11 @@ El por qué he decidido incluir la parte de \emph{Angular CLI} es por que consid
 Este anexo por tanto tiene como objetivo analizar y documentar las necesidades funcionales que deberán ser soportadas por el sistema a desarrollar, es decir, en qué condiciones ha sido desarrollado, en qué condiciones se debe usar y cuáles son los requerimientos mínimos para que un futuro programador interactúe con la aplicación en caso de que así lo considere.
 
 \section{Requerimientos mínimos necesarios}
-Además de un \emph{IDE} para poder trabajar, los prerequisitos mínimos para empezar a trabajar en el proyecto son:
+Además de un \emph{IDE} \cite{ides} para poder trabajar, los prerequisitos mínimos para empezar a trabajar en el proyecto son:
 
 \begin{enumerate}
-	\item Instalar \hyperlink{https://nodejs.org/en/}{Nodejs} y \hyperlink{https://www.mongodb.com/}{MongoDB}.
-	\item Instalar \hyperlink{https://www.npmjs.com/}{npm}
+	\item Instalar \href{https://nodejs.org/en/}{Nodejs} y \href{https://www.mongodb.com/}{MongoDB}.
+	\item Instalar \href{https://www.npmjs.com/}{npm}
 	\item Instalar Angular CLI
 		\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
 		\begin{lstlisting}[frame=single]
@@ -27,7 +27,7 @@ Nota: es interesante, una vez instalados asegurarnos de que están correctamente
 Sabiendo los requisitos mínimos que son necesarios para proceder vamos a realizar, cómo he nombrado antes una breve introducción a la línea de comandos de Angular,  \textbf{Angular CLI}.
 
 \subsection{¿Qué es typescript?}\label{typesript}
-Esto se ha nombrado antes pero resulta esencial para entender el código de Angular. Antes de nada decir que en Angular2 se puede trabajar con Javascript “clásico” (ES5), así como ES6 y TypeScript. Desarrollado por Microsoft y como apuesta de Google vamos a ver el crecimiento exponencial que ha tenido este de este lenguaje, que no deja de ser un super conjunto de JavaScript. 
+Angular  promueve el uso de TypeScript como lenguaje de partida, esto se ha nombrado antes pero resulta esencial para entender el código de Angular. Antes de nada decir que en Angular se puede trabajar con Javascript “clásico” (ES5) \cite{ecma}, así como ES6 y TypeScript. Desarrollado por Microsoft y como apuesta de Google vamos a ver el crecimiento exponencial que ha tenido este de este lenguaje, que no deja de ser un super conjunto de JavaScript. 
  TypeScript es por tanto un superset de ECMAScript 6, es decir, incluye todas las funcionalidades de ES6, y además incorpora una capa por encima con funcionalidades extra.
 
 \begin{center}
@@ -52,7 +52,7 @@ La principal característica de TypeScript por encima de Javascript es que permi
 
 \imagen{angularclicommands}{Comandos  \emph{AngularCLI}. Fuente:  \url{https://cli.angular.io/}.}
 
-Por lo tanto para crear nuestra aplicación con esta herramienta tan solo debemos ir a nuestra carpeta donde queremos crear el proyecto e introducir en la línea de comandos: 
+Por lo tanto para crear nuestra aplicación con esta herramienta, una vez instalada, tan solo debemos ir a nuestra carpeta donde queremos crear el proyecto e introducir en la línea de comandos: 
 	\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
 		\begin{lstlisting}[frame=single]
 		ng new angular-cli-primer-proyecto
@@ -88,7 +88,6 @@ Interface & \emph{ng g interface my-new-interface}  \\ \hline
 Enum & \emph{ng g enum my-new-enum}  \\ \hline
 \end{tabular}
 \caption{Tabla comandos Angular CLI}
-\label{tabla:sencilla}
 \end{center}
 \end{table}
    
@@ -99,14 +98,14 @@ En esta sección hay que tener en cuenta que el autor de este trabajo proyecto a
 
 \subsection{Prerequisitos}
 \begin{enumerate}
-	\item Instalar \hyperlink{https://nodejs.org/en/}{Nodejs} y \hyperlink{https://www.mongodb.com/}{MongoDB}.
-	\item Instalar \hyperlink{https://www.npmjs.com/}{npm}
+	\item Instalar \href{https://nodejs.org/en/}{Nodejs} y \href{https://www.mongodb.com/}{MongoDB}.
+	\item Instalar \href{https://www.npmjs.com/}{npm}
 	\item Instalar Angular CLI
 		\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
 		\begin{lstlisting}[frame=single]
 		npm i -g @angular/cli
     	\end{lstlisting}
-    \item Descargar el proyecto ( \emph{git clone} ) o bien desde un soporte
+    \item Descargar el proyecto (\emph{git clone}) o bien desde un soporte.
 	\item Una vez tenemos el proyecto descargado en nuestro sistema local desde el directorio raíz (vía línea de comandos) instalar las dependencias necesarias.
 	\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
 		\begin{lstlisting}[frame=single]
@@ -120,22 +119,23 @@ En esta sección hay que tener en cuenta que el autor de este trabajo proyecto a
 La estructura de directorios general es la siguiente:
 
 %Foto erronea cambiar!
-\imagen{directorios}{Vista carpetas general  \emph{BarterAPP}. Fuente: Elaboración propia.}
+\imagenflotante{directorios}{Vista carpetas general  \emph{BarterAPP}. Fuente: Elaboración propia.}
 
 \begin{itemize}
 	\item \textbf{$/client/$}: \emph{Front-End} 
 	\begin{itemize}
 	\item \textbf{$/client/app$}: Carpeta App
 		\begin{itemize}
-		\item \textbf{$/client/app/ _directives$}: directivas
-		\item \textbf{$/client/app/ _guards$}: rutas (autenticaciones)
-		\item \textbf{$/client/app/ _models$}: modelos
-		\item \textbf{$/client/app/ _services$}:  servicios
-		\item \textbf{$/client/app/enviroments$}:  entornos
-		\item \textbf{$/client/app/pages/$}:  páginas
+		\item \textbf{$/client/app/ directives$}: directivas
+		\item \textbf{$/client/app/ guards$}: rutas (autenticaciones)
+		\item \textbf{$/client/app/ models$}: modelos
+		\item \textbf{$/client/app/ services$}:  servicios
+		\item \textbf{$/client/app/ enviroments$}:  entornos
+		\item \textbf{$/client/app/ pages/$}:  páginas
 			\begin{itemize}
-			\item \textbf{$/client/app/pages/angular_calendar $}:  calendario
-			\item \textbf{$/client/app/pages/home $}:   home
+			\item \textbf{$/client/app/pages/angular calendar $}:  calendario
+			\item \textbf{$/client/app/pages/about $}:   about us
+			\item \textbf{$/client/app/pages/help $}:   help
 			\item \textbf{$/client/app/pages/login $}:  login
 			\item \textbf{$/client/app/pages/register $}:   registro
 			\item \textbf{$/client/app/pages/welcome $}:   vista inicial
@@ -148,12 +148,12 @@ La estructura de directorios general es la siguiente:
    \end{itemize}
 	\item \textbf{$/dist/ $}: ficheros para subir a servidor web
 	\item \textbf{$/e2e/ $}: tests
-	\item \textbf{$/node_modules/ $}: módulos
+	\item \textbf{$/node modules/ $}: módulos
 	\item \textbf{$/server/ $}:  \emph{Back-End} 
 		\begin{itemize}
 			\item \textbf{$/server/config $}: configuración
 			\item \textbf{$/server/controllers $}: controladores
-			\item \textbf{$/node_modules/ $}: módulos
+			\item \textbf{$/node modules/ $}: módulos
 			\item \textbf{$/server/routes $}: rutas
 			\item \textbf{$/server/services $}: servicios
 		\end{itemize}
@@ -178,20 +178,22 @@ La estructura de directorios general es la siguiente:
     [/
        [$/client$, fill=blue!50, for children={fill=green!50}
         [/$app$, fill=green!!50, for children={fill=yellow!50}
-         [$ _directives$
+         [$ directives$
          ]
-         [$ _guards$
+         [$ guards$
          ]
-         [$ _models$
+         [$ models$
          ]
-         [$ _services$
+         [$ services$
          ]
-         [$ _enviroments$
+         [$ enviroments$
          ]
           [/$pages$, fill=yellow!!50, for children={fill=orange!50}
-          [$angular_calendar$
+          [$angular calendar$
           ]
-          [$home$
+          [$help$
+          ]
+           [$about$
           ]
           [$login$
           ]
@@ -200,9 +202,9 @@ La estructura de directorios general es la siguiente:
           [$welcome$
           ]
          ]
-         [$_repository$
+         [$repository$
          ]
-         [$_utils$
+         [$utils$
          ]
         ]
         [$/assets$
@@ -214,14 +216,14 @@ La estructura de directorios general es la siguiente:
       ]
       [$/dist$
       ]
-      [$/node _ modules$
+      [$/node modules$
       ]
          [$/server$, fill=blue!50, for children={fill=green!50}
         [$/config$
         ]
         [$/controllers$
         ]
-        [$/node _ modules$
+        [$/node modules$
         ]
         [$/routes$
         ]
@@ -235,46 +237,84 @@ La estructura de directorios general es la siguiente:
 \end{adjustbox}
   \end{landscape}
 
-Cada parte de la aplicación ha tenido lugares desde donde he obtenido la información, vamos a desgranar las partes principales de la aplicación. Esta sección junto con el anexo anterior (Anexo D: diseño) harán que comprendamos el funcionamiento de la aplicación definitivamente.
+Cada parte de la aplicación tiene características interesante de programación que merece la pena reflejar aquí. Por lo que en los siguientes párrafos voy a intentar resumir las técnicas o librerías en las que me he basado, así como en código de otros compañeros. Es interesante conocer cada una de estas técnicas que, aunque no son estrictamente necesarias en una aplicación Angular, hacen la vida más fácil al programador. 
 
-Todos los componentes en angular tienen una estructura interna exactamente igual:
+
+Todos los componentes en Angular tienen una estructura interna exactamente igual:
+
+\imagen{component}{\footnotesize{Componente Angular . Fuente:  \url{http://blog.enriqueoriol.com/}.}}
+
+En la imagen anterior podemos ver que se define un \textbf{selector} que es la parte para introducir ese determinado componente en la plantilla, un \textbf{templateUrl} que define la propia plantilla html asociada a ese componente, \textbf{stylesUrls} que define la hoja de estilos asociada a esa plantilla y \textbf{module.id} que en nuestro caso no tiene demasiada importancia.  Los únicos estrictamente obligatorios son los dos primeros.
+
+Si nos fijamos en las buenas prácticas de programación de Angular dictan que después del nombre de un componente viene la palabra \emph{component}, pasa lo mismo con, por ejemplo, los servicios cuya palabra en este caso será \emph{services}.
+
+En la siguiente imagen podemos ver la relación entre un componente y su propia plantilla.
+
+\imagen{comphtml}{\footnotesize{Relación plantilla-componente . Fuente:  \url{http://academia-binaria.com/}.}}
+
+
+
 
 
 
 %Analisis
-\begin{description}
-	\item[$/app/_directives$] Las directivas son una parte esencial de una aplicación angular, en este caso las alertas se utilizan para mostrarse en registro/login de la aplicación
+\begin{itemize}
+
+	\item \emph{/app/directives} : las directivas  en este caso se utilizan para lanzar alertas, concretamente en el registro o  de la aplicación. 
 	
-	Los enlaces en los que me he apoyado :
-	\begin{itemize}
-	\item Observables 
-	 d\url{http://academia-binaria.com/comunicaciones-http-observables-con-angular2/}
-    \end{itemize}
+	\item \emph{/app/guards} : es la parte donde realmente se comprueba que un usuario este logeado en la web \cite{guards}. Me basé en un tutoria \cite{logintut} de Jason Watmore, programador Australiano. 
+	
+	\item \emph{/app/models} : junto con \emph{services} una de las partes fundamentales de la aplicación es dónde se describen los datos donde se declaran los atributos que va a tener cada entidad que vamos a usar. En mi caso: \underline{usuarios} y \underline{eventos}.  
+	Se ha usado aqui un DTO \cite{dto} para el caso de los eventos que van a ser intercambiados, es decir, ese turno que un usuario va a intercambiar con otro. Es habitual esta práctica de programación en java pero también empieza a serlo en Angular \cite{dto2}.
+	
+	\item \emph{/app/services} : los servicios de la parte cliente, las alertas nombradas anteriormente o la autenticación tienen su propio servicio. Es interesante el conocer aqui el concepto de \emph{Observable} \cite{ob1} en Angular, a la hora de las comunicaciones http es algo muy a tener en cuenta. La librería \textbf{@angular/http} trae por defecto el servicio http que es el cliente usado para enviar y recibir datos \cite{ob2}, pero sin duda la librería más potente actualmente sobre el tema es \href{http://reactivex.io/rxjs/}{RxJS}. Recomiendo encarecidamente el artículo: Javascript Reactivo y funcional \cite{ob3}, que aborda estos temas con gran entereza.
+	
+	\item \emph{/app/pages} : comprende las distintas páginas \emph{fisicas} de la web.
+	
+	\item \emph{/app/repository} : es la conexión de datos entre la parte del cliente y la parte servidor.
+	
+	\item \emph{/app/utils} : es una carpeta extra que he pretende emplear el patrón \emph{Singleton} definiendo datos inamovibles durante toda la vida de la aplicación.
+	
+	\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Definición & Datos  \\
+\hline \hline
+\textbf{Tipos de turno} &  24 horas \\ \hline
+ &  12 horas \\ \hline
+ &  8 horas\\ \hline
+ &  6 horas\\ \hline
+  \textbf{Colores asociado} & \textcolor{red}{Rojo} \small{(Intocable)} \\ \hline
+ &  \textcolor{blue}{Azul} \small{(Asignado conforme)} \\ \hline
+ &  \textcolor{yellow}{Amarillo} \small{(Asignado eliminar)} \\ \hline
+ &  \textcolor{green}{Verde} \small{(Día libre)} \\ \hline
+ \textbf{Tipos de eventos} & Intocable \\ \hline
+ &  Asignado conforme \\ \hline
+ &  Asignado eliminar \\ \hline
+ &  Día libre\\ \hline
+  \textbf{Turnos /día} & 1 turno por día \\ \hline
+ & 2 turnos por día  \\ \hline
+ & 3 turnos por día  \\ \hline
+ & 4 turnos por día  \\ \hline
+   \textbf{Estados de un evento} & Norma \\ \hline
+ & Pendiente  \\ \hline
+ & Aceptado   \\ \hline
+ & Rechazado  \\ \hline
+  & Requerido  \\ \hline
+\end{tabular}
+\caption{Datos.}
+\label{tabla:sencilla}
+\end{center}
+\end{table}
+
 
 	
-	
-	\item[$/app/_guards$] más información sobre el segundo item.
-\end{description}
+\end{itemize}
 
 
 
 
-
-
-Observables
-http://academia-binaria.com/comunicaciones-http-observables-con-angular2/
-
-angular2 polling -observables
-https://stackoverflow.com/questions/41658162/how-to-do-polling-with-angular-2-observables
-
-Guards
-https://blog.thoughtram.io/angular/2016/07/18/guards-in-angular-2.html
-
-Interpolacion
-http://academia-binaria.com/databinding-el-flujo-de-datos-de-angular2/
-
-DTO
-https://stackoverflow.com/questions/39272947/dto-design-in-typescript-angular2
 
 ngAfterViewInit
 https://angular.io/docs/ts/latest/api/core/index/AfterViewInit-class.html
@@ -316,11 +356,11 @@ Hay que tener en cuenta que tenemos diversas tecnologías dentro del proyecto po
     	\end{lstlisting}
 
 \subsection{Servidor (Heroku)}
-Para subir la aplicación al servidor yo he elegido \hyperlink{https://www.heroku.com/}{Heroku} y los pasos para lanzar la aplicación son los que se enumeran a continuación:
+Para subir la aplicación al servidor yo he elegido \href{https://www.heroku.com/}{Heroku} y los pasos para lanzar la aplicación son los que se enumeran a continuación:
 
 \begin{enumerate}
-	\item Acceder a la \hyperlink{https://www.heroku.com/}{web} de \emph{Heroku}, registrarse y crear una nueva app.
-	\item Instalar \hyperlink{https://devcenter.heroku.com/articles/heroku-cli}{Heroku CLI}
+	\item Acceder a la \href{https://www.heroku.com/}{web} de \emph{Heroku}, registrarse y crear una nueva app.
+	\item Instalar \href{https://devcenter.heroku.com/articles/heroku-cli}{Heroku CLI}
 	\item Ejecutar los siguientes comandos:
 		\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
 		\begin{lstlisting}[frame=single]
@@ -349,16 +389,16 @@ Resumiendo de esta manera utilizamos Heroku como si de github se tratase y vamos
 	
 
 \subsection{Base de datos (Mlab)}
-La base de datos escogida es MongoDB, la instalación es fácil y sencilla tan solo hay que ir a la \hyperlink{http://www.mongodb.org/downloads}{web} oficial y descargar la última versión estable disponible. Una vez en nuestro ordenador la ejecutamos y listo.  Si tenéis algún problema os recomiendo seguir alguno de los tutoriales que existen en la web. https://www.adictosaltrabajo.com/tutoriales/mongodb/
+La base de datos escogida es MongoDB, la instalación es fácil y sencilla tan solo hay que ir a la \href{http://www.mongodb.org/downloads}{web} oficial y descargar la última versión estable disponible. Una vez en nuestro ordenador la ejecutamos y listo.  Si tenéis algún problema os recomiendo seguir alguno de los tutoriales que existen en la web. https://www.adictosaltrabajo.com/tutoriales/mongodb/
 
-Como sabemos podemos manejar la base de datos desde línea de comandos pero resulta un poco pesado cuando empezamos a tener muchas colecciones o un número de datos alto. Es por eso que yo recomiendo encarecidamente  \hyperlink{https://robomongo.org/}{Robomongo}, la copia de SQL server para bases de datos NoSQL.  Interfaz no muy lograda pero perfecta para visualizar nuestras bases de datos e información de una manera más intuitiva.
+Como sabemos podemos manejar la base de datos desde línea de comandos pero resulta un poco pesado cuando empezamos a tener muchas colecciones o un número de datos alto. Es por eso que yo recomiendo encarecidamente  \href{https://robomongo.org/}{Robomongo}, la copia de SQL server para bases de datos NoSQL.  Interfaz no muy lograda pero perfecta para visualizar nuestras bases de datos e información de una manera más intuitiva.
 
 	\imagen{robomongoview}{Vista Robomongo. Fuente:  Elaboración propia.}
 	
-	Esta claro que cuando trabajamos con un proyecto en local para realizar pruebas lo mejor es tener una base de datos en local pero cuando queremos algo un poco más serio resulta interesante el tener esa base de datos en un servidor real. Para ello he escogido \hyperlink{mlab.com}{Mlab}, los pasos para crear la base de datos se enumeran a continuación: 
+	Esta claro que cuando trabajamos con un proyecto en local para realizar pruebas lo mejor es tener una base de datos en local pero cuando queremos algo un poco más serio resulta interesante el tener esa base de datos en un servidor real. Para ello he escogido \href{mlab.com}{Mlab}, los pasos para crear la base de datos se enumeran a continuación: 
 	
 	\begin{enumerate}
-	\item Acceder a la \hyperlink{mlab.com}{Mlab}, registrarse y crear una cuenta
+	\item Acceder a la \href{mlab.com}{Mlab}, registrarse y crear una cuenta
 	\item Crear una subscripción a una base de datos (Tiene de pago pero también tiene una versión gratuita que nos vale para realizar pruebas a este nivel)
 	\item Ejecutar el siguiente comando para establecer la conexión con la base de datos creada
 		\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
