@@ -1,10 +1,9 @@
 // Controller: usuarios
 // Funciones de control de usuarios
-var config = require('config.json');
 var express = require('express');
 var router = express.Router();
-var userService = require('services/user.service');
-// rutas
+var userService = require('../services/user.service');
+// rUTAS
 router.post('/authenticate', authenticate);
 router.post('/register', register);
 router.get('/', getAll);
@@ -12,7 +11,6 @@ router.get('/current', getCurrent);
 router.put('/:_id', update);
 router.delete('/:_id', _delete);
 module.exports = router;
-// autenticar
 function authenticate(req, res) {
     userService.authenticate(req.body.email, req.body.password)
         .then(function (user) {
@@ -30,7 +28,6 @@ function authenticate(req, res) {
         res.status(400).send(err);
     });
 }
-// registro
 function register(req, res) {
     userService.create(req.body)
         .then(function () {
@@ -40,7 +37,6 @@ function register(req, res) {
         res.status(400).send(err);
     });
 }
-// obtener todos
 function getAll(req, res) {
     userService.getAll()
         .then(function (users) {
@@ -50,7 +46,6 @@ function getAll(req, res) {
         res.status(400).send(err);
     });
 }
-// obtener actual
 function getCurrent(req, res) {
     userService.getById(req.user.sub)
         .then(function (user) {
@@ -65,7 +60,6 @@ function getCurrent(req, res) {
         res.status(400).send(err);
     });
 }
-// actualizar
 function update(req, res) {
     userService.update(req.params._id, req.body)
         .then(function () {
@@ -75,7 +69,6 @@ function update(req, res) {
         res.status(400).send(err);
     });
 }
-// eliminar
 function _delete(req, res) {
     userService.delete(req.params._id)
         .then(function () {

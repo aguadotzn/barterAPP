@@ -1,4 +1,4 @@
-import { Component, Directive, Input, Output, EventEmitter, ChangeDetectionStrategy, Injector, Renderer, ElementRef, ViewContainerRef, ComponentFactoryResolver, NgZone } from '@angular/core';
+import { Component, Directive, Input, Output, EventEmitter, ChangeDetectionStrategy, Injector, Renderer2, ElementRef, ViewContainerRef, ComponentFactoryResolver, NgZone } from '@angular/core';
 import { listenToTriggers } from '../util/triggers';
 import { positionElements } from '../util/positioning';
 import { PopupService } from '../util/popup';
@@ -75,7 +75,7 @@ var NgbTooltip = (function () {
             this._windowRef = this._popupService.open(this._ngbTooltip, context);
             this._windowRef.instance.placement = this.placement;
             this._windowRef.instance.id = this._ngbTooltipWindowId;
-            this._renderer.setElementAttribute(this._elementRef.nativeElement, 'aria-describedby', this._ngbTooltipWindowId);
+            this._renderer.setAttribute(this._elementRef.nativeElement, 'aria-describedby', this._ngbTooltipWindowId);
             if (this.container === 'body') {
                 window.document.querySelector(this.container).appendChild(this._windowRef.location.nativeElement);
             }
@@ -90,7 +90,7 @@ var NgbTooltip = (function () {
      */
     NgbTooltip.prototype.close = function () {
         if (this._windowRef != null) {
-            this._renderer.setElementAttribute(this._elementRef.nativeElement, 'aria-describedby', null);
+            this._renderer.removeAttribute(this._elementRef.nativeElement, 'aria-describedby');
             this._popupService.close();
             this._windowRef = null;
             this.hidden.emit();
@@ -128,7 +128,7 @@ NgbTooltip.decorators = [
 /** @nocollapse */
 NgbTooltip.ctorParameters = function () { return [
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: Injector, },
     { type: ComponentFactoryResolver, },
     { type: ViewContainerRef, },

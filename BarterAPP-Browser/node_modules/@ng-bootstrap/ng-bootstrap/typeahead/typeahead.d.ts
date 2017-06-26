@@ -1,4 +1,4 @@
-import { ComponentFactoryResolver, ElementRef, EventEmitter, Injector, NgZone, OnDestroy, OnInit, Renderer, TemplateRef, ViewContainerRef } from '@angular/core';
+import { ComponentFactoryResolver, ElementRef, EventEmitter, Injector, NgZone, OnDestroy, OnInit, Renderer2, TemplateRef, ViewContainerRef } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 import { Observable } from 'rxjs/Observable';
 import { ResultTemplateContext } from './typeahead-window';
@@ -68,7 +68,7 @@ export declare class NgbTypeahead implements ControlValueAccessor, OnInit, OnDes
     popupId: string;
     private _onTouched;
     private _onChange;
-    constructor(_elementRef: ElementRef, _viewContainerRef: ViewContainerRef, _renderer: Renderer, _injector: Injector, componentFactoryResolver: ComponentFactoryResolver, config: NgbTypeaheadConfig, ngZone: NgZone);
+    constructor(_elementRef: ElementRef, _viewContainerRef: ViewContainerRef, _renderer: Renderer2, _injector: Injector, componentFactoryResolver: ComponentFactoryResolver, config: NgbTypeaheadConfig, ngZone: NgZone);
     ngOnInit(): void;
     ngOnDestroy(): void;
     registerOnChange(fn: (value: any) => any): void;

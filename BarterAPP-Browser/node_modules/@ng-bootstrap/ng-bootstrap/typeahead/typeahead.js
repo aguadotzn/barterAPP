@@ -1,4 +1,4 @@
-import { ComponentFactoryResolver, Directive, ElementRef, EventEmitter, forwardRef, Injector, Input, NgZone, Output, Renderer, ViewContainerRef } from '@angular/core';
+import { ComponentFactoryResolver, Directive, ElementRef, EventEmitter, forwardRef, Injector, Input, NgZone, Output, Renderer2, ViewContainerRef } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { letProto } from 'rxjs/operator/let';
 import { _do } from 'rxjs/operator/do';
@@ -74,7 +74,7 @@ var NgbTypeahead = (function () {
     NgbTypeahead.prototype.registerOnTouched = function (fn) { this._onTouched = fn; };
     NgbTypeahead.prototype.writeValue = function (value) { this._writeInputValue(this._formatItemForInput(value)); };
     NgbTypeahead.prototype.setDisabledState = function (isDisabled) {
-        this._renderer.setElementProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
+        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
     };
     NgbTypeahead.prototype.dismissPopup = function () {
         if (this.isPopupOpen()) {
@@ -149,7 +149,7 @@ var NgbTypeahead = (function () {
             var formattedVal = this._formatItemForInput(this._windowRef.instance.getActive());
             if (userInputLowerCase === formattedVal.substr(0, this._userInput.length).toLowerCase()) {
                 this._writeInputValue(this._userInput + formattedVal.substr(this._userInput.length));
-                this._renderer.invokeElementMethod(this._elementRef.nativeElement, 'setSelectionRange', [this._userInput.length, formattedVal.length]);
+                this._elementRef.nativeElement['setSelectionRange'].apply(this._elementRef.nativeElement, [this._userInput.length, formattedVal.length]);
             }
             else {
                 this.writeValue(this._windowRef.instance.getActive());
@@ -160,7 +160,7 @@ var NgbTypeahead = (function () {
         return item && this.inputFormatter ? this.inputFormatter(item) : toString(item);
     };
     NgbTypeahead.prototype._writeInputValue = function (value) {
-        this._renderer.setElementProperty(this._elementRef.nativeElement, 'value', value);
+        this._renderer.setProperty(this._elementRef.nativeElement, 'value', value);
     };
     NgbTypeahead.prototype._subscribeToUserInput = function (userInput$) {
         var _this = this;
@@ -221,7 +221,7 @@ NgbTypeahead.decorators = [
 NgbTypeahead.ctorParameters = function () { return [
     { type: ElementRef, },
     { type: ViewContainerRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: Injector, },
     { type: ComponentFactoryResolver, },
     { type: NgbTypeaheadConfig, },

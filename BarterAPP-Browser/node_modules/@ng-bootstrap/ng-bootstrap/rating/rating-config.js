@@ -8,6 +8,7 @@ var NgbRatingConfig = (function () {
     function NgbRatingConfig() {
         this.max = 10;
         this.readonly = false;
+        this.resettable = false;
     }
     return NgbRatingConfig;
 }());

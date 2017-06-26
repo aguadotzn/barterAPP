@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true })
 var AppConfig = (function () {
   function AppConfig() {
-    this.apiUrl = 'http://localhost:4000'
+    this.apiUrl = ''
   }
   return AppConfig
 }())

@@ -1,4 +1,3 @@
-//utils: variables
 var shiftUtils = {};
 //Colores para los eventos
 shiftUtils.shiftColors = { red: { primary: '#ad2121', secondary: '#ffcfcf' },

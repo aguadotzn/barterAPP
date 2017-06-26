@@ -1,4 +1,4 @@
-import { EventEmitter, OnInit, OnDestroy, Injector, Renderer, ElementRef, TemplateRef, ViewContainerRef, ComponentFactoryResolver, NgZone } from '@angular/core';
+import { EventEmitter, OnInit, OnDestroy, Injector, Renderer2, ElementRef, TemplateRef, ViewContainerRef, ComponentFactoryResolver, NgZone } from '@angular/core';
 import { NgbTooltipConfig } from './tooltip-config';
 export declare class NgbTooltipWindow {
     placement: 'top' | 'bottom' | 'left' | 'right';
@@ -37,7 +37,7 @@ export declare class NgbTooltip implements OnInit, OnDestroy {
     private _windowRef;
     private _unregisterListenersFn;
     private _zoneSubscription;
-    constructor(_elementRef: ElementRef, _renderer: Renderer, injector: Injector, componentFactoryResolver: ComponentFactoryResolver, viewContainerRef: ViewContainerRef, config: NgbTooltipConfig, ngZone: NgZone);
+    constructor(_elementRef: ElementRef, _renderer: Renderer2, injector: Injector, componentFactoryResolver: ComponentFactoryResolver, viewContainerRef: ViewContainerRef, config: NgbTooltipConfig, ngZone: NgZone);
     /**
      * Content to be displayed as tooltip. If falsy, the tooltip won't open.
      */

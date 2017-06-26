@@ -31,6 +31,10 @@ export declare class NgbRating implements ControlValueAccessor, OnInit, OnChange
      */
     readonly: boolean;
     /**
+     * A flag indicating if rating can be reset to 0 on mouse click
+     */
+    resettable: boolean;
+    /**
      * A template to override star display.
      * Alternatively put a <ng-template> as the only child of <ngb-rating> element
      */
@@ -55,6 +59,8 @@ export declare class NgbRating implements ControlValueAccessor, OnInit, OnChange
     constructor(config: NgbRatingConfig, _changeDetectorRef: ChangeDetectorRef);
     ariaValueText(): string;
     enter(value: number): void;
+    handleBlur(): void;
+    handleClick(value: number): void;
     handleKeyDown(event: KeyboardEvent): void;
     ngOnChanges(changes: SimpleChanges): void;
     ngOnInit(): void;

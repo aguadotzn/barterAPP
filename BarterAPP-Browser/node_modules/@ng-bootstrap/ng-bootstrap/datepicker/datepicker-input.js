@@ -1,4 +1,4 @@
-import { Directive, Input, ElementRef, ViewContainerRef, Renderer, ComponentFactoryResolver, NgZone, forwardRef, EventEmitter, Output } from '@angular/core';
+import { Directive, Input, ElementRef, ViewContainerRef, Renderer2, ComponentFactoryResolver, NgZone, forwardRef, EventEmitter, Output } from '@angular/core';
 import { NG_VALUE_ACCESSOR, NG_VALIDATORS } from '@angular/forms';
 import { NgbDate } from './ngb-date';
 import { NgbDatepicker } from './datepicker';
@@ -50,7 +50,7 @@ var NgbInputDatepicker = (function () {
     NgbInputDatepicker.prototype.registerOnValidatorChange = function (fn) { this._validatorChange = fn; };
     ;
     NgbInputDatepicker.prototype.setDisabledState = function (isDisabled) {
-        this._renderer.setElementProperty(this._elRef.nativeElement, 'disabled', isDisabled);
+        this._renderer.setProperty(this._elRef.nativeElement, 'disabled', isDisabled);
         if (this.isOpen()) {
             this._cRef.instance.setDisabledState(isDisabled);
         }
@@ -139,6 +139,10 @@ var NgbInputDatepicker = (function () {
             this._validatorChange();
         }
     };
+    NgbInputDatepicker.prototype.ngOnDestroy = function () {
+        this.close();
+        this._zoneSubscription.unsubscribe();
+    };
     NgbInputDatepicker.prototype._applyDatepickerInputs = function (datepickerInstance) {
         var _this = this;
         ['dayTemplate', 'displayMonths', 'firstDayOfWeek', 'markDisabled', 'minDate', 'maxDate', 'navigation',
@@ -151,15 +155,15 @@ var NgbInputDatepicker = (function () {
         datepickerInstance.startDate = this.startDate || this._model;
     };
     NgbInputDatepicker.prototype._applyPopupStyling = function (nativeElement) {
-        this._renderer.setElementClass(nativeElement, 'dropdown-menu', true);
-        this._renderer.setElementStyle(nativeElement, 'padding', '0');
+        this._renderer.addClass(nativeElement, 'dropdown-menu');
+        this._renderer.setStyle(nativeElement, 'padding', '0');
     };
     NgbInputDatepicker.prototype._subscribeForDatepickerOutputs = function (datepickerInstance) {
         var _this = this;
         datepickerInstance.navigate.subscribe(function (date) { return _this.navigate.emit(date); });
     };
     NgbInputDatepicker.prototype._writeModelValue = function (model) {
-        this._renderer.setElementProperty(this._elRef.nativeElement, 'value', this._parserFormatter.format(model));
+        this._renderer.setProperty(this._elRef.nativeElement, 'value', this._parserFormatter.format(model));
         if (this.isOpen()) {
             this._cRef.instance.writeValue(model);
             this._onTouched();
@@ -181,7 +185,7 @@ NgbInputDatepicker.ctorParameters = function () { return [
     { type: NgbDateParserFormatter, },
     { type: ElementRef, },
     { type: ViewContainerRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: ComponentFactoryResolver, },
     { type: NgZone, },
     { type: NgbDatepickerService, },

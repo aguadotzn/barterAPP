@@ -1,4 +1,4 @@
-export interface EventDTO {
+Eexport interface EventDTO {
   _id?: string | number;
   start: Date;
   end: Date;

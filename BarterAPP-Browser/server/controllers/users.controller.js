@@ -1,12 +1,10 @@
-﻿// Controller: usuarios
+// Controller: usuarios
 // Funciones de control de usuarios
-
-var config = require('config.json');
-var express = require('express');
+﻿var express = require('express');
 var router = express.Router();
-var userService = require('services/user.service');
+var userService = require('../services/user.service');
 
-// rutas
+// rUTAS
 router.post('/authenticate', authenticate);
 router.post('/register', register);
 router.get('/', getAll);
@@ -16,7 +14,6 @@ router.delete('/:_id', _delete);
 
 module.exports = router;
 
-// autenticar
 function authenticate(req, res) {
     userService.authenticate(req.body.email, req.body.password)
         .then(function (user) {
@@ -26,7 +23,8 @@ function authenticate(req, res) {
             } else {
               // autenticacion fallida
                 res.status(401).send('Correo electrónico o contraseña incorrectos.');
-              // res.alert("Contacte con soporte en caso de no poder iniciar sesión.");
+                // res.alert("Contacte con soporte en caso de no poder iniciar sesión.");
+
             }
         })
         .catch(function (err) {
@@ -34,7 +32,6 @@ function authenticate(req, res) {
         });
 }
 
-// registro
 function register(req, res) {
     userService.create(req.body)
         .then(function () {
@@ -45,7 +42,6 @@ function register(req, res) {
         });
 }
 
-// obtener todos
 function getAll(req, res) {
     userService.getAll()
         .then(function (users) {
@@ -56,7 +52,6 @@ function getAll(req, res) {
         });
 }
 
-// obtener actual
 function getCurrent(req, res) {
     userService.getById(req.user.sub)
         .then(function (user) {
@@ -71,7 +66,6 @@ function getCurrent(req, res) {
         });
 }
 
-// actualizar
 function update(req, res) {
     userService.update(req.params._id, req.body)
         .then(function () {
@@ -82,7 +76,6 @@ function update(req, res) {
         });
 }
 
-// eliminar
 function _delete(req, res) {
     userService.delete(req.params._id)
         .then(function () {

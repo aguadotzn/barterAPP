@@ -6,4 +6,5 @@
 export declare class NgbRatingConfig {
     max: number;
     readonly: boolean;
+    resettable: boolean;
 }

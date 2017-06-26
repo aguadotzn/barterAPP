@@ -1,4 +1,3 @@
-/// <reference types="selenium-webdriver" />
 import { promise as wdpromise } from 'selenium-webdriver';
 import { ProtractorBrowser } from './browser';
 export declare class DebugHelper {

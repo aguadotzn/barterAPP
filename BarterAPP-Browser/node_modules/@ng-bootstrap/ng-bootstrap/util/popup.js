@@ -42,7 +42,7 @@ var PopupService = (function () {
             return new ContentRef([viewRef.rootNodes], viewRef);
         }
         else {
-            return new ContentRef([[this._renderer.createText(null, "" + content)]]);
+            return new ContentRef([[this._renderer.createText("" + content)]]);
         }
     };
     return PopupService;

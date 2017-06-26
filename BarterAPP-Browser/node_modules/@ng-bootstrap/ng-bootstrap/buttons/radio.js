@@ -1,4 +1,4 @@
-import { Directive, forwardRef, Optional, Input, Renderer, ElementRef } from '@angular/core';
+import { Directive, forwardRef, Optional, Input, Renderer2, ElementRef } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 var NGB_RADIO_VALUE_ACCESSOR = {
     provide: NG_VALUE_ACCESSOR,
@@ -62,19 +62,38 @@ var NgbActiveLabel = (function () {
         this._elRef = _elRef;
     }
     Object.defineProperty(NgbActiveLabel.prototype, "active", {
-        set: function (isActive) { this._renderer.setElementClass(this._elRef.nativeElement, 'active', isActive); },
+        set: function (isActive) {
+            if (isActive) {
+                this._renderer.addClass(this._elRef.nativeElement, 'active');
+            }
+            else {
+                this._renderer.removeClass(this._elRef.nativeElement, 'active');
+            }
+        },
         enumerable: true,
         configurable: true
     });
     Object.defineProperty(NgbActiveLabel.prototype, "disabled", {
         set: function (isDisabled) {
-            this._renderer.setElementClass(this._elRef.nativeElement, 'disabled', isDisabled);
+            if (isDisabled) {
+                this._renderer.addClass(this._elRef.nativeElement, 'disabled');
+            }
+            else {
+                this._renderer.removeClass(this._elRef.nativeElement, 'disabled');
+            }
         },
         enumerable: true,
         configurable: true
     });
     Object.defineProperty(NgbActiveLabel.prototype, "focused", {
-        set: function (isFocused) { this._renderer.setElementClass(this._elRef.nativeElement, 'focus', isFocused); },
+        set: function (isFocused) {
+            if (isFocused) {
+                this._renderer.addClass(this._elRef.nativeElement, 'focus');
+            }
+            else {
+                this._renderer.removeClass(this._elRef.nativeElement, 'focus');
+            }
+        },
         enumerable: true,
         configurable: true
     });
@@ -86,7 +105,7 @@ NgbActiveLabel.decorators = [
 ];
 /** @nocollapse */
 NgbActiveLabel.ctorParameters = function () { return [
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: ElementRef, },
 ]; };
 /**
@@ -111,7 +130,7 @@ var NgbRadio = (function () {
         set: function (value) {
             this._value = value;
             var stringValue = value ? value.toString() : '';
-            this._renderer.setElementProperty(this._element.nativeElement, 'value', stringValue);
+            this._renderer.setProperty(this._element.nativeElement, 'value', stringValue);
             if (this._group) {
                 this._group.onRadioValueUpdate();
             }
@@ -190,7 +209,7 @@ NgbRadio.decorators = [
 NgbRadio.ctorParameters = function () { return [
     { type: NgbRadioGroup, decorators: [{ type: Optional },] },
     { type: NgbActiveLabel, decorators: [{ type: Optional },] },
-    { type: Renderer, },
+    { type: Renderer2, },
     { type: ElementRef, },
 ]; };
 NgbRadio.propDecorators = {

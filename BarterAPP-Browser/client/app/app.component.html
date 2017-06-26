@@ -7,7 +7,7 @@
       <!--<div class="logo" >
         <img src="../assets/img/logonavbar.png" class="img-responsive" alt="" *ngIf="!currentUser">
         </div> -->
-  <a class="navbar-brand navbar-brand-logo" href="https://barterapp-spanish.herokuapp.com/">
+  <a class="navbar-brand navbar-brand-logo" href="http://barterapp.nanoapp.io/">
       <div class="brand">   BarterApp </div>
 
 
@@ -19,7 +19,7 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item" *ngIf="!currentUser">
-        <a class="nav-link" href="#">Sobre nosotros</a>
+        <a class="nav-link" href="/about">Sobre nosotros</a>
       </li>
     </ul>
     <div *ngIf="currentUser">
@@ -28,7 +28,7 @@
           <a class="nav-link"> Bienvenid@ {{currentUser.firstName}}! (Empresa: {{currentUser.cname}})</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="/home">Ayuda</a>
+          <a class="nav-link" href="/help">Ayuda</a>
         </li>
         <li class="nav-item active">
           <a class="nav-link" href="/calendarhome">Calendario</a>

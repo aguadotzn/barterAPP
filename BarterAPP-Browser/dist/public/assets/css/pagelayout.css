@@ -1,0 +1,25 @@
+/*.app_content{
+	background: #358e9d;
+	background: -webkit-linear-gradient(#358e9d, #358e9d);
+	background: linear-gradient(#358e9d, #fb6848);
+}
+.app_footer{
+	height: 0px;
+    background-color: #fb6848;
+    margin-top: 0px;
+}*/
+
+
+html, body{
+	padding:0;
+	margin:0;
+	height:100%;
+	/*text-align:center;*/
+	background:#358e9d;
+}
+
+
+/*
+a {
+	display:inline-block;
+	margin:0 0.3vw;}*/

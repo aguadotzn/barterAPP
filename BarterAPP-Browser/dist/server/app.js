@@ -9,7 +9,7 @@ var db_1 = require("./config/db");
 var routes_1 = require("./routes");
 var app = express();
 exports.app = app;
-//app.set('port', (process.env.PORT || 5000));
+app.set('port', (process.env.PORT || 4000));
 app.use('/', express.static(path.join(__dirname, '../public')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -25,7 +25,7 @@ db.once('open', function () {
     app.get('/*', function (req, res) {
         res.sendFile(path.join(__dirname, '../public/index.html'));
     });
-    app.listen(process.env.PORT || 8000, function () {
+    app.listen(app.get('port'), function () {
         console.log('BarterApp listening on port ' + app.get('port'));
     });
 });

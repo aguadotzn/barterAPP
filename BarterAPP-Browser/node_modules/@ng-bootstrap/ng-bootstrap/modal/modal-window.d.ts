@@ -1,4 +1,4 @@
-import { EventEmitter, ElementRef, Renderer, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
+import { EventEmitter, ElementRef, Renderer2, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
 export declare class NgbModalWindow implements OnInit, AfterViewInit, OnDestroy {
     private _elRef;
     private _renderer;
@@ -8,7 +8,7 @@ export declare class NgbModalWindow implements OnInit, AfterViewInit, OnDestroy 
     size: string;
     windowClass: string;
     dismissEvent: EventEmitter<{}>;
-    constructor(_elRef: ElementRef, _renderer: Renderer);
+    constructor(_elRef: ElementRef, _renderer: Renderer2);
     backdropClick($event: any): void;
     escKey($event: any): void;
     dismiss(reason: any): void;

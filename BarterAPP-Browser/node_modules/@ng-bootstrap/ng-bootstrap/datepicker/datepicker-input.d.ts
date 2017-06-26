@@ -1,4 +1,4 @@
-import { ElementRef, ViewContainerRef, Renderer, ComponentFactoryResolver, NgZone, TemplateRef, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
+import { ElementRef, ViewContainerRef, Renderer2, ComponentFactoryResolver, NgZone, TemplateRef, EventEmitter, OnChanges, OnDestroy, SimpleChanges } from '@angular/core';
 import { AbstractControl, ControlValueAccessor, Validator } from '@angular/forms';
 import { NgbDatepickerNavigateEvent } from './datepicker';
 import { DayTemplateContext } from './datepicker-day-template-context';
@@ -10,7 +10,7 @@ import { NgbDatepickerService } from './datepicker-service';
  * A directive that makes it possible to have datepickers on input fields.
  * Manages integration with the input field itself (data entry) and ngModel (validation etc.).
  */
-export declare class NgbInputDatepicker implements OnChanges, ControlValueAccessor, Validator {
+export declare class NgbInputDatepicker implements OnChanges, OnDestroy, ControlValueAccessor, Validator {
     private _parserFormatter;
     private _elRef;
     private _vcRef;
@@ -85,7 +85,7 @@ export declare class NgbInputDatepicker implements OnChanges, ControlValueAccess
     private _onChange;
     private _onTouched;
     private _validatorChange;
-    constructor(_parserFormatter: NgbDateParserFormatter, _elRef: ElementRef, _vcRef: ViewContainerRef, _renderer: Renderer, _cfr: ComponentFactoryResolver, ngZone: NgZone, _service: NgbDatepickerService, _calendar: NgbCalendar);
+    constructor(_parserFormatter: NgbDateParserFormatter, _elRef: ElementRef, _vcRef: ViewContainerRef, _renderer: Renderer2, _cfr: ComponentFactoryResolver, ngZone: NgZone, _service: NgbDatepickerService, _calendar: NgbCalendar);
     registerOnChange(fn: (value: any) => any): void;
     registerOnTouched(fn: () => any): void;
     registerOnValidatorChange(fn: () => void): void;
@@ -120,6 +120,7 @@ export declare class NgbInputDatepicker implements OnChanges, ControlValueAccess
     }): void;
     onBlur(): void;
     ngOnChanges(changes: SimpleChanges): void;
+    ngOnDestroy(): void;
     private _applyDatepickerInputs(datepickerInstance);
     private _applyPopupStyling(nativeElement);
     private _subscribeForDatepickerOutputs(datepickerInstance);

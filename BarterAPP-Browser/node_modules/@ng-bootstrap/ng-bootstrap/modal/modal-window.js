@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter, Input, ElementRef, Renderer } from '@angular/core';
+import { Component, Output, EventEmitter, Input, ElementRef, Renderer2 } from '@angular/core';
 import { ModalDismissReasons } from './modal-dismiss-reasons';
 var NgbModalWindow = (function () {
     function NgbModalWindow(_elRef, _renderer) {
@@ -21,22 +21,22 @@ var NgbModalWindow = (function () {
     NgbModalWindow.prototype.dismiss = function (reason) { this.dismissEvent.emit(reason); };
     NgbModalWindow.prototype.ngOnInit = function () {
         this._elWithFocus = document.activeElement;
-        this._renderer.setElementClass(document.body, 'modal-open', true);
+        this._renderer.addClass(document.body, 'modal-open');
     };
     NgbModalWindow.prototype.ngAfterViewInit = function () {
         if (!this._elRef.nativeElement.contains(document.activeElement)) {
-            this._renderer.invokeElementMethod(this._elRef.nativeElement, 'focus', []);
+            this._elRef.nativeElement['focus'].apply(this._elRef.nativeElement, []);
         }
     };
     NgbModalWindow.prototype.ngOnDestroy = function () {
         if (this._elWithFocus && document.body.contains(this._elWithFocus)) {
-            this._renderer.invokeElementMethod(this._elWithFocus, 'focus', []);
+            this._elWithFocus['focus'].apply(this._elWithFocus, []);
         }
         else {
-            this._renderer.invokeElementMethod(document.body, 'focus', []);
+            document.body['focus'].apply(document.body, []);
         }
         this._elWithFocus = null;
-        this._renderer.setElementClass(document.body, 'modal-open', false);
+        this._renderer.removeClass(document.body, 'modal-open');
     };
     return NgbModalWindow;
 }());
@@ -58,7 +58,7 @@ NgbModalWindow.decorators = [
 /** @nocollapse */
 NgbModalWindow.ctorParameters = function () { return [
     { type: ElementRef, },
-    { type: Renderer, },
+    { type: Renderer2, },
 ]; };
 NgbModalWindow.propDecorators = {
     'backdrop': [{ type: Input },],

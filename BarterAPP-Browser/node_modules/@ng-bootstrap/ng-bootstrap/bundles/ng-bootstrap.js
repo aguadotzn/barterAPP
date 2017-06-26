@@ -411,7 +411,7 @@ var PopupService = (function () {
             return new ContentRef([viewRef.rootNodes], viewRef);
         }
         else {
-            return new ContentRef([[this._renderer.createText(null, "" + content)]]);
+            return new ContentRef([[this._renderer.createText("" + content)]]);
         }
     };
     return PopupService;
@@ -1730,6 +1730,7 @@ var NgbRatingConfig = (function () {
     function NgbRatingConfig() {
         this.max = 10;
         this.readonly = false;
+        this.resettable = false;
     }
     return NgbRatingConfig;
 }());
@@ -2329,19 +2330,38 @@ var NgbActiveLabel = (function () {
         this._elRef = _elRef;
     }
     Object.defineProperty(NgbActiveLabel.prototype, "active", {
-        set: function (isActive) { this._renderer.setElementClass(this._elRef.nativeElement, 'active', isActive); },
+        set: function (isActive) {
+            if (isActive) {
+                this._renderer.addClass(this._elRef.nativeElement, 'active');
+            }
+            else {
+                this._renderer.removeClass(this._elRef.nativeElement, 'active');
+            }
+        },
         enumerable: true,
         configurable: true
     });
     Object.defineProperty(NgbActiveLabel.prototype, "disabled", {
         set: function (isDisabled) {
-            this._renderer.setElementClass(this._elRef.nativeElement, 'disabled', isDisabled);
+            if (isDisabled) {
+                this._renderer.addClass(this._elRef.nativeElement, 'disabled');
+            }
+            else {
+                this._renderer.removeClass(this._elRef.nativeElement, 'disabled');
+            }
         },
         enumerable: true,
         configurable: true
     });
     Object.defineProperty(NgbActiveLabel.prototype, "focused", {
-        set: function (isFocused) { this._renderer.setElementClass(this._elRef.nativeElement, 'focus', isFocused); },
+        set: function (isFocused) {
+            if (isFocused) {
+                this._renderer.addClass(this._elRef.nativeElement, 'focus');
+            }
+            else {
+                this._renderer.removeClass(this._elRef.nativeElement, 'focus');
+            }
+        },
         enumerable: true,
         configurable: true
     });
@@ -2349,7 +2369,7 @@ var NgbActiveLabel = (function () {
 }());
 NgbActiveLabel = __decorate([
     core_1.Directive({ selector: 'label.btn' }),
-    __metadata("design:paramtypes", [core_1.Renderer, core_1.ElementRef])
+    __metadata("design:paramtypes", [core_1.Renderer2, core_1.ElementRef])
 ], NgbActiveLabel);
 exports.NgbActiveLabel = NgbActiveLabel;
 /**
@@ -2374,7 +2394,7 @@ var NgbRadio = (function () {
         set: function (value) {
             this._value = value;
             var stringValue = value ? value.toString() : '';
-            this._renderer.setElementProperty(this._element.nativeElement, 'value', stringValue);
+            this._renderer.setProperty(this._element.nativeElement, 'value', stringValue);
             if (this._group) {
                 this._group.onRadioValueUpdate();
             }
@@ -2464,7 +2484,7 @@ NgbRadio = __decorate([
     }),
     __param(0, core_1.Optional()), __param(1, core_1.Optional()),
     __metadata("design:paramtypes", [NgbRadioGroup, NgbActiveLabel,
-        core_1.Renderer, core_1.ElementRef])
+        core_1.Renderer2, core_1.ElementRef])
 ], NgbRadio);
 exports.NgbRadio = NgbRadio;
 //# sourceMappingURL=radio.js.map
@@ -2811,7 +2831,7 @@ var NgbInputDatepicker = (function () {
     NgbInputDatepicker.prototype.registerOnValidatorChange = function (fn) { this._validatorChange = fn; };
     ;
     NgbInputDatepicker.prototype.setDisabledState = function (isDisabled) {
-        this._renderer.setElementProperty(this._elRef.nativeElement, 'disabled', isDisabled);
+        this._renderer.setProperty(this._elRef.nativeElement, 'disabled', isDisabled);
         if (this.isOpen()) {
             this._cRef.instance.setDisabledState(isDisabled);
         }
@@ -2900,6 +2920,10 @@ var NgbInputDatepicker = (function () {
             this._validatorChange();
         }
     };
+    NgbInputDatepicker.prototype.ngOnDestroy = function () {
+        this.close();
+        this._zoneSubscription.unsubscribe();
+    };
     NgbInputDatepicker.prototype._applyDatepickerInputs = function (datepickerInstance) {
         var _this = this;
         ['dayTemplate', 'displayMonths', 'firstDayOfWeek', 'markDisabled', 'minDate', 'maxDate', 'navigation',
@@ -2912,15 +2936,15 @@ var NgbInputDatepicker = (function () {
         datepickerInstance.startDate = this.startDate || this._model;
     };
     NgbInputDatepicker.prototype._applyPopupStyling = function (nativeElement) {
-        this._renderer.setElementClass(nativeElement, 'dropdown-menu', true);
-        this._renderer.setElementStyle(nativeElement, 'padding', '0');
+        this._renderer.addClass(nativeElement, 'dropdown-menu');
+        this._renderer.setStyle(nativeElement, 'padding', '0');
     };
     NgbInputDatepicker.prototype._subscribeForDatepickerOutputs = function (datepickerInstance) {
         var _this = this;
         datepickerInstance.navigate.subscribe(function (date) { return _this.navigate.emit(date); });
     };
     NgbInputDatepicker.prototype._writeModelValue = function (model) {
-        this._renderer.setElementProperty(this._elRef.nativeElement, 'value', this._parserFormatter.format(model));
+        this._renderer.setProperty(this._elRef.nativeElement, 'value', this._parserFormatter.format(model));
         if (this.isOpen()) {
             this._cRef.instance.writeValue(model);
             this._onTouched();
@@ -2984,7 +3008,7 @@ NgbInputDatepicker = __decorate([
         providers: [NGB_DATEPICKER_VALUE_ACCESSOR, NGB_DATEPICKER_VALIDATOR, datepicker_service_1.NgbDatepickerService]
     }),
     __metadata("design:paramtypes", [ngb_date_parser_formatter_1.NgbDateParserFormatter, core_1.ElementRef, core_1.ViewContainerRef,
-        core_1.Renderer, core_1.ComponentFactoryResolver, core_1.NgZone,
+        core_1.Renderer2, core_1.ComponentFactoryResolver, core_1.NgZone,
         datepicker_service_1.NgbDatepickerService, ngb_calendar_1.NgbCalendar])
 ], NgbInputDatepicker);
 exports.NgbInputDatepicker = NgbInputDatepicker;
@@ -3762,22 +3786,22 @@ var NgbModalWindow = (function () {
     NgbModalWindow.prototype.dismiss = function (reason) { this.dismissEvent.emit(reason); };
     NgbModalWindow.prototype.ngOnInit = function () {
         this._elWithFocus = document.activeElement;
-        this._renderer.setElementClass(document.body, 'modal-open', true);
+        this._renderer.addClass(document.body, 'modal-open');
     };
     NgbModalWindow.prototype.ngAfterViewInit = function () {
         if (!this._elRef.nativeElement.contains(document.activeElement)) {
-            this._renderer.invokeElementMethod(this._elRef.nativeElement, 'focus', []);
+            this._elRef.nativeElement['focus'].apply(this._elRef.nativeElement, []);
         }
     };
     NgbModalWindow.prototype.ngOnDestroy = function () {
         if (this._elWithFocus && document.body.contains(this._elWithFocus)) {
-            this._renderer.invokeElementMethod(this._elWithFocus, 'focus', []);
+            this._elWithFocus['focus'].apply(this._elWithFocus, []);
         }
         else {
-            this._renderer.invokeElementMethod(document.body, 'focus', []);
+            document.body['focus'].apply(document.body, []);
         }
         this._elWithFocus = null;
-        this._renderer.setElementClass(document.body, 'modal-open', false);
+        this._renderer.removeClass(document.body, 'modal-open');
     };
     return NgbModalWindow;
 }());
@@ -3814,7 +3838,7 @@ NgbModalWindow = __decorate([
         },
         template: "\n    <div [class]=\"'modal-dialog' + (size ? ' modal-' + size : '')\" role=\"document\">\n        <div class=\"modal-content\"><ng-content></ng-content></div>\n    </div>\n    "
     }),
-    __metadata("design:paramtypes", [core_1.ElementRef, core_1.Renderer])
+    __metadata("design:paramtypes", [core_1.ElementRef, core_1.Renderer2])
 ], NgbModalWindow);
 exports.NgbModalWindow = NgbModalWindow;
 //# sourceMappingURL=modal-window.js.map
@@ -4151,7 +4175,7 @@ var NgbPopover = (function () {
             this._windowRef.instance.placement = this.placement;
             this._windowRef.instance.title = this.popoverTitle;
             this._windowRef.instance.id = this._ngbPopoverWindowId;
-            this._renderer.setElementAttribute(this._elementRef.nativeElement, 'aria-describedby', this._ngbPopoverWindowId);
+            this._renderer.setAttribute(this._elementRef.nativeElement, 'aria-describedby', this._ngbPopoverWindowId);
             if (this.container === 'body') {
                 window.document.querySelector(this.container).appendChild(this._windowRef.location.nativeElement);
             }
@@ -4166,7 +4190,7 @@ var NgbPopover = (function () {
      */
     NgbPopover.prototype.close = function () {
         if (this._windowRef) {
-            this._renderer.setElementAttribute(this._elementRef.nativeElement, 'aria-describedby', null);
+            this._renderer.removeAttribute(this._elementRef.nativeElement, 'aria-describedby');
             this._popupService.close();
             this._windowRef = null;
             this.hidden.emit();
@@ -4227,7 +4251,7 @@ __decorate([
 ], NgbPopover.prototype, "hidden", void 0);
 NgbPopover = __decorate([
     core_1.Directive({ selector: '[ngbPopover]', exportAs: 'ngbPopover' }),
-    __metadata("design:paramtypes", [core_1.ElementRef, core_1.Renderer, core_1.Injector,
+    __metadata("design:paramtypes", [core_1.ElementRef, core_1.Renderer2, core_1.Injector,
         core_1.ComponentFactoryResolver, core_1.ViewContainerRef, popover_config_1.NgbPopoverConfig,
         core_1.NgZone])
 ], NgbPopover);
@@ -4374,6 +4398,8 @@ var NgbRating = (function () {
         }
         this.hover.emit(value);
     };
+    NgbRating.prototype.handleBlur = function () { this.onTouched(); };
+    NgbRating.prototype.handleClick = function (value) { this.update(this.resettable && this.rate === value ? 0 : value); };
     NgbRating.prototype.handleKeyDown = function (event) {
         if (Key[util_1.toString(event.which)]) {
             event.preventDefault();
@@ -4420,6 +4446,7 @@ var NgbRating = (function () {
         }
         if (internalChange) {
             this.onChange(this.rate);
+            this.onTouched();
         }
         this._updateState(this.rate);
     };
@@ -4457,6 +4484,10 @@ __decorate([
     __metadata("design:type", Boolean)
 ], NgbRating.prototype, "readonly", void 0);
 __decorate([
+    core_1.Input(),
+    __metadata("design:type", Boolean)
+], NgbRating.prototype, "resettable", void 0);
+__decorate([
     core_1.Input(), core_1.ContentChild(core_1.TemplateRef),
     __metadata("design:type", core_1.TemplateRef)
 ], NgbRating.prototype, "starTemplate", void 0);
@@ -4485,10 +4516,11 @@ NgbRating = __decorate([
             '[attr.aria-valuenow]': 'nextRate',
             '[attr.aria-valuetext]': 'ariaValueText()',
             '[attr.aria-disabled]': 'readonly ? true : null',
-            '(mouseleave)': 'reset()',
-            '(keydown)': 'handleKeyDown($event)'
+            '(blur)': 'handleBlur()',
+            '(keydown)': 'handleKeyDown($event)',
+            '(mouseleave)': 'reset()'
         },
-        template: "\n    <ng-template #t let-fill=\"fill\">{{ fill === 100 ? '&#9733;' : '&#9734;' }}</ng-template>\n    <ng-template ngFor [ngForOf]=\"contexts\" let-index=\"index\">\n      <span class=\"sr-only\">({{ index < nextRate ? '*' : ' ' }})</span>\n      <span (mouseenter)=\"enter(index + 1)\" (click)=\"update(index + 1)\" [style.cursor]=\"readonly || disabled ? 'default' : 'pointer'\">\n        <ng-template [ngTemplateOutlet]=\"starTemplate || t\" [ngOutletContext]=\"contexts[index]\"></ng-template>\n      </span>\n    </ng-template>\n  ",
+        template: "\n    <ng-template #t let-fill=\"fill\">{{ fill === 100 ? '&#9733;' : '&#9734;' }}</ng-template>\n    <ng-template ngFor [ngForOf]=\"contexts\" let-index=\"index\">\n      <span class=\"sr-only\">({{ index < nextRate ? '*' : ' ' }})</span>\n      <span (mouseenter)=\"enter(index + 1)\" (click)=\"handleClick(index + 1)\" [style.cursor]=\"readonly || disabled ? 'default' : 'pointer'\">\n        <ng-template [ngTemplateOutlet]=\"starTemplate || t\" [ngOutletContext]=\"contexts[index]\"></ng-template>\n      </span>\n    </ng-template>\n  ",
         providers: [NGB_RATING_VALUE_ACCESSOR]
     }),
     __metadata("design:paramtypes", [rating_config_1.NgbRatingConfig, core_1.ChangeDetectorRef])
@@ -4912,7 +4944,7 @@ var NgbTooltip = (function () {
             this._windowRef = this._popupService.open(this._ngbTooltip, context);
             this._windowRef.instance.placement = this.placement;
             this._windowRef.instance.id = this._ngbTooltipWindowId;
-            this._renderer.setElementAttribute(this._elementRef.nativeElement, 'aria-describedby', this._ngbTooltipWindowId);
+            this._renderer.setAttribute(this._elementRef.nativeElement, 'aria-describedby', this._ngbTooltipWindowId);
             if (this.container === 'body') {
                 window.document.querySelector(this.container).appendChild(this._windowRef.location.nativeElement);
             }
@@ -4927,7 +4959,7 @@ var NgbTooltip = (function () {
      */
     NgbTooltip.prototype.close = function () {
         if (this._windowRef != null) {
-            this._renderer.setElementAttribute(this._elementRef.nativeElement, 'aria-describedby', null);
+            this._renderer.removeAttribute(this._elementRef.nativeElement, 'aria-describedby');
             this._popupService.close();
             this._windowRef = null;
             this.hidden.emit();
@@ -4985,7 +5017,7 @@ __decorate([
 ], NgbTooltip.prototype, "ngbTooltip", null);
 NgbTooltip = __decorate([
     core_1.Directive({ selector: '[ngbTooltip]', exportAs: 'ngbTooltip' }),
-    __metadata("design:paramtypes", [core_1.ElementRef, core_1.Renderer, core_1.Injector,
+    __metadata("design:paramtypes", [core_1.ElementRef, core_1.Renderer2, core_1.Injector,
         core_1.ComponentFactoryResolver, core_1.ViewContainerRef, tooltip_config_1.NgbTooltipConfig,
         core_1.NgZone])
 ], NgbTooltip);
@@ -5147,7 +5179,7 @@ var NgbTypeahead = (function () {
     NgbTypeahead.prototype.registerOnTouched = function (fn) { this._onTouched = fn; };
     NgbTypeahead.prototype.writeValue = function (value) { this._writeInputValue(this._formatItemForInput(value)); };
     NgbTypeahead.prototype.setDisabledState = function (isDisabled) {
-        this._renderer.setElementProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
+        this._renderer.setProperty(this._elementRef.nativeElement, 'disabled', isDisabled);
     };
     NgbTypeahead.prototype.dismissPopup = function () {
         if (this.isPopupOpen()) {
@@ -5222,7 +5254,7 @@ var NgbTypeahead = (function () {
             var formattedVal = this._formatItemForInput(this._windowRef.instance.getActive());
             if (userInputLowerCase === formattedVal.substr(0, this._userInput.length).toLowerCase()) {
                 this._writeInputValue(this._userInput + formattedVal.substr(this._userInput.length));
-                this._renderer.invokeElementMethod(this._elementRef.nativeElement, 'setSelectionRange', [this._userInput.length, formattedVal.length]);
+                this._elementRef.nativeElement['setSelectionRange'].apply(this._elementRef.nativeElement, [this._userInput.length, formattedVal.length]);
             }
             else {
                 this.writeValue(this._windowRef.instance.getActive());
@@ -5233,7 +5265,7 @@ var NgbTypeahead = (function () {
         return item && this.inputFormatter ? this.inputFormatter(item) : util_1.toString(item);
     };
     NgbTypeahead.prototype._writeInputValue = function (value) {
-        this._renderer.setElementProperty(this._elementRef.nativeElement, 'value', value);
+        this._renderer.setProperty(this._elementRef.nativeElement, 'value', value);
     };
     NgbTypeahead.prototype._subscribeToUserInput = function (userInput$) {
         var _this = this;
@@ -5320,7 +5352,7 @@ NgbTypeahead = __decorate([
         },
         providers: [NGB_TYPEAHEAD_VALUE_ACCESSOR]
     }),
-    __metadata("design:paramtypes", [core_1.ElementRef, core_1.ViewContainerRef, core_1.Renderer,
+    __metadata("design:paramtypes", [core_1.ElementRef, core_1.ViewContainerRef, core_1.Renderer2,
         core_1.Injector, core_1.ComponentFactoryResolver, typeahead_config_1.NgbTypeaheadConfig,
         core_1.NgZone])
 ], NgbTypeahead);

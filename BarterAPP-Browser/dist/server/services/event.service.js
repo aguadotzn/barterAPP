@@ -1,5 +1,5 @@
 // Services: controla los turnos
-var config = require('config.json');
+var config = require('../config.js');
 var Q = require('q');
 var mongo = require('mongoskin');
 var db = mongo.db(config.connectionString, {});

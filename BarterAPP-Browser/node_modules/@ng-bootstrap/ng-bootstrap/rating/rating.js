@@ -51,6 +51,8 @@ var NgbRating = (function () {
         }
         this.hover.emit(value);
     };
+    NgbRating.prototype.handleBlur = function () { this.onTouched(); };
+    NgbRating.prototype.handleClick = function (value) { this.update(this.resettable && this.rate === value ? 0 : value); };
     NgbRating.prototype.handleKeyDown = function (event) {
         if (Key[toString(event.which)]) {
             event.preventDefault();
@@ -97,6 +99,7 @@ var NgbRating = (function () {
         }
         if (internalChange) {
             this.onChange(this.rate);
+            this.onTouched();
         }
         this._updateState(this.rate);
     };
@@ -135,10 +138,11 @@ NgbRating.decorators = [
                     '[attr.aria-valuenow]': 'nextRate',
                     '[attr.aria-valuetext]': 'ariaValueText()',
                     '[attr.aria-disabled]': 'readonly ? true : null',
-                    '(mouseleave)': 'reset()',
-                    '(keydown)': 'handleKeyDown($event)'
+                    '(blur)': 'handleBlur()',
+                    '(keydown)': 'handleKeyDown($event)',
+                    '(mouseleave)': 'reset()'
                 },
-                template: "\n    <ng-template #t let-fill=\"fill\">{{ fill === 100 ? '&#9733;' : '&#9734;' }}</ng-template>\n    <ng-template ngFor [ngForOf]=\"contexts\" let-index=\"index\">\n      <span class=\"sr-only\">({{ index < nextRate ? '*' : ' ' }})</span>\n      <span (mouseenter)=\"enter(index + 1)\" (click)=\"update(index + 1)\" [style.cursor]=\"readonly || disabled ? 'default' : 'pointer'\">\n        <ng-template [ngTemplateOutlet]=\"starTemplate || t\" [ngOutletContext]=\"contexts[index]\"></ng-template>\n      </span>\n    </ng-template>\n  ",
+                template: "\n    <ng-template #t let-fill=\"fill\">{{ fill === 100 ? '&#9733;' : '&#9734;' }}</ng-template>\n    <ng-template ngFor [ngForOf]=\"contexts\" let-index=\"index\">\n      <span class=\"sr-only\">({{ index < nextRate ? '*' : ' ' }})</span>\n      <span (mouseenter)=\"enter(index + 1)\" (click)=\"handleClick(index + 1)\" [style.cursor]=\"readonly || disabled ? 'default' : 'pointer'\">\n        <ng-template [ngTemplateOutlet]=\"starTemplate || t\" [ngOutletContext]=\"contexts[index]\"></ng-template>\n      </span>\n    </ng-template>\n  ",
                 providers: [NGB_RATING_VALUE_ACCESSOR]
             },] },
 ];
@@ -151,6 +155,7 @@ NgbRating.propDecorators = {
     'max': [{ type: Input },],
     'rate': [{ type: Input },],
     'readonly': [{ type: Input },],
+    'resettable': [{ type: Input },],
     'starTemplate': [{ type: Input }, { type: ContentChild, args: [TemplateRef,] },],
     'hover': [{ type: Output },],
     'leave': [{ type: Output },],

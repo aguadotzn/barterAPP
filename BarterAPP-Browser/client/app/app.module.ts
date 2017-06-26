@@ -1,4 +1,4 @@
-﻿//app.module: fichero de declaracion de todos los componentes. Fichero obligatorio en angular.
+//app.module: fichero de declaracion de todos los componentes. Fichero obligatorio en angular.
 import { NgModule } from '@angular/core';
 
 import { BrowserModule } from '@angular/platform-browser';
@@ -18,9 +18,10 @@ import { DemoUtilsModule } from './utils/demo-utils/module';
 /*pages*/
 import { WelcomeComponent } from './pages/welcome/welcome.component';
 import { LoginComponent } from './pages/login/index';
-import { HomeComponent } from './pages/home/index';
+import { HelpComponent } from './pages/help/index';
 import { RegisterComponent } from './pages/register/index';
 import { AngularCalendarComponent } from './pages/angular_calendar/angular_calendar.component';
+import { AboutComponent } from './pages/about/about.component';
 
 /*routing*/
 import { routing } from './app.routing';
@@ -36,15 +37,13 @@ import { CalendarRepository, UserRepository } from './repository/index';
 import { ShiftUtilsService } from './utils/shift.utils.service';
 
 /*NG Bootstrap*/
-import { Ng2Bs3ModalModule } from 'ng2-bs3-modal/ng2-bs3-modal';
-//import { NgbModalModule } from '@ng-bootstrap/ng-bootstrap';
-//import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
-//import { PopupModule } from 'ng2-opd-popup';
+import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 
 /*PrimeNG*/
 import { RadioButtonModule } from 'primeng/primeng';
 import { DialogModule } from 'primeng/primeng';
 import { GrowlModule } from 'primeng/primeng';
+
 
 @NgModule({
     imports: [
@@ -60,11 +59,8 @@ import { GrowlModule } from 'primeng/primeng';
         CalendarModule.forRoot(),
         DemoUtilsModule,
       /*NgBootstrap*/
-        //NgbModalModule.forRoot(),
-        //NgbDropdownModule.forRoot(),
-      //  PopupModule.forRoot(),
-        Ng2Bs3ModalModule,
-      /*PrimeNG*/
+        NgbDropdownModule.forRoot(),
+        /*PrimeNG*/
         RadioButtonModule,
         DialogModule,
         GrowlModule
@@ -74,10 +70,11 @@ import { GrowlModule } from 'primeng/primeng';
         AlertComponent,
         /*pages*/
         WelcomeComponent,
-        HomeComponent,
+        HelpComponent,
         LoginComponent,
         RegisterComponent,
-        AngularCalendarComponent
+        AngularCalendarComponent,
+        AboutComponent
     ],
     providers: [
         /*App*/

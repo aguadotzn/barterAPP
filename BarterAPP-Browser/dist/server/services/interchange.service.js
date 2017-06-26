@@ -3,7 +3,7 @@
 //    "acknowledger" : "UserB",  el que puede cambiar (Persona que recibe la peticion. Dia Libre)
 //    "requestor_event_id" : ObjectId("592d4adef23ef815709076a3"),    desde que evento cambiar
 //    "acknowledger_event_id" : ObjectId("592d79b077ece519bc534034"), por el evento que voy a cambiar
-var config = require('config.json');
+var config = require('../config.js');
 var Q = require('q');
 var mongo = require('mongoskin');
 var db = mongo.db(config.connectionString, {});
@@ -171,7 +171,6 @@ service.accept_shift = function (param) {
 service.activateShift = function (params) {
     var deferred = Q.defer();
     var query = { 'acknowledger': params.acknowledger, "acknowledger_event_id": mongo.ObjectID.createFromHexString(params.acknowledger_event_id), "status": "pending" };
-    console.log("interchange query object = : " + JSON.stringify(query));
     //console.log("Objeto a intercambiar = : " + JSON.stringify(query));
     //Obtener el objeto de intercambio de el usuario que hace la peticion
     db.interchange.findOne({ 'acknowledger': params.acknowledger }, function (err, interchange) {
