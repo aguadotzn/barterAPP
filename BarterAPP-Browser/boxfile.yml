@@ -1,0 +1,20 @@
+run.config:
+  engine: nodejs
+  engine.config:
+    runtime: nodejs-6.9
+  fs_watch: true
+
+  extra_steps:
+    npm install -g mongoskin
+
+  # add nginx package
+  extra_packages:
+    - nginx
+
+web.site:
+  start:
+      node: yarn start
+      nginx: nginx -c /app/nginx.conf
+
+data.db:
+  image: nanobox/mongodb:3.0
