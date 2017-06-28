@@ -1,97 +1,189 @@
 \begin{thebibliography}{10}
 
 \bibitem{academia2}
-Academia Binaria.
-\newblock Hola mundo angular 2, 2016.
+Academia Binaria-Alberto Basalo.
+\newblock "{H}ola mundo con angular 2".
+\newblock \url{http://academia-binaria.com/hola-mundo-en-angular-2/}, [Febrero,
+  2016].
+
+\bibitem{librosconsulta}
+Julio Giampiere~Grados Caballero.
+\newblock "12 libros de javascript que todo desarrollador debería leer".
+\newblock
+  \url{https://devcode.la/blog/12-libros-javascript-que-todo-desarrollador-debe-leer/},
+  [Octubre, 2016].
+\newblock Universidad Politécnica de Cartagena.
+
+\bibitem{tfg3}
+Ignacio~Aldarabi Carrillo.
+\newblock "{A}plicación web de gestión financiera personal desarrollada con
+  mean.js".
+\newblock \url{http://oa.upm.es/38998/}, [Septimebre, 2016].
+\newblock Escuela superior de Ingenieía de Sistemas Informáticos. Universidad
+  Politécnica de Madrid.
 
 \bibitem{elearning}
 Silvina~Mariel Castro, Claudio~Ariel Clarenc, Carmen~López de~Lenz,
   María~Eugenia Moreno, and Norma~Beatriz Tosco.
-\newblock Investigación colaborativa sobre lms, 2013.
+\newblock "{I}nvestigación colaborativa sobre lms", [2013].
+
+\bibitem{tfg2}
+Eduardo~Benito Díez.
+\newblock "{D}esarrollo de herramienta colaborativa en tiempo real".
+\newblock \url{http://biblioteca.unirioja.es/tfe_e/TFE001000.pdf}, [2015].
+\newblock Facultad de Ciencias, Estudios Agroalimentarios e Informática.
+  Universide de la Rioja.
 
 \bibitem{blog1}
 Alida Vergara~Jurado Facilcloud.com.
-\newblock Sql vs nosql, 2016.
+\newblock "{S}ql vs nosql".
+\newblock
+  \url{https://www.facilcloud.com/noticias/sql-vs-nosql-which-one-should-i-use/},
+  [2016].
 
 \bibitem{grasp}
 Fernando~Berzal Galiano.
-\newblock Grasp: Greedy randomized adaptive search procedure, 2011.
+\newblock {G}rasp: Greedy randomized adaptive search procedure.
+\newblock
+  \url{http://elvex.ugr.es/software/nc/help/spanish/nc/clustering/GRASP.html},
+  [2011].
+
+\bibitem{librohtml}
+Juan~Diego Gauchat.
+\newblock {\em El gran libro de HTML5, CSS3 y JAVASCRIPT}.
+\newblock MARCOMBO, S.A., 2012.
+\newblock [Comprado].
 
 \bibitem{scotch1}
 Thomas Greco.
-\newblock Creating your first angular 2 components, 2016.
+\newblock "{C}reating your first angular 2 components".
+\newblock
+  \url{https://scotch.io/tutorials/creating-your-first-angular-2-components},
+  [2016].
 
 \bibitem{calendariodocs}
 Matt Lewis.
-\newblock Angular 2+ calendar documentation, 2017.
+\newblock "{A}ngular 2+ calendar documentation".
+\newblock \url{https://mattlewis92.github.io/angular-calendar/docs/}, [2017].
+
+\bibitem{tfg4}
+Fco Javier~Avilés López.
+\newblock "{D}esarrollo de una aplicación web para compartir medio de
+  transporte con angularjs".
+\newblock
+  \url{http://repositorio.upct.es/bitstream/handle/10317/4411/tfg396.pdf},
+  [2014].
+\newblock Universidad Politécnica de Cartagena.
 
 \bibitem{cleancode}
 Robert~Cecil Martin.
 \newblock {\em Clean Code: A Handbook of Agile Software Craftsmanship}.
-\newblock PRENTICE-HALL INTERNATIONAL EDITION, 2008.
+\newblock Prentice-Hall, International Edition, 2008.
 
 \bibitem{trabajo1}
 Diego~F. Quintero-Moncada and Carlos~L. Quintero-Araújo.
 \newblock Diseño de un modelo de asignación de turnos para la operación de
-  sistemas de transporte masivo tipo brt, 2013.
-
-\bibitem{curso1}
-Victor Robles-Udemy.
-\newblock Curso de nodejs y angular - crea webapps con el mean stack., 2017.
-
-\bibitem{curso2}
-Victor Robles-Udemy.
-\newblock Introducción a angular 4 - instalación y componentes., 2017.
-
-\bibitem{curso3}
-Victor Robles-Udemy.
-\newblock Introducción teórica a los frameworks de desarrollo., 2017.
+  sistemas de transporte masivo tipo brt.
+\newblock
+  \url{http://www.laccei.org/LACCEI2013-Cancun/RefereedPapers/RP090.pdf},
+  [Agosto, 2013].
 
 \bibitem{blog2}
 Craig~Buckler sitepoint.com.
-\newblock Sql vs nosql ¿cuál debo usar?., 2015.
+\newblock "{S}ql vs nosql, ¿cuál debo usar?.".
+\newblock \url{https://www.sitepoint.com/sql-vs-nosql-choose/}, [Noviembre,
+  2015].
 
 \bibitem{articulo1}
 Slant.co.
-\newblock Javascript ides or editors, 2015.
+\newblock "{J}avascript ides or editors".
+\newblock
+  \url{https://www.slant.co/topics/1686/viewpoints/5/~javascript-ides-or-editors~webstorm},
+  [2015].
 
 \bibitem{articulo2}
 Cristina Sánchez.
-\newblock El genio que convirtió su blog para informáticos en un gigante de
-  internet, 2017.
+\newblock "{E}l genio que convirtió su blog para informáticos en un gigante
+  de internet".
+\newblock
+  \url{http://www.eldiario.es/hojaderouter/tecnologia/software/Stack_Overflow-Joel_Spolsky-programacion-codigo-desarrolladores_0_651635125.htm},
+  [2017].
+
+\bibitem{curso1}
+Victor~Robles Udemy.
+\newblock "{C}urso de nodejs y angular - crea webapps con el mean stack.".
+\newblock
+  \url{https://www.udemy.com/curso-de-nodejs-y-angular-2-crea-webapps-con-el-mean-stack-2/},
+  [Abril, 2017].
+
+\bibitem{curso3}
+Victor~Robles Udemy.
+\newblock "{I}ntroducción teórica a los frameworks de desarrollo.".
+\newblock
+  \url{https://www.udemy.com/introduccion-teorica-a-los-framework-de-desarrollo-para-php/},
+  [Febrero, 2017].
+
+\bibitem{curso2}
+Victor~Robles Udemy.
+\newblock "{I}ntroducción a angular 4 - instalación y componentes.".
+\newblock \url{https://www.udemy.com/introduccion-a-angular-4/}, [Mayo, 2017].
 
 \bibitem{angularmarket}
 W3Techs.
-\newblock Usage statistics and market share of angularjs for websites., 2017.
+\newblock "{U}sage statistics and market share of angularjs for websites.".
+\newblock \url{https://w3techs.com/technologies/details/js-angularjs/all/all},
+  [2017].
 
 \bibitem{desarrollo1}
 Alberto Basalo-Desarrollo Web.
-\newblock Análisis de las carpetas de un proyecto básico con angular 2, 2016.
+\newblock " {A}nálisis de las carpetas de un proyecto básico con angular 2".
+\newblock
+  \url{https://desarrolloweb.com/articulos/analisis-carpetas-proyecto-angular2.html},
+  [Noviembre, 2016].
 
 \bibitem{desarrollo2}
 Alberto Basalo-Desarrollo Web.
-\newblock Introducción a los componentes en angular 2, 2016.
-
-\bibitem{wikisingleton}
-Wikipedia.
-\newblock Singleton pattern --- {Wikipedia}{,} {The Free Encyclopedia}, 2016.
+\newblock "{I}ntroducción a los componentes en angular 2".
+\newblock
+  \url{https://desarrolloweb.com/articulos/introduccion-componentes-angular2.html},
+  [Noviembre, 2016].
 
 \bibitem{mvc}
 Wikipedia.
-\newblock Model view controller, 2017.
+\newblock {M}odelo vista controlador --- {Wikipedia}{,} {The Free
+  Encyclopedia}.
+\newblock \url{https://es.wikipedia.org/wiki/Model–view–controller},
+  [2015].
+
+\bibitem{wikisingleton}
+Wikipedia.
+\newblock {S}ingleton pattern --- {Wikipedia}{,} {The Free Encyclopedia}.
+\newblock \url{https://en.wikipedia.org/wiki/Singleton_pattern}, [2016].
 
 \bibitem{desarrolloweb1}
 Yeeply.
-\newblock El desarrollo web, en alza como nunca antes., 2016.
+\newblock "{E}l desarrollo web, en alza como nunca antes.".
+\newblock \url{ https://www.yeeply.com/blog/desarrollo-web-en-alza/}, [2016].
 
 \bibitem{trabajo2}
 David Álvarez Martínez, Eliana Mirledy~Toro Ocampo, and Ramón
   Alfonso~Gallego Rendón.
 \newblock Multiskilled workforce scheduling for business with variable demand
-  using the grasp algorithm, 2010.
+  using the grasp algorithm.
+\newblock
+  \url{http://www.unipamplona.edu.co/unipamplona/portalIG/home_40/recursos/03_v13_18/revista_16/27102011/13.pdf},
+  [2010].
+
+\bibitem{tfg1}
+Juan Íscar Martínez.
+\newblock "{N}ode.js: Do's and don'ts".
+\newblock \url{https://riunet.upv.es/handle/10251/55344}, [Junio, 2015].
+\newblock Escola Tècnica Superior d'Enginyeria Informàtica Universitat
+  Politècnica de València.
 
 \bibitem{scrumquees}
 Proyectos ágiles.
-\newblock ¿qué es scrum?, 2012.
+\newblock "¿{Q}ué es scrum ?".
+\newblock \url{https://proyectosagiles.org/que-es-scrum/}, [2012].
 
 \end{thebibliography}

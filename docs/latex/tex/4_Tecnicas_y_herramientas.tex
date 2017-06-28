@@ -19,8 +19,7 @@ En definitiva Scrum propone seguir un proceso de desarrollo iterativo e incremen
 \subsection{MVC: Model-View-Controller}\label{mvc}
 Ya nombrado anteriormente, Ees un patrón de diseño software utilizada para implementar sistemas donde se requiere el uso de interfaces de usuario. Surge de la necesidad de crear software más robusto con un ciclo de vida más adecuado, donde se potencie la facilidad de mantenimiento, reutilización del código y la separación de conceptos. Es decir surge de la idea de separar el modelo por un lado, la vista por otro y por último el controlador.
 
-
-\imagen{mvcschema}{Esquema \emph{MVC}. Elaboración propia.}
+\imagen{mvcschema}{\footnotesize{Esquema \emph{MVC}. Elaboración propia.}}
 
 \subsection{Patrones de diseño: singleton}\label{Singleton}
 
@@ -33,7 +32,8 @@ En este apartado se describen las herramientas utilizadas para el desarrollo del
 \subsection{Atom}\label{herramientas_atom}
 \href{https://atom.io/}{Atom} es un editor de texto moderno de código abierto desarrollado por  \href{http://brackets.io/}{GitHub}  que se ha escogido en este proyecto para desarrollar la aplicación debido a que esta desarrollado utilizando tecnologías web, luego ha sido creado por y para la web. Es posible ampliar sus funcionalidades a través de plugins desarrollados con \emph{Node.js} que puede ser instalados de una forma sencilla a través del gestor de paquetes internos con el que cuenta, así como diferentes tipos de temas. Esta posibilidad hace que se convierta en un editor de texto muy personal, ya que es el mismo desarrollador el que elige las características que desea tener sin afectar mínimamente al rendimiento.
 
-\imagenflotante{logo-atom}{Logo \emph{Atom}. Fuente: \url{atom.io}.}
+
+\imagenflotante{logo-atom}{\footnotesize{Logo \emph{Atom}. Fuente: \url{https://atom.io}.}}
 
 \begin{itemize}
 	\item \subsubsection{Alternativas estudiadas}
@@ -51,13 +51,14 @@ Otro \emph{IDE} que recomiendo y que ofrece una grandes prestaciones es \href{ht
 \subsection{Robomongo}\label{herramientas_robomongo}
 \href{http://http//robomongo.org/}{Robomongo} es una interfaz para \emph{MongoDB} que nos permite conectarnos al servidor de base de datos de forma sencilla ya que nada más arrancarlo podemos crear una nueva conexión. Resulta también muy sencillo e intuitivo de utilizar.
 
-\imagenflotante{logo-robomongo}{Logo \emph{Robomongo}. Fuente: \url{robomongo.org}.}
+\imagenflotante{logo-robomongo}{\footnotesize{Logo \emph{Robomongo}. Fuente: \url{https://robomongo.org}.}}
 
 
 
 \subsection{Firefox for developers}\label{herramientas_firefox}
 Para el navegador he elegido Firefox en su versión para desarrolladores: \href{https://www.mozilla.org/es-ES/firefox/developer}{Firefox Developer Edition} , el cuál considero que posee todas las herramientas esenciales para testear y probar una aplicación web.
-\imagenflotante{logo-firefox}{Logo \emph{FF Developers}. Fuente: \url{firefox.com/developer}.}
+
+\imagenflotante{logo-firefox}{\footnotesize{Logo \emph{FF Developers}. Fuente: \url{https://firefox.com/developer}.}}
 
 
 \section{Tecnologías}\label{tecnologias}
@@ -78,13 +79,13 @@ Para el navegador he elegido Firefox en su versión para desarrolladores: \href{
   Está realizado para ser fácilmente testeable.
 \end{itemize}
  
- \imagenflotante{logo-angular}{Logo \emph{Angular}. Fuente: \url{angular.io}.}
+ \imagenflotante{logo-angular}{\footnotesize{Logo \emph{Angular}. Fuente: \url{https://angular.io}.}}
  
 
 \subsubsection{Detalles: Angular Arquitectura}\label{detalle_angulararquitectura}
 Un app de Angular esta basada en componentes. En su día resultó una revolución en el desarrollo web ya que lo que se persigue es que cada parte de la aplicación posea un componente de manera que se consigue hacer aplicaciones web reutilizables de algún modo.
 
-\imagen{angularschema}{Esquema componentes. Fuente:  \url{rldona.gitbooks.io}.}
+\imagen{angularschema}{\footnotesize{Esquema componentes. Fuente:  \url{https://rldona.gitbooks.io}.}}
 
 Cada componente se compone de los siguientes elementos que ayudan a visualizar, controlar, acceder o servir a cada componente. 
 
@@ -113,7 +114,7 @@ Por otro lado el uso de Angular CLI permite realizar en un solo comando el prepa
 
 El aspecto de una aplicación '\textbf{hola mundo}' creada por Angular CLI contendría los siguientes elementos:
 
-\imagenflotante{angularclihelloworld}{Vista \emph{App hola Mundo}. Elaboración propia.}
+\imagenflotante{angularclihelloworld}{\footnotesize{Vista \emph{App hola Mundo}. Elaboración propia.}}
 
 Más información en el Anexo: Manual del programador. 
 
@@ -126,7 +127,7 @@ El calendario elegido ha sido encontrado en github y realizado como un component
 		\item \href{https://fullcalendar.io/}{Full Calendar (Javascript)}
 		\item \href{https://github.com/nekken/ng2-fullcalendar}{El componente de FullCalendar para Angular2}
 		\item \href{https://doc.daypilot.org/calendar/angular-2/}{Day pilot }
-		\item \href{http://angular-ui.github.io/ui-calendar/}{Calendario UI} interesante pero no disponible en versiones de angular 2+.
+		\item \href{http://angular-ui.github.io/ui-calendar/}{Calendario UI} (Interesante pero no disponible en versiones de angular 2+)
 	\end{itemize}
 	\end{itemize}
 
@@ -136,7 +137,7 @@ El calendario elegido ha sido encontrado en github y realizado como un component
 	
 	Algunas de las alternativas estudiadas a Angular 2+ han sido las siguientes:
 	\begin{description}
-\item[ \href{https://www.backbonejs.org/}{BackBone JS} ] Es un framework web que permite construir aplicaciones usando Javascript siguiendo el patrón MVC (modelo-vista-controlador), es decir, de características muy similares a Angular
+\item[ \href{https://www.backbonejs.org/}{BackBone JS} ] Es un framework web que permite construir aplicaciones usando Javascript siguiendo el patrón MVC (modelo-vista-controlador), es decir, de características muy similares a Angular.
 \item[ \href{https://www.emberjs.com/}{Ember JS} ] Se trata de un framework web también que representa un cambio de paradigma con respecto a otros frameworks ya que, por ejemplo, para funcionar correctamente nos exige que respetemos totalmente una convenciones de nomenclatura a la hora de nombrar a cada uno de los objetos de la App.
 \item[ \href{https://facebook.github.io/react/}{React} ] Propiedad de Facebook, ReactJS es una librería Javascript de código abierto que ofrece grandes beneficios en performance, modularidad y promueve un flujo muy claro de datos y eventos, facilitando la planeación y desarrollo de apps complejas. 
 \end{description}
@@ -146,41 +147,43 @@ El calendario elegido ha sido encontrado en github y realizado como un component
 \subsection{Front-end: Boostrap}\label{tecnologias_boostrap}
 \href{https://www.getbootstrap.com/}{Boostrap} es un framework CSS desarrollado inicialmente  por Twitter que permite dar forma a un sitio web mediante librerías CSS que incluyen tipografías, botones, cuadros, menús y otros elementos que pueden ser utilizados en cualquier sitio web.
 
-\imagenflotante{logo-boostrap}{Logo \emph{Boostrap}. Fuente:  \url{getbootstrap.com}.}
+\imagenflotante{logo-boostrap}{\footnotesize{Logo \emph{Boostrap}. Fuente:  \url{https://getbootstrap.com}.}}
+
+\subsection{Front-end: \emph{Material}}\label{tecnologias_material}
+\href{https://material.angular.io/}{Angular Material} e \href{http://ionicmaterial.com/}{Ionic Material}  son componentes que sirven como decoradores, estan basados en las especificaciones de diseño de Google y son muy útiles.
 
 \subsection{ Ionic 2}\label{tecnologias_ionic2}
 \href{https://ionicframework.com/}{Ionic2} es un \emph{framework} gratuito y open source para desarrollar aplicaciones híbridas multiplataforma que utiliza HTML5, CSS (generado por SASS) y Cordova como base. Asegura aplicaciones rápidas, con un alto rendimiento y escalables.
 
-\imagenflotante{logo-ionic}{Logo \emph{Ionic}. Fuente:  \url{ionicframework.com}.}
+\imagenflotante{logo-ionic}{\footnotesize{Logo \emph{Ionic}. Fuente:  \url{https://ionicframework.com}.}}
 
 \subsection{Back-end: Node js}\label{tecnologias_nodejs}
 \href{https://nodejs.org/}{Nodejs} es un entorno de programación pensado para realizar funciones de servidor. Permite la construcción de servidores de forma muy sencilla y rápida, además se puede aplicar para otros usos. La ejecución es asíncrona. Esto significa que las funciones no son ejecutadas secuencialmente (si existen dos llamadas consecutivas, no es necesario que acabe la primera llamada para ejecutar la segunda).
 Está pensado para ser un gestor de entradas y salidas. No ha sido diseñado para ejecutar gran cantidad de código, sino para realizar comunicaciones muy rápidas y abundantes, tanto con eventos locales como por comunicación por red.
-\imagenflotante{logo-nodejs}{Logo \emph{Node JS}. Fuente: \url{nodejs.com}.}
+
+\imagenflotante{logo-nodejs}{\footnotesize{Logo \emph{Node JS}. Fuente: \url{https://nodejs.com}.}}
 
 \begin{itemize}
 	\item \subsubsection{Alternativa estudiada: PHP}\label{php}
-	Un lenguaje ampliamente conocido, con una extensa documentación y multitud de ejemplos. No se integra tan bien como \emph{Node s} con \emph{MongoDB}. 
+	Un lenguaje ampliamente conocido, con una extensa documentación y multitud de ejemplos. No se integra tan bien como lo hace \emph{Nodejs} con \emph{MongoDB}. 
 \end{itemize}
 
 
 \subsection{Back-end: Express }\label{tecnologias_expressjs}
 \href{http://expressjs.com/}{Express js} es un framework web flexible para \emph{Nodejs} que proporciona un conjunto robusto de características para aplicaciones web y móviles, proporciona una capa delgada de características fundamentales de aplicaciones web. Facilita la creación de API’s gracias la gran variedad de métodos HTTP y middleware que proporciona.
-\imagenflotante{logo-express}{Logo \emph{Express}. Fuente:  \url{expressjs.com}.}
+
+\imagenflotante{logo-express}{\footnotesize{Logo \emph{Express}. Fuente:  \url{https://expressjs.com}.}}
 
 
 \subsection{Base de datos: MongoDB}\label{tecnologias_mongodb}
 Para la parte de la base de datos he escogido \href{https://www.mongodb.com/}{MongoDB} estamos hablando de un sistema de gestión de bases de datos no relacionales, o \href{https://es.wikipedia.org/wiki/NoSQL}{noSQL}, es decir, un base de datos que no tiene tablas, se basa en colecciones de datos.
 
 En las colecciones se almacenan contenidos que pueden tener diferentes campos. Este sistema almacena los datos en documentos de tipo JSON, cosa que puede favorecer la integración con las aplicaciones que trabajen con este tipo de formatos, como es el caso de una API REST. 
-\imagenflotante{logo-mongodb}{Logo \emph{MongoDB}. Fuente: \url{mongodb.com}.}
+\imagenflotante{logo-mongodb}{\footnotesize{Logo \emph{MongoDB}. Fuente: \url{mongodb.com}.}}
 
 
-\subsubsection{Detalles: Mongoose}\label{mongoose}
-Se ha utilizado un ODM (\emph{Object-document mapping}) para Mongo y Node.js. Nos permite interactuar con la base de datos mediante objetos de JavaScript, y facilita las operaciones CRUD (Create, Read, Update, Delete) y las validaciones de los usuarios.
-
-\subsubsection{Detalles: Mongoskin}\label{mongoskin}
-Se ha utilizado un ODM (\emph{Object-document mapping}) para Mongo y Node.js. Nos permite interactuar con la base de datos mediante objetos de JavaScript, y facilita las operaciones CRUD (Create, Read, Update, Delete) y las validaciones de los usuarios.
+\subsubsection{Detalles: Mongoose y Mongoskin}\label{mongoose}
+Se han utilizado ambas librerías que sirven para extraer e insertar de una manera más cómoda los datos en nuestra base de datos, sirven por tanto de nexo entre la parte del servidor y la base de de datos. Se ha utilizado también un ODM (\emph{Object-document mapping}) para Mongo y Node.js. Nos permite interactuar con la base de datos mediante objetos de JavaScript, y facilita las operaciones CRUD (Create, Read, Update, Delete) y las validaciones de los usuarios.
 
 \begin{itemize}
 	\item	\subsubsection{Alternativa estudiada: Cassandra}\label{cassandra}
@@ -193,7 +196,8 @@ Se ha utilizado un ODM (\emph{Object-document mapping}) para Mongo y Node.js. No
 
 \subsection{Postman}\label{postman}
 Las pruebas básicas se realizaron con  \href{https://www.getpostman.com}{Postman}. Esta herramienta nos permite construir y gestionar de una forma cómoda nuestras peticiones a servicios \href{https://es.wikipedia.org/wiki/Transferencia_de_Estado_Representacional}{REST} (Post, Get, etc). Su manejo es realmente intuitivo ya que simplemente tenemos que definir la petición que queremos realizar, es decir introducir la ruta, y pulsar el botón de enviar. Es realmente fácil de usar y está disponible como extensión del navegador Chrome, pero también como aplicación de escritorio.
-\imagenflotante{logo-postman}{Logo \emph{Postman}. Fuente:  \url{getpostman.com}.}
+
+\imagenflotante{logo-postman}{\footnotesize{Logo \emph{Postman}. Fuente:  \url{https://getpostman.com}.}}
 
 \begin{itemize}
 	\item	\subsubsection{Alternativa estudiada: SoapUI}
@@ -202,10 +206,10 @@ Las pruebas básicas se realizaron con  \href{https://www.getpostman.com}{Postma
 \end{itemize}
 
 \subsection{Karma}\label{karma}
-
+\href{https://karma-runner.github.io/}{Karma} es un \emph{framework} para realizar test unitarios en el código, se encarga de ejecutar los test de Javascript según se vayan construyendo, de tal forma que ante cualquier fallo el desarrollador se dará cuenta de inmediato. Mediante el fichero \emph{karma.conf.js} configuraremos el comportamiento que queremos te tenga la ejecución de nuestros tests.
 
 \subsection{Jasmine}\label{jasmine}
-
+\href{https://jasmine.github.io/}{Jasmine} es un framework de desarrollo dirigido por comportamiento para código JavaScript, un característica esencial es que no depende de ninguna otra librería JavaScript. No requiere un DOM, por lo que es posible hacer pruebas en cualquier motor de Javascript, además tiene una sintaxis sencilla y limpia para que puedas escribir los tests fácilmente.
 
 \section{Documentación}\label{docs}
 En este apartado se describen algunas de las herramientas utilizadas para la parte de la documentación del proyecto.
@@ -225,7 +229,7 @@ El editor de textos propiedad de Apache fue la primera alternativa elegida, aunq
 \end{itemize}
 
  \subsection{Mendeley}\label{docs_mendeley}
-  \href{www.mendeley.com/}{Mendeley} es un gestor de referencias bibliográficas. Es una aplicación web y de escritorio, propietaria y gratuita. Permite gestionar y compartir referencias, links, libros o documentos de investigación. Recibí un curso introductorio por parte de la encargada  de gestión de la biblioteca centra de la Universidad de Burgos.
+  \href{https://www.mendeley.com/}{Mendeley} es un gestor de referencias bibliográficas. Es una aplicación web y de escritorio, propietaria y gratuita. Permite gestionar y compartir referencias, links, libros o documentos de investigación. Recibí un curso introductorio por parte de la encargada  de gestión de la biblioteca centra de la Universidad de Burgos.
   
   \section{Otras herramientas}\label{otrasherramientas}
 En este apartado se describen otras herramientas que se han empleado como son el alojamiento web, el alojamiento de la base de datos, los repositorios u otras tecnologías.

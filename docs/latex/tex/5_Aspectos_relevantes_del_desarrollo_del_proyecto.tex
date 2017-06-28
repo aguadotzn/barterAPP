@@ -41,7 +41,7 @@ Después además realicé algún que otro curso en español, en esta ocasión la
 
 La plataforma anterior también es muy didáctica, completa y accesible; además posee una característica que a mi parecer es fundamental: tienes contacto directo con el creador del curso que te resuelve dudas de código.
 
-Para terminar recomiendo también las páginas web  \href{https://desarrolloweb.com/manuales/manual-angular-2.html}{\emph{Desarrollo Web }} \cite{desarrollo1} \cite{desarrollo2}, \href{http://academia-binaria.com/}{\emph{Academia binaria }} \cite{academia2}, \href{https://scotch.io/}{\emph{scotch.io }}  \cite{scotch1} y el manual oficial de \href{https://angular.io/docs/}{\emph{Angular }} .
+Para terminar recomiendo también las páginas web  \href{https://desarrolloweb.com/manuales/manual-angular-2.html}{\emph{Desarrollo Web }} \cite{desarrollo1} \cite{desarrollo2}, \href{http://academia-binaria.com/}{\emph{Academia binaria }} \cite{academia2}, \href{https://scotch.io/}{\emph{scotch.io }}  \cite{scotch1} y el manual oficial de \href{https://angular.io/docs/}{\emph{Angular}}.
 
 
 
@@ -101,7 +101,7 @@ export class PeliculaComponent {
 
 Si podéis observar al inicio de la sección comencé haciendo referencia a \emph{Angular2} y \emph{AngularJS} pero ha medida que he avanzado simplemente he omitido el número. Podría parecer que lo he olvidado pero para nada es así, después del nacimiento de esa nueva versión que resultó ser un \emph{framework} en sí mismo que aprender desde cero, desde el equipo de desarrollo de Angular lo que se intentó es describir al \emph{framework} sin ningún tipo de numeración, simplemente existe un \emph{framework} y se van a aplicar modificaciones sobre él para mejorarlo, nada más. Para entender mejor esta ruptura AngularJS y Angular no son compatibles pero sí lo son las versiones posteriores. De hecho hace dos meses, en Abril, lanzaron  \emph{Angular  4.0 }  que posee cambios menores respecto de su versión anterior pero son totalmente compatibles.
 
-\imagenflotante{resumen-angular4}{Características \emph{Angular}. Fuente:  \url{wikipedia.org/wiki/Angular.}}
+\imagenflotante{resumen-angular4}{\footnotesize{Características \emph{Angular}. Fuente:  \url{https://wikipedia.org/wiki/Angular.}}}
 
 
 
@@ -141,8 +141,9 @@ En cuanto a las metodologías, ya nombradas en apartados anteriores, se eligió 
 Scrum es un tipo de metología ágil que se aplica a grandes proyectos para cumplir las necesidades específicas de una manera estructurada y sistematizada. Entre las ventajas se encuentran la productividad, calidad y que se realiza un seguimiento regular de los avances del proyecto, logrando que los integrantes estén unidos, comunicados y que el cliente vaya viendo los avances. Lógicamente esta metodología no es posible aplicar al cien por cien en el proyecto ya que muchas de las características que posee están destinadas al trabajo en grupo, pero se ha intentado seguir una línea lo más semejante posible. 
 
 
-\imagen{scrumschema}{Esquema Scrum. Fuente: \url{linkedin/pulse/posts/costa-ruitiago}.}
- 
+\imagen{scrumschema}{\footnotesize{Esquema Scrum. Fuente: \url{https://linkedin/pulse/posts/costa-ruitiago}.}}
+
+
  De una manera más o menos frecuente se siguió una estrategia de desarrollo incremental a través de iteracciones (\emph{sprints)} englobadas en diferentes \emph{milestones}. Al finalizar cada sprint se evaluaba lo realizado y, si era necesario, se realizaba una reunión con el tutor para esclarecer los pasos dados. Las tareas se estimaban en papel, ya que he utilizado un cuaderno en el que anotaba lo que iba aprendiendo y lo que iba realizando, además de los  \emph{boards} de Zenhub. 
  
    \section{Desarrollo del algoritmo}\label{algoritmo}
@@ -157,15 +158,15 @@ Scrum es un tipo de metología ágil que se aplica a grandes proyectos para cump
 	\item Interchange (Intercambio): es una colección extra que se ha añadido para intercambiar entre los usuarios el turno
 	\end{itemize}
    
-   \imagen{dbschema}{Esquema interno base de datos. Fuente: Elaboración propia.}
+   \imagen{dbschema}{\footnotesize{Esquema interno base de datos. Fuente: Elaboración propia.}}
    
    Una vez entendido esto voy a explicar de una manera didáctica como se consigue el intercambio de turnos. Cada usuario posee su propio calendario, cada uno puede añadir sus propios turnos al calendario pero no ver los de los demás, los turnos son de cuatro tipos, se detallarán a continuación \ref{img:shiftschema}, y los cambios solo se producen entre tipos de turnos específicos. 
 
- \imagen{shiftschema}{Esquema  tipos de turnos. Elaboración propia.}\label{img:shiftschema}
+ \imagen{shiftschema}{\footnotesize{Esquema  tipos de turnos. Elaboración propia.}}\label{img:shiftschema}
  
 Cada turno tiene asignada una prioridad que por defecto será  \textbf{normal}. Existen varios tipo de prioridades que se asignarán dependiendo en qué fase se encuentra ese turno, es decir, cuando un usuario solicita un turno cambiará de prioridad porque debe esperar hasta que el otro usuario acepte o rechace la petición. Por lo tanto se trata de una lógica que funciona a base de peticiones-respuesta. Cuando varios usuarios, de una misma empresa, puedan intercambiar sus turnos de acuerdo a la lógica de la imagen \ref{img:shiftschema} entonces entran en juego las prioridades ya nombradas.  
 
-\imagen{prioritiesscchema}{Esquema de las diferentes prioridades. Fuente: Elaboración propia.}
+\imagen{prioritiesscchema}{\footnotesize{Esquema de las diferentes prioridades. Fuente: Elaboración propia.}}
  
  Todos los turnos, llamados \emph{eventos} dentro del código interno del calendario, poseen prioridad \textbf{normal}, cuando un usuario pregunta a otro por el cambio de turno, automáticamente el turno del \underline{usuario emisor} pasa \textbf{required}, o requerido, y el turno del \underline{usuario destinatario} a \textbf{pending}, o pendiente. Por lo que una vez se llega hasta aquí es el usuario destinatario el que tiene el poder de decisión, deberá aceptar o rechazar la petición. En función de lo que este usuario decida ese turno pasará a ser \textbf{accepted} o \textbf{declined}. Si el usuario que recibe la petición lo acepta se producirá el cambio de turno, si lo rechaza no se producirá el cambio y el turno pasará a estado normal.
  
@@ -177,15 +178,19 @@ Cada turno tiene asignada una prioridad que por defecto será  \textbf{normal}. 
    
    \section{Desarrollo web}\label{dweb}
    
-   El desarrollo de la aplicación web se ha realizado de manera progresiva por componentes, la parte de las páginas ha sido la más costosa en términos de esfuerzo y de tiempo.
+   El desarrollo de la aplicación web se ha realizado de manera progresiva por componentes, la parte de las páginas ha sido la más costosa en términos de esfuerzo y de tiempo. Se han  leído varios libros  \cite{librohtml, cleancode} y se han consultado otros \citep{librosconsulta}, además de las webs nombradas durante toda la memoria.
    
   De la misma manera se desarrollaba el servidor paralelamente para ir comprobando que lo poco que se hacía se enviaba y recibía a través de \emph{http}. Para probar ésto último utilicé la aplicación de escritorio Postman. 
   
-  EL algoritmo se desarrolló también en varias iteracciones dado que hubo cosas que no tuve en cuenta y durante diversas reuniones con el tutor fue sabiendo lo que yo tenía equivocado y era necesario modificar. 
-  
+  El algoritmo se desarrolló también en varias iteracciones dado que hubo cosas que no tuve en cuenta y durante diversas reuniones con el tutor fui modificando los errores que había cometido hasta llegar al algoritmo actual.
    \section{Desarrollo móvil}\label{dapp}
    
-   El desarrollo móvil ha sido la última parte y por tanto la más corta, aunque es necesario tener en cuenta que Ionic y Angular son primos hermanos por lo que el desarrollo ha sido mucho más rápido ya que Ionic también consta de una línea de comandos exactamente igual a la de Angular que permite agilizar las cosas de manera extraordinaria.
+   El desarrollo móvil ha sido la última parte y por tanto la más corta, aunque es necesario tener en cuenta que Ionic y Angular son muy similares en cuanto a manera de trabajar y en cuanto a la filosofía de los componentes ya nombrada. Por lo tanto que el desarrollo ha sido mucho más rápido ya que Ionic también consta de una línea de comandos exactamente igual a la de Angular que permite agilizar las cosas de manera extraordinaria.
+   
+   \section{Diseño gráfico}\label{grafico}
+   La parte de diseño gráfico como banners y el logo ha sido creada por el propio usuario que posee algún conocimiento de diseño gráfico. Se han elegido colores neutros y el símbolo de una flecha  que representa un crecimiento positivo.
+   
+   \imagenflotante{logobarter}{\footnotesize{Logo aplicación. Fuente: Elaboración propia.}}
    
    \section{Documentación}\label{docs}
    
@@ -198,7 +203,7 @@ Cada turno tiene asignada una prioridad que por defecto será  \textbf{normal}. 
    Reconocimientos durante el desarrollo:
    
    \begin{itemize}
-	\item YUZZ: BarterAPP fue elegida para participar en el programa YUZZ 2017, patrocinado por el Banco Santander-Universidades, se trata de un programa de formación que se extiende de enero a junio en el que se aprenden materias como marketing, financiación, puesta en marcha de un proyecto o análisis de mercados entre muchas otras cosas. 
+	\item YUZZ: BarterAPP fue elegida para participar en el programa YUZZ 2017, patrocinado por el Banco Santander-Universidades, se trata de un programa de formación que se extiende de enero a junio en el que se aprenden materias como marketing, financiación, puesta en marcha de un proyecto o análisis de mercados entre muchas otras cosas. Más de 380 horas de formación en las que he intentado introducir a BarterApp en el mercado real.
 	\item ANGULAR CAMP: Quizás no sea un reconocimiento en sí mismo del proyecto pero teniendo en cuenta que hace seis meses no tenía ni idea de Angular, he sido seleccionado, tras una entrevista previa, para formar parte del  \href{https://angularcamp.org/}{Angular Camp} que se desarrolla en la ciudad de Barcelona durante los días 6 y 7 de julio.
 \end{itemize}
 
@@ -207,14 +212,11 @@ Cada turno tiene asignada una prioridad que por defecto será  \textbf{normal}. 
 Me gustaría añadir este pequeño apartado ya que afortunadamente han sido muchas las personas que se han visto involucradas en el proyecto, han tenido que responder mis infinitas cuestiones y de alguna manera han ayudado a que esto salga adelante. 
 \begin{itemize}
 		\item Alberto Basalo: consultor, programador y formador tecnológico me ha respondido altruistamente todas las preguntas que le he ido realizando sobre Angular. 
-		\item Juan Antonio Roy: MongoDB expert, me ayudó con la ardua tarea de instalar MongoDB ya que tuve una serie de problemas durante esta fase. 
+		\item Juan Antonio Roy: \emph{MongoDB expert}, me ayudó con la ardua tarea de instalar MongoDB ya que tuve una serie de problemas durante esta fase. 
 		\item Davide Violante, programador italiano cuyo repositorio en \href{https://github.com/DavideViolante/Angular-Full-Stack}{github} ayudó a entender mejor la funcionalidad de cada una de las partes en las que se basa un proyecto Angular. 
-		\item A todo el increíble equipo de nanobox, los cuáles me llegaron a incluir en su grupo de \href{https://slack.com/}{slack} para poder resolver las dudas que me surgían con el servidor.
-		\item De manera indirecta ha todos los trabajos de fin de grado que he podido acceder de otras universidades públicas de España, que sin lugar a dudas han contribuido a mejorar el mío. En especial mención:
-		\begin{itemize}
-			\item 
-		\end{itemize}
-		
+		\item A todo el increíble equipo de Nanobox, los cuáles me llegaron a incluir en su grupo de \href{https://slack.com/}{slack} para poder resolver las dudas que me surgían con el servidor.
+		\item De manera indirecta ha todos los trabajos de fin de grado que he podido acceder de otras universidades públicas de España, que sin lugar a dudas han contribuido a mejorar el mío. Recomiendo encarecidamente \cite{tfg1,tfg2,tfg3,tfg4}.
+		\item También a los alumnos como \emph{David Miguel} u otros que han respondido a mis preguntas ayudándome más de lo se imaginan.
 \end{itemize}
 
 

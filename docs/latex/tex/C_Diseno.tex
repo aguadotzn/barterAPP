@@ -1,19 +1,19 @@
 \apendice{Especificación de diseño}
 \section{Introducción}\label{introducciondiseno}
-Cada parte de la aplicación tiene características interesante de programación que merece la pena reflejar aquí: comprender que datos se han usado, como se han pensado y el tipo de los mismos resulta fundamental 
+Cada parte de la aplicación tiene características interesante de programación que merece la pena reflejar aquí: comprender que datos se han usado, como se han pensado y el tipo de los mismos resulta fundamental para entender su funcionamiento. 
 
 \section{Diseño de datos}\label{datos}
 Vamos a analizar los datos así como las técnicas o librerías más importantes de las que se han hecho uso para usar, enviar y recoger todos esos datos. Debemos recordar que se trata de una tecnología basada en componentes, todos los componentes en Angular tienen una estructura interna exactamente igual:
 
-\imagen{component}{\footnotesize{Componente Angular . Fuente:  \url{http://blog.enriqueoriol.com/}.}}
+\imagen{component}{\footnotesize{Componente Angular . Fuente:  \url{http://blog.enriqueoriol.com/}.}}\label{component}
 
-En la imagen anterior podemos ver que se define un \textbf{selector} que es la parte para introducir ese determinado componente en la plantilla, un \textbf{templateUrl} que define la propia plantilla html asociada a ese componente, \textbf{stylesUrls} que define la hoja de estilos asociada a esa plantilla y \textbf{module.id} que en nuestro caso no tiene demasiada importancia.  Los únicos estrictamente obligatorios son los dos primeros.
+En la  imagen \ref{component} podemos ver que se define un \textbf{selector} que es la parte para introducir ese determinado componente en la plantilla, un \textbf{templateUrl} que define la propia plantilla html asociada a ese componente, \textbf{stylesUrls} que define la hoja de estilos asociada a esa plantilla y \textbf{module.id} que en nuestro caso no tiene demasiada importancia.  Los únicos estrictamente obligatorios son los dos primeros.
 
 Si nos fijamos en las buenas prácticas de programación de Angular dictan que después del nombre de un componente viene la palabra \emph{component}, pasa lo mismo con, por ejemplo, los servicios cuya palabra en este caso será \emph{services}.
 
-En la siguiente imagen podemos ver la relación entre un componente y su propia plantilla.
+En la siguiente imagen \ref{comphtml} podemos ver la relación entre un componente y su propia plantilla.
 
-\imagen{comphtml}{\footnotesize{Relación plantilla-componente. Fuente:  \url{http://academia-binaria.com/}.}}
+\imagen{comphtml}{\footnotesize{Relación plantilla-componente. Fuente:  \url{http://academia-binaria.com/}.}}\label{comphtml}
 
 
 Vamos a analizar cada una de las partes esenciales de la aplicación:
@@ -24,7 +24,7 @@ Vamos a analizar cada una de las partes esenciales de la aplicación:
 
 	\item \emph{/app/directives} : las directivas  en este caso se utilizan para lanzar alertas, concretamente en el registro o  de la aplicación. 
 	
-	\item \emph{/app/guards} : es la parte donde realmente se comprueba que un usuario este logeado en la web \cite{guards}. Me basé en un tutoria \cite{logintut} de Jason Watmore, programador Australiano. 
+	\item \emph{/app/guards} : es la parte donde realmente se comprueba que un usuario este logeado en la web \cite{guards}. Me basé en un tutorial \cite{logintut} de Jason Watmore, programador Australiano. 
 	
 	\item \emph{/app/models} : junto con \emph{services} una de las partes fundamentales de la aplicación es dónde se describen los datos donde se declaran los atributos que va a tener cada entidad que vamos a usar. En mi caso: \underline{usuarios} y \underline{eventos}.  
 	Se ha usado aqui un DTO \cite{dto} para el caso de los eventos que van a ser intercambiados, es decir, ese turno que un usuario va a intercambiar con otro. Es habitual esta práctica de programación en java pero también empieza a serlo en Angular \cite{dto2}.
@@ -120,6 +120,8 @@ Tipo  & Parámetros  \\
 \label{tabla:sencilla2}
 \end{table}
 
+
+\imagen{relacional}{\footnotesize{Diagrama relacional. Fuente: Elaboración propia.}}
 	
 	
 	\item \emph{/app/services} : los servicios de la parte cliente, las alertas nombradas anteriormente o la autenticación tienen su propio servicio. Es interesante el conocer aqui el concepto de \emph{Observable} \cite{ob1} en Angular, a la hora de las comunicaciones http es algo muy a tener en cuenta. La librería \textbf{@angular/http} trae por defecto el servicio http que es el cliente usado para enviar y recibir datos \cite{ob2}, pero sin duda la librería más potente actualmente sobre el tema es \href{http://reactivex.io/rxjs/}{RxJS}. Recomiendo encarecidamente el artículo: Javascript Reactivo y funcional \cite{ob3}, que aborda estos temas con gran entereza.
@@ -127,6 +129,8 @@ Tipo  & Parámetros  \\
 	\item \emph{/app/pages} : comprende las distintas páginas \emph{fisicas} de la web.
 	
 	\item \emph{/app/repository} : es la conexión de datos entre la parte del cliente y la parte servidor.
+	
+	\imagen{schemametadato}{\footnotesize{Esquema Angular por dentro. Fuente:  \url{www.angular.io}.}}
 	
 	\item \emph{/app/utils} : es una carpeta extra que pretende emplear el patrón \emph{Singleton} definiendo datos inamovibles durante toda la vida de la aplicación. Se utiliza el nombre utils como buena práctica de programación ya que se trata de datos útiles que no van a cambiar nunca. De esta manera si queremos añadir datos nuevos en un futuro tan solo hay que añadirlos dentro de este componente. 
 	
@@ -181,26 +185,103 @@ En términos de programación todos son arrays excepto los turnos por día que s
 	\item \emph{PrimeNg}: se trata de una serie de componentes diseñados para Angular que resultan ser realmente útiles, persiguen el diseño responsive de cara al usuario y tienen una comunidad enorme detrás \cite{prime}. Por ejemplo yo he empleado Growl \cite{growl} que se utiliza para lanzar al usuarios los mensajes de confirmación de las diferentes peticiones.  
 \end{itemize}
 
-\item \emph{}
+\item\emph{/server/config} : se define aqui la configuración de la base de datos, local o remota, necesaria para almacenar los datos de la aplicación. Este fichero junto con \textbf{config.js}, que se encuentra en la raíz de la carpeta \emph{server}, son los que hay que modificar para cambiar de una base de datos a otra. En un futuro no muy lejano se creará una variable de entorno para que sea por defecto capaz de detectar si es necesario una base de datos local o una remota. 
 
+\item\emph{/server/controllers} : son los controladores de la parte del servidor. Emplean la librería  \emph{Router} \cite{router} nativa en express, para poder funcionar.
+
+\imagen{conexiones}{\footnotesize{Envío-respuesta http . Fuente:  \url{http://expressjs.com/}.}}
+
+\item\emph{/server/routes} : son las rutas necesarias para realizar correctamente las llamadas http  y que devuelvan en cada momento los datos correspondientes. Una vez el usuario se haya autenticado de forma correcta, ya puede accede a las diferentes zonas de la aplicación. Cada sección dentro esta aplicación necesitará al menos una llamada a la API, situadas en rutas privadas, es decir, que necesitan autorización. Sin esa autorización no se pueden realizar las llamadas http necesarias. 
+
+En el siguiente par de páginas vamos a ver de un vistazo rápido los métodos empleados para extraer los datos y los métodos http que tiene asociado en cada ruta cada uno de ellos. 
+\begin{landscape}
+%\begin{adjustbox}{width=1.2\textwidth,center}
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+Tipo  & Métodos & Método http asociado \\
+\hline \hline
+\textbf{Eventos} & .create\_event()  & POST \\ \hline
+    & .create\_events()  &  PUT \\ \hline
+    & .list\_all\_events()  & GET \\ \hline
+    & .list\_all\_events\_by\_company()  &  GET\\ \hline
+    & .list\_all\_events\_by\_company\_by\_worker() & GET \\ \hline
+    & .list\_all\_free\_events\_by\_company\_by\_day\_by\_shift\_except\_currentUser() & GET\\ \hline
+    & .update\_event()  & UPDATE \\ \hline
+    & .delete\_event() & DELETE \\ \hline
+    \hline \hline
+\end{tabular}
+\caption{Métodos para \emph{event} y http asociados.}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+Tipo  & Métodos & Método http asociado \\
+\hline \hline
+\textbf{Intercambio} & .accept\_shift()  & POST \\ \hline
+    & .decline()  & POST  \\ \hline
+    & .activate\_shift()  &  POST \\ \hline
+    \hline \hline
+\end{tabular}
+\caption{Métodos para \emph{interchange} y http asociados.}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|l|l|l|l|}
+\hline
+Tipo  & Métodos & Método http asociado \\
+\hline \hline
+\textbf{Usuarios} & .authenticate(email, password)  & POST \\ \hline
+    & .register()  & POST \\ \hline
+    & .getAll()  &  GET\\ \hline
+    & .getCurrent()  &  GET\\ \hline
+    & .update(id)  &  PUT \\ \hline
+    & .delete(id)  & DELETE \\ \hline
+    \hline \hline
+\end{tabular}
+\caption{Métodos para \emph{users} y http asociados.}
+\end{table}
+
+%\end{adjustbox}
+  \end{landscape}
+
+\item\emph{/server/services} : 	es la parte del servidor dónde realmente se producen todas las acciones, el intercambio entre usuarios esta implementado aquí .
+	
+	
 	
 \end{itemize}
 
-
-hay que seguir un poco eh!!!!!!!!!! \cite{accesodatos}
 
 
 \begin{landscape}
 %\begin{adjustbox}{width=1.2\textwidth,center}
 
-\imagenflotante{sequenceschema}{Vista de la conexión entre el servidor y el cliente. Fuente:  Elaboración propia.}
+\imagenflotante{sequenceschema}{\footnotesize{Vista de la conexión entre el servidor y el cliente. Fuente:  Elaboración propia.}}
 %\end{adjustbox}
   \end{landscape}
 
 \section{Diseño arquitectónico}\label{darquitectura}
-\imagen{schemametadato}{Esquema Angular. Fuente:  \url{www.angular.io}.}
+En cuanto a la arquitectura de Angular resulta, después de todo lo ya visto, entenderse de una manera fácil e intuitiva. La aplicación compuesta por tres capas siguiendo la aquitectura MVC (Modelo-Vista-Controlador):
+\begin{itemize}
+
+\item \underline{Modelo}: es la capa que se comunica directamente con la base de datos. Se encarga de todos los procedimientos necesarios para crear, eliminar, recuperar y actualizar información de la base de datos.
+
+\item \underline{Vista}: capa de presentación, implementa los métodos relacionados con los componentes de la interfaz de la aplicación.
+
+ \item \underline{Controlador}: se encarga de la comunicación entre la vista y el modelo. En la aplicación parte de la lógica se manejará dentro de la propia página utilizando JavaScript dentro de los controladores de Angular y otra parte se hará en el servidor de NodeJS.
+
+\end{itemize}
+
+\imagen{meanarq}{\footnotesize{Esquema Arquitectura. Fuente:  \url{http://www.cantabriatic.com/}.}}
+
+Seguir la estructura MVC es muy útil, ya que proporciona idea mental de dónde situar cada elemento evitando así a tarea de investigación cada vez que se quiera ampliar el contenido de la aplicación.
 
 
 
-\subsection{Modelo Vista Controlador}\label{modelovista}
+
 

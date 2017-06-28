@@ -8,7 +8,7 @@ El desarrollo de aplicaciones informáticas evoluciona continuamente para adapta
 
 En los principios de la informática las relaciones entre los usuarios y los programas de los que hacían uso era muy diferente a lo que tenemos ahora. Ahora se potencia el diseño basado en usuario, antes se potenciaba más que el programa estuviera implementado de manera idónea antes que la experiencia que el usuario tenía al hacer uso del mismo. Obviamente ahora también se impulsa esa manera de desarrollar código, lo que se conoce como \emph{clean code} \cite{cleancode}, pero en un mundo en el que la competitividad es tan alta prima sobre todo la experiencia del usuario final, que al fin y al cabo va a ser el que interactúa con tu producto ya sea web o móvil. 
 
-\imagen{uxschema}{Esquema \emph{UI, UX IxD}. Fuente  \url{dealfuel.com}.}
+\imagen{uxschema}{\footnotesize{Esquema \emph{UI, UX IxD}. Fuente  \url{https://dealfuel.com}.}}
 
 
 
@@ -20,9 +20,9 @@ El mundo de las aplicaciones web es un mundo en constante evolución y actualiza
 \section{Concepto general del proyecto}\label{teorico-general}
 Hace algún tiempo para realizar una web existía una gran barrera a la hora de entender el concepto de cliente y servidor. Por un lado estaba la parte del cliente, la cual se realizaba en lenguajes puros,  como \emph{HTML} y \emph{CSS} para las hojas de estilo. Por otro lado estaba el servidor lo cuál significa cambiar totalmente de lenguaje, lo que suponía un salto para un programador web que debía conocer ambos lados para crear webs seguras y robustas, la parte del cliente es la que interactúa con el usuario, la que nosotros vemos, y la parte del servidor es la parte que conecta con la base de datos, en caso de que sea necesario.
 
-Todo cambió cuando se popularizó Javascript para la realización de webapps, la posibilidad de crear web con un mismo lenguaje en todas las partes resulta muy atractiva tanto para el programador como para la lógica del propio programa o web ya que se disminuye el número de errores o se consiguen localizar de manera más sencilla al no tener que estar cambiando de lenguaje. En este punto es donde surge el stack MEAN:
+Todo cambió cuando se popularizó Javascript para la realización de webapps, la posibilidad de crear web con un mismo lenguaje en todas las partes resulta muy atractiva tanto para el programador como para la lógica del propio programa o web ya que se disminuye el número de errores o se consiguen localizar de manera más sencilla al no tener que estar cambiando de lenguaje. En este punto es donde surge el stack MEAN, ver figura \ref{mean}.
 
-\imagen{meanjs}{Esquema \emph{MEAN}. Fuente: \url{kambrica.com}.} 
+\imagen{meanjs}{\footnotesize{Esquema \emph{MEAN}. Fuente: \url{https://kambrica.com}.}} \label{mean}
 
 
 
@@ -38,13 +38,17 @@ La presencia de \emph{Javascript} para el desarrollo de software se está hacien
 
 El \emph{modelo-vista-controlador} es un patrón de arquitectura de software, que separa los datos y la lógica de negocio de una aplicación de la interfaz de usuario y el módulo encargado de gestionar los eventos y las comunicaciones. Para ello propone la construcción de tres componentes distintos que son el modelo, la vista y el controlador, es decir, por un lado define componentes para la representación de la información, y por otro lado para la interacción con el usuario.
 
-\imagen{mvcschema2}{Dibujo \emph{MVC}\cite{mvc}. Fuente: \url{artima.com}.}
+\imagen{mvcschema2}{\footnotesize{Dibujo \emph{MVC}\cite{mvc}. Fuente: \url{https://artima.com}.}}
 
 
 
 
 \section{Arquitectura}\label{arquitectura}
 
-Como se ha comentado en secciones anteriores la aplicación tiene dos sistemas bien diferenciados: servidor y cliente. 
+Como se ha comentado en secciones anteriores la aplicación tiene dos sistemas bien diferenciados: servidor y cliente, ambos unidos por internet. 
 
-\imagen{arqchema}{Arquitectura simplificada \emph{MVC}\cite{mvc}. Fuente: Elaboración propia.}
+\imagen{arqchema}{\footnotesize{Arquitectura simplificada \emph{MVC}\cite{mvc}. Fuente: Elaboración propia.}}
+
+El funcionamiento de una aplicación web sigue unos determinados pasos: un usuario realiza una petición HTTP a un servidor en el cual está alojada una aplicación web, en este se maneja las peticiones y se carga el contenido de la aplicación combinándolo con los datos obtenidos a través de su base de datos, posteriormente se manda la respuesta al usuario enviándole todo el contenido de la herramienta. Se detalla en \ref{funcionamiento}.
+
+\imagen{funcionamiento}{\footnotesize{Funcionamient web básico \emph{MVC}\cite{mvc}. Fuente: \url{https://w3c.es}.}}\label{funcionamiento}

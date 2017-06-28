@@ -50,7 +50,7 @@ La principal característica de TypeScript por encima de Javascript es que permi
 \subsection{Comandos básicos}\label{cbasicos}
 \textbf{Angular CLI} nos va a hacer la vida más fácil con Angular, ya que nos permite crear de forma sencilla un aplicación lista para funcionar después de la instalación por línea de comandos con \emph{npm}, además incorpora las buenas prácticas de programación con Angular. 
 
-\imagen{angularclicommands}{Comandos  \emph{AngularCLI}. Fuente:  \url{https://cli.angular.io/}.}
+\imagen{angularclicommands}{\footnotesize{Comandos  \emph{AngularCLI}. Fuente:  \url{https://cli.angular.io/}.}}
 
 Por lo tanto para crear nuestra aplicación con esta herramienta, una vez instalada, tan solo debemos ir a nuestra carpeta donde queremos crear el proyecto e introducir en la línea de comandos: 
 	\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
@@ -64,11 +64,11 @@ Por lo tanto para crear nuestra aplicación con esta herramienta, una vez instal
 		 npm start
     	\end{lstlisting}
     	
-    	\imagen{angularcliconsola}{Consola ejecución. Fuente:  \url{http://codigoxules.org/}.}
+    	\imagen{angularcliconsola}{\footnotesize{Consola ejecución. Fuente:  \url{http://codigoxules.org/}.}}
     	
  Si te fijas en la ejecución se llama al comando \textbf{ng serve} que será el que utilicemos con Angular CLI para trabajar. Resulta realmente útil al introducir el último comando nombrado ya que una vez lanzado se detectan automáticamente los cambios a medida que vamos avanzando la página se recarga al guardar el componente que estemos modificando.  
     	
-    	\imagen{angularcliresultado}{Resultado después de creado. Fuente:  \url{http://codigoxules.org/}.}
+    	\imagen{angularcliresultado}{\footnotesize{Resultado después de creado. Fuente:  \url{http://codigoxules.org/}.}}
     	
    Esta es la sencilla manera de crear un proyecto con \textbf{Angular CLI}. Después existen una serie de comandos para crear directamente componentes, servicios, clases, interfaces.. etcétera.  Algunos de ellos son:
    
@@ -323,7 +323,7 @@ La curva de aprendizaje no es demasiado fáci \cite{nano1} pero tampoco demasiad
 	\item Crear cuenta en Nanobox.
 	\item Elegir un plan entre los disponibles.
 	\item Elegir un \emph{host}. Recomiendo \textbf{Digital Ocean}.
-	\item Ahora, sabiendo la tecnología a usar, nodejs para el servidor en este caso, se crea un fichero de  \textbf{boxfile.yml} en la raiz del proyecto\citep{nano2} .
+	\item Ahora, sabiendo la tecnología a usar, nodejs para el servidor en este caso, se crea un fichero de  \textbf{boxfile.yml} en la raiz del proyecto\citep{nano2} . Es el equivalente a el \textbf{Procfile} de Heroku.
 	\item A continuación los comandos:	
 
 	\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
@@ -335,7 +335,10 @@ La curva de aprendizaje no es demasiado fáci \cite{nano1} pero tampoco demasiad
     	
 \end{enumerate}    
 	
-    	Éstos son a grandes rasgos los pasos mínimos para desplegar una aplicación en esta herramienta. Una de las mejores cosas y por la cual conseguí solucionar mi problema con el servidor es el magnífico sistema de \emph{logs} con el que cuenta la plataforma. La diferencia más destacable con Heroku es que en Nanobox subes absolutamente todos los ficheros con los que estas trabajando. 
+    	Éstos son a grandes rasgos los pasos mínimos para desplegar una aplicación en esta herramienta. Una de las mejores cosas y por la cual conseguí solucionar mi problema con el servidor es el magnífico sistema de \emph{logs} con el que cuenta la plataforma. La diferencia más destacable con Heroku es que en Nanobox subes absolutamente todos los ficheros con los que estas trabajando, por contra en Heroku solo la carpeta \emph{/dist} generada automáticamente por Angular. Cada uno tiene sus ventajas y sus inconvenientes.
+    	
+    	\imagen{procfile}{\footnotesize{Documentos configuración \citep{herokunano}. Fuente:  \url{http://nanobox.io/}.}}
+
 
 
 

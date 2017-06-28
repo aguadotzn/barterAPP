@@ -9,7 +9,7 @@
 \contentsline {subsection}{Sprint 1: 18/02/2017 - 28/02/2017}{3}{section*.4}
 \contentsline {subsection}{Sprint 2: 15/03/2017 - 31/03/2017}{3}{section*.5}
 \contentsline {subsection}{Sprint 3: 07/04/2017 - 15/04/2017}{4}{section*.6}
-\contentsline {subsection}{Sprint 4: 16/04/2017 - 22/04/2017}{5}{section*.7}
+\contentsline {subsection}{Sprint 4: 16/04/2017 - 22/04/2017}{4}{section*.7}
 \contentsline {subsection}{Sprint 5: 30/04/2017 - 07/05/2017}{5}{section*.8}
 \contentsline {subsection}{Sprint 6: 09/05/2017 - 16/05/2017}{6}{section*.9}
 \contentsline {subsection}{Sprint 7: 24/05/2017 - 31/05/2017}{6}{section*.10}
@@ -22,47 +22,46 @@
 \contentsline {subsubsection}{An\IeC {\'a}lisis de costes}{9}{section*.16}
 \contentsline {subsection}{Coste final desarrollo del proyecto}{10}{section*.17}
 \contentsline {subsection}{Viabilidad legal}{10}{section*.18}
-\contentsline {appendix}{\chapternumberline {B}Especificaci\IeC {\'o}n de Requisitos}{12}{appendix.Alph2}
-\contentsline {section}{\numberline {B.1}Introducci\IeC {\'o}n}{12}{section.Alph2.1}
-\contentsline {section}{\numberline {B.2}Objetivos generales}{13}{section.Alph2.2}
-\contentsline {section}{\numberline {B.3}Cat\IeC {\'a}logo de requisitos}{13}{section.Alph2.3}
-\contentsline {subsection}{Requisitos funcionales}{13}{section*.19}
-\contentsline {subsection}{Requisitos no funcionales}{14}{section*.20}
-\contentsline {section}{\numberline {B.4}Especificaci\IeC {\'o}n de requisitos}{14}{section.Alph2.4}
-\contentsline {subsection}{Diagrama casos de uso}{14}{section*.21}
-\contentsline {subsection}{Actores}{15}{section*.22}
-\contentsline {subsection}{Casos de uso}{15}{section*.23}
-\contentsline {appendix}{\chapternumberline {C}Especificaci\IeC {\'o}n de dise\IeC {\~n}o}{29}{appendix.Alph3}
-\contentsline {section}{\numberline {C.1}Introducci\IeC {\'o}n}{29}{section.Alph3.1}
-\contentsline {section}{\numberline {C.2}Dise\IeC {\~n}o de datos}{29}{section.Alph3.2}
-\contentsline {section}{\numberline {C.3}Dise\IeC {\~n}o arquitect\IeC {\'o}nico}{36}{section.Alph3.3}
-\contentsline {subsection}{Modelo Vista Controlador}{36}{section*.24}
-\contentsline {appendix}{\chapternumberline {D}Documentaci\IeC {\'o}n t\IeC {\'e}cnica de programaci\IeC {\'o}n}{37}{appendix.Alph4}
-\contentsline {section}{\numberline {D.1}Introducci\IeC {\'o}n}{37}{section.Alph4.1}
-\contentsline {section}{\numberline {D.2}Requerimientos m\IeC {\'\i }nimos necesarios}{38}{section.Alph4.2}
-\contentsline {section}{\numberline {D.3}AngularCLI}{38}{section.Alph4.3}
-\contentsline {subsection}{\IeC {\textquestiondown }Qu\IeC {\'e} es typescript?}{38}{section*.25}
-\contentsline {subsection}{Comandos b\IeC {\'a}sicos}{39}{section*.26}
-\contentsline {section}{\numberline {D.4}Manual del programador}{40}{section.Alph4.4}
-\contentsline {subsection}{Prerequisitos}{40}{section*.27}
-\contentsline {subsection}{Estructura de directorios }{41}{section*.28}
-\contentsline {subsection}{Modo desarrollador}{45}{section*.29}
-\contentsline {subsection}{Servidor (Heroku)}{45}{section*.30}
-\contentsline {subsection}{Base de datos (Mlab)}{46}{section*.31}
-\contentsline {subsection}{Servidor (Nanobox)}{47}{section*.32}
-\contentsline {appendix}{\chapternumberline {E}Documentaci\IeC {\'o}n de usuario}{48}{appendix.Alph5}
-\contentsline {section}{\numberline {E.1}Introducci\IeC {\'o}n}{48}{section.Alph5.1}
-\contentsline {section}{\numberline {E.2}Usuario Web}{48}{section.Alph5.2}
-\contentsline {subsection}{Requisitos m\IeC {\'\i }nimos}{48}{section*.33}
-\contentsline {subsection}{Registro}{48}{section*.34}
-\contentsline {subsection}{Login}{48}{section*.35}
-\contentsline {subsection}{A\IeC {\~n}adir turnos al calendario}{48}{section*.36}
-\contentsline {subsection}{Intercambiar turno}{48}{section*.37}
-\contentsline {subsection}{Ayuda}{49}{section*.38}
-\contentsline {section}{\numberline {E.3}Usuario M\IeC {\'o}vil}{49}{section.Alph5.3}
-\contentsline {subsection}{Registro}{49}{section*.39}
-\contentsline {subsection}{Login}{49}{section*.40}
-\contentsline {subsection}{A\IeC {\~n}adir turnos al calendario}{49}{section*.41}
-\contentsline {subsection}{Intercambiar turno}{49}{section*.42}
-\contentsline {subsection}{Ayuda}{49}{section*.43}
-\contentsline {chapter}{Bibliograf\'{\i }a}{50}{section*.45}
+\contentsline {appendix}{\chapternumberline {B}Especificaci\IeC {\'o}n de Requisitos}{13}{appendix.Alph2}
+\contentsline {section}{\numberline {B.1}Introducci\IeC {\'o}n}{13}{section.Alph2.1}
+\contentsline {section}{\numberline {B.2}Objetivos generales}{14}{section.Alph2.2}
+\contentsline {section}{\numberline {B.3}Cat\IeC {\'a}logo de requisitos}{14}{section.Alph2.3}
+\contentsline {subsection}{Requisitos funcionales}{14}{section*.19}
+\contentsline {subsection}{Requisitos no funcionales}{15}{section*.20}
+\contentsline {section}{\numberline {B.4}Especificaci\IeC {\'o}n de requisitos}{15}{section.Alph2.4}
+\contentsline {subsection}{Diagrama casos de uso}{15}{section*.21}
+\contentsline {subsection}{Actores}{16}{section*.22}
+\contentsline {subsection}{Casos de uso}{16}{section*.23}
+\contentsline {appendix}{\chapternumberline {C}Especificaci\IeC {\'o}n de dise\IeC {\~n}o}{30}{appendix.Alph3}
+\contentsline {section}{\numberline {C.1}Introducci\IeC {\'o}n}{30}{section.Alph3.1}
+\contentsline {section}{\numberline {C.2}Dise\IeC {\~n}o de datos}{30}{section.Alph3.2}
+\contentsline {section}{\numberline {C.3}Dise\IeC {\~n}o arquitect\IeC {\'o}nico}{41}{section.Alph3.3}
+\contentsline {appendix}{\chapternumberline {D}Documentaci\IeC {\'o}n t\IeC {\'e}cnica de programaci\IeC {\'o}n}{43}{appendix.Alph4}
+\contentsline {section}{\numberline {D.1}Introducci\IeC {\'o}n}{43}{section.Alph4.1}
+\contentsline {section}{\numberline {D.2}Requerimientos m\IeC {\'\i }nimos necesarios}{44}{section.Alph4.2}
+\contentsline {section}{\numberline {D.3}AngularCLI}{44}{section.Alph4.3}
+\contentsline {subsection}{\IeC {\textquestiondown }Qu\IeC {\'e} es typescript?}{44}{section*.24}
+\contentsline {subsection}{Comandos b\IeC {\'a}sicos}{45}{section*.25}
+\contentsline {section}{\numberline {D.4}Manual del programador}{46}{section.Alph4.4}
+\contentsline {subsection}{Prerequisitos}{46}{section*.26}
+\contentsline {subsection}{Estructura de directorios }{47}{section*.27}
+\contentsline {subsection}{Modo desarrollador}{51}{section*.28}
+\contentsline {subsection}{Servidor (Heroku)}{51}{section*.29}
+\contentsline {subsection}{Base de datos (Mlab)}{52}{section*.30}
+\contentsline {subsection}{Servidor (Nanobox)}{53}{section*.31}
+\contentsline {appendix}{\chapternumberline {E}Documentaci\IeC {\'o}n de usuario}{55}{appendix.Alph5}
+\contentsline {section}{\numberline {E.1}Introducci\IeC {\'o}n}{55}{section.Alph5.1}
+\contentsline {section}{\numberline {E.2}Usuario Web}{55}{section.Alph5.2}
+\contentsline {subsection}{Requisitos m\IeC {\'\i }nimos}{55}{section*.32}
+\contentsline {subsection}{Registro}{55}{section*.33}
+\contentsline {subsection}{Login}{55}{section*.34}
+\contentsline {subsection}{A\IeC {\~n}adir turnos al calendario}{55}{section*.35}
+\contentsline {subsection}{Intercambiar turno}{55}{section*.36}
+\contentsline {subsection}{Ayuda}{56}{section*.37}
+\contentsline {section}{\numberline {E.3}Usuario M\IeC {\'o}vil}{56}{section.Alph5.3}
+\contentsline {subsection}{Registro}{56}{section*.38}
+\contentsline {subsection}{Login}{56}{section*.39}
+\contentsline {subsection}{A\IeC {\~n}adir turnos al calendario}{56}{section*.40}
+\contentsline {subsection}{Intercambiar turno}{56}{section*.41}
+\contentsline {subsection}{Ayuda}{56}{section*.42}
+\contentsline {chapter}{Bibliograf\'{\i }a}{57}{section*.44}

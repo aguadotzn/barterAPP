@@ -1,4 +1,4 @@
-\begin{thebibliography}{19}
+\begin{thebibliography}{21}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -16,33 +16,34 @@ Ben Balter.
 \newblock URL
   \url{https://github.com/blog/1964-open-source-license-usage-on-github-com}.
 
-\bibitem[Binaria'(2017)]{ob1}
-Alberto Basalo-Academia Binaria'.
+\bibitem[Binaria(2017)]{ob1}
+Alberto Basalo-Academia Binaria.
 \newblock Comunicaciones http observables con angular2, 2017.
 \newblock URL
   \url{http://academia-binaria.com/comunicaciones-http-observables-con-angular2/}.
 
-\bibitem[CodekStudio'(2016)]{ob3}
-CodekStudio'.
+\bibitem[CodekStudio(2016)]{ob3}
+CodekStudio.
 \newblock Javascript reactivo y funcional. conceptos: Observables, rxjs y
   angular 2., 2016.
 \newblock URL
-  \url{https://codekstudio.com/post-blog/conceptos-observables-rxjs-y-angular-2-javascript-reactivo-y-funcional/}.
+  \url{https://codekstudio.com/post-blog/conceptos-observables-rxjs-y-angular-2-
+  javascript-reactivo-y-funcional/}.
 
-\bibitem[Community'(2015)]{ob2}
-Stackoverflow Community'.
+\bibitem[Community(2015)]{ob2}
+Stackoverflow Community.
 \newblock How to do polling with angular 2 observables, 2015.
 \newblock URL
   \url{https://stackoverflow.com/questions/41658162/how-to-do-polling-with-angular-2-observables}.
 
-\bibitem[Community'(2016)]{dto2}
-Stackoverflow Community'.
+\bibitem[Community(2016)]{dto2}
+Stackoverflow Community.
 \newblock Dto design in typescript angular2, 2016.
 \newblock URL
   \url{https://stackoverflow.com/questions/39272947/dto-design-in-typescript-angular2}.
 
-\bibitem[Documentation'(2016)]{afterview}
-Angular~Official Documentation'.
+\bibitem[Documentation(2016)]{afterview}
+Angular~Official Documentation.
 \newblock Afterviewinit : Interface, 2016.
 \newblock URL \url{https://angular.io/api/core/AfterViewInit}.
 
@@ -50,6 +51,17 @@ Angular~Official Documentation'.
 Github.
 \newblock Choose an open source license, 2016.
 \newblock URL \url{https://choosealicense.com/}.
+
+\bibitem[guide(2017)]{herokunano}
+Nanobox~Official guide.
+\newblock Migrating apps from heroku to nanobox., 2017.
+\newblock URL
+  \url{https://content.nanobox.io/migrating-apps-from-heroku-to-nanobox/}.
+
+\bibitem[guide Nodejs +~Expressjs(2017)]{nano2}
+Nanobox~Official guide Nodejs +~Expressjs.
+\newblock Install and run a express app from scratch in 5 mins., 2017.
+\newblock URL \url{https://guides.nanobox.io/nodejs/express/}.
 
 \bibitem[Microsoft(2012)]{typescript}
 Microsoft.
@@ -65,25 +77,23 @@ MIT-Github.
 \bibitem[node js(2017)]{nano1}
 Nanobox Official~Page: node js.
 \newblock Examples of nodejs in nanobox, 2017.
-\newblock URL \url{https://guides.nanobox.io/nodejs/express/}.
+\newblock URL \url{https://guides.nanobox.io/nodejs/}.
 
-\bibitem[Page'(2015{\natexlab{a}})]{growl}
-PrimeNG~Official Page'.
+\bibitem[Oficial(2015)]{router}
+Express~Guía Oficial.
+\newblock Direccionamiento http., 2015.
+\newblock URL \url{http://expressjs.com/es/guide/routing.html}.
+
+\bibitem[Page(2015{\natexlab{a}})]{growl}
+PrimeNG~Official Page.
 \newblock Growl is used to display messages in an overlay., 2015{\natexlab{a}}.
 \newblock URL \url{https://www.primefaces.org/primeng/growl}.
 
-\bibitem[Page'(2015{\natexlab{b}})]{prime}
-PrimeNG~Official Page'.
+\bibitem[Page(2015{\natexlab{b}})]{prime}
+PrimeNG~Official Page.
 \newblock The most complete user interface suite for angular,
   2015{\natexlab{b}}.
 \newblock URL \url{https://www.primefaces.org/primeng/}.
-
-\bibitem[Ramos~Martin and Ramos~Martin(2016)]{accesodatos}
-Alicia Ramos~Martin and Maria~Jesus Ramos~Martin.
-\newblock \emph{Acceso Datos}.
-\newblock Garceta Grupo Editorial, 2016.
-\newblock ISBN 978-8416228607.
-\newblock [Biblioteca Politécnica Río Vena].
 
 \bibitem[Thoughtram'(2016)]{guards}
 Thoughtram'.
