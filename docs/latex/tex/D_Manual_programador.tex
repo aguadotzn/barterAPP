@@ -1,9 +1,9 @@
 \apendice{Documentación técnica de programación}
 
 \section{Introducción}\label{introduccion-programador}
-En este capítulo vamos a dividirlo en dos partes, por un lado las condiciones específicas propias de la aplicación y por otro vamos a aprender de manera breve y sencilla a crear una aplicación gracias a \emph{Angular CLI}, la interfaz de línea de comandos de Angular.
+Este capítulo vamos a dividirlo en dos partes: por un lado las condiciones específicas propias de la aplicación y por otro vamos a aprender de manera breve y sencilla a crear una aplicación gracias a \emph{Angular CLI}, la interfaz de línea de comandos de Angular.
 
-El por qué he decidido incluir la parte de \emph{Angular CLI} es por que considero que va aclarar muchas dudas acerca de cómo funciona esta tecnología y también para intentar comprender mejor como he realizado el proyecto. En diversas ocasiones para aprender a usar una tecnología tan solo hace falta tiempo pero en otras muchas el tiempo es limitado por lo que quizás con esta pequeña guía podemos comenzar a utilizar un framework cliente en muy pocos pasos y de una manera sencilla. Si bien es cierto que yo he necesitado mucho tiempo para comprender su funcionamiento y no lo he aprendido gracias a la interfaz de comandos. Ésta te permite agilizar los trámites de creación en un tanto por ciento considerablemente alto.
+He decidido incluir la parte de \emph{Angular CLI}  porque considero que va a esclarecer muchas dudas acerca de cómo funciona esta tecnología y también para intentar comprender mejor como he realizado el proyecto. En diversas ocasiones para aprender a usar una tecnología tan solo hace falta tiempo pero en otras muchas el tiempo es limitado por lo que quizás con esta pequeña guía podemos comenzar a utilizar un \emph{framework} cliente en muy pocos pasos y de una manera sencilla. Si bien es cierto que yo he necesitado mucho tiempo para comprender su funcionamiento y no lo he aprendido gracias a la interfaz de comandos. Ésta te permite agilizar los trámites de creación en un tanto por ciento considerablemente alto.
 
 Este anexo por tanto tiene como objetivo analizar y documentar las necesidades funcionales que deberán ser soportadas por el sistema a desarrollar, es decir, en qué condiciones ha sido desarrollado, en qué condiciones se debe usar y cuáles son los requerimientos mínimos para que un futuro programador interactúe con la aplicación en caso de que así lo considere.
 
@@ -24,10 +24,10 @@ Nota: es interesante, una vez instalados asegurarnos de que están correctamente
 
 
 \section{AngularCLI}\label{angularCLI}
-Sabiendo los requisitos mínimos que son necesarios para proceder vamos a realizar, cómo he nombrado antes una breve introducción a la línea de comandos de Angular,  \textbf{Angular CLI}.
+Sabiendo los requisitos mínimos que son necesarios para proceder vamos a realizar, como he nombrado antes una breve introducción a la línea de comandos de Angular,  \textbf{Angular CLI}.
 
 \subsection{¿Qué es typescript?}\label{typesript}
-Angular  promueve el uso de TypeScript como lenguaje de partida, esto se ha nombrado antes pero resulta esencial para entender el código de Angular. Antes de nada decir que en Angular se puede trabajar con Javascript “clásico” (ES5) \cite{ecma}, así como ES6 y TypeScript. Desarrollado por Microsoft y como apuesta de Google vamos a ver el crecimiento exponencial que ha tenido este de este lenguaje, que no deja de ser un super conjunto de JavaScript. 
+Angular  promueve el uso de TypeScript como lenguaje de partida, esto se ha nombrado antes pero resulta esencial para entender el código de Angular. Antes de nada decir que en Angular se puede trabajar con Javascript “clásico” (ES5) \cite{ecma}, así como ES6 y TypeScript. Desarrollado por Microsoft y como apuesta de Google vamos a ver el crecimiento exponencial de este lenguaje, que no deja de ser un super conjunto de JavaScript. 
  TypeScript es por tanto un superset de ECMAScript 6, es decir, incluye todas las funcionalidades de ES6, y además incorpora una capa por encima con funcionalidades extra.
 
 \begin{center}
@@ -58,15 +58,15 @@ Por lo tanto para crear nuestra aplicación con esta herramienta, una vez instal
 		ng new angular-cli-primer-proyecto
     	\end{lstlisting}
  
- Es un proceso que durará unos 2 minutos,  Al finalizar seremos capaces de ejecutar directamente la aplicación por defecto que crea la herramienta. Para ejecutarla, al igual que antes accedemos a la carpeta del proyecto y ejecutamos:
+ Es un proceso que durará unos 2 minutos.  Al finalizar seremos capaces de ejecutar directamente la aplicación por defecto que crea la herramienta. Para ejecutarla, al igual que antes accedemos a la carpeta del proyecto y ejecutamos:
  	\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
 		\begin{lstlisting}[frame=single]
 		 npm start
     	\end{lstlisting}
     	
-    	\imagen{angularcliconsola}{\footnotesize{Consola ejecución. Fuente:  \url{http://codigoxules.org/}.}}
+    	\imagen{angularcliconsola}{\footnotesize{Consola ejecución. Fuente:  \url{http://codigoxules.org/}.}}\label{cli}
     	
- Si te fijas en la ejecución se llama al comando \textbf{ng serve} que será el que utilicemos con Angular CLI para trabajar. Resulta realmente útil al introducir el último comando nombrado ya que una vez lanzado se detectan automáticamente los cambios a medida que vamos avanzando la página se recarga al guardar el componente que estemos modificando.  
+ Se puede ver en la consola de ejecución (\ref{cli}) como se llama al comando \textbf{ng serve} que será el que utilicemos con Angular CLI para trabajar. Resulta realmente útil al introducir el último comando nombrado ya que una vez lanzado se detectan automáticamente los cambios a medida que vamos avanzando la página se recarga al guardar el componente que estemos modificando.  
     	
     	\imagen{angularcliresultado}{\footnotesize{Resultado después de creado. Fuente:  \url{http://codigoxules.org/}.}}
     	
@@ -94,7 +94,7 @@ Enum & \emph{ng g enum my-new-enum}  \\ \hline
 
 
 \section{Manual del programador}
-En esta sección hay que tener en cuenta que el autor de este trabajo proyecto a escogido unas serie de herramientas, tanto para desplegar la app, como la base de datos como para desarrollar la aplicación pero que de ninguna manera resultan ser ni las únicas ni las mejores simplemente son unas herramientas que ha considerado utilizar pero existen muchas más que no son ni peores ni mejores.
+En esta sección hay que tener en cuenta que el autor de este trabajo proyecto a escogido unas serie de herramientas, tanto para desplegar la app, como la base de datos como para desarrollar la aplicación pero que de ninguna manera resultan ser ni las únicas ni las mejores, simplemente son unas herramientas que ha considerado utilizar pero existen otras posibilidades que no son ni peores ni mejores.
 
 \subsection{Prerequisitos}
 \begin{enumerate}
@@ -246,7 +246,7 @@ La estructura de directorios general es la siguiente:
 
 \subsection{Modo desarrollador}
 
-Hay que tener en cuenta que tenemos diversas tecnologías dentro del proyecto por lo que resulta un poco costoso tener que ejecutar todas por separado, que es lo que hacía en un principio. Con el modo desarrollador (emula al \textbf{ng serve} nombrado antes, tan solo con el comando siguiente ejecutamos MongoDB, Angular, Express y el compilador de Typescript luego ya no nos hace falta nada más y podemos comenzar a trabajar. 
+Hay que tener en cuenta que tenemos diversas tecnologías dentro del proyecto por lo que resulta un poco costoso tener que ejecutar todas por separado, que es lo que hacía en un principio. Con el modo desarrollador (emula al \textbf{ng serve} nombrado antes) tan solo con el comando siguiente ejecutamos MongoDB, Angular, Express y el compilador de Typescript luego ya no nos hace falta nada más y podemos comenzar a trabajar. 
 
 	\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
 		\begin{lstlisting}[frame=single]
@@ -280,14 +280,14 @@ Para subir la aplicación al servidor una buena elección es \href{https://www.h
 		git push heroku master
 		heroku open
     	\end{lstlisting}
-	\item Una venta se abrirá con tu aplicación ya online
+	\item Una venta se abrirá con tu aplicación ya online.
 \end{enumerate}
 
 Resumiendo de esta manera utilizamos Heroku como si de github se tratase y vamos aplicando los cambios que hacemos a nuestra aplicación al repositorio creado en Heroku, la ventaja que ya tenemos la aplicación lanzada en un entorno real. Es una restricción importante que ya no podemos trabajar con una base de datos local sino que tiene que ser un servidor remoto con MongoDB ( en este caso) para que la aplicación funcione.
 	
 
 \subsection{Base de datos (Mlab)}
-La base de datos escogida es MongoDB, la instalación es fácil y sencilla tan solo hay que ir a la \href{http://www.mongodb.org/downloads}{web} oficial y descargar la última versión estable disponible. Una vez en nuestro ordenador la ejecutamos y listo.  Si tenéis algún problema os recomiendo seguir alguno de los tutoriales que existen en la web. https://www.adictosaltrabajo.com/tutoriales/mongodb/
+La base de datos escogida es MongoDB, la instalación es fácil y sencilla tan solo hay que ir a la \href{http://www.mongodb.org/downloads}{web} oficial y descargar la última versión estable disponible. Una vez en nuestro ordenador la ejecutamos y listo.  Si surge algún problema recomiendo seguir alguno de los tutoriales que existen en la web ya que pueden aparecen errores comunes pero fácilmente solucionables \cite{tutmongo}.  
 
 Como sabemos podemos manejar la base de datos desde línea de comandos pero resulta un poco pesado cuando empezamos a tener muchas colecciones o un número de datos alto. Es por eso que yo recomiendo encarecidamente  \href{https://robomongo.org/}{Robomongo}, la copia de SQL server para bases de datos NoSQL.  Interfaz no muy lograda pero perfecta para visualizar nuestras bases de datos e información de una manera más intuitiva.
 
@@ -317,7 +317,7 @@ Nota: para empezar a trabajar con este proyecto es necesario crear las tres cole
 \subsection{Servidor (Nanobox)}
 La posibilidad de subir a un servidor como Heroku es fantástica pero he tenido algún que otro problema por lo que finalmente elegí otro servidor, en este caso \href{https://nanobox.io}{Nanobox} que funciona con \href{https://www.digitalocean.com/}{Digital Ocean}. Los servicios no son gratuitos pero ha merecido la pena. 
 
-La curva de aprendizaje no es demasiado fáci \cite{nano1} pero tampoco demasiado complicada, además el equipo humano que hay detrás de Nanobox te hace que los problemas que van surgiendo parezcan sencillos. Para subir a Nanobox tu aplicación hay que realizar los siguientes pasos:
+La curva de aprendizaje no es demasiado fácil \cite{nano1} pero tampoco demasiado complicada, además el equipo humano que hay detrás de Nanobox te hace que los problemas que van surgiendo parezcan sencillos. Para subir a Nanobox tu aplicación hay que realizar los siguientes pasos:
 
 \begin{enumerate}
 	\item Crear cuenta en Nanobox.

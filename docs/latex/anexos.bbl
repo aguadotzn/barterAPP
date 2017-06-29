@@ -1,9 +1,14 @@
-\begin{thebibliography}{21}
+\begin{thebibliography}{23}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[al~trabajo(2014)]{tutmongo}
+Francisco Javier Martínez Páez~Adictos al~trabajo.
+\newblock Mongodb, primeros pasos., 2014.
+\newblock URL \url{https://www.adictosaltrabajo.com/tutoriales/mongodb/}.
 
 \bibitem[Apache-Github(2004)]{apache}
 Apache-Github.
@@ -109,9 +114,15 @@ Jason Watmore'.
 
 \bibitem[Wikipedia'(2015)]{dto}
 Wikipedia'.
-\newblock Objeto de transferencia de datos (dto), 2015.
+\newblock Objeto de transferencia de datos (dto)- wikipedia, 2015.
 \newblock URL
   \url{https://es.wikipedia.org/wiki/Objeto_de_Transferencia_de_Datos_(DTO)}.
+
+\bibitem[Wikipedia'(2017)]{wikiapi}
+Wikipedia'.
+\newblock Interza de programacion de aplicaciones- wikipedia, 2017.
+\newblock URL
+  \url{https://es.wikipedia.org/wiki/Interfaz_de_programación_de_aplicaciones}.
 
 \bibitem[World(2016)]{ides}
 Our~Code World.

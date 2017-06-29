@@ -1,6 +1,6 @@
 \apendice{Especificación de diseño}
 \section{Introducción}\label{introducciondiseno}
-Cada parte de la aplicación tiene características interesante de programación que merece la pena reflejar aquí: comprender que datos se han usado, como se han pensado y el tipo de los mismos resulta fundamental para entender su funcionamiento. 
+Cada parte de la aplicación tiene características interesante de programación que merece la pena reflejar aquí: comprender qué datos se han usado, cómo se han pensado y el tipo de los mismos resulta fundamental para entender el comportamiento global de la aplicación.
 
 \section{Diseño de datos}\label{datos}
 Vamos a analizar los datos así como las técnicas o librerías más importantes de las que se han hecho uso para usar, enviar y recoger todos esos datos. Debemos recordar que se trata de una tecnología basada en componentes, todos los componentes en Angular tienen una estructura interna exactamente igual:
@@ -24,7 +24,7 @@ Vamos a analizar cada una de las partes esenciales de la aplicación:
 
 	\item \emph{/app/directives} : las directivas  en este caso se utilizan para lanzar alertas, concretamente en el registro o  de la aplicación. 
 	
-	\item \emph{/app/guards} : es la parte donde realmente se comprueba que un usuario este logeado en la web \cite{guards}. Me basé en un tutorial \cite{logintut} de Jason Watmore, programador Australiano. 
+	\item \emph{/app/guards} : es la parte donde realmente se comprueba que un usuario este logeado en la web \cite{guards}. Me basé en un tutorial \cite{logintut} de Jason Watmore, programador australiano. 
 	
 	\item \emph{/app/models} : junto con \emph{services} una de las partes fundamentales de la aplicación es dónde se describen los datos donde se declaran los atributos que va a tener cada entidad que vamos a usar. En mi caso: \underline{usuarios} y \underline{eventos}.  
 	Se ha usado aqui un DTO \cite{dto} para el caso de los eventos que van a ser intercambiados, es decir, ese turno que un usuario va a intercambiar con otro. Es habitual esta práctica de programación en java pero también empieza a serlo en Angular \cite{dto2}.
@@ -124,7 +124,7 @@ Tipo  & Parámetros  \\
 \imagen{relacional}{\footnotesize{Diagrama relacional. Fuente: Elaboración propia.}}
 	
 	
-	\item \emph{/app/services} : los servicios de la parte cliente, las alertas nombradas anteriormente o la autenticación tienen su propio servicio. Es interesante el conocer aqui el concepto de \emph{Observable} \cite{ob1} en Angular, a la hora de las comunicaciones http es algo muy a tener en cuenta. La librería \textbf{@angular/http} trae por defecto el servicio http que es el cliente usado para enviar y recibir datos \cite{ob2}, pero sin duda la librería más potente actualmente sobre el tema es \href{http://reactivex.io/rxjs/}{RxJS}. Recomiendo encarecidamente el artículo: Javascript Reactivo y funcional \cite{ob3}, que aborda estos temas con gran entereza.
+	\item \emph{/app/services} : los servicios de la parte cliente, las alertas nombradas anteriormente o la autenticación tienen su propio servicio. Es interesante el conocer aquí el concepto de \emph{Observable} \cite{ob1} en Angular, a la hora de las comunicaciones http es algo muy a tener en cuenta. La librería \textbf{@angular/http} trae por defecto el servicio http que es el cliente usado para enviar y recibir datos \cite{ob2}, pero sin duda la librería más potente actualmente sobre el tema es \href{http://reactivex.io/rxjs/}{RxJS}. Recomiendo encarecidamente el artículo: Javascript Reactivo y funcional \cite{ob3}, que aborda estos temas con gran entereza.
 	
 	\item \emph{/app/pages} : comprende las distintas páginas \emph{fisicas} de la web.
 	
@@ -172,7 +172,7 @@ Definición & Datos  \\
 
 En términos de programación todos son arrays excepto los turnos por día que se declaran como un mapa cuya \underline{clave} es el argumento uno, dos, tres y cuatro del array \emph{shifts} que corresponde al tipo de turno, y el \underline{valor} son los turnos en los que se subdivide un día: jornada completa, dos turnos, tres turnos o cuatro turnos.
 
-\item \emph{Calendario} : el calendario es la parte fundamental de la aplicación, se ha empleado un componente desarrollado por \href{https://mattlewis.me/}{Matt Lewis}. Un desarrollador británico que la verdad tiene numerosas aportaciones al mundo \emph{open source}. El calendario está en desarrollo actualmente como se puede ver en su página de \href{https://github.com/mattlewis92/angular-calendar}{github}. 
+\item \emph{Calendario} : el calendario es la parte fundamental de la aplicación, se ha empleado un componente desarrollado por \href{https://mattlewis.me/}{Matt Lewis}. Un desarrollador británico que tiene numerosas aportaciones al mundo \emph{open source}. El calendario está en desarrollo actualmente como se puede ver en su página de \href{https://github.com/mattlewis92/angular-calendar}{github}. 
 \begin{itemize}
 \item \url{https://github.com/mattlewis92/angular-calendar}
 \end{itemize}
@@ -182,18 +182,18 @@ En términos de programación todos son arrays excepto los turnos por día que s
 \item Otros detalles a tener en cuenta sobre el cliente.
 \begin{itemize}
 	\item \emph{ngAfterViewInit} \cite{afterview} : para intentar entederlo diremos que es algo que es necesario que se inicialice antes de la vista principal. 
-	\item \emph{PrimeNg}: se trata de una serie de componentes diseñados para Angular que resultan ser realmente útiles, persiguen el diseño responsive de cara al usuario y tienen una comunidad enorme detrás \cite{prime}. Por ejemplo yo he empleado Growl \cite{growl} que se utiliza para lanzar al usuarios los mensajes de confirmación de las diferentes peticiones.  
+	\item \emph{PrimeNg}: se trata de una serie de componentes diseñados para Angular que resultan ser realmente útiles. Persiguen el diseño \emph{responsive} de cara al usuario y tienen una comunidad enorme detrás \cite{prime}. Por ejemplo yo he empleado Growl \cite{growl} que se utiliza para lanzar al usuarios los mensajes de confirmación de las diferentes peticiones.  
 \end{itemize}
 
-\item\emph{/server/config} : se define aqui la configuración de la base de datos, local o remota, necesaria para almacenar los datos de la aplicación. Este fichero junto con \textbf{config.js}, que se encuentra en la raíz de la carpeta \emph{server}, son los que hay que modificar para cambiar de una base de datos a otra. En un futuro no muy lejano se creará una variable de entorno para que sea por defecto capaz de detectar si es necesario una base de datos local o una remota. 
+\item\emph{/server/config} : se define aquí la configuración de la base de datos, local o remota, necesaria para almacenar los datos de la aplicación. Este fichero junto con \textbf{config.js}, que se encuentra en la raíz de la carpeta \emph{server}, son los que hay que modificar para cambiar de una base de datos a otra. En un futuro no muy lejano se creará una variable de entorno para que sea por defecto capaz de detectar si es necesario una base de datos local o una remota. 
 
 \item\emph{/server/controllers} : son los controladores de la parte del servidor. Emplean la librería  \emph{Router} \cite{router} nativa en express, para poder funcionar.
 
 \imagen{conexiones}{\footnotesize{Envío-respuesta http . Fuente:  \url{http://expressjs.com/}.}}
 
-\item\emph{/server/routes} : son las rutas necesarias para realizar correctamente las llamadas http  y que devuelvan en cada momento los datos correspondientes. Una vez el usuario se haya autenticado de forma correcta, ya puede accede a las diferentes zonas de la aplicación. Cada sección dentro esta aplicación necesitará al menos una llamada a la API, situadas en rutas privadas, es decir, que necesitan autorización. Sin esa autorización no se pueden realizar las llamadas http necesarias. 
+\item\emph{/server/routes} : son las rutas necesarias para realizar correctamente las llamadas \emph{http}  y que devuelvan en cada momento los datos correspondientes. Una vez el usuario se haya autenticado de forma correcta, ya puede acceder a las diferentes zonas de la aplicación. Cada sección dentro esta aplicación necesitará al menos una llamada a la API, situadas en rutas privadas, es decir, que necesitan autorización. Sin esa autorización no se pueden realizar las llamadas \emph{http} necesarias. 
 
-En el siguiente par de páginas vamos a ver de un vistazo rápido los métodos empleados para extraer los datos y los métodos http que tiene asociado en cada ruta cada uno de ellos. 
+En el siguiente par de páginas vamos a ver de un vistazo rápido los métodos empleados para extraer los datos y los métodos \emph{http} que tiene asociado en cada ruta cada uno de ellos. 
 \begin{landscape}
 %\begin{adjustbox}{width=1.2\textwidth,center}
 \begin{table}[H]
@@ -250,8 +250,9 @@ Tipo  & Métodos & Método http asociado \\
 %\end{adjustbox}
   \end{landscape}
 
-\item\emph{/server/services} : 	es la parte del servidor dónde realmente se producen todas las acciones, el intercambio entre usuarios esta implementado aquí .
+\item\emph{/server/services} : 	es la parte del servidor dónde realmente se producen todas las acciones, el intercambio entre usuarios esta implementado aquí. La idea es usar una \textbf{API}, es decir, \emph{un conjunto de subrutinas, funciones y procedimientos que ofrece cierta biblioteca para ser utilizado por otro software como una capa de abstracción} \cite{wikiapi}. En definitiva es una forma de describir la forma en la que los sitios web intercambian datos, en este caso el intercambio de datos es mediante \textbf{JSON}. Si detallamos un poco más veremos que lo que realmente esta implementado en el servidor es una \textbf{API REST}, es decir un tipo de arquitectura (\textbf{RE}presentational \textbf{S}tate \textbf{T}ransfer) de desarrollo web que se apoya en una API y en el estándar \emph{http}, por lo que todas las llamadas a la API se implementan como peticiones \emph{http},.
 	
+	 \imagen{servidor}{\footnotesize{Funcionamiento \emph{API}. Fuente:  \url{https://juanda.gitbooks.io/}.}}
 	
 	
 \end{itemize}
@@ -274,12 +275,14 @@ En cuanto a la arquitectura de Angular resulta, después de todo lo ya visto, en
 \item \underline{Vista}: capa de presentación, implementa los métodos relacionados con los componentes de la interfaz de la aplicación.
 
  \item \underline{Controlador}: se encarga de la comunicación entre la vista y el modelo. En la aplicación parte de la lógica se manejará dentro de la propia página utilizando JavaScript dentro de los controladores de Angular y otra parte se hará en el servidor de NodeJS.
+ 
+
 
 \end{itemize}
 
 \imagen{meanarq}{\footnotesize{Esquema Arquitectura. Fuente:  \url{http://www.cantabriatic.com/}.}}
 
-Seguir la estructura MVC es muy útil, ya que proporciona idea mental de dónde situar cada elemento evitando así a tarea de investigación cada vez que se quiera ampliar el contenido de la aplicación.
+Seguir la estructura MVC es muy útil, ya que proporciona una idea mental de dónde situar cada elemento evitando así a tarea de investigación cada vez que se quiera ampliar el contenido de la aplicación.
 
 
 

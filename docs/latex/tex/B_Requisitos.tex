@@ -6,7 +6,7 @@ Este anexo recoge la especificación de requisitos que define el comportamiento 
 
 La ERS es correcta si y sólo si todo requisito que figura en ella refleja alguna necesidad
 real. La corrección de la ERS implica que el sistema implementado será el sistema
-deseado. Se han seguido las recomendaciones del estándar IEEE 830 según la última versión del estándar IEEE 830. Las características deseables para una especificación de requisitos son:
+deseado. Se han seguido las recomendaciones del estándar IEEE 830 según la última versión del estándar citado. Las características deseables para una especificación de requisitos son:
 
 
 \begin{enumerate}
@@ -30,9 +30,9 @@ Los objetivos generales que se perseguían con el proyecto han sido:
 
 
 \section{Catálogo de requisitos}\label{catalogo-requisitos}
-A continuación, se enumeran los requisitos específicos :
+A continuación, se enumeran los requisitos específicos:
 
-En esta sección se especificarán los requisitos del sistema, diferenciando los requisitos funcionales, o sea los  el comportamiento del sistema, de los requisitos no funcionales, que describen características de funcionamiento.
+En esta sección se especificarán los requisitos del sistema, diferenciando los requisitos funcionales, o sea el comportamiento del sistema, de los requisitos no funcionales, que describen características de funcionamiento.
 \subsection{Requisitos funcionales}\label{r-funcionales}
 \begin{description}
     \item[RF-1 Gestión de usuarios:] Los usuarios son una parte fundamental.
@@ -75,7 +75,7 @@ En esta sección se especificarán los requisitos del sistema, diferenciando los
     \item [RNF-1 Seguridad] se persigue preservar la seguridad impidiendo acceder a la aplicación sin logearse. O también añadiendo un \emph{hash} para el almacenamiento de las contraseñas de los usuarios, preservando así la seguridad de los mismos.
     \item [RNF.2 Escalabilidad:] la aplicación debe estar preparada para actuar con un gran número de usuarios.
     \item [RNF.3 Soporte:]  la aplicación debe ser soportable por diferentes navegadores (Restricción: lamentablemente \emph{Angular 4} no es soportado actualmente por todos los navegadores del mercado)
-    \item [RNF.4 Usabilidad:]  la aplicación debe ser fácil de usar 
+    \item [RNF.4 Usabilidad:]  la aplicación debe ser fácil de usar.
 \end{description}
 
 
@@ -89,7 +89,7 @@ En esta sección se explicará el diagrama de casos de uso y se desarrollará ca
 \imagen{casodeusoschema}{Casos de uso. Fuente: Elaboración propia.}
 
 \subsection{Actores}
-El actor es el usuario de la aplicación, tenemos que tener en cuenta que para que se de un cambio de turno deben de existir dos actores, sino sería imposible el intercambio.
+El actor es el usuario de la aplicación tenemos que tener en cuenta que para que se de un cambio de turno deben de existir dos actores sino sería imposible el intercambio.
 
 \subsection{Casos de uso}
 
@@ -227,7 +227,7 @@ El actor es el usuario de la aplicación, tenemos que tener en cuenta que para q
 \caption{CU-04 Log out} 
 \end{table}
 
-Nota: El editar usuarios y eliminar usuarios no esta implementado de cara al usuario. Esta hecho pero no se encuentra disponible en pantalla para realizarse directamente por parte del usuario.
+Nota: El editar usuarios y eliminar usuarios no esta implementado de cara al usuario. Está implementado para realizar en una segunda fase  pero no se encuentra disponible en pantalla para realizarse directamente por parte del usuario.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%
 %CU-05: Gestión Calendario
