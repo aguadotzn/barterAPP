@@ -85,7 +85,6 @@ service.decline=function(param){
 	 return deferred.promise;
 }
 
-
 // Peticion aceptada
 service.accept_shift = function(param){
 	var deferred = Q.defer();
@@ -208,6 +207,8 @@ service.accept_shift = function(param){
 
 	return deferred.promise;
 }
+
+
 
 // Activar intercambio
 service.activateShift = function(params){

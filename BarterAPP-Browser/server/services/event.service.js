@@ -7,6 +7,7 @@ var db = mongo.db(config.connectionString, {});
 db.bind('event');
 db.bind('users');
 
+var shiftUtils = require("../utils/shift.utils")
 var service = {};
 
 // Obtener todos
@@ -162,11 +163,47 @@ service.update = function (param) {
   return deferred.promise;
 }
 
+service.update_events = function (param) {
+  var deferred = Q.defer();
+  var objectIdsArray = shiftUtils.idsArrayFromEvents(param);
+  console.log("I am in update events params: " + JSON.stringify(param));
+  var query = {_id: { $in: objectIdsArray }};
+  console.log("Query in update events :" +JSON.stringify(query));
+  var  eventWithoutId = shiftUtils.removeIdsFromEvent(param)[0];
+  console.log("Events without ids :" +JSON.stringify(eventWithoutId));
+
+  db.event.update(query,
+    {$set: eventWithoutId}, {multi: true},
+    function (err, doc) {
+      if (err) deferred.reject(err.name + ': ' + err.message);
+      var emptyObject = {};
+      deferred.resolve(emptyObject);
+    });
+
+  return deferred.promise;
+}
+
 //Eliminar
 service._delete = function (param) {
   var deferred = Q.defer();
   // console.log("El siguiente servicio se ha borrado: " + param.eventId);
   db.event.removeById(param.eventId, function (err) {
+    if (err) deferred.reject(err.name + ': ' + err.message);
+
+    deferred.resolve();
+  });
+
+  return deferred.promise;
+}
+
+service._delete_events = function (ids) {
+  var deferred = Q.defer();
+  console.log("I am in service delete events method params: " + ids);
+  var idsArray = ids.split(",");
+  var objectIdsArray = shiftUtils.idsArrayFromReqQueryParam(ids);
+  var query = {_id: { $in: objectIdsArray }};
+  console.log("Query in delete events :" +JSON.stringify(query));
+  db.event.remove(query, function (err) {
     if (err) deferred.reject(err.name + ': ' + err.message);
 
     deferred.resolve();

@@ -12,6 +12,12 @@ module.exports = function(app) {
   app.route('/events/:eventId')
     .put(events.update_event)
     .delete(events.delete_event);
+	
+  app.route('/events/all/update')
+    .put(events.update_events);
+	
+  app.route('/events/delete/some')
+    .delete(events.delete_events);
 
   app.route('/company/:company/events')
   .get(events.list_all_events_by_company);

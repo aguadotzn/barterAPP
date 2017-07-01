@@ -4,17 +4,7 @@
 var router = express.Router();
 var userService = require('../services/user.service');
 
-// rUTAS
-router.post('/authenticate', authenticate);
-router.post('/register', register);
-router.get('/', getAll);
-router.get('/current', getCurrent);
-router.put('/:_id', update);
-router.delete('/:_id', _delete);
-
-module.exports = router;
-
-function authenticate(req, res) {
+module.exports.authenticate = function(req, res) {
     userService.authenticate(req.body.email, req.body.password)
         .then(function (user) {
             if (user) {
@@ -32,7 +22,7 @@ function authenticate(req, res) {
         });
 }
 
-function register(req, res) {
+module.exports.register = function(req, res) {
     userService.create(req.body)
         .then(function () {
             res.sendStatus(200);
@@ -42,7 +32,7 @@ function register(req, res) {
         });
 }
 
-function getAll(req, res) {
+module.exports.getAll = function(req, res) {
     userService.getAll()
         .then(function (users) {
             res.send(users);
@@ -52,7 +42,7 @@ function getAll(req, res) {
         });
 }
 
-function getCurrent(req, res) {
+module.exports.getCurrent =  function(req, res) {
     userService.getById(req.user.sub)
         .then(function (user) {
             if (user) {
@@ -66,7 +56,7 @@ function getCurrent(req, res) {
         });
 }
 
-function update(req, res) {
+module.exports.update = function(req, res) {
     userService.update(req.params._id, req.body)
         .then(function () {
             res.sendStatus(200);
@@ -76,7 +66,7 @@ function update(req, res) {
         });
 }
 
-function _delete(req, res) {
+module.exports._delete = function(req, res) {
     userService.delete(req.params._id)
         .then(function () {
             res.sendStatus(200);
