@@ -10,8 +10,8 @@
     "build": "ng build",
     "start": "node dist/server/server.js",
     "prepare": "ng build --aot -prod && tsc -p server",
-    "dev": "concurrently \"mongod\" \"ng serve -pc proxy.conf.json --open\" \"tsc -w -p server\" \"node server/app.js\"",
-    "prod": "concurrently \"mongod\" \"ng build -aot -prod && tsc -p server && node server/app.js\"",
+    "dev": "concurrently \"ng serve -pc proxy.conf.json --open\" \"ng build --aot -prod && tsc -w -p server\" \"node dist/server/server.js\"",
+    "prod": "concurrently \"ng build -aot -prod && tsc -p server && node dist/server/server.js\"",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
@@ -26,6 +26,7 @@
     "@angular/core": "^4.0.0",
     "@angular/forms": "^4.0.0",
     "@angular/http": "^4.0.0",
+    "@angular/material": "^2.0.0-beta.7",
     "@angular/platform-browser": "^4.0.0",
     "@angular/platform-browser-dynamic": "^4.0.0",
     "@angular/router": "^4.0.0",
@@ -41,11 +42,11 @@
     "mongoose": "^4.9.1",
     "mongoskin": "^2.1.0",
     "morgan": "^1.8.1",
+    "primeng": "^4.0.1",
     "rxjs": "^5.1.0",
     "sass-loader": "^6.0.2",
     "tether": "1.4.0",
-    "zone.js": "^0.8.4",
-     "primeng": "^4.0.1"
+    "zone.js": "^0.8.4"
   },
   "devDependencies": {
     "@angular/cli": "1.0.0",
