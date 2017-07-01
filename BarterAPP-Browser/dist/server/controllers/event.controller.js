@@ -76,9 +76,28 @@ module.exports.update_event = function (req, res) {
         res.status(400).send(err);
     });
 };
+module.exports.update_events = function (req, res) {
+    eventService.update_events(req.body)
+        .then(function () {
+        res.sendStatus(200);
+    })
+        .catch(function (err) {
+        res.status(400).send(err);
+    });
+};
 module.exports.delete_event = function (req, res) {
     // console.log("*****************event controller (eventos libres por empresa/usuario) " + JSON.stringify(req.params));
     eventService._delete(req.params)
+        .then(function () {
+        res.sendStatus(200);
+    })
+        .catch(function (err) {
+        res.status(400).send(err);
+    });
+};
+module.exports.delete_events = function (req, res) {
+    console.log("I am in event controller : req.ids : " + req.query.ids);
+    eventService._delete_events(req.query.ids)
         .then(function () {
         res.sendStatus(200);
     })

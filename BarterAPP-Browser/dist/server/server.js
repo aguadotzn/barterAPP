@@ -11,11 +11,13 @@ app.use(bodyParser.json());
 // Me daba un conflicto
 //app.use(expressJwt({ secret: config.secret }).unless({ path: ['/users/authenticate','/users/register',/^\/events(\/w*)*/, /^\/company(\/w*)*/, /^\/interchange(\/w*)*/]}));
 // rutas
+var routesUser = require('./routes/user.router');
+routesUser(app);
 var routesEvent = require('./routes/event.router');
 routesEvent(app);
 var routesInterchange = require('./routes/interchange.router');
 routesInterchange(app);
-app.use('/users', require('./controllers/users.controller'));
+//app.use('/users', require('./controllers/users.controller'));
 app.use('/', express.static(path.join(__dirname, '../public')));
 var port = process.env.PORT || 3000;
 var server = app.listen(port, function () {
