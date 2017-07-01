@@ -17,8 +17,9 @@ const appRoutes: Routes = [
     { path: '', component: WelcomeComponent },
     { path: 'login', component: LoginComponent },
     { path: 'about', component: AboutComponent },
-    { path: 'help', component: HelpComponent, canActivate: [AuthGuard] },
-    { path: 'calendarhome', component: AngularCalendarComponent, canActivate: [AuthGuard] },
+    { path: 'help', component: HelpComponent, canActivate: [AuthGuard]  },
+    //, canActivate: [AuthGuard]
+    { path: 'calendarhome', component: AngularCalendarComponent, canActivate: [AuthGuard]  },
     { path: 'register', component: RegisterComponent },
 
   // Si no hay nada que coincida, va a la pagina principal

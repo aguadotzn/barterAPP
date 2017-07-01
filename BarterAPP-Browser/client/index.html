@@ -3,39 +3,65 @@
 <head>
   <base href="/" />
   <title>BarterApp</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+  <meta name="description" content="BarterApp: Manage your business time.">
+  <meta name="viewport" content="width=device-width" />
+  <link rel="icon" type="image/x-icon" href="assets/favicon2.ico">
 
   <!-- bootstrap css -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
   <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="assets/js/register.js"></script>
 
 
-  <!-- <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css"> -->
-  <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-  <link rel="stylesheet" href="assets/css/form-elements.css">
+  <!--<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">-->
+
+ <!--<link rel="stylesheet" href="assets/css/form-elements.css"> -->
   <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
-  <!-- application css -->
+  <!-- application css
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css">
-  <link rel="stylesheet" href="assets/css/pagelayout.css">
-  <link href="assets/css/sticky-footer-navbar.css" rel="stylesheet">
-  <!-- polyfill(s) for older browsers -->
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link href="assets/css/sticky-footer-navbar.css" rel="stylesheet">-->
 
 
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/pagelayout.css">
+   <link rel="stylesheet" href="assets/css/timeline.css">
+
+<!-- Calendarios -->
   <script src="assets/js/moment-with-locales.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment-timezone/0.5.11/moment-timezone-with-data-2010-2020.js"></script>
   <script src="assets/js/jquery.backstretch.min.js"></script>
+
+
+<link href="https://unpkg.com/@angular/material/prebuilt-themes/indigo-pink.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-<app>Loading...</app>
+  <div class="fondo">
+<app>
+<div id="loading">
+  <i class="fa fa-refresh fa-spin fa-3x fa-fw"></i>
+</div>
+</app>
+  <div>
 </body>
-<footer class="app_footer">
-  <a><p align="center"  > © 2017 BarterAPP <span class="fa fa-twitter"></span></p></a>
+<footer class="app_footer" >
+<hr>
+<div class="container">
+        <div class="text-center center-block">
 
+	            <a href="www.twitter.com/barterappinfo"><i id="social-tw" class="fa fa-twitter-square fa-3x social" ></i></a>
+	            <a href=""><i id="social-gp" class="fa fa-google-plus-square fa-3x social"></i></a>
+	            <a href=""><i id="social-em" class="fa fa-envelope-square fa-3x social" ></i></a>
+              <p class="txt-railway">¡Contáctanos para cualquier duda o sugerencia!</p>
+              <p class="txt-railway">© <script>document.write(new Date().getFullYear());</script> BarterAPP</p>
+      </div>
+
+</div>
 </footer>
 </html>

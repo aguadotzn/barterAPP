@@ -45,7 +45,7 @@ export class AppComponent implements OnInit {
       localStorage.clear();
       this.localStorageService.announceLogout();
       // Navega a la pantalla principal
-      this.router.navigate(['/']);
+      this.router.navigateByUrl('/home');
 
 
     }

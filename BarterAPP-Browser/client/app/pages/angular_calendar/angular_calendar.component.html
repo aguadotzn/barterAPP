@@ -1,115 +1,106 @@
 
-<div class="row text-center">
-  <div class="col-md-4">
-    <div class="btn-group">
-      <div
-        class="btn btn-primary"
-        mwlCalendarPreviousView
-        [view]="view"
-        [(viewDate)]="viewDate">
-        Anterior
+<div style="margin-top:4vw">
+    <!-- Controles del calendario -->
+  <div class="row text-center">
+    <div class="col-md-4">
+      <div class="btn-group">
+        <div
+          class="btn btn-info"
+          id="control"
+          mwlCalendarPreviousView
+          [view]="view"
+          [(viewDate)]="viewDate">
+          Anterior
+        </div>
+        <div
+          class="btn btn-secondary"
+          id="control"
+          mwlCalendarToday
+          [(viewDate)]="viewDate">
+          Actual
+        </div>
+        <div
+          class="btn btn-info"
+          id="control"
+          mwlCalendarNextView
+          [view]="view"
+          [(viewDate)]="viewDate">
+          Siguiente
+        </div>
       </div>
-      <div
-        class="btn btn-secondary"
-        mwlCalendarToday
-        [(viewDate)]="viewDate">
-        Actual
-      </div>
-      <div
-        class="btn btn-primary"
-        mwlCalendarNextView
-        [view]="view"
-        [(viewDate)]="viewDate">
-        Siguiente
+    </div>
+    <div class="col-md-4">
+      <h2 class="titulo-calendario"><strong>{{ viewDate | calendarDate:(view + 'ViewTitle'):'es' }}</strong></h2>
+    </div>
+    <div class="col-md-4">
+      <div class="btn-group">
+        <div
+          class="btn btn-info"
+          id="control"
+          (click)="view = 'month'"
+          [class.active]="view === 'month'">
+          Mes
+        </div>
+        <div
+          class="btn btn-info"
+          id="control"
+          (click)="view = 'week'"
+          [class.active]="view === 'week'">
+          Semana
+        </div>
+        <div
+          class="btn btn-info"
+          id="control"
+          (click)="view = 'day'"
+          [class.active]="view === 'day'">
+          Dia
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-md-4">
-    <h3>{{ viewDate | calendarDate:(view + 'ViewTitle'):'en' }}</h3>
+
+  <!-- Vistas del calendario -->
+  <div [ngSwitch]="view">
+    <mwl-calendar-month-view
+      *ngSwitchCase="'month'"
+      [viewDate]="viewDate"
+      [events]="events"
+      [locale]="locale"
+      [weekStartsOn]="1"
+      [refresh]="refresh"
+      [activeDayIsOpen]="activeDayIsOpen"
+      (dayClicked)="dayClicked($event.day)"
+      (eventTimesChanged)="eventTimesChanged($event)">
+    </mwl-calendar-month-view>
+    <mwl-calendar-week-view
+      *ngSwitchCase="'week'"
+      [viewDate]="viewDate"
+      [events]="events"
+      [locale]="locale"
+      [weekStartsOn]="1"
+      [refresh]="refresh"
+      (eventTimesChanged)="eventTimesChanged($event)">
+    </mwl-calendar-week-view>
+    <mwl-calendar-day-view
+      *ngSwitchCase="'day'"
+      [viewDate]="viewDate"
+      [events]="events"
+      [locale]="locale"
+      [refresh]="refresh"
+      (eventTimesChanged)="eventTimesChanged($event)">
+    </mwl-calendar-day-view>
   </div>
-  <div class="col-md-4">
-    <div class="btn-group">
-      <div
-        class="btn btn-primary"
-        (click)="view = 'month'"
-        [class.active]="view === 'month'">
-        Mes
-      </div>
-      <div
-        class="btn btn-primary"
-        (click)="view = 'week'"
-        [class.active]="view === 'week'">
-        Semana
-      </div>
-      <!--<div
-        class="btn btn-primary"
-        (click)="view = 'day'"
-        [class.active]="view === 'day'">
-        Dia
-      </div>-->
-    </div>
-  </div>
-</div>
-<br>
-<!-- Vistas del calendario -->
-<div [ngSwitch]="view">
-  <mwl-calendar-month-view
-    *ngSwitchCase="'month'"
-    [viewDate]="viewDate"
-    [events]="events"
-    [refresh]="refresh"
-    [activeDayIsOpen]="activeDayIsOpen"
-    (dayClicked)="dayClicked($event.day)"
-    (eventTimesChanged)="eventTimesChanged($event)">
-  </mwl-calendar-month-view>
-  <mwl-calendar-week-view
-    *ngSwitchCase="'week'"
-    [viewDate]="viewDate"
-    [events]="events"
-    [refresh]="refresh"
-    (eventTimesChanged)="eventTimesChanged($event)">
-  </mwl-calendar-week-view>
-  <mwl-calendar-day-view
-    *ngSwitchCase="'day'"
-    [viewDate]="viewDate"
-    [events]="events"
-    [refresh]="refresh"
-    (eventTimesChanged)="eventTimesChanged($event)">
-  </mwl-calendar-day-view>
 </div>
 
-<!-- Controles para intercambio-->
-<div class="row justify-content-md-center">
-	<div class="col col-lg-2">
-	</div>
-	<div class="col-12 col-md-auto">
-		 <h3 align="center">
-		  <!--¿Cambios?-->
-		 </h3>
-		 <button class="btn btn-primary" (click)="showNormal(0)" >
-		    Normal
-		 </button>
-		  <button class="btn btn-primary" (click)="showNormal(1)" >
-		   Pendientes<span class="badge badge-pill badge-danger">{{pendingEventCounter}}</span>
-		  </button>
-		   <button class="btn btn-primary" (click)="showNormal(2)" >
-		   Rechazados<span class="badge badge-pill badge-danger">{{declineEventCounter}}</span>
-		  </button>
-		  <button class="btn btn-primary" (click)="showNormal(3)" >
-		   Aceptados<span class="badge badge-pill badge-danger">{{acceptedEventCounter}}</span>
-		  </button>
-	</div>
-	<div class="col col-lg-2">
-	</div>
-</div>
+
 
 <!-- Control de añadir turnos -->
-<div class="row justify-content-md-center pt-3">
+<div class="row justify-content-md-center" style="margin: 2% 0px;">
 	<div class="col col-lg-2">
 	</div>
 	<div class="col-12 col-md-auto ">
 		<button
-		    class="btn btn-primary btn-lg btn-block "
+		    class="btn btn-success btn-lg btn-block btn-añadir"
 		    (click)="addEvent()">
 		    Añadir nuevo turno
 		  </button>
@@ -119,187 +110,258 @@
 </div>
 
 
-<!-- Control de añadir -->
-<table class="table table-bordered ">
-  <thead *ngIf = "events.length > 0">
-    <tr>
-      <th *ngIf = " showNormalEvent > 0" title="Compañero que el que cambiar.">Remitente</th>
-      <th title="Nombre de tu evento.">Nombre</th>
-      <th *ngIf = " showNormalEvent == 0" >Tipo</th>
-      <!--<th  >Turno diario</th>-->
-      <th  >Fecha</th>
-      <th *ngIf = " showNormalEvent == 1"></th> <!--Aceptar-->
-      <th *ngIf = " showNormalEvent  > 1"></th> <!--¿ok?-->
-      <th *ngIf = " showNormalEvent == 0" ></th> <!--Eliminar-->
-      <th *ngIf = " showNormalEvent == 1"></th> <!--Rechazar-->
-    </tr>
-  </thead>
-  <tbody>
-      <tr *ngFor="let event of events; let index = index">
+<!-- Controles para intercambio *ngIf = "events.length > 0" -->
+<div class="row justify-content-md-center botones-calendario" *ngIf = "events.length > 0">
 
-        <!--  Emisor -->
-
-        <!-- Peticiones pendientes -->
-      <td *ngIf = "showNormalEvent == 1 && event.status === 'pending'" >
-        <input
-          type="text"
-          disabled
-          [(ngModel)]="event.sender"
-          >
-      </td>
-        <!-- rechazado-->
-            <td *ngIf = "showNormalEvent == 2 && event.status === 'declined'" >
-        <input
-          type="text"
-          disabled
-          [(ngModel)]="event.sender"
-          >
-      </td>
-        <!-- aceptado -->
-            <td *ngIf = "showNormalEvent == 3 && event.status === 'accepted'" >
-        <input
-          type="text"
-          disabled
-          [(ngModel)]="event.sender"
-          >
-      </td>
+		 <h3 align="center">
+		  <!--¿Cambios?-->
+		 </h3>
 
 
-
-
-        <!--  Titulo del evento -->
-        <!-- normal -->
-      <td *ngIf = "showNormalEvent == 0 && event.status === 'normal'">
-        <input
-          type="text"
-          [(ngModel)]="event.title"
-          (keyup)="valueChange(index)">
-      </td>
-        <!-- pendiente -->
-      <td *ngIf = "showNormalEvent == 1 && event.status === 'pending'">
-        <input
-          type="text"
-          [(ngModel)]="event.title"
-          (keyup)="valueChange(index)">
-      </td>
-        <!-- rechazado-->
-      <td *ngIf = "showNormalEvent == 2 && event.status === 'declined'">
-        <input
-          type="text"
-          [(ngModel)]="event.title"
-          (keyup)="valueChange(index)">
-      </td>
-        <!-- aceptado -->
-      <td *ngIf = "showNormalEvent == 3 && event.status === 'accepted'">
-        <input
-          type="text"
-          [(ngModel)]="event.title"
-          (keyup)="valueChange(index)">
-      </td>
-
-        <!-- Tipo de evento muestra el array -->
-        <!-- normal -->
-      <td *ngIf = "showNormalEvent == 0 && event.status === 'normal'">
-        <select [(ngModel)]="event.type" (change)="valueChange(index)" >
-          <option *ngFor="let type of types" [ngValue]="type"> {{type}} </option>
-        </select>
-      </td>
-
-
-        <!-- Esta parte sirve para mostrar los turnos que hay en un dia
-
-      <td *ngIf = "showNormalEvent == 0 && event.status === 'normal'">
-        <select [(ngModel)]="event.turn_in_day" (change)="valueChange(index)" >
-          <option *ngFor="let turn of turnInDay.get(currentUser.shift)" [ngValue]="turn"> {{turn}} </option>
-        </select>
-      </td>
-
-
-        <td *ngIf = "showNormalEvent == 1 && event.status === 'pending'">
-          <input type="text" disabled [value]="event.turn_in_day" >
-
-
-        </td>
-
-        <td *ngIf = "showNormalEvent == 2 && event.status === 'declined'">
-          <input type="text" disabled [value]="event.turn_in_day" >
-        </td>
-
-        <td *ngIf = "showNormalEvent == 3 && event.status ===  'accepted'">
-          <input type="text" disabled [value]="event.turn_in_day" >
-        </td>
-        -->
-
-
-        <!-- fecha de inicio-->
- 	  <!-- normal -->
-      <td *ngIf = "showNormalEvent == 0 && event.status === 'normal'">
-        <mwl-demo-utils-date-time-picker
-          [(date)]="event.start"
-          (dateChange)="valueChange(index)"
-          placeholder="Not set">
-        </mwl-demo-utils-date-time-picker>
-      </td>
-        <!-- pendiente -->
-      <td *ngIf = "showNormalEvent == 1 && event.status === 'pending'">
-       <input type="text" disabled [value]="event.start.toISOString().substring(0, 10)" >
-
-
-      </td>
-        <!-- rechazado-->
-      <td *ngIf = "showNormalEvent == 2 && event.status === 'declined'">
-       <input type="text" disabled [value]="event.start.toISOString().substring(0, 10)" >
-      </td>
-        <!-- aceptado -->
-      <td *ngIf = "showNormalEvent == 3 && event.status ===  'accepted'">
-       <input type="text" disabled [value]="event.start.toISOString().substring(0, 10)" >
-      </td>
-
-
-
-
-
-
-
-
-        <!-- Botones de control turnos -->
-	  <!-- normal -->
-      <td *ngIf = "showNormalEvent == 0 && event.status === 'normal'">
-        <button
-          class="btn btn-danger"
-          (click)="deleteEvent(index);">
-          Eliminar
+        <button class="btn btn-primary btn-calendar col-md-2 col-xs-12 offset-md-2" (click)="showNormal(0)" >
+           Normal
         </button>
-      </td>
-        <!-- pendiente -->
-       <td *ngIf = "showNormalEvent == 1 && event.status === 'pending'">
-        <button class="btn btn-danger"  (click)="accept(index);" >
-             Aceptar
-        </button>
-      </td>
-        <!-- pendiente -->
-	   <td *ngIf = "showNormalEvent == 1 && event.status === 'pending'">
-        <button class="btn btn-danger" (click)="decline(index);">
-                Rechazar
-        </button>
-      </td>
-        <!-- rechazado-->
-      	   <td *ngIf = "showNormalEvent == 2 && event.status === 'declined'">
-        <button class="btn btn-danger" (click)="makeNormal(index);">
-                Ok
-        </button>
-      </td>
-        <!-- aceptado -->
-            	   <td *ngIf = "showNormalEvent == 3 &&  event.status === 'accepted'">
-        <button class="btn btn-danger" (click)="makeNormal(index)">
-                Ok
-        </button>
-      </td>
+         <button class="btn btn-primary btn-calendar col-md-2 col-xs-12" (click)="showNormal(1)" >
+          Pendientes <span class="badge badge-pill badge-danger">{{pendingEventCounter}}</span>
+         </button>
+          <button class="btn btn-primary btn-calendar col-md-2 col-xs-12" (click)="showNormal(2)" >
+          Rechazados <span class="badge badge-pill badge-danger">{{declineEventCounter}}</span>
+         </button>
+         <button class="btn btn-primary btn-calendar col-md-2 col-xs-12" (click)="showNormal(3)" >
+          Aceptados <span class="badge badge-pill badge-danger">{{acceptedEventCounter}}</span>
+         </button>
 
 
-    </tr>
-  </tbody>
-</table>
+
+</div>
+
+
+<md-tab-group style="margin: 2% 0px;" id="barra">
+  <!-- Normal *ngIf = "events.length > 0"-->
+  <md-tab >
+    <ng-template md-tab-label *ngIf = "events.length > 0">
+     <button class="btn btn-info" (click)="showNormal(0)" >
+
+       <i class="material-icons">info</i>Panel informativo
+    </button>
+
+
+    </ng-template>
+    <table class="table table-bordered ">
+      <thead *ngIf = "events.length > 0">
+        <tr>
+          <th *ngIf = " showNormalEvent > 0" title="Compañero que el que cambiar.">Remitente</th>
+          <th title="Nombre de tu evento.">Nombre</th>
+          <th *ngIf = " showNormalEvent == 0" >Tipo</th>
+          <!--<th  >Turno diario</th>-->
+          <th  >Fecha</th>
+          <th *ngIf = " showNormalEvent == 1"></th> <!--Aceptar-->
+          <th *ngIf = " showNormalEvent  > 1"></th> <!--¿ok?-->
+          <th *ngIf = " showNormalEvent == 0" ></th> <!--Eliminar-->
+          <th *ngIf = " showNormalEvent == 1"></th> <!--Rechazar-->
+        </tr>
+      </thead>
+      <tbody>
+          <tr *ngFor="let event of events; let index = index">
+            <!--  Emisor -->
+            <!-- Peticiones pendientes -->
+          <td *ngIf = "showNormalEvent == 1 && event.status === 'pending'" >
+            <input
+              type="text"
+              disabled
+              [(ngModel)]="event.sender"
+              >
+          </td>
+            <!-- rechazado-->
+                <td *ngIf = "showNormalEvent == 2 && event.status === 'declined'" >
+            <input
+              type="text"
+              disabled
+              [(ngModel)]="event.sender"
+              >
+          </td>
+            <!-- aceptado -->
+                <td *ngIf = "showNormalEvent == 3 && event.status === 'accepted'" >
+            <input
+              type="text"
+              disabled
+              [(ngModel)]="event.sender"
+              >
+          </td>
+
+            <!--  Titulo del evento -->
+            <!-- normal -->
+          <td *ngIf = "showNormalEvent == 0 && event.status === 'normal'">
+            <input
+              type="text"
+              [(ngModel)]="event.title"
+              (keyup)="valueChange(index)">
+          </td>
+            <!-- pendiente -->
+          <td *ngIf = "showNormalEvent == 1 && event.status === 'pending'">
+            <input
+              type="text"
+              [(ngModel)]="event.title"
+              (keyup)="valueChange(index)">
+          </td>
+            <!-- rechazado-->
+          <td *ngIf = "showNormalEvent == 2 && event.status === 'declined'">
+            <input
+              type="text"
+              [(ngModel)]="event.title"
+              (keyup)="valueChange(index)">
+          </td>
+            <!-- aceptado -->
+          <td *ngIf = "showNormalEvent == 3 && event.status === 'accepted'">
+            <input
+              type="text"
+              [(ngModel)]="event.title"
+              (keyup)="valueChange(index)">
+          </td>
+
+            <!-- Tipo de evento muestra el array -->
+            <!-- normal -->
+          <td *ngIf = "showNormalEvent == 0 && event.status === 'normal'">
+            <select [(ngModel)]="event.type" (change)="valueChange(index)" >
+              <option *ngFor="let type of types" [ngValue]="type"> {{type}} </option>
+            </select>
+          </td>
+
+
+            <!-- Esta parte sirve para mostrar los turnos que hay en un dia
+
+          <td *ngIf = "showNormalEvent == 0 && event.status === 'normal'">
+            <select [(ngModel)]="event.turn_in_day" (change)="valueChange(index)" >
+              <option *ngFor="let turn of turnInDay.get(currentUser.shift)" [ngValue]="turn"> {{turn}} </option>
+            </select>
+          </td>
+
+
+            <td *ngIf = "showNormalEvent == 1 && event.status === 'pending'">
+              <input type="text" disabled [value]="event.turn_in_day" >
+
+
+            </td>
+
+            <td *ngIf = "showNormalEvent == 2 && event.status === 'declined'">
+              <input type="text" disabled [value]="event.turn_in_day" >
+            </td>
+
+            <td *ngIf = "showNormalEvent == 3 && event.status ===  'accepted'">
+              <input type="text" disabled [value]="event.turn_in_day" >
+            </td>
+            -->
+
+
+            <!-- fecha de inicio-->
+     	  <!-- normal -->
+          <td *ngIf = "showNormalEvent == 0 && event.status === 'normal'">
+            <mwl-demo-utils-date-time-picker
+              [(date)]="event.start"
+              (dateChange)="valueChange(index)"
+              placeholder="Not set">
+            </mwl-demo-utils-date-time-picker>
+          </td>
+            <!-- pendiente -->
+          <td *ngIf = "showNormalEvent == 1 && event.status === 'pending'">
+           <input type="text" disabled [value]="event.start.toISOString().substring(0, 10)" >
+
+
+          </td>
+            <!-- rechazado-->
+          <td *ngIf = "showNormalEvent == 2 && event.status === 'declined'">
+           <input type="text" disabled [value]="event.start.toISOString().substring(0, 10)" >
+          </td>
+            <!-- aceptado -->
+          <td *ngIf = "showNormalEvent == 3 && event.status ===  'accepted'">
+           <input type="text" disabled [value]="event.start.toISOString().substring(0, 10)" >
+          </td>
+
+
+
+
+
+
+
+
+            <!-- Botones de control turnos -->
+    	  <!-- normal -->
+          <td *ngIf = "showNormalEvent == 0 && event.status === 'normal'">
+            <button
+              class="btn btn-danger"
+              (click)="deleteEvent(index);">
+              Eliminar
+            </button>
+          </td>
+            <!-- pendiente -->
+           <td *ngIf = "showNormalEvent == 1 && event.status === 'pending'">
+            <button class="btn btn-warning"  (click)="accept(index);" >
+                 Aceptar
+            </button>
+          </td>
+            <!-- pendiente -->
+    	   <td *ngIf = "showNormalEvent == 1 && event.status === 'pending'">
+            <button class="btn btn-danger" (click)="decline(index);">
+                    Rechazar
+            </button>
+          </td>
+            <!-- rechazado-->
+          	   <td *ngIf = "showNormalEvent == 2 && event.status === 'declined'">
+            <button class="btn btn-danger" (click)="makeNormal(index);">
+                    Ok
+            </button>
+          </td>
+            <!-- aceptado -->
+                	   <td *ngIf = "showNormalEvent == 3 &&  event.status === 'accepted'">
+            <button class="btn btn-danger" (click)="makeNormal(index)">
+                    Ok
+            </button>
+          </td>
+
+
+        </tr>
+      </tbody>
+    </table>
+  </md-tab>
+
+  <!-- Pendientes
+  <md-tab>
+    <ng-template md-tab-label>
+      <button class="btn btn-primary" (click)="showNormal(1)" >
+      <i class="material-icons">feedback</i>Pendientes
+      <span class="badge badge-pill badge-danger">{{pendingEventCounter}}</span>
+     </button>
+    </ng-template>
+    <h1>Terrible sushi restaurants</h1>
+    <p>...</p>
+  </md-tab>-->
+
+  <!-- Rechazados
+  <md-tab>
+    <ng-template md-tab-label>
+      <button class="btn btn-primary" (click)="showNormal(2)" >
+      <md-icon>thumb_down</md-icon> Rechazados
+      <span class="badge badge-pill badge-danger">{{declineEventCounter}}</span>
+     </button>
+    </ng-template>
+    <h1>Terrible sushi restaurants</h1>
+    <p>...</p>
+  </md-tab>-->
+
+  <!-- Aceptados
+  <md-tab>
+    <ng-template md-tab-label>
+      <button class="btn btn-primary" (click)="showNormal(3)" >
+      <i class="material-icons">spellcheck</i>
+      Aceptados<span class="badge badge-pill badge-danger">{{acceptedEventCounter}}</span>
+     </button>
+    </ng-template>
+    <h1>Terrible sushi restaurants</h1>
+    <p>...</p>
+  </md-tab>-->
+</md-tab-group>
+
+
 
 <!-- Ventana elección usuario-->
 <p-dialog header="Elija entre las opciones: " [(visible)]="displayShiftDialog" modal="modal" width="300" [responsive]="true" (onHide)="hideDialog()">
@@ -330,7 +392,7 @@
   <p-footer *ngIf = "!showTurnInDay">
             <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
                 <button class="btn btn-danger"  (click)="displayShiftDialog=false" >Cancelar</button>
-                <button class="btn btn-danger" (click)="activateShift()"  [disabled]="hideActivateShiftButton()" >Enviar solicitud</button>
+                <button class="btn btn-success" (click)="activateShift()"  [disabled]="hideActivateShiftButton()" >Enviar solicitud</button>
             </div>
         </p-footer>
 </p-dialog>

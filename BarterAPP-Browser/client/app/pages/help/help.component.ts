@@ -6,9 +6,14 @@ import { User } from 'app/_models/index';
 /*repository*/
 import { UserRepository } from 'app/repository/index';
 
+
+
 @Component({
     moduleId: module.id,
+    styleUrls: ['styles.css'],
     templateUrl: 'help.component.html'
+
+
 })
 export class HelpComponent implements OnInit {
     currentUser: User;

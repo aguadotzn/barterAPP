@@ -1,15 +1,234 @@
-﻿<div class="col-md-16 col-md-offset-1">
-    <h1>Hi {{currentUser.firstName}}!</h1>
-    <p>You're logged in BarterApp</p>
-    <div class="col-md-8 col-md-offset-1" style="float: left;">
-	    <ul>
-	        <li *ngFor="let user of users">
-	            {{user.username}} ({{user.firstName}} {{user.lastName}})
-	            - <a (click)="deleteUser(user._id)">Delete</a>
-	        </li>
-	    </ul>
+<section class="page-section" id="timeline">
+     <div class="home-content">
+         <div class="home-text">
+
+               <div class="font-alt mb-20" style="color:rgb(255, 255, 255) "><p style="font-size: 3em; opacity: 0.6;">Ayuda<i class="fa fa-ambulance" aria-hidden="true"></i></p></div>
+                   <div id="accordion" role="tablist" aria-multiselectable="true">
+                          <!--Bienvenido-->
+                         <div class="card">
+                           <div class="card-header" role="tab" id="headingOne">
+                             <h5 class="mb-0">
+                               <a id="color" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                 👋🏻 Hola
+                               </a>
+                             </h5>
+                           </div>
+                           <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="heading1">
+                             <div class="card-block">
+                               Si es la primera vez que estás aqui es normal que te encuentres perdido. No te preocupes, <b>BarterApp</b> es realmente sencillo de usar tan solo hay que usar la intuición.
+                               En todo caso hemos hecho esta guía para que te sea más fácil comprender cómo funciona la aplicación y lo que puedes hacer con ella. Para una mejor comprensión de la funcionalidad
+                               completa se recomienda leer en el orden que aparecen.
+
+                               <div class="offset-md-2"><br>Puedes consultar cada funcionalidad por separado seleccionado en los paneles inferiores. </div>
+                                <div class="offset-md-5">⬇️ ⬇️ ⬇️ ⬇️ ⬇️ </div>
+
+
+                             </div>
+                           </div>
+                         </div>
+
+                         <!--Añadir un turno-->
+                         <div class="card">
+                           <div class="card-header" role="tab" id="headingTwo">
+                             <h5 class="mb-0">
+                               <a id="color" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                 ➡️ Añadir un turno
+                               </a>
+                             </h5>
+                           </div>
+                           <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2">
+                             <div class="card-block">
+                               Para añadir un turno basta con presionar el botón indicado y automáticamente se añadirá, a le fecha del día que nos encontremos, un número determinado de turnos.
+                               Este número de turno depende del número de turnos de nuestra empresa, preestablecido a la hora de realizar el login. Una vez añadido un turno se hará visibile el resto
+                               de botones de gestión así cómo el panel de información donde podremos ver Nombre, Tipo, Fecha y el botón de Eliminar.
+
+                               <button class="btn btn-success offset-md-5" >
+                                  Añadir turno
+                               </button>
+                             </div>
+                           </div>
+                         </div>
+
+                        <!--Eliminar un turno-->
+                        <div class="card">
+                           <div class="card-header" role="tab" id="headingThree">
+                             <h5 class="mb-0">
+                               <a id="color" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                 ➡️ Eliminar un turno
+                               </a>
+                             </h5>
+                           </div>
+                           <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3">
+                             <div class="card-block">
+                               Eliminar un turno es tan sencillo como parece. Tan solo hace falta hacer click en el botón indicado que se encuentra en el panel informativo.
+
+                               <button class="btn btn-danger offset-md-5" >
+                                  Eliminar
+                               </button>
+                             </div>
+                           </div>
+                         </div>
+
+                         <!--Editar un turno-->
+                         <div class="card">
+                            <div class="card-header" role="tab" id="headingThree">
+                              <h5 class="mb-0">
+                                <a id="color" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsec" aria-expanded="false" aria-controls="collapsec">
+                                  ✏️ Editar un turno
+                                </a>
+                              </h5>
+                            </div>
+                            <div id="collapsec" class="collapse" role="tabpanel" aria-labelledby="headingc">
+                              <div class="card-block">
+                                Para editar un turno basta con posicionarnos encima del nombre, tipo o fecha y editar lo que deseemos. Lo más importante es elegir bien el tipo ya que es
+                                el que va a condicionar el intercambio con otro compañero de trabajo. Por defecto todos los turnos son libres.
+
+                                <button class="btn btn-danger offset-md-5" >
+                                  ESTO NO VA A QUI
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+
+                         <!--Botón Normal-->
+                         <div class="card">
+                            <div class="card-header" role="tab" id="headingThree">
+                              <h5 class="mb-0">
+                                <a id="color" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                  👀 Botón Normal
+                                </a>
+                              </h5>
+                            </div>
+                            <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4">
+                              <div class="card-block">
+                                El primero de los botones que vamos a conocer es "normal". Tan solo muestra una vista de todos los turnos que tenemos en el calendario.
+                                <button class="btn btn-primary offset-md-5" >
+                                   Normal
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                          <!--Botón Pendientes-->
+                          <div class="card">
+                             <div class="card-header" role="tab" id="headingThree">
+                               <h5 class="mb-0">
+                                 <a id="color" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                   ⏳ Botón Pendientes
+                                 </a>
+                               </h5>
+                             </div>
+                             <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5">
+                               <div class="card-block">
+                                 A este botón le acompaña un contador. Cuando recibamos una petición de cambio, a parte de un aviso, podremos ver detalels de la petición de intercambio haciendo click en este botón.
+                                 <button class="btn btn-primary offset-md-5" >
+                                    Normal
+                                 </button>
+                               </div>
+                             </div>
+                           </div>
+
+                           <!--Botón Rechazados-->
+                           <div class="card">
+                              <div class="card-header" role="tab" id="headingThree">
+                                <h5 class="mb-0">
+                                  <a id="color" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                     👎 Botón Rechazados
+                                  </a>
+                                </h5>
+                              </div>
+                              <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading6">
+                                <div class="card-block">
+                                  Si somos nosotros los que hemos realizo la petición de intercambio este botón, al cual le acompaña un contador, nos informará de si el cambio ha sido rechazado.
+                                  Es <b>muy importante</b> confirmar el rechazo del intercambio, presionando el botón ok, para que vuelva a formar parte de la vista "normal". Si el rechazo no se confirma
+                                  no será posible enviar o recibir nuevas peticiones.
+                                  <button class="btn btn-primary offset-md-5" >
+                                     Rechazados
+                                  </button>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!--Botón Aceptados-->
+                            <div class="card">
+                               <div class="card-header" role="tab" id="headingThree">
+                                 <h5 class="mb-0">
+                                   <a id="color" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                     👍🏼 Botón Aceptados
+                                   </a>
+                                 </h5>
+                               </div>
+                               <div id="collapse7" class="collapse" role="tabpanel" aria-labelledby="heading7">
+                                 <div class="card-block">
+                                   Si somos nosotros los que hemos realizo la petición de intercambio este botón, al cual le acompaña un contador, nos informará de si el cambio ha sido aceptado.
+                                   Es <b>muy importante</b> confirmar la aceptación del intercambio, presionando el botón ok, para que vuelva a formar parte de la vista "normal". Si la aceptación no se confirma
+                                   no será posible enviar o recibir nuevas peticiones.
+                                   <button class="btn btn-primary offset-md-5" >
+                                      Aceptados
+                                   </button>
+                                 </div>
+                               </div>
+                             </div>
+
+                             <!--Panel de información-->
+                             <div class="card">
+                                <div class="card-header" role="tab" id="headingThree">
+                                  <h5 class="mb-0">
+                                    <a id="color" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                      ℹ️ Panel de información
+                                    </a>
+                                  </h5>
+                                </div>
+                                <div id="collapse8" class="collapse" role="tabpanel" aria-labelledby="heading8">
+                                  <div class="card-block">
+                                    El panel informativo muestra los detalles de cada uno de los botones ya descritos en los paneles superiores.
+                                    <button class="btn btn-info offset-md-5" >
+                                       <i class="material-icons">info</i>Panel informativo
+                                    </button>
+                                  </div>
+                                </div>
+                              </div>
+
+                              <!--Solicitud de Intercambio-->
+                              <div class="card">
+                                 <div class="card-header" role="tab" id="headingThree">
+                                   <h5 class="mb-0">
+                                     <a id="color" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                       🔄  Solicitud de intercambio
+                                     </a>
+                                   </h5>
+                                 </div>
+                                 <div id="collapse9" class="collapse" role="tabpanel" aria-labelledby="heading9">
+                                   <div class="card-block">
+                                     Para solicitar un intercambio hay que hacer click sobre el día del calendario que queremos realizar el intercambio. Hay que tener en cuentra varias restricciones:
+                                     <br>-Si no hay turnos asociados a ese día no hay posibilidad de intercambio
+                                     <br>-Solo podemos solicitar un intercambio si nuestro turno es de tipo "Asignado a Eliminar", en cualquier otro caso no podemos solicitar un cambio
+                                     <br>-En caso de cumpliar las condiciones anteriores, la siguiente condición es que existan usuarios con turnos libres en ese mismo día. Además el turno ddel día a intercambiar
+                                     también debe ser el mismo.
+
+                                   </div>
+                                 </div>
+                               </div>
+               <div class="font-alt mb-20" style="color:rgb(255, 255, 255) "><p style="font-size: 3em; opacity: 0.6;">Próximamente <i class="fa fa-battery-half" aria-hidden="true"></i></p></div>
+                                 <!--Coming soon-->
+                               <div class="card">
+                                  <div class="card-header" role="tab" id="headingThree">
+                                    <h5 class="mb-0">
+                                      <a id="color" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                        🔜 Panel de usuario
+                                      </a>
+                                    </h5>
+                                  </div>
+                                  <div id="collapse10" class="collapse" role="tabpanel" aria-labelledby="heading10">
+                                    <div class="card-block">
+                                       Todavía no disponible pero en desarrollo un panel de usuario para por editar y eliminar información sobre el usuario registrado.
+                                    </div>
+                                  </div>
+                                </div>
+
+
+
+           </div>
+
     </div>
-    <div class="col-md-8 col-md-offset-1" style="float: left;">
-		
-	</div>
-</div>
+  </div>
+</section>

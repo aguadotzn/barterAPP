@@ -3,6 +3,7 @@
 //https://github.com/linkedin/oncall
 import { Component, ChangeDetectionStrategy, ViewChild, TemplateRef, OnInit, AfterViewInit, NgZone, ApplicationRef  } from '@angular/core';
 
+
 /*RxJS*/
 import { Subject } from 'rxjs/Subject';
 import 'rxjs/add/operator/first';
@@ -19,9 +20,13 @@ import { ShiftUtilsService } from 'app/utils/shift.utils.service';
 /*Bootstrap-ng*/
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
+
 /*Calendar*/
 import { startOfDay, endOfDay, subDays, addDays, endOfMonth, isSameDay, isSameMonth, addHours } from 'date-fns';
-import { CalendarEvent, CalendarEventAction, CalendarEventTimesChangedEvent } from 'angular-calendar';
+import { CalendarEvent, CalendarEventAction, CalendarEventTimesChangedEvent, CalendarDateFormatter} from 'angular-calendar';
+
+/*Cambio de idioma*/
+import { CustomDateFormatter } from './custom-date-formatter-provider';
 
 /*PrimeNG*/
 import { Message } from 'primeng/primeng';
@@ -30,7 +35,11 @@ import { Message } from 'primeng/primeng';
   selector: 'mwl-demo-component',
   changeDetection: ChangeDetectionStrategy.Default,
   styleUrls: ['styles.css'],
-  templateUrl: 'angular_calendar.component.html'
+  templateUrl: 'angular_calendar.component.html',
+  providers: [{
+   provide: CalendarDateFormatter,
+   useClass: CustomDateFormatter
+ }]
 })
 export class AngularCalendarComponent implements AfterViewInit {
 
@@ -74,9 +83,15 @@ export class AngularCalendarComponent implements AfterViewInit {
   // Vista por defecto del calendario
   public view = 'month';
 
+  //Idioma del calendario
+  locale: string = 'es';
+
   viewDate: Date = new Date();
 
-  // Observable Calenario
+  //Dia de la semana de inicio
+
+
+  // Observable Calendario
   refresh: Subject<any> = new Subject();
 
   // Todos los eventos que tiene el usuario actual

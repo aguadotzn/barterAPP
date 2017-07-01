@@ -23,6 +23,7 @@
             '@angular/http/testing': 'npm:@angular/http/bundles/http-testing.umd.js',
             '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
             '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
+             '@angular/material': 'https://unpkg.com/@angular/material/bundles/material.umd.js',
 
             // other libraries
             'rxjs': 'npm:rxjs'

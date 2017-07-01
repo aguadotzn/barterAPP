@@ -1,4 +1,5 @@
-<div class="col-md-6 col-md-offset-3" style="margin: 0 auto;">
+<div class="registro-trampa">
+<div class="col-md-6 col-md-offset-3 recuadro" style="margin: 0 auto;">
   <h2>Registro</h2>
   <form name="form" (ngSubmit)="f.form.valid && register()" #f="ngForm" novalidate>
     <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !firstName.valid }">
@@ -39,11 +40,12 @@
       <div *ngIf="f.submitted && !password.valid" class="help-block" style="color: #FF0505;">Introduzca una contraseña válida. </div>
     </div>
     <div class="form-group">
-      <button [disabled]="loading" class="btn btn-primary">Registro</button>
+      <button [disabled]="loading" class="btn btn-info">Registro</button>
       <img *ngIf="loading" src="" />
-      <a [routerLink]="['/login']" class="btn btn-link">Cancelar</a>
+      <a href="/login" class="btn btn-link">Cancelar</a>
     </div>
   </form>
 
 
+</div>
 </div>

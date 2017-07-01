@@ -1,4 +1,4 @@
-﻿<div class="col-md-6 col-md-offset-3" style="margin: 0 auto;">
+﻿<div class="col-md-6 col-md-offset-3 recuadro" style="margin: 0 auto;">
   <h2>Login</h2>
   <form name="form" (ngSubmit)="f.form.valid && login()" #f="ngForm" novalidate>
     <div class="form-group" [ngClass]="{ 'has-error': f.submitted && !email.valid }">
@@ -12,9 +12,9 @@
       <div *ngIf="f.submitted && !password.valid" class="help-block" style="color: #FF0505;">Introduzca su contraseña.</div>
     </div>
     <div class="form-group">
-      <button [disabled]="loading" class="btn btn-primary">Login</button>
+      <button  class="btn btn-info" >Login</button>
       <img *ngIf="loading" src="" />
-      <a [routerLink]="['/register']" class="btn btn-link">Registro</a>
+      <a href="/register" class="btn btn-link">Registro</a>
     </div>
   </form>
 </div>

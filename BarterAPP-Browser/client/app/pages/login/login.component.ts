@@ -36,7 +36,7 @@ export class LoginComponent implements OnInit {
           if (currentUser && currentUser.token) {
             this.localStorageService.announceLogin(currentUser);
           }
-          this.router.navigate(['./calendarhome']);
+            this.router.navigateByUrl('/calendarhome');
         },
         error => {
           this.alertService.error(error._body);

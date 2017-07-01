@@ -43,6 +43,12 @@ import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
 import { RadioButtonModule } from 'primeng/primeng';
 import { DialogModule } from 'primeng/primeng';
 import { GrowlModule } from 'primeng/primeng';
+import {AccordionModule} from 'primeng/primeng';
+
+/*Material Module*/
+import {MaterialModule, MdNativeDateModule, MdSidenavModule} from '@angular/material';
+
+
 
 
 @NgModule({
@@ -63,7 +69,11 @@ import { GrowlModule } from 'primeng/primeng';
         /*PrimeNG*/
         RadioButtonModule,
         DialogModule,
-        GrowlModule
+        GrowlModule,
+        AccordionModule,
+        /*Material Module*/
+        MaterialModule,
+        MdSidenavModule
     ],
     declarations: [
         AppComponent,
