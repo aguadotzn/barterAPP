@@ -373,6 +373,19 @@ Provider & \emph{ionic generate provider}  \\ \hline
 \end{center}
 \end{table}   	
 
+Una vez hemos realizado código en Ionic el modo de probar en diferentes sistemas operativos también es sencillo:
+
+	\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
+		\begin{lstlisting}[frame=single] 
+		//IOS
+	    ionic cordova build ios
+        ionic cordova emulate ios
+        
+      	//ANDROID
+	    ionic cordova build android
+        ionic cordova emulate android
+    	\end{lstlisting}	 
+
 
 Tanto la arquitectura como la idea de programación basada en componentes, como el algoritmo, como las carpetas son exactamente las mismas que en Angular. Las vistas html pueden variar ligeramente ya que las directivas propias de Angular serán ahora las de Ionic.  En la siguiente tabla podemos ver un resumen de cómo se distribuyen las carpetas y ficheros a lo largo de un proyecto de Ionic.
 
@@ -414,6 +427,7 @@ Resulta ser un framework muy potente para realizar aplicaciones híbridas y que 
 Una de las mejoras sustanciales que ha cambiado de la primera versión (\emph{Ionic 1, 2013}) a la segunda (\emph{Ionic 2, Latest stable release: 28 junio 2017}) es que en la primera versión se compartía el concepto web para realizar la aplicación, es decir una aplicación en IOS era exactamente igual a una Android. Esto con Ionic2 ha cambiado ya que nos permite generar un \emph{look\&feel} diferente para cada una de las plataformas. Básicamente se traduce en que nos permite adaptar iconos, vistas, botones y todo lo que nos ocurra a la plataforma deseada, por lo tanto el resultado final de la aplicación híbrida se asemeja mucho más al concepto de nativo que todo el mundo tiene.
 
 
+\section{Pruebas del sistema}
 
 
 

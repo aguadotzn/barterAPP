@@ -50,11 +50,23 @@
 \contentsline {subsection}{Base de datos (Mlab)}{53}{section*.30}
 \contentsline {subsection}{Servidor (Nanobox)}{54}{section*.31}
 \contentsline {section}{\numberline {D.5}Aplicaci\IeC {\'o}n m\IeC {\'o}vil: Ionic 2}{55}{section.Alph4.5}
-\contentsline {appendix}{\chapternumberline {E}Documentaci\IeC {\'o}n de usuario}{58}{appendix.Alph5}
-\contentsline {section}{\numberline {E.1}Introducci\IeC {\'o}n}{58}{section.Alph5.1}
-\contentsline {section}{\numberline {E.2}Usuario Web}{58}{section.Alph5.2}
-\contentsline {subsection}{Landing page}{58}{section*.32}
-\contentsline {subsection}{Registro}{58}{section*.33}
-\contentsline {subsection}{Login}{59}{section*.34}
-\contentsline {subsection}{Navegaci\IeC {\'o}n}{60}{section*.35}
-\contentsline {chapter}{Bibliograf\'{\i }a}{61}{section*.37}
+\contentsline {section}{\numberline {D.6}Pruebas del sistema}{58}{section.Alph4.6}
+\contentsline {appendix}{\chapternumberline {E}Documentaci\IeC {\'o}n de usuario}{59}{appendix.Alph5}
+\contentsline {section}{\numberline {E.1}Introducci\IeC {\'o}n}{59}{section.Alph5.1}
+\contentsline {section}{\numberline {E.2}Usuario Web}{59}{section.Alph5.2}
+\contentsline {subsection}{Landing page}{59}{section*.32}
+\contentsline {subsection}{Registro}{59}{section*.33}
+\contentsline {subsection}{Login}{60}{section*.34}
+\contentsline {subsection}{Navegaci\IeC {\'o}n}{61}{section*.35}
+\contentsline {subsection}{Primer acceso}{61}{section*.36}
+\contentsline {subsection}{Botones gesti\IeC {\'o}n}{62}{section*.37}
+\contentsline {subsection}{Intercambiar turno}{63}{section*.38}
+\contentsline {subsection}{Ayuda}{66}{section*.39}
+\contentsline {subsection}{Responsive}{66}{section*.40}
+\contentsline {section}{\numberline {E.3}Usuario M\IeC {\'o}vil}{67}{section.Alph5.3}
+\contentsline {subsection}{Registro}{67}{section*.41}
+\contentsline {subsection}{Login}{67}{section*.42}
+\contentsline {subsection}{A\IeC {\~n}adir turnos al calendario}{67}{section*.43}
+\contentsline {subsection}{Intercambiar turno}{67}{section*.44}
+\contentsline {subsection}{Ayuda}{68}{section*.45}
+\contentsline {chapter}{Bibliograf\'{\i }a}{69}{section*.47}

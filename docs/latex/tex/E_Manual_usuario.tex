@@ -12,56 +12,124 @@ deberemos diferenciar dos aspectos diferentes:
   Aplicación móvil. 
 \end{itemize}
 
-\section{Usuario Web}
-Se describe en esta sección lo que puede hacer el usuario con la web.  Las páginas de las que está compuesta la web son:
+En realidad las posibilidades son las mismas, pero cambia un poco la manera de moverse dentro de cada interfaz.
 
+\section{Usuario Web}
+Se describe en esta sección lo que puede hacer el usuario con la página web.  Las páginas de las que está compuesta la web son:
+
+\begin{center}
 \begin{tabular}{|c|c|c|c|c|c|}
   \hline
    home & about & login & register & calendarhome & help  \\
   \hline
 \end{tabular}
+\end{center}
 
 \subsection{Landing page}
-El entrar en la web el usuario ve la primera página de la misma o \emph{landing page}, dónde puede encontrar diferente información acerca de la aplicación, quiénes somos, que hacemos u otras cosas de utilidad.
+El entrar en la web el usuario puede observar la primera página de la misma o \emph{landing page}, dónde puede encontrar diferente información acerca de la aplicación, quiénes somos, que hacemos u otras cosas de utilidad.
 
 
 \subsection{Registro}
 
-El usuario debe logearse para acceder a la web, para ello debe pulsar el botón sign in
+El usuario debe logearse para acceder a la web, para ello debe pulsar el botón \emph{sign in}. Una vez registrado automáticamente se redirige a la página del \emph{login}.
 
-\imagen{usuarioregistro}{\footnotesize{Vista Web: Registro. Fuente: Elaboración propia.}}
+\imagen{usuarioregistro}{\footnotesize{Vista Web: registro. Fuente: Elaboración propia.}}
 
 
 
 \subsection{Login}
 
-Una vez registrado para acceder a la web debe insertar su correo electrónico y contraseña
+Una vez registrado para acceder a la web el usuario debe insertar su correo electrónico y contraseña. Actualmente no se encuentra implementado un sistema de recuperación de contraseña.
 
-\imagen{usuariologin}{\footnotesize{Vista Web: Login. Fuente: Elaboración propia.}}
+\imagen{usuariologin}{\footnotesize{Vista Web: login. Fuente: Elaboración propia.}}
 
 \subsection{Navegación}
 
-\imagen{usuarionavbar1}{\footnotesize{Vista Web: Navbar Exterior. Fuente: Elaboración propia.}}
+La navegación cambia respecto si es un usuario \emph{logeado} o no, en el primer caso podemos ver una barra de navegación sencilla y con pocos botones.
+
+\imagen{usuarionavbar1}{\footnotesize{Vista Web: navbar exterior. Fuente: Elaboración propia.}}
+
+En el segundo caso tenemos una barra de navegación un poco más elaborada donde tenemos el usuario y la empresa a la que pertenecen, o acceso a la ayuda.
+
+\imagen{usuarionavbar2}{\footnotesize{Vista Web: navbar interior. Fuente: Elaboración propia.}}
 
 
-\imagen{usuarionavbar2{\footnotesize{Vista Web: registro. Interior: Elaboración propia.}}
 
-\subsection{Añadir turnos al calendario}
+\subsection{Primer acceso}
+La primera vez que una usuario entra a la aplicación el calendario se encuentra vacío y los botones para gestionar los turnos también se encuentran ocultos, solamente está visible el botón \textbf{añadir turno} que es el que nos permite añadir un turno al calendario. Por defecto lo añade en la fecha en el que nos encontramos a día de visitar el calendario y añade turnos en función del número que la empresa del usuario ha elegido previamente a la hora de registrarse (Con esto me refiero a las partes diarias en las que las empresas subdividen los turnos, a saber: turnos de \textbf{ 24 horas} solo \emph{una parte} diaria, turnos de \textbf{12 horas} \emph{dos partes} diarias, turnos de \textbf{8 horas} \emph{tres partes} diarias, turnos de \textbf{6 horas} repartido \emph{cuatro partes} diarias.
 
-\subsection{Intercambiar turno}
+
+\imagen{usuariocalendario}{\footnotesize{Vista Web: calendario vacío. Fuente: Elaboración propia.}}
+
+Al añadir un turno se añaden una serie de círculos al día elegido, que varían en función del tipo de empresa como ya he nombrado en el párrafo anterior, esto representa los diferentes tipo de turnos que hay cada uno de ellos está representado con un color. La condición para intercambiar es que mi turno sea  \emph{Desired free shifts} o turno deseado a eliminar y el de la persona implicada en el cambio  \emph{ree shifts} o turno libre.
+
+
+\subsection{Botones gestión}
+Un vez añadido un turno diario, subdividido en las diferentes partes pertinentes, aparecen los botones para gestionar los intercambios y turnos. En total son 4 botones más el panel de usuario que permite ver el contenido de cada una de las diferentes vistas.
 
 \begin{itemize}
 
-\item Enviar petición
+\item \textbf{Normal}: es la vista normal dónde aparecen todos nuestros turnos. Por defecto es la vista que tenemos del panel informativo al pulsar sobre él cambiará a esta vista en caso de encontrarnos en otra vista diferente.
 
-\item Aceptar/Rechazar petición
+\item \textbf{Pendientes}: cuando tengamos una solicitud de cambio aparecerá aquí, por defecto recibiremos una aviso y la vista cambiará automáticamente. Tiene un contador que indica el número de peticiones que tenemos. Al recibir una petición de cambio deberemos aceptar o rechazar la solicitud.
 
-\item Confirmar petición
+\item \textbf{Rechazados}: cuando recibamos un rechazo a una solicitud de cambio de turno previamente enviada aparecerá aquí, por defecto recibiremos una aviso y la vista cambiará automáticamente. Tiene un contador que indica el número de peticiones rechazadas que tenemos. Resulta \textbf{muy importante} una vez que nos han rechazado la petición confirmar ese rechazo en la vista de rechazados presionando la tecla \textbf{ok} para confirmar de esta manera el rechazo de la petición. 
 
+\item \textbf{Confirmados}: cuando recibamos la aceptación a una solicitud de cambio de turno previamente enviada aparecerá aquí, por defecto recibiremos una aviso y la vista cambiará automáticamente. Tiene un contador que indica el número de peticiones enviadas que tenemos. Resulta \textbf{muy importante} una vez que nos han aceptado la petición confirmar esa aceptación en la vista de confirmados presionando la tecla \textbf{ok} para confirmar de esta manera el rechazo de la petición.
+
+\imagen{usuariobotones}{\footnotesize{Vista Web: vista botones gestión. Fuente: Elaboración propia.}}
+
+
+
+\end{itemize} 
+
+
+\subsection{Intercambiar turno}
+Vamos a ver el funcionamiento del intercambio de turnos, lo que supone para un usuario.
+
+
+\begin{description}
+
+\item[¿Cómo enviar una petición?] Para enviar una petición y ver si existen usuarios disponibles para realizar un cambio hay que click en el día con turnos establecidos. Es necesario recordar que podemos intercambiar un turno cuando nuestro turno es de tipo \emph{Desired free shifts} o turno deseado a eliminar, y el otro usuario posee también ese \underline{mismo día} y \underline{turno} libres.
+
+Lo primero que vemos al hacer click en el día es el turno, de entre nuestros posibles que podemos intercambiar, seleccionamos:
+
+\imagen{usuariointercambio1}{\footnotesize{Vista Web: 	seleccionar turno. Fuente: Elaboración propia.}}
+
+En caso de no existir usuarios para que se produzca el intercambio:
+
+\imagen{usuariointercambio2}{\footnotesize{Vista Web: no hay usuarios. Fuente: Elaboración propia.}}
+
+En caso de existir usuarios:
+
+\imagen{usuariointercambio3}{\footnotesize{Vista Web: hay usuarios. Fuente: Elaboración propia.}}
+
+Envíamos la petición a un compañero con turno libre, el \textbf{receptor} de la petición recibe un mensaje y además la lista de \underline{pendientes} aumentará en uno. 
+
+\imagen{usuariopendientes}{\footnotesize{Vista Web: pop-up peticiones. Fuente: Elaboración propia.}}
+
+
+\item[Petición rechazada/aceptada] Una vez enviada la petición no podremos enviar otra hasta que el usuario receptor responda a esa petición. Una vez el compañero responde podemos recibir dos cosas:
+
+\begin{itemize}
+\item Nos han aceptado la petición. \imagen{usuarioacepto}{\footnotesize{Vista Web: pop-up aceptación. Fuente: Elaboración propia.}}
+\item Nos han rechazado la petición. \imagen{usuariorechazo}{\footnotesize{Vista Web: pop-up rechazado. Fuente: Elaboración propia.}}
+ 
 \end{itemize}
 
-\subsection{Ayuda}
 
+\item[Confirmar peticiones]
+En ambos casos anteriores resulta \textbf{fundamental} el confirmar o bien el rechazo o bien la aceptación del turno para que la base de datos lo vuelva a poner en la vista normal. De esta manera estamos asegurando al cien por cien que todas las partes implicadas en el cambio acepta y rechazan y además están de acuerdo con lo que el otro usuario ha respondido
+
+\end{description}
+
+\subsection{Ayuda}
+En la barra de navegación tenemos una pequeña ayuda dónde se puede ver el funcionamiento de cada uno de los elementos de la web. 
+
+\subsection{Responsive}
+La web se adapta a la mayoría de dispositivos del mercado aunque he detectado algunos fallos de algún elemento con dispositivos como Ipad 1 o Ipad Pro 2 que trataré de solucionar lo más brevemente posible
+
+ \imagen{usuarioresponsive}{\footnotesize{Vista Web: pantalla pequeña. Fuente: Elaboración propia.}}
 
 
 \section{Usuario Móvil}
