@@ -119,7 +119,7 @@ En esta sección hay que tener en cuenta que el autor de este trabajo proyecto a
 La estructura de directorios general es la siguiente:
 
 %Foto erronea cambiar!
-\imagen{directorios}{Vista carpetas general  \emph{BarterAPP}. Fuente: Elaboración propia.}
+\imagen{directorios}{\footnotesize{Vista carpetas general  \emph{BarterAPP}. Fuente: Elaboración propia.}}
 
 \begin{itemize}
 	\item \textbf{$/client/$}: \emph{Front-End} 
@@ -291,7 +291,7 @@ La base de datos escogida es MongoDB, la instalación es fácil y sencilla tan s
 
 Como sabemos podemos manejar la base de datos desde línea de comandos pero resulta un poco pesado cuando empezamos a tener muchas colecciones o un número de datos alto. Es por eso que yo recomiendo encarecidamente  \href{https://robomongo.org/}{Robomongo}, la copia de SQL server para bases de datos NoSQL.  Interfaz no muy lograda pero perfecta para visualizar nuestras bases de datos e información de una manera más intuitiva.
 
-	\imagen{robomongoview}{Vista Robomongo. Fuente:  Elaboración propia.}
+	\imagen{robomongoview}{\footnotesize{Vista Robomongo. Fuente:  Elaboración propia.}}
 	
 	Esta claro que cuando trabajamos con un proyecto en local para realizar pruebas lo mejor es tener una base de datos en local pero cuando queremos algo un poco más serio resulta interesante el tener esa base de datos en un servidor real. Para ello he escogido \href{mlab.com}{Mlab}, los pasos para crear la base de datos se enumeran a continuación: 
 	
@@ -328,9 +328,9 @@ La curva de aprendizaje no es demasiado fácil \cite{nano1} pero tampoco demasia
 
 	\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
 		\begin{lstlisting}[frame=single] 
-		-nanobox run
-		-nanobox remote barterapp
-		-nanobox deploy
+		nanobox run
+		nanobox remote barterapp
+		nanobox deploy
     	\end{lstlisting}	
     	
 \end{enumerate}    
@@ -339,9 +339,79 @@ La curva de aprendizaje no es demasiado fácil \cite{nano1} pero tampoco demasia
     	
     	\imagen{procfile}{\footnotesize{Documentos configuración \citep{herokunano}. Fuente:  \url{http://nanobox.io/}.}}
 
+\section{Aplicación móvil: Ionic 2}
+Como se ha podido leer durante todo el manual del programador me he centrado en explicar la parte de Angular sin hacer mención alguna a la parte móvil, la razón de ello es muy simple: el 85\% de tiempo ha sido dedicado a Angular y una parte mínima ha sido dedicada a Ionic 2. La ventaja de todo esto es que Angular e Ionic 2 tienen la misma estructura y la misma idea de programación por lo que la curva de aprendizaje después de estar con Angular es realmente inferior y más rápida. 
+
+Los requisitos \textbf{mínimos} son tener instalados \underline{npm} y \underline{Node}.
+
+Vamos a ver por ejemplo la interfaz de comandos \cite{ionicli}, Ionic CLI,  que he utilizado para desarrollar la \emph{app-móvil}: 
+
+	\lstset{language=C, breaklines=true, basicstyle=\footnotesize}
+		\begin{lstlisting}[frame=single] 
+		npm install -g cordova
+		npm install -g ionic@latest
+		ionic start myNewProject tabs
+		cd ./myNewProject
+		ionic serve
+    	\end{lstlisting}	 
+    	
+ Como en angular también existen comandos para instalar los distintos elementos que nos van haciendo falta, algunos ejemplos:
+ 
+ \begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Tipo a crear & Comando  \\
+\hline \hline
+Component & \emph{ionic generate component}  \\ \hline
+Directive & \emph{ionic generate directive}  \\ \hline
+Pipe & \emph{ionic generate pipe}  \\ \hline
+Page & \emph{ionic generate page}  \\ \hline
+Provider & \emph{ionic generate provider}  \\ \hline
+\end{tabular}
+\caption{Tabla comandos Ionic CLI}
+\end{center}
+\end{table}   	
 
 
+Tanto la arquitectura como la idea de programación basada en componentes, como el algoritmo, como las carpetas son exactamente las mismas que en Angular. Las vistas html pueden variar ligeramente ya que las directivas propias de Angular serán ahora las de Ionic.  En la siguiente tabla podemos ver un resumen de cómo se distribuyen las carpetas y ficheros a lo largo de un proyecto de Ionic.
 
+ \begin{table}[H]
+\begin{center}
+\begin{tabular}{|l|l|}
+\hline
+Carpetas & Explicación  \\
+\hline \hline
+\textbf{hooks}  & Contiene scripts que se ejecutan en el proceso de construcción \\
+&  de la app   y que pueden ser creados por el propio sistema de compilación \\
+ & para personalizar  comandos de cordova automatizar procesos, etc. \\   
+ & Normalmente no tendremos que modificar nada aquí.  \\ \hline
+\textbf{node modules}  & Generada automáticamente al instalar las dependencias con el comando  \\ 
+& \emph{npm install},  tiene la misma función que en Angular  \\ \hline
+\textbf{platforms} &  En esta carpeta se generará los proyectos nativos para cada plataforma   \\
+&  que hayas añadido previamente.  \\ \hline
+\textbf{plugins} &  Contiene los plugins de Cordova que hayamos instalado.   \\ \hline
+\textbf{resources} &  Contiene el icono y la “splash screen” (pantalla de presentación)   \\
+& de la aplicación.\\  \hline
+\textbf{src} &  Esta es la carpeta más importante y donde realizaremos la mayor\\ 
+& parte de nuestro trabajo. Aquí es donde están los archivos con el \\
+&contenido de nuestra aplicación,  donde definimos las pantallas,   \\ 
+   & el estilo y el comportamiento que tendrá nuestra  aplicación.  \\ \hline
+  \textbf{www} &   Esta carpeta se genera automáticamente y contiene la versión actual \\
+  & del código cada vez que efectuamos un cambio.   \\ \hline
+  
+\end{tabular}
+\caption{Explicación carpetas Ionic}
+\end{center}
+\end{table}  
+
+Resulta ser un framework muy potente para realizar aplicaciones híbridas y que claramente está por explotar. El determinar si es mejor o no un desarrollo nativo en un sistema operativo concreto o una aplicación híbrida válida para varios es una discusión recurrente entre desarrolladores. Claramente parece mejor una aplicación nativa ya que está desarrollada y optimizada específicamente para un sistema operativo concreto, adaptándose al cien por cien con las funcionalidades y características del dispositivo para el que ha sido creado. Por otro lado, años atrás las aplicaciones híbridas ofrecían un rendimiento claramente inferior respecto de las nativas. Actualmente los \emph{frameworks} para realizar aplicaciones híbridas como Ionic2 están avanzando muy rápidamente y las cosas están cambiando para mejor. 
+
+
+\imagen{apps}{\footnotesize{Tipos de aplicaciones y relación. Fuente:  Elaboración propia.}}
+
+
+Una de las mejoras sustanciales que ha cambiado de la primera versión (\emph{Ionic 1, 2013}) a la segunda (\emph{Ionic 2, Latest stable release: 28 junio 2017}) es que en la primera versión se compartía el concepto web para realizar la aplicación, es decir una aplicación en IOS era exactamente igual a una Android. Esto con Ionic2 ha cambiado ya que nos permite generar un \emph{look\&feel} diferente para cada una de las plataformas. Básicamente se traduce en que nos permite adaptar iconos, vistas, botones y todo lo que nos ocurra a la plataforma deseada, por lo tanto el resultado final de la aplicación híbrida se asemeja mucho más al concepto de nativo que todo el mundo tiene.
 
 
 

@@ -8,44 +8,44 @@ A level-1 auxiliary file: ./tex/D_Manual_programador.aux
 A level-1 auxiliary file: ./tex/E_Manual_usuario.aux
 The style file: plainnat.bst
 Database file #1: bibliografiaAnexos.bib
-You've used 23 entries,
+You've used 24 entries,
             2773 wiz_defined-function locations,
-            693 strings with 7793 characters,
-and the built_in function-call counts, 6877 in all, are:
-= -- 600
-> -- 230
-< -- 23
-+ -- 93
-- -- 69
-* -- 351
-:= -- 1047
-add.period$ -- 70
-call.type$ -- 23
-change.case$ -- 92
-chr.to.int$ -- 22
-cite$ -- 46
-duplicate$ -- 345
-empty$ -- 737
-format.name$ -- 92
-if$ -- 1475
+            698 strings with 7926 characters,
+and the built_in function-call counts, 7183 in all, are:
+= -- 628
+> -- 240
+< -- 24
++ -- 97
+- -- 72
+* -- 366
+:= -- 1094
+add.period$ -- 74
+call.type$ -- 24
+change.case$ -- 96
+chr.to.int$ -- 23
+cite$ -- 48
+duplicate$ -- 360
+empty$ -- 769
+format.name$ -- 96
+if$ -- 1541
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 0
-newline$ -- 124
-num.names$ -- 92
-pop$ -- 276
+newline$ -- 130
+num.names$ -- 96
+pop$ -- 288
 preamble$ -- 1
-purify$ -- 69
+purify$ -- 72
 quote$ -- 0
-skip$ -- 319
+skip$ -- 332
 stack$ -- 0
-substring$ -- 46
-swap$ -- 25
+substring$ -- 48
+swap$ -- 26
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 253
+type$ -- 264
 warning$ -- 0
-while$ -- 69
+while$ -- 72
 width$ -- 0
-write$ -- 285
+write$ -- 299
