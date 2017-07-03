@@ -13,4 +13,8 @@ import { LoginPage } from './login';
     LoginPage
   ]
 })
-export class LoginPageModule {}
+export class LoginPageModule {
+
+
+
+}

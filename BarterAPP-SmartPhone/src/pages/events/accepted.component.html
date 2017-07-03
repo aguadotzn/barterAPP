@@ -1,0 +1,33 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card *ngIf ="isEmptyArray.length == 0">
+    <ion-card-header>
+    Cambios aceptados.
+    </ion-card-header>
+    <ion-card-content><br>
+      En esta página se mostrarán los cambios de turno aceptados que ha solicitado, por el momento no tiene cambios aceptados.
+    </ion-card-content>
+  </ion-card>
+
+
+  <div *ngFor="let event of shiftEvents; let index = index">
+    <shift-event
+      [showNormal]="3"
+      [shiftEvent]="event" >
+    </shift-event>
+
+  </div>
+
+
+
+</ion-content>

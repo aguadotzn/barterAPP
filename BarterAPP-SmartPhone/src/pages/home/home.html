@@ -1,26 +1,47 @@
 <ion-header>
   <ion-navbar>
-    <ion-buttons end >
-      <button ion-button icon-only (click)="onLoadLogin()">
-        <ion-icon name="log-in"></ion-icon>
-      </button>
-    </ion-buttons>
     <ion-title>
-      BarterApp!
+      BarterApp
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  <div class="jumbotron" >
-    <img title="Fotologo" alt="Fotologo" src="../assets/img/barterapp_logo_nobackground.png" />  
-    <h1 class="display-2">Welcome to Barter</h1>
-     <hr class="my-4">
-    <p class="lead">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-    <p>
-      <button (click)="onLoadLogin()" ion-button>Log in</button>
-      <button (click)="onLoadRegister()" ion-button>Registro</button>
-      <button ion-button>Saber Más</button>
-    </p>
-  </div>
+
+<ion-content padding style=" background: linear-gradient(#358e9d 43%, #ca7a50 91%);">
+<ion-card id="fondo">
+  <!-- <img src="../assets/img/barterapp_logo_nobackground.png"/> -->
+  <img src="assets/img/barterapp_logo_nobackground.png"/>
+  <ion-card-content>
+    <ion-card-title class="text-center">
+    <h1>Bienvenido a BarterApp</h1>
+      </ion-card-title>
+      <div class="text-center">
+        <p>
+          Regístrate para comenzar a hacer tu vida laboral más sencilla: intercambia
+          turnos de manera bilateral con tus compañeros en sencillos pasos.
+        </p>
+
+      </div>
+      <div class="row">
+       <div class="col">
+               <div class="text-center">
+                    <button ion-button item-start style="background-color: #358e9d;" (click)="onLoadLogin()">Log in</button>
+                    <button ion-button item-end style="background-color: #358e9d;" (click)="onLoadRegister()">Registro</button>
+               </div>
+           </div>
+       </div>
+
+
+  </ion-card-content>
+
+  <ion-item>
+    <hr>
+   <div class="text-center">
+       <small>© 2017 BarterAPP</small>
+   </div>
+  </ion-item>
+
+</ion-card>
+
+
 </ion-content>

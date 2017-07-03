@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{currentUser.firstName}} <small>({{currentUser.cname}})</small></ion-title>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="logOut()">
+        <ion-icon name="log-out" ></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-buttons right>
+      <button ion-button icon-only (click)="showHelp()"><ion-icon name="help-circle"></ion-icon></button>
+    </ion-buttons>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-tabs>
+  <ion-tab  tabTitle="Normal" tabIcon="calendar"[root]="calendarTab" [rootParams]="nagivataionController" tabBadge={{normalEventCounter}} tabBadgeStyle="danger"></ion-tab>
+  <ion-tab  tabTitle="Pendientes" tabIcon="alert" [root]="pendingTab" tabBadge={{specialShiftEventsCounter.pendingEventCounter}} tabBadgeStyle="danger"></ion-tab>
+  <ion-tab  tabTitle="Rechazados" tabIcon="thumbs-down" [root]="declinedTab" tabBadge={{specialShiftEventsCounter.declinedEventCounter}} tabBadgeStyle="danger"></ion-tab>
+  <ion-tab  tabTitle="Aceptados" tabIcon="thumbs-up" [root]="acceptedTab" tabBadge={{specialShiftEventsCounter.acceptedEventCounter}} tabBadgeStyle="danger"></ion-tab>
+</ion-tabs>

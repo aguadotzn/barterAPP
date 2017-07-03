@@ -7,12 +7,187 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>help</ion-title>
+    <ion-title>BarterApp/HELP</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+ <div class="home-content">
+     <div class="home-text">
+               <div id="accordion" role="tablist" aria-multiselectable="true">
+                      <!--Bienvenido-->
+                     <div class="card">
+                       <div class="card-header" role="tab" id="headingOne">
+                         <h5 class="mb-0">
+                           <a id="color" data-toggle="collapse" data-parent="#accordion" href="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                             👋🏻 Hola
+                           </a>
+                         </h5>
+                       </div>
+                       <div id="collapse1" class="collapse show" role="tabpanel" aria-labelledby="heading1">
+                         <div class="card-block">
+                           Si es la primera vez que estás aqui es normal que te encuentres perdido. No te preocupes, <b>BarterApp</b> es realmente sencillo de usar tan solo hay que usar la intuición.
+                           En todo caso hemos hecho esta guía para que te sea más fácil comprender cómo funciona este aplicación y lo que puedes hacer con ella. Para una mejor comprensión de la funcionalidad
+                           completa se recomienda leer en el orden que aparecen.
 
+                           <div class="offset-md-2"><br>Puedes consultar cada funcionalidad por separado seleccionado en los paneles inferiores. </div>
+                            <div class="offset-md-5">⬇️ ⬇️ ⬇️ ⬇️ ⬇️ </div>
+
+
+                         </div>
+                       </div>
+                     </div>
+
+                     <!--Añadir un turno-->
+                     <div class="card">
+                       <div class="card-header" role="tab" id="headingTwo">
+                         <h5 class="mb-0">
+                           <a id="color" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                             ➡️ Añadir un turno
+                           </a>
+                         </h5>
+                       </div>
+                       <div id="collapse2" class="collapse" role="tabpanel" aria-labelledby="heading2">
+                         <div class="card-block">
+                           Para añadir un turno basta con presionar el botón "añadir nuevo turno" y automáticamente se añadirá (por defecto a la fecha del día que nos encontremos) un turno al día indicado. Un día esta formado por varios
+                           turnos, este número de turnos depende del número de turnos de nuestra empresa, preestablecido a la hora de realizar el registro. Ese número de turnos es el número de circulos añadido
+                           al calendario.
+                         </div>
+                       </div>
+                     </div>
+
+                    <!--Eliminar un turno-->
+                    <div class="card">
+                       <div class="card-header" role="tab" id="headingThree">
+                         <h5 class="mb-0">
+                           <a id="color" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                             ➡️ Eliminar un turno
+                           </a>
+                         </h5>
+                       </div>
+                       <div id="collapse3" class="collapse" role="tabpanel" aria-labelledby="heading3">
+                         <div class="card-block">
+                           Eliminar un turno es tan sencillo como parece. Tan solo hace falta hacer click en el botón indicado que se encuentra en la parte inferior.
+                           Tener en cuenta que al eliminar un turno eliminamos todas las partes que lo componen.
+                         </div>
+                       </div>
+                     </div>
+
+                     <!--Editar un turno-->
+                     <div class="card">
+                        <div class="card-header" role="tab" id="headingThree">
+                          <h5 class="mb-0">
+                            <a id="color" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapsec" aria-expanded="false" aria-controls="collapsec">
+                              ✏️ Editar un turno
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="collapsec" class="collapse" role="tabpanel" aria-labelledby="headingc">
+                          <div class="card-block">
+                            Para editar un turno basta con posicionarnos encima del nombre, tipo, fecha o número y editar lo que deseemos. Lo más importante es elegir bien el tipo ya que es
+                            el que va a condicionar el intercambio con otro compañero de trabajo. Por defecto todos los turnos son libres. Los colores en el calendario marcan cada tipo de turno.
+                          </div>
+                        </div>
+                      </div>
+
+                     <!--Vista Normal-->
+                     <div class="card">
+                        <div class="card-header" role="tab" id="headingThree">
+                          <h5 class="mb-0">
+                            <a id="color" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                              📅 Vista Normal
+                            </a>
+                          </h5>
+                        </div>
+                        <div id="collapse4" class="collapse" role="tabpanel" aria-labelledby="heading4">
+                          <div class="card-block">
+                            Es la vista de los turnos que tenemos en nuestro calendario. Es la vista por defecto y la vista principal, se accede a ella con la barra de navegación inferior.
+                          </div>
+                        </div>
+                      </div>
+                      <!--Vista Pendientes-->
+                      <div class="card">
+                         <div class="card-header" role="tab" id="headingThree">
+                           <h5 class="mb-0">
+                             <a id="color" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                               ⏳ Pendientes
+                             </a>
+                           </h5>
+                         </div>
+                         <div id="collapse5" class="collapse" role="tabpanel" aria-labelledby="heading5">
+                           <div class="card-block">
+                             A esta vista le acompaña un contador. Cuando recibamos una petición de cambio, a parte de un aviso, podremos ver detalles de la petición de intercambio haciendo click en esta vista.
+                           </div>
+                         </div>
+                       </div>
+
+                       <!--Vista Rechazados-->
+                       <div class="card">
+                          <div class="card-header" role="tab" id="headingThree">
+                            <h5 class="mb-0">
+                              <a id="color" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                 👎 Rechazados
+                              </a>
+                            </h5>
+                          </div>
+                          <div id="collapse6" class="collapse" role="tabpanel" aria-labelledby="heading6">
+                            <div class="card-block">
+                              Si somos nosotros los que hemos realizado la petición de intercambio esta vista, a la cual también acompaña un contador, nos informará de si el cambio ha sido rechazado.
+                              Es <b>muy importante</b> confirmar el rechazo del intercambio, presionando el botón ok, para que vuelva a formar parte del calendario. Si el rechazo no se confirma
+                              no será posible enviar o recibir nuevas peticiones.
+                            </div>
+                          </div>
+                        </div>
+
+                        <!--Botón Aceptados-->
+                        <div class="card">
+                           <div class="card-header" role="tab" id="headingThree">
+                             <h5 class="mb-0">
+                               <a id="color" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                 👍🏼 Aceptados
+                               </a>
+                             </h5>
+                           </div>
+                           <div id="collapse7" class="collapse" role="tabpanel" aria-labelledby="heading7">
+                             <div class="card-block">
+                               Si somos nosotros los que hemos realizado la petición de intercambio esta vista, a la cual también acompaña un contador, nos informará de si el cambio ha sido aceptado.
+                               Es <b>muy importante</b> confirmar la aceptación del intercambio, presionando el botón ok, para que vuelva a formar parte del calendario. Si la aceptación no se confirma
+                               no será posible enviar o recibir nuevas peticiones.
+                             </div>
+                           </div>
+                         </div>
+
+                          <!--Solicitud de Intercambio-->
+                          <div class="card">
+                             <div class="card-header" role="tab" id="headingThree">
+                               <h5 class="mb-0">
+                                 <a id="color" class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                   🔄  Solicitud de intercambio
+                                 </a>
+                               </h5>
+                             </div>
+                             <div id="collapse9" class="collapse" role="tabpanel" aria-labelledby="heading9">
+                               <div class="card-block">
+                                 Para solicitar un intercambio hay que hacer click sobre el día del calendario que queremos realizar el intercambio. Hay que tener en cuentra varias restricciones:
+                                 <br>-Si no hay turnos asociados a ese día no hay posibilidad de intercambio.
+                                 <br>-Solo podemos solicitar un intercambio si nuestro turno es de tipo "Asignado a Eliminar" o "Desired free shifts", en cualquier otro caso no podemos solicitar un cambio.
+                                 <br>-En caso de cumplir las condiciones anteriores, la siguiente condición es que existan usuarios con turnos libres en ese mismo día. Además el turno del día a intercambiar
+                                 también debe ser el mismo.
+
+                               </div>
+                             </div>
+                           </div>
+
+       </div>
+
+</div>
+</div>
+<ion-item>
+  <hr>
+ <div class="text-center">
+     <small>© 2017 BarterAPP</small>
+ </div>
+</ion-item>
 </ion-content>

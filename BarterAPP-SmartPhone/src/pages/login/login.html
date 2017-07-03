@@ -1,23 +1,25 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Login-BarterApp</ion-title>
+    <ion-title>BarterApp/LOGIN</ion-title>
   </ion-navbar>
 
 </ion-header>
 <ion-content padding>
-  <p align="center"> ¡Login usuarios!</p>
+  <alert></alert>
+
+  <p align="center">LOGIN</p>
 <form>
   <ion-item>
     <ion-label>Correo Electrónico</ion-label>
-    <ion-input type="email" name="email" ></ion-input>
+    <ion-input type="email" name="email" [(ngModel)]="userModel.email"></ion-input>
   </ion-item>
   <ion-item>
     <ion-label>Contraseña</ion-label>
-    <ion-input type="password" name="password"></ion-input>
+    <ion-input type="password" name="password" [(ngModel)]="userModel.password"></ion-input>
   </ion-item>
   <br>
-  <button ion-button block type="submit">Log in</button>
-  <button ion-button block >Register</button>
+  <button ion-button block type="submit" (click)="login()">Log in</button>
+  <button ion-button block (click)="Register()">Register</button>
 </form>
 </ion-content>

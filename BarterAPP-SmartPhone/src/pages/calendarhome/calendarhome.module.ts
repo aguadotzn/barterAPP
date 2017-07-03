@@ -10,7 +10,7 @@ import { CalendarhomePage } from './calendarhome';
     IonicPageModule.forChild(CalendarhomePage),
   ],
   exports: [
-    CalendarhomePage
+    CalendarhomePage,
   ]
 })
 export class CalendarhomePageModule {}

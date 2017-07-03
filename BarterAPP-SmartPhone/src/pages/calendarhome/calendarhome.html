@@ -6,13 +6,171 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title>calendarhome</ion-title>
+  <ion-navbar primary>
+    <ion-title>Calendar Home</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+  <div class="row text-center">
+    <div class="col-md-4">
+      <div class="btn-group">
+        <div
+          class="btn btn-primary"
+          mwlCalendarPreviousView
+          [view]="view"
+          [(viewDate)]="viewDate">
+          Anterior
+        </div>
+        <div
+          class="btn btn-secondary"
+          mwlCalendarToday
+          [(viewDate)]="viewDate">
+          Actual
+        </div>
+        <div
+          class="btn btn-primary"
+          mwlCalendarNextView
+          [view]="view"
+          [(viewDate)]="viewDate">
+          Siguiente
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <br>
+      <h3 style="text-transform: uppercase;">{{ viewDate | calendarDate:(view + 'ViewTitle'):'es' }}</h3>
+    </div>
+    <div class="col-md-4">
+      <div class="btn-group">
+        <div
+          class="btn btn-primary"
+          (click)="view = 'month'"
+          [class.active]="view === 'month'">
+          Mes
+        </div>
+        <div
+          class="btn btn-primary"
+          (click)="view = 'week'"
+          [class.active]="view === 'week'">
+          Semana
+        </div>
+        <div
+          class="btn btn-primary"
+          (click)="view = 'day'"
+          [class.active]="view === 'day'">
+          Dia
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <!--  Vista calendario -->
+  <div [ngSwitch]="view">
+    <mwl-calendar-month-view
+      *ngSwitchCase="'month'"
+      [viewDate]="viewDate"
+      [events]="events"
+      [locale]="locale"
+      [weekStartsOn]="1"
+      [refresh]="refresh"
+      [activeDayIsOpen]="activeDayIsOpen"
+      (dayClicked)="dayClicked($event.day)"
+      (eventTimesChanged)="eventTimesChanged($event)">
+    </mwl-calendar-month-view>
+    <mwl-calendar-week-view
+      *ngSwitchCase="'week'"
+      [viewDate]="viewDate"
+      [events]="events"
+      [locale]="locale"
+      [weekStartsOn]="1"
+      [refresh]="refresh"
+      (eventTimesChanged)="eventTimesChanged($event)">
+    </mwl-calendar-week-view>
+    <mwl-calendar-day-view
+      *ngSwitchCase="'day'"
+      [viewDate]="viewDate"
+      [events]="events"
+      [refresh]="refresh"
+      (eventTimesChanged)="eventTimesChanged($event)">
+    </mwl-calendar-day-view>
+  </div>
+
+
+
+  <div class="row justify-content-md-center pt-3">
+    <div class="col col-lg-2">
+    </div>
+    <div class="col-12 col-md-auto ">
+      <button ion-button full
+        class="btn btn-primary "
+        (click)="addEvent()">
+        Añadir nuevo turno
+      </button>
+    </div>
+    <div class="col col-lg-2">
+    </div>
+  </div>
+
+  <!-- Intercambio -->
+  <p-dialog header="Elija entre las opciones: " appendTo="body" [(visible)]="displayShiftDialog" modal="modal" width="300" [responsive]="true" (onHide)="hideDialog()">
+    <div class="row" *ngIf = "!showTurnInDay">
+      Usuarios disponibles:
+      <br>
+      <div class="col-12"  *ngFor="let user of freeUsers; let index = index">
+        <p-radioButton name="simple" value={{index}} label={{user.username}} [(ngModel)]="choosenFreeUser">
+        </p-radioButton>
+
+      </div>
+      <div class="alert alert-danger alert-dismissible fade show" role="alert" *ngIf = "showShiftAlert">
+        <strong>{{alert}}</strong>
+      </div>
+    </div>
+    <div class="row" *ngIf = "showTurnInDay">
+      Turnos:
+      <br>
+      <div class="col-12"  *ngFor="let event of possibleDesiredShift; let index = index">
+        <p-radioButton name="turn" value={{index}} label={{event.turn_in_day}}  (onClick)="setTurn(event)">
+        </p-radioButton>
+      </div>
+    </div>
+
+
+    <p-footer *ngIf = "!showTurnInDay">
+      <div class="ui-dialog-buttonpane ui-widget-content ui-helper-clearfix">
+        <button class="btn btn-danger"  (click)="displayShiftDialog=false" >Cancelar</button>
+        <button class="btn btn-warn" (click)="activateShift()"  [disabled]="hideActivateShiftButton()" >Enviar solicitud</button>
+      </div>
+    </p-footer>
+  </p-dialog>
+
+
+  <!--  prime ng  -->
+  <p-growl [(value)]="msgs"></p-growl>
+
+  <!-- prime ng  -->
+  <p-growl [(value)]="stickymsgs" sticky="sticky"></p-growl>
+
+
+
+
+  <div *ngFor="let event of shiftEvents; let index = index">
+    <shift-event (deleteEvent)="deleteShiftEvent($event)"
+                 (makeNormalOriginalEvent) = "makeNormalInShiftEvent($event)"
+                 (acceptOriginalEvent)="acceptInShiftEvent($event)"
+                 (declineOriginalEvent)="declineInShiftEvent($event)"
+                 (changeOriginalEvent)="valueChangeInShiftEvent($event)"
+                 (updateDateForDay)="updateDayDate($event)"
+                 [showNormal]="showNormalEvent"
+                 [shiftEvent]="event" >
+    </shift-event>
+
+
+  </div>
+
+  <!--  <shift-event [showNormal]="0" [shiftEvent]=""></shift-event> -->
 
 </ion-content>

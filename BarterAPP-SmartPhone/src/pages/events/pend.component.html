@@ -1,0 +1,33 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-card *ngIf ="isEmptyArray.length == 0">
+    <ion-card-header>
+      Solicitudes pendientes.
+    </ion-card-header>
+    <ion-card-content><br>
+      En esta página se mostrarán las peticiones de otros usuarios para realizar cambios, por el momento no tiene ninguna solicitud.
+    </ion-card-content>
+  </ion-card>
+
+
+  <div *ngFor="let event of shiftEvents; let index = index">
+    <shift-event
+      [showNormal]="1"
+      [shiftEvent]="event" >
+    </shift-event>
+
+  </div>
+
+
+
+</ion-content>
