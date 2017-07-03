@@ -1,5 +1,5 @@
 
-# BarterAPP
+# BarterAPP: Multiplatform's app for manage business time.
 
 
 [![Build Status](https://img.shields.io/scrutinizer/build/g/filp/whoops.svg)](https://travis-ci.org/aag0121/barterAPP)
@@ -12,7 +12,7 @@
 
 
 [![BarterAPPLogo](./docs/img/barterapp_logo_nobackground.png)](https://github.com/aag0121/barterapp_logo_nobackground)
-Multiplatform's app for manage business time.
+
 > http://barterapp.nanoapp.io/
 
 
@@ -61,7 +61,7 @@ $ npm install
 
 ### Angular (BarterAPP-Browser)
 #### Normal mode
-After install packages `npm i` run this command:
+After install packages `npm i` run the following command.
 ```
 npm run start
 ```
@@ -73,7 +73,7 @@ npm run dev
 ```
 
 #### Production mode
-Run the project in production mode
+Run the project in production mode.
 ```
 npm run prod
 ```
@@ -115,7 +115,7 @@ Thanks to all that contribute to this project.
 
 ## Notes
 
-Landing page in english: https://aag0121.github.io/barterAPP/
+Landing page in [english](https://aag0121.github.io/barterAPP/) 
 
 
 
