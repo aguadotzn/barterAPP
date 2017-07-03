@@ -56,12 +56,12 @@ En el segundo caso tenemos una barra de navegación un poco más elaborada donde
 
 
 \subsection{Primer acceso}
-La primera vez que una usuario entra a la aplicación el calendario se encuentra vacío y los botones para gestionar los turnos también se encuentran ocultos, solamente está visible el botón \textbf{añadir turno} que es el que nos permite añadir un turno al calendario. Por defecto lo añade en la fecha en el que nos encontramos a día de visitar el calendario y añade turnos en función del número que la empresa del usuario ha elegido previamente a la hora de registrarse (Con esto me refiero a las partes diarias en las que las empresas subdividen los turnos, a saber: turnos de \textbf{ 24 horas} solo \emph{una parte} diaria, turnos de \textbf{12 horas} \emph{dos partes} diarias, turnos de \textbf{8 horas} \emph{tres partes} diarias, turnos de \textbf{6 horas} repartido \emph{cuatro partes} diarias.
+La primera vez que una usuario entra a la aplicación el calendario se encuentra vacío y los botones para gestionar los turnos también se encuentran ocultos, solamente está visible el botón \textbf{añadir turno} que es el que nos permite añadir un turno al calendario. Por defecto lo añade en la fecha en la que nos encontramos a día de visitar el calendario y añade turnos en función del número que la empresa del usuario ha elegido previamente a la hora de registrarse (Con esto me refiero a las partes diarias en las que las empresas subdividen los turnos, a saber: turnos de \textbf{ 24 horas} solo \emph{una parte} diaria, turnos de \textbf{12 horas} \emph{dos partes} diarias, turnos de \textbf{8 horas} \emph{tres partes} diarias, turnos de \textbf{6 horas} \emph{cuatro partes} diarias).
 
 
 \imagen{usuariocalendario}{\footnotesize{Vista Web: calendario vacío. Fuente: Elaboración propia.}}
 
-Al añadir un turno se añaden una serie de círculos al día elegido, que varían en función del tipo de empresa como ya he nombrado en el párrafo anterior, esto representa los diferentes tipo de turnos que hay cada uno de ellos está representado con un color. La condición para intercambiar es que mi turno sea  \emph{Desired free shifts} o turno deseado a eliminar y el de la persona implicada en el cambio  \emph{ree shifts} o turno libre.
+Al añadir un turno se añaden una serie de círculos al día elegido, que varían en función del tipo de empresa como ya he nombrado previamente, esto representa los diferentes tipo de turnos que hay cada uno de ellos está representado con un color. La condición para intercambiar es que mi turno sea  \emph{Desired free shifts} o turno deseado a eliminar y el de la persona implicada en el cambio  \emph{free shifts} o turno libre.
 
 
 \subsection{Botones gestión}
@@ -119,7 +119,7 @@ Envíamos la petición a un compañero con turno libre, el \textbf{receptor} de 
 
 
 \item[Confirmar peticiones]
-En ambos casos anteriores resulta \textbf{fundamental} el confirmar o bien el rechazo o bien la aceptación del turno para que la base de datos lo vuelva a poner en la vista normal. De esta manera estamos asegurando al cien por cien que todas las partes implicadas en el cambio acepta y rechazan y además están de acuerdo con lo que el otro usuario ha respondido
+En ambos casos anteriores resulta \textbf{fundamental} el confirmar o bien el rechazo o bien la aceptación del turno para que la base de datos lo vuelva a poner en la vista normal. De esta manera estamos asegurando al cien por cien que todas las partes implicadas en el cambio acepta o rechazan las peticiones y además están de acuerdo con lo que el otro usuario ha respondido.
 
 \end{description}
 
@@ -133,29 +133,116 @@ La web se adapta a la mayoría de dispositivos del mercado aunque he detectado a
 
 
 \section{Usuario Móvil}
+La aplicación para el móvil es un poco diferente y está pensada estrictamente para que sea mucho más intuitiva que la web, con menos texto y más botones. La lógica ha seguir se ha mejorado enormemente y se han realizado mejoras importantes que en un futuro podrán introducirse en la web. 
+
+Las capturas de pantalla se han realizado para un móvil estándar de los tres sistemas operativos, se aprecian los cambios entre los diferentes dispositivos sustancialmente lo que ayuda a comprender de una manera muy detallada lo que supone desarrollar una aplicación híbrida.
+
+
+
+\subsection{Vista inicial}
+El entrar en la aplicación el usuario puede ver un pequeño texto y las opciones para logearse o registrarse. Es la vista de un usuario que no esta logeado.
+
+ \imagen{usuariomovil1}{\footnotesize{Vista app híbrida: principal. Fuente: Elaboración propia.}}
 
 
 \subsection{Registro}
 
+El usuario debe logearse para acceder a la  funcionalidad de la app, para ello debe pulsar el botón \emph{registro}. Una vez registrado automáticamente se redirige a la página del \emph{login}.
+
+ \imagen{usuariomovilregister}{\footnotesize{Vista app híbrida: registro. Fuente: Elaboración propia.}}
+
 \subsection{Login}
 
-\subsection{Añadir turnos al calendario}
+Una vez registrado para acceder a la web el usuario debe insertar su correo electrónico y contraseña. Actualmente no se encuentra implementado un sistema de recuperación de contraseña.
 
-\subsection{Intercambiar turno}
+ \imagen{usuariomovillogin}{\footnotesize{Vista app híbrida: login. Fuente: Elaboración propia.}}
 
+
+\subsection{Navegación}
+
+La navegación en el caso del móvil resulta ser más intuitiva, se dispone de diferentes vistas que se muestra en la barra de navegación (depende del sistema operativo ésta se muestra arriba o abajo).
+
+
+
+ \imagen{usuariomovilvistainicial}{\footnotesize{Vista app híbrida: vista principal. Fuente: Elaboración propia.}}
+
+
+
+\subsection{Primer acceso}
+La primera vez que una usuario entra a la aplicación el calendario se encuentra vacío y los botones para gestionar los turnos también se encuentran ocultos, solamente está visible el botón \textbf{añadir turno} que es el que nos permite añadir un turno al calendario. Por defecto lo añade en la fecha en la que nos encontramos a día de visitar el calendario y añade turnos en función del número que la empresa del usuario ha elegido previamente a la hora de registrarse (Con esto me refiero a las partes diarias en las que las empresas subdividen los turnos, a saber: turnos de \textbf{ 24 horas} solo \emph{una parte} diaria, turnos de \textbf{12 horas} \emph{dos partes} diarias, turnos de \textbf{8 horas} \emph{tres partes} diarias, turnos de \textbf{6 horas}  \emph{cuatro partes} diarias).
+
+Se ha mejorado la lógica en la aplicación móvil y ahora cuando un día está completo el siguiente turno lo añade al día siguiente, además no añade los turnos como si fueran eventos separados sino como una sola entidad a ojos del usuario.
+
+
+Al añadir un turno se añaden una serie de círculos al día elegido, que varían en función del tipo de empresa como ya he nombrado en el párrafo anterior, esto representa los diferentes tipo de turnos que hay cada uno de ellos está representado con un color. La condición para intercambiar es que mi turno sea  \emph{Desired free shifts} o turno deseado a eliminar y el de la persona implicada en el cambio  \emph{free shifts} o turno libre.
+
+
+\subsection{Botones gestión}
+Un vez añadido un turno diario, subdividido en las diferentes partes pertinentes, aparecen los botones para gestionar los intercambios y turnos.  Para editar un turno tan solo hay que editar lo que nosotros deseemos en la vista "normal". 
+
+ \imagen{usuariomovileditar}{\footnotesize{Vista app híbrida: editar turnos. Fuente: Elaboración propia.}}
+
+
+En total las cuatro vistas que componen la aplicación son: 
 \begin{itemize}
 
-\item Enviar petición
+\item \textbf{Normal}: es la vista normal dónde aparecen todos nuestros turnos. Por defecto es la vista inicial.
 
-\item Aceptar/Rechazar petición
 
-\item Confirmar petición
+\item \textbf{Pendientes}: cuando tengamos una solicitud de cambio aparecerá aquí, por defecto recibiremos una aviso y el contador se incrementará. Al recibir una petición de cambio deberemos aceptar o rechazar la solicitud.
 
+ \imagen{usuariomovilpendientes}{\footnotesize{Vista app híbrida: vista pendientes. Fuente: Elaboración propia.}}
+
+\item \textbf{Rechazados}: cuando recibamos un rechazo a una solicitud de cambio de turno previamente enviada aparecerá aquí, por defecto recibiremos una aviso. También posee un contador que indica el número de peticiones rechazadas que tenemos. Resulta \textbf{muy importante} una vez que nos han rechazado la petición confirmar ese rechazo en la vista de rechazados presionando la tecla \textbf{ok} para confirmar de esta manera el rechazo de la petición. 
+
+ \imagen{usuariomovilrechazados}{\footnotesize{Vista app híbrida: vista rechazados. Fuente: Elaboración propia.}}
+
+\item \textbf{Confirmados}: cuando recibamos la aceptación a una solicitud de cambio de turno previamente enviada aparecerá aquí, por defecto recibiremos una aviso. También posee un contador que indica el número de peticiones enviadas que tenemos. Resulta \textbf{muy importante} una vez que nos han aceptado la petición confirmar esa aceptación en la vista de confirmados presionando la tecla \textbf{ok} para confirmar de esta manera el rechazo de la petición.
+
+ \imagen{usuariomovilaceptados}{\footnotesize{Vista app híbrida: vista aceptados. Fuente: Elaboración propia.}}
+
+\end{itemize} 
+
+
+\subsection{Intercambiar turno}
+El funcionamiento de intercambio también es similar a la web y sigue la misma lógica de funcionamiento.
+
+
+\begin{description}
+
+\item[¿Cómo enviar una petición?] Para enviar una petición y ver si existen usuarios disponibles para realizar un cambio hay que click en el día con turnos establecidos. Es necesario recordar que podemos intercambiar un turno cuando nuestro turno es de tipo \emph{Desired free shifts} o turno deseado a eliminar, y el otro usuario posee también ese \underline{mismo día} y \underline{turno} libres. Lo primero que vemos al hacer click en el día es el turno, de entre nuestros posibles que podemos intercambiar, seleccionamos el posible. Sino existen usuario, no hay posibilidad de intercambio.
+
+ \imagen{usuariomovilintercambio}{\footnotesize{Vista app híbrida: vista seleccionar turno. Fuente: Elaboración propia.}}
+
+
+Si existen usuario envíamos la petición a un compañero con turno libre, el \textbf{receptor} de la petición recibe un mensaje y además la lista de \underline{pendientes} de éste aumentará en uno. 
+
+
+
+\item[Petición rechazada/aceptada] Una vez enviada la petición no podremos enviar otra hasta que el usuario receptor responda a esa petición. Una vez el compañero responde podemos recibir dos cosas:
+
+\begin{itemize}
+\item Nos han aceptado la petición. \imagen{usuarioacepto}{\footnotesize{Vista app híbrida:: pop-up aceptación. Fuente: Elaboración propia.}}
+\item Nos han rechazado la petición. \imagen{usuariorechazo}{\footnotesize{Vista app híbrida:: pop-up rechazado. Fuente: Elaboración propia.}}
+ 
 \end{itemize}
 
+
+\item[Confirmar peticiones]
+En ambos casos anteriores resulta \textbf{fundamental} el confirmar o bien el rechazo o bien la aceptación del turno para que la base de datos lo vuelva a poner en la vista normal. De esta manera estamos asegurando al cien por cien que todas las partes implicadas en el cambio aceptan o rechazan las peticiones y además están de acuerdo con lo que el otro usuario ha respondido. En este caso debemos seleccionar la vista correspondiente.
+
+\end{description}
+
 \subsection{Ayuda}
+En la barra de navegación tenemos una pequeña ayuda dónde se puede ver el funcionamiento de cada uno de los elementos de la web. 
 
 
+ \imagen{usuariomovilayuda}{\footnotesize{Vista app híbrida: vista ayuda. Fuente: Elaboración propia.}}
+
+\subsection{Detalles}
+También se dan otros detalles como preguntar sobre si el usuario realmente quiere abandonar la aplicación.
+
+ \imagen{usuariomovilayuda}{\footnotesize{Vista app híbrida: log out. Fuente: Elaboración propia.}}
 
 
 

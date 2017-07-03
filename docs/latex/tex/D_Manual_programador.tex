@@ -7,6 +7,15 @@ He decidido incluir la parte de \emph{Angular CLI}  porque considero que va a es
 
 Este anexo por tanto tiene como objetivo analizar y documentar las necesidades funcionales que deberán ser soportadas por el sistema a desarrollar, es decir, en qué condiciones ha sido desarrollado, en qué condiciones se debe usar y cuáles son los requerimientos mínimos para que un futuro programador interactúe con la aplicación en caso de que así lo considere.
 
+
+Nota: 
+
+\begin{itemize}
+\item Web disponible en \url{ http://barterapp.nanoapp.io/}
+\item Repositorio \emph{github}  en la dirección: \url{https://github.com/aag0121/barterAPP}
+\item Android .sdk disponible en /ficheros finales
+\end{itemize}
+
 \section{Requerimientos mínimos necesarios}
 Además de un \emph{IDE} \cite{ides} para poder trabajar, los prerequisitos mínimos para empezar a trabajar en el proyecto son:
 
@@ -118,8 +127,6 @@ En esta sección hay que tener en cuenta que el autor de este trabajo proyecto a
 
 La estructura de directorios general es la siguiente:
 
-%Foto erronea cambiar!
-\imagen{directorios}{\footnotesize{Vista carpetas general  \emph{BarterAPP}. Fuente: Elaboración propia.}}
 
 \begin{itemize}
 	\item \textbf{$/client/$}: \emph{Front-End} 
@@ -429,5 +436,27 @@ Una de las mejoras sustanciales que ha cambiado de la primera versión (\emph{Io
 
 \section{Pruebas del sistema}
 
+Respecto al apartado de pruebas no se han llegado a realizar test unitarios con \href{https://jasmine.github.io/}{Jasmine} o \href{https://karma-runner.github.io/
+}{Karma} como se debería haber hecho. Debo hacer auto crítica y considero que he cometido un fallo al no realizar los tests de manera paralela al crecimiento de mi código ya que cuanto más grande es el código más difícil de testear es. Comencé intentando realizar tests pero pronto me centré en el código obviando la importancia de los tests durante el desarrollo software, seguramente me hubieran ahorrado más de un problema en el tramo final. 
+
+Otros sistemas que he utilizado para mejorar la calidad de mi código o testear han sido:
+
+\begin{enumerate}
+	\item \href{https://travis-ci.org/}{Travis}: sistema de integración continua que realiza cada vez que haces un \emph{pull} a github una comprobación automática para detectar posibles fallos.
+	\item \href{https://www.versioneye.com/}{VersionEye}: detecta las versiones de todos los paquetes o librerías que se usan en un proyecto software, además las clasifica y te avisa de cuando deben o pueden ser actualizadas. 
+	\item \href{https://codebeat.co/}{Codebeat}: herramienta para comprobar la calidad del código, realmente  útil.
+    \item \href{https://tools.pingdom.com}{Pingdom}: herramienta web para determinar la velocidad y rendimiento de una sitio web.
+    
+    
+\imagen{testpingdom}{\footnotesize{Captura resultados. Fuente:  Elaboración propia.}}
+
+	\item \href{https://testmysite.withgoogle.com}{TestMySite}: servicio ofrecido por google que da una análisis del comportamiento de una web en diferentes dispositivos.
+	\item \href{https://gtmetrix.com/	}{Gmetrix}: ofrece análisis exhaustivos de rendimiento, carga, historiales
+	
+
+	\end{enumerate}
+	
+	
+	
 
 
