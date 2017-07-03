@@ -1,8 +1,6 @@
 
 # BarterAPP
 
-Multiplatform's app for manage business time.
-[![BarterAPPLogo](./docs/img/barterapp_logo_nobackground.png)](https://github.com/aag0121/barterapp_logo_nobackground)
 
 [![Build Status](https://img.shields.io/scrutinizer/build/g/filp/whoops.svg)](https://travis-ci.org/aag0121/barterAPP)
 [![GitHub issues](https://img.shields.io/codeclimate/issues/github/me-and/mdf.svg)](https://github.com/aag0121/barterAPP/issues)
@@ -13,6 +11,8 @@ Multiplatform's app for manage business time.
 
 
 
+[![BarterAPPLogo](./docs/img/barterapp_logo_nobackground.png)](https://github.com/aag0121/barterapp_logo_nobackground)
+Multiplatform's app for manage business time.
 > http://barterapp.nanoapp.io/
 
 
@@ -46,8 +46,9 @@ A device with IOS, Android or Windows Phone for the `/BarterApp-Smartphone` fold
 
 ### Prerequisites (Hybrid App: BarterAPP-Smartphone)
 1. Install [Node.js](https://nodejs.org)
-2. Install npm 
-
+2. Install Ionic: `npm install -g ionic@latest` 
+3. Install Cordova: `npm install -g cordova`
+3. From project root folder (BarterAppSmartphone) install all the dependencies: `npm i`
 
 ## Installation (Both folders)
 
@@ -106,7 +107,7 @@ Version 1.0
 
 
 ## License
-This project is licensed under Apache 2.0 License - see the [Apache 2.0 site](https://choosealicense.com/licenses/apache-2.0/) for details
+This project is licensed under Apache 2-0 - see the [Apache 2.0 site](https://choosealicense.com/licenses/apache-2.0/) for details
 
 ## Acknowledgments
 
