@@ -1,34 +1,96 @@
 
-# BarterAPP
+# BarterAPP: Multiplatform's app for manage business time.
 
-Multiplatform's app for manage business time.
+
+[![Build Status](https://img.shields.io/scrutinizer/build/g/filp/whoops.svg)](https://travis-ci.org/aag0121/barterAPP)
+[![GitHub issues](https://img.shields.io/codeclimate/issues/github/me-and/mdf.svg)](https://github.com/aag0121/barterAPP/issues)
+[![GitHub license](https://img.shields.io/crates/l/rustc-serialize.svg)](https://github.com/aag0121/barterAPP/blob/master/LICENSE)
+[![Dependency Status](https://www.versioneye.com/user/projects/57f7b19e823b88004e06ad33/badge.svg?style=flat)](https://www.versioneye.com/user/projects/57f7b19e823b88004e06ad33)
+[![Codacy grade](https://img.shields.io/codacy/grade/e27821fb6289410b8f58338c7e0bc686.svg)](https://codebeat.co/projects/github-com-aag0121-barterapp-master)
+[![npm](https://img.shields.io/npm/v/npm.svg)]()
+
+
+
 [![BarterAPPLogo](./docs/img/barterapp_logo_nobackground.png)](https://github.com/aag0121/barterapp_logo_nobackground)
 
-## Getting Started
+> http://barterapp.nanoapp.io/
 
-Please follow the instructions. You can access the app in your favourite brownser. Also you can downloading in your favourite smartphone.
-
-### Prerequisites
-
-A device with IOS, Android or Windows Phone. A Computer with internet access.
-
-## Deployment
-
-....
 
 ## Built With
+
+This project uses the [MEAN stack](https://en.wikipedia.org/wiki/MEAN_(software_bundle)):
+* [**M**ongoose.js](http://www.mongoosejs.com) ([MongoDB](https://www.mongodb.com)): database
+* [**E**xpress.js](http://expressjs.com): backend framework
+* [**A**ngular 4](https://angular.io): frontend framework
+* [**N**ode.js](https://nodejs.org): runtime environment
+
 [![angular_node](./docs/img/angular_node.png)](https://github.com/aag0121/angular_node)
 
-Some of the open source technologies used in this application are:
+Other open source technologies I used in this application are:
 
-* [Angular2](https://angular.io/) - Web framework
-* [Ionic](https://ionicframework.com/) - Web framework
-* [NodeJS](https://nodejs.org//) - API
-* [Express](https://expressframework.com/) - Web framework
-* [PassportJS](http://passportjs.org/) - Web framework
-* [Express](https://expressframework.com/) - Web framework
+* [Ionic 2](https://ionicframework.com/) - Hybrid mobile framework
 * [Angular CLI](https://cli.angular.io/) - Tools
-* [Angular Material2](https://material.angular.io/) - Tools
+* [Angular Material 2](https://material.angular.io/) - Tools
+* [Ionic CLI](https://ionicframework.com/docs/cli/) - Tools
+* [Ionic Material 2](http://ionicmaterial.com/) - Tools
+* [Boostrap 4](https://v4-alpha.getbootstrap.com/) - Tools
+
+## Prerequisites
+
+A device with IOS, Android or Windows Phone for the `/BarterApp-Smartphone` folder (Available one realease for Android).   A computer with internet access for the `/BarterApp-Browser`  folder.
+
+### Prerequisites (Web: BarterAPP-Browser)
+1. Install [Node.js](https://nodejs.org) and [MongoDB](https://www.mongodb.com)
+2. Install Angular CLI: `npm i -g @angular/cli`
+3. From project root folder (BarterAppBrowser) install all the dependencies: `npm i`
+
+### Prerequisites (Hybrid App: BarterAPP-Smartphone)
+1. Install [Node.js](https://nodejs.org)
+2. Install Ionic: `npm install -g ionic@latest` 
+3. Install Cordova: `npm install -g cordova`
+3. From project root folder (BarterAppSmartphone) install all the dependencies: `npm i`
+
+## Installation (Both folders)
+
+```sh
+$ cd folderwhatyouwant
+$ npm install 
+```
+
+## Run
+
+### Angular (BarterAPP-Browser)
+#### Normal mode
+After install packages `npm i` run the following command.
+```
+npm run start
+```
+
+#### Development mode
+[Concurrently](https://github.com/kimmobrunfeldt/concurrently) execute MongoDB, Angular build, TypeScript compiler and Express server.
+```
+npm run dev
+```
+
+#### Production mode
+Run the project in production mode.
+```
+npm run prod
+```
+### Ionic 2 (BarterAPP-Smartphone)
+#### Normal mode
+After install packages `npm i` run this command:
+```
+ionic serve
+```
+#### Development mode
+Execute server, compiler and Ionic Builder at the same time. 
+```
+ionic serve -l -i -c
+```
+
+
+
 
 ## Contributing
 
@@ -45,14 +107,18 @@ Version 1.0
 
 
 ## License
-
-This project is licensed under Attribution-NonCommercial
-CC BY-NC - see the [Creative Commons site](https://creativecommons.org/licenses/by-nc/4.0/legalcode) for details
+This project is licensed under Apache 2-0 - see the [Apache 2.0 site](https://choosealicense.com/licenses/apache-2.0/) for details
 
 ## Acknowledgments
 
-Thank you.
+Thanks to all that contribute to this project.
 
 ## Notes
 
-This page is under construction, please be patient and return in few months
+Landing page in [english](https://aag0121.github.io/barterAPP/) 
+
+
+
+
+
+
