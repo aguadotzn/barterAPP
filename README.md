@@ -1,12 +1,12 @@
+>### ⚠This repository was part of my final CS Degree and is not longer on maintenance. 
+
+
 
 # BarterAPP: Multiplatform's app for manage business time.
 
 
 [![Build Status](https://img.shields.io/scrutinizer/build/g/filp/whoops.svg)](https://travis-ci.org/aag0121/barterAPP)
-[![GitHub issues](https://img.shields.io/codeclimate/issues/github/me-and/mdf.svg)](https://github.com/aag0121/barterAPP/issues)
 [![GitHub license](https://img.shields.io/hexpm/l/plug.svg)](https://github.com/aag0121/barterAPP/blob/master/LICENSE)
-[![Dependency Status](https://www.versioneye.com/user/projects/57f7b19e823b88004e06ad33/badge.svg?style=flat)](https://www.versioneye.com/user/projects/57f7b19e823b88004e06ad33)
-[![Codacy grade](https://img.shields.io/codacy/grade/e27821fb6289410b8f58338c7e0bc686.svg)](https://codebeat.co/projects/github-com-aag0121-barterapp-master)
 [![npm](https://img.shields.io/npm/v/npm.svg)]()
 
 
@@ -115,7 +115,7 @@ Thanks to all that contribute to this project.
 
 ## Notes
 
-Landing page in [english](https://aag0121.github.io/barterAPP/) 
+Landing page in [english](https://aguadotzn.github.io/barterAPP/) 
 
 
 
