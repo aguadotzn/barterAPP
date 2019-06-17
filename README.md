@@ -100,7 +100,7 @@ Version 1.0
 
 ## Authors
 
-* **A. Aguado** - *Main Work* - [Personal Website](www.aguadotzn.com)
+* **A. Aguado** - *Main Work* - [Personal Website](http:/www.aguadotzn.com)
 * **Luis R.Izquierdo** - *Main Idea* - [Personal Website](http://www.luis.izqui.org/)
 
 
