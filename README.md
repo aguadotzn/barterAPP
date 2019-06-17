@@ -1,7 +1,5 @@
 >### ⚠This repository was part of my final CS Degree and is not longer on maintenance. 
 
-
-
 # BarterAPP: Multiplatform's app for manage business time.
 
 
@@ -102,7 +100,7 @@ Version 1.0
 
 ## Authors
 
-* **A. Aguado** - *Main Work* - [Personal Website](https://about.me/aaguado)
+* **A. Aguado** - *Main Work* - [Personal Website](www.aguadotzn.com)
 * **Luis R.Izquierdo** - *Main Idea* - [Personal Website](http://www.luis.izqui.org/)
 
 
